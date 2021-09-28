@@ -274,3 +274,10 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# Editor files
+*#
+*~
+
+# Build outputs
+/coq-bug-minimizer.pdf
