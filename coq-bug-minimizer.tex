@@ -194,6 +194,84 @@ Text of abstract \ldots.
 
 Text of paper \ldots
 
+\section{Improving the coverage of Coq's test-suite}
+
+\subsection{Context and objectives}
+
+Shipping new releases of a compiler frequently can be a challenge
+because catching regressions is not trivial, even with an extensive
+test suite.
+%
+This is why, the Rust compiler, for instance, is tested not only on a
+large test suite, but also on all the external Rust source code
+available on GitHub.\footnote{As narrated by Pietro Albini in his talk
+``Shipping a compiler every six weeks'', available at
+\url{https://www.youtube.com/watch?v=As1gXp5kX1M} and whose transcript
+is available at
+\url{https://www.pietroalbini.org/blog/shipping-a-compiler-every-six-weeks/}.}
+
+In the case of the Coq proof assistant, the development team decided
+to shorten the release cycles not to six weeks but to six months, but
+this still represented a significant challenge to do so reliably.
+%
+Therefore, in early 2017, they adopted a ``reverse'' continuous
+integration, i.e., a continous integration configuration including a
+large portion of compatibility testing with external Coq projects (Coq
+projects maintained by different teams in different
+repositories)~\cite{zimmermann:tel-02451322}.
+
+This continuous testing of external Coq projects represents in itself
+a continuous challenge because of the specificities of Coq's
+evolution.
+%
+Indeed, as of today, Coq's evolution still includes many breaking
+changes in each release (breaking changes that are evaluated,
+validated and documented, and therefore cannot be classified as
+regressions, but still break some of the tested projects).
+%
+Every time such breaking changes are introduced, Coq developers must
+fix the tested projects for compatibility, because they would not be
+usable for testing anymore if that was not done.
+%
+Furthermore, fixing external projects can help Coq developers assess
+in more depth the practical impact of a breaking change.
+
+A rough assessment shows that more than half of the time that a change
+to Coq breaks at least one external tested project, the Coq test suite
+still passes fully~\cite{zimmermann:tel-02451322}.
+%
+We interpret this as insufficient coverage of the Coq test suite with
+respect to the features that are actually relied on by users.
+%
+Therefore, a primary objective of this work was to help improve the
+coverage of the test suite by systematically extracting a minimal
+reproducible example from any compatibility issue detected while
+testing a change to Coq.
+
+A secondary objective was to help Coq developers assess more easily
+the kind of compatibility issues that they introduce with their
+changes.
+%
+Indeed, every change to Coq is tested against millions of lines of
+externally maintained Coq code.
+%
+Some of the tested projects can be difficult to navigate and
+understand for Coq developers.
+%
+Therefore, extracting a minimal reproducible example of a
+compatibility issue can help the developer to determine whether it is
+a regression or a desirable change and therefore to decide whether to
+fix the change to Coq or the tested project for compatibility.
+
+\subsection{Technology}
+
+\subsubsection{Extending the bot of the Coq development team with a CI minimization feature}
+
+\subsubsection{Adapting the bug minimizer for minimizing compatibility issues}
+
+\subsubsection{Using GitHub Actions to run the bot}
+
+\subsection{Evaluation}
 
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
