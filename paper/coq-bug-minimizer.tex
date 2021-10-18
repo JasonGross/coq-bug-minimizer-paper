@@ -59,7 +59,11 @@
                         %% http://ctan.org/pkg/booktabs
 \usepackage{subcaption} %% For complex figures with subfigures/subcaptions
                         %% http://ctan.org/pkg/subcaption
-
+\makeatletter
+\newcommand{\todo}[1]{%
+\@latex@warning{TODO: \detokenize{#1} on page \thepage}%
+\textcolor{red}{[\textbf{TODO:} #1]}}%
+\makeatother
 
 \begin{document}
 
