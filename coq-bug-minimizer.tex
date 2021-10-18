@@ -273,6 +273,91 @@ fix the change to Coq or the tested project for compatibility.
 
 \subsection{Evaluation}
 
+\section{How the bug minimizer works}
+Broadly, the bug minimizer is an adaptation of delta-debugging for Coq developments.
+
+\subsection{The Spec}
+The bug minimizer runs a given development through Coq and parses the error message.
+The goal is to construct a smaller, more self-contained script that generates the same error message.
+An additional constraint that we place on the minimizer is that the proof script generating the error message should be left untouched.
+This allows users to write proof scripts such as
+\begin{verbatim}
+some_tactic;
+let G := match goal with |- ?G => G end in
+lazymatch G with
+| buggy_goal => fail 0 "bug remains"
+| _ => fail 0 "bug disappeared!" G
+end.
+\end{verbatim}
+to customize the desired reproducing case, and the minimizer will not decide that it can minimize the entire file to something silly like \verb|Goal False. fail 0 "bug remains"|.
+
+For CI minimization, we furthermore want to preserve the lack of error message on one version of Coq while preserving the error message on the more recent, proposed version of Coq.
+
+\subsection{Control Flow}
+Bug minimizer execution has a couple of steps.
+We include here the steps that are performed by external scripts for CI minimization.
+
+Steps before the bug minimizer is invoked:
+\begin{enumerate}
+\item Unpack and install both the succeeding and failing versions of Coq and corresponding developments.
+\item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with.
+\item Run Coq on the succeeding and failing developments, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
+\item Parse the build log to determine the buggy file name and the arguments to pass to Coq.
+  This workflow means that we don't need to directly interface with the varied build systems of various contributions on the CI.
+\end{enumerate}
+
+Control flow of the bug minimizer:
+\begin{enumerate}
+\item Run Coq on the buggy file.
+\item Parse the error message, ensuring that it matches with the error message from the build log
+\end{enumerate}
+
+\subsection{Adaptations specific to Coq}
+Coq has a number of quirks that enable efficient bug minimization, as well as a few quirks that seriously hinder bug minimization.
+The quirks that enable efficient bug minimization are:
+\begin{itemize}
+\item lack of forward-references (definitions cannot refer to any identifiers that have not yet been added to the global environment);
+\item emitting text files that describe how to hyperlink identifiers, for documentation purposes;
+\item ending every comamnd in either one or three full stops, with only two exceptions (\verb|{| and \verb|}|);
+\item
+\end{itemize}
+\subsubsection{Adaptations enabled by lack of forward references}
+Because Coq forbids forward references, we can remove all lines after the line where the error occurs without risking a change in error messages.
+
+Additionally, we can, by and large, remove lines in reverse order.
+That is, if we removing line $n$ changes the error message, then first removing line $m$ for $m < n$ will almost never result in a success (that is, a lack of error message change) from removing line $n$ later.
+This allows us to rely on a single work-horse pass that removes lines, one at a time, starting from the end of the file.
+
+We say ``lines'' above, but in fact a line (a string of characters ended by a newline) is not the natural statement
+\subsubsection{Comment Stripping}
+
+
+
+
+
+
+
+Specific adaptations to delta debugging for working with Coq scripts, including
+admitting proofs
+splitting imports and requires
+working in units of "an entire proof script / definition"
+being able to work from the end of the file, due to lack of cyclic dependencies (with some minor exceptions, such as program obligations)
+the work that it takes to inline one file into another
+What specific features (both ones that are already present and ones that are requested) are necessary for producing self-contained single-file test-cases
+Integration of delta-debugging into CI failures, in particular:
+This is feasible compute-wise (+ some graphs / stats on typical minimization runtime)
+We found an interaction mode that seems to work well (+ some feedback on other interaction modes)
+(2)
+I'm not sure what the overall story for the paper should be ("we did a cool thing, here it is"? or "we did a useful thing, here's what it took and what you need to know if you want to do a similar thing"? or something else?)
+Here are some sections that are probably worth including:
+What the bug minimizer does (Coq project + error message -> minimal test case) and how it works (delta debugging on maintaining the error message + various details)
+How the integration with Coq's CI and GH Actions and coqbot works and what it does (allows PR authors to turn "this failed" into an actually useful test-case that can be further minimized and/or included in the test-suite and/or mined for insight into what changed, maybe note also that this improves on debuggability of error messages --- the error message + source is generally not enough to figure out what's going wrong when the CI fails, Coq doesn't have unit tests because ???, this closes the gap)
+Future work including:
+Automatic minimization and maintenance of test-cases for bugs reported on Coq's issue tracker
+Multi-file minimization
+Better support for when bumping the branch targeted by the CI causes a failure (rather than it being a change in Coq)
+Various issues that prevent complete inlining of files
+
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
                                         %% contents suppressed with 'anonymous'
