@@ -280,4 +280,4 @@ TSWLatexianTemp*
 *~
 
 # Build outputs
-/coq-bug-minimizer.pdf
+paper/coq-bug-minimizer.pdf
