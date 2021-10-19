@@ -321,6 +321,9 @@ Control flow of the bug minimizer:
 \item Repeat the following steps until a fixed point is reached, skipping any steps that change the error message in a forbidden way.
 \begin{enumerate}
 \item Remove comments, inserting a header comment with metadata about minimization statistics.
+\item Insert a further header which defines the \verb|admit| tactic.
+  We must define this tactic ourselves to handle files which build with a non-standard standard library (such as HoTT) and hence don't have access to \verb|Coq.Compat.AdmitAxiom|.
+  To support multiple versions of Coq, we need to feature-test Coq to see what fragment of code grants us access to Ltac without loading the standard library; this feature-test is done once and for all for a single run of the bug minimizer.
 \item Split \verb|Require| statements from \verb|Import|/\verb|Export|, disambiguating the statements at the same time.
   (If we don't disambiguate them, the \verb|Import|s might point to the wrong module.)
 \item Move the \verb|Require| statements to the top of the file, transitively closing them (this allows us to remove \verb|Require| statements which are only needed to transitively require other files).
@@ -330,8 +333,32 @@ Control flow of the bug minimizer:
 \item Split the statements into structured blocks, one per definition/proof.
   We should not assume that we can remove lines from the end of a proof without breaking things, so we treat each theorem/lemma/definition block, combined with its proof, as a unit.
   This is made simpler by the fact that Coq strongly discourages nested proofs, and by the fact that Coq generally forces definitions and their bodies to be side-by-side.
-  \todo{HERE}
-\item Repeat the following steps until a fixed point is reached:
+  There are a couple of exceptions to this strategy, that have dedicated passes for handling them:
+  \begin{itemize}
+  \item \verb|Program| \verb|Definition|s, \verb|Fixpoint|s, etc, have \verb|Obligation| blocks which can be interwoven with other definitions.
+    The solution here is to replace such \verb|Obligation| blocks with \verb|Admit Obligations|, which is thankfully a no-op when no obligations are present.
+    \todo{Insert some code showing how minimization of program definitions proceeds with admit obligations}
+  \item Sections, modules, and module types have paired vernacular delimiters.
+    Currently there is some code to eliminate empty blocks, but it doesn't work very well, and misses many cases.
+    There's an open feature request for a \verb|Try| vernacular command at https://github.com/coq/coq/issues/15051, which would solve the issue of coupled commands in general.
+  \end{itemize}
+\item Repeat the following steps until a fixed point is reached (order presented here is not faithful to the minimizer):
+  \begin{itemize}
+  \item Remove each structured block (whose removal does not change the error message), one at a time, from the end of the file to the beginning of the file.
+  \item Replace proof scripts with \verb|Admitted|.
+    (There's some nuance about the best ordering strategy to try here, whether to first try all the \verb|Qed| lemmas, whether to first try all lemmas and definitions at once, or whether to just go one at a time in reverse order.)
+    Also, we actually replace them with \verb|admit. Defined.| so that previously unfoldable constants remain unfoldable.
+    Technically we should try \verb|Admitted| when the proof script previously ended with \verb|Qed| and replacing with \verb|admit. Defined.| fails, because it might be the case that some later tactic relies on this definition not being unfoldable, but we have not encountered such a case yet, and it seems quite unlikely.
+  \item Replace \verb|abstract tac| with \verb|admit|, potentially simplifying proof scripts and decreasing dependencies.
+  \item Split \verb|Definition foo args : ty := body.| into \verb|Definition foo args : ty.| and \verb|Proof. refine (body). Defined.| so that such definitions can potentially be admitted later.
+  \item Replace \verb|Module Foo| with \verb|Module Export Foo|, potentially allowing the removal of \verb|Import| statements later, and potentially eventually allowing the removal of the module itself.
+  \item Split \verb|Import| and \verb|Export| statements containing multiple modules into separate statements, so they can be removed separately.
+  \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
+    This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
+  \end{enumerate}
+\item Finally, before repeating the loop, attempt to inline a dependency which has not yet been inlined.
+  Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
+  \todo{write more text about what's required here, and what still remains}
 \end{enumerate}
 \end{enumerate}
 
