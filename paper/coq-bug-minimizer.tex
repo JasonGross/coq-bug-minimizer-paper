@@ -355,7 +355,7 @@ Control flow of the bug minimizer:
   \item Split \verb|Import| and \verb|Export| statements containing multiple modules into separate statements, so they can be removed separately.
   \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
     This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
-  \end{enumerate}
+  \end{itemize}
 \item Finally, before repeating the loop, attempt to inline a dependency which has not yet been inlined.
   Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
   \todo{write more text about what's required here, and what still remains}
