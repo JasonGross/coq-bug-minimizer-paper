@@ -304,7 +304,10 @@ We include here the steps that are performed by external scripts for CI minimiza
 Steps before the bug minimizer is invoked:
 \begin{enumerate}
 \item Unpack and install both the succeeding and failing versions of Coq and corresponding developments.
-\item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with.
+\item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with, as well as COQPATH and pwd.
+  \todo{Maybe add text somewhere that I (Jason) think this is a pretty cool way of not having to deal with varied build systems of CI developments.
+    Note that there are a bunch of subtleties here: if we don't get access to COQPATH, we won't be able to build some developments.
+    If we don't print out the pwd, we can find the right bug file by absolutizing the arguments to coq, but this breaks output tests, cf https://github.com/math-comp/hierarchy-builder/issues/256.}
 \item Run Coq on the succeeding and failing developments, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
 \item Parse the build log to determine the buggy file name and the arguments to pass to Coq.
   This workflow means that we don't need to directly interface with the varied build systems of various contributions on the CI.
@@ -313,7 +316,23 @@ Steps before the bug minimizer is invoked:
 Control flow of the bug minimizer:
 \begin{enumerate}
 \item Run Coq on the buggy file.
-\item Parse the error message, ensuring that it matches with the error message from the build log
+\item Parse the error message, ensuring that it matches with the error message from the build log.
+  (Note that there are a bunch of error message changes that we allow, such as changing evar numbers and universe numbers, etc.)
+\item Repeat the following steps until a fixed point is reached, skipping any steps that change the error message in a forbidden way.
+\begin{enumerate}
+\item Remove comments, inserting a header comment with metadata about minimization statistics.
+\item Split \verb|Require| statements from \verb|Import|/\verb|Export|, disambiguating the statements at the same time.
+  (If we don't disambiguate them, the \verb|Import|s might point to the wrong module.)
+\item Move the \verb|Require| statements to the top of the file, transitively closing them (this allows us to remove \verb|Require| statements which are only needed to transitively require other files).
+\item Parse the file into statements (with exactly two exceptions, statements in Coq end with \verb|.| or \verb|...| followed by whitespace; the exceptions are \verb|{| and \verb|}|).
+  Note that this is complicated by needing to handle strings which contain a full stop followed by whitespace, and by the fact that comments in Coq are well-balanced and nestable and can contain strings which themselves contain comment identifiers without nesting further comments.
+\item Remove statements after the line which generates the error.
+\item Split the statements into structured blocks, one per definition/proof.
+  We should not assume that we can remove lines from the end of a proof without breaking things, so we treat each theorem/lemma/definition block, combined with its proof, as a unit.
+  This is made simpler by the fact that Coq strongly discourages nested proofs, and by the fact that Coq generally forces definitions and their bodies to be side-by-side.
+  \todo{HERE}
+\item Repeat the following steps until a fixed point is reached:
+\end{enumerate}
 \end{enumerate}
 
 \subsection{Adaptations specific to Coq}
