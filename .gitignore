@@ -281,3 +281,6 @@ TSWLatexianTemp*
 
 # Build outputs
 paper/coq-bug-minimizer.pdf
+
+# Notebook checkpoints
+notebook/.ipynb_checkpoints
