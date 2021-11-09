@@ -280,7 +280,7 @@ fix the change to Coq or the tested project for compatibility.
 \section{How the bug minimizer works}
 Broadly, the bug minimizer is an adaptation of delta-debugging for Coq developments.
 
-\subsection{The Spec}
+\subsection{The Spec}\label{sec:spec}
 The bug minimizer runs a given development through Coq and parses the error message.
 The goal is to construct a smaller, more self-contained script that generates the same error message.
 An additional constraint that we place on the minimizer is that the proof script generating the error message should be left untouched.
@@ -364,8 +364,63 @@ Control flow of the bug minimizer:
 
 \subsection{Walkthrough via Examples}
 
+\subsubsection{Infrastructure around Invoking the Minimizer}
+As described in \autoref{sec:spec}, the goal of the minimizer is to take a CI development that succeds on the tip of master and fails on a given PR, and emit a small, stand-alone file which succeeds on master and fails in the same way \todo{same modulo universes, etc, stick this somewhere} on the PR.
+\todo{Should we cite \url{https://github.com/dsw/delta\#do-a-controlled-experiment} about passing coqc, a la ``Below we don't just minimize a file that causes Oink to produce an error message, we minimize a file that causes gcc to accept AND oink to reject in a specific way. That is, the test delta does is a controlled experiment, where gcc is the control. Ignoring this aspect of the problem seems to be a frequent mistake of first time users.''}
+
+In order to do this efficiently, we re-use the CI artifacts from Coq.
+We download the pre-built versions of Coq from master and from the tip of the PR.
+From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
+We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this CI development, into different directories: one for the version of Coq that's supposed to pass, and another for the version of Coq that's supposed to fail.
+We also reuse Coq's generic CI workflow to figure out the error message and the failing file which we want to minimize.
+Much like \todo{cite https://github.com/dsw/build-interceptor}, rather than trying to parse the build setup of various CI developments, we merely wrap the Coq binaries to intercept the build-system calls, and print out the relevant information to stderr.
+\todo{Add a note about future work for redirecting things to a log file from within the wrapper, so that we don't change the build output at all, which would, perhaps, allow us to minimize coq-tools itself, maybe}
+The relevant information in this case, is the current working directory of coqc, the environment variable \texttt{COQPATH}, the command line used to invoke the binary, and the relative path of the file that coqc is invoked on.
+We need \texttt{COQPATH} to ensure that we have the right search path for the dependencies of coqc.
+\todo{maybe explain COQPATH somewhere?}
+We need the command line arguments so that we know what flags to tell the bug minimizer to pass to coqc.
+We could in theory elide the file name and the current working directory, as long as we changed all relative paths to absolute paths before printing the command line.
+(Unless the file uses directives like \texttt{Cd} or \texttt{Add LoadPath} with relative paths.
+However, we don't currently test nor support these cases directly.
+\todo{should we include this paranthetical?})
+Note that we \emph{must not} change relative paths to absolute ones when passing arguments along to coqc, because the output of coqc is sensitive to the difference between relative and absolute paths, and this can mess up output tests (and did in the past, for example with ci-elpi).
+We can locate the error message by looking for the last instance of \texttt{File "$f$", line $\ell$, characters $n$-$m$:} followed immediately by a line beginning with \texttt{Error}.
+(Note that warning messages also emit the \texttt{File $\ldots$} line, but we don't want to catch warnings.)
+We look for the last instance of the wrapper debug printout information which points at the same file, though, so long as we were careful to always build single-threadedly, we could instead just look for the most recent debug printout before the error message.
+
+Given this information, we adjust the arguments so that we can tell the bug minimizer where the dependencies live both for the passing and failing versions of Coq.
+We then pass this information to the bug minimizer:
+\begin{itemize}
+\item the location of the file to be minimized;
+\item the log file containing the error message, which must match the error message that the minimizer believes the file produces;
+\item the location of the \verb|coqc|, \verb|coqtop|, and \verb|coq_makefile| for the tip of the PR
+\item the location of the \verb|coqc| for the master branch
+\item the location of the dependencies for both the passing and failing versions of Coq, parsed from the command line arguments and from walking the directories in \texttt{COQPATH}
+\item any arguments to \verb|coqc| which are neither naming dependency locations nor known to be both irrelevant to the processing of the file and counter-productive to the minimizer's operation (such arguments are \verb|-batch| which applies only to \verb|coqtop|, \verb|-time| which will only make logs of the minimizer much longer, and \verb|-noglob|, \verb|-dump-glob|, and \verb|-o|, which interfere with the generation of outputs used by the minimizer).
+\end{itemize}
+
+Henceforce, we will assume that we have all of this information at hand, and speak only of how to minimize files.
+
 \subsubsection{The Basics}
-Suppose an author
+The simplest function of the bug minimizer is to remove unneeded lines.
+For example, if a Coq PR breaks the \texttt{rewrite} tactic (an admittedly simplistic example in this generality), we might want to minimize a file such as
+\begin{verbatim}
+Definition zero := O.
+Definition one := 1.
+Definition two := 2.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. intros x H. rewrite H. reflexivity. Qed.
+\end{verbatim}
+into
+\begin{verbatim}
+Definition zero := O.
+Definition one := 1.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. intros x H. rewrite H.
+\end{verbatim}
+Note that the definition \texttt{two} has been removed.
+
+Here it suffices to (a) remove all statements after the error, and (b) try removing each line one at a time.
 
 \subsection{Adaptations specific to Coq}
 Coq has a number of quirks that enable efficient bug minimization, as well as a few quirks that seriously hinder bug minimization.
