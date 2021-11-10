@@ -405,7 +405,7 @@ Henceforce, we will assume that we have all of this information at hand, and spe
 The simplest function of the bug minimizer is to remove unneeded lines.
 For example, if a Coq PR breaks the \texttt{rewrite} tactic (an admittedly simplistic example in this generality), we might want to minimize a file such as
 \begin{verbatim}
-Definition zero := O.
+Definition zero := 0.
 Definition one := 1.
 Definition two := 2.
 Lemma foo : forall x, x = zero -> S x = one.
@@ -413,7 +413,7 @@ Proof. intros x H. rewrite H. reflexivity. Qed.
 \end{verbatim}
 into
 \begin{verbatim}
-Definition zero := O.
+Definition zero := 0.
 Definition one := 1.
 Lemma foo : forall x, x = zero -> S x = one.
 Proof. intros x H. rewrite H.
@@ -421,6 +421,108 @@ Proof. intros x H. rewrite H.
 Note that the definition \texttt{two} has been removed.
 
 Here it suffices to (a) remove all statements after the error, and (b) try removing each line one at a time.
+Since Coq is mostly not sensitive to whitespace, we want to remove statements, rather than lines.
+
+In almost all Coq code (exception: custom grammar entries, inline elpi code, and the standalone statements \verb|{| and \verb|}|), a statement is any sequence of characters which ends with a \verb|.| or a \verb|...| followed by either whitespace of the end of the document, where the ending full stop(s) are neither in the middle of a string (delimited by \verb|"|) nor a comment.
+In Coq, comments begin with \verb|(*| and end with \verb|*)|.
+Comments are nested, so \verb|(* (* *) still in a comment *)| is all one comment.
+In Coq, strings start and end with \verb|"|.
+Furthermore, strings can occur in comments, so \verb|(* "(*" *)| is a well-balanced comment.
+Note, however, that \verb|*)| is a valid token outside of comments, such as \verb|(simpl in *); idtac|.
+
+We may someday depend on a proper Coq parser (such as SerAPI), but we currently do in-house parsing.
+Even if we move to depending on a proper parser, we will sometimes have to do transformations on files where we cannot do full parsing.
+See \autoref{sec:glob-for-inline-installed-files-without-parsing} for more details.
+\todo{make sure \autoref{sec:glob-for-inline-installed-files-without-parsing} exists}
+Furthermore, we continue to support versions of Coq all the way back to 8.5, in part because minimization is also useful for porting older Coq developments to newer versions of Coq, and so any plugin-based parsing will not fully subsume the existing parsing methods.
+
+We currently have three methods of parsing Coq documents:
+\begin{enumerate}
+\item Parsing based on the details laid out above.
+\item Using \texttt{coqc -time} to get byte ranges for each statement.
+  Note that these are \emph{byte} ranges and not character ranges, so we have to be careful when documents contain unicode.
+\item Using \texttt{coqtop -emacs -time}, which, in addition to providing byte ranges for statements, also provides information about which lines are part of which definitions (via the emacs prompt), and which lines close definitions (via the \texttt{\emph{foo} is defined} message).
+  Note that \verb|-emacs| is technically meant for legacy interaction with the ProofGeneral IDE, so we may someday have to move to a different API.
+  Hopefully by the time \verb|-emacs| is removed, we'll be ready to use plugin-based parsing via SerAPI or similar.
+\end{enumerate}
+
+Because Coq forbids forward references (definitions cannot refer to any identifiers that have not yet been added to the global environment, and documents are processed serially), we can remove all lines after the line where the error occurs without risking a change in error messages.
+Note that the error message line indicator is not always accurate; the recent bug at \url{https://github.com/coq/coq/issues/15073}\todo{formatting of link} was an instance where the error location was mis-reported.
+
+This lack of forward referencing also means that we generally don't need to do any sort of non-local search on removing statements.
+Since removing an earlier statement almost never enables removing a later statement, we can generally just try removing statements one at a time, in reverse order.
+
+Consider now a file such as.
+\begin{verbatim}
+Definition zero := 0.
+Definition one := 1.
+Definition two := 2.
+Lemma irrelevant : two = 2.
+Proof. reflexivity. Qed.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. intros x H. rewrite H. reflexivity. Qed.
+\end{verbatim}
+Since Coq forbids nested lemmas, removing statements one at a time will not work, as the state
+\begin{verbatim}
+Definition zero := 0.
+Definition one := 1.
+Lemma irrelevant : two = 2.
+Proof. reflexivity.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. intros x H. rewrite H.
+\end{verbatim}
+results in an error about nested proofs.
+
+We instead group statements into \emph{definition} blocks to be removed all at once.
+We get information about definitions by parsing the output of \texttt{coqtop -emacs -time}, as mentioned above.
+This way, we can remove
+\begin{verbatim}
+Lemma irrelevant : two = 2.
+Proof. reflexivity. Qed.
+\end{verbatim}
+all at once.
+
+We could in theory deal with more complicated nesting structure, for example trying to remove an entire section or module at a time.
+The tool at \url{https://github.com/dsw/delta#exploit-nested-structure} \todo{better citation} is in fact built around preprocessing the file into one that exposes nested structure clearly, and then removing well-parenthesized blocks.
+However, removing statements, grouped into definitions as necessary, sufficies for removing time-consuming code.
+(\todo{Find a better place for this theme, call it out more broadly:}%
+In general, it's very important to remove any lines that can be removed that take significant compilation time, and much less important to remove lines that take basically no compilation time.
+\todo{what more should be said about this?}
+)
+
+Another enormously useful transformation is \emph{admitting proofs}.
+For example, suppose that some PR broke the ability of \verb|rewrite| to make use of lemmas proving equalities between propositions.
+Consider the file:
+\begin{verbatim}
+Lemma complicated : True = False.
+Proof.
+  (* ... *)
+  (* thousands of lines of proof taking minutes to compile *)
+  (* ... *)
+Qed.
+Lemma boom : True -> False.
+Proof. rewrite complicated.
+\end{verbatim}
+We cannot remove statements here, but we can minimize this file to
+\begin{verbatim}
+Lemma complicated : True = False.
+Admitted.
+Lemma boom : True -> False.
+Proof. rewrite complicated.
+\end{verbatim}
+
+This is one of the domain-specific features of Coq that makes delta-debugging a significantly different problem than in other domains:
+There are slow blocks of code that cannot be entirely removed without changing the error message, but they can be replaced by a much faster catch-all result.
+
+There are some quirks to be aware of around this.
+
+\todo{HERE}
+
+There are a couple of exceptions to this.
+The primary one is statements in Coq's \verb|Program| mode.\todo{cite}
+For example, removing
+
+\begin{comment}
 
 \subsection{Adaptations specific to Coq}
 Coq has a number of quirks that enable efficient bug minimization, as well as a few quirks that seriously hinder bug minimization.
@@ -467,6 +569,54 @@ Automatic minimization and maintenance of test-cases for bugs reported on Coq's 
 Multi-file minimization
 Better support for when bumping the branch targeted by the CI causes a failure (rather than it being a change in Coq)
 Various issues that prevent complete inlining of files
+
+\end{comment}
+
+\section{Future Work}
+\todo{organize this section}
+
+Rather than emitting the information to stderr when wrapping coqc, we could emit it to a file (have to be careful about paralell builds, though).
+See \url{https://github.com/coq-community/run-coq-bug-minimizer/issues/11}.
+
+Use a proper Coq parser.
+See \url{https://github.com/JasonGross/coq-tools/issues/56}.
+
+When removing a statement fails, try removing all statements that generate different error messages, seeing if we can recover the original error message.
+This should probably be done with incremental compilation.
+This would allow us to drop many specific passes (such as removing empty sections and modules).
+Furthermore, if we hook into a proper Coq parser that allows discovering well-balanced structure more fine-grained than a particular definition, we could plausibly use this sort of thing to be able to remove specific fields from records, for example.
+See \url{https://github.com/JasonGross/coq-tools/issues/73} and \url{https://github.com/JasonGross/coq-tools/issues/88}.
+
+Make use of \verb|Set Suggest Proof Using| to enable removal of proof scripts that only matter for specifying the arguments of a lemma.
+See \url{https://github.com/JasonGross/coq-tools/issues/68}.
+Example:
+\begin{verbatim}
+Section foo.
+  Context (x y : nat) (p q : x = y).
+  Lemma silly : True -> x = y.
+  Proof. intro; exact p. Qed.
+End foo.
+Definition bar := @silly 0 0 eq_refl I.
+Fail Check bar.
+\end{verbatim}
+This file should be able to be minimized to
+\begin{verbatim}
+Section foo.
+  Context (x y : nat) (p q : x = y).
+  Lemma silly : True -> x = y.
+  Proof using p. Admitted.
+End foo.
+Definition bar := @silly 0 0 eq_refl I.
+Fail Check bar.
+\end{verbatim}
+This is useful when the proof script is much longer than \verb|intro; exact p|.
+
+Support incremental compilation.
+Removing a line at the end of the file should not require recompiling the initial segment.
+See \url{https://github.com/JasonGross/coq-tools/issues/87}.
+
+Remove well-balanced structures (sections, modules, etc) before we try to remove lines in those structures.
+See \url{https://github.com/JasonGross/coq-tools/issues/89}.
 
 \section{Evaluation of Results}
 
