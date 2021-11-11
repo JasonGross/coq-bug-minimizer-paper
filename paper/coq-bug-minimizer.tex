@@ -198,7 +198,7 @@ Text of abstract \ldots.
 
 Text of paper \ldots
 
-\section{Improving the coverage of Coq's test-suite}
+\section{Improving the coverage of Coq's test suite}
 
 \subsection{Context and objectives}
 
@@ -622,6 +622,52 @@ See \url{https://github.com/JasonGross/coq-tools/issues/89}.
 
 \todo{Theo}
 
+\subsection{Research questions}
+
+We want to evaluate how well the Coq bug minimizer and its integration into Coq's CI setup, via coqbot, works to achieve our stated objectives which we remind below:
+
+\begin{enumerate}
+\item Improve the coverage of the test suite by systematically extracting minimal test cases from compatibility issues that are detected in external projects tested in Coq's CI.
+\item Help Coq developers assess more easily the nature of compatibility issues they introduce with their changes.
+\end{enumerate}
+
+For this purpose, we specify several research questions to investigate:
+
+\begin{description}
+\item[RQ1:] How often does the minimizer successfully produce a reduced example from the CI failures it was triggered on?
+\item[RQ2:] What time does it take to run on the cases where it was triggered?
+\item[RQ3:] How often does it manage to produce a reduced case that is sufficiently short and does not depend on anything beyond the standard library of Coq?
+\item[RQ4:] Does it help Coq developers understand CI failures?
+\item[RQ5:] Does it help Coq developers extend the coverage of the test suite?
+\end{description}
+
+\subsection{Data collection}
+
+To support replicating the results, all our data collection and analysis code is made available as Jupyter notebooks and our datasets are made available as CSV files.\footnote{\todo{Theo}}
+
+To know in which context the bug minimizer was triggered and how it answered, we fetch comments from pull requests in the GitHub repository using GitHub's GraphQL API.
+%
+We look for all the pull requests with the words ``coqbot ci minimize''.
+%
+These correspond to all the pull requests where coqbot offered the possibility of minimizing a CI failure. For each of these pull requests, we fetch all the comments, with their author, time and date and body text.
+%
+We detect triggers of the minimizer by looking at comments by authors other than coqbot with the words ``coqbot ci minimize''.
+%
+We exclude pull requests authored by one of the co-authors of this paper as these pull requests were mostly for testing the minimizer integration and debugging issues.
+
+After several months in production, we added a sentence to the comment with the results of the minimizer asking users to fill a very short survey about their experience with it.
+%
+However, this message alone did not attract any answer (probably because it was not visible enough, or not targetted enough to specific users).
+
+To alleviate this problem and also to collect data on past runs of the minimizer, we posted an issue in Coq's bug tracker tagging all the people that triggered the bug minimizer or were the author of a pull request where the bug minimizer was triggered.
+%
+For each of the tagged users, we listed the pull requests that were relevant to them (either as an author or as a triggerer) and provided a link to the survey (with the pull request number pre-filled).
+%
+The survey asked in particular how useful the minimizer was to the respondent, if it helped understand the impact of the pull request on external projects and if the minimized test case was used to extend the test suite.
+%
+The posted issue was auto-generated from our data on the bug minimizer runs.
+
+This issue allowed us to collect 19 answers from 7 different respondents. \todo{Update if needed.}
 
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
