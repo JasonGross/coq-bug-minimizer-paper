@@ -638,7 +638,7 @@ For this purpose, we specify several research questions to investigate:
 \item[RQ2:] What time does it take to run on the cases where it was triggered?
 \item[RQ3:] How often does it manage to produce a reduced case that is sufficiently short and does not depend on anything beyond the standard library of Coq?
 \item[RQ4:] Does it help Coq developers understand CI failures?
-\item[RQ5:] Does it help Coq developers extend the coverage of the test suite?
+\item[RQ5:] Does it help Coq developers expand the coverage of the test suite?
 \end{description}
 
 \subsection{Data collection}
@@ -677,13 +677,13 @@ To answer our first three research questions, we look at all the pull requests a
 %
 To avoid double-counting multiple runs on the same CI failure, we only look at the first CI minimizer triggers on a given pull request and a given project.
 
-When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization for [\ldots] targets \ldots'', providing the list of projects on which it is being run.
+When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization \ldots'' or ``I am now running minimization \ldots'', providing the list of projects on which it is being run.
 %
 Next, when it finishes minimizing a project, it produces a comment starting with ``Minimized File''.
 %
 The comment contains the minimized file, truncated to 700 lines \todo{Provide exact number}.
 %
-The comment may also contain ``being continued'' if the minimization process timed out and has to be restarted to go further, which the bot automatically does.
+The comment may also contain ``interrupted by timeout, being automatically continued'' if the minimization process timed out and has to be restarted to go further, which the bot automatically does.
 %
 We ignore these comments, only looking for final reduction outputs.
 %
@@ -695,6 +695,71 @@ We match comments indicating the start of the minimization with comments indicat
 
 \subsubsection{RQ1: How often does the minimizer produce a reduced example?}
 
+We have identified 155 CI failures for which minimization was started (very often, several minimization runs are started in the same comment).
+%
+For 131 of these (85\%), the bot eventually answers with a reduced example.
+%
+In 16 cases, the bot reports that minimization was unsuccessful.
+%
+\todo{Investigate manually the 16 cases and report on the causes.}
+%
+In 8 cases, there was no matching comment marking the end of minimization.
+%
+\todo{Investigate manually the 8 cases and report on the causes.}
+
+\subsubsection{RQ2: What time does it take to run on the cases where it was triggered?}
+
+On the 131 successful runs, we compute the duration as the time delta between the start and the end comments.
+%
+Note that while this precisely evaluates the time that developers using the minimizer had to wait for the results, it can overestimate the actual time spent by the minimizer on the example, if the minimizer run was queued for a while before starting to run in GitHub Actions.
+
+The minimal observed duration is a little above 2 minutes (131 seconds) and the maximum observed duration is close to 20 hours (71665 seconds).
+%
+50\% of the runs take less than 15 minutes (910 seconds).
+%
+70\% of the runs take less than 53 minutes (3208 seconds).
+%
+80\% of the runs take less than 108 minutes (6467 seconds).
+%
+90\% of the runs take less than 5.3 hours (19219 seconds).
+%
+This is to compare with the time it can take to build a single project (sometimes, more than an hour).
+
+\todo{An analysis project by project, comparing with the time it takes to simply build the project?}
+
+\subsubsection{RQ3: How often does it produce a short and self-contained test case?}
+
+\todo{}
+
+\subsubsection{RQ4: Does it help Coq developers understand CI failures?}
+
+We got 19 answers to our survey, from 7 different people.
+%
+14 of these answers where about pull requests where the respondent had triggered the minimizer themselves (and 5 where about pull requests which the respondent authored but where they did not trigger the minimizer).
+
+The answers we got are very contrasted between the triggerers and the non-triggerers.
+%
+On the one hand, for each of the 5 responses from authors who did not trigger the minimizer themselves, the response to the survey indicated that the minimizer was not useful to the respondent and did not help them understand the CI failure.
+%
+On the other hand, 9 out of 14 responses from triggerers indicated that the minimizer was useful (3 somewhat useful and 6 very useful).
+%
+The next question on whether it helped diagnose the CI failure was optional but a majority of the triggerers that answered (5 out of 9) said it had helped.
+
+\todo{Write about why people said the minimizer was not useful.}
+
+\subsubsection{RQ5: Does it help Coq developers expand the coverage of the test suite?}
+
+We also asked to the users of the minimizer if they used the output of the minimizer to extend the test suite of Coq (as the minimizer itself suggests when its reduced test case is short enough to fit in a comment).
+%
+The users who did not find the minimizer useful never answered positively to this question.
+%
+However, among the users who found the minimizer useful, a majority (5 out of 8) said they had used the output of the minimizer to extend the test suite of Coq.
+%
+In one case, the respondent explained that while the minimizer had been very useful by quickly identifying the reason of the CI failure, they had not used its output to extend the test suite because the reason was that the tested project used a deprecated feature that was being removed.
+
+\todo{Manual analysis of how people extended the test suite}
+
+\subsection{Threats to validity}
 
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
