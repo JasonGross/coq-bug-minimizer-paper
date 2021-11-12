@@ -655,7 +655,7 @@ We detect triggers of the minimizer by looking at comments by authors other than
 %
 We exclude pull requests authored by one of the co-authors of this paper as these pull requests were mostly for testing the minimizer integration and debugging issues.
 
-After several months in production, we added a sentence to the comment with the results of the minimizer asking users to fill a very short survey about their experience with it.
+After several months in production, we added a sentence to the comment posted by coqbot with the results of the minimizer asking users to fill a very short survey about their experience with it.
 %
 However, this message alone did not attract any answer (probably because it was not visible enough, or not targetted enough to specific users).
 
@@ -668,6 +668,33 @@ The survey asked in particular how useful the minimizer was to the respondent, i
 The posted issue was auto-generated from our data on the bug minimizer runs.
 
 This issue allowed us to collect 19 answers from 7 different respondents. \todo{Update if needed.}
+%
+The data collected through this survey are also available as a CSV file, which we import and analyze in our Jupyter notebook.
+
+\subsection{Data analysis}
+
+To answer our first three research questions, we look at all the pull requests and all the projects where the CI minimizer was triggered.
+%
+To avoid double-counting multiple runs on the same CI failure, we only look at the first CI minimizer triggers on a given pull request and a given project.
+
+When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization for [\ldots] targets \ldots'', providing the list of projects on which it is being run.
+%
+Next, when it finishes minimizing a project, it produces a comment starting with ``Minimized File''.
+%
+The comment contains the minimized file, truncated to 700 lines \todo{Provide exact number}.
+%
+The comment may also contain ``being continued'' if the minimization process timed out and has to be restarted to go further, which the bot automatically does.
+%
+We ignore these comments, only looking for final reduction outputs.
+%
+Finally, the bot posts a comment starting with ``Error: Could not minimize file'' when it was not able to minimize the requested failure, for instance, because it could not reproduce it or could not reproduce the successful run on the base branch.
+
+We match comments indicating the start of the minimization with comments indicating the end of it, and use these two comments to determine if the minimizer was able to produce a reduced example, how long it took and if the reduced example was sufficiently short and self-contained.
+
+\subsection{Results}
+
+\subsubsection{RQ1: How often does the minimizer produce a reduced example?}
+
 
 %% Acknowledgments
 \begin{acks}                            %% acks environment is optional
