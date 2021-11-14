@@ -783,7 +783,7 @@ When the minimizer is triggered, the bot answers with a comment ``I have initiat
 %
 Next, when it finishes minimizing a project, it produces a comment starting with ``Minimized File''.
 %
-The comment contains the minimized file, truncated to 700 lines \todo{Provide exact number}.
+The comment contains the minimized file, truncated to 32KiB (half of GitHub's comment limit), which generally amounts to about 700 lines.
 %
 The comment may also contain ``interrupted by timeout, being automatically continued'' if the minimization process timed out and has to be restarted to go further, which the bot automatically does.
 %
