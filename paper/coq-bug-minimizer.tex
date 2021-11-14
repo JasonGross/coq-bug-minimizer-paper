@@ -297,6 +297,33 @@ to customize the desired reproducing case, and the minimizer will not decide tha
 
 For CI minimization, we furthermore want to preserve the lack of error message on one version of Coq while preserving the error message on the more recent, proposed version of Coq.
 
+\subsection{Broad Insights}
+There are two broadly interesting insights used to make delta-debugging run well with Coq:
+\begin{enumerate}
+\item
+  Since Coq forbids forward-reference, removing earlier statements almost never allows the removal of later statements.
+  Hence we can mostly just make a linear pass over statements in reverse order, attempting to remove one at a time.
+\item
+  In our goal to get the shortest reproducing test case as quickly as possible, it behooves us to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
+  The slowest part of almost all Coq developments is proof scripts.
+  Hence it behooves us to attempt to remove proof scripts as early as possible.
+  Coq has a couple of mechanisms for removing proof scripts without removing the theorems and definitions being proven (the commands \verb|Admitted| and \verb|Admit Obligations| as well as the \verb|admit| tactic).
+  Replacing proof blocks with these commands, rather than just removing proof scripts, allows us to make much smaller and faster examples than might otherwise be possible.
+\end{enumerate}
+
+In addition to this, there are four fundamentally different sorts of actions the bug minimizer needs to perform, all of which have their own laundry list of corner cases which drive various adaptations in the minimizer to handle these cases.
+The sorts of actions are:
+\begin{enumerate}
+\item
+  Determine the failing file, the error message, and the command-line arguments necessary to reproduce the error message.
+\item
+  Determine what it means for the error message to ``be preserved'' (we do not want to require, for example, that source-code line number attached to the error message is always the same).
+\item
+  Perform source code transformations on the failing code while preserving the error message, either replacing code with other code (as when admitting proof scripts) or removing statements.
+\item
+  Inline dependencies of the file, making it more stand-alone.
+\end{enumerate}
+
 \subsection{Control Flow}
 Bug minimizer execution has a couple of steps.
 We include here the steps that are performed by external scripts for CI minimization.
@@ -490,6 +517,7 @@ In general, it's very important to remove any lines that can be removed that tak
 \todo{what more should be said about this?}
 )
 
+\paragraph{Admitting Proofs}
 Another enormously useful transformation is \emph{admitting proofs}.
 For example, suppose that some PR broke the ability of \verb|rewrite| to make use of lemmas proving equalities between propositions.
 Consider the file:
@@ -516,11 +544,85 @@ There are slow blocks of code that cannot be entirely removed without changing t
 
 There are some quirks to be aware of around this.
 
+The first quirk is around unfolding.
+
+Consider the file:
+\begin{verbatim}
+Lemma complicated : True = False.
+Proof.
+  (* ... *)
+  (* thousands of lines of proof taking minutes to compile *)
+  (* ... *)
+Defined.
+Lemma boom : True -> False.
+Proof.
+  pose complicated as H.
+  unfold complicated in H.
+  rewrite H.
+\end{verbatim}
+If we replace the proof script of \verb|complicated| with just \verb|Admitted.|, then the line \verb|unfold complicated in H| will fail with \verb|Error: complicated is opaque|.
+We can work around this issue by copying the \verb|admit| tactic from \verb|Coq.Compat.AdmitAxiom|, which is effectively a tactic version of \verb|Admitted|:
+\begin{verbatim}
+Axiom proof_admitted : False.
+Ltac admit := clear; abstract case proof_admitted.
+\end{verbatim}
+Now we can replace the long proof of \verb|complicated| with \verb|admit. Defined.|
+
+Conversely, we might have a file where the error message relies on \emph{not} being able to unfold a lemma whose proof script ended with \verb|Qed|.
+(For a very silly example, consider prefixing an essential tactic with \verb+unfold complicated ||+.)
+Hence we must support both \verb|Admitted| and \verb|admit. Defined.| as replacements.
+
+\todo{this subsubsection deserves a better structure, I think\ldots}
+
+Additionally, we may want to admit some parts of the proof script without replacing all of it.
+Currently, we use a rather conservative heuristic:
+Coq has a tactical \verb|abstract| which executes the tactic it is passed as an argument, and makes the resulting proof term opaque.
+Such subproofs should be able to be replaced with \verb|admit| without changing the behavior of the proof script.
+To make this change more likely to succeed, we define \verb|admit| as \verb|abstract case proof_admitted| rather than \verb|clear; abstract case proof_admitted|.
+
+Here is a case where this matters:
+Consider the file
+\begin{verbatim}
+Section foo.
+  Context (a : nat).
+  Definition foo : nat.
+  Proof.
+    refine (_ + _).
+    all: abstract exact a.
+  Defined.
+End foo.
+Goal True.
+  pose (foo 5) as x.
+  lazymatch (eval unfold x, foo in x) with
+  | ?x + ?y => idtac
+  | ?v => fail 0 "bad" v
+  end.
+\end{verbatim}
+If we replace \verb|abstract exact a| with \verb|clear; abstract case proof_admitted|, then the definition \verb|foo| no longer depends on \verb|a|, and the \verb|pose| line will fail with a type error.
+
+In the future, when we do more fine-grained parsing of the Coq document structure, we may want to try replacing more subparts of proof scripts with \verb|admit|.
+See \autoref{sec:future-work} for more details.
+
+There are two more cavi
 \todo{HERE}
+
+\subsubsection{Coupled Removal}
+\todo{this section}
 
 There are a couple of exceptions to this.
 The primary one is statements in Coq's \verb|Program| mode.\todo{cite}
 For example, removing
+
+
+\subsubsection{More Strategies for Minimizing Files}
+\todo{this section}
+
+\subsubsection{When are two error messages ``the same''?}
+\todo{this section}
+
+\subsubsection{Inlining Dependencies}
+\todo{this section}
+
 
 \begin{comment}
 
@@ -572,7 +674,7 @@ Various issues that prevent complete inlining of files
 
 \end{comment}
 
-\section{Future Work}
+\section{Future Work}\label{sec:future-work}
 \todo{organize this section}
 
 Rather than emitting the information to stderr when wrapping coqc, we could emit it to a file (have to be careful about paralell builds, though).
