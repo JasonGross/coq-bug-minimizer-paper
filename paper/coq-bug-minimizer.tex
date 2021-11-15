@@ -525,7 +525,8 @@ Consider the file:
 Lemma complicated : True = False.
 Proof.
   (* ... *)
-  (* thousands of lines of proof taking minutes to compile *)
+  (* thousands of lines of proof
+     taking minutes to compile *)
   (* ... *)
 Qed.
 Lemma boom : True -> False.
@@ -551,7 +552,8 @@ Consider the file:
 Lemma complicated : True = False.
 Proof.
   (* ... *)
-  (* thousands of lines of proof taking minutes to compile *)
+  (* thousands of lines of proof
+     taking minutes to compile *)
   (* ... *)
 Defined.
 Lemma boom : True -> False.
@@ -561,7 +563,7 @@ Proof.
   rewrite H.
 \end{verbatim}
 If we replace the proof script of \verb|complicated| with just \verb|Admitted.|, then the line \verb|unfold complicated in H| will fail with \verb|Error: complicated is opaque|.
-We can work around this issue by copying the \verb|admit| tactic from \verb|Coq.Compat.AdmitAxiom|, which is effectively a tactic version of \verb|Admitted|:
+We can work around this issue by copying the \verb|admit| tactic from \texttt{Coq.Compat.AdmitAxiom}, which is effectively a tactic version of \verb|Admitted|:
 \begin{verbatim}
 Axiom proof_admitted : False.
 Ltac admit := clear; abstract case proof_admitted.
@@ -572,13 +574,25 @@ Conversely, we might have a file where the error message relies on \emph{not} be
 (For a very silly example, consider prefixing an essential tactic with \verb+unfold complicated ||+.)
 Hence we must support both \verb|Admitted| and \verb|admit. Defined.| as replacements.
 
+While we could just \verb|Require Import Coq.Compat.AdmitAxiom| to get this \verb|admit| tactic, there are two cases where this would not work:
+(1) in libraries such as HoTT and UniMath, where the standard library is not loaded, we cannot assume that \texttt{Coq.Compat.AdmitAxiom} will be found;
+(2) in versions of Coq prior to 8.5%
+\footnote{%
+We supported Coq 8.4 until Ubuntu 12.04 LTS (Precise Pangolin) was no longer supported on CI servers.
+Coq 8.4 required OCaml < 4.05 to build, due to a change in OCaml string delimiters in comments.
+Ubuntu 12.04 was the last version of Ubuntu to have OCaml < 4.05.
+We're currently in the process of re-adding support for Coq 8.4, though, via the docker-coq GitHub action.%
+}%
+, the \verb|AdmitAxiom| file did not exist (instead, the \verb|admit| tactic available by default performed this function).
+Hence we provide our own tactic, rather than importing one from the standard library.
+
 \todo{this subsubsection deserves a better structure, I think\ldots}
 
 Additionally, we may want to admit some parts of the proof script without replacing all of it.
 Currently, we use a rather conservative heuristic:
 Coq has a tactical \verb|abstract| which executes the tactic it is passed as an argument, and makes the resulting proof term opaque.
 Such subproofs should be able to be replaced with \verb|admit| without changing the behavior of the proof script.
-To make this change more likely to succeed, we define \verb|admit| as \verb|abstract case proof_admitted| rather than \verb|clear; abstract case proof_admitted|.
+To make this change more likely to succeed, we define \verb|admit| as \verb|abstract case proof_admitted| rather than \texttt{clear; abstract case proof\_admitted}.
 
 Here is a case where this matters:
 Consider the file
@@ -598,29 +612,342 @@ Goal True.
   | ?v => fail 0 "bad" v
   end.
 \end{verbatim}
-If we replace \verb|abstract exact a| with \verb|clear; abstract case proof_admitted|, then the definition \verb|foo| no longer depends on \verb|a|, and the \verb|pose| line will fail with a type error.
+If we replace \verb|abstract exact a| with \texttt{clear; abstract case proof\_admitted}, then the definition \verb|foo| no longer depends on \verb|a|, and the \verb|pose| line will fail with a type error.
 
 In the future, when we do more fine-grained parsing of the Coq document structure, we may want to try replacing more subparts of proof scripts with \verb|admit|.
 See \autoref{sec:future-work} for more details.
 
-There are two more cavi
-\todo{HERE}
+There are three more corner-cases which result in us using slightly different code in practice.
+
+First, because libraries like HoTT don't load the standard library by default, we need to declare our own \verb|False| inductive and we must also load support for Ltac.
+In all versions of Coq prior to 8.12, \verb|Require Import Coq.Init.Notations| was adequate to get Ltac.
+In Coq 8.12 and later, we need to either \verb|Require Import Coq.Init.Ltac| (which did not exist in prior versions of Coq) or \verb|Declare ML Module "ltac_plugin"|.
+We choose the latter of these two, for compatibility with developments like HoTT which may not have a \verb|Coq.Init.Ltac| file available.
+
+Note that we need to issue \verb|Inductive False : Prop := .| rather than \verb|Inductive False := .|, because any developments that pass \verb|-set "Universe Polymorphism"| on the command-line will otherwise end up with a polymorphic \verb|False| inductive which will introduce extra universes when using the \verb|admit| tactic which may break some files.
+(This was encountered in the wild; see \url{https://github.com/JasonGross/coq-tools/issues/74} for details.\todo{better urls?})
+
+Second, because the file we're minimizing may make use of \verb|False| and may rely on it being syntactically equal to the version in Coq's standard library \todo{does this need an example?}, we must wrap our \verb|Inductive False| in a module that is not exported to the file.
+This means that the \verb|admit| tactic must itself be in a module that is exported.
+We could alternatively qualify the version of \verb|False| that we're using, but this would prevent removal of our \verb|Inductive False|, and we would prefer to be able to remove this line when the Coq standard library is available.
+The code we now have, after the Ltac support snippet, is:
+\begin{verbatim}
+Module Export AdmitTactic.
+Module Import LocalFalse.
+Inductive False : Prop := .
+End LocalFalse.
+Axiom proof_admitted : False.
+Ltac admit := abstract case proof_admitted.
+End AdmitTactic.
+\end{verbatim}
+
+Third, and finally, the line \texttt{Ltac admit := abstract case proof\_admitted} errors in Coq 8.4 with ``Error: Reserved Ltac name admit.''
+Hence we use \texttt{Tactic Notation "admit" := abstract case proof\_admitted} instead.
+
+Thus the fragment we add for the \verb|admit| tactic is ultimately:
+\begin{verbatim}
+Module Export AdmitTactic.
+Module Import LocalFalse.
+Inductive False : Prop := .
+End LocalFalse.
+Axiom proof_admitted : False.
+Tactic Notation "admit"
+  := abstract case proof_admitted.
+End AdmitTactic.
+\end{verbatim}
 
 \subsubsection{Coupled Removal}
-\todo{this section}
 
-There are a couple of exceptions to this.
-The primary one is statements in Coq's \verb|Program| mode.\todo{cite}
-For example, removing
+\paragraph{Program Mode}
+We saw above that proof scripts could not be removed one statement at a time, but instead had to be transformed all at once.
+Coq has a \verb|Program| mode which results in even more coupling: removing one proof script at a time is not enough to remove the \verb|Program Definition|.
 
+Consider, for example:
+\begin{verbatim}
+Require Import Coq.Program.Tactics.
+Section __.
+Context (arg : True).
+Lemma complicated (pf : arg = arg) : True = False.
+Admitted.
+Axiom bad : False.
+Definition another_False := False.
+Program Definition irrelevant
+  : another_False /\ another_False := conj _ _.
+Next Obligation. exact bad. Qed.
+Next Obligation. exact bad. Qed.
+End __.
+Lemma boom : True -> False.
+Proof. rewrite (complicated I eq_refl).
+\end{verbatim}
+We can easily minimize this into
+\begin{verbatim}
+Require Import Coq.Program.Tactics.
+Section __.
+Context (arg : True).
+Lemma complicated (pf : arg = arg) : True = False.
+Admitted.
+Definition another_False := False.
+Program Definition irrelevant
+  : another_False /\ another_False := conj _ _.
+Next Obligation. Admitted.
+Next Obligation. Admitted.
+End __.
+Lemma boom : True -> False.
+Proof. rewrite (complicated I eq_refl).
+\end{verbatim}
+However, at this point, we cannot remove anything else.
+
+If we remove \verb|End __|, we get an error message indicating that \verb|complicated| expects a proof of type \verb|arg = arg|, not two arguments, one of type \verb|True| and the second a proof that the first equals itself.
+If we remove either of the \verb|Next Obligation. Admitted.| blocks, we get an error message indicating that we cannot close a section with unsolved obligations.
+If we remove the \verb|Program Definition irrelevant| line, we get an error indicating that there are no obligations to be solved.
+
+We cannot just look for \verb|Program| statements followed by \verb|Obligation| blocks to remove, because \verb|Obligation| blocks can be interleaved with other definitions.
+
+Luckily, we can replace \verb|Next Obligation. Admitted.| with \verb|Admit Obligations|.
+Since \verb|Admit Obligations| is luckily a noop when there are no obligations to admit, we can do this to both \verb|Next Obligation. Admitted.| blocks.
+After performing this transformation, we can remove the \verb|Program Definition| line (without needing to remove the \verb|Admit Obligations| lines), and thereafter minimize the file to
+\begin{verbatim}
+Section __.
+Context (arg : True).
+Lemma complicated (pf : arg = arg) : True = False.
+Admitted.
+End __.
+Lemma boom : True -> False.
+Proof. rewrite (complicated I eq_refl).
+\end{verbatim}
+
+\paragraph{Sections}
+Removing statements one at a time will not always be able to remove empty sections (nor empty \verb|Module|s or \verb|Module Type|s).
+
+For example, consider the file
+\begin{verbatim}
+Section useless.
+End useless.
+Module useful.
+Lemma complicated : True = False.
+Admitted.
+End useful.
+Lemma boom : True -> False.
+Proof. rewrite useful.complicated.
+\end{verbatim}
+
+This file can be minimized to
+\begin{verbatim}
+Section useless.
+End useless.
+Module useful.
+Lemma complicated : True = False.
+Admitted.
+Lemma boom : True -> False.
+Proof. rewrite useful.complicated.
+\end{verbatim}
+because Coq allows refering to constants in the currently-open module via qualified names.
+
+However, it cannot be minimized further, because if we remove \verb|End useless|, then we get an error message indicating that modules are forbidden inside sections.
+
+Hence we have a pass dedicated to removing empty sections, modules, and module types.
+
+\paragraph{Exporting Modules}
+Consider the file
+\begin{verbatim}
+Module foo.
+Lemma complicated : True = False.
+Admitted.
+End foo.
+Import foo.
+Lemma boom : True -> False.
+Proof. rewrite complicated.
+\end{verbatim}
+We cannot remove \verb|Import foo| because then \verb|complicated| can't be found.
+But we cannot remove the \verb|End foo| because then \verb|foo| can't be found when trying to \verb|Import foo|.
+
+The solution to this coupling is to replace \verb|Module foo| with \verb|Module Import foo| or \verb|Module Export foo|, which simultaneously opens the module and declares that it is to be imported (or exported) after then \verb|End| statement.
+This allows us to remove \verb|Import foo| (because \verb|foo| is already imported), and after that we can remove \verb|End foo| and then \verb|Module foo|, allowing us to minimize this file.
+
+We choose to do \verb|Export| rather than \verb|Import| because it allows for removal of some \verb|Import| statements even when chaining exports.
+Consider, for example, the file
+\begin{verbatim}
+Module A.
+  Module A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module A.
+    Axiom A : Set.
+  End A.
+End B.
+Module A1. Export A. End A1.
+Module B1. Export B. End B1.
+Module Import A2. Import A1. Import A.
+ Definition A2 := A. End A2.
+Module Import B2. Import B1. Import A.
+ Definition B2 := A. End B2.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+If we use \verb|Export|, then we can turn this file into
+\begin{verbatim}
+Module A.
+  Module Export A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module Export A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Export A1. Export A. End A1.
+Module Export B1. Export B. End B1.
+Module Import A2. Import A1. Import A.
+ Definition A2 := A. End A2.
+Module Import B2. Import B1. Import A.
+ Definition B2 := A. End B2.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+whence we can minimize it to
+\begin{verbatim}
+Module Export A.
+  Axiom A : Set.
+End A.
+Module B.
+  Module Export A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Export A1. Export A. End A1.
+Export B.
+Module Import A2. Import A1.
+ Definition A2 := A. End A2.
+Definition B2 := A.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+However, if we had used \verb|Import| instead, we get the file
+\begin{verbatim}
+Module A.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Import A1. Export A. End A1.
+Module Import B1. Export B. End B1.
+Module Import A2. Import A1.
+ Import A. Definition A2 := A. End A2.
+Module Import B2. Import B1.
+ Import A. Definition B2 := A. End B2.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+which can only be minimized to
+\begin{verbatim}
+Module A.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Import A1. Export A. End A1.
+Export B.
+Module Import A2. Import A1. Import A.
+ Definition A2 := A. End A2.
+Import A. Definition B2 := A.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+Granted, the additional removal of \verb|Import A| and one of the \verb|Module A| \ldots\ \verb|End A| pairs is not all that impressive.
+On the other hand, using \verb|Export| instead of \verb|Import| costs nothing, and we must choose one of them.
 
 \subsubsection{More Strategies for Minimizing Files}
-\todo{this section}
+
+\paragraph{Splitting Definitions}
+Coq permits definitions to give the body at the same time as the type.
+Consider, for example, the file
+\begin{verbatim}
+Definition complicated : True = False
+  := (* thousands of lines of proof term
+        taking minutes to compile *).
+Lemma boom : True -> False.
+Proof. rewrite complicated.
+\end{verbatim}
+We would like to be able to admit this proof term, too.
+To do this, there is a pass in the minimizer that attempts to split apart such definitions into
+\begin{verbatim}
+Definition complicated : True = False.
+refine (
+     (* thousands of lines of proof term
+        taking minutes to compile *)
+  ).
+Defined.
+Lemma boom : True -> False.
+Proof. rewrite complicated.
+\end{verbatim}
+to enable subsequent admitting of proof scripts.
+
+This pass relies on the \verb|refine| tactic, which allows users to give a proof term in proof mode.
+
+\paragraph{Early Removal of Unused Constants}
+There are some likely-to-succeed steps that we try early on, which are superseded by removing each and every structured block one at a time, but may result in faster minimization.
+The primary example of this sort of step is removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
+
+\paragraph{Splitting \texttt{Import} and \texttt{Export}s}
+It may be the case that users import modules that they never use, such as in \texttt{Import unused1 used unused2}.
+To allow eventual removal of \verb|unused1| and \verb|unused2| even when the \verb|Import used| statement cannot be removed, we have a pass that attempts to split such statements into separate \verb|Import| statements, resulting in \texttt{Import unused1. Import used. Import unused2.}
+
+\paragraph{Splitting \texttt{Require}s}
+Much like \verb|Import| and \verb|Export| statements, we also want to split \verb|Require| statements, and furthermore want to split \verb|Require Import foo| into \texttt{Require foo. Import foo.}
+This last splitting will allow us to inline \verb|foo|, as described in \autoref{sec:inline-deps}.
+However, there are three subtleties associated with such statements.
+
+First, it may be the case that our bug depends on \verb|Require foo| only because the file \verb|foo.v| contains \verb|Require bar|, and in fact the bug only needs access to the constants defined in \verb|bar.v|.
+Hence we have a pass that performs the transitive recursive closure of the dependency relation, and inserts \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
+Note that if we were more careful, we would not insert all dependencies at the top of the file, but instead at each \verb|Require| statement, because \verb|Require| has side-effects that may cause the file to fail to compile; we'll discuss this more in \autoref{sec:inline-deps}.
+Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
+\todo{Does this need more explanation?}
+
+Second, it may be the case that \verb|Require Import foo bar baz| is not the same as \texttt{Require foo. Require bar. Import foo. Import bar.}.
+It may be the case that \verb|Import foo| results in a different module \verb|bar| becoming available.
+Alternatively, it may be the case that \verb|Require bar| transitively requires another \verb|foo| file which is different than the one that that is resolved by default as \verb|Require foo|, and then \verb|Import foo| will choose the most recently \verb|Require|d module \verb|foo|.
+\todo{Does this require a more detailed, worked-out example?}
+
+The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
+These \verb|.glob| files are primarily used to create hyperlinked html versions of \verb|.v| files, but we can co-opt them to get the information we need.
+Explaning by example, for a file named \verb|foo.v| containing only the line
+\begin{verbatim}
+Require Import Arith.
+\end{verbatim}
+the \verb|.glob| file will be something like
+\begin{verbatim}
+DIGEST ddbce77a666953818a56ed89d87b6c03
+Ffoo
+R15:19 Coq.Arith.Arith <> <> lib
+\end{verbatim}
+The lines we're looking for will always match the regular expression \verb|R[0-9]+:[0-9]+ [^ ]+ <> [^ ]+ [^ ]+|.
+The first number is the \emph{byte} location of the beginning of the module path (\verb|Arith|, in our case) in the source.
+(``Byte'' is emphasized because it means that we must use bytes for indexing, rather than the unicode strings the bytes encode.)
+The second number is the byte location of the final character in the module path (the ``h'' in our case).
+The first textual component is the full module directory path, which is what we use to fully qualify the \verb|Require|/\verb|Import|/\verb|Export|.
+The second textual component is what gets appended to the directory path, and is only relevant for \verb|Import| and \verb|Export| statements which are not also \verb|Require| statements.
+For example, if we have a \verb|Module foo| in a file \verb|bar.v|, then for \verb|Import foo.bar| we might get \verb|Library.bar| in the directory path and \verb|foo| in this second textual component.
+The third textual component, \verb|<>| in our case, is information about the object being used or defined.
+Finally, the \verb|lib| indicates that this is a library object that we are dealing with.
+
+By generating a \verb|.glob| file for our buggy file and reading it, we can determine the absolute paths of all \verb|Require|, \verb|Import|, and \verb|Export| statements, allowing us to split them as needed without worrying about changes to name resolution.
+
+Third and finally, Coq supports statements such as \verb|From Coq Require Import Arith|.
+Na\"ively replacing this with \verb|From Coq Require Import Coq.Arith.Arith| results in an error.
+Hence, after absolutizing module paths for a given statement, we carefully remove the \texttt{From \ldots} portion of the statement.
 
 \subsubsection{When are two error messages ``the same''?}
 \todo{this section}
 
-\subsubsection{Inlining Dependencies}
+\subsubsection{Inlining Dependencies}\label{sec:inline-deps}
 \todo{this section}
 
 
