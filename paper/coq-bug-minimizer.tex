@@ -945,7 +945,53 @@ Na\"ively replacing this with \verb|From Coq Require Import Coq.Arith.Arith| res
 Hence, after absolutizing module paths for a given statement, we carefully remove the \texttt{From \ldots} portion of the statement.
 
 \subsubsection{When are two error messages ``the same''?}
-\todo{this section}
+The following are ways that two error messages can differ while still being considered ``the same''.
+
+\paragraph{Universe inconsistency explanations}
+\todo{turn code into text}
+\begin{verbatim}
+        re_string = re.sub(r'([Uu]niverse\\ inconsistency.*) because(.|\n)*',
+                           r'\1 because.*',
+                           re_escape(error_string))
+        re_string = re.sub(r'(\s)[^\s]+?\.([0-9]+)',
+                           r'\1[^\\s]+?\\.\2',
+                           re_string)
+\end{verbatim}
+\paragraph{Unsatisfied constraints}
+\todo{turn code into text}
+\begin{verbatim}
+        re_string = re.sub(r'Error:\\ Unsatisfied\\ constraints:.*(?:\n.+)*.*\\\(maybe\\ a\\ bugged\\ tactic\\\)',
+                           r'Error:\\ Unsatisfied\\ constraints:.*(?:\\n.+)*.*\\(maybe\\ a\\ bugged\\ tactic\\)',
+                           re_escape(error_string),
+                           re.DOTALL)
+\end{verbatim}
+\paragraph{Unbound universes}
+\todo{turn code into text}
+\begin{verbatim}
+        re_string = re.sub(r'Universe\\ [^ ]*\\ is\\ unbound',
+                           r'Universe\\ [^ ]*\\ is\\ unbound',
+                           re_escape(error_string))
+\end{verbatim}
+\paragraph{File names}
+\todo{turn code into text}
+\begin{verbatim}
+    re_string = re.sub(r'tmp(?:[A-Za-z_\d]|\\_)+',
+                       r'[A-Za-z_\\d\\.]+',
+                       re_string)
+\end{verbatim}
+\paragraph{Numbering}
+\todo{turn code into text}
+\begin{verbatim}
+    if r'Universe\ instance\ should\ have\ length\ ' not in re_string:
+        re_string = re.sub(r'[\d]+',
+                           r'[\\d]+',
+                           re_string)
+
+\end{verbatim}
+
+\paragraph{Whitespace}
+In some cases, minor changes in any of the above ways might result in different word-wrapping.
+Hence we don't want to consider whitespace changes as significant changes in the error message.
 
 \subsubsection{Inlining Dependencies}\label{sec:inline-deps}
 \todo{this section}
