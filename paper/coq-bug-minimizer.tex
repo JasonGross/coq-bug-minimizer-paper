@@ -339,13 +339,6 @@ Note that the definition \texttt{two} has been removed.
 Here it suffices to (a) remove all statements after the error, and (b) try removing each line one at a time.
 Since Coq is mostly not sensitive to whitespace, we want to remove statements, rather than lines.
 
-In almost all Coq code (exception: custom grammar entries, inline elpi code, and the standalone statements \verb|{| and \verb|}|), a statement is any sequence of characters which ends with a \verb|.| or a \verb|...| followed by either whitespace of the end of the document, where the ending full stop(s) are neither in the middle of a string (delimited by \verb|"|) nor a comment.
-In Coq, comments begin with \verb|(*| and end with \verb|*)|.
-Comments are nested, so \verb|(* (* *) still in a comment *)| is all one comment.
-In Coq, strings start and end with \verb|"|.
-Furthermore, strings can occur in comments, so \verb|(* "(*" *)| is a well-balanced comment.
-Note, however, that \verb|*)| is a valid token outside of comments, such as \verb|(simpl in *); idtac|.
-
 We may someday depend on a proper Coq parser (such as SerAPI), but we currently do in-house parsing.
 Even if we move to depending on a proper parser, we will sometimes have to do transformations on files where we cannot do full parsing.
 See \autoref{sec:glob-for-inline-installed-files-without-parsing} for more details.
@@ -354,7 +347,7 @@ Furthermore, we continue to support versions of Coq all the way back to 8.5, in 
 
 We currently have three methods of parsing Coq documents:
 \begin{enumerate}
-\item Parsing based on the details laid out above.
+\item Parsing implemented in-house in Python.
 \item Using \texttt{coqc -time} to get byte ranges for each statement.
   Note that these are \emph{byte} ranges and not character ranges, so we have to be careful when documents contain unicode.
 \item Using \texttt{coqtop -emacs -time}, which, in addition to providing byte ranges for statements, also provides information about which lines are part of which definitions (via the emacs prompt), and which lines close definitions (via the \texttt{\emph{foo} is defined} message).
@@ -807,26 +800,6 @@ Alternatively, it may be the case that \verb|Require bar| transitively requires 
 
 The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
 These \verb|.glob| files are primarily used to create hyperlinked html versions of \verb|.v| files, but we can co-opt them to get the information we need.
-Explaning by example, for a file named \verb|foo.v| containing only the line
-\begin{verbatim}
-Require Import Arith.
-\end{verbatim}
-the \verb|.glob| file will be something like
-\begin{verbatim}
-DIGEST ddbce77a666953818a56ed89d87b6c03
-Ffoo
-R15:19 Coq.Arith.Arith <> <> lib
-\end{verbatim}
-The lines we're looking for will always match the regular expression \verb|R[0-9]+:[0-9]+ [^ ]+ <> [^ ]+ [^ ]+|.
-The first number is the \emph{byte} location of the beginning of the module path (\verb|Arith|, in our case) in the source.
-(``Byte'' is emphasized because it means that we must use bytes for indexing, rather than the unicode strings the bytes encode.)
-The second number is the byte location of the final character in the module path (the ``h'' in our case).
-The first textual component is the full module directory path, which is what we use to fully qualify the \verb|Require|/\verb|Import|/\verb|Export|.
-The second textual component is what gets appended to the directory path, and is only relevant for \verb|Import| and \verb|Export| statements which are not also \verb|Require| statements.
-For example, if we have a \verb|Module foo| in a file \verb|bar.v|, then for \verb|Import foo.bar| we might get \verb|Library.bar| in the directory path and \verb|foo| in this second textual component.
-The third textual component, \verb|<>| in our case, is information about the object being used or defined.
-Finally, the \verb|lib| indicates that this is a library object that we are dealing with.
-
 By generating a \verb|.glob| file for our buggy file and reading it, we can determine the absolute paths of all \verb|Require|, \verb|Import|, and \verb|Export| statements, allowing us to split them as needed without worrying about changes to name resolution.
 
 Third and finally, Coq supports statements such as \verb|From Coq Require Import Arith|.
