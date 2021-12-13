@@ -902,78 +902,55 @@ Proof. rewrite complicated.
 
 \paragraph{Multiple Modules}
 
-\todo{this section}
+When we want to inline multiple files in the same project, the na\"ive strategy would result in multiple modules of the same name.
+Coq does not allow multiple modules with the same qualified name, so to avoid this issue, we wrap all modules in uniquely-named placeholder toplevel modules.
+\todo{example here}
 
 \paragraph{Nested Modules vs.\ \texttt{Include}}
 
-\todo{this section}
+In some corner cases, Coq behaves differently depending on how many modules some code is wrapped in.
+\todo{cite Coq issue}
+To work around this, instead of wrapping the code in nested modules, we can wrap it in a single mangled module, and then \tettt{Include} that module into one of the correct qualified name.
+\todo{example}
+
+However, this strategy will result sometimes result in failure of code that refers to the currently-being-defined module to qualify names.
+\todo{example}
+
+Therefore, we take the overall approach of trying all the different ways of inlining dependencies, and using whichever one works, since no single strategy is currently a silver bullet.
 
 \paragraph{Adjusting References}
 
-\todo{this section}
+When we inline a file, the flags that were used to compile that file might be different from the flags used to compile the buggy file we're minimizing.
+While we can't do anything about flags that change the behavior of code, such as \texttt{-set 'Universe Polymorphism'}, the most common flags that differ will be flags defining the search path and module binding names.
+\todo{example}
+In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
+We use this information when inlining the file to account for such differences.
+
+Additionally, there are some cases where this information allows us to adjust qualified references to the module currently being defined; in this case, we try replacing such references with the mangled name that we're using in wrapping.
+\todo{example}
 
 \paragraph{Where do the \texttt{Require}s go?}
 
-\todo{this section}
+Coq warns that \texttt{Require}s inside modules are deprecated.
+While we haven't encountered any issues from wrapping additional modules around \texttt{Require}s, we do try strategies of moving the \texttt{Require}s up to the top of the file.
+\todo{exmaple?}
 
 \paragraph{Diamond Problems and Side-Effects of \texttt{Require}}
 
-\todo{this section}
+The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
+\todo{examples?}
+As a result, there's no bullet-proof method of merging files.
+However, we can ameliorate the issue by trying multiple strategies of merging files.
+We try inserting the file being inlined at the top of the file, as well as at the location where it's \texttt{Require}d.
+In the future, we might also want to try moving \texttt{Require}s up higher in the file, to try to handle more situations.
 
 \paragraph{All at Once, or One at a Time?}
 
-\todo{this section}
+We have a flag that allows inlining dependencies all at once.
+While this was originally the way all files were minimized, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
+As a result, the current default behavior is to minimize the current file before inlining other files.
+\todo{example?}
 
-
-\begin{comment}
-
-\subsection{Adaptations specific to Coq}
-Coq has a number of quirks that enable efficient bug minimization, as well as a few quirks that seriously hinder bug minimization.
-The quirks that enable efficient bug minimization are:
-\begin{itemize}
-\item lack of forward-references (definitions cannot refer to any identifiers that have not yet been added to the global environment);
-\item emitting text files that describe how to hyperlink identifiers, for documentation purposes;
-\item ending every comamnd in either one or three full stops, with only two exceptions (\verb|{| and \verb|}|);
-\item
-\end{itemize}
-\subsubsection{Adaptations enabled by lack of forward references}
-Because Coq forbids forward references, we can remove all lines after the line where the error occurs without risking a change in error messages.
-
-Additionally, we can, by and large, remove lines in reverse order.
-That is, if we removing line $n$ changes the error message, then first removing line $m$ for $m < n$ will almost never result in a success (that is, a lack of error message change) from removing line $n$ later.
-This allows us to rely on a single work-horse pass that removes lines, one at a time, starting from the end of the file.
-
-We say ``lines'' above, but in fact a line (a string of characters ended by a newline) is not the natural statement
-\subsubsection{Comment Stripping}
-
-
-
-
-
-
-
-Specific adaptations to delta debugging for working with Coq scripts, including
-admitting proofs
-splitting imports and requires
-working in units of "an entire proof script / definition"
-being able to work from the end of the file, due to lack of cyclic dependencies (with some minor exceptions, such as program obligations)
-the work that it takes to inline one file into another
-What specific features (both ones that are already present and ones that are requested) are necessary for producing self-contained single-file test-cases
-Integration of delta-debugging into CI failures, in particular:
-This is feasible compute-wise (+ some graphs / stats on typical minimization runtime)
-We found an interaction mode that seems to work well (+ some feedback on other interaction modes)
-(2)
-I'm not sure what the overall story for the paper should be ("we did a cool thing, here it is"? or "we did a useful thing, here's what it took and what you need to know if you want to do a similar thing"? or something else?)
-Here are some sections that are probably worth including:
-What the bug minimizer does (Coq project + error message -> minimal test case) and how it works (delta debugging on maintaining the error message + various details)
-How the integration with Coq's CI and GH Actions and coqbot works and what it does (allows PR authors to turn "this failed" into an actually useful test-case that can be further minimized and/or included in the test-suite and/or mined for insight into what changed, maybe note also that this improves on debuggability of error messages --- the error message + source is generally not enough to figure out what's going wrong when the CI fails, Coq doesn't have unit tests because ???, this closes the gap)
-Future work including:
-Automatic minimization and maintenance of test-cases for bugs reported on Coq's issue tracker
-Multi-file minimization
-Better support for when bumping the branch targeted by the CI causes a failure (rather than it being a change in Coq)
-Various issues that prevent complete inlining of files
-
-\end{comment}
 
 \section{Future Work}\label{sec:future-work}
 \todo{organize this section}
@@ -1020,6 +997,9 @@ See \url{https://github.com/JasonGross/coq-tools/issues/87}.
 
 Remove well-balanced structures (sections, modules, etc) before we try to remove lines in those structures.
 See \url{https://github.com/JasonGross/coq-tools/issues/89}.
+
+Try moving \texttt{Require}s up higher in the file, to try to handle more side-effects of \texttt{Require}.
+See also \url{https://github.com/JasonGross/coq-tools/issues/78}.
 
 \section{Evaluation of Results}
 
