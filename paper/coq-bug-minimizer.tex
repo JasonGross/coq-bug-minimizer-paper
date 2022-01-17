@@ -910,7 +910,7 @@ Coq does not allow multiple modules with the same qualified name, so to avoid th
 
 In some corner cases, Coq behaves differently depending on how many modules some code is wrapped in.
 \todo{cite Coq issue}
-To work around this, instead of wrapping the code in nested modules, we can wrap it in a single mangled module, and then \tettt{Include} that module into one of the correct qualified name.
+To work around this, instead of wrapping the code in nested modules, we can wrap it in a single mangled module, and then \texttt{Include} that module into one of the correct qualified name.
 \todo{example}
 
 However, this strategy will result sometimes result in failure of code that refers to the currently-being-defined module to qualify names.
