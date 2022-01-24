@@ -1,7 +1,93 @@
-@phdthesis{zimmermann:tel-02451322,
-  TITLE = {{Challenges in the collaborative evolution of a proof language and its ecosystem}},
-  AUTHOR = {Zimmermann, Th{\'e}o},
-  URL = {https://hal.inria.fr/tel-02451322},
-  SCHOOL = {{Universit{\'e} de Paris}},
-  YEAR = {2019}
+@PhdThesis{zimmermann:tel-02451322,
+  author = {Zimmermann, Théo},
+  school = {{Universit{\'e} de Paris}},
+  title  = {{Challenges in the collaborative evolution of a proof language and its ecosystem}},
+  year   = {2019},
+  url    = {https://hal.inria.fr/tel-02451322},
 }
+
+@Misc{coqpl-15-coq-bug-minimizer,
+  author           = {Jason Gross},
+  month            = jan,
+  note             = {Presented at \href{https://coqpl.cs.washington.edu/2014/07/31/}{The First International Workshop on Coq for PL (CoqPL'15)}},
+  title            = {Coq Bug Minimizer},
+  year             = {2015},
+  abstract         = {Are bugs the bane of your existence? Do you dread Coq upgrades, because they mean you'll have to spend days tracking down subtle failures deep in your developments? Have you ever hit an anomaly that just wouldn't go away, and wished you understood what triggered it? Have you ever been tormented by two blocks of code that looked identical, but behaved differently? Do you wish you submit more helpful error reports, but don't want to put in the time to construct minimal examples? If you answered ``yes'' to any of these questions, then the Coq Bug Minimizer is for you! Clone your own copy at \url{https://github.com/JasonGross/coq-bug-finder}.},
+  modificationdate = {2014-10-07T00:00:00},
+  owner            = {Jason},
+  reviews          = {https://jasongross.github.io/papers/2015-coq-bug-minimizer-reviews.txt},
+  url              = {https://jasongross.github.io/papers/2015-coq-bug-minimizer.pdf},
+}
+
+@InProceedings{Cleve2000,
+  author        = {Holger Cleve and Andreas Zeller},
+  booktitle     = {Proceedings of the Fourth International Workshop on Automated Debugging, {AADEBUG} 2000, Munich, Germany, August 28-30th, 2000},
+  title         = {Finding Failure Causes through Automated Testing},
+  year          = {2000},
+  editor        = {Mireille Ducassé},
+  archiveprefix = {arxiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aadebug/CleveZ00.bib},
+  eprint        = {cs/0012009},
+  primaryclass  = {cs},
+  timestamp     = {Thu, 09 Jan 2020 16:10:06 +0100},
+}
+
+@Book{zeller2009programs,
+  author    = {Andreas Zeller},
+  publisher = {Elsevier},
+  title     = {Why Programs Fail: A Guide to Systematic Debugging},
+  year      = {2009},
+}
+
+@InProceedings{Burger2005,
+  author    = {Burger, Martin and Lehmann, Karsten and Zeller, Andreas},
+  booktitle = {Companion to the 20th Annual ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications},
+  title     = {Automated Debugging in Eclipse},
+  year      = {2005},
+  address   = {New York, NY, USA},
+  pages     = {184--185},
+  publisher = {Association for Computing Machinery},
+  series    = {OOPSLA '05},
+  abstract  = {Your program fails. What is the cause of this failure? In this demo, we present two delta debugging plug-ins for the Eclipse environment which isolate failure causes in the program history and in the program's execution.},
+  doi       = {10.1145/1094855.1094926},
+  isbn      = {1595931937},
+  keywords  = {testing, programming environments, program comprehension, debugging, version control},
+  location  = {San Diego, CA, USA},
+  numpages  = {2},
+}
+
+@Misc{Wilkerson2006,
+  author   = {Daniel S. Wilkerson and Scott McPeak},
+  month    = feb,
+  note     = {Presented at \href{https://web.archive.org/web/20071224085116/http://www.codecon.org/2006/program.html}{CodeCon 2006}},
+  title    = {{d}elta - Delta assists you in minimizing ``interesting'' files subject to a test of their interestingness},
+  year     = {2006},
+  abstract = {History: Scott and I were working on various static-analysis projects (our research group: http://osq.cs.berkeley.edu/). We had large inputs that would cause our tools to fail and minimizing by hand was hopeless, so I we wrote delta. With delta, no matter how big you start with, you always end up with about a page or two of code, even a quarter-million line input we tried once. Microsoft Research heard about it through the grapevine and asked someone to come to my office and ask me if I would release it as open source, so I did. Maybe they didn't want to write an email to me endorsing an open source project on record? I don't know. Now this thing is everywhere: it is taught in the Stanford and Berkeley software engineering classes and the gcc people use it. See the website.
+
+Our implementation is based on the Delta Debugging algorithm: http://www.st.cs.uni-sb.de/dd/
+
+Demo: I will probably minimize a file while wearing no clothes. Just kidding; I wouldn't actually minimize a file in public.
+
+Future Plans: The gcc people seem to like it and one of them has checkin privileges so I suppose it will keep getting better. I have an idea to generalize the algorithm. Most people have ideas on how to make it work better for *their* use of it, but these schemes tend to make it worse in general.},
+  url      = {https://github.com/dsw/delta},
+}
+
+@InProceedings{10.1145/587051.587053,
+  author    = {Zeller, Andreas},
+  booktitle = {Proceedings of the 10th ACM SIGSOFT Symposium on Foundations of Software Engineering},
+  title     = {Isolating Cause-Effect Chains from Computer Programs},
+  year      = {2002},
+  address   = {New York, NY, USA},
+  pages     = {1--10},
+  publisher = {Association for Computing Machinery},
+  series    = {SIGSOFT '02/FSE-10},
+  abstract  = {Consider the execution of a failing program as a sequence of program states. Each state induces the following state, up to the failure. Which variables and values of a program state are relevant for the failure? We show how the Delta Debugging algorithm isolates the relevant variables and values by systematically narrowing the state difference between a passing run and a failing run—by assessing the outcome of altered executions to determine wether a change in the program state makes a difference in the test outcome. Applying Delta Debugging to multiple states of the program automatically reveals the cause-effect chain of the failure—that is, the variables and values that caused the failure.In a case study, our prototype implementation successfully isolated the cause-effect chain for a failure of the GNU C compiler: "Initially, the C program to be compiled contained an addition of 1.0; this caused an addition operator in the intermediate RTL representation; this caused a cycle in the RTL tree—and this caused the compiler to crash."},
+  doi       = {10.1145/587051.587053},
+  isbn      = {1581135149},
+  keywords  = {tracing, testing, program comprehension, automated debugging},
+  location  = {Charleston, South Carolina, USA},
+  numpages  = {10},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
