@@ -1010,58 +1010,24 @@ See \url{https://github.com/JasonGross/coq-tools/issues/102}.
 
 \subsection{Research questions}
 
-We want to evaluate how well the Coq bug minimizer and its integration into Coq's CI setup, via coqbot, works to achieve our stated objectives which we remind below:
-
-\begin{enumerate}
-\item Improve the coverage of the test suite by systematically extracting minimal test cases from compatibility issues that are detected in external projects tested in Coq's CI.
-\item Help Coq developers assess more easily the nature of compatibility issues they introduce with their changes.
-\end{enumerate}
-
-For this purpose, we specify several research questions to investigate:
+To evaluate the usefulness of our bug minimizer, we specify several research questions to investigate:
 
 \begin{description}
 \item[RQ1:] How often does the minimizer successfully produce a reduced example from the CI failures it was triggered on?
-\item[RQ2:] What time does it take to run on the cases where it was triggered?
-\item[RQ3:] How often does it manage to produce a reduced case that is sufficiently short and does not depend on anything beyond the standard library of Coq?
-\item[RQ4:] Does it help Coq developers understand CI failures?
-\item[RQ5:] Does it help Coq developers expand the coverage of the test suite?
+\item[RQ2:] How long does it take to produce such reduced examples?
+\item[RQ3:] How often does it manage to produce a reduced case that is relatively short and self-contained (does not depend on anything beyond the standard library of Coq)?
+\item[RQ4:] How long do the reduced cases take to run?
+\item[RQ5:] What is the amount of code reduction?
+%% \item[RQ:] Does it help Coq developers understand CI failures?
+%% \item[RQ:] Does it help Coq developers expand the coverage of the test suite?
 \end{description}
 
-\subsection{Data collection}
+\subsection{Data collection and analysis}
 
 To support replicating the results, all our data collection and analysis code is made available as Jupyter notebooks and our datasets are made available as CSV files.\footnote{\todo{Theo}}
 
-To know in which context the bug minimizer was triggered and how it answered, we fetch comments from pull requests in the GitHub repository using GitHub's GraphQL API.
-%
-We look for all the pull requests with the words ``coqbot ci minimize''.
-%
-These correspond to all the pull requests where coqbot offered the possibility of minimizing a CI failure. For each of these pull requests, we fetch all the comments, with their author, time and date and body text.
-%
-We detect triggers of the minimizer by looking at comments by authors other than coqbot with the words ``coqbot ci minimize''.
-%
+We retrieve the runs of the bug minimizer by looking for pull requests in the Coq GitHub repository containing specific keywords, and we fetch all comments from the bot (timestamp and body text) from these pull requests using GitHub's GraphQL API.
 We exclude pull requests authored by one of the co-authors of this paper as these pull requests were mostly for testing the minimizer integration and debugging issues.
-
-After several months in production, we added a sentence to the comment posted by coqbot with the results of the minimizer asking users to fill a very short survey about their experience with it.
-%
-However, this message alone did not attract any answer (probably because it was not visible enough, or not targetted enough to specific users).
-
-To alleviate this problem and also to collect data on past runs of the minimizer, we posted an issue in Coq's bug tracker tagging all the people that triggered the bug minimizer or were the author of a pull request where the bug minimizer was triggered.
-%
-For each of the tagged users, we listed the pull requests that were relevant to them (either as an author or as a triggerer) and provided a link to the survey (with the pull request number pre-filled).
-%
-The survey asked in particular how useful the minimizer was to the respondent, if it helped understand the impact of the pull request on external projects and if the minimized test case was used to extend the test suite.
-%
-The posted issue was auto-generated from our data on the bug minimizer runs.
-
-This issue allowed us to collect 19 answers from 7 different respondents. \todo{Update if needed.}
-%
-The data collected through this survey are also available as a CSV file, which we import and analyze in our Jupyter notebook.
-
-\subsection{Data analysis}
-
-To answer our first three research questions, we look at all the pull requests and all the projects where the CI minimizer was triggered.
-%
-To avoid double-counting multiple runs on the same CI failure, we only look at the first CI minimizer triggers on a given pull request and a given project.
 
 When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization \ldots'' or ``I am now running minimization \ldots'', providing the list of projects on which it is being run.
 %
@@ -1076,6 +1042,7 @@ We ignore these comments, only looking for final reduction outputs.
 Finally, the bot posts a comment starting with ``Error: Could not minimize file'' when it was not able to minimize the requested failure, for instance, because it could not reproduce it or could not reproduce the successful run on the base branch.
 
 We match comments indicating the start of the minimization with comments indicating the end of it, and use these two comments to determine if the minimizer was able to produce a reduced example, how long it took and if the reduced example was sufficiently short and self-contained.
+To avoid double-counting multiple runs on the same CI failure, we only look at the first bug minimizer trigger on a given pull request and a given project.
 
 \subsection{Results}
 
