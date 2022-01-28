@@ -66,6 +66,11 @@
 \ArticleNo{23}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{usebib}
+\newbibfield{title}
+\bibinput{coq-bug-minimizer}
+\newcommand{\citetitle}[1]{\emph{\usebibentry{#1}{title}}\nocite{#1}}
+
 \makeatletter
 \newcommand{\todo}[1]{%
 \@latex@warning{TODO: \detokenize{#1} on page \thepage}%
