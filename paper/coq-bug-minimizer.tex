@@ -89,28 +89,28 @@ Text of abstract \ldots.
 
 \section{Introduction}
 
-In the world of machine verification, the dream is to prove the correctness of every program. 
-Projects such as Coq Coq Correct~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves. 
-However, large swathes of proof assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, oftentimes even unspecified, and without adequate test-suite coverage. 
+In the world of machine verification, the dream is to prove the correctness of every program.
+Projects such as Coq Coq Correct~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
+However, large swathes of proof assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, oftentimes even unspecified, and without adequate test-suite coverage.
 
 
 To reduce the impact of accidental changes in parts of Coq not covered by the test-suite, starting in 2017, developers adopted “reverse” continuous integration (CI)~\cite{zimmermann:tel-02451322}.
-Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams  
-Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test-suite from shrinking for future releases. 
+Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams
+Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test-suite from shrinking for future releases.
 
 
-The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time and effort intensive process.  
-In order to streamline this process, we built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files, and is integrated with coqbot to \textbf{automatically} trigger on reverse CI failures.  
-The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large developments. 
+The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time and effort intensive process.
+In order to streamline this process, we built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files, and is integrated with coqbot to \textbf{automatically} trigger on reverse CI failures.
+The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large developments.
 Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by a factor of 10. \todo{is this accurate?}
 
 
-The state of the art in bug minimization is delta debugging. 
-The delta tool~\cite{delta} preprocesses files into well balanced blocks of code to determine the granularity of code removal, and then runs binary search on removing blocks of code. 
-However, bug minimization is different for proof assistants than for compilers of other languages, and has its unique challenges and tricks. 
+The state of the art in bug minimization is delta debugging.
+The delta tool~\cite{delta} preprocesses files into well balanced blocks of code to determine the granularity of code removal, and then runs binary search on removing blocks of code.
+However, bug minimization is different for proof assistants than for compilers of other languages, and has its unique challenges and tricks.
 
 
-We present the ``how to'' of the Coq Bug Minimizer for insights that we expect to generalize to bug minimization in other proof assistants.  
+We present the ``how to'' of the Coq Bug Minimizer for insights that we expect to generalize to bug minimization in other proof assistants.
 We do this with an eye towards features of proof assistant design which enable automatic and useful bug minimization, which is especially relevant for backwards compatibility and usability for large, industry-scale projects.
 
 \todo{write a paragraph that tells them about the structure of the paper.}
@@ -118,11 +118,11 @@ We do this with an eye towards features of proof assistant design which enable a
 
 \section{Reproducing buggy behavior}
 
-What does it mean to reproduce the same bug? 
-In our context, we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI. 
-However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same. 
+What does it mean to reproduce the same bug?
+In our context, we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI.
+However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same.
 
-For projects in Coq, we marked several details of error messages as auxiliary to strike a balance between replicating buggy behavior and permitting smaller files.  
+For projects in Coq, we marked several details of error messages as auxiliary to strike a balance between replicating buggy behavior and permitting smaller files.
 
 \todo{make the remainder of this section better}
 
@@ -205,7 +205,7 @@ In our goal to get the shortest reproducing test case as quickly as possible, it
   \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
     This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
   \end{itemize}
-  
+
 \subsection{small}
 
 The simplest function of the bug minimizer is to remove unneeded lines.
@@ -834,8 +834,8 @@ While we haven't encountered any issues from wrapping additional modules around 
 \todo{exmaple?}
 
 
- 
-  
+
+
 \section{Developer Experience}
 
 Steps before the bug minimizer is invoked:
@@ -851,11 +851,11 @@ Steps before the bug minimizer is invoked:
 \item Run Coq on the buggy file.
 \item Parse the error message, ensuring that it matches with the error message from the build log.
   (Note that there are a bunch of error message changes that we allow, such as changing evar numbers and universe numbers, etc.)
- 
+
   \end{enumerate}
-  
-  
-  
+
+
+
 \subsubsection{Infrastructure around Invoking the Minimizer}
 As described in \autoref{sec:spec}, the goal of the minimizer is to take a CI development that succeds on the tip of master and fails on a given PR, and emit a small, stand-alone file which succeeds on master and fails in the same way \todo{same modulo universes, etc, stick this somewhere} on the PR.
 \todo{Should we cite \url{https://github.com/dsw/delta\#do-a-controlled-experiment} about passing coqc, a la ``Below we don't just minimize a file that causes Oink to produce an error message, we minimize a file that causes gcc to accept AND oink to reject in a specific way. That is, the test delta does is a controlled experiment, where gcc is the control. Ignoring this aspect of the problem seems to be a frequent mistake of first time users.''}
