@@ -278,6 +278,7 @@ TSWLatexianTemp*
 # Editor files
 *#
 *~
+.DS_Store
 
 # Build outputs
 paper/coq-bug-minimizer.pdf
