@@ -271,7 +271,7 @@ Proof. reflexivity. Qed.
 all at once.
 
 We could in theory deal with more complicated nesting structure, for example trying to remove an entire section or module at a time.
-The tool at \url{https://github.com/dsw/delta#exploit-nested-structure} \todo{better citation} is in fact built around preprocessing the file into one that exposes nested structure clearly, and then removing well-parenthesized blocks.
+The delta tool~\cite{delta} is in fact built around preprocessing the file into one that exposes nested structure clearly, and then removing well-parenthesized blocks.
 However, removing statements, grouped into definitions as necessary, sufficies for removing time-consuming code.
 (\todo{Find a better place for this theme, call it out more broadly:}%
 In general, it's very important to remove any lines that can be removed that take significant compilation time, and much less important to remove lines that take basically no compilation time.
