@@ -234,22 +234,6 @@ Note that the definition \texttt{two} has been removed.
 Here it suffices to (a) remove all statements after the error, and (b) try removing each line one at a time.
 Since Coq is mostly not sensitive to whitespace, we want to remove statements, rather than lines.
 
-We may someday depend on a proper Coq parser (such as SerAPI), but we currently do in-house parsing.
-Even if we move to depending on a proper parser, we will sometimes have to do transformations on files where we cannot do full parsing.
-See \autoref{sec:glob-for-inline-installed-files-without-parsing} for more details.
-\todo{make sure \autoref{sec:glob-for-inline-installed-files-without-parsing} exists}
-Furthermore, we continue to support versions of Coq all the way back to 8.5, in part because minimization is also useful for porting older Coq developments to newer versions of Coq, and so any plugin-based parsing will not fully subsume the existing parsing methods.
-
-We currently have three methods of parsing Coq documents:
-\begin{enumerate}
-\item Parsing implemented in-house in Python.
-\item Using \texttt{coqc -time} to get byte ranges for each statement.
-  Note that these are \emph{byte} ranges and not character ranges, so we have to be careful when documents contain unicode.
-\item Using \texttt{coqtop -emacs -time}, which, in addition to providing byte ranges for statements, also provides information about which lines are part of which definitions (via the emacs prompt), and which lines close definitions (via the \texttt{\emph{foo} is defined} message).
-  Note that \verb|-emacs| is technically meant for legacy interaction with the ProofGeneral IDE, so we may someday have to move to a different API.
-  Hopefully by the time \verb|-emacs| is removed, we'll be ready to use plugin-based parsing via SerAPI or similar.
-\end{enumerate}
-
 Because Coq forbids forward references (definitions cannot refer to any identifiers that have not yet been added to the global environment, and documents are processed serially), we can remove all lines after the line where the error occurs without risking a change in error messages.
 Note that the error message line indicator is not always accurate; the recent bug at \url{https://github.com/coq/coq/issues/15073}\todo{formatting of link} was an instance where the error location was mis-reported.
 
