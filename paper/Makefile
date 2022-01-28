@@ -36,12 +36,4 @@ all: $(PDFS)
 
 .PHONY: clean
 clean::
-	@ rm -f *.aux *.out *.nav *.toc *.vrb *.pdf *.snm *.log *.bbl *.blg *.auxlock
-
-.PHONY: deploy
-deploy::
-	mkdir -p deploy/nightly
-	cp -f $(PDFS) deploy/nightly/
-
-EMBED_OPTS := -dPDFSETTINGS=/prepress -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dCompatibilityLevel=1.3
-# These are options to make 'ps2pdf' embed all fonts.
+	@ rm -f *.aux *.out *.nav *.toc *.vrb *.snm *.log *.bbl *.blg *.auxlock $(PDFS)
