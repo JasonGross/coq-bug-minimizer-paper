@@ -106,11 +106,11 @@ Typically, using the Coq Bug Minimizer reduces the total number of lines of code
 
 
 The state of the art in bug minimization is delta debugging. 
-The delta tool preprocesses files into well balanced blocks of code to determine the granularity of code removal, and then runs binary search on removing blocks of code. 
+The delta tool~\cite{delta} preprocesses files into well balanced blocks of code to determine the granularity of code removal, and then runs binary search on removing blocks of code. 
 However, bug minimization is different for proof assistants than for compilers of other languages, and has its unique challenges and tricks. 
 
 
-We present the “how to” of the Coq Bug Minimizer for insights that we expect to generalize to bug minimization in other proof assistants.  
+We present the ``how to'' of the Coq Bug Minimizer for insights that we expect to generalize to bug minimization in other proof assistants.  
 We do this with an eye towards features of proof assistant design which enable automatic and useful bug minimization, which is especially relevant for backwards compatibility and usability for large, industry-scale projects.
 
 \todo{write a paragraph that tells them about the structure of the paper.}
@@ -120,10 +120,9 @@ We do this with an eye towards features of proof assistant design which enable a
 
 What does it mean to reproduce the same bug? 
 In our context, we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI. 
-However, the error message does not need to be \emph{exactly} the same. 
-We care that developers can extract the reason for the original development failing. 
+However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same. 
 
-For projects in Coq, we marked several details of error messages as auxiliary to strike a balance between replicating buggy behavior and permitting smaller files. 
+For projects in Coq, we marked several details of error messages as auxiliary to strike a balance between replicating buggy behavior and permitting smaller files.  
 
 \todo{make the remainder of this section better}
 
