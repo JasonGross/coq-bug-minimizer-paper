@@ -301,38 +301,9 @@ We saw above that proof scripts could not be removed one statement at a time, bu
 Coq has a \verb|Program| mode which results in even more coupling: removing one proof script at a time is not enough to remove the \verb|Program Definition|.
 
 Consider, for example:
-\begin{verbatim}
-Require Import Coq.Program.Tactics.
-Section __.
-Context (arg : True).
-Lemma complicated (pf : arg = arg) : True = False.
-Admitted.
-Axiom bad : False.
-Definition another_False := False.
-Program Definition irrelevant
-  : another_False /\ another_False := conj _ _.
-Next Obligation. exact bad. Qed.
-Next Obligation. exact bad. Qed.
-End __.
-Lemma boom : True -> False.
-Proof. rewrite (complicated I eq_refl).
-\end{verbatim}
+\\\todo{code moved to \autoref{code:program:1}}\label{code:program:1:orig}\\
 We can easily minimize this into
-\begin{verbatim}
-Require Import Coq.Program.Tactics.
-Section __.
-Context (arg : True).
-Lemma complicated (pf : arg = arg) : True = False.
-Admitted.
-Definition another_False := False.
-Program Definition irrelevant
-  : another_False /\ another_False := conj _ _.
-Next Obligation. Admitted.
-Next Obligation. Admitted.
-End __.
-Lemma boom : True -> False.
-Proof. rewrite (complicated I eq_refl).
-\end{verbatim}
+\\\todo{code moved to \autoref{code:program:2}}\label{code:program:2:orig}\\
 However, at this point, we cannot remove anything else.
 
 If we remove \verb|End __|, we get an error message indicating that \verb|complicated| expects a proof of type \verb|arg = arg|, not two arguments, one of type \verb|True| and the second a proof that the first equals itself.
@@ -344,41 +315,16 @@ We cannot just look for \verb|Program| statements followed by \verb|Obligation| 
 Luckily, we can replace \verb|Next Obligation. Admitted.| with \verb|Admit Obligations|.
 Since \verb|Admit Obligations| is luckily a noop when there are no obligations to admit, we can do this to both \verb|Next Obligation. Admitted.| blocks.
 After performing this transformation, we can remove the \verb|Program Definition| line (without needing to remove the \verb|Admit Obligations| lines), and thereafter minimize the file to
-\begin{verbatim}
-Section __.
-Context (arg : True).
-Lemma complicated (pf : arg = arg) : True = False.
-Admitted.
-End __.
-Lemma boom : True -> False.
-Proof. rewrite (complicated I eq_refl).
-\end{verbatim}
+\\\todo{code moved to \autoref{code:program:3}}\label{code:program:3:orig}\\
 
 \paragraph{Sections}
 Removing statements one at a time will not always be able to remove empty sections (nor empty \verb|Module|s or \verb|Module Type|s).
 
 For example, consider the file
-\begin{verbatim}
-Section useless.
-End useless.
-Module useful.
-Lemma complicated : True = False.
-Admitted.
-End useful.
-Lemma boom : True -> False.
-Proof. rewrite useful.complicated.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:section:1}}\label{code:section:1:orig}\\
 
 This file can be minimized to
-\begin{verbatim}
-Section useless.
-End useless.
-Module useful.
-Lemma complicated : True = False.
-Admitted.
-Lemma boom : True -> False.
-Proof. rewrite useful.complicated.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:section:2}}\label{code:section:2:orig}\\
 because Coq allows refering to constants in the currently-open module via qualified names.
 
 However, it cannot be minimized further, because if we remove \verb|End useless|, then we get an error message indicating that modules are forbidden inside sections.
@@ -387,15 +333,7 @@ Hence we have a pass dedicated to removing empty sections, modules, and module t
 
 \paragraph{Exporting Modules}
 Consider the file
-\begin{verbatim}
-Module foo.
-Lemma complicated : True = False.
-Admitted.
-End foo.
-Import foo.
-Lemma boom : True -> False.
-Proof. rewrite complicated.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:export-modules:1}}\label{code:export-modules:1:orig}\\
 We cannot remove \verb|Import foo| because then \verb|complicated| can't be found.
 But we cannot remove the \verb|End foo| because then \verb|foo| can't be found when trying to \verb|Import foo|.
 
@@ -404,101 +342,15 @@ This allows us to remove \verb|Import foo| (because \verb|foo| is already import
 
 We choose to do \verb|Export| rather than \verb|Import| because it allows for removal of some \verb|Import| statements even when chaining exports.
 Consider, for example, the file
-\begin{verbatim}
-Module A.
-  Module A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module A.
-    Axiom A : Set.
-  End A.
-End B.
-Module A1. Export A. End A1.
-Module B1. Export B. End B1.
-Module Import A2. Import A1. Import A.
- Definition A2 := A. End A2.
-Module Import B2. Import B1. Import A.
- Definition B2 := A. End B2.
-Check eq_refl : A2 = B2.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:export-modules:2}}\label{code:export-modules:2:orig}\\
 If we use \verb|Export|, then we can turn this file into
-\begin{verbatim}
-Module A.
-  Module Export A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module Export A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Export A1. Export A. End A1.
-Module Export B1. Export B. End B1.
-Module Import A2. Import A1. Import A.
- Definition A2 := A. End A2.
-Module Import B2. Import B1. Import A.
- Definition B2 := A. End B2.
-Check eq_refl : A2 = B2.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:export-modules:3}}\label{code:export-modules:3:orig}\\
 whence we can minimize it to
-\begin{verbatim}
-Module Export A.
-  Axiom A : Set.
-End A.
-Module B.
-  Module Export A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Export A1. Export A. End A1.
-Export B.
-Module Import A2. Import A1.
- Definition A2 := A. End A2.
-Definition B2 := A.
-Check eq_refl : A2 = B2.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:export-modules:4}}\label{code:export-modules:4:orig}\\
 However, if we had used \verb|Import| instead, we get the file
-\begin{verbatim}
-Module A.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Import A1. Export A. End A1.
-Module Import B1. Export B. End B1.
-Module Import A2. Import A1.
- Import A. Definition A2 := A. End A2.
-Module Import B2. Import B1.
- Import A. Definition B2 := A. End B2.
-Check eq_refl : A2 = B2.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:export-modules:5}}\label{code:export-modules:5:orig}\\
 which can only be minimized to
-\begin{verbatim}
-Module A.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Import A1. Export A. End A1.
-Export B.
-Module Import A2. Import A1. Import A.
- Definition A2 := A. End A2.
-Import A. Definition B2 := A.
-Check eq_refl : A2 = B2.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:export-modules:6}}\label{code:export-modules:6:orig}\\
 Granted, the additional removal of \verb|Import A| and one of the \verb|Module A| \ldots\ \verb|End A| pairs is not all that impressive.
 On the other hand, using \verb|Export| instead of \verb|Import| costs nothing, and we must choose one of them.
 
@@ -617,22 +469,7 @@ To make this change more likely to succeed, we define \verb|admit| as \verb|abst
 
 Here is a case where this matters:
 Consider the file
-\begin{verbatim}
-Section foo.
-  Context (a : nat).
-  Definition foo : nat.
-  Proof.
-    refine (_ + _).
-    all: abstract exact a.
-  Defined.
-End foo.
-Goal True.
-  pose (foo 5) as x.
-  lazymatch (eval unfold x, foo in x) with
-  | ?x + ?y => idtac
-  | ?v => fail 0 "bad" v
-  end.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:abstract:1}}\label{code:abstract:1:orig}\\
 If we replace \verb|abstract exact a| with \texttt{clear; abstract case proof\_admitted}, then the definition \verb|foo| no longer depends on \verb|a|, and the \verb|pose| line will fail with a type error.
 
 In the future, when we do more fine-grained parsing of the Coq document structure, we may want to try replacing more subparts of proof scripts with \verb|admit|.
@@ -652,30 +489,13 @@ Second, because the file we're minimizing may make use of \verb|False| and may r
 This means that the \verb|admit| tactic must itself be in a module that is exported.
 We could alternatively qualify the version of \verb|False| that we're using, but this would prevent removal of our \verb|Inductive False|, and we would prefer to be able to remove this line when the Coq standard library is available.
 The code we now have, after the Ltac support snippet, is:
-\begin{verbatim}
-Module Export AdmitTactic.
-Module Import LocalFalse.
-Inductive False : Prop := .
-End LocalFalse.
-Axiom proof_admitted : False.
-Ltac admit := abstract case proof_admitted.
-End AdmitTactic.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:ltac-support:1}}\label{code:ltac-support:1:orig}
 
 Third, and finally, the line \texttt{Ltac admit := abstract case proof\_admitted} errors in Coq 8.4 with ``Error: Reserved Ltac name admit.''
 Hence we use \texttt{Tactic Notation "admit" := abstract case proof\_admitted} instead.
 
 Thus the fragment we add for the \verb|admit| tactic is ultimately:
-\begin{verbatim}
-Module Export AdmitTactic.
-Module Import LocalFalse.
-Inductive False : Prop := .
-End LocalFalse.
-Axiom proof_admitted : False.
-Tactic Notation "admit"
-  := abstract case proof_admitted.
-End AdmitTactic.
-\end{verbatim}
+\\\todo{code moved to \autoref{code:ltac-support:2}}\label{code:ltac-support:2:orig}
 
 
 
@@ -1101,5 +921,227 @@ In one case, the respondent explained that while the minimizer had been very use
 \section{Appendix}
 
 Text of appendix \ldots
+
+\subsection{Code that was moved}
+
+\subsubsection{Code from \autoref{code:program:1:orig}}\label{code:program:1}
+\begin{verbatim}
+Require Import Coq.Program.Tactics.
+Section __.
+Context (arg : True).
+Lemma complicated (pf : arg = arg) : True = False.
+Admitted.
+Axiom bad : False.
+Definition another_False := False.
+Program Definition irrelevant
+  : another_False /\ another_False := conj _ _.
+Next Obligation. exact bad. Qed.
+Next Obligation. exact bad. Qed.
+End __.
+Lemma boom : True -> False.
+Proof. rewrite (complicated I eq_refl).
+\end{verbatim}
+\subsubsection{Code from \autoref{code:program:2:orig}}\label{code:program:2}
+\begin{verbatim}
+Require Import Coq.Program.Tactics.
+Section __.
+Context (arg : True).
+Lemma complicated (pf : arg = arg) : True = False.
+Admitted.
+Definition another_False := False.
+Program Definition irrelevant
+  : another_False /\ another_False := conj _ _.
+Next Obligation. Admitted.
+Next Obligation. Admitted.
+End __.
+Lemma boom : True -> False.
+Proof. rewrite (complicated I eq_refl).
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:program:3:orig}}\label{code:program:3}
+\begin{verbatim}
+Section __.
+Context (arg : True).
+Lemma complicated (pf : arg = arg) : True = False.
+Admitted.
+End __.
+Lemma boom : True -> False.
+Proof. rewrite (complicated I eq_refl).
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:section:1:orig}}\label{code:section:1}
+\begin{verbatim}
+Section useless.
+End useless.
+Module useful.
+Lemma complicated : True = False.
+Admitted.
+End useful.
+Lemma boom : True -> False.
+Proof. rewrite useful.complicated.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:section:2:orig}}\label{code:section:2}
+\begin{verbatim}
+Section useless.
+End useless.
+Module useful.
+Lemma complicated : True = False.
+Admitted.
+Lemma boom : True -> False.
+Proof. rewrite useful.complicated.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:export-modules:1:orig}}\label{code:export-modules:1}
+\begin{verbatim}
+Module foo.
+Lemma complicated : True = False.
+Admitted.
+End foo.
+Import foo.
+Lemma boom : True -> False.
+Proof. rewrite complicated.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:export-modules:2:orig}}\label{code:export-modules:2}
+\begin{verbatim}
+Module A.
+  Module A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module A.
+    Axiom A : Set.
+  End A.
+End B.
+Module A1. Export A. End A1.
+Module B1. Export B. End B1.
+Module Import A2. Import A1. Import A.
+ Definition A2 := A. End A2.
+Module Import B2. Import B1. Import A.
+ Definition B2 := A. End B2.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:export-modules:3:orig}}\label{code:export-modules:3}
+\begin{verbatim}
+Module A.
+  Module Export A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module Export A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Export A1. Export A. End A1.
+Module Export B1. Export B. End B1.
+Module Import A2. Import A1. Import A.
+ Definition A2 := A. End A2.
+Module Import B2. Import B1. Import A.
+ Definition B2 := A. End B2.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+
+
+\subsubsection{Code from \autoref{code:export-modules:4:orig}}\label{code:export-modules:4}
+\begin{verbatim}
+Module Export A.
+  Axiom A : Set.
+End A.
+Module B.
+  Module Export A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Export A1. Export A. End A1.
+Export B.
+Module Import A2. Import A1.
+ Definition A2 := A. End A2.
+Definition B2 := A.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:export-modules:5:orig}}\label{code:export-modules:5}
+\begin{verbatim}
+Module A.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Import A1. Export A. End A1.
+Module Import B1. Export B. End B1.
+Module Import A2. Import A1.
+ Import A. Definition A2 := A. End A2.
+Module Import B2. Import B1.
+ Import A. Definition B2 := A. End B2.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+\subsubsection{Code from \autoref{code:export-modules:6:orig}}\label{code:export-modules:6}
+\begin{verbatim}
+Module A.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End A.
+Module B.
+  Module Import A.
+    Axiom A : Set.
+  End A.
+End B.
+Module Import A1. Export A. End A1.
+Export B.
+Module Import A2. Import A1. Import A.
+ Definition A2 := A. End A2.
+Import A. Definition B2 := A.
+Check eq_refl : A2 = B2.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:abstract:1:orig}}\label{code:abstract:1}
+\begin{verbatim}
+Section foo.
+  Context (a : nat).
+  Definition foo : nat.
+  Proof.
+    refine (_ + _).
+    all: abstract exact a.
+  Defined.
+End foo.
+Goal True.
+  pose (foo 5) as x.
+  lazymatch (eval unfold x, foo in x) with
+  | ?x + ?y => idtac
+  | ?v => fail 0 "bad" v
+  end.
+\end{verbatim}
+
+\subsubsection{Code from \autoref{code:ltac-support:1:orig}}\label{code:ltac-support:1}
+\begin{verbatim}
+Module Export AdmitTactic.
+Module Import LocalFalse.
+Inductive False : Prop := .
+End LocalFalse.
+Axiom proof_admitted : False.
+Ltac admit := abstract case proof_admitted.
+End AdmitTactic.
+\end{verbatim}
+\subsubsection{Code from \autoref{code:ltac-support:2:orig}}\label{code:ltac-support:2}
+\begin{verbatim}
+Module Export AdmitTactic.
+Module Import LocalFalse.
+Inductive False : Prop := .
+End LocalFalse.
+Axiom proof_admitted : False.
+Tactic Notation "admit"
+  := abstract case proof_admitted.
+End AdmitTactic.
+\end{verbatim}
 
 \end{document}
