@@ -462,14 +462,7 @@ Hence we must support both \verb|Admitted| and \verb|admit. Defined.| as replace
 
 While we could just \verb|Require Import Coq.Compat.AdmitAxiom| to get this \verb|admit| tactic, there are two cases where this would not work:
 (1) in libraries such as HoTT and UniMath, where the standard library is not loaded, we cannot assume that \texttt{Coq.Compat.AdmitAxiom} will be found;
-(2) in versions of Coq prior to 8.5%
-\footnote{%
-We supported Coq 8.4 until Ubuntu 12.04 LTS (Precise Pangolin) was no longer supported on CI servers.
-Coq 8.4 required OCaml < 4.05 to build, due to a change in OCaml string delimiters in comments.
-Ubuntu 12.04 was the last version of Ubuntu to have OCaml < 4.05.
-We're currently in the process of re-adding support for Coq 8.4, though, via the docker-coq GitHub action.%
-}%
-, the \verb|AdmitAxiom| file did not exist (instead, the \verb|admit| tactic available by default performed this function).
+(2) in versions of Coq prior to 8.5, the \verb|AdmitAxiom| file did not exist (instead, the \verb|admit| tactic available by default performed this function).
 Hence we provide our own tactic, rather than importing one from the standard library.
 
 \todo{this subsubsection deserves a better structure, I think\ldots}
