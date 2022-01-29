@@ -239,6 +239,8 @@ In our goal to get the shortest reproducing test case as quickly as possible, it
   \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
     This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
   \end{itemize}
+\end{enumerate}
+\end{enumerate}
 
 \subsection{small}
 
@@ -481,39 +483,14 @@ If we replace \verb|abstract exact a| with \texttt{clear; abstract case proof\_a
 In the future, when we do more fine-grained parsing of the Coq document structure, we may want to try replacing more subparts of proof scripts with \verb|admit|.
 See \autoref{sec:future-work} for more details.
 
-There are three more corner-cases which result in us using slightly different code in practice.
-
-First, because libraries like HoTT don't load the standard library by default, we need to declare our own \verb|False| inductive and we must also load support for Ltac.
-In all versions of Coq prior to 8.12, \verb|Require Import Coq.Init.Notations| was adequate to get Ltac.
-In Coq 8.12 and later, we need to either \verb|Require Import Coq.Init.Ltac| (which did not exist in prior versions of Coq) or \verb|Declare ML Module "ltac_plugin"|.
-We choose the latter of these two, for compatibility with developments like HoTT which may not have a \verb|Coq.Init.Ltac| file available.
-
-Note that we need to issue \verb|Inductive False : Prop := .| rather than \verb|Inductive False := .|, because any developments that pass \verb|-set "Universe Polymorphism"| on the command-line will otherwise end up with a polymorphic \verb|False| inductive which will introduce extra universes when using the \verb|admit| tactic which may break some files.
-(This was encountered in the wild; see \url{https://github.com/JasonGross/coq-tools/issues/74} for details.\todo{better urls?})
-
-Second, because the file we're minimizing may make use of \verb|False| and may rely on it being syntactically equal to the version in Coq's standard library \todo{does this need an example?}, we must wrap our \verb|Inductive False| in a module that is not exported to the file.
-This means that the \verb|admit| tactic must itself be in a module that is exported.
-We could alternatively qualify the version of \verb|False| that we're using, but this would prevent removal of our \verb|Inductive False|, and we would prefer to be able to remove this line when the Coq standard library is available.
-The code we now have, after the Ltac support snippet, is:
-\\\todo{code moved to \autoref{code:ltac-support:1}}\label{code:ltac-support:1:orig}
-
-Third, and finally, the line \texttt{Ltac admit := abstract case proof\_admitted} errors in Coq 8.4 with ``Error: Reserved Ltac name admit.''
-Hence we use \texttt{Tactic Notation "admit" := abstract case proof\_admitted} instead.
-
-Thus the fragment we add for the \verb|admit| tactic is ultimately:
-\\\todo{code moved to \autoref{code:ltac-support:2}}\label{code:ltac-support:2:orig}
-
-
-
-
+\label{text:ltac-fragment:orig}
 
 \section{Standalone}
 
-\item Finally, before repeating the loop, attempt to inline a dependency which has not yet been inlined.
-  Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
-  \todo{write more text about what's required here, and what still remains}
-\end{enumerate}
-\end{enumerate}
+\todo{fix intro, this was previously a bulled}
+Finally, before repeating the loop, attempt to inline a dependency which has not yet been inlined.
+Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
+\todo{write more text about what's required here, and what still remains}
 
 
 \paragraph{Naive Strategy}
@@ -1149,5 +1126,32 @@ Tactic Notation "admit"
   := abstract case proof_admitted.
 End AdmitTactic.
 \end{verbatim}
+
+
+\subsection{Text from \autoref{text:ltac-fragment}}\label{text:ltac-fragment}
+There are three more corner-cases which result in us using slightly different code in practice.
+
+First, because libraries like HoTT don't load the standard library by default, we need to declare our own \verb|False| inductive and we must also load support for Ltac.
+In all versions of Coq prior to 8.12, \verb|Require Import Coq.Init.Notations| was adequate to get Ltac.
+In Coq 8.12 and later, we need to either \verb|Require Import Coq.Init.Ltac| (which did not exist in prior versions of Coq) or \verb|Declare ML Module "ltac_plugin"|.
+We choose the latter of these two, for compatibility with developments like HoTT which may not have a \verb|Coq.Init.Ltac| file available.
+
+Note that we need to issue \verb|Inductive False : Prop := .| rather than \verb|Inductive False := .|, because any developments that pass \verb|-set "Universe Polymorphism"| on the command-line will otherwise end up with a polymorphic \verb|False| inductive which will introduce extra universes when using the \verb|admit| tactic which may break some files.
+(This was encountered in the wild; see \url{https://github.com/JasonGross/coq-tools/issues/74} for details.\todo{better urls?})
+
+Second, because the file we're minimizing may make use of \verb|False| and may rely on it being syntactically equal to the version in Coq's standard library \todo{does this need an example?}, we must wrap our \verb|Inductive False| in a module that is not exported to the file.
+This means that the \verb|admit| tactic must itself be in a module that is exported.
+We could alternatively qualify the version of \verb|False| that we're using, but this would prevent removal of our \verb|Inductive False|, and we would prefer to be able to remove this line when the Coq standard library is available.
+The code we now have, after the Ltac support snippet, is:
+\\\todo{code moved to \autoref{code:ltac-support:1}}\label{code:ltac-support:1:orig}
+
+Third, and finally, the line \texttt{Ltac admit := abstract case proof\_admitted} errors in Coq 8.4 with ``Error: Reserved Ltac name admit.''
+Hence we use \texttt{Tactic Notation "admit" := abstract case proof\_admitted} instead.
+
+Thus the fragment we add for the \verb|admit| tactic is ultimately:
+\\\todo{code moved to \autoref{code:ltac-support:2}}\label{code:ltac-support:2:orig}
+
+
+
 
 \end{document}
