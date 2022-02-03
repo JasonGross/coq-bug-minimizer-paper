@@ -794,10 +794,11 @@ To evaluate the usefulness of our bug minimizer, we specify several research que
 
 \begin{description}
 \item[RQ1:] How often does the minimizer successfully produce a reduced example from the CI failures it was triggered on?
-\item[RQ2:] How long does it take to produce such reduced examples?
-\item[RQ3:] How often does it manage to produce a reduced case that is relatively short and self-contained (does not depend on anything beyond the standard library of Coq)?
-\item[RQ4:] How long do the reduced cases take to run?
-\item[RQ5:] What is the amount of code reduction?
+\item[RQ2:] How often is this reduced example fully standalone (no dependencies other than Coq's standard library)?
+\item[RQ3:] How long does it take to produce such reduced examples?
+\item[RQ4:] What is the size of the reduced cases?
+\item[RQ5:] How long do the reduced cases take to run?
+\item[RQ6:] What is the amount of code reduction?
 %% \item[RQ:] Does it help Coq developers understand CI failures?
 %% \item[RQ:] Does it help Coq developers expand the coverage of the test suite?
 \end{description}
@@ -806,14 +807,14 @@ To evaluate the usefulness of our bug minimizer, we specify several research que
 
 To support replicating the results, all our data collection and analysis code is made available as Jupyter notebooks and our datasets are made available as CSV files.\footnote{\todo{Theo}}
 
-We retrieve the runs of the bug minimizer by looking for pull requests in the Coq GitHub repository containing specific keywords, and we fetch all comments from the bot (timestamp and body text) from these pull requests using GitHub's GraphQL API.
-We exclude pull requests authored by one of the co-authors of this paper as these pull requests were mostly for testing the minimizer integration and debugging issues.
+We retrieve the runs of the bug minimizer by looking for pull requests in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these pull requests using GitHub's GraphQL API.
+We exclude pull requests authored by the first author as most of these pull requests were for testing the minimizer integration and debugging issues.
 
 When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization \ldots'' or ``I am now running minimization \ldots'', providing the list of projects on which it is being run.
 %
-Next, when it finishes minimizing a project, it produces a comment starting with ``Minimized File''.
+Then, when it finishes minimizing a project, it produces a comment with the minimized file.
 %
-The comment contains the minimized file, truncated to 32KiB (half of GitHub's comment limit), which generally amounts to about 700 lines.
+This file starts with header comments containing useful information about the minimization process. %truncated to 32KiB (half of GitHub's comment limit), which generally amounts to about 700 lines.
 %
 The comment may also contain ``interrupted by timeout, being automatically continued'' if the minimization process timed out and has to be restarted to go further, which the bot automatically does.
 %
@@ -828,69 +829,64 @@ To avoid double-counting multiple runs on the same CI failure, we only look at t
 
 \subsubsection{RQ1: How often does the minimizer produce a reduced example?}
 
-We have identified 155 CI failures for which minimization was started (very often, several minimization runs are started in the same comment).
-%
-For 131 of these (85\%), the bot eventually answers with a reduced example.
-%
-In 16 cases, the bot reports that minimization was unsuccessful.
-%
-\todo{Investigate manually the 16 cases and report on the causes.}
-%
-In 8 cases, there was no matching comment marking the end of minimization.
-%
-\todo{Investigate manually the 8 cases and report on the causes.}
+Looking only at the first minimization runs for a given pull request and project, we have identified 196 runs on 50 pull requests (very often, several minimization runs are started in the same pull request on different projects).
+On these 196 runs, 73\% succeeded in producing a reduced test case. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (this is something that we can detect from the header comments).
 
-\subsubsection{RQ2: What time does it take to run on the cases where it was triggered?}
+\todo{Investigate the various cases and report on the causes.}
 
-On the 131 successful runs, we compute the duration as the time delta between the start and the end comments.
-%
-Note that while this precisely evaluates the time that developers using the minimizer had to wait for the results, it can overestimate the actual time spent by the minimizer on the example, if the minimizer run was queued for a while before starting to run in GitHub Actions.
+\subsubsection{RQ2: How often is this reduced example fully standalone?}
 
-The minimal observed duration is a little above 2 minutes (131 seconds) and the maximum observed duration is close to 20 hours (71665 seconds).
-%
-50\% of the runs take less than 15 minutes (910 seconds).
-%
-70\% of the runs take less than 53 minutes (3208 seconds).
-%
-80\% of the runs take less than 108 minutes (6467 seconds).
-%
-90\% of the runs take less than 5.3 hours (19219 seconds).
-%
-This is to compare with the time it can take to build a single project (sometimes, more than an hour).
+We consider that a reduced example will be most useful if any dependency beyond Coq's standard library was successfully inlined. This means that it will be possible to run the reduced test case without needing to import any additional dependency and will make it more likely that the test case can be added to Coq's test suite. In practice, when minimization successfully produced a reduced example, it is virtually always standalone (97\% of the cases).
 
-\todo{An analysis project by project, comparing with the time it takes to simply build the project?}
+\todo{Talk about the remaining cases.}
 
-\subsubsection{RQ3: How often does it produce a short and self-contained test case?}
+\subsubsection{RQ3: How long does it take to produce such reduced examples?}
 
-\todo{}
-
-\subsubsection{RQ4: Does it help Coq developers understand CI failures?}
-
-We got 19 answers to our survey, from 7 different people.
+We compute the duration as the time delta between the start and the end comments.
+This is an overapproximation of the actual time spent in the minimization process, since it also includes time setting up a VM, and possibly waiting in the queue for an available runner.
 %
-14 of these answers where about pull requests where the respondent had triggered the minimizer themselves (and 5 where about pull requests which the respondent authored but where they did not trigger the minimizer).
+%Note that while this precisely evaluates the time that developers using the minimizer had to wait for the results, it can overestimate the actual time spent by the minimizer on the example, if the minimizer run was queued for a while before starting to run in GitHub Actions.
+We can look at this time for both successful and failed runs.
 
-The answers we got are very contrasted between the triggerers and the non-triggerers.
-%
-On the one hand, for each of the 5 responses from authors who did not trigger the minimizer themselves, the response to the survey indicated that the minimizer was not useful to the respondent and did not help them understand the CI failure.
-%
-On the other hand, 9 out of 14 responses from triggerers indicated that the minimizer was useful (3 somewhat useful and 6 very useful).
-%
-The next question on whether it helped diagnose the CI failure was optional but a majority of the triggerers that answered (5 out of 9) said it had helped.
+For failed runs, we observe that the average time for the minimization to conclude is 5 minutes (306 seconds) and that the maximum time is 15 minutes (890 seconds). This is not surprising as it means that time spent beyond that will always be spent performing actual minimization tasks.
 
-\todo{Write about why people said the minimizer was not useful.}
+For successful runs, we observe more variety. The minimum time is 4 minutes (232 seconds), the maximum time is 20 hours (73072 seconds), and the average is 104 minutes (6238 seconds). 50\% of the successful runs finish in 20 minutes (1218 seconds) or less, and 80\% finish in 140 minutes (8396 seconds). This number is still reasonable compared to the time that contributor routinely spend waiting for the results of Coq's CI.
 
-\subsubsection{RQ5: Does it help Coq developers expand the coverage of the test suite?}
+\subsubsection{RQ4: What is the size of the reduced cases?}
 
-We also asked to the users of the minimizer if they used the output of the minimizer to extend the test suite of Coq (as the minimizer itself suggests when its reduced test case is short enough to fit in a comment).
-%
-The users who did not find the minimizer useful never answered positively to this question.
-%
-However, among the users who found the minimizer useful, a majority (5 out of 8) said they had used the output of the minimizer to extend the test suite of Coq.
-%
-In one case, the respondent explained that while the minimizer had been very useful by quickly identifying the reason of the CI failure, they had not used its output to extend the test suite because the reason was that the tested project used a deprecated feature that was being removed.
+The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to the test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 369 lines and the maximum size is 3804 lines. But 25\% of the reduced cases are under 35 lines, 50\% are under 122 lines, and 75\% are under 461 lines.
 
-\todo{Manual analysis of how people extended the test suite}
+\subsubsection{RQ5: How long do the reduced cases take to run?}
+
+\subsubsection{RQ6: What is the amount of code reduction?}
+
+%% \subsubsection{RQ5: Does it help Coq developers understand CI failures?}
+
+%% We got 19 answers to our survey, from 7 different people.
+%% %
+%% 14 of these answers where about pull requests where the respondent had triggered the minimizer themselves (and 5 where about pull requests which the respondent authored but where they did not trigger the minimizer).
+
+%% The answers we got are very contrasted between the triggerers and the non-triggerers.
+%% %
+%% On the one hand, for each of the 5 responses from authors who did not trigger the minimizer themselves, the response to the survey indicated that the minimizer was not useful to the respondent and did not help them understand the CI failure.
+%% %
+%% On the other hand, 9 out of 14 responses from triggerers indicated that the minimizer was useful (3 somewhat useful and 6 very useful).
+%% %
+%% The next question on whether it helped diagnose the CI failure was optional but a majority of the triggerers that answered (5 out of 9) said it had helped.
+
+%% \todo{Write about why people said the minimizer was not useful.}
+
+%% \subsubsection{RQ5: Does it help Coq developers expand the coverage of the test suite?}
+
+%% We also asked to the users of the minimizer if they used the output of the minimizer to extend the test suite of Coq (as the minimizer itself suggests when its reduced test case is short enough to fit in a comment).
+%% %
+%% The users who did not find the minimizer useful never answered positively to this question.
+%% %
+%% However, among the users who found the minimizer useful, a majority (5 out of 8) said they had used the output of the minimizer to extend the test suite of Coq.
+%% %
+%% In one case, the respondent explained that while the minimizer had been very useful by quickly identifying the reason of the CI failure, they had not used its output to extend the test suite because the reason was that the tested project used a deprecated feature that was being removed.
+
+%% \todo{Manual analysis of how people extended the test suite}
 
 \subsection{Threats to validity}
 
