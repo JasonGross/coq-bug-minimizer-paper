@@ -133,14 +133,14 @@ However, large swathes of proof assistant software—such as tactic languages, e
 
 
 To reduce the impact of accidental changes in parts of Coq not covered by the test-suite, starting in 2017, developers adopted “reverse” continuous integration (CI)~\cite{zimmermann:tel-02451322}.
-Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams
+Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams.
 Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test-suite from shrinking for future releases.
 
 
 The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time and effort intensive process.
-In order to streamline this process, we built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files, and is integrated with coqbot to \textbf{automatically} trigger on reverse CI failures.
+In order to streamline this process, we have built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files, and is integrated with coqbot to \textbf{automatically} trigger on reverse CI failures.
 The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large developments.
-Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by a factor of 10. \todo{is this accurate?}
+Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by a factor of 10. \todo{is this accurate? Nope}
 
 
 The state of the art in bug minimization is delta debugging.
