@@ -129,27 +129,27 @@
 
 In the world of machine verification, the dream is to prove the correctness of every program.
 Projects such as Coq Coq Correct~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
-However, large swathes of proof assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, oftentimes even unspecified, and without adequate test-suite coverage.
+However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, oftentimes even unspecified, and without adequate test-suite coverage.
 
 
-To reduce the impact of accidental changes in parts of the proof assistant Coq not covered by the test-suite, starting in 2017, developers adopted “reverse” continuous integration (CI)~\cite{zimmermann:tel-02451322}.
+To reduce the impact of accidental changes in parts of the proof assistant Coq not covered by the test suite, starting in 2017, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322}.
 Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams.
-Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test-suite from shrinking for future releases.
+Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test suite from shrinking for future releases.
 
 
-The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time and effort intensive process.
-In order to streamline this process, we have built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files, and is integrated with coqbot to \textbf{automatically} trigger on reverse CI failures.
+The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time- and effort-intensive process.
+In order to streamline this process, we have built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files and is integrated with coqbot to trigger \textbf{automatically} on reverse-CI failures.
 The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large external projects.
 Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by about a factor of two.
 
 
 The state of the art in bug minimization is delta debugging.
-The delta tool~\cite{delta} preprocesses files into well balanced blocks of code to determine the granularity of code removal, and then runs binary search on removing blocks of code.
-However, bug minimization is different for proof assistants than for compilers of other languages, and has its unique challenges and tricks.
+The delta tool~\cite{delta} preprocesses files into well-balanced blocks of code to determine the granularity of code removal, and then it runs binary search on removing blocks of code.
+However, bug minimization is different for proof assistants than for compilers of other languages, with unique challenges and applicable tricks.
 
 
 We present the ``how to'' of the Coq Bug Minimizer for insights that we expect to generalize to bug minimization in other proof assistants.
-We do this with an eye towards features of proof assistant design which enable automatic and useful bug minimization, which is especially relevant for backwards compatibility and usability for large, industry-scale projects.
+We do this with an eye towards features of proof-assistant design which enable automatic and useful bug minimization, which is especially relevant for backwards compatibility and usability for large, industry-scale projects.
 
 \todo{write a paragraph that tells them about the structure of the paper.}
 
