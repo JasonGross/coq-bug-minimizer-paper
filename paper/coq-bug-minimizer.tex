@@ -28,7 +28,7 @@
 \author{Miraya Poddar-Agrawal}{Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA% \and \url{https://github.com/miraya-pa}
 }{ragrawal@reed.edu}{https://orcid.org/0000-0001-7617-9180}{}
 
-\author{Adam Chlipala}{CSAIL, Massachusetts Institute of Technology, 77 Massachusetts Ave., Cambridge, MA 02139, USA \and \url{http://adam.chlipala.net/} }{adamc@csail.mit.edu}{[orcid]}{[\todo{add funding here, add or remove orcid in previous braces}]}
+\author{Adam Chlipala}{CSAIL, Massachusetts Institute of Technology, 77 Massachusetts Ave., Cambridge, MA 02139, USA \and \url{http://adam.chlipala.net/} }{adamc@csail.mit.edu}{https://orcid.org/0000-0001-7085-9417}{}
 
 \authorrunning{J. Gross and T. Zimmermann and M. Poddar-Agrawal and A. Chlipala} %TODO mandatory. First: Use abbreviated first/middle names. Second (only in severe cases): Use first author plus 'et al.'
 
@@ -77,7 +77,7 @@
 
 %\funding{(Optional) general funding statement \dots}%optional, to capture a funding statement, which applies to all authors. Please enter author specific funding statements as fifth argument of the \author macro.
 
-\acknowledgements{I want to thank \dots\todo{update or remove}}%optional
+%\acknowledgements{I want to thank \dots\todo{update or remove}}%optional
 
 %\nolinenumbers %uncomment to disable line numbering
 
@@ -114,7 +114,7 @@
 
 \begin{abstract}
   We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} in \emph{minimal} and \emph{standalone} files.
-  We have integrated this tool with coqbot to \emph{automatically} trigger on reverse CI failures.
+  We have integrated this tool with coqbot to trigger \emph{automatically} on reverse CI failures.
   Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments.
 
   In this paper, we describe the insights that we expect to generalize to bug minimization in other proof assistants.
@@ -122,7 +122,7 @@
   Our tool succeeds in reducing the failure to a smaller test case in roughly 70\% of these cases.
   50\% of successful runs take less than 20 minutes, and 80\% complete within about two hours, which is comparable to the length of time spent running the CI on a single PR.
   The minimizer produces a fully standalone example 97\% of the time, and the example is on average about one-third the size of the original test.
-  The average reduced test-case compiles in 1.4 seconds, with 75\% taking under half-a-second.
+  The average reduced test-case compiles in 1.4 seconds, with 75\% taking under half a second.
 \end{abstract}
 
 \section{Introduction}
