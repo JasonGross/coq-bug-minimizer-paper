@@ -132,15 +132,15 @@ Projects such as Coq Coq Correct~\cite{coq-coq-correct} make significant progres
 However, large swathes of proof assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, oftentimes even unspecified, and without adequate test-suite coverage.
 
 
-To reduce the impact of accidental changes in parts of Coq not covered by the test-suite, starting in 2017, developers adopted “reverse” continuous integration (CI)~\cite{zimmermann:tel-02451322}.
+To reduce the impact of accidental changes in parts of the proof assistant Coq not covered by the test-suite, starting in 2017, developers adopted “reverse” continuous integration (CI)~\cite{zimmermann:tel-02451322}.
 Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams.
 Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test-suite from shrinking for future releases.
 
 
 The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time and effort intensive process.
 In order to streamline this process, we have built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files, and is integrated with coqbot to \textbf{automatically} trigger on reverse CI failures.
-The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large developments.
-Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by a factor of 10. \todo{is this accurate? Nope}
+The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large external projects.
+Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by about a factor of two.
 
 
 The state of the art in bug minimization is delta debugging.
@@ -156,8 +156,8 @@ We do this with an eye towards features of proof assistant design which enable a
 
 \section{Reproducing buggy behavior}
 
-What does it mean to reproduce the same bug?
-In our context, we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI.
+What does it mean to reproduce the ``same'' bug?
+\todo{make distiction of buggy bheavior v same bug more explicitly} To reproduce buggy behavior we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI.
 However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same.
 
 For projects in Coq, we marked several details of error messages as auxiliary to strike a balance between replicating buggy behavior and permitting smaller files.
@@ -195,6 +195,13 @@ Hence we don't want to consider whitespace changes as significant changes in the
 
 \section{Minimization}
 
+Why is it useful to minimize test cases?
+When the external project exhibiting buggy behavior takes minutes or hours to compile, the edit-compile-test-debug loop is very long and exploring hypotheses about what went wrong takes a long time.
+Test cases that compile in seconds or fractions of a second allow developers to more fluidly work on fixing the bug.
+Additionally, shorter test cases can make more clear what is going wrong, and allow developers to more easily formulate hypotheses about their changes to Coq.
+
+Thus, the problems in minimization are making the test as small as possible, and quick to compile. 
+
 Since Coq forbids forward-reference, removing earlier statements almost never allows the removal of later statements.
 Hence we can mostly just make a linear pass over statements in reverse order, attempting to remove one at a time.
 
@@ -204,47 +211,7 @@ In our goal to get the shortest reproducing test case as quickly as possible, it
   Coq has a couple of mechanisms for removing proof scripts without removing the theorems and definitions being proven (the commands \verb|Admitted| and \verb|Admit Obligations| as well as the \verb|admit| tactic).
   Replacing proof blocks with these commands, rather than just removing proof scripts, allows us to make much smaller and faster examples than might otherwise be possible.
 
-\begin{enumerate}
-\item Repeat the following steps until a fixed point is reached, skipping any steps that change the error message in a forbidden way.
-\begin{enumerate}
-\item Remove comments, inserting a header comment with metadata about minimization statistics.
-\item Insert a further header which defines the \verb|admit| tactic.
-  We must define this tactic ourselves to handle files which build with a non-standard standard library (such as HoTT) and hence don't have access to \verb|Coq.Compat.AdmitAxiom|.
-  To support multiple versions of Coq, we need to feature-test Coq to see what fragment of code grants us access to Ltac without loading the standard library; this feature-test is done once and for all for a single run of the bug minimizer.
-\item Split \verb|Require| statements from \verb|Import|/\verb|Export|, disambiguating the statements at the same time.
-  (If we don't disambiguate them, the \verb|Import|s might point to the wrong module.)
-\item Move the \verb|Require| statements to the top of the file, transitively closing them (this allows us to remove \verb|Require| statements which are only needed to transitively require other files).
-\item Parse the file into statements (with exactly two exceptions, statements in Coq end with \verb|.| or \verb|...| followed by whitespace; the exceptions are \verb|{| and \verb|}|).
-  Note that this is complicated by needing to handle strings which contain a full stop followed by whitespace, and by the fact that comments in Coq are well-balanced and nestable and can contain strings which themselves contain comment identifiers without nesting further comments.
-\item Remove statements after the line which generates the error.
-\item Split the statements into structured blocks, one per definition/proof.
-  We should not assume that we can remove lines from the end of a proof without breaking things, so we treat each theorem/lemma/definition block, combined with its proof, as a unit.
-  This is made simpler by the fact that Coq strongly discourages nested proofs, and by the fact that Coq generally forces definitions and their bodies to be side-by-side.
-  There are a couple of exceptions to this strategy, that have dedicated passes for handling them:
-  \begin{itemize}
-  \item \verb|Program| \verb|Definition|s, \verb|Fixpoint|s, etc, have \verb|Obligation| blocks which can be interwoven with other definitions.
-    The solution here is to replace such \verb|Obligation| blocks with \verb|Admit Obligations|, which is thankfully a no-op when no obligations are present.
-    \todo{Insert some code showing how minimization of program definitions proceeds with admit obligations}
-  \item Sections, modules, and module types have paired vernacular delimiters.
-    Currently there is some code to eliminate empty blocks, but it doesn't work very well, and misses many cases.
-    There's an open feature request for a \verb|Try| vernacular command at https://github.com/coq/coq/issues/15051, which would solve the issue of coupled commands in general.
-  \end{itemize}
-\item Repeat the following steps until a fixed point is reached (order presented here is not faithful to the minimizer):
-  \begin{itemize}
-  \item Remove each structured block (whose removal does not change the error message), one at a time, from the end of the file to the beginning of the file.
-  \item Replace proof scripts with \verb|Admitted|.
-    (There's some nuance about the best ordering strategy to try here, whether to first try all the \verb|Qed| lemmas, whether to first try all lemmas and definitions at once, or whether to just go one at a time in reverse order.)
-    Also, we actually replace them with \verb|admit. Defined.| so that previously unfoldable constants remain unfoldable.
-    Technically we should try \verb|Admitted| when the proof script previously ended with \verb|Qed| and replacing with \verb|admit. Defined.| fails, because it might be the case that some later tactic relies on this definition not being unfoldable, but we have not encountered such a case yet, and it seems quite unlikely.
-  \item Replace \verb|abstract tac| with \verb|admit|, potentially simplifying proof scripts and decreasing dependencies.
-  \item Split \verb|Definition foo args : ty := body.| into \verb|Definition foo args : ty.| and \verb|Proof. refine (body). Defined.| so that such definitions can potentially be admitted later.
-  \item Replace \verb|Module Foo| with \verb|Module Export Foo|, potentially allowing the removal of \verb|Import| statements later, and potentially eventually allowing the removal of the module itself.
-  \item Split \verb|Import| and \verb|Export| statements containing multiple modules into separate statements, so they can be removed separately.
-  \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
-    This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
-  \end{itemize}
-\end{enumerate}
-\end{enumerate}
+
 
 \subsection{small}
 
@@ -490,6 +457,8 @@ See \autoref{sec:future-work} for more details.
 \label{text:ltac-fragment:orig}
 
 \section{Standalone}
+
+Why is it difficult to 
 
 \todo{fix intro, this was previously a bulled}
 Finally, before repeating the loop, attempt to inline a dependency which has not yet been inlined.
@@ -1150,6 +1119,50 @@ Hence we use \texttt{Tactic Notation "admit" := abstract case proof\_admitted} i
 
 Thus the fragment we add for the \verb|admit| tactic is ultimately:
 \\\todo{code moved to \autoref{code:ltac-support:2}}\label{code:ltac-support:2:orig}
+
+
+\section{controlflow}
+\begin{enumerate}
+\item Repeat the following steps until a fixed point is reached, skipping any steps that change the error message in a forbidden way.
+\begin{enumerate}
+\item Remove comments, inserting a header comment with metadata about minimization statistics.
+\item Insert a further header which defines the \verb|admit| tactic.
+  We must define this tactic ourselves to handle files which build with a non-standard standard library (such as HoTT) and hence don't have access to \verb|Coq.Compat.AdmitAxiom|.
+  To support multiple versions of Coq, we need to feature-test Coq to see what fragment of code grants us access to Ltac without loading the standard library; this feature-test is done once and for all for a single run of the bug minimizer.
+\item Split \verb|Require| statements from \verb|Import|/\verb|Export|, disambiguating the statements at the same time.
+  (If we don't disambiguate them, the \verb|Import|s might point to the wrong module.)
+\item Move the \verb|Require| statements to the top of the file, transitively closing them (this allows us to remove \verb|Require| statements which are only needed to transitively require other files).
+\item Parse the file into statements (with exactly two exceptions, statements in Coq end with \verb|.| or \verb|...| followed by whitespace; the exceptions are \verb|{| and \verb|}|).
+  Note that this is complicated by needing to handle strings which contain a full stop followed by whitespace, and by the fact that comments in Coq are well-balanced and nestable and can contain strings which themselves contain comment identifiers without nesting further comments.
+\item Remove statements after the line which generates the error.
+\item Split the statements into structured blocks, one per definition/proof.
+  We should not assume that we can remove lines from the end of a proof without breaking things, so we treat each theorem/lemma/definition block, combined with its proof, as a unit.
+  This is made simpler by the fact that Coq strongly discourages nested proofs, and by the fact that Coq generally forces definitions and their bodies to be side-by-side.
+  There are a couple of exceptions to this strategy, that have dedicated passes for handling them:
+  \begin{itemize}
+  \item \verb|Program| \verb|Definition|s, \verb|Fixpoint|s, etc, have \verb|Obligation| blocks which can be interwoven with other definitions.
+    The solution here is to replace such \verb|Obligation| blocks with \verb|Admit Obligations|, which is thankfully a no-op when no obligations are present.
+    \todo{Insert some code showing how minimization of program definitions proceeds with admit obligations}
+  \item Sections, modules, and module types have paired vernacular delimiters.
+    Currently there is some code to eliminate empty blocks, but it doesn't work very well, and misses many cases.
+    There's an open feature request for a \verb|Try| vernacular command at https://github.com/coq/coq/issues/15051, which would solve the issue of coupled commands in general.
+  \end{itemize}
+\item Repeat the following steps until a fixed point is reached (order presented here is not faithful to the minimizer):
+  \begin{itemize}
+  \item Remove each structured block (whose removal does not change the error message), one at a time, from the end of the file to the beginning of the file.
+  \item Replace proof scripts with \verb|Admitted|.
+    (There's some nuance about the best ordering strategy to try here, whether to first try all the \verb|Qed| lemmas, whether to first try all lemmas and definitions at once, or whether to just go one at a time in reverse order.)
+    Also, we actually replace them with \verb|admit. Defined.| so that previously unfoldable constants remain unfoldable.
+    Technically we should try \verb|Admitted| when the proof script previously ended with \verb|Qed| and replacing with \verb|admit. Defined.| fails, because it might be the case that some later tactic relies on this definition not being unfoldable, but we have not encountered such a case yet, and it seems quite unlikely.
+  \item Replace \verb|abstract tac| with \verb|admit|, potentially simplifying proof scripts and decreasing dependencies.
+  \item Split \verb|Definition foo args : ty := body.| into \verb|Definition foo args : ty.| and \verb|Proof. refine (body). Defined.| so that such definitions can potentially be admitted later.
+  \item Replace \verb|Module Foo| with \verb|Module Export Foo|, potentially allowing the removal of \verb|Import| statements later, and potentially eventually allowing the removal of the module itself.
+  \item Split \verb|Import| and \verb|Export| statements containing multiple modules into separate statements, so they can be removed separately.
+  \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
+    This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
+  \end{itemize}
+\end{enumerate}
+\end{enumerate}
 
 
 
