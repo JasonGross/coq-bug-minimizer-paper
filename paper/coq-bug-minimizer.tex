@@ -829,9 +829,15 @@ Developers have the possibility of performing additional minimization manually a
 
 \subsubsection{RQ5: How long do the reduced cases take to run?}
 
-
+A recent feature of the minimizer is that it reports on the expected \texttt{coqc} compile time as part of the header comments it includes in the minimized file. Out of the 43 cases where we had this data available, we obtain that the reduced test cases take on average 1.4 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
 
 \subsubsection{RQ6: What is the amount of code reduction?}
+
+To compute how much code reduction there was, we use data that the minimizer records about each minimization step (how many lines it started from and how many lines it ended up with). These numbers go up at times because of the process of inlining external dependencies. On the other hand, dependencies are only inlined if they couldn't be simply removed, so these numbers do not include the size of the files that were previously imported but did not need to be inlined during the minimization process.
+
+We aggregate these numbers by simply taking the sum of the differences in line number at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 33\%, which means that the final test case size is on average one-third the size of the original test (including the dependencies which actually matter for the test case).
+
+If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 60\%, which means that the final file is on average 40\% smaller than the file we started from (note that nothing prevents the reduced test case to be sometimes longer than the file we started from).
 
 %% \subsubsection{RQ5: Does it help Coq developers understand CI failures?}
 
