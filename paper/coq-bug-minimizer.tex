@@ -641,17 +641,17 @@ Steps before the bug minimizer is invoked:
 As described in \autoref{sec:spec}, the goal of the minimizer is to take a CI development that succeds on the tip of master and fails on a given PR, and emit a small, stand-alone file which succeeds on master and fails in the same way \todo{same modulo universes, etc, stick this somewhere} on the PR.
 \todo{Should we cite \url{https://github.com/dsw/delta\#do-a-controlled-experiment} about passing coqc, a la ``Below we don't just minimize a file that causes Oink to produce an error message, we minimize a file that causes gcc to accept AND oink to reject in a specific way. That is, the test delta does is a controlled experiment, where gcc is the control. Ignoring this aspect of the problem seems to be a frequent mistake of first time users.''}
 
-In order to do this efficiently, we re-use the CI artifacts from Coq.
-We download the pre-built versions of Coq from master and from the tip of the PR.
+In order to do this efficiently, we reuse the CI artifacts from Coq.
+We download the prebuilt versions of Coq from master and from the tip of the PR.
 From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
-We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this CI development, into different directories: one for the version of Coq that's supposed to pass, and another for the version of Coq that's supposed to fail.
+We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this CI development, into different directories: one for the version of Coq expected to pass and another for the version of Coq expected to fail.
 We also reuse Coq's generic CI workflow to figure out the error message and the failing file which we want to minimize.
-Much like \todo{cite https://github.com/dsw/build-interceptor}, rather than trying to parse the build setup of various CI developments, we merely wrap the Coq binaries to intercept the build-system calls, and print out the relevant information to stderr.
+Much like \todo{cite https://github.com/dsw/build-interceptor}, rather than trying to parse the build setup of various CI developments, we merely wrap the Coq binaries to intercept the build-system calls, printing out the relevant information to stderr.
 \todo{Add a note about future work for redirecting things to a log file from within the wrapper, so that we don't change the build output at all, which would, perhaps, allow us to minimize coq-tools itself, maybe}
-The relevant information in this case, is the current working directory of coqc, the environment variable \texttt{COQPATH}, the command line used to invoke the binary, and the relative path of the file that coqc is invoked on.
+The relevant information in this case is the current working directory of coqc, the environment variable \texttt{COQPATH}, the command line used to invoke the binary, and the relative path of the file that coqc is invoked on.
 We need \texttt{COQPATH} to ensure that we have the right search path for the dependencies of coqc.
 \todo{maybe explain COQPATH somewhere?}
-We need the command line arguments so that we know what flags to tell the bug minimizer to pass to coqc.
+We need the command-line arguments so that we know what flags to tell the bug minimizer to pass to coqc.
 We could in theory elide the file name and the current working directory, as long as we changed all relative paths to absolute paths before printing the command line.
 (Unless the file uses directives like \texttt{Cd} or \texttt{Add LoadPath} with relative paths.
 However, we don't currently test nor support these cases directly.
@@ -672,13 +672,13 @@ We then pass this information to the bug minimizer:
 \item any arguments to \verb|coqc| which are neither naming dependency locations nor known to be both irrelevant to the processing of the file and counter-productive to the minimizer's operation (such arguments are \verb|-batch| which applies only to \verb|coqtop|, \verb|-time| which will only make logs of the minimizer much longer, and \verb|-noglob|, \verb|-dump-glob|, and \verb|-o|, which interfere with the generation of outputs used by the minimizer).
 \end{itemize}
 
-Henceforce, we will assume that we have all of this information at hand, and speak only of how to minimize files.
+Henceforce, we will assume that we have all of this information at hand, writing only of how to minimize files.
 
 
 \section{Bug Reporter Experience}
 Up to this point, we have talked about using the Coq Bug Minimizer exclusively to minimize reverse CI failures for debugging faulty changes in Coq.
-Our tool can also be used to minimize test-cases for newly-found bugs in Coq.
-In this mode, bug reporters can write a shell script which invokes a \emph{single} version of Coq to produce buggy behavior on some Coq file, and ask coqbot to produce a minimal example from this script.
+Our tool can also be used to minimize test cases for newly found bugs in Coq.
+In this mode, bug reporters can write a shell script which invokes a \emph{single} version of Coq to produce buggy behavior on some Coq file, asking coqbot to produce a minimal example from this script.
 When running in this mode, we place an additional constraint on the minimizer that the proof script generating the error message should be left untouched.
 This allows bug reporters to write proof scripts such as
 \begin{verbatim}
