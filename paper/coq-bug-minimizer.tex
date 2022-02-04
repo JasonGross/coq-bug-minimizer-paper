@@ -242,14 +242,14 @@ Our minimizer tries its best to drop as many unneeded lemmas as possible, but th
 \section{Reproducing buggy behavior}
 
 What does it mean to reproduce the ``same'' bug?
-\todo{make distiction of buggy bheavior v same bug more explicitly} To reproduce buggy behavior we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI.
-However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same.
+To reproducing the  ``same'' bug, we generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq with the same error message that showed up in the reverse CI.
+However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same. 
+Thus, we modify our goal to reproducing buggy behavior in place of reproducing the ``same'' bug. 
 
-For projects in Coq, we marked several details of error messages as auxiliary to strike a balance between replicating buggy behavior and permitting smaller files.
+The following is a list of details that we marked as auxiliary to debugging goals in Coq projects:  
+\begin{enumerate}
 
-\todo{make the remainder of this section better}
-
-Universe inconsistency is how Coq prevents users from proving absurdity by assuming a ``set of all sets.''
+\item Universe inconsistencies are how Coq prevents users from proving absurdity by assuming a ``set of all sets.''
 The explanations of universe inconsistencies in error messages are sensitive to how many universes are floating around and what order constraints were added.
 Rather than requiring output files to mimic the error messages exactly, we only require that they result in \emph{some} universe inconsistency.
 
@@ -275,6 +275,7 @@ Since we create temporary files with random names to test code changes, we need 
 
 In some cases, minor changes in any of the above ways might result in different word-wrapping.
 Hence we don't want to consider whitespace changes as significant changes in the error message.
+\end{enumerate}
 
 \todo{from hereon, only sectioning done of text. new section content pending.}
 
@@ -286,19 +287,23 @@ Test cases that compile in seconds or fractions of a second allow developers to 
 Additionally, shorter test cases can make more clear what is going wrong and help developers formulate hypotheses about their changes to Coq.
 
 Thus, the problems in minimization are making the test as small as possible and quick to compile. 
+Another important consideration is getting to our minimal test case as quickly as possible.
+
+\subsection{Fast Minimization}
 
 Since Coq forbids forward references, removing earlier statements almost never allows the removal of later statements.
 Hence we can mostly just make a linear pass over statements in reverse order, attempting to remove one at a time.
 
 In our goal to get the shortest reproducing test case as quickly as possible, it helps to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
-  The slowest part of almost all Coq developments is proof scripts.
-  Hence we attempt to remove proof scripts as early as possible.
-  Coq has a couple of mechanisms for removing proof scripts without removing the theorems and definitions being proven (the commands \verb|Admitted| and \verb|Admit Obligations| as well as the \verb|admit| tactic).
-  Replacing proof blocks with these commands, rather than just removing proof scripts, allows us to make much smaller and faster examples than might otherwise be possible.
 
+The slowest part of almost all Coq developments is proof scripts.
+Hence we attempt to remove proof scripts as early as possible.
+Since proof assistants check that proofs are valid, we cannot simply remove a proof, like we might remove a function body in a traditional programming language.
+However, most proof assistants have some mechanism for ``giving up'' on a proof or ``trusting'' the user, and Coq is no exception:
+In Coq, this mechanism involves any of \verb|Admitted|, \verb|Admit Obligations|, or the \verb|admit| tactic.
+Replacing proof blocks with these commands, rather than just removing proof scripts, allows us to make much smaller and faster examples than might otherwise be possible.
 
-
-\subsection{small}
+\subsection{Small Test Cases}
 
 The simplest function of the bug minimizer is to remove unneeded lines.
 For example, if a Coq PR breaks the \texttt{rewrite} tactic (an admittedly simplistic example in this generality), we might want to minimize a file such as
