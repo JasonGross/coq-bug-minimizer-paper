@@ -160,7 +160,7 @@ Balancing out those simplifications, we still encountered plenty of twists, whic
 \todo{A separate section on related work, probably mostly drawing on software-engineering examples from outside of proof assistants, but also mentioning vaguely related stuff like QuickChick and hammers}
 
 
-\section{Test-case minimization by example}
+\section{Test-Case Minimization by Example}
 
 Imagine you have just added a new feature to Coq, but as a result a popular Coq-based open-source library stops compiling.
 You did not need to identify that library, because the Coq project's continuous integration automatically recompiles many open-source libraries.
@@ -209,7 +209,34 @@ Each of these categories forced us to make several nonobvious design decisions.
 Before proceeding to share the most important ones, we note some ways in which test-case minimization is actually \emph{simpler} in this setting than others.
 
 
-\section{Simplifications of the proof-assistant setting}\label{sec:easier}
+\section{Simplifications of the Proof-Assistant Setting}\label{sec:easier}
+
+Classic delta debugging~\cite{Zeller2002} uses binary search through program structure to find subprograms that can be removed while preserving relevant properties, like triggering specific bugs in particular compilers.
+We found that a simpler method works well for minimizing Coq sources: remove \emph{everything after} the error-message-generating line, and \emph{try removing the syntactic units beforehand in-order, one-at-a-time}.
+Reducing the number of ``experiments'' that need to be run on program variants can really pay off when each variant requires significant processing time, but why do we expect this simplified search process to yield good results?
+
+\subsection{Dropping Code After a Bug-Triggering Line}
+
+The first reason is straightforward but still very helpful: Coq source files may not contain forward references.
+There is no convention as found in languages from Java to Haskell, where all functions in a file are considered mutually recursive.
+As a result, there really should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
+Actually, we should think in terms of single commands processed by Coq (e.g., function definitions or individual tactics), not lines, but the principles is sound, with that fix-up.
+
+As a result, the satisfyingly simple first step of test-case minimization is removing all lines following the command that triggers the bug.
+
+\subsection{Attempted Dropping of Candidate Lines in Order}
+
+Next, where classic delta debugging does binary search to find segments of source files that can be deleted without masking bugs, we step through all commands in-order, backward, starting after the one that triggers the bug.
+Why will we not miss important shrinking opportunities?
+One answer is that, even if we do, the savings in running time may be enough to justify the choice.
+Our empirical evaluation (\autoref{sec:evaluation}) demonstrates that we generally still realize good results.
+
+However, somewhat speculatively, we believe that it helps to be in a language where \emph{proof irrelevance} is such an important concept.
+Most details of a Coq development are supposed to be strongly encapsulated, in the sense that a change in one part should not be observable in another part.
+Theorem statements mediate between segments of a development.
+While a compiler might break during compilation of one function because of changes to the body of another function, it generally surprises us if one Coq proof breaks because of changes to another proof.
+Thus, it is generally safe to mark any proof as skipped (``admitted,'' in Coq parlance), without masking Coq bugs that arise later.
+Our minimizer tries its best to drop as many unneeded lemmas as possible, but then the second-best change is to mark admitted as many of their proofs as possible.
 
 
 \section{Reproducing buggy behavior}
