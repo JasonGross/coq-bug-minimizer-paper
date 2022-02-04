@@ -196,18 +196,18 @@ Hence we don't want to consider whitespace changes as significant changes in the
 \section{Minimization}
 
 Why is it useful to minimize test cases?
-When the external project exhibiting buggy behavior takes minutes or hours to compile, the edit-compile-test-debug loop is very long and exploring hypotheses about what went wrong takes a long time.
+When the external project exhibiting buggy behavior takes minutes or hours to compile, the edit-compile-test-debug loop is very long, and exploring hypotheses about what went wrong takes a long time.
 Test cases that compile in seconds or fractions of a second allow developers to more fluidly work on fixing the bug.
-Additionally, shorter test cases can make more clear what is going wrong, and allow developers to more easily formulate hypotheses about their changes to Coq.
+Additionally, shorter test cases can make more clear what is going wrong and help developers formulate hypotheses about their changes to Coq.
 
-Thus, the problems in minimization are making the test as small as possible, and quick to compile. 
+Thus, the problems in minimization are making the test as small as possible and quick to compile. 
 
-Since Coq forbids forward-reference, removing earlier statements almost never allows the removal of later statements.
+Since Coq forbids forward references, removing earlier statements almost never allows the removal of later statements.
 Hence we can mostly just make a linear pass over statements in reverse order, attempting to remove one at a time.
 
-In our goal to get the shortest reproducing test case as quickly as possible, it behooves us to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
+In our goal to get the shortest reproducing test case as quickly as possible, it helps to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
   The slowest part of almost all Coq developments is proof scripts.
-  Hence it behooves us to attempt to remove proof scripts as early as possible.
+  Hence we attempt to remove proof scripts as early as possible.
   Coq has a couple of mechanisms for removing proof scripts without removing the theorems and definitions being proven (the commands \verb|Admitted| and \verb|Admit Obligations| as well as the \verb|admit| tactic).
   Replacing proof blocks with these commands, rather than just removing proof scripts, allows us to make much smaller and faster examples than might otherwise be possible.
 
@@ -237,10 +237,10 @@ Here it suffices to (a) remove all statements after the error, and (b) try remov
 Since Coq is mostly not sensitive to whitespace, we want to remove statements, rather than lines.
 
 Because Coq forbids forward references (definitions cannot refer to any identifiers that have not yet been added to the global environment, and documents are processed serially), we can remove all lines after the line where the error occurs without risking a change in error messages.
-Note that the error message line indicator is not always accurate; the recent bug at \url{https://github.com/coq/coq/issues/15073}\todo{formatting of link} was an instance where the error location was mis-reported.
+Note that the error-message line indicator is not always accurate; the recent bug at \url{https://github.com/coq/coq/issues/15073}\todo{formatting of link} was an instance where the error location was misreported.
 
-This lack of forward referencing also means that we generally don't need to do any sort of non-local search on removing statements.
-Since removing an earlier statement almost never enables removing a later statement, we can generally just try removing statements one at a time, in reverse order.
+This lack of forward referencing also means that we generally don't need to do any sort of nonlocal search on removing statements.
+Since removing an earlier statement almost never enables removing a later statement, we can generally just try removing statements one-at-a-time, in reverse order.
 
 Consider now a file such as.
 \begin{verbatim}
@@ -264,7 +264,7 @@ Proof. intros x H. rewrite H.
 results in an error about nested proofs.
 
 We instead group statements into \emph{definition} blocks to be removed all at once.
-We get information about definitions by parsing the output of \texttt{coqtop -emacs -time}, as mentioned above.
+We get information about definitions by parsing the output of \texttt{coqtop -emacs -time}.
 This way, we can remove
 \begin{verbatim}
 Lemma irrelevant : two = 2.
@@ -273,17 +273,17 @@ Proof. reflexivity. Qed.
 all at once.
 
 We could in theory deal with more complicated nesting structure, for example trying to remove an entire section or module at a time.
-The delta tool~\cite{delta} is in fact built around preprocessing the file into one that exposes nested structure clearly, and then removing well-parenthesized blocks.
+The delta tool~\cite{delta} is in fact built around preprocessing the file into one that exposes nested structure clearly, then removing well-parenthesized blocks.
 However, removing statements, grouped into definitions as necessary, sufficies for removing time-consuming code.
 (\todo{Find a better place for this theme, call it out more broadly:}%
-In general, it's very important to remove any lines that can be removed that take significant compilation time, and much less important to remove lines that take basically no compilation time.
+In general, it is very important to remove any lines that can be removed that take significant compilation time, and it is much less important to remove lines that take basically no compilation time.
 \todo{what more should be said about this?}
 )
 
 \subsubsection{Coupled Removal}
 
 \paragraph{Program Mode}
-We saw above that proof scripts could not be removed one statement at a time, but instead had to be transformed all at once.
+We saw above that proof scripts could not be removed one statement at a time but instead had to be transformed all at once.
 Coq has a \verb|Program| mode which results in even more coupling: removing one proof script at a time is not enough to remove the \verb|Program Definition|.
 
 Consider, for example:
@@ -304,7 +304,7 @@ After performing this transformation, we can remove the \verb|Program Definition
 \\\todo{code moved to \autoref{code:program:3}}\label{code:program:3:orig}\\
 
 \paragraph{Sections}
-Removing statements one at a time will not always be able to remove empty sections (nor empty \verb|Module|s or \verb|Module Type|s).
+Removing statements one-at-a-time will not always be able to remove empty sections (nor empty \verb|Module|s or \verb|Module Type|s).
 
 For example, consider the file
 \\\todo{code moved to \autoref{code:section:1}}\label{code:section:1:orig}\\
@@ -368,7 +368,7 @@ This pass relies on the \verb|refine| tactic, which allows users to give a proof
 
 
 \paragraph{Early Removal of Unused Constants}
-There are some likely-to-succeed steps that we try early on, which are superseded by removing each and every structured block one at a time, but may result in faster minimization.
+There are some likely-to-succeed steps that we try early on, which are superseded by removing each and every structured block one at a time but may result in faster minimization.
 The primary example of this sort of step is removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
 
 \paragraph{Splitting \texttt{Import} and \texttt{Export}s}
@@ -442,7 +442,7 @@ Hence we provide our own tactic, rather than importing one from the standard lib
 
 Additionally, we may want to admit some parts of the proof script without replacing all of it.
 Currently, we use a rather conservative heuristic:
-Coq has a tactical \verb|abstract| which executes the tactic it is passed as an argument, and makes the resulting proof term opaque.
+Coq has a tactical \verb|abstract| which executes the tactic it is passed as an argument, making the resulting proof term opaque.
 Such subproofs should be able to be replaced with \verb|admit| without changing the behavior of the proof script.
 To make this change more likely to succeed, we define \verb|admit| as \verb|abstract case proof_admitted| rather than \texttt{clear; abstract case proof\_admitted}.
 
