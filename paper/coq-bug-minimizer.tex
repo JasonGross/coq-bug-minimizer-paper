@@ -147,11 +147,69 @@ The state of the art in bug minimization is delta debugging.
 The delta tool~\cite{delta} preprocesses files into well-balanced blocks of code to determine the granularity of code removal, and then it runs binary search on removing blocks of code.
 However, bug minimization is different for proof assistants than for compilers of other languages, with unique challenges and applicable tricks.
 
+Our goal with this paper is to make the ITP community aware of the applicability of this idea from the world of software engineering.
+We also share what we have learned about where the problem is harder or easier than the traditional one, e.g. correctness of compilers.
+Drawing on empirical results from more than a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
+Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants.
 
-We present the ``how to'' of the Coq Bug Minimizer for insights that we expect to generalize to bug minimization in other proof assistants.
-We do this with an eye towards features of proof-assistant design which enable automatic and useful bug minimization, which is especially relevant for backwards compatibility and usability for large, industry-scale projects.
+The next section introduces the flow of Coq test-case minimization by example, calling out the main elements that go into a working solution.
+\autoref{sec:easier} explains what about the minimization problem is easier for Coq sources than traditional programs.
+Balancing out those simplifications, we still encountered plenty of twists, which \autoref{sec:harder} summarizes.
+\autoref{sec:evaluation} summarizes our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; and \autoref{sec:future-work} closes with our thoughts on the most worthwhile improvements to make to our tooling.
 
-\todo{write a paragraph that tells them about the structure of the paper.}
+\todo{A separate section on related work, probably mostly drawing on software-engineering examples from outside of proof assistants, but also mentioning vaguely related stuff like QuickChick and hammers}
+
+
+\section{Test-case minimization by example}
+
+Imagine you have just added a new feature to Coq, but as a result a popular Coq-based open-source library stops compiling.
+You did not need to identify that library, because the Coq project's continuous integration automatically recompiles many open-source libraries.
+It can even report which source file failed to build and with which error message.
+However, it is infeasible to be an expert on all Coq libraries out there, and making sense of an error message within a large project can be daunting.
+Instead, you hope for the test-case minimizer to construct a single short file that you can analyze independently of the library that inspired in.
+
+As an example that is decidedly \emph{not} enormous but rather easier for us to talk through here, consider this Coq source file.
+\begin{verbatim}
+FILL IN
+\end{verbatim}
+
+Assume the last line shown here has triggered a new bug in Coq.
+The minimizer explores the space of file modifications that might simplify human understanding, without suppressing the bug.
+The most obvious move is to find lines that can be deleted.
+Deleting several candidates here takes us to a new file.
+\begin{verbatim}
+FILL IN
+\end{verbatim}
+
+We still depend on another imported module of this obscure library.
+Another useful move is to inline it, like so.
+\begin{verbatim}
+FILL IN
+\end{verbatim}
+
+Now we may find still-further lines that can be deleted, producing this result.
+\begin{verbatim}
+FILL IN
+\end{verbatim}
+
+The whole process may feel fairly intuitive from a description at this level, but let us draw attention to several core tasks.
+
+Finding \emph{which file triggers the bug, with which compilation settings, including path information to find dependency modules} is not trivial.
+The process should work with the wide variety of build systems constructed for different Coq libraries.
+
+Deciding \emph{when two Coq runs have hit the same bug} is also more complicated than it may sound.
+On the one hand, we want to look for specifity in the details of error messages.
+On the other hand, many reasonable file simplifications lead to incidental changes in error messages.
+
+Finally, there is the most obvious challenge of \emph{exploring the space of program simplifications in a smart way}.
+Many research papers in the software-engineering community have been written on just this topic, and proof-assistant sources involve some complications that are uncommon in conventional programming, perhaps triggering new challenges.
+For instance, highly automated Coq developments often have high compile times even just for single files, so we may need to be more frugal in how many program variants we test.
+
+Each of these categories forced us to make several nonobvious design decisions.
+Before proceeding to share the most important ones, we note some ways in which test-case minimization is actually \emph{simpler} in this setting than others.
+
+
+\section{Simplifications of the proof-assistant setting}\label{sec:easier}
 
 
 \section{Reproducing buggy behavior}
@@ -758,7 +816,7 @@ Try minimizing multiple files in parallel, rather than only inlining files.
 See \url{https://github.com/JasonGross/coq-tools/issues/102}.
 
 
-\section{Evaluation of Results}
+\section{Evaluation of Results}\label{sec:evaluation}
 
 \subsection{Research questions}
 
