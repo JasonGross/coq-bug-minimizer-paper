@@ -551,16 +551,13 @@ Therefore, we take the overall approach of trying all the different ways of inli
 %% \todo{exmaple?}
 
 
+\section{An Alternative Usage Mode}
 
-
-
-
-\section{Bug Reporter Experience}
-Up to this point, we have talked about using the Coq Bug Minimizer exclusively to minimize reverse CI failures for debugging faulty changes in Coq.
+Up to this point, we have talked about using the Coq Bug Minimizer exclusively to minimize reverse-CI failures for debugging faulty changes in Coq.
 Our tool can also be used to minimize test cases for newly found bugs in Coq.
-In this mode, bug reporters can write a shell script which invokes a \emph{single} version of Coq to produce buggy behavior on some Coq file, asking coqbot to produce a minimal example from this script.
-When running in this mode, we place an additional constraint on the minimizer that the proof script generating the error message should be left untouched.
-This allows bug reporters to write proof scripts such as
+In this mode, a bug reporter can write a shell script that invokes a \emph{single} version of Coq to produce buggy behavior on some Coq file, asking coqbot to produce a minimal example from this script.
+When running in this mode, we place an additional constraint on the minimizer that the proof script generating the error message should be left untouched,
+which allows bug reporters to write proof scripts such as
 \begin{verbatim}
 some_tactic;
 let G := match goal with |- ?G => G end in
@@ -570,12 +567,6 @@ lazymatch G with
 end.
 \end{verbatim}
 to customize the desired reproducing case, trusting that the entire file will not be minimized to something silly like \verb|Goal False. fail 0 "bug remains"|.
-
-
-
-
-
-
 
 
 
