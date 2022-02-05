@@ -281,6 +281,9 @@ Additionally, shorter test cases can make more clear what is going wrong and hel
 Thus, the problems in minimization are making the test as small as possible and quick to compile. 
 Another important consideration is getting to our minimal test case as quickly as possible.
 
+We now present our main ideas toward those ends, which are applied within a loop of repeatedly shrinking a file.
+The inner loop does not further simplify code newly introduced or modified by itself, but instead we rely on an outer loop that reruns the inner loop so long as progress is being made.
+
 \subsection{Making the Minimization Process Itself Fast}
 
 In our goal to get the shortest reproducing test case as quickly as possible, it helps to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
@@ -369,17 +372,16 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 \label{text:ltac-fragment:orig}
 
-\section{Standalone}
+\subsection{Finding Test Cases with Minimal Outside Dependencies}
 
-Why is it difficult to 
+While Coq bugs may be exposed thanks to the complex structure of external libraries, it is difficult for Coq developers to understand all of those libraries well enough to diagnose root causes.
+For that reason, we prefer to create minimized test cases that are as standalone as possible, not importing modules from other source files, beyond the Coq standard library.
 
-\todo{fix intro, this was previously a bulled}
-Finally, before repeating the loop, attempt to inline a dependency which has not yet been inlined.
+All of the steps above are applied in a single pass of a process that loops until no further progress is possible.
+After we have tried all possible command deletions and kept the ones that preserved the bug, we consider finding a module dependency to inline.
 Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
-\todo{write more text about what's required here, and what still remains}
 
-
-\paragraph{Naive Strategy}
+\subsubsection{Naive Strategy}\label{sec:inline-deps}
 
 Suppose we are developing a project called \verb|Example| and we have a file \verb|Foo.v| with the contents
 \begin{verbatim}
@@ -401,7 +403,7 @@ Lemma boom : True -> False.
 Proof. rewrite complicated. Qed.
 \end{verbatim}
 
-We want a standalone reproducing test-case and therefore would like to inline dependencies.
+We want a standalone reproducing test case and therefore would like to inline dependencies.
 After minimizing \verb|bug.v| as much as possible, it will look like
 \begin{verbatim}
 Require Example.Foo.
@@ -412,7 +414,6 @@ Proof. rewrite complicated.
 
 We would now like to inline \verb|Foo.v|.
 If we had not split apart \verb|Require| from \verb|Import|, we could just drop the file in place of the \verb|Require|.
-
 However, we must be able to handle \verb|Import|.
 
 Because \verb|Import| can use qualified names, we wrap the contents in modules, \verb|Export|ing any directory modules because we must be able to refer to \verb|complicated| in \verb|Foo.v| as \verb|Foo.complicated| and \verb|Example.Foo.complicated|:
@@ -440,27 +441,20 @@ Lemma boom : True -> False.
 Proof. rewrite complicated.
 \end{verbatim}
 
-\subsection{Shadowing and name resolution}
+\subsubsection{Shadowing and Name Resolution}
 
-Multiple modules: When we want to inline multiple files in the same project, the na\"ive strategy would result in multiple modules of the same name.
+When we want to inline \emph{multiple files in the same project}, the na\"ive strategy would result in multiple modules of the same name.
 Coq does not allow multiple modules with the same qualified name, so to avoid this issue, we wrap all modules in uniquely named placeholder toplevel modules.
-\todo{example here}
 
-
-Adjusting references: When we inline a file, the flags that were used to compile that file might be different from the flags used to compile the buggy file we are minimizing.
+When we inline a file, \emph{the flags that were used to compile that file} might be different from the flags used to compile the buggy file we are minimizing.
 While we cannot do anything about flags that change the behavior of code, such as \texttt{-set 'Universe Polymorphism'}, the most common flags that differ will be flags defining the search path and module binding names.
-\todo{example}
 In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
 We use this information when inlining the file to account for such differences.
-
 Additionally, there are some cases where this information allows us to adjust qualified references to the module currently being defined; in this case, we try replacing such references with the mangled name used in wrapping.
-\todo{example}
 
+\subsubsection{Non-linearizability}
 
-
-
-
-\subsection{Non-linearizability}
+It can be surprisingly difficult to break some import-related statements into sequences of more fundamental statements, which may be considered independently for removal.
 
 \paragraph{Splitting \texttt{Require}s}
 Much like \verb|Import| and \verb|Export| statements, we also want to split \verb|Require| statements, and furthermore want to split \verb|Require Import foo| into \texttt{Require foo. Import foo.}
@@ -468,15 +462,13 @@ This last splitting will allow us to inline \verb|foo|, as described in \autoref
 However, there are three subtleties associated with such statements.
 
 First, it may be the case that our bug depends on \verb|Require foo| only because the file \verb|foo.v| contains \verb|Require bar|, and in fact the bug only needs access to the constants defined in \verb|bar.v|.
-Hence we have a pass that performs the transitive recursive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
-Note that if we were more careful, we would not insert all dependencies at the top of the file but instead at each \verb|Require| statement, because \verb|Require| has side effects that may cause the file to fail to compile; we will discuss this more in \autoref{sec:inline-deps}.
+Hence we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
+Note that if we were more careful, we would not insert all dependencies at the top of the file but instead at each \verb|Require| statement, because \verb|Require| has side effects that may cause the file to fail to compile (see further discussion shortly).
 Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
-\todo{Does this need more explanation?}
 
-Second, it may be the case that \verb|Require Import foo bar baz| is not the same as \texttt{Require foo. Require bar. Import foo. Import bar.}.
+Second, it may be the case that \verb|Require Import foo bar| is not the same as \texttt{Require foo. Require bar. Import foo. Import bar.}.
 It may be the case that \verb|Import foo| results in a different module \verb|bar| becoming available.
 Alternatively, it may be the case that \verb|Require bar| transitively requires another \verb|foo| file which is different than the one that that is resolved by default as \verb|Require foo|, and then \verb|Import foo| will choose the most recently \verb|Require|d module \verb|foo|.
-\todo{Does this require a more detailed, worked-out example?}
 
 The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
 These \verb|.glob| files are primarily used to create hyperlinked HTML versions of \verb|.v| files, but we can co-opt them to get the information we need.
@@ -487,15 +479,12 @@ Na\"ively replacing this with \verb|From Coq Require Import Coq.Arith.Arith| res
 Hence, after absolutizing module paths for a given statement, we carefully remove the \texttt{From \ldots} portion of the statement.
 
 
-
-
 \paragraph{Diamond Problems and Side Effects of \texttt{Require}}
 
 The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
-\todo{examples?}
-As a result, there's no bullet-proof method of merging files.
+As a result, there is no bullet-proof method of merging files.
 However, we can ameliorate the issue by trying multiple strategies of merging files.
-We try inserting the file being inlined at the top of the file, as well as at the location where it's \texttt{Require}d.
+We try inserting the file being inlined at the top of the file, as well as at the location where it is \texttt{Require}d.
 In the future, we might also want to try moving \texttt{Require}s up higher in the file, to try to handle more situations.
 
 \paragraph{All at Once, or One at a Time?}
@@ -503,29 +492,23 @@ In the future, we might also want to try moving \texttt{Require}s up higher in t
 We have a flag that allows inlining dependencies all at once.
 While this was originally the way all files were minimized, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
 As a result, the current default behavior is to minimize the current file before inlining other files.
-\todo{example?}
 
+\subsection{Workarounds for Persistent Bugs in Coq}
 
-\subsection{Work arounds for bugs in Coq}
-
-Nested Modules vs.\ \texttt{Include}
-
-In some corner cases, Coq behaves differently depending on how many modules some code is wrapped in.
+Sometimes even the version of Coq before a change has its own bugs to work around!
+One common issue, sufficiently unlikely to be fixed by the Coq developers, is sensitivity to how many modules some code is wrapped inside.
 \todo{cite Coq issue}
-To work around this, instead of wrapping the code in nested modules, we can wrap it in a single mangled module, and then \texttt{Include} that module into one of the correct qualified name.
-\todo{example}
-
+To work around this problem, instead of wrapping code in nested modules, we can wrap it in a single mangled module and then \texttt{Include} that module into one of the correct qualified name.
 However, this strategy will sometimes result in failure of code that refers to the currently-being-defined module to qualify names.
-\todo{example}
-
-Therefore, we take the overall approach of trying all the different ways of inlining dependencies, and using whichever one works, since no single strategy is currently a silver bullet.
+Therefore, we take the overall approach of trying all the different ways of inlining dependencies and using whichever one works, since no single strategy is currently a silver bullet.
 
 
-Where do the \texttt{Require}s go?
+% Maybe this part should return later.
+%% Where do the \texttt{Require}s go?
 
-Coq warns that \texttt{Require}s inside modules are deprecated.
-While we haven't encountered any issues from wrapping additional modules around \texttt{Require}s, we do try strategies of moving the \texttt{Require}s up to the top of the file.
-\todo{exmaple?}
+%% Coq warns that \texttt{Require}s inside modules are deprecated.
+%% While we haven't encountered any issues from wrapping additional modules around \texttt{Require}s, we do try strategies of moving the \texttt{Require}s up to the top of the file.
+%% \todo{exmaple?}
 
 
 
