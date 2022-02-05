@@ -571,58 +571,6 @@ to customize the desired reproducing case, trusting that the entire file will no
 
 
 
-\section{Future Work}\label{sec:future-work}
-\todo{organize this section}
-
-Rather than emitting the information to stderr when wrapping coqc, we could emit it to a file (have to be careful about paralell builds, though).
-See \url{https://github.com/coq-community/run-coq-bug-minimizer/issues/11}.
-
-Use a proper Coq parser.
-See \url{https://github.com/JasonGross/coq-tools/issues/56}.
-
-When removing a statement fails, try removing all statements that generate different error messages, seeing if we can recover the original error message.
-This should probably be done with incremental compilation.
-This would allow us to drop many specific passes (such as removing empty sections and modules).
-Furthermore, if we hook into a proper Coq parser that allows discovering well-balanced structure more fine-grained than a particular definition, we could plausibly use this sort of thing to be able to remove specific fields from records, for example.
-See \url{https://github.com/JasonGross/coq-tools/issues/73} and \url{https://github.com/JasonGross/coq-tools/issues/88}.
-
-Make use of \verb|Set Suggest Proof Using| to enable removal of proof scripts that only matter for specifying the arguments of a lemma.
-See \url{https://github.com/JasonGross/coq-tools/issues/68}.
-Example:
-\begin{verbatim}
-Section foo.
-  Context (x y : nat) (p q : x = y).
-  Lemma silly : True -> x = y.
-  Proof. intro; exact p. Qed.
-End foo.
-Definition bar := @silly 0 0 eq_refl I.
-Fail Check bar.
-\end{verbatim}
-This file should be able to be minimized to
-\begin{verbatim}
-Section foo.
-  Context (x y : nat) (p q : x = y).
-  Lemma silly : True -> x = y.
-  Proof using p. Admitted.
-End foo.
-Definition bar := @silly 0 0 eq_refl I.
-Fail Check bar.
-\end{verbatim}
-This is useful when the proof script is much longer than \verb|intro; exact p|.
-
-Support incremental compilation.
-Removing a line at the end of the file should not require recompiling the initial segment.
-See \url{https://github.com/JasonGross/coq-tools/issues/87}.
-
-Remove well-balanced structures (sections, modules, etc) before we try to remove lines in those structures.
-See \url{https://github.com/JasonGross/coq-tools/issues/89}.
-
-Try moving \texttt{Require}s up higher in the file, to try to handle more side-effects of \texttt{Require}.
-See also \url{https://github.com/JasonGross/coq-tools/issues/78}.
-
-Try minimizing multiple files in parallel, rather than only inlining files.
-See \url{https://github.com/JasonGross/coq-tools/issues/102}.
-
 
 \section{Evaluation of Results}\label{sec:evaluation}
 
@@ -744,6 +692,30 @@ If we compute the size difference only looking at the initial file we started fr
 
 \nocite{*}%forbidden by lipics
 \todo{remove nocite{*}}
+
+
+
+\section{Future Work}\label{sec:future-work}
+
+We were pleasantly surprised to find that several ``shortcuts'' in the logistics behind the minimizer led to good results empirically, but some of these may be worth revisiting to improve results even more.
+Our Coq-binary wrappers that log extra information could be changed to use separate log files rather than the same stream as other Coq output, though there are associated challenges in handling parallel builds.
+In various places, we use workarounds (like \texttt{.glob} files) to avoid integrating a proper Coq parser, but there would be advantages like being able to remove specific fields from record types.
+We remove single commands at a time, rather than removing entire well-balanced command blocks, which probably costs us in minimization time.
+Inlining of a dependency is tried only at the precise spot where it is required \emph{or} at the very top of the file being minimized, while trying other locations could be worthwhile.
+
+A broader opportunity is finding related groups of commands that need to be removed together, to avoid changing the error message.
+For instance, we might want to move a lemma out of a module, to the top level of a file.
+Removing the commands that open and close the module might suffice, even if removing either one alone disturbs the error message.
+A general-enough version of this process could replace many specific passes (like removing empty sections and modules).
+
+One remaining aggravation is proper handling of lemma proofs within sections, where the details of the lemma proof influence which section variables are kept in the lemma's type.
+We would either use proof-script contents to infer \verb|Proof using| clauses or apply the \verb|Set Suggest Proof Using| command.
+
+There are further-out ideas that could speed minimization significantly but might require significant modifications to Coq itself.
+Incremental compilation would be helpful, to save us from rerunning long proof scripts every time we change single lines below them.
+Minimizing multiple files in parallel, rather than only inlining files, would allow us to take advantage of multicore execution within single minimization jobs.
+
+
 
 %% Bibliography
 \bibliography{coq-bug-minimizer.bib}
