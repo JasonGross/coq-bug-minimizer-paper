@@ -120,7 +120,7 @@
   In this paper, we describe the insights that we expect to generalize to bug minimization in other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 CI failures.
   Our tool succeeds in reducing the failure to a smaller test case in roughly 70\% of these cases.
-  50\% of successful runs take less than 20 minutes, and 80\% complete within about two hours, which is comparable to the length of time spent running the CI on a single PR.
+  50\% of successful runs take less than 20 minutes, and 80\% complete within about two hours, which is comparable to the length of time spent running the CI on a single pull request.
   The minimizer produces a fully standalone example 97\% of the time, and the example is on average about one-third the size of the original test.
   The average reduced test-case compiles in 1.4 seconds, with 75\% taking under half a second.
 \end{abstract}
@@ -132,7 +132,7 @@ Projects such as Coq Coq Correct~\cite{coq-coq-correct} make significant progres
 However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, oftentimes even unspecified, and without adequate test-suite coverage.
 
 
-To reduce the impact of accidental changes in parts of the proof assistant Coq not covered by the test suite, starting in 2017, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322}.
+To reduce the impact of accidental changes in parts of the proof assistant Coq not covered by the test suite, starting in 2017, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322} (also known as Reverse Dependency Compatibility Testing~\cite{ochoa2022breakbot}).
 Every change in Coq is now tested against a suite of external Coq projects maintained in different repositories by different teams.
 Every time a change breaking an external project is deliberately introduced, developers of Coq will fix the compatibility issues in external projects to prevent this crowdsourced test suite from shrinking for future releases.
 
@@ -140,7 +140,7 @@ Every time a change breaking an external project is deliberately introduced, dev
 The external projects are large and intricate, so debugging and fixing failures in the reverse CI is a time- and effort-intensive process.
 In order to streamline this process, we have built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files and is integrated with coqbot to trigger \textbf{automatically} on reverse-CI failures.
 The Coq Bug Minimizer eliminates the overhead of having to download, set up, compile, and then explore and understand large external projects.
-Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by about a factor of two.
+Typically, using the Coq Bug Minimizer reduces the total number of lines of code involved in the buggy behavior by about a factor of three.
 
 
 The state of the art in bug minimization is delta debugging.
@@ -149,7 +149,7 @@ However, bug minimization is different for proof assistants than for compilers o
 
 Our goal with this paper is to make the ITP community aware of the applicability of this idea from the world of software engineering.
 We also share what we have learned about where the problem is harder or easier than the traditional one, e.g. correctness of compilers.
-Drawing on empirical results from more than a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
+Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
 Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants.
 
 The next section introduces the flow of Coq test-case minimization by example, calling out the main elements that go into a working solution.
@@ -258,7 +258,7 @@ Before we can begin analyzing a specific source file, we need to take a few step
   (See \autoref{sec:error-messages} for subtleties in that comparison)
 \end{enumerate}
 
-Again, the goal of the minimizer is to take a CI development that succeds on the tip of master and fails on a given PR, emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
+Again, the goal of the minimizer is to take a CI development that succeds on the tip of master and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
 In order to do so efficiently, we reuse the CI artifacts from Coq.
 We download the prebuilt versions of Coq from master and from the tip of the PR.
 From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
@@ -316,7 +316,7 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 Why is it useful to minimize test cases?
 When the external project exhibiting buggy behavior takes minutes or hours to compile, the edit-compile-test-debug loop is very long, and exploring hypotheses about what went wrong takes a long time.
 Test cases that compile in seconds or fractions of a second allow developers to more fluidly work on fixing the bug.
-Additionally, shorter test cases can make more clear what is going wrong and help developers formulate hypotheses about their changes to Coq.
+Additionally, shorter test cases can make clearer what is going wrong and help developers formulate hypotheses about their changes to Coq.
 
 Thus, the problems in minimization are making the test as small as possible and quick to compile. 
 Another important consideration is getting to our minimal test case as quickly as possible.
