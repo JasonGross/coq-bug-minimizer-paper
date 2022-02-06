@@ -258,7 +258,7 @@ Before we can begin analyzing a specific source file, we need to take a few step
   (See \autoref{sec:error-messages} for subtleties in that comparison)
 \end{enumerate}
 
-Again, the goal of the minimizer is to take a CI development that succeds on the tip of master and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
+Again, the goal of the minimizer is to take a CI development that succeeds on the tip of the master branch and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
 In order to do so efficiently, we reuse the CI artifacts from Coq.
 We download the prebuilt versions of Coq from master and from the tip of the PR.
 From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
@@ -508,7 +508,7 @@ Because we insert the \verb|Require|s in dependency order, removing one statemen
 
 Second, it may be the case that \verb|Require Import foo bar| is not the same as \texttt{Require foo. Require bar. Import foo. Import bar.}.
 It may be the case that \verb|Import foo| results in a different module \verb|bar| becoming available.
-Alternatively, it may be the case that \verb|Require bar| transitively requires another \verb|foo| file which is different than the one that that is resolved by default as \verb|Require foo|, and then \verb|Import foo| will choose the most recently \verb|Require|d module \verb|foo|.
+Alternatively, it may be the case that \verb|Require bar| transitively requires another \verb|foo| file which is different than the one that is resolved by default as \verb|Require foo|, and then \verb|Import foo| will choose the most recently \verb|Require|d module \verb|foo|.
 
 The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
 These \verb|.glob| files are primarily used to create hyperlinked HTML versions of \verb|.v| files, but we can co-opt them to get the information we need.
@@ -595,7 +595,6 @@ To support replicating the results, all our data collection and analysis code is
 
 We retrieve the runs of the bug minimizer by looking for pull requests in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these pull requests using GitHub's GraphQL API.
 We exclude pull requests opened by the first author as most of these pull requests were for testing the minimizer integration and debugging issues.
-
 When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization \ldots'' or ``I am now running minimization \ldots'', providing the list of projects on which it is being run.
 %
 Then, when it finishes minimizing a project, it produces a comment with the minimized file.
@@ -632,11 +631,11 @@ We compute the duration of minimization as the time delta between the start and 
 This is an overapproximation of the actual time spent in the minimization process, since it also includes time setting up a VM, and possibly waiting in the queue for an available runner.
 %
 %Note that while this precisely evaluates the time that developers using the minimizer had to wait for the results, it can overestimate the actual time spent by the minimizer on the example, if the minimizer run was queued for a while before starting to run in GitHub Actions.
-We can look at this time for both successful and failed runs.
+We can look at this duration for both successful and failed runs.
 
-For failed runs, we observe that the average time for the minimization to conclude is 5 minutes (306 seconds) and that the maximum time is 15 minutes (890 seconds). This is not surprising as it means that time spent beyond that will always be spent performing actual minimization tasks.
+For failed runs, we observe that the average duration for the minimization to conclude is 5 minutes (306 seconds) and that the maximum duration is 15 minutes (890 seconds). This is not surprising as it means that time spent beyond that will always be spent performing actual minimization tasks.
 
-For successful runs, we observe more variety. The minimum time is 4 minutes (232 seconds), the maximum time is 20 hours (73072 seconds), and the average is 104 minutes (6238 seconds). 50\% of the successful runs finish in under 20 minutes (1218 seconds), and 80\% finish in under 140 minutes (8396 seconds). This number is still reasonable compared to the time that contributors routinely spend waiting for the results of Coq's CI~\cite{zimmermann:tel-02451322}.
+For successful runs, we observe more variety. The minimum duration is 4 minutes (232 seconds), the maximum duration is 20 hours (73072 seconds), and the average is 104 minutes (6238 seconds). 50\% of the successful runs finish in under 20 minutes (1218 seconds), and 80\% finish in under 140 minutes (8396 seconds). This number is still reasonable compared to the time that contributors routinely spend waiting for the results of Coq's CI~\cite{zimmermann:tel-02451322}.
 
 \subsubsection{RQ4: What is the size of the reduced cases?}
 
