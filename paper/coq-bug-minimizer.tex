@@ -290,8 +290,8 @@ Henceforce, we will assume that we have all of this information at hand, writing
 How do we know modifications to source files are genuine simplifications that have not masked bugs?
 What does it mean to reproduce the ``same'' bug?
 We generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq, with the same error message that showed up in the reverse CI.
-However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same. 
-Thus, we modify our goal to reproducing buggy behavior in place of reproducing the ``same'' bug. 
+However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same.
+Thus, we modify our goal to reproducing buggy behavior in place of reproducing the ``same'' bug.
 
 We apply the following relaxations in comparing error messages.
 \begin{enumerate}
@@ -317,7 +317,7 @@ When the external project exhibiting buggy behavior takes minutes or hours to co
 Test cases that compile in seconds or fractions of a second allow developers to more fluidly work on fixing the bug.
 Additionally, shorter test cases can make clearer what is going wrong and help developers formulate hypotheses about their changes to Coq.
 
-Thus, the problems in minimization are making the test as small as possible and quick to compile. 
+Thus, the problems in minimization are making the test as small as possible and quick to compile.
 Another important consideration is getting to our minimal test case as quickly as possible.
 
 We now present our main ideas toward those ends, which are applied within a loop of repeatedly shrinking a file.
