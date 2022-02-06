@@ -169,26 +169,44 @@ Instead, you hope for the test-case minimizer to construct a single short file t
 
 As an example that is decidedly \emph{not} enormous but rather easier for us to talk through here, consider this Coq source file.
 \begin{verbatim}
-FILL IN
+Require Import UsefulTactics.
+Definition zero := 0. Definition one := 1.
+Definition two := 2. Definition three := 3.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. crush. Qed.
 \end{verbatim}
 
 Assume the last line shown here has triggered a new bug in Coq.
 The minimizer explores the space of file modifications that might simplify human understanding, without suppressing the bug.
-The most obvious move is to find lines that can be deleted.
+The most obvious move is to find sentences that can be deleted.
 Deleting several candidates here takes us to a new file.
 \begin{verbatim}
-FILL IN
+Require Import UsefulTactics.
+Definition zero := 0. Definition one := 1.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. crush.
 \end{verbatim}
 
 We still depend on another imported module of this obscure library.
 Another useful move is to inline it, like so.
 \begin{verbatim}
-FILL IN
+Module UsefulTactics.
+Ltac head expr := match expr with | ?f _ => head f | _ => expr end.
+Ltac head_hnf expr := let expr' := eval hnf in expr in head expr'.
+Ltac crush := intros; subst; try reflexivity.
+End UsefulTactics.
+Import UsefulTactics.
+Definition zero := 0. Definition one := 1.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. crush.
 \end{verbatim}
 
 Now we may find still-further lines that can be deleted, producing this result.
 \begin{verbatim}
-FILL IN
+Ltac crush := intros; subst; try reflexivity.
+Definition zero := 0. Definition one := 1.
+Lemma foo : forall x, x = zero -> S x = one.
+Proof. crush.
 \end{verbatim}
 
 The whole process may feel fairly intuitive from a description at this level, but let us draw attention to several core tasks.
