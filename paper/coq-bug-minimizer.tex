@@ -155,9 +155,8 @@ Already, Coq developers are happy with the time the bug minimizer saves them, an
 The next section introduces the flow of Coq test-case minimization by example, calling out the main elements that go into a working solution.
 \autoref{sec:easier} explains what about the minimization problem is easier for Coq sources than traditional programs.
 Balancing out those simplifications, we still encountered plenty of twists, which \autoref{sec:harder} summarizes.
-\autoref{sec:evaluation} summarizes our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; and \autoref{sec:future-work} closes with our thoughts on the most worthwhile improvements to make to our tooling.
+\autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} closes with our thoughts on the most worthwhile improvements to make to our tooling.
 
-\todo{A separate section on related work, probably mostly drawing on software-engineering examples from outside of proof assistants, but also mentioning vaguely related stuff like QuickChick and hammers}
 
 
 \section{Test-Case Minimization by Example}\label{sec:example}
@@ -166,7 +165,7 @@ Imagine you have just added a new feature to Coq, but as a result a popular Coq-
 You did not need to identify that library, because the Coq project's continuous integration automatically recompiles many open-source libraries.
 It can even report which source file failed to build and with which error message.
 However, it is infeasible to be an expert on all Coq libraries out there, and making sense of an error message within a large project can be daunting.
-Instead, you hope for the test-case minimizer to construct a single short file that you can analyze independently of the library that inspired in.
+Instead, you hope for the test-case minimizer to construct a single short file that you can analyze independently of the library that inspired it.
 
 As an example that is decidedly \emph{not} enormous but rather easier for us to talk through here, consider this Coq source file.
 \begin{verbatim}
@@ -239,7 +238,7 @@ Thus, it is generally safe to mark any proof as skipped (``admitted,'' in Coq pa
 Our minimizer tries its best to drop as many unneeded lemmas as possible, but then the second-best change is to mark admitted as many of their proofs as possible.
 
 
-\section{Challenges Minimizing Test Cases for Proof Assistants}
+\section{Challenges Minimizing Test Cases for Proof Assistants}\label{sec:harder}
 
 There were still plenty of details that motivated nonobvious design decisions in our minimizer.
 Let us summarize them, grouped in terms of the three main steps sketched in \autoref{sec:example}.
@@ -693,6 +692,10 @@ If we compute the size difference only looking at the initial file we started fr
 \nocite{*}%forbidden by lipics
 \todo{remove nocite{*}}
 
+
+\section{Related Work}\label{sec:related-work}
+
+\todo{Fill in!  Probably mostly drawing on software-engineering examples from outside of proof assistants, but also mentioning vaguely related stuff like QuickChick and hammers (i.e., cases of using testing to optimize the proving process)}
 
 
 \section{Future Work}\label{sec:future-work}
