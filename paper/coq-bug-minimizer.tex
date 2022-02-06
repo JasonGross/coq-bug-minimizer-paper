@@ -119,7 +119,7 @@
 
   In this paper, we describe the insights that we expect to generalize to bug minimization in other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 CI failures.
-  Our tool succeeds in reducing the failure to a smaller test case in roughly 70\% of these cases.
+  Our tool succeeds in reducing the failure to a smaller test case in roughly 75\% of these cases.
   50\% of successful runs take less than 20 minutes, and 80\% complete within about two hours, which is comparable to the length of time spent running the CI on a single pull request.
   The minimizer produces a fully standalone example 97\% of the time, and the example is on average about one-third the size of the original test.
   The average reduced test-case compiles in 1.25 seconds, with 75\% taking under half a second.
@@ -613,10 +613,12 @@ To avoid double-counting multiple runs on the same CI failure, we only look at t
 
 \subsubsection{RQ1: How often does the minimizer produce a reduced test case?}
 
-Looking only at the first minimization runs for a given pull request and project, we have identified 196 runs on 51 pull requests (very often, several minimization runs are started in the same pull request on different projects).
-On these 196 runs, 73\% succeeded in producing a reduced test case. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (this is something that we can detect from the header comments).
+Looking only at the first minimization runs for a given pull request and project, we have identified 191 runs on 51 pull requests (very often, several minimization runs are started in the same pull request on different projects).
+On these 191 runs, 75\% succeeded in producing a reduced test case. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (this is something that we can detect from the header comments).
 
 \todo{Investigate the various cases and report on the causes.}
+
+There were 5 runs for which we couldn't find a comment marking the end of minimization.
 
 \subsubsection{RQ2: How often is this reduced test case fully standalone?}
 
