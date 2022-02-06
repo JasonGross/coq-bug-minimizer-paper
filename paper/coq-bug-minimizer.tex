@@ -616,9 +616,11 @@ To avoid double-counting multiple runs on the same CI failure, we only look at t
 Looking only at the first minimization runs for a given pull request and project, we have identified 191 runs on 51 pull requests (very often, several minimization runs are started in the same pull request on different projects).
 On these 191 runs, 75\% succeeded in producing a reduced test case. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (this is something that we can detect from the header comments).
 
-\todo{Investigate the various cases and report on the causes.}
+There were 5 runs for which we couldn't find a comment marking the end of minimization. By manually looking at them, we have determined that 4 out of 5 were caught in an infinite loop and had to be manually canceled. This can happen when the 6-hour timeout of the minimization process is not enough to make any new progress and thus the minimization gets stuck without ever reaching its end.
 
-There were 5 runs for which we couldn't find a comment marking the end of minimization.
+There were 19 runs which concluded with an explicit ``Error: could not minimize file'' comment. These errors can be due to issues downloading CI artifacts (9 runs), or bugs in Coq or the tested projects preventing minimization (which were reported, and fixed for most of them).
+
+Finally, there were 23 runs which concluded with a comment reporting on a supposedly minimized file but which (from the header comments or their absence thereof), we can conclude that the minimization process failed to properly start (e.g., because it couldn't reproduce the error message).
 
 \subsubsection{RQ2: How often is this reduced test case fully standalone?}
 
