@@ -131,51 +131,47 @@
 \section{Introduction}
 
 In the world of machine verification, the dream is to prove the correctness of every program.
-Projects such as Coq Coq Correct~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
+Projects such as Coq Coq Correct!~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
 However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, lacking even adequate test-suite coverage!
 
-As a solution to expanding the test-suite coverage for the proof assistant Coq, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322,ochoa2022breakbot} where in changes in Coq are tested against a crowdsourced suite of external Coq projects maintained by different teams in different repositories. 
+As a solution to expanding the test-suite coverage for the proof assistant Coq, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322,ochoa2022breakbot} wherein changes in Coq are tested against a crowdsourced suite of external Coq projects maintained by different teams in different repositories. 
 In this manner, user-centric concerns are well addressed.  
 To prevent the crowdsourced test-suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
 \emph{We believe that for proof assistants to be used in industry-scale projects, it is imperative to make it easy to find and fix compatibility issues as the proof assistant continues to evolve.}
 
 Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by the reverse CI is a time- and effort-intensive process for developers.
-They must perform many steps before they can begin to understand and work on the bug. 
-First, tediously sitting through the process of downloading, setting up, and compiling the external project. 
-Then, taking on the daunting task of figuring out larger project context which is not even directly relevant to the bug!
+They must perform many steps before beginning to understand and work on the bug. 
+First, developers will tediously sit through the process of downloading, setting up, and compiling the external project. 
+Then, they may have to take on the daunting task of figuring out the larger project context which is not even directly relevant to the bug!
 
 The current debugging process can be significantly optimized for developer experience.
-Moreover the current process buries the bugs and makes it difficult to study them for their structure, whereas we would like to bring bugs to the center. 
-In order to achieve this, we built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files. 
-Typically, generated files reduces the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play, understand, and fix bugs. 
+Additionally, the current process does not easily yield test cases to add to the test suite. 
+Instead the test cases remain buried in external developments whereas we would like to bring bugs to the center! 
+In order to improve the debugging process, we built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files. 
+Typically, generated files reduce the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play with, understand, and fix bugs. 
 Furthermore, we have integrated the Coq Bug Minimizer with coqbot to trigger \textbf{automatically} on reverse-CI failures, reducing the friction of building minimized files. 
 
 The state of the art in bug minimization for compilers is delta debugging.
 The delta tool~\cite{delta} preprocesses files into well-balanced blocks of code to determine the granularity of code removal, and then it runs binary search on removing blocks of code.
-However, bug minimization is different for proof assistants than for compilers of other languages, with unique challenges and applicable tricks.
+However, bug minimization is different for proof assistants than for compilers of more traditional languages, with unique challenges and applicable tricks.
 
-In this paper, we share what we have learnt about why delta debugging is harder or easier in Coq that in traditional compilers, and describe how we got around the hardness.
+In this paper, we share what we have learnt about where delta debugging is harder and where it is easier in Coq than in traditional compilers, and describe how we got around the difficulties.
 Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
-Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants.
+Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in backwards compatibility and supporting industry-scale projects.
 
-\todo{write later: challanges, simplifications, reproducing buggy behavior, minimization, standalone, developer experience, other use case}
-\autoref{sec:easier} explains what about the minimization problem is easier for Coq sources than traditional programs.
-Balancing out those simplifications, we still encountered plenty of twists, which \autoref{sec:harder} summarizes.
-\autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} closes with our thoughts on the most worthwhile improvements to make to our tooling.
+In \autoref{sec:example} introduces a constructed example of bug minimization in Coq, and articulates the four big challenges of bug minimization in the proof-assistant setting. 
+In \autoref{sec:easier} details aspects of traditional-setting bug minimization that are simpler or irrelevant in Coq.
+Then in \todo{refs}, goes deeper into the four big challenges and provides details of the more difficult components. 
+ \todo{ref} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case. 
+Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} closes with our thoughts on the most worthwhile improvements to make to our tooling.
 
 
 
-\subsection{Challenges of the Proof-Assistant Setting}\label{sec:example}
+\section{Challenges of the Proof-Assistant Setting}\label{sec:example}
 
-%Imagine you have just added a new feature to Coq, but as a result a popular Coq-based open-source library stops compiling.
-%You did not need to identify that library, because the Coq project's continuous integration automatically recompiles many open-source libraries.
-%It can even report which source file failed to build and with which error message.
-%However, it is infeasible to be an expert on all Coq libraries out there, and making sense of an error message within a large project can be daunting.
-%Instead, you hope for the test-case minimizer to construct a single short file that you can analyze independently of the library that inspired it.
 
-Let's start with an example failure to add color to the picture 
-
-As an example that is decidedly \emph{not} enormous but rather easier for us to talk through here, consider this Coq source file.
+To add color to our picture, let's begin with a constructed example of bug minimization on a reverse CI failure. 
+Consider the following Coq source file:
 \begin{verbatim}
 Require Import UsefulTactics.
 Definition zero := 0. Definition one := 1.
@@ -184,10 +180,9 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush. Qed.
 \end{verbatim}
 
-Assume the last line shown here has triggered a new bug in Coq.
-The minimizer explores the space of file modifications that might simplify human understanding, without suppressing the bug.
-The most obvious move is to find sentences that can be deleted.
-Deleting several candidates here takes us to a new file.
+Suppose the \texttt{crush} tactic triggered a new bug in Coq.
+We explore the space of file modifications that might aid human understanding, without suppressing the bug.
+The most obvious move is to find deletable sentences and delete them, producing a smaller file:
 \begin{verbatim}
 Require Import UsefulTactics.
 Definition zero := 0. Definition one := 1.
@@ -195,8 +190,8 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush.
 \end{verbatim}
 
-We still depend on another imported module of this obscure library.
-Another useful move is to inline it, like so.
+This file still depends on an imported module not native to the Coq standard library. 
+The next move is to inline this dependency, producing a standalone file: 
 \begin{verbatim}
 Module UsefulTactics.
 Ltac head expr := match expr with | ?f _ => head f | _ => expr end.
@@ -209,7 +204,7 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush.
 \end{verbatim}
 
-Now we may find still-further lines that can be deleted, producing this result.
+Now we may look for any more opportunities to delete lines, producing a standalone, minimal file:
 \begin{verbatim}
 Ltac crush := intros; subst; try reflexivity.
 Definition zero := 0. Definition one := 1.
@@ -217,20 +212,22 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush.
 \end{verbatim}
 
-The whole process may feel fairly intuitive from a description at this level, but let us draw attention to several core tasks.
+This process may feel fairly intuitive from a description at this level, but let us draw attention to several core tasks.
 
-Finding \emph{which file triggers the bug, with which compilation settings, including path information to find dependency modules} is not trivial.
+\begin{enumerate}
+\item Finding \emph{which file triggers the bug, with which compilation settings, including path information to find dependency modules} is not trivial.
 The process should work with the wide variety of build systems constructed for different Coq libraries.
 
-Deciding \emph{when two Coq runs have hit the same bug} is also more complicated than it may sound.
+\item Deciding \emph{when two Coq runs have hit the same bug} is also more complicated than it may sound.
 On the one hand, we want to look for specificity in the details of error messages.
 On the other hand, many reasonable file simplifications lead to incidental changes in error messages.
 
-There is the most obvious challenge of \emph{exploring the space of program simplifications in a smart way}.
+\item There is the most obvious challenge of \emph{exploring the space of program simplifications in a smart way}.
 Many research papers in the software-engineering community have been written on just this topic, and proof-assistant sources involve some complications that are uncommon in conventional programming, perhaps triggering new challenges.
 For instance, highly automated Coq developments often have high compile times even just for single files, so we may need to be more frugal in how many program variants we test.
 
-Finally, creating \emph{standalone files in dependently typed languages with metaprogramming facilities} such as Coq is significantly more challenging than eliminating needless dependencies in simply typed languages. 
+\item Finally, creating \emph{standalone files in dependently typed languages with metaprogramming facilities} such as Coq is significantly more challenging than eliminating needless dependencies in simply typed languages. 
+\end{enumerate}
 
 Each of these categories forced us to make several nonobvious design decisions.
 Before proceeding to share the most important ones, we note some ways in which test-case minimization is actually \emph{simpler} in this setting than others.
