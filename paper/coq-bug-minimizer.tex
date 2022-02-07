@@ -234,8 +234,8 @@ The Coq Bug Minimizer must work with the wide variety of build systems construct
 
 \end{enumerate}
 
-Achieving each desideratum posed challenges, and required making several nonobvious design choices. 
-Before proceeding to share the most important components of our solutions, we note some ways in which bug minimization is \emph{simpler} in the proof-assistant setting than others.
+Achieving each desideratum posed interesting challenges, and required making several nonobvious design choices. 
+Before proceeding to share the most important components of our solutions, we note some ways in which bug minimization is \emph{simpler} in the proof-assistant setting than in other settings.
 
 
 \section{Simplifications of the Proof-Assistant Setting}\label{sec:easier}
@@ -268,54 +268,7 @@ Thus, it is generally safe to mark any proof as skipped (``admitted,'' in Coq pa
 Our minimizer tries its best to drop as many unneeded lemmas as possible, but then the second-best change is to mark admitted as many of their proofs as possible.
 
 
-\section{Challenges Minimizing Test Cases for Proof Assistants}\label{sec:harder}
-
-There were still plenty of details that motivated nonobvious design decisions in our minimizer.
-Let us summarize them, grouped in terms of the three main steps sketched in \autoref{sec:example}.
-
-\subsection{Finding Which Sources to Analyze and with Which Settings}
-
-Before we can begin analyzing a specific source file, we need to take a few steps.
-\begin{enumerate}
-\item Unpack and install both the succeeding and failing versions of Coq and corresponding developments.
-\item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with, as well as \texttt{COQPATH} (an environment variable listing directories to be searched for imported modules) and the current directory.
-\item Run Coq on the succeeding and failing developments, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
-\item Parse the build log to determine the buggy file name and the arguments to pass to Coq, using the extra logging introduced by our wrappers.
-  This workflow means that we need not interface directly with varied build systems of different contributions on the CI.
-\item Run Coq on the buggy file.
-\item Parse the error message, ensuring that it matches with the error message from the build log.
-  (See \autoref{sec:error-messages} for subtleties in that comparison)
-\end{enumerate}
-
-Again, the goal of the minimizer is to take a CI development that succeeds on the tip of the master branch and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
-In order to do so efficiently, we reuse the CI artifacts from Coq.
-We download the prebuilt versions of Coq from master and from the tip of the PR.
-From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
-We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this CI development, into different directories: one for the version of Coq expected to pass and another for the version of Coq expected to fail.
-We also reuse Coq's generic CI workflow to figure out the error message and the failing file we want to minimize.
-
-Let us justify the extra information that our Coq wrapper programs log.
-We need \texttt{COQPATH} to ensure that we have the right search path for the dependencies of \texttt{coqc}, the command-line Coq compiler.
-We need the command-line arguments so that we know what flags to tell the bug minimizer to pass to \texttt{coqc}.
-Note that we \emph{must not} change relative paths to absolute ones when passing arguments along to \texttt{coqc}, because the output of \texttt{coqc} is sensitive to the difference between relative and absolute paths, so changes can muddle tests that are meant to produce output files (and did in the past, for example with \texttt{ci-elpi}).
-We can locate the error message by looking for the last instance of \texttt{File "$f$", line $\ell$, characters $n$-$m$:} followed immediately by a line beginning with \texttt{Error}.
-(Note that warning messages also emit the \texttt{File $\ldots$} line, but we do not want to catch warnings.)
-We look for the last instance of the wrapper debug printout information that points at the same file, though, so long as we were careful always to build single-threadedly, we could instead just look for the most recent debug printout before the error message.
-
-Given this information, we adjust the arguments so that we can tell the bug minimizer where the dependencies live both for the passing and failing versions of Coq.
-We then pass this information to the bug minimizer:
-\begin{itemize}
-\item the location of the file to be minimized;
-\item the log file containing the error message, which must match the error message that the minimizer believes the file produces;
-\item the locations of the \verb|coqc|, \verb|coqtop|, and \verb|coq_makefile| programs for the tip of the PR;
-\item the location of the \verb|coqc| program for the master branch;
-\item the locations of the dependencies for both the passing and failing versions of Coq, parsed from the command-line arguments and from walking the directories in \texttt{COQPATH};
-\item any arguments to \verb|coqc| that are neither naming dependency locations nor known to be both irrelevant to the processing of the file and counterproductive to the minimizer's operation (such arguments are \verb|-batch|, which applies only to \verb|coqtop|; \verb|-time|, which will only make logs of the minimizer much longer; and \verb|-noglob|, \verb|-dump-glob|, and \verb|-o|, which interfere with the generation of outputs used by the minimizer).
-\end{itemize}
-
-Henceforce, we will assume that we have all of this information at hand, writing only of how to minimize files.
-
-\subsection{Reproducing Buggy Behavior}\label{sec:error-messages}
+\section{Reproducing Buggy Behavior}\label{sec:error-messages}
 
 How do we know modifications to source files are genuine simplifications that have not masked bugs?
 What does it mean to reproduce the ``same'' bug?
@@ -340,7 +293,7 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 
 \end{enumerate}
 
-\subsection{Minimization}
+\section{Minimization}
 
 Why is it useful to minimize test cases?
 When the external project exhibiting buggy behavior takes minutes or hours to compile, the edit-compile-test-debug loop is very long, and exploring hypotheses about what went wrong takes a long time.
@@ -441,7 +394,7 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 \label{text:ltac-fragment:orig}
 
-\subsection{Finding Test Cases with Minimal Outside Dependencies}
+\section{Standalone files}
 
 While Coq bugs may be exposed thanks to the complex structure of external libraries, it is difficult for Coq developers to understand all of those libraries well enough to diagnose root causes.
 For that reason, we prefer to create minimized test cases that are as standalone as possible, not importing modules from other source files, beyond the Coq standard library.
@@ -450,7 +403,7 @@ All of the steps above are applied in a single pass of a process that loops unti
 After we have tried all possible command deletions and kept the ones that preserved the bug, we consider finding a module dependency to inline.
 Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
 
-\subsubsection{Naive Strategy}\label{sec:inline-deps}
+\subsection{Naive Strategy}\label{sec:inline-deps}
 
 Suppose we are developing a project called \verb|Example| and we have a file \verb|Foo.v| with the contents
 \begin{verbatim}
@@ -510,7 +463,7 @@ Lemma boom : True -> False.
 Proof. rewrite complicated.
 \end{verbatim}
 
-\subsubsection{Shadowing and Name Resolution}
+\subsection{Shadowing and Name Resolution}
 
 When we want to inline \emph{multiple files in the same project}, the na\"ive strategy would result in multiple modules of the same name.
 Coq does not allow multiple modules with the same qualified name, so to avoid this issue, we wrap all modules in uniquely named placeholder toplevel modules.
@@ -521,7 +474,7 @@ In this case, we can take advantage of the fact that Coq installs \texttt{.glob}
 We use this information when inlining the file to account for such differences.
 Additionally, there are some cases where this information allows us to adjust qualified references to the module currently being defined; in this case, we try replacing such references with the mangled name used in wrapping.
 
-\subsubsection{Non-linearizability}
+\subsection{Non-linearizability}
 
 It can be surprisingly difficult to break some import-related statements into sequences of more fundamental statements, which may be considered independently for removal.
 
@@ -569,6 +522,50 @@ For example, the currently open \coqbug{14587} describes how Coq is sensitive to
 To work around this problem, instead of wrapping code in nested modules, we can wrap it in a single mangled module and then \texttt{Include} that module into one of the correct qualified name.
 However, this strategy will sometimes result in failure of code that refers to the currently-being-defined module to qualify names.
 Therefore, we take the overall approach of trying all the different ways of inlining dependencies and using whichever one works, since no single strategy is currently a silver bullet.
+
+
+\section{Smooth developer experience}
+
+Before we can begin analyzing a specific source file, we need to take a few steps.
+\begin{enumerate}
+\item Unpack and install both the succeeding and failing versions of Coq and corresponding developments.
+\item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with, as well as \texttt{COQPATH} (an environment variable listing directories to be searched for imported modules) and the current directory.
+\item Run Coq on the succeeding and failing developments, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
+\item Parse the build log to determine the buggy file name and the arguments to pass to Coq, using the extra logging introduced by our wrappers.
+  This workflow means that we need not interface directly with varied build systems of different contributions on the CI.
+\item Run Coq on the buggy file.
+\item Parse the error message, ensuring that it matches with the error message from the build log.
+  (See \autoref{sec:error-messages} for subtleties in that comparison)
+\end{enumerate}
+
+Again, the goal of the minimizer is to take a CI development that succeeds on the tip of the master branch and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
+In order to do so efficiently, we reuse the CI artifacts from Coq.
+We download the prebuilt versions of Coq from master and from the tip of the PR.
+From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
+We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this CI development, into different directories: one for the version of Coq expected to pass and another for the version of Coq expected to fail.
+We also reuse Coq's generic CI workflow to figure out the error message and the failing file we want to minimize.
+
+Let us justify the extra information that our Coq wrapper programs log.
+We need \texttt{COQPATH} to ensure that we have the right search path for the dependencies of \texttt{coqc}, the command-line Coq compiler.
+We need the command-line arguments so that we know what flags to tell the bug minimizer to pass to \texttt{coqc}.
+Note that we \emph{must not} change relative paths to absolute ones when passing arguments along to \texttt{coqc}, because the output of \texttt{coqc} is sensitive to the difference between relative and absolute paths, so changes can muddle tests that are meant to produce output files (and did in the past, for example with \texttt{ci-elpi}).
+We can locate the error message by looking for the last instance of \texttt{File "$f$", line $\ell$, characters $n$-$m$:} followed immediately by a line beginning with \texttt{Error}.
+(Note that warning messages also emit the \texttt{File $\ldots$} line, but we do not want to catch warnings.)
+We look for the last instance of the wrapper debug printout information that points at the same file, though, so long as we were careful always to build single-threadedly, we could instead just look for the most recent debug printout before the error message.
+
+Given this information, we adjust the arguments so that we can tell the bug minimizer where the dependencies live both for the passing and failing versions of Coq.
+We then pass this information to the bug minimizer:
+\begin{itemize}
+\item the location of the file to be minimized;
+\item the log file containing the error message, which must match the error message that the minimizer believes the file produces;
+\item the locations of the \verb|coqc|, \verb|coqtop|, and \verb|coq_makefile| programs for the tip of the PR;
+\item the location of the \verb|coqc| program for the master branch;
+\item the locations of the dependencies for both the passing and failing versions of Coq, parsed from the command-line arguments and from walking the directories in \texttt{COQPATH};
+\item any arguments to \verb|coqc| that are neither naming dependency locations nor known to be both irrelevant to the processing of the file and counterproductive to the minimizer's operation (such arguments are \verb|-batch|, which applies only to \verb|coqtop|; \verb|-time|, which will only make logs of the minimizer much longer; and \verb|-noglob|, \verb|-dump-glob|, and \verb|-o|, which interfere with the generation of outputs used by the minimizer).
+\end{itemize}
+
+Henceforce, we will assume that we have all of this information at hand, writing only of how to minimize files.
+
 
 
 % Maybe this part should return later.
