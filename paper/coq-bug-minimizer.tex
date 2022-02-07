@@ -591,9 +591,15 @@ to customize the desired reproducing case, trusting that the entire file will no
 
 
 
-\section{Evaluation of Results}\label{sec:evaluation}
+\section{Integration in Coq's CI and Evaluation of Results}\label{sec:evaluation}
 
-\subsection{Research questions}
+\subsection{Triggering the minimizer}
+
+The Coq project uses a custom, multi-task bot to automate everyday tasks, including triggering CI and reporting its results to the GitHub repository~\cite{zimmermann:hal-03479327}. We have extended this bot to automatically propose and manage the minimization of failing test cases. The bot posts a comment to propose to run minimization when a PR has passed Coq's internal test suite, but has failures with external projects, and these external projects have built successfully on the base commit (on the master branch).
+
+If someone answers with a comment to trigger minimization, then the bot prepares a branch with all the information needed by the minimizer and pushes this branch to an external repository dedicated to running the minimizer. This triggers a GitHub Action workflow which will proceed with the minimization process. GitHub Action jobs have a 6-hour timeout, so by the limit, the bot answers back with the results of the minimization process. If the minimization was stopped because of the timeout, then the bot automatically restarts it by reusing the file obtained at the previous step.
+
+\subsection{Research Questions}
 
 To evaluate the usefulness of our bug minimizer, we specify several research questions to investigate:
 
@@ -604,16 +610,14 @@ To evaluate the usefulness of our bug minimizer, we specify several research que
 \item[RQ4:] What is the size of the reduced cases?
 \item[RQ5:] How long do the reduced cases take to run?
 \item[RQ6:] What is the amount of code reduction?
-%% \item[RQ:] Does it help Coq developers understand CI failures?
-%% \item[RQ:] Does it help Coq developers expand the coverage of the test suite?
 \end{description}
 
-\subsection{Data collection and analysis}
+\subsection{Data Collection and Analysis}
 
-To support replicating the results, all our data collection and analysis code is made available as Jupyter notebooks and our datasets are made available as CSV files.\footnote{\todo{Theo}}
+To support replicating the results, all our data collection and analysis code is made available as a Jupyter notebook and our dataset is made available as a CSV file.\footnote{\todo{Theo}}
 
-We retrieve the runs of the bug minimizer by looking for pull requests in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these pull requests using GitHub's GraphQL API.
-We exclude pull requests opened by the first author as most of these pull requests were for testing the minimizer integration and debugging issues.
+We retrieve the runs of the bug minimizer by looking for PRs in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these PRs using GitHub's GraphQL API.
+We exclude PRs opened by the first author as most of these PRs were for testing the minimizer integration and debugging issues.
 When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization \ldots'' or ``I am now running minimization \ldots'', providing the list of projects on which it is being run.
 %
 Then, when it finishes minimizing a project, it produces a comment with the minimized file.
@@ -627,20 +631,20 @@ We ignore these comments, only looking for final reduction outputs.
 Finally, the bot posts a comment starting with ``Error: Could not minimize file'' when it was not able to minimize the requested failure, for instance, because it could not reproduce it or could not reproduce the successful run on the base branch.
 
 We match comments indicating the start of the minimization with comments indicating the end of it, and use these two comments to determine if the minimizer was able to produce a reduced test case, how long it took, and to answer our other research questions.
-To avoid double-counting multiple runs on the same CI failure, we only look at the first bug minimizer trigger on a given pull request and a given project.
+To avoid double-counting multiple runs on the same CI failure, we only look at the first bug minimizer trigger on a given PR and a given project.
 
 \subsection{Results}
 
 \subsubsection{RQ1: How often does the minimizer produce a reduced test case?}
 
-Looking only at the first minimization runs for a given pull request and project, we have identified 191 runs on 51 pull requests (very often, several minimization runs are started in the same pull request on different projects).
+Looking only at the first minimization runs for a given PR and project, we have identified 191 runs on 51 PRs (very often, several minimization runs are started in the same PR on different projects).
 On these 191 runs, 75\% succeeded in producing a reduced test case. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (this is something that we can detect from the header comments).
 
-There were 5 runs for which we couldn't find a comment marking the end of minimization. By manually looking at them, we have determined that 4 out of 5 were caught in an infinite loop and had to be manually canceled. This can happen when the 6-hour timeout of the minimization process is not enough to make any new progress and thus the minimization gets stuck without ever reaching its end. This typically occurs when testing out a single change takes over 20 seconds, since we only have enough time to compile a 20-second-long file about a thousand times in six hours. \todo{Make sure we explain the 6-hour timeout and automatic restarting earlier.} The last case seems to be coqbot having failed to post the comment marking the end of the minimization process.
+There were 5 runs for which we couldn't find a comment marking the end of minimization. By manually looking at them, we have determined that 4 out of 5 were caught in an infinite loop and had to be manually canceled. This can happen when the 6-hour timeout of the minimization process is not enough to make any new progress and thus the minimization gets stuck without ever reaching its end. This typically occurs when testing out a single change takes over 20 seconds, since we only have enough time to compile a 20-second-long file about a thousand times in six hours. The last case seems to be coqbot having failed to post the comment marking the end of the minimization process.
 
-There were 19 runs which concluded with an explicit ``Error: could not minimize file'' comment. These errors are often due to issues downloading CI artifacts (9 runs), for instance because the corresponding base jobs have been skipped or the CI artifacts have expired. They can also happen because of bugs in Coq or in the tested projects build infrastructure that prevent minimization. Virtually all these issues were reported, and most of them are already fixed. For instance, the MetaCoq project alone was responsible for 5 failures because of issues in its build system.
+There were 19 runs which concluded with an explicit ``Error: could not minimize file'' comment. These errors are often due to issues downloading CI artifacts (9 runs), for instance because the corresponding base CI jobs have been skipped or the CI artifacts have expired. They can also happen because of bugs in Coq or in the tested projects' build infrastructure that prevent minimization. Virtually all these issues were reported, and most of them are already fixed. For instance, the MetaCoq project alone was responsible for 5 failures because of issues in its build system.
 
-Finally, there were 23 runs which concluded with a comment reporting on a supposedly minimized file but where (from the header comments or their absence thereof) we can conclude that the minimization process failed to properly start (e.g., because it couldn't reproduce the error message). Most of these problems were related to error message parsing, namespace management, or similar issues that have been fixed by making the bug minimizer more robust to them. A few of these issues have been noted, but not yet fixed. Finally, a few of these failed runs were due to the minimizer being misused or called on a project which had failed for a reason that was unrelated to the PR.
+Finally, there were 23 runs which concluded with a comment reporting on a supposedly minimized file but where (from the header comments or their absence thereof) we can conclude that the minimization process failed to properly start (e.g., because it couldn't reproduce the error message). Most of these problems were related to error message parsing, namespace management, or similar issues that have been fixed by making the bug minimizer more robust to them (see \autoref{sec:harder}). A few of these issues have been noted, but not yet fixed. Finally, a few of these failed runs were due to the minimizer being misused or called on a project which had failed for a reason that was unrelated to the PR.
 
 The accompanying notebook contains specific comments for each of the failed runs.
 
@@ -681,34 +685,6 @@ To compute how much code reduction there was, we use data that the minimizer rec
 We aggregate these numbers by simply taking the sum of the differences in line number at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 33\%, which means that the final test case size is on average one-third the size of the original test (including the dependencies which actually matter for the test case).
 
 If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 60\%, which means that the final file is on average 40\% smaller than the file we started from. Note that because of the inlining of dependencies, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 28 out of 139 cases. If we look only at the 111 cases for which there was some code reduction, we get that the average reduction is by a factor of 4. If we look only at the 28 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
-
-%% \subsubsection{RQ5: Does it help Coq developers understand CI failures?}
-
-%% We got 19 answers to our survey, from 7 different people.
-%% %
-%% 14 of these answers where about pull requests where the respondent had triggered the minimizer themselves (and 5 where about pull requests which the respondent authored but where they did not trigger the minimizer).
-
-%% The answers we got are very contrasted between the triggerers and the non-triggerers.
-%% %
-%% On the one hand, for each of the 5 responses from authors who did not trigger the minimizer themselves, the response to the survey indicated that the minimizer was not useful to the respondent and did not help them understand the CI failure.
-%% %
-%% On the other hand, 9 out of 14 responses from triggerers indicated that the minimizer was useful (3 somewhat useful and 6 very useful).
-%% %
-%% The next question on whether it helped diagnose the CI failure was optional but a majority of the triggerers that answered (5 out of 9) said it had helped.
-
-%% \todo{Write about why people said the minimizer was not useful.}
-
-%% \subsubsection{RQ5: Does it help Coq developers expand the coverage of the test suite?}
-
-%% We also asked to the users of the minimizer if they used the output of the minimizer to extend the test suite of Coq (as the minimizer itself suggests when its reduced test case is short enough to fit in a comment).
-%% %
-%% The users who did not find the minimizer useful never answered positively to this question.
-%% %
-%% However, among the users who found the minimizer useful, a majority (5 out of 8) said they had used the output of the minimizer to extend the test suite of Coq.
-%% %
-%% In one case, the respondent explained that while the minimizer had been very useful by quickly identifying the reason of the CI failure, they had not used its output to extend the test suite because the reason was that the tested project used a deprecated feature that was being removed.
-
-%% \todo{Manual analysis of how people extended the test suite}
 
 \subsection{Threats to validity}
 
