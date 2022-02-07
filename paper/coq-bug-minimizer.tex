@@ -116,14 +116,12 @@
 \maketitle
 
 \begin{abstract}
-  We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} in \emph{minimal} and \emph{standalone} files.
-  We have integrated this tool with coqbot to trigger \emph{automatically} on reverse CI failures.
-  Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments.
-
-  In this paper, we describe the insights that we expect to generalize to bug minimization in other proof assistants.
+  As the adoption of proof assistants increases, there is a need for efficiency in identification, documentation, and fixing of compatibility issues that arise from proof assistant evolution. 
+  We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} with \emph{minimal} and \emph{standalone} files, integrated with coqbot to trigger \emph{automatically} on Coq reverse CI failures.
+  Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments: enabling Coq developers to easily obtain modular test-case files for fast experimentation. 
+  In this paper, we describe the insights about how bug minimization is different in Coq than in traditional compilers that we expect to generalize to other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 CI failures.
-  Our tool succeeds in reducing the failure to a smaller test case in roughly 75\% of these cases.
-  50\% of successful runs take less than 20 minutes, and 80\% complete within about two hours, which is comparable to the length of time spent running the CI on a single pull request.
+  Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of these cases.
   The minimizer produces a fully standalone example 97\% of the time, and the example is on average about one-third the size of the original test.
   The average reduced test-case compiles in 1.25 seconds, with 75\% taking under half a second.
 \end{abstract}
