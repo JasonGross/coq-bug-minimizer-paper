@@ -159,7 +159,7 @@ In this paper, we share what we have learnt about where delta debugging is harde
 Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
 Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in backwards compatibility and supporting industry-scale projects.
 
-For the mobile reader, \autoref{sec:example} introduces a constructed example of bug minimization in Coq, and articulates the four desiderata and challenges of bug minimization in the proof-assistant setting. 
+For the mobile reader, \autoref{sec:example} introduces a constructed example of bug minimization in Coq, and articulates desiderata for bug minimization in the proof-assistant setting. 
  \autoref{sec:easier} details aspects of traditional-setting bug minimization that are simpler or irrelevant in Coq.
 Then \todo{refs}, explore the four desiderata, and describe the details of our solution to the more important challenges of each.
  \todo{ref} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case. 
@@ -167,7 +167,7 @@ Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI
 
 
 
-\section{Challenges of the Proof-Assistant Setting}\label{sec:example}
+\section{Desiderata}\label{sec:example}
 
 
 To add color to our picture, let's begin with a constructed example of minimizing a reverse CI failure. 
@@ -213,42 +213,43 @@ Proof. crush.
 \end{verbatim}
 
 From the above process we can extrapolate a desiderata for the Coq Bug Minimizer. 
-While the constructed example is fairly intuitive, we draw attention to the challenges in achieving the desiderata.
 
 \begin{enumerate}
-\item Reproducing buggy behavior: Deciding when two Coq runs have hit the same bug.
-On the one hand, we want to look for specificity in the details of error messages.
-On the other hand, many reasonable file simplifications lead to incidental changes in error messages.
-The Coq Bug Minimizer must tradeoff between preserving details of error messages and aiding human understanding of the underlying bug.
+\item \textbf{Reproducing buggy behavior:} Deciding when two source files indicate the same bug.
+Many reasonable file simplifications lead to incidental changes in error messages.
+The Coq Bug Minimizer must tradeoff between preserving specific details of error messages and aiding human understanding of the underlying bug.
 
-\item Minimization: Exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting. 
-Many research papers in the software-engineering community have been written on just this topic, but our constraints are uncommon in conventional programming.
+\item \textbf{Minimization:} Exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting. 
+Many research papers in the software-engineering community have been written on just this topic, but constraints in a proof-assistant setting are uncommon in conventional programming.
 For instance, highly automated Coq developments often have high compile times even for single files, so we may need to be more frugal in how many program variants we test.
 
-\item Standalone files: Creating standalone files in dependently typed languages with metaprogramming facilities such as Coq.
-For instance, eliminating needless dependencies in simply typed languages may be trivial, dependently typed languages eliminate the distinction between runtime and compile time resulting in high coupling between files. 
+\item \textbf{Standalone files:} Creating standalone files that illuminate new test-cases and can be added to the test-suite. 
+This is difficult in dependently typed languages with metaprogramming facilities such as Coq.
+For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time resulting in high coupling between files. 
 
-\item Smooth developer experience: Finding which file triggers the bug, with which compilation settings, including path information to find dependency modules.
+\item \textbf{Smooth developer experience:} Automatically finding which file triggers the bug, with which compilation settings, including path information to find dependency modules.
 The Coq Bug Minimizer must work with the wide variety of build systems constructed for different Coq libraries.
 
 
 \end{enumerate}
 
-Achieving each desideratum posed interesting challenges, and required making several nonobvious design choices. 
-Before proceeding to share the most important components of our solutions, we note some ways in which bug minimization is \emph{simpler} in the proof-assistant setting than in other settings.
+Achieving each desideratum posed many interesting challenges, and required making several nonobvious design choices. 
+Before proceeding to share the most important components of our solutions, we note the ways in which bug minimization is \emph{simpler} in the proof-assistant setting than in other settings.
 
 
 \section{Simplifications of the Proof-Assistant Setting}\label{sec:easier}
 
-Classic delta debugging~\cite{Zeller2002} uses binary search through program structure to find subprograms that can be removed while preserving relevant properties, like triggering specific bugs in particular compilers.
-We found that a simpler method works well for minimizing Coq sources: remove \emph{everything after} the error-message-generating line, and \emph{try removing the syntactic units beforehand in-order, one-at-a-time}.
-Reducing the number of ``experiments'' that need to be run on program variants can really pay off when each variant requires significant processing time, but why do we expect this simplified search process to yield good results?
+Classic delta debugging~\cite{Zeller2002} uses binary search through program structure to find subprograms that can be removed while preserving properties relevant to triggering specific bugs for the chosen compiler.
+We found that a simpler method works well for minimizing Coq sources: first remove everything after the error-message-generating line, and then try removing the syntactic units beforehand in-order, one-at-a-time.
+Through this method, we reduce the number of ``experiments'' on program variants. 
+The method is especially useful when each program variant requires significant processing time as is often the case in Coq. 
+But why do we expect this simplified search process to yield good results?
 
 \subsection{Dropping Code After a Bug-Triggering Line}
 
-The first reason is straightforward but still very helpful: Coq source files may not contain forward references.
+The first reason is straightforward: Coq source files may not contain forward references.
 There is no convention as found in languages from Java to Haskell, where all functions in a file are considered mutually recursive.
-As a result, there really should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
+As a result, there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
 Actually, we should think in terms of single commands processed by Coq (e.g., function definitions or individual tactics), not lines, but the principles is sound, with that fix-up.
 
 As a result, the satisfyingly simple first step of test-case minimization is removing all lines following the command that triggers the bug.
@@ -289,7 +290,7 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 
 \item We consider any error messages containing ``Unsatisfied constraints: \ldots\ (maybe a bugged tactic)'' as equivalent, since related bugs are localized to one relatively small part of the Coq implementation, and small changes to a source file can modify constraints significantly.
 
-\item We also ignore filenames and word wrapping in comparing error messages.
+\item We also ignore filenames, line references, and word wrapping in comparing error messages.
 
 \end{enumerate}
 
@@ -526,7 +527,7 @@ Therefore, we take the overall approach of trying all the different ways of inli
 
 \section{Smooth developer experience}
 
-Before we can begin analyzing a specific source file, we need to take a few steps.
+In order to analyze a specific source file, we need to take a few steps.
 \begin{enumerate}
 \item Unpack and install both the succeeding and failing versions of Coq and corresponding developments.
 \item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with, as well as \texttt{COQPATH} (an environment variable listing directories to be searched for imported modules) and the current directory.
@@ -563,8 +564,6 @@ We then pass this information to the bug minimizer:
 \item the locations of the dependencies for both the passing and failing versions of Coq, parsed from the command-line arguments and from walking the directories in \texttt{COQPATH};
 \item any arguments to \verb|coqc| that are neither naming dependency locations nor known to be both irrelevant to the processing of the file and counterproductive to the minimizer's operation (such arguments are \verb|-batch|, which applies only to \verb|coqtop|; \verb|-time|, which will only make logs of the minimizer much longer; and \verb|-noglob|, \verb|-dump-glob|, and \verb|-o|, which interfere with the generation of outputs used by the minimizer).
 \end{itemize}
-
-Henceforce, we will assume that we have all of this information at hand, writing only of how to minimize files.
 
 
 
