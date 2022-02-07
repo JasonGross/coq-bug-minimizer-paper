@@ -686,9 +686,17 @@ We aggregate these numbers by simply taking the sum of the differences in line n
 
 If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 60\%, which means that the final file is on average 40\% smaller than the file we started from. Note that because of the inlining of dependencies, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 28 out of 139 cases. If we look only at the 111 cases for which there was some code reduction, we get that the average reduction is by a factor of 4. If we look only at the 28 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
 
-\subsection{Threats to validity}
+\subsection{Limitations of our Evaluation}
 
+Evaluating a bug minimizer for a proof assistant such as Coq is difficult because there is no preexisting benchmark that it could be run on. In this paper, we have decided to take advantage of the integration of our minimizer in the CI infrastructure of Coq to evaluate it on real use cases where Coq developers have felt the need for it.
 
+While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using re-runs of the  minimization on the same project in the same pull request), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
+
+Since we always account only for first runs, this means that many cases where the minimizer has been counted to have failed have been eventually fixed and would result in a successful run today. Subsequent runs on other projects or other pull requests may have succeeded thanks to earlier fixes.
+
+Other limitations are that our computation of the minimization duration is an overapproximation which also includes the time for things such as setting up a VM to run the process, and that our evaluation of the expected execution time of the reduced cases is based only on a subset of recent minimizer runsz.
+
+Due to all these limitations, our evaluation should only be understood as demonstrating the feasibility of our approach and the usefulness of its application to the development of Coq. However, it should not be understood as a basis that future versions of the minimizer, or alternative minimizers, can compare to, since today's version would already obtain different results if it were re-run on all these cases.
 
 \nocite{*}%forbidden by lipics
 \todo{remove nocite{*}}
