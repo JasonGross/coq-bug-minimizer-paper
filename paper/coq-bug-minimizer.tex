@@ -416,60 +416,58 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 While the complex structure of external developments is a boon to stress-testing Coq, there are three reasons for wanting to reproduce bugs in standalone files.
 \begin{enumerate}
-\item It's challenging for developers to understand the intricacies of external developments well enough to diagnose root causes.
+\item It is challenging for developers to understand the intricacies of external developments well enough to diagnose root causes.
 \item  Build systems are necessary to handle multiple files, but using them adds unnecessary overhead in the debugging workflow.
-\item Intricate file dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test-suite.
+\item Intricate file-dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test suite.
 \end{enumerate}
 
-
-
 Na\"ively, the way to produce a standalone file is to \emph{linearize} the dependency tree and combine the contents of all files.
-We saw an example of roughly this strategy in \autoref{sec:example}, and this is also the strategy followed by, e.g., C compilers preprocessing \verb|#include| statements.
+We saw an example of roughly this strategy in \autoref{sec:example}, and e.g. C compilers follow this strategy in preprocessing \verb|#include| statements.
 
 Two difficulties arise when following this strategy in Coq:
 \begin{enumerate}
-\item As in all languages which allow shadowing of global symbols, inlining files changes what names are available and hence may result in unintended changes of behavior.
+\item As in all languages that allow shadowing of global symbols, inlining files changes what names are available and hence may result in unintended changes of behavior.
 The dependent typing and metaprogramming facilities of Coq largely eliminate the distinction between runtime and compile time.
 As a result, we have to inline not just function declarations but also function bodies, and thus the problem of name resolution is comparatively harder in Coq and similar languages than in those with simple types and without metaprogramming facilities.
-Furthermore, Coq has additional quirks around name resolution and (lack of) namespacing which have to be managed and worked around.
+Furthermore, Coq has additional quirks around name resolution and (lack of) namespacing that have to be managed and worked around.
 \item Coq has a great deal of global state (e.g., notations, universe polymorphism, the default tactic mode) that changes the way sentences are interpreted.
-Because there's no way to fully isolate changes on this global state, there may not even be \emph{any} linearization which reproduces the same behavior.
+Because there is no way to isolate changes on this global state fully, there may not even be \emph{any} linearization that reproduces the same behavior.
 \end{enumerate}
 
 \subsection{Addressing Shadowing and Name Resolution}\label{sec:name-resolution}
 Coq assigns names based on three components: the name and location of the file in which the identifier is defined, the module structure surrounding the identifier, and the final name.
-For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defined in the directory \texttt{MSets/MSetPositive.v}, which is bound to \texttt{Coq.MSets.MSetPositive}, in the module \texttt{PositiveSet}, with the name \texttt{t}.
+For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defined in the file \texttt{MSets/MSetPositive.v}, which is bound to \texttt{Coq.MSets.MSetPositive}, in the module \texttt{PositiveSet}, with the name \texttt{t}.
 
 If we were to inline this file into some other file \texttt{bug.v}, then the constant becomes \texttt{bug.PositiveSet.t}.
 We now have two choices: we can attempt to adjust the name of the constant on inlining, or we can adjust references to the constant.
 
 We combine these strategies to maximize the chance of succesfully inlining dependencies.
 
-First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case we'd wrap the contents in \texttt{Module MSetPositive}).
+First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case, we wrap the contents in \texttt{Module MSetPositive}).
 Furthermore, since users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, or \texttt{MSetPositive.PositiveSet.t}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
 Finally, because Coq forbids multiple modules with the same absolute kernel name, we must wrap the top-level module in yet another module, with a uniquly generated identifier.
-While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy and very often one of them is adequate for reproducing buggy behavior.
+While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy, and very often one of them is adequate for reproducing buggy behavior.
 
 Second, we want to adjust references so that they still point at the same underlying object after inlining.
 Coq helpfully emits \emph{globalization} files, which contain information about how Coq resolves almost all names in the file.
-Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the file we're inlining and the names that refer to constants in the file we're inlining.
+Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the files we inline and the names that refer to constants in that file.
 
-However, we cannot just blindly update all names because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}} and are not complete\footnote{They are missing information, for example, on tactic name resolution and notation interpretation.}.
-Instead, we've found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
+However, we cannot just blindly update all names, because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}.} and are not complete\footnote{They are missing information, for example, on tactic-name resolution and notation interpretation.}.
+Instead, we have found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
 \texttt{Require} statements are sensitive to the searchpath flags (\verb|-Q| and \verb|-R|) passed to Coq.
 If we are inlining a file from Flocq into a file from VST, for example, the \texttt{Require}s in the Flocq file may not resolve to the same files on disk when compiling with the compiler flags that VST uses.
 \texttt{Import} and \texttt{Export} statements, while not dependent on searchpath flags to the same extent as \texttt{Require}, still seem empirically more likely to refer to potentially ambiguous names than most other statements.
-Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements when inlining, and let Coq determine all other name resolution.
+Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements when inlining, letting Coq determine all other name resolution.
 
 \subsection{Addressing Nonlinearizability of Global State}\label{sec:linearize-global-state}
-While shadowing and name resolution is mechanically resolvable at least in theory, the global state of Coq is sufficiently disorganized that we are not aware of any fully general technical means of linearizing Coq files.\footnote{%
+While shadowing and name resolution are mechanically resolvable at least in theory, the global state of Coq is sufficiently disorganized that we are not aware of any fully general technical means of linearizing Coq files.\footnote{%
 The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
-Some of these effects can even be set on the command-line, and at present there's no way to determine what flags were used to compile a given installed file.
+Some of these effects can even be set on the command-line, and at present there is no way to determine what flags were used to compile a given installed file.
 }
-Hence our approach here consists of a couple partial work-arounds.
+Hence our approach here consists of several partial workarounds.
 
 The most basic technique to attempt to isolate global state is to wrap the inlined file in a module.
-Most state not explicitly marked as \texttt{Global} does not escape the boundaries of the module it's defined inside.
+Most state not explicitly marked as \texttt{Global} does not escape the boundaries of the module it is defined inside.
 As we already use module wrapping to handle name resolution as discussed in \autoref{sec:name-resolution}, we already reap the benefits of this technique.
 
 Our only other technique is to try multiple linearizations and hope that one of them is adequate.
@@ -481,14 +479,14 @@ For example, we may want to more explicitly manage the state before and after in
 
 \subsection{Getting to Standalone Files Quickly}
 We have a flag that allows inlining dependencies all at once, much like \texttt{gcc} inlines all \verb|#include|d files at once.
-While this was originally the way all files were minimized, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
+While originally all files were minimized in that way, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
 As a result, the current default behavior is to minimize the current file before inlining other files.
 
 Futhermore, we want to ensure that we only inline files that are actually used.
 Much like we want to split \texttt{Import} and \verb|Export| statements in \autoref{sec:split-imports}, we also want to split \verb|Require| statements, for example from \texttt{Require unused1 used unused2.} to \texttt{Require unused1. Require used. Require unused2.}
 
-Additionally, if the buggy behavior depends on a file only for its own dependencies, we'd like to directly inline the transitive dependency rather than needing to inline the entire intermediate file.
-To accomplish this, we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
+Additionally, if the buggy behavior depends on a file only for its own dependencies, we prefer to inline the transitive dependency directly rather than needing to inline the entire intermediate file.
+To that end, we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
 Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
 This strategy ensures that we only inline dependencies that are actually necessary.
 
