@@ -710,11 +710,16 @@ Due to all these limitations, our evaluation should only be understood as demons
 
 \section{Related Work}\label{sec:related-work}
 
-\todo{Fill in!  Probably mostly drawing on software-engineering examples from outside of proof assistants, but also mentioning vaguely related stuff like QuickChick and hammers (i.e., cases of using testing to optimize the proving process)}
+Our work is at the crossing of two research areas: research on debugging techniques, which is a sub-domain of software engineering research, and research on proof assistants.
 
-Our work is at the crossing of two research areas: research on debugging techniques, which is a sub-domain of software engineering research, and research on proof assistants. Debugging is a largely explored topic, but mostly with a focus on more mainstream and less formal languages than Coq.
+Debugging is a largely explored topic, but mostly with a focus on more mainstream and less formal languages than Coq.
+In this research domain, test case reduction techniques have been studied for standard programming languages and compilers~\cite{chen_survey_compiler_testing}. There are two types of approaches that have been proposed. First, there are generic approaches that are supposed to work for any programming language, by using structure information on the program being reduced. Examples include delta debugging~\cite{Zeller2002}, but also the generalized tree reduction algorithm~\cite{herfert2017automatically}, and the Perses tool that is syntax-guided~\cite{herfert2017automatically}. These generic techniques would not be likely to work well for Coq programs without careful adaptation, because many Coq programs can be considered syntactically valid even if completely non-sensical. For instance, we have already mentioned the issue with removing a `Qed' statement at the end of a tactic-based proof. Despite breaking a semantic block of code, this change does not actually produce a syntactically-invalid Coq program.
 
-In the debugging research domain, test case reduction techniques...
+Second, there are programming-language-specific approaches, which take advantage of specific knowledge to make the test reduction more performant. Our own work is related to this second category. In this category, most tools focus on mainstream language such as C. Some are even dedicated to reducing the output of specific test generation frameworks such as Csmith~\cite{regehr2012test}. On the contrary our tool tries to cover all the variety of Coq bugs, without presuming how they have been discovered.
+
+Finally, the literature has identified the issue of \emph{slippage} in test reduction~\cite{chen2013taming,holmes2016mitigating}, which is when the initial and reduced cases produce different compiler bugs. This is one of the major issues that we had to carefully account for in designing our bug minimizer (see \autoref{sec:error-messages}).
+
+\todo{Add related work in the ITP literature like QuickChick and hammers (i.e., cases of using testing to optimize the proving process)}
 
 \section{Future Work}\label{sec:future-work}
 
