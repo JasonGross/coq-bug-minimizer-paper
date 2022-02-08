@@ -116,10 +116,11 @@
 \maketitle
 
 \begin{abstract}
-  As the adoption of proof assistants increases, there is a need for efficiency in identification, documentation, and fixing of compatibility issues that arise from proof assistant evolution. 
+  As the adoption of proof assistants increases, there is a need for efficiency in identifying, documenting, and fixing compatibility issues that arise from proof assistant evolution. 
   We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} with \emph{minimal} and \emph{standalone} files, integrated with coqbot to trigger \emph{automatically} on Coq reverse CI failures.
   Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments: enabling Coq developers to easily obtain modular test-case files for fast experimentation. 
-  In this paper, we describe the insights about how bug minimization is different in Coq than in traditional compilers that we expect to generalize to other proof assistants.
+  In this paper, we describe insights about how bug minimization is different in Coq than in traditional compilers.
+We expect that our insights will generalize to other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 CI failures.
   Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of these cases.
   The minimizer produces a fully standalone example 97\% of the time, and the example is on average about one-third the size of the original test.
@@ -135,7 +136,7 @@ However, large swathes of proof-assistant software—such as tactic languages, e
 As a solution to expanding the test-suite coverage for the proof assistant Coq, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322,ochoa2022breakbot} wherein changes in Coq are tested against a crowdsourced suite of external Coq projects maintained by different teams in different repositories. 
 In this manner, user-centric concerns are well addressed.  
 To prevent the crowdsourced test-suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
-\emph{We believe that for proof assistants to be used in industry-scale projects, it is imperative to make it easy to find and fix compatibility issues as the proof assistant continues to evolve.}
+\emph{We believe that for proof assistants to be used in industry-scale projects, it is imperative to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
 
 Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by the reverse CI is a time- and effort-intensive process for developers.
 They must perform many steps before beginning to understand and work on the bug. 
@@ -168,7 +169,7 @@ Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI
 \section{Desiderata}\label{sec:example}
 
 
-To add color to our picture, let's begin with a constructed example of minimizing a reverse CI failure. 
+To add color to our picture, let's begin with a constructed example of minimizing a reverse-CI failure. 
 Our objective is to explore the space of file modifications that will aid human understanding of the bug. 
 Consider the following Coq source file:
 \begin{verbatim}
@@ -202,7 +203,7 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush.
 \end{verbatim}
 
-Now we may look for any more opportunities to delete lines, producing a standalone, minimal file:
+Now we may look for any more opportunities to delete lines, producing a standalone, more minimal file:
 \begin{verbatim}
 Ltac crush := intros; subst; try reflexivity.
 Definition zero := 0. Definition one := 1.
@@ -210,7 +211,7 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush.
 \end{verbatim}
 
-From the above process we can extrapolate a desiderata for the Coq Bug Minimizer. 
+From the above process we can extrapolate desiderata for the Coq Bug Minimizer. 
 
 \begin{enumerate}
 \item \textbf{Reproducing buggy behavior:} Deciding when two source files indicate the same bug.
@@ -218,21 +219,21 @@ Many reasonable file simplifications lead to incidental changes in error message
 The Coq Bug Minimizer must tradeoff between preserving specific details of error messages and aiding human understanding of the underlying bug.
 
 \item \textbf{Minimization:} Exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting. 
-Many research papers in the software-engineering community have been written on just this topic, but constraints in a proof-assistant setting are uncommon in conventional programming.
-For instance, highly automated Coq developments often have high compile times even for single files, so we may need to be more frugal in how many program variants we test.
+Many research papers in the software-engineering community have been written on just this topic \todo{cite}, but constraints in a proof-assistant setting are uncommon in conventional programming.
+For instance, highly automated Coq developments often have long compile times even for single files, so we may need to be more frugal in how many program variants we test.
 
 \item \textbf{Standalone files:} Creating standalone files that illuminate new test-cases and can be added to the test-suite. 
 This is difficult in dependently typed languages with metaprogramming facilities such as Coq.
-For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time resulting in high coupling between files. 
+For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time resulting in tight coupling between files. 
 
-\item \textbf{Smooth developer experience:} Automatically finding which file triggers the bug, with which compilation settings, including path information to find dependency modules.
-The Coq Bug Minimizer must work with the wide variety of build systems constructed for different Coq libraries.
+\item \textbf{Smooth developer experience:} Automatically finding which file triggered a bug, with which compilation settings, including path information to find dependencies.
+The Coq Bug Minimizer must work with the wide variety of build systems used in different Coq libraries.
 
 
 \end{enumerate}
 
-Achieving each desideratum posed many interesting challenges, and required making several nonobvious design choices. 
-Before proceeding to share the most important components of our solutions, we note the ways in which bug minimization is \emph{simpler} in the proof-assistant setting than in other settings.
+Achieving each desideratum posed interesting challenges, and required making several design choices. 
+Before proceeding to share solutions to these challanges, we note the ways in which bug minimization is \emph{simpler} in the proof-assistant setting than in other settings.
 
 
 \section{Simplifications of the Proof-Assistant Setting}\label{sec:easier}
