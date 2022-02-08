@@ -704,9 +704,9 @@ A general-enough version of this process could replace many specific passes. % (
 One remaining aggravation is proper handling of lemma proofs within sections, where the details of the lemma proof influence which section variables are kept in the lemma's type.
 We could use the \verb|Set Suggest Proof Using| command to insert \verb|Proof using| clauses.
 
-As mentioned in \autoref{sec:linearize-global-state}, we'd like to improve the ability of the minimizer to linearize dependency trees and handle Coq's global state.
+As mentioned in \autoref{sec:linearize-global-state}, we would like to improve the ability of the minimizer to linearize dependency trees and handle Coq's global state.
 We could, for example, print out the full table of flag settings at a particular point, reset them to the initial values before inlining a file, and then restore them after inlining.
-To fully handle global state, we'd need some way to reconstruct the command-line flags used to compile installed files.
+To fully handle global state, we would need some way to reconstruct the command-line flags used to compile installed files.
 
 There are further-out ideas that could speed minimization significantly but might require significant modifications to Coq itself.
 Incremental compilation would be helpful, to save us from rerunning long proof scripts every time we change single lines below them.
