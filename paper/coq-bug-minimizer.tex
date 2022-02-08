@@ -256,7 +256,7 @@ But why do we expect this simplified search process to yield good results?
 The first reason is straightforward: Coq source files may not contain forward references.
 There is no convention as found in languages from Java to Haskell, where all functions in a file are considered mutually recursive.
 As a result, there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
-Actually, we should think in terms of single commands processed by Coq (e.g., function definitions or individual tactics), not lines, but the principles is sound, with that fix-up.
+More accurately, this principle is applied to single commands processed by Coq (e.g., function definitions or individual tactics), not lines.
 
 As a result, the satisfyingly simple first step of test-case reduction is removing all lines following the command that triggers the bug.
 
@@ -302,16 +302,13 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 
 \section{Minimization}
 
-Why is it useful to minimize test cases?
-When the external project exhibiting buggy behavior takes minutes or hours to compile, the edit-compile-test-debug loop is very long, and exploring hypotheses about what went wrong takes a long time.
-Test cases that compile in seconds or fractions of a second allow developers to more fluidly work on fixing the bug.
-Additionally, shorter test cases can make clearer what is going wrong and help developers formulate hypotheses about their changes to Coq.
-
-Thus, we should aim at making the test as small as possible and quick to compile.
-Another important consideration is getting to our reduced test case as quickly as possible.
-
-We now present our main ideas toward those ends, which are applied within a loop of repeatedly shrinking a file.
-The inner loop does not further simplify code newly introduced or modified by itself, but instead we rely on an outer loop that reruns the inner loop so long as progress is being made.
+Minimization is powerful in making long source files more comprehensible to developers. 
+In addition to this, external project in Coq can take minutes or hours to compile, so the edit-compile-test-debug loop is long.
+We have two additional goals to improve this workflow.
+\begin{enumerate}
+\item Finding minimized test cases as fast as possible, given that experimenting with each program variant has long compilation time
+\item Compilation of the test case in seconds or fractions of a second so that that developers can fluidly try hypotheses for solutions
+\end{enumerate}
 
 \subsection{Making the Minimization Process Itself Fast}
 
