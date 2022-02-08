@@ -161,13 +161,13 @@ However, bug minimization is different for proof assistants than for compilers o
 
 In this paper, we share what we have learnt about where delta debugging is harder and where it is easier in Coq than in traditional compilers, and describe how we got around the difficulties.
 Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
-Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in backwards compatibility and supporting industry-scale projects.
+Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in more easily supporting backwards compatibility and industry-scale projects.
 
 For the mobile reader, \autoref{sec:example} introduces a constructed example of bug minimization in Coq, and articulates desiderata for bug minimization in the proof-assistant setting.
  \autoref{sec:easier} details aspects of traditional-setting bug minimization that are simpler or irrelevant in Coq.
 Then \todo{refs}, explore the four desiderata, and describe the details of our solution to the more important challenges of each.
  \todo{ref} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
-Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} closes with our thoughts on the most worthwhile improvements to make to our tooling.
+Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} discusses our thoughts on the most worthwhile improvements to make to our tooling.
 
 
 
