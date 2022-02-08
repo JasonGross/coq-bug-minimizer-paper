@@ -417,13 +417,13 @@ The details are a little subtle, e.g. to avoid changing which section variables 
     %    1. Try to hide effects by not importing modules before we need them
     %    2. Try out different locations for inlining the module
 
-\todo{fix words}
-There are two reasons for wanting to reproduce bugs in standalone files.
+While the complex structure of external developments is a boon to stress-testing Coq, there are three reasons for wanting to reproduce bugs in standalone files.
 \begin{enumerate}
-\item Bugs may be exposed thanks to the complex structure of external libraries, it is difficult for developers to understand all of those libraries well enough to diagnose root causes.
-For that reason, we prefer to not import modules from other source files, beyond the Coq standard library.
-\item Files with multiple dependencies hide the bug, making it difficult to extend the test-suite.
+\item It's challenging for developers to understand the intricacies of external developments well enough to diagnose root causes. 
+\item  Build systems are necessary to handle multiple files, but using them adds unnecessary overhead in the debugging workflow.
+\item Intricate file dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test-suite. 
 \end{enumerate}
+
 
 
 Na\"ively, the way to produce a standalone file is to \emph{linearize} the dependency tree and combine the contents of all files.
