@@ -401,8 +401,28 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 \section{Standalone Files}\label{sec:standalone}
 
-While Coq bugs may be exposed thanks to the complex structure of external libraries, it is difficult for Coq developers to understand all of those libraries well enough to diagnose root causes.
-For that reason, we prefer to create minimized test cases that are as standalone as possible, not importing modules from other source files, beyond the Coq standard library.
+%1. Here’s why standalone files are important
+%2. Here’s what to do: Find a linearlization of the dependency tree that allows us to inline modules
+%3. Here’s why its difficult in Coq:
+ %   1. Name resolution: harder in dependently typed language because more names to resolve
+  %      1. Coq-specific quirks
+  %  2. Meta programming facilities and global state: makes int potentially impossible to find a liberalization
+%4. How we address these issues
+ %   1. 
+   %     1. Coq emits a globalization file for unique identifies for every name
+  %5     2. We can change name resolution
+    %2.  
+    %    1. Try to hide effects by not importing modules before we need them
+    %    2. Try out different locations for inlining the module
+ 
+\todo{fix words}
+There are two reasons for wanting to reproduce bugs in standalone files. 
+\begin{enumerate}
+\item Bugs may be exposed thanks to the complex structure of external libraries, it is difficult for developers to understand all of those libraries well enough to diagnose root causes.
+For that reason, we prefer to not import modules from other source files, beyond the Coq standard library.
+\item Files with multiple dependencies hide the bug, making it difficult to extend the test-suite.
+
+\end{enumerate}
 
 All of the steps above are applied in a single pass of a process that loops until no further progress is possible.
 After we have tried all possible command deletions and kept the ones that preserved the bug, we consider finding a module dependency to inline.
