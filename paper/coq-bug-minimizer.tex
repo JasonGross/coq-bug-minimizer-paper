@@ -124,7 +124,7 @@
 We expect that our insights will generalize to other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 CI failures.
   Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of these cases.
-  The minimizer produces a fully standalone example 97\% of the time, and the example is on average about one-third the size of the original test.
+  The minimizer produces a fully standalone example 89\% of the time, and the example is on average about one-third the size of the original test.
   The average reduced test-case compiles in 1.25 seconds, with 75\% taking under half a second.
 \end{abstract}
 
@@ -656,9 +656,12 @@ The accompanying notebook contains specific comments for each of the failed runs
 
 \subsubsection{RQ2: How often is this reduced test case fully standalone?}
 
-We consider that a reduced test case will be most useful if any dependency beyond Coq's standard library was successfully inlined. This means that it will be possible to run the reduced test case without needing to import any additional dependency and will make it more likely that the test case can be added to Coq's test suite. In practice, when minimization successfully produced a reduced test case, it is virtually always standalone (97\% of the cases).
+We consider that a reduced test case will be most useful if any dependency beyond Coq's standard library was successfully inlined. This means that it will be possible to run the reduced test case without needing to import any additional dependency and will make it more likely that the test case can be added to Coq's test suite.
 
-\todo{Talk about the remaining cases.}
+To measure how often the reduced test case is standalone, we rely on the minimizer recording when it failed to inline a dependency in the header comments of the minimized file. This feature was only added recently, so we only perform this measurements on the 47 successful runs of the minimizer which had this information available.
+On these 47 runs, there were only 5 failures to fully inline dependencies, i.e., the minimizer produced a fully standalone file in 89\% of the cases.
+
+Looking at the 5 failures to inline dependencies, we observe several types of reasons. One case was related to robustness to changing error messages, one case was related to a build system issue in the project being minimized, and 3 cases were due to a common issue preventing to try all inlining methods. All of these issues have been fixed since then.
 
 \subsubsection{RQ3: How long does it take to produce such reduced test cases?}
 
@@ -674,23 +677,25 @@ For successful runs, we observe more variety. The minimum duration is 4 minutes 
 
 \subsubsection{RQ4: What is the size of the reduced cases?}
 
-For the last three questions, we focus on minimization runs that produced standalone files.
+For the last three questions, we focus mainly on the 42 recent minimization runs that are known to have produced standalone files.
 
-The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to Coq's test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 369 lines and the maximum size is 3804 lines. But 25\% of the reduced cases are under 35 lines, 50\% are under 122 lines, and 75\% are under 461 lines.
+The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to Coq's test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 270 lines and the maximum size is 2648 lines. But 25\% of the reduced cases are under 39 lines, 50\% are under 114 lines, and 75\% are under 262 lines.
+
+Results on the full set of 144 successful mininimization runs are of the same order of magnitude, with an average at 367 lines and a maximum size of 3804 lines.
 
 Developers have the possibility of performing additional minimization manually and restart the automatic minimization process on their manually reduced case. This can help obtain even more reduced cases, but we have not evaluated this feature quantitatively.
 
 \subsubsection{RQ5: How long do the reduced cases take to run?}
 
-Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Out of the 43 cases where we had this data available, we obtain that the reduced test cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
+Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Our recent 42 standalone cases all had this data available. We observe that the reduced cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
 
 \subsubsection{RQ6: What is the amount of code reduction?}
 
 To compute how much code reduction there was, we use data that the minimizer records about each minimization step (how many lines it started from and how many lines it ended up with). These numbers go up at times because of the process of inlining external dependencies. On the other hand, dependencies are only inlined if they couldn't be simply removed, so these numbers do not include the size of the files that were previously imported but did not need to be inlined during the minimization process.
 
-We aggregate these numbers by simply taking the sum of the differences in line number at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 33\%, which means that the final test case size is on average one-third the size of the original test (including the dependencies which actually matter for the test case).
+We aggregate these numbers by simply taking the sum of the differences in line number at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 31\%, which means that the final test case size is on average one-third the size of the original test (including the dependencies which actually matter for the test case).
 
-If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 60\%, which means that the final file is on average 40\% smaller than the file we started from. Note that because of dependency inlining, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 28 out of 139 cases. If we look only at the 111 cases for which there was some code reduction, we get that the average reduction is by a factor of 4. If we look only at the 28 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
+If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 50\%, which means that the final file is on average half the size of the file we started from. Note that because of dependency inlining, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 6 out of 42 cases. If we look only at the 36 cases for which there was some code reduction, we get that the average reduction is by a factor of 4 to 5. If we look only at the 6 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
 
 \subsection{Limitations of our Evaluation}
 
@@ -699,7 +704,7 @@ Evaluating a bug minimizer for a proof assistant such as Coq is difficult becaus
 While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using re-runs of the  minimization on the same project in the same PR), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
 Since we always account only for first runs, this means that many cases where the minimizer has been counted to have failed have been eventually fixed and would result in a successful run today. Subsequent runs on other projects or other PRs may have succeeded thanks to earlier fixes.
 
-Other limitations are that our computation of the minimization duration is an overapproximation which also includes the time for things such as setting up a VM to run the process, and that our evaluation of the expected execution time of the reduced cases is based only on a subset of recent minimizer runs.
+Other limitations are that our computation of the minimization duration is an overapproximation which also includes the time for things such as setting up a VM to run the process, and that our evaluation of several research questions is based only on a subset of recent minimizer runs.
 
 Due to all these limitations, our evaluation should only be understood as demonstrating the feasibility of our approach and the usefulness of its application to the development of Coq. However, it should not be understood as a basis that future versions of the minimizer, or alternative minimizers, can compare to, since today's version would already obtain different results if it were re-run on all these cases.
 
