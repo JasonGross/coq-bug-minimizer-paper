@@ -718,7 +718,7 @@ In this research domain, test-case-reduction techniques have been studied for st
 Second, there are programming-language-specific approaches, which take advantage of specific knowledge to make the test reduction more performant. Our own work is related to this second category, where most tools focus on mainstream languages like C. Some are even dedicated to reducing the output of specific test-generation frameworks such as Csmith~\cite{regehr2012test}.
 
 However, work on generating many diverse test cases from nothing has complementary value.
-Csmith~\cite{regehr2012test} has an effective algorithm based on knowledge of C semantics, to provoke undefined behavior.
+Csmith~\cite{yang2011finding} has an effective algorithm based on knowledge of C semantics, to provoke undefined behavior.
 Techniques like equivalence modulo inputs~\cite{emi} find compiler bugs via differential testing, where a compiler is run on programs that are known to have the same semantics.
 Perhaps this generative approach would also be useful for proof assistants, composed fruitfully with test-case reduction as we have presented.
 
