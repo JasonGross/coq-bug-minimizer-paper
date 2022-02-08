@@ -73,7 +73,7 @@
 \relatedversiondetails[%linktext={opt. text shown instead of the URL},
   cite=coqpl-15-coq-bug-minimizer]{Earlier}{https://jasongross.github.io/papers/2015-coq-bug-minimizer.pdf} %linktext and cite are optional
 
-%\supplement{}%optional, e.g. related research data, source code, ... hosted on a repository like zenodo, figshare, GitHub, ...
+\supplement{Jupyter notebook and dataset on Zenodo / Figshare \todo{Theo}}
 %\supplementdetails[linktext={opt. text shown instead of the URL}, cite=DBLP:books/mk/GrayR93, subcategory={Description, Subcategory}, swhid={Software Heritage Identifier}]{General Classification (e.g. Software, Dataset, Model, ...)}{URL to related version} %linktext, cite, and subcategory are optional
 
 %\funding{(Optional) general funding statement \dots}%optional, to capture a funding statement, which applies to all authors. Please enter author specific funding statements as fifth argument of the \author macro.
@@ -136,7 +136,7 @@ However, large swathes of proof-assistant software—such as tactic languages, e
 
 As a solution to expanding the test-suite coverage for the proof assistant Coq, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322,ochoa2022breakbot} wherein changes in Coq are tested against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
 In this manner, user-centric concerns are well addressed.
-To prevent the crowdsourced test-suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
+To prevent the crowdsourced test suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
 \emph{We believe that for proof assistants to be used in industry-scale projects, it is imperative to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
 
 Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by the reverse CI is a time- and effort-intensive process for developers.
@@ -145,7 +145,7 @@ First, developers will tediously sit through the process of downloading, setting
 Then, they may have to take on the daunting task of figuring out the larger project context which is not even directly relevant to the bug!
 
 The current debugging process can be significantly optimized for developer experience.
-Additionally, the current process does not easily yield test cases to add to the test suite.
+Additionally, the current process does not easily yield test cases to add to Coq's internal test suite.
 Instead the test cases remain buried in external developments whereas we would like to bring bugs to the center!
 In order to improve the debugging process, we built the Coq Bug Minimizer%
 \footnote{%
@@ -227,7 +227,7 @@ The Coq Bug Minimizer must tradeoff between preserving specific details of error
 Many research papers in the software-engineering community have been written on just this topic~\cite{Cleve2000,zeller2009programs,Burger2005,delta,Zeller2002}, but constraints in a proof-assistant setting are uncommon in conventional programming.
 For instance, highly automated Coq developments often have long compile times even for single files, so we may need to be more frugal in how many program variants we test.
 
-\item \textbf{Standalone files:} Creating standalone files that illuminate new test-cases and can be added to the test-suite.
+\item \textbf{Standalone files:} Creating standalone files that illuminate new test-cases and can be added to Coq's internal test suite.
 This is difficult in dependently typed languages with metaprogramming facilities such as Coq.
 For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time resulting in tight coupling between files.
 
@@ -399,7 +399,7 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 \label{text:ltac-fragment:orig}
 
-\section{Standalone files}
+\section{Standalone files}\label{sec:standalone}
 
 While Coq bugs may be exposed thanks to the complex structure of external libraries, it is difficult for Coq developers to understand all of those libraries well enough to diagnose root causes.
 For that reason, we prefer to create minimized test cases that are as standalone as possible, not importing modules from other source files, beyond the Coq standard library.
@@ -607,7 +607,7 @@ If someone answers with a comment to trigger minimization, then the bot prepares
 
 \subsection{Research Questions}
 
-To evaluate the usefulness of our bug minimizer, we specify several research questions to investigate:
+To evaluate the usefulness of our bug minimizer, we investigate several research questions:
 
 \begin{description}
 \item[RQ1:] How often does the minimizer successfully produce a reduced test case from the CI failures it was triggered on?
@@ -620,7 +620,7 @@ To evaluate the usefulness of our bug minimizer, we specify several research que
 
 \subsection{Data Collection and Analysis}
 
-To support replicating the results, all our data collection and analysis code is made available as a Jupyter notebook and our dataset is made available as a CSV file.\footnote{\todo{Theo (Jason suggests: should we upload this to Zenodo and link it as a supplement above the doc beginning with the supplement command?}}
+To support replicating the results, we provide our data collection and analysis code (as a Jupyter notebook) and our dataset (as a CSV file) in the supplementary materials.
 
 We retrieve the runs of the bug minimizer by looking for PRs in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these PRs using GitHub's GraphQL API.
 We exclude PRs opened by the first author as most of these PRs were for testing the minimizer integration and debugging issues.
@@ -648,9 +648,9 @@ On these 191 runs, 75\% succeeded in producing a reduced test case. We count as 
 
 There were 5 runs for which we couldn't find a comment marking the end of minimization. By manually looking at them, we have determined that 4 out of 5 were caught in an infinite loop and had to be manually canceled. This can happen when the 6-hour timeout of the minimization process is not enough to make any new progress and thus the minimization gets stuck without ever reaching its end. This typically occurs when testing out a single change takes over 20 seconds, since we only have enough time to compile a 20-second-long file about a thousand times in six hours. The last case seems to be coqbot having failed to post the comment marking the end of the minimization process.
 
-There were 19 runs which concluded with an explicit ``Error: could not minimize file'' comment. These errors are often due to issues downloading CI artifacts (9 runs), for instance because the corresponding base CI jobs have been skipped or the CI artifacts have expired. They can also happen because of bugs in Coq or in the tested projects' build infrastructure that prevent minimization. Virtually all these issues were reported, and most of them are already fixed. For instance, the MetaCoq project alone was responsible for 5 failures because of issues in its build system.
+There were 19 runs which concluded with an explicit ``Error: could not minimize file'' comment. These errors are often due to issues downloading CI artifacts (9 runs), for instance because the corresponding base CI jobs have been skipped or the CI artifacts have expired. Runs concluding with errors can also happen because of bugs in Coq or in the tested projects' build infrastructure that prevent minimization. Virtually all these issues were reported, and most of them are already fixed. For instance, the MetaCoq project alone was responsible for 5 failures because of issues in its build system.
 
-Finally, there were 23 runs which concluded with a comment reporting on a supposedly minimized file but where (from the header comments or their absence thereof) we can conclude that the minimization process failed to properly start (e.g., because it couldn't reproduce the error message). Most of these problems were related to error message parsing, namespace management, or similar issues that have been fixed by making the bug minimizer more robust to them (see \autoref{sec:harder}). A few of these issues have been noted, but not yet fixed. Finally, a few of these failed runs were due to the minimizer being misused or called on a project which had failed for a reason that was unrelated to the PR.
+Finally, there were 23 runs which concluded with a comment reporting on a supposedly minimized file but where (from the header comments or their absence thereof) we can conclude that the minimization process failed to properly start (e.g., because it couldn't reproduce the error message). Most of these problems were related to error message parsing, namespace management, or similar issues that have been fixed by making the bug minimizer more robust to them (see \autoref{sec:error-messages} to \autoref{sec:standalone}). A few of these issues have been noted, but not yet fixed. Finally, a few of these failed runs were due to the minimizer being misused or called on a project which had failed for a reason that was unrelated to the PR.
 
 The accompanying notebook contains specific comments for each of the failed runs.
 
@@ -674,15 +674,15 @@ For successful runs, we observe more variety. The minimum duration is 4 minutes 
 
 \subsubsection{RQ4: What is the size of the reduced cases?}
 
-For these last three questions, we focus only on successful minimization runs that produced a fully standalone file.
+For the last three questions, we focus on minimization runs that produced standalone files.
 
-The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to the test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 369 lines and the maximum size is 3804 lines. But 25\% of the reduced cases are under 35 lines, 50\% are under 122 lines, and 75\% are under 461 lines.
+The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to Coq's test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 369 lines and the maximum size is 3804 lines. But 25\% of the reduced cases are under 35 lines, 50\% are under 122 lines, and 75\% are under 461 lines.
 
 Developers have the possibility of performing additional minimization manually and restart the automatic minimization process on their manually reduced case. This can help obtain even more reduced cases, but we have not evaluated this feature quantitatively.
 
 \subsubsection{RQ5: How long do the reduced cases take to run?}
 
-A recent feature of the minimizer is that it reports on the expected \texttt{coqc} compile time as part of the header comments it includes in the minimized file. Out of the 43 cases where we had this data available, we obtain that the reduced test cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
+Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Out of the 43 cases where we had this data available, we obtain that the reduced test cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
 
 \subsubsection{RQ6: What is the amount of code reduction?}
 
@@ -690,17 +690,16 @@ To compute how much code reduction there was, we use data that the minimizer rec
 
 We aggregate these numbers by simply taking the sum of the differences in line number at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 33\%, which means that the final test case size is on average one-third the size of the original test (including the dependencies which actually matter for the test case).
 
-If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 60\%, which means that the final file is on average 40\% smaller than the file we started from. Note that because of the inlining of dependencies, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 28 out of 139 cases. If we look only at the 111 cases for which there was some code reduction, we get that the average reduction is by a factor of 4. If we look only at the 28 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
+If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 60\%, which means that the final file is on average 40\% smaller than the file we started from. Note that because of dependency inlining, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 28 out of 139 cases. If we look only at the 111 cases for which there was some code reduction, we get that the average reduction is by a factor of 4. If we look only at the 28 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
 
 \subsection{Limitations of our Evaluation}
 
 Evaluating a bug minimizer for a proof assistant such as Coq is difficult because there is no preexisting benchmark that it could be run on. In this paper, we have decided to take advantage of the integration of our minimizer in the CI infrastructure of Coq to evaluate it on real use cases where Coq developers have felt the need for it.
 
-While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using re-runs of the  minimization on the same project in the same pull request), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
+While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using re-runs of the  minimization on the same project in the same PR), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
+Since we always account only for first runs, this means that many cases where the minimizer has been counted to have failed have been eventually fixed and would result in a successful run today. Subsequent runs on other projects or other PRs may have succeeded thanks to earlier fixes.
 
-Since we always account only for first runs, this means that many cases where the minimizer has been counted to have failed have been eventually fixed and would result in a successful run today. Subsequent runs on other projects or other pull requests may have succeeded thanks to earlier fixes.
-
-Other limitations are that our computation of the minimization duration is an overapproximation which also includes the time for things such as setting up a VM to run the process, and that our evaluation of the expected execution time of the reduced cases is based only on a subset of recent minimizer runsz.
+Other limitations are that our computation of the minimization duration is an overapproximation which also includes the time for things such as setting up a VM to run the process, and that our evaluation of the expected execution time of the reduced cases is based only on a subset of recent minimizer runs.
 
 Due to all these limitations, our evaluation should only be understood as demonstrating the feasibility of our approach and the usefulness of its application to the development of Coq. However, it should not be understood as a basis that future versions of the minimizer, or alternative minimizers, can compare to, since today's version would already obtain different results if it were re-run on all these cases.
 
