@@ -7,7 +7,7 @@
 
 pkgs.mkShell {
   buildInputs = with pythonPackages; [
-    jupyterlab requests numpy pandas matplotlib #statsmodels scipy
+    jupyterlab requests numpy pandas matplotlib
   ];
   shellHook = "jupyter-lab";
 }
