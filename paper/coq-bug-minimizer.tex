@@ -18,8 +18,8 @@
 
 \bibliographystyle{plainurl}% the mandatory bibstyle
 
-\title{Automatic Bug Minimization in Proof Assistants: A Case Study in Coq}
-\titlerunning{Automatic Bug Minimization in Coq}%TODO optional, please use if title is longer than one line
+\title{Automatic Test-Case Reduction in Proof Assistants: A Case Study in Coq}
+\titlerunning{Automatic Test-Case Reduction in Coq}%TODO optional, please use if title is longer than one line
 
 \author{Jason Gross}{CSAIL, Massachusetts Institute of Technology, 77 Massachusetts Ave., Cambridge, MA 02139, USA \and MIRI, USA \and \url{https://jasongross.github.io/} }{jgross@mit.edu}{https://orcid.org/0000-0002-9427-4891}{}%TODO mandatory, please use full name; only 1 author per \author macro; first two parameters are mandatory, other parameters can be empty. Please provide at least the name of the affiliation and the country. The full address is optional. Use additional curly braces to indicate the correct name splitting when the last name consists of multiple name parts.
 
@@ -65,7 +65,7 @@
 \ccsdesc[300]{Software and its engineering~Formal software verification}
 %\ccsdesc[100]{\textcolor{red}{Replace ccsdesc macro with valid one}} %TODO mandatory: Please choose ACM 2012 classifications from https://dl.acm.org/ccs/ccs_flat.cfm
 
-\keywords{debugging, bug minimization, Coq, automatic test-case minimization}
+\keywords{debugging, automatic test-case reduction, Coq, bug minimizer}
 
 \category{} %optional, e.g. invited paper
 
@@ -120,12 +120,12 @@
   As the adoption of proof assistants increases, there is a need for efficiency in identifying, documenting, and fixing compatibility issues that arise from proof assistant evolution.
   We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} with \emph{minimal} and \emph{standalone} files, integrated with coqbot to trigger \emph{automatically} on Coq reverse CI failures.
   Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments: enabling Coq developers to easily obtain modular test-case files for fast experimentation.
-  In this paper, we describe insights about how bug minimization is different in Coq than in traditional compilers.
+  In this paper, we describe insights about how test-case reduction is different in Coq than in traditional compilers.
 We expect that our insights will generalize to other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 CI failures.
-  Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of these cases.
-  The minimizer produces a fully standalone example 89\% of the time, and the example is on average about one-third the size of the original test.
-  The average reduced test-case compiles in 1.25 seconds, with 75\% taking under half a second.
+  Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of the time.
+  The minimizer produces a fully standalone test case 89\% of the time, and it is on average about one-third the size of the original test.
+  The average reduced test case compiles in 1.25 seconds, with 75\% taking under half a second.
 \end{abstract}
 
 \section{Introduction}
@@ -137,7 +137,7 @@ However, large swathes of proof-assistant software—such as tactic languages, e
 As a solution to expanding the test-suite coverage for the proof assistant Coq, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322,ochoa2022breakbot} wherein changes in Coq are tested against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
 In this manner, user-centric concerns are well addressed.
 To prevent the crowdsourced test suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
-\emph{We believe that for proof assistants to be used in industry-scale projects, it is imperative to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
+\emph{We believe that to facilitate the use of proof assistants in industry-scale projects, it is essential to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
 
 Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by the reverse CI is a time- and effort-intensive process for developers.
 They must perform many steps before beginning to understand and work on the bug.
@@ -152,19 +152,21 @@ In order to improve the debugging process, we built the Coq Bug Minimizer%
 Available on GitHub in \href{https://github.com/JasonGross/coq-tools}{\texttt{JasonGross/coq-tools}}%
 }
 which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files.
-Typically, generated files reduce the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play with, understand, and fix bugs.
-Furthermore, we have integrated the Coq Bug Minimizer with coqbot to trigger \textbf{automatically} on reverse-CI failures, reducing the friction of building minimized files.
+Typically, minimized files reduce the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play with, understand, and fix bugs.
+Furthermore, we have integrated the Coq Bug Minimizer with coqbot~\cite{zimmermann:hal-03479327} to trigger \textbf{automatically} on reverse-CI failures, reducing the friction of building minimized files.
 
-The state of the art in bug minimization for compilers is delta debugging.
-The delta tool~\cite{delta} preprocesses files into well-balanced blocks of code to determine the granularity of code removal, and then it runs binary search on removing blocks of code.
-However, bug minimization is different for proof assistants than for compilers of more traditional languages, with unique challenges and applicable tricks.
+Test-case reduction has already a rich literature~\cite{chen_survey_compiler_testing}. However, it is focused mostly on traditional languages such as C, and even generic reduction techniques may not apply so well to proof assistants.
+%The state of the art in bug minimization for compilers is delta debugging.
+%The delta tool~\cite{delta} preprocesses files into well-balanced blocks of code to determine the granularity of code removal, and then it runs binary search on removing blocks of code.
+%However, bug minimization is different for proof assistants than for compilers of more traditional languages, with unique challenges and applicable tricks.
+%
+In this paper, we share what we have learnt about where test-case reduction is harder and where it is easier in Coq than in traditional compilers, and describe how we got around the difficulties.
+Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case reduction has been and where the biggest opportunities for improvement remain.
+%Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in more easily supporting backwards compatibility and industry-scale projects.
+We believe that our methods may be of interest for developers of other proof assistants who are also facing a tradeoff between enabling evolution and preserving stability, in a context of industrial use.
 
-In this paper, we share what we have learnt about where delta debugging is harder and where it is easier in Coq than in traditional compilers, and describe how we got around the difficulties.
-Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case minimization has been and where the biggest opportunities for improvement remain.
-Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in more easily supporting backwards compatibility and industry-scale projects.
-
-For the mobile reader, \autoref{sec:example} introduces a constructed example of bug minimization in Coq, and articulates desiderata for bug minimization in the proof-assistant setting.
- \autoref{sec:easier} details aspects of traditional-setting bug minimization that are simpler or irrelevant in Coq.
+For the mobile reader, \autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
+ \autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq.
 Then \todo{refs}, explore the four desiderata, and describe the details of our solution to the more important challenges of each.
  \todo{ref} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
 Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} discusses our thoughts on the most worthwhile improvements to make to our tooling.
@@ -208,7 +210,7 @@ Lemma foo : forall x, x = zero -> S x = one.
 Proof. crush.
 \end{verbatim}
 
-Now we may look for any more opportunities to delete lines, producing a standalone, more minimal file:
+Now we may look for any more opportunities to delete lines, producing a standalone, reduced file:
 \begin{verbatim}
 Ltac crush := intros; subst; try reflexivity.
 Definition zero := 0. Definition one := 1.
@@ -238,7 +240,7 @@ The Coq Bug Minimizer must work with the wide variety of build systems used in d
 \end{enumerate}
 
 Achieving each desideratum posed interesting challenges, and required making several design choices.
-Before proceeding to share solutions to these challanges, we note the ways in which bug minimization is \emph{simpler} in the proof-assistant setting than in other settings.
+Before proceeding to share solutions to these challanges, we note the ways in which test-case reduction is \emph{simpler} in the proof-assistant setting than in other settings.
 
 
 \section{Simplifications of the Proof-Assistant Setting}\label{sec:easier}
@@ -256,7 +258,7 @@ There is no convention as found in languages from Java to Haskell, where all fun
 As a result, there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
 Actually, we should think in terms of single commands processed by Coq (e.g., function definitions or individual tactics), not lines, but the principles is sound, with that fix-up.
 
-As a result, the satisfyingly simple first step of test-case minimization is removing all lines following the command that triggers the bug.
+As a result, the satisfyingly simple first step of test-case reduction is removing all lines following the command that triggers the bug.
 
 \subsection{Attempted Dropping of Candidate Lines in Order}
 
@@ -305,8 +307,8 @@ When the external project exhibiting buggy behavior takes minutes or hours to co
 Test cases that compile in seconds or fractions of a second allow developers to more fluidly work on fixing the bug.
 Additionally, shorter test cases can make clearer what is going wrong and help developers formulate hypotheses about their changes to Coq.
 
-Thus, the problems in minimization are making the test as small as possible and quick to compile.
-Another important consideration is getting to our minimal test case as quickly as possible.
+Thus, we should aim at making the test as small as possible and quick to compile.
+Another important consideration is getting to our reduced test case as quickly as possible.
 
 We now present our main ideas toward those ends, which are applied within a loop of repeatedly shrinking a file.
 The inner loop does not further simplify code newly introduced or modified by itself, but instead we rely on an outer loop that reruns the inner loop so long as progress is being made.
