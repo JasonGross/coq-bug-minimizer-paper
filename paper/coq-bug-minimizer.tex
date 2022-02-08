@@ -103,6 +103,36 @@
 \bibinput{coq-bug-minimizer}
 \newcommand{\citetitle}[1]{\emph{\usebibentry{#1}{title}}\nocite{#1}}
 
+
+%%% from https://tex.stackexchange.com/a/183682/2066
+\makeatletter
+% define a macro \autorefs to allow multiple references to be passed to \autoref
+\newcommand\autorefs[1]{\@first@ref#1,@}
+\def\@throw@dot#1.#2@{#1}% discard everything after the dot
+\def\@set@refname#1{%    % set \@refname to autoefname+s using \getrefbykeydefault
+    \edef\@tmp{\getrefbykeydefault{#1}{anchor}{}}%
+    \xdef\@tmp{\expandafter\@throw@dot\@tmp.@}%
+    \ltx@IfUndefined{\@tmp autorefnameplural}%
+         {\def\@refname{\@nameuse{\@tmp autorefname}s}}%
+         {\def\@refname{\@nameuse{\@tmp autorefnameplural}}}%
+}
+\def\@first@ref#1,#2{%
+  \ifx#2@\autoref{#1}\let\@nextref\@gobble% only one ref, revert to normal \autoref
+  \else%
+    \@set@refname{#1}%  set \@refname to autoref name
+    \@refname~\ref{#1}% add autoefname and first reference
+    \let\@nextref\@next@ref% push processing to \@next@ref
+  \fi%
+  \@nextref#2%
+}
+\def\@next@ref#1,#2{%
+   \ifx#2@, and~\ref{#1}\let\@nextref\@gobble% at end: print and+\ref and stop
+   \else, \ref{#1}% print  ,+\ref and continue
+   \fi%
+   \@nextref#2%
+}
+\makeatother
+
 \makeatletter
 \newcommand{\todo}[1]{%
 \@latex@warning{TODO: \detokenize{#1} on page \thepage}%
@@ -166,9 +196,9 @@ Drawing on empirical results from nearly a year of use in Coq's production CI sy
 We believe that our methods may be of interest for developers of other proof assistants who are also facing a tradeoff between enabling evolution and preserving stability, in a context of industrial use.
 
 For the mobile reader, \autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
- \autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq.
-Then \todo{refs}, explore the four desiderata, and describe the details of our solution to the more important challenges of each.
- \todo{ref} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
+\autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq.
+Then \autorefs{sec:error-messages,sec:minimal,sec:standalone,sec:smooth-dev-experience} explore the four desiderata and describe the details of our solution to the more important challenges of each.
+\autoref{sec:alt-usage} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
 Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} discusses our thoughts on the most worthwhile improvements to make to our tooling.
 
 
@@ -225,7 +255,7 @@ From the above process we can extrapolate desiderata for the Coq Bug Minimizer.
 Many reasonable file simplifications lead to incidental changes in error messages.
 The Coq Bug Minimizer must tradeoff between preserving specific details of error messages and aiding human understanding of the underlying bug.
 
-\item \textbf{Minimization:} Exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting.
+\item \textbf{Minimal files:} Exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting.
 Many research papers in the software-engineering community have been written on just this topic~\cite{Cleve2000,zeller2009programs,Burger2005,delta,Zeller2002}, but constraints in a proof-assistant setting are uncommon in conventional programming.
 For instance, highly automated Coq developments often have long compile times even for single files, so we may need to be more frugal in how many program variants we test.
 
@@ -281,13 +311,13 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 
 \end{enumerate}
 
-\section{Minimization}
+\section{Minimal Files}\label{sec:minimal}
 
-Minimization is powerful in making long source files more comprehensible to developers.
+Test-case reduction is powerful in making long source files more comprehensible to developers.
 In addition to this, external project in Coq can take minutes or hours to compile, so the edit-compile-test-debug loop is long.
 We have two additional goals to improve this workflow.
 \begin{enumerate}
-\item Finding minimized test cases as fast as possible, given that experimenting with each program variant has long compilation time
+\item Finding minimal test cases as fast as possible, given that experimenting with each program variant has long compilation time
 \item Compilation of the test case in seconds or fractions of a second so that that developers can fluidly try hypotheses for solutions
 \end{enumerate}
 
@@ -377,23 +407,7 @@ Coq has a tactical \verb|abstract| that executes the tactic it is passed as an a
 Such subproofs should be able to be replaced with \verb|admit| without changing the behavior of the proof script.
 The details are a little subtle, e.g.\ to avoid changing which section variables a proof depends on and thus changing its type outside the section.
 
-\label{text:ltac-fragment:orig}
-
 \section{Standalone Files}\label{sec:standalone}
-
-%1. Here’s why standalone files are important
-%2. Here’s what to do: Find a linearlization of the dependency tree that allows us to inline modules
-%3. Here’s why its difficult in Coq:
- %   1. Name resolution: harder in dependently typed language because more names to resolve
-  %      1. Coq-specific quirks
-  %  2. Meta programming facilities and global state: makes int potentially impossible to find a liberalization
-%4. How we address these issues
- %   1.
-   %     1. Coq emits a globalization file for unique identifies for every name
-  %5     2. We can change name resolution
-    %2.
-    %    1. Try to hide effects by not importing modules before we need them
-    %    2. Try out different locations for inlining the module
 
 While the complex structure of external developments is a boon to stress-testing Coq, there are three reasons for wanting to reproduce bugs in standalone files.
 \begin{enumerate}
@@ -471,7 +485,7 @@ To that end, we have a pass that performs the transitive closure of the dependen
 Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
 This strategy ensures that we only inline dependencies that are actually necessary.
 
-\section{Smooth Developer Experience}
+\section{Smooth Developer Experience}\label{sec:smooth-dev-experience}
 
 In order to analyze a specific source file, we need to take a few steps.
 \begin{enumerate}
@@ -521,7 +535,7 @@ We then pass this information to the bug minimizer:
 %% \todo{exmaple?}
 
 
-\section{An Alternative Usage Mode}
+\section{An Alternative Usage Mode}\label{sec:alt-usage}
 
 Up to this point, we have talked about using the Coq Bug Minimizer exclusively to minimize reverse-CI failures for debugging faulty changes in Coq.
 Our tool can also be used to minimize test cases for newly found bugs in Coq.
