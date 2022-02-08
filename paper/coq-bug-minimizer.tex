@@ -374,7 +374,7 @@ One pass in the minimizer tries to replace traditional definitions with uses of 
 There are some likely-to-succeed steps that we try early on, which are superseded by removing each and every structured block one at a time but may result in faster minimization.
 The primary example of this sort of step is removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definitions.
 
-\paragraph{Splitting \texttt{Import} and \texttt{Export}s}
+\paragraph{Splitting \texttt{Import} and \texttt{Export}s}\label{sec:split-imports}
 It may be the case that users import modules that they never use, such as in \texttt{Import unused1 used unused2}.
 To allow eventual removal of \verb|unused1| and \verb|unused2| even when the \verb|Import used| statement cannot be removed, we have a pass that attempts to split such statements into separate \verb|Import| statements, resulting in \texttt{Import unused1. Import used. Import unused2.}
 
@@ -419,9 +419,9 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 While the complex structure of external developments is a boon to stress-testing Coq, there are three reasons for wanting to reproduce bugs in standalone files.
 \begin{enumerate}
-\item It's challenging for developers to understand the intricacies of external developments well enough to diagnose root causes. 
+\item It's challenging for developers to understand the intricacies of external developments well enough to diagnose root causes.
 \item  Build systems are necessary to handle multiple files, but using them adds unnecessary overhead in the debugging workflow.
-\item Intricate file dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test-suite. 
+\item Intricate file dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test-suite.
 \end{enumerate}
 
 
@@ -433,13 +433,13 @@ Two difficulties arise when following this strategy in Coq:
 \begin{enumerate}
 \item As in all languages which allow shadowing of global symbols, inlining files changes what names are available and hence may result in unintended changes of behavior.
 The dependent typing and metaprogramming facilities of Coq largely eliminate the distinction between runtime and compile time.
-As a result, we have having to inline not just function declarations but also function bodies, and thus the problem of name resolution is comparatively harder in Coq and similar languages than in those with simple types and without metaprogramming facilities.
+As a result, we have to inline not just function declarations but also function bodies, and thus the problem of name resolution is comparatively harder in Coq and similar languages than in those with simple types and without metaprogramming facilities.
 Furthermore, Coq has additional quirks around name resolution and (lack of) namespacing which have to be managed and worked around.
 \item Coq has a great deal of global state (e.g., notations, universe polymorphism, the default tactic mode) that changes the way sentences are interpreted.
 Because there's no way to fully isolate changes on this global state, there may not even be \emph{any} linearization which reproduces the same behavior.
 \end{enumerate}
 
-\subsection{Addressing Shadowing and Name Resolution}
+\subsection{Addressing Shadowing and Name Resolution}\label{sec:name-resolution}
 Coq assigns names based on three components: the name and location of the file in which the identifier is defined, the module structure surrounding the identifier, and the final name.
 For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defined in the directory \texttt{MSets/MSetPositive.v}, which is bound to \texttt{Coq.MSets.MSetPositive}, in the module \texttt{PositiveSet}, with the name \texttt{t}.
 
@@ -464,170 +464,36 @@ If we are inlining a file from Flocq into a file from VST, for example, the \tex
 \texttt{Import} and \texttt{Export} statements, while not dependent on searchpath flags to the same extent as \texttt{Require}, still seem empirically more likely to refer to potentially ambiguous names than most other statements.
 Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements when inlining, and let Coq determine all other name resolution.
 
-\subsection{Addressing Nonlinearizability of Global State}
+\subsection{Addressing Nonlinearizability of Global State}\label{sec:linearize-global-state}
+While shadowing and name resolution is mechanically resolvable at least in theory, the global state of Coq is sufficiently disorganized that we are not aware of any fully general technical means of linearizing Coq files. %\footnote{%
+%The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
+%Some of these effects can even be set on the command-line, and at present there's no way to determine what flags were used to compile a given installed file.
+%}
+Hence our approach here consists of a couple partial work-arounds.
 
+The most basic technique to attempt to isolate global state is to wrap the inlined file in a module.
+Most state not explicitly marked as \texttt{Global} does not escape the boundaries of the module it's defined inside.
+As we already use module wrapping to handle name resolution as discussed in \autoref{sec:name-resolution}, we already reap the benefits of this technique.
 
-
-\begin{comment}
-
-which describe the absolutization of every  in the file.
-
-In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
-The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
-These \verb|.glob| files are primarily used to create hyperlinked HTML versions of \verb|.v| files, but we can co-opt them to get the information we need.
-By generating a \verb|.glob| file for our buggy file and reading it, we can determine the absolute paths of all \verb|Require|, \verb|Import|, and \verb|Export| statements, allowing us to split them as needed without worrying about changes to name resolution.
-
-
-we've found that in practice  \texttt{Import} and \texttt{Export} statements tend to be
-to recreate the directory structures
-
-
-When we want to inline \emph{multiple files in the same project}, the na\"ive strategy would result in multiple modules of the same name.
-Coq does not allow multiple modules with the same qualified name, so to avoid this issue, we wrap all modules in uniquely named placeholder toplevel modules.
-
-When we inline a file, \emph{the flags that were used to compile that file} might be different from the flags used to compile the buggy file we are minimizing.
-While we cannot do anything about flags that change the behavior of code, such as \texttt{-set 'Universe Polymorphism'}, the most common flags that differ will be flags defining the search path and module binding names.
-In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
-We use this information when inlining the file to account for such differences.
-Additionally, there are some cases where this information allows us to adjust qualified references to the module currently being defined; in this case, we try replacing such references with the mangled name used in wrapping.
-
-
-%4. How we address these issues
- %   1.
-   %     1. Coq emits a globalization file for unique identifies for every name
-  %5     2. We can change name resolution
-    %2.
-    %    1. Try to hide effects by not importing modules before we need them
-    %    2. Try out different locations for inlining the module
-
-For instance, eliminating needless dependencies in simply typed languages may be trivial, but
-Here’s why its difficult in Coq:
- %   1. Name resolution: harder in dependently typed language because more names to resolve
-  %      1. Coq-specific quirks
-%  2. Meta programming facilities and global state: makes int potentially impossible to find a liberalization
-
-  Here’s what to do: Find a linearlization of the dependency tree that allows us to inline modules
-
-\subsection{Naive Strategy}\label{sec:inline-deps}
-
-Suppose we are developing a project called \verb|Example| and we have a file \verb|Foo.v| with the contents
-\begin{verbatim}
-Lemma complicated : True = False.
-Proof.
-  (* ... *)
-  (* thousands of lines of proof taking minutes to compile *)
-  (* ... *)
-Defined.
-Lemma irrelevant1 : 1 = 1.
-Proof. reflexivity. Qed.
-\end{verbatim}
-and a second file \verb|bug.v| with the contents
-\begin{verbatim}
-Require Import Example.Foo.
-Lemma irrelevant2 : 2 = 2.
-Proof. reflexivity. Qed.
-Lemma boom : True -> False.
-Proof. rewrite complicated. Qed.
-\end{verbatim}
-
-We want a standalone reproducing test case and therefore would like to inline dependencies.
-After minimizing \verb|bug.v| as much as possible, it will look like
-\begin{verbatim}
-Require Example.Foo.
-Import Example.Foo.
-Lemma boom : True -> False.
-Proof. rewrite complicated.
-\end{verbatim}
-
-We would now like to inline \verb|Foo.v|.
-If we had not split apart \verb|Require| from \verb|Import|, we could just drop the file in place of the \verb|Require|.
-However, we must be able to handle \verb|Import|.
-
-Because \verb|Import| can use qualified names, we wrap the contents in modules, \verb|Export|ing any directory modules because we must be able to refer to \verb|complicated| in \verb|Foo.v| as \verb|Foo.complicated| and \verb|Example.Foo.complicated|:
-\begin{verbatim}
-Module Export Example. Module Foo.
-Lemma complicated : True = False.
-Proof.
-  (* ... *)
-  (* thousands of lines of proof taking minutes to compile *)
-  (* ... *)
-Defined.
-Lemma irrelevant1 : 1 = 1.
-Proof. reflexivity. Qed.
-End Foo. End Example.
-Import Example.Foo.
-Lemma boom : True -> False.
-Proof. rewrite complicated.
-\end{verbatim}
-
-This file can then be minimized to
-\begin{verbatim}
-Lemma complicated : True = False.
-Admitted.
-Lemma boom : True -> False.
-Proof. rewrite complicated.
-\end{verbatim}
-
-\subsection{Shadowing and Name Resolution}
-
-When we want to inline \emph{multiple files in the same project}, the na\"ive strategy would result in multiple modules of the same name.
-Coq does not allow multiple modules with the same qualified name, so to avoid this issue, we wrap all modules in uniquely named placeholder toplevel modules.
-
-When we inline a file, \emph{the flags that were used to compile that file} might be different from the flags used to compile the buggy file we are minimizing.
-While we cannot do anything about flags that change the behavior of code, such as \texttt{-set 'Universe Polymorphism'}, the most common flags that differ will be flags defining the search path and module binding names.
-In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
-We use this information when inlining the file to account for such differences.
-Additionally, there are some cases where this information allows us to adjust qualified references to the module currently being defined; in this case, we try replacing such references with the mangled name used in wrapping.
-
-\subsection{Non-linearizability}
-
-It can be surprisingly difficult to break some import-related statements into sequences of more fundamental statements, which may be considered independently for removal.
-
-\paragraph{Splitting \texttt{Require}s}
-Much like \verb|Import| and \verb|Export| statements, we also want to split \verb|Require| statements, and furthermore want to split \verb|Require Import foo| into \texttt{Require foo. Import foo.}
-This last splitting will allow us to inline \verb|foo|, as described in \autoref{sec:inline-deps}.
-However, there are three subtleties associated with such statements.
-
-First, it may be the case that our bug depends on \verb|Require foo| only because the file \verb|foo.v| contains \verb|Require bar|, and in fact the bug only needs access to the constants defined in \verb|bar.v|.
-Hence we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
-Note that if we were more careful, we would not insert all dependencies at the top of the file but instead at each \verb|Require| statement, because \verb|Require| has side effects that may cause the file to fail to compile (see further discussion shortly).
-Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
-
-Second, it may be the case that \verb|Require Import foo bar| is not the same as \texttt{Require foo. Require bar. Import foo. Import bar.}.
-It may be the case that \verb|Import foo| results in a different module \verb|bar| becoming available.
-Alternatively, it may be the case that \verb|Require bar| transitively requires another \verb|foo| file which is different than the one that is resolved by default as \verb|Require foo|, and then \verb|Import foo| will choose the most recently \verb|Require|d module \verb|foo|.
-
-The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
-These \verb|.glob| files are primarily used to create hyperlinked HTML versions of \verb|.v| files, but we can co-opt them to get the information we need.
-By generating a \verb|.glob| file for our buggy file and reading it, we can determine the absolute paths of all \verb|Require|, \verb|Import|, and \verb|Export| statements, allowing us to split them as needed without worrying about changes to name resolution.
-
-Third and finally, Coq supports statements such as \verb|From Coq Require Import Arith|.
-Na\"ively replacing this with \verb|From Coq Require Import Coq.Arith.Arith| results in an error.
-Hence, after absolutizing module paths for a given statement, we carefully remove the \texttt{From \ldots} portion of the statement.
-
-
-\paragraph{Diamond Problems and Side Effects of \texttt{Require}}
-
-The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
-As a result, there is no bullet-proof method of merging files.
-However, we can ameliorate the issue by trying multiple strategies of merging files.
+Our only other technique is to try multiple linearizations and hope that one of them is adequate.
 We try inserting the file being inlined at the top of the file, as well as at the location where it is \texttt{Require}d.
 In the future, we might also want to try moving \texttt{Require}s up higher in the file, to try to handle more situations.
 
-\paragraph{All at Once, or One at a Time?}
+In \autoref{sec:future-work}, we discuss a few potential future avenues to better handling of global state.
+For example, we may want to more explicitly manage the state before and after inlining a file by taking advantange of Coq's ability to print the current settings of flags with \texttt{Print Options}.
 
-We have a flag that allows inlining dependencies all at once.
+\subsection{Getting to Standalone Files Quickly}
+We have a flag that allows inlining dependencies all at once, much like \texttt{gcc} inlines all \verb|#include|d files at once.
 While this was originally the way all files were minimized, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
 As a result, the current default behavior is to minimize the current file before inlining other files.
 
-\subsection{Workarounds for Persistent Bugs in Coq}
+Futhermore, we want to ensure that we only inline files that are actually used.
+Much like we want to split \texttt{Import} and \verb|Export| statements in \autoref{sec:split-imports}, we also want to split \verb|Require| statements, for example from \texttt{Require unused1 used unused2.} to \texttt{Require unused1. Require used. Require unused2.}
 
-Sometimes even the version of Coq before a change has its own bugs to work around!
-For example, the currently open \coqbug{14587} describes how Coq is sensitive to how many modules some code is wrapped inside.
-To work around this problem, instead of wrapping code in nested modules, we can wrap it in a single mangled module and then \texttt{Include} that module into one of the correct qualified name.
-However, this strategy will sometimes result in failure of code that refers to the currently-being-defined module to qualify names.
-Therefore, we take the overall approach of trying all the different ways of inlining dependencies and using whichever one works, since no single strategy is currently a silver bullet.
-\end{comment}
+Additionally, if the buggy behavior depends on a file only for its own dependencies, we'd like to directly inline the transitive dependency rather than needing to inline the entire intermediate file.
+To accomplish this, we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
+Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
+This strategy ensures that we only inline dependencies that are actually necessary.
 
 \section{Smooth Developer Experience}
 
@@ -842,10 +708,14 @@ We remove single commands at a time, rather than removing entire well-balanced c
 A broader opportunity is finding related groups of commands that need to be removed together, to avoid changing the error message.
 For instance, we might want to move a lemma out of a module, to the top level of a file.
 Removing the commands that open and close the module might suffice, even if removing either one alone disturbs the error message.
-A general-enough version of this process could replace many specific passes (like removing empty sections and modules).
+A general-enough version of this process could replace many specific passes. % (like removing empty sections and modules).
 
 One remaining aggravation is proper handling of lemma proofs within sections, where the details of the lemma proof influence which section variables are kept in the lemma's type.
-We would either use proof-script contents to infer \verb|Proof using| clauses or apply the \verb|Set Suggest Proof Using| command.
+We could use the \verb|Set Suggest Proof Using| command to insert \verb|Proof using| clauses.
+
+As mentioned in \autoref{sec:linearize-global-state}, we'd like to improve the ability of the minimizer to linearize dependency trees and handle Coq's global state.
+We could, for example, print out the full table of flag settings at a particular point, reset them to the initial values before inlining a file, and then restore them after inlining.
+To fully handle global state, we'd need some way to reconstruct the command-line flags used to compile installed files.
 
 There are further-out ideas that could speed minimization significantly but might require significant modifications to Coq itself.
 Incremental compilation would be helpful, to save us from rerunning long proof scripts every time we change single lines below them.
