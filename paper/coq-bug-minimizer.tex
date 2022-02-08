@@ -399,7 +399,7 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 \label{text:ltac-fragment:orig}
 
-\section{Standalone files}\label{sec:standalone}
+\section{Standalone Files}\label{sec:standalone}
 
 While Coq bugs may be exposed thanks to the complex structure of external libraries, it is difficult for Coq developers to understand all of those libraries well enough to diagnose root causes.
 For that reason, we prefer to create minimized test cases that are as standalone as possible, not importing modules from other source files, beyond the Coq standard library.
@@ -529,7 +529,7 @@ However, this strategy will sometimes result in failure of code that refers to t
 Therefore, we take the overall approach of trying all the different ways of inlining dependencies and using whichever one works, since no single strategy is currently a silver bullet.
 
 
-\section{Smooth developer experience}
+\section{Smooth Developer Experience}
 
 In order to analyze a specific source file, we need to take a few steps.
 \begin{enumerate}
@@ -599,7 +599,7 @@ to customize the desired reproducing case, trusting that the entire file will no
 
 \section{Integration in Coq's CI and Evaluation of Results}\label{sec:evaluation}
 
-\subsection{Triggering the minimizer}
+\subsection{Triggering the Minimizer}
 
 The Coq project uses a custom, multi-task bot to automate everyday tasks, including triggering CI and reporting its results to the GitHub repository~\cite{zimmermann:hal-03479327}. We have extended this bot to automatically propose and manage the minimization of failing test cases. The bot posts a comment to propose to run minimization when a PR has passed Coq's internal test suite, but has failures with external projects, and these external projects have built successfully on the base commit (on the master branch).
 
