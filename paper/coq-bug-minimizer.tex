@@ -247,14 +247,14 @@ Before proceeding to share solutions to these challenges, we note the ways in wh
 
 Classic delta debugging~\cite{Zeller2002} is a technique in test-case reduction for traditional compilers.
 It employs binary search through program structure to find subprograms that can be removed while preserving properties relevant to triggering specific bugs for the chosen compiler.
-Coq's lack of forward-references permits a simpler method: first remove everything after the error-message-generating line, and then try removing the syntactic units beforehand in-order, one-at-a-time.
+Coq's lack of forward references permits a simpler method: first remove everything after the error-message-generating line, and then try removing the syntactic units beforehand in-order, one-at-a-time.
 Unlike in languages from Java to Haskell, where all functions in a file are considered mutually recursive, in Coq there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
 In this manner we reduce the number of ``experiments'' on program variants, which is especially useful when each program variant requires significant processing time as is often the case in Coq.
 
 Our empirical evaluation (\autoref{sec:evaluation}) demonstrates that this strategy is adequately performant.
 We conjecture that the reason for this adequate performance is that dependency trees of Coq theorems and proofs tend to be relatively deep compared to the number of definitions and theorems in any single file.
-This is borne out by the fact that our ``minimal'' test cases tend to be only about a third the size of the total amount of code in all files in the dependency tree of the initial test case.
-If instead there were orders of magnitude more useless lines than true dependent lines, we expect that a binary search strategy would be required for adequate performance.
+This hypothesis is borne out by the fact that our typical ``minimal'' test case tends to be only about a third the size of the total amount of code in all files in the dependency tree of the initial test case.
+If instead there were orders of magnitude more useless lines than true dependent lines, we expect that a binary-search strategy would be required for adequate performance.
 
 \section{Reproducing Buggy Behavior}\label{sec:error-messages}
 
