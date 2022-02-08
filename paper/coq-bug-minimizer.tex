@@ -408,25 +408,91 @@ The details are a little subtle, e.g. to avoid changing which section variables 
   %      1. Coq-specific quirks
   %  2. Meta programming facilities and global state: makes int potentially impossible to find a liberalization
 %4. How we address these issues
- %   1. 
+ %   1.
    %     1. Coq emits a globalization file for unique identifies for every name
   %5     2. We can change name resolution
-    %2.  
+    %2.
     %    1. Try to hide effects by not importing modules before we need them
     %    2. Try out different locations for inlining the module
- 
+
 \todo{fix words}
-There are two reasons for wanting to reproduce bugs in standalone files. 
+There are two reasons for wanting to reproduce bugs in standalone files.
 \begin{enumerate}
 \item Bugs may be exposed thanks to the complex structure of external libraries, it is difficult for developers to understand all of those libraries well enough to diagnose root causes.
 For that reason, we prefer to not import modules from other source files, beyond the Coq standard library.
 \item Files with multiple dependencies hide the bug, making it difficult to extend the test-suite.
-
 \end{enumerate}
 
-All of the steps above are applied in a single pass of a process that loops until no further progress is possible.
-After we have tried all possible command deletions and kept the ones that preserved the bug, we consider finding a module dependency to inline.
-Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
+
+Na\"ively, the way to produce a standalone file is to \emph{linearize} the dependency tree and combine the contents of all files.
+We saw an example of roughly this strategy in \autoref{sec:example}, and this is also the strategy followed by, e.g., C compilers preprocessing \verb|#include| statements.
+
+Two difficulties arise when following this strategy in Coq:
+\begin{enumerate}
+\item As in all languages which allow shadowing of global symbols, inlining files changes what names are available and hence may result in unintended changes of behavior.
+The dependent typing and metaprogramming facilities of Coq largely eliminate the distinction between runtime and compile time.
+As a result, we have having to inline not just function declarations but also function bodies, and thus the problem of name resolution is comparatively harder in Coq and similar languages than in those with simple types and without metaprogramming facilities.
+Furthermore, Coq has additional quirks around name resolution and (lack of) namespacing which have to be managed and worked around.
+\item Coq has a great deal of global state (e.g., notations, universe polymorphism, the default tactic mode) that changes the way sentences are interpreted.
+Because there's no way to fully isolate changes on this global state, there may not even be \emph{any} linearization which reproduces the same behavior.
+\end{enumerate}
+
+\subsection{Addressing Shadowing and Name Resolution}
+Coq assigns names based on three components: the name and location of the file in which the identifier is defined, the module structure surrounding the identifier, and the final name.
+For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defined in the directory \texttt{MSets/MSetPositive.v}, which is bound to \texttt{Coq.MSets.MSetPositive}, in the module \texttt{PositiveSet}, with the name \texttt{t}.
+
+If we were to inline this file into some other file \texttt{bug.v}, then the constant becomes \texttt{bug.PositiveSet.t}.
+We now have two choices: we can attempt to adjust the name of the constant on inlining, or we can adjust references to the constant.
+
+We take a mix of these strategies.
+
+First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case we'd wrap the contents in \texttt{Module MSetPositive}).
+Furthermore, because users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, \texttt{MSetPositive.PositiveSet.t}, or even \texttt{PositiveSet.t} if they \texttt{Import MSetPositive}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
+Finally, because Coq forbids multiple modules with the same absolute kernel name, we must wrap the top-level module in yet another module, with a uniquly generated identifier.
+While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy and almost always one of them is adequate for reproducing buggy behavior.
+
+Second, Coq helpfully emits \emph{globalization} files, which contain information about how Coq resolves almost all names in the file.
+Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the file we're inlining and the names that refer to constants in the file we're inlining.
+
+We've found in practice that name resolution of \texttt{Require}, \texttt{Import}, and \texttt{Export} statements will often change in \todo{continue from here}
+
+which describe the absolutization of every  in the file.
+
+In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
+The solution to this problem relies on the fact that \verb|coqc| emits \emph{globalization} files, which contain information about where bits of source code point.
+These \verb|.glob| files are primarily used to create hyperlinked HTML versions of \verb|.v| files, but we can co-opt them to get the information we need.
+By generating a \verb|.glob| file for our buggy file and reading it, we can determine the absolute paths of all \verb|Require|, \verb|Import|, and \verb|Export| statements, allowing us to split them as needed without worrying about changes to name resolution.
+
+
+we've found that in practice  \texttt{Import} and \texttt{Export} statements tend to be
+to recreate the directory structures
+
+
+When we want to inline \emph{multiple files in the same project}, the na\"ive strategy would result in multiple modules of the same name.
+Coq does not allow multiple modules with the same qualified name, so to avoid this issue, we wrap all modules in uniquely named placeholder toplevel modules.
+
+When we inline a file, \emph{the flags that were used to compile that file} might be different from the flags used to compile the buggy file we are minimizing.
+While we cannot do anything about flags that change the behavior of code, such as \texttt{-set 'Universe Polymorphism'}, the most common flags that differ will be flags defining the search path and module binding names.
+In this case, we can take advantage of the fact that Coq installs \texttt{.glob} files which describe the absolutization of every \texttt{Require}, \texttt{Import}, and \texttt{Export} in the file.
+We use this information when inlining the file to account for such differences.
+Additionally, there are some cases where this information allows us to adjust qualified references to the module currently being defined; in this case, we try replacing such references with the mangled name used in wrapping.
+
+
+%4. How we address these issues
+ %   1.
+   %     1. Coq emits a globalization file for unique identifies for every name
+  %5     2. We can change name resolution
+    %2.
+    %    1. Try to hide effects by not importing modules before we need them
+    %    2. Try out different locations for inlining the module
+
+For instance, eliminating needless dependencies in simply typed languages may be trivial, but
+Here’s why its difficult in Coq:
+ %   1. Name resolution: harder in dependently typed language because more names to resolve
+  %      1. Coq-specific quirks
+%  2. Meta programming facilities and global state: makes int potentially impossible to find a liberalization
+
+  Here’s what to do: Find a linearlization of the dependency tree that allows us to inline modules
 
 \subsection{Naive Strategy}\label{sec:inline-deps}
 
@@ -1071,6 +1137,9 @@ Thus the fragment we add for the \verb|admit| tactic is ultimately:
     This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
   \end{itemize}
 \end{enumerate}
+\item All of the steps above are applied in a single pass of a process that loops until no further progress is possible.
+After we have tried all possible command deletions and kept the ones that preserved the bug, we consider finding a module dependency to inline.
+Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
 \end{enumerate}
 
 
