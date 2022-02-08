@@ -397,60 +397,58 @@ The details are a little subtle, e.g. to avoid changing which section variables 
 
 While the complex structure of external developments is a boon to stress-testing Coq, there are three reasons for wanting to reproduce bugs in standalone files.
 \begin{enumerate}
-\item It's challenging for developers to understand the intricacies of external developments well enough to diagnose root causes.
+\item It is challenging for developers to understand the intricacies of external developments well enough to diagnose root causes.
 \item  Build systems are necessary to handle multiple files, but using them adds unnecessary overhead in the debugging workflow.
-\item Intricate file dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test-suite.
+\item Intricate file-dependency structure complicates test-suite infrastructure, whereas having self-contained files results in a simpler test suite.
 \end{enumerate}
 
-
-
 Na\"ively, the way to produce a standalone file is to \emph{linearize} the dependency tree and combine the contents of all files.
-We saw an example of roughly this strategy in \autoref{sec:example}, and this is also the strategy followed by, e.g., C compilers preprocessing \verb|#include| statements.
+We saw an example of roughly this strategy in \autoref{sec:example}, and e.g. C compilers follow this strategy in preprocessing \verb|#include| statements.
 
 Two difficulties arise when following this strategy in Coq:
 \begin{enumerate}
-\item As in all languages which allow shadowing of global symbols, inlining files changes what names are available and hence may result in unintended changes of behavior.
+\item As in all languages that allow shadowing of global symbols, inlining files changes what names are available and hence may result in unintended changes of behavior.
 The dependent typing and metaprogramming facilities of Coq largely eliminate the distinction between runtime and compile time.
 As a result, we have to inline not just function declarations but also function bodies, and thus the problem of name resolution is comparatively harder in Coq and similar languages than in those with simple types and without metaprogramming facilities.
-Furthermore, Coq has additional quirks around name resolution and (lack of) namespacing which have to be managed and worked around.
+Furthermore, Coq has additional quirks around name resolution and (lack of) namespacing that have to be managed and worked around.
 \item Coq has a great deal of global state (e.g., notations, universe polymorphism, the default tactic mode) that changes the way sentences are interpreted.
-Because there's no way to fully isolate changes on this global state, there may not even be \emph{any} linearization which reproduces the same behavior.
+Because there is no way to isolate changes on this global state fully, there may not even be \emph{any} linearization that reproduces the same behavior.
 \end{enumerate}
 
 \subsection{Addressing Shadowing and Name Resolution}\label{sec:name-resolution}
 Coq assigns names based on three components: the name and location of the file in which the identifier is defined, the module structure surrounding the identifier, and the final name.
-For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defined in the directory \texttt{MSets/MSetPositive.v}, which is bound to \texttt{Coq.MSets.MSetPositive}, in the module \texttt{PositiveSet}, with the name \texttt{t}.
+For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defined in the file \texttt{MSets/MSetPositive.v}, which is bound to \texttt{Coq.MSets.MSetPositive}, in the module \texttt{PositiveSet}, with the name \texttt{t}.
 
 If we were to inline this file into some other file \texttt{bug.v}, then the constant becomes \texttt{bug.PositiveSet.t}.
 We now have two choices: we can attempt to adjust the name of the constant on inlining, or we can adjust references to the constant.
 
 We combine these strategies to maximize the chance of succesfully inlining dependencies.
 
-First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case we'd wrap the contents in \texttt{Module MSetPositive}).
+First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case, we wrap the contents in \texttt{Module MSetPositive}).
 Furthermore, since users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, or \texttt{MSetPositive.PositiveSet.t}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
 Finally, because Coq forbids multiple modules with the same absolute kernel name, we must wrap the top-level module in yet another module, with a uniquly generated identifier.
-While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy and very often one of them is adequate for reproducing buggy behavior.
+While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy, and very often one of them is adequate for reproducing buggy behavior.
 
 Second, we want to adjust references so that they still point at the same underlying object after inlining.
 Coq helpfully emits \emph{globalization} files, which contain information about how Coq resolves almost all names in the file.
-Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the file we're inlining and the names that refer to constants in the file we're inlining.
+Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the files we inline and the names that refer to constants in that file.
 
-However, we cannot just blindly update all names because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}} and are not complete\footnote{They are missing information, for example, on tactic name resolution and notation interpretation.}.
-Instead, we've found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
+However, we cannot just blindly update all names, because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}.} and are not complete\footnote{They are missing information, for example, on tactic-name resolution and notation interpretation.}.
+Instead, we have found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
 \texttt{Require} statements are sensitive to the searchpath flags (\verb|-Q| and \verb|-R|) passed to Coq.
 If we are inlining a file from Flocq into a file from VST, for example, the \texttt{Require}s in the Flocq file may not resolve to the same files on disk when compiling with the compiler flags that VST uses.
 \texttt{Import} and \texttt{Export} statements, while not dependent on searchpath flags to the same extent as \texttt{Require}, still seem empirically more likely to refer to potentially ambiguous names than most other statements.
-Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements when inlining, and let Coq determine all other name resolution.
+Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements when inlining, letting Coq determine all other name resolution.
 
 \subsection{Addressing Nonlinearizability of Global State}\label{sec:linearize-global-state}
-While shadowing and name resolution is mechanically resolvable at least in theory, the global state of Coq is sufficiently disorganized that we are not aware of any fully general technical means of linearizing Coq files.\footnote{%
+While shadowing and name resolution are mechanically resolvable at least in theory, the global state of Coq is sufficiently disorganized that we are not aware of any fully general technical means of linearizing Coq files.\footnote{%
 The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
-Some of these effects can even be set on the command-line, and at present there's no way to determine what flags were used to compile a given installed file.
+Some of these effects can even be set on the command-line, and at present there is no way to determine what flags were used to compile a given installed file.
 }
-Hence our approach here consists of a couple partial work-arounds.
+Hence our approach here consists of several partial workarounds.
 
 The most basic technique to attempt to isolate global state is to wrap the inlined file in a module.
-Most state not explicitly marked as \texttt{Global} does not escape the boundaries of the module it's defined inside.
+Most state not explicitly marked as \texttt{Global} does not escape the boundaries of the module it is defined inside.
 As we already use module wrapping to handle name resolution as discussed in \autoref{sec:name-resolution}, we already reap the benefits of this technique.
 
 Our only other technique is to try multiple linearizations and hope that one of them is adequate.
@@ -462,14 +460,14 @@ For example, we may want to more explicitly manage the state before and after in
 
 \subsection{Getting to Standalone Files Quickly}
 We have a flag that allows inlining dependencies all at once, much like \texttt{gcc} inlines all \verb|#include|d files at once.
-While this was originally the way all files were minimized, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
+While originally all files were minimized in that way, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
 As a result, the current default behavior is to minimize the current file before inlining other files.
 
 Futhermore, we want to ensure that we only inline files that are actually used.
 Much like we want to split \texttt{Import} and \verb|Export| statements in \autoref{sec:split-imports}, we also want to split \verb|Require| statements, for example from \texttt{Require unused1 used unused2.} to \texttt{Require unused1. Require used. Require unused2.}
 
-Additionally, if the buggy behavior depends on a file only for its own dependencies, we'd like to directly inline the transitive dependency rather than needing to inline the entire intermediate file.
-To accomplish this, we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
+Additionally, if the buggy behavior depends on a file only for its own dependencies, we prefer to inline the transitive dependency directly rather than needing to inline the entire intermediate file.
+To that end, we have a pass that performs the transitive closure of the dependency relation, inserting \verb|Require| statements at the top of the file for all transitive dependencies of the file being minimized.
 Because we insert the \verb|Require|s in dependency order, removing one statement at a time in reverse order will give us the minimal \verb|Require|s needed to reproduce the error message.
 This strategy ensures that we only inline dependencies that are actually necessary.
 
@@ -545,14 +543,13 @@ to customize the desired reproducing case, trusting that the entire file will no
 
 \subsection{Triggering the Minimizer}
 
-The Coq project uses a custom, multi-task bot to automate everyday tasks, including triggering CI and reporting its results to the GitHub repository~\cite{zimmermann:hal-03479327}. We have extended this bot to automatically propose and manage the minimization of failing test cases. The bot posts a comment to propose to run minimization when a PR has passed Coq's internal test suite, but has failures with external projects, and these external projects have built successfully on the base commit (on the master branch).
+The Coq project uses a custom, multi-task bot to automate everyday tasks, including triggering CI and reporting its results to the GitHub repository~\cite{zimmermann:hal-03479327}. We have extended this bot to automatically propose and manage the minimization of failing test cases. The bot posts a comment to propose to run minimization when a PR has passed Coq's internal test suite but has failures with external projects, and these external projects have built successfully on the base commit (on the master branch).
 
 If someone answers with a comment to trigger minimization, then the bot prepares a branch with all the information needed by the minimizer and pushes this branch to an external repository dedicated to running the minimizer. This triggers a GitHub Action workflow which will proceed with the minimization process. GitHub Action jobs have a 6-hour timeout, so by the limit, the bot answers back with the results of the minimization process. If the minimization was stopped because of the timeout, then the bot automatically restarts it by reusing the file obtained at the previous step.
 
 \subsection{Research Questions}
 
 To evaluate the usefulness of our bug minimizer, we investigate several research questions:
-
 \begin{description}
 \item[RQ1:] How often does the minimizer successfully produce a reduced test case from the CI failures it was triggered on?
 \item[RQ2:] How often is this reduced test case fully standalone (no dependencies other than Coq's standard library)?
@@ -567,7 +564,7 @@ To evaluate the usefulness of our bug minimizer, we investigate several research
 To support replicating the results, we provide our data collection and analysis code (as a Jupyter notebook) and our dataset (as a CSV file) in the supplementary materials.
 
 We retrieve the runs of the bug minimizer by looking for PRs in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these PRs using GitHub's GraphQL API.
-We exclude PRs opened by the first author as most of these PRs were for testing the minimizer integration and debugging issues.
+We exclude PRs opened by the first author, as most of these PRs were for testing the minimizer integration and debugging issues.
 When the minimizer is triggered, the bot answers with a comment ``I have initiated minimization \ldots'' or ``I am now running minimization \ldots'', providing the list of projects on which it is being run.
 %
 Then, when it finishes minimizing a project, it produces a comment with the minimized file.
@@ -580,42 +577,44 @@ We ignore these comments, only looking for final reduction outputs.
 %
 Finally, the bot posts a comment starting with ``Error: Could not minimize file'' when it was not able to minimize the requested failure, for instance, because it could not reproduce it or could not reproduce the successful run on the base branch.
 
-We match comments indicating the start of the minimization with comments indicating the end of it, and use these two comments to determine if the minimizer was able to produce a reduced test case, how long it took, and to answer our other research questions.
-To avoid double-counting multiple runs on the same CI failure, we only look at the first bug minimizer trigger on a given PR and a given project.
+We match comments indicating the start of the minimization with comments indicating the end of it, using these two comments to determine if the minimizer was able to produce a reduced test case, find how long it took, and answer our other research questions.
+To avoid double-counting multiple runs on the same CI failure, we only look at the first bug-minimizer trigger on a given PR and a given project.
 
 \subsection{Results}
 
 \subsubsection{RQ1: How often does the minimizer produce a reduced test case?}
 
 Looking only at the first minimization runs for a given PR and project, we have identified 191 runs on 51 PRs (very often, several minimization runs are started in the same PR on different projects).
-On these 191 runs, 75\% succeeded in producing a reduced test case. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (this is something that we can detect from the header comments).
+On these 191 runs, 75\% succeeded in producing reduced test cases. We count as failed runs the ones where the bot reported ``Error: Could not minimize file'', the ones where we could not find a comment marking the end of minimization, and the ones where the bot answered with a minimized file but this file was not actually reduced from the initial test case (which we can detect from the header comments).
 
-There were 5 runs for which we couldn't find a comment marking the end of minimization. By manually looking at them, we have determined that 4 out of 5 were caught in an infinite loop and had to be manually canceled. This can happen when the 6-hour timeout of the minimization process is not enough to make any new progress and thus the minimization gets stuck without ever reaching its end. This typically occurs when testing out a single change takes over 20 seconds, since we only have enough time to compile a 20-second-long file about a thousand times in six hours. The last case seems to be coqbot having failed to post the comment marking the end of the minimization process.
+There were 5 runs for which we found no comment marking the end of minimization. By manually looking at them, we have determined that 4 out of 5 were caught in infinite loops and had to be canceled manually. Loops can arise when the 6-hour timeout of the minimization process is not enough to make any new progress and thus the minimization gets stuck without ever reaching its end. Typical circumstances are when testing out a single change takes over 20 seconds, since we only have enough time to compile a 20-second-long file about a thousand times in six hours. The last case of our 5 seems to be coqbot having failed to post the comment marking the end of the minimization process.
 
-There were 19 runs which concluded with an explicit ``Error: could not minimize file'' comment. These errors are often due to issues downloading CI artifacts (9 runs), for instance because the corresponding base CI jobs have been skipped or the CI artifacts have expired. Runs concluding with errors can also happen because of bugs in Coq or in the tested projects' build infrastructure that prevent minimization. Virtually all these issues were reported, and most of them are already fixed. For instance, the MetaCoq project alone was responsible for 5 failures because of issues in its build system.
+There were 19 runs that concluded with an explicit ``Error: could not minimize file'' comment. These errors are often due to issues downloading CI artifacts (9 runs), for instance because the corresponding base CI jobs have been skipped or the CI artifacts have expired. Runs concluding with errors can also happen because of bugs in Coq or in the tested projects' build infrastructure that prevent minimization. Virtually all these issues were reported, and most of them are already fixed. For instance, the MetaCoq project alone was responsible for 5 failures because of issues in its build system.
 
-Finally, there were 23 runs which concluded with a comment reporting on a supposedly minimized file but where (from the header comments or their absence thereof) we can conclude that the minimization process failed to properly start (e.g., because it couldn't reproduce the error message). Most of these problems were related to error message parsing, namespace management, or similar issues that have been fixed by making the bug minimizer more robust to them (see \autoref{sec:error-messages} to \autoref{sec:standalone}). A few of these issues have been noted, but not yet fixed. Finally, a few of these failed runs were due to the minimizer being misused or called on a project which had failed for a reason that was unrelated to the PR.
+Finally, there were 23 runs ending with comments reporting on supposedly minimized files but where (from the header comments or their absence thereof) we can conclude that the minimization process failed to start properly (e.g., because it could not reproduce the error message). Most of these problems were related to error-message parsing, namespace management, or similar issues that have been fixed by making the bug minimizer more robust to them (see \autoref{sec:error-messages} to \autoref{sec:standalone}). A few of these issues have been noted but not yet fixed. Finally, a few of these failed runs were due to the minimizer being misused or called on a project that had failed for a reason that was unrelated to the PR.
 
 The accompanying notebook contains specific comments for each of the failed runs.
 
 \subsubsection{RQ2: How often is this reduced test case fully standalone?}
 
-We consider that a reduced test case will be most useful if any dependency beyond Coq's standard library was successfully inlined. This means that it will be possible to run the reduced test case without needing to import any additional dependency and will make it more likely that the test case can be added to Coq's test suite.
+We consider that a reduced test case will be most useful if any dependency beyond Coq's standard library was successfully inlined, leaving it possible to run the reduced test case without needing to import any additional dependency. As a result, it is more likely that the test case can be added to Coq's test suite.
 
-To measure how often the reduced test case is standalone, we rely on the minimizer recording when it failed to inline a dependency in the header comments of the minimized file. This feature was only added recently, so we only perform this measurements on the 47 successful runs of the minimizer which had this information available.
-On these 47 runs, there were only 5 failures to fully inline dependencies, i.e., the minimizer produced a fully standalone file in 89\% of the cases.
+To measure how often the reduced test case is standalone, we rely on the minimizer recording when it failed to inline a dependency in the header comments of the minimized file. This feature was only added recently, so we only perform this measurements on the 47 successful runs of the minimizer that had this information available.
+On these 47 runs, there were only 5 failures to inline dependencies fully, i.e., the minimizer produced a fully standalone file in 89\% of the cases.
 
-Looking at the 5 failures to inline dependencies, we observe several types of reasons. One case was related to robustness to changing error messages, one case was related to a build system issue in the project being minimized, and 3 cases were due to a common issue preventing to try all inlining methods. All of these issues have been fixed since then.
+Looking at the 5 failures to inline dependencies, we observe several types of reasons. One case was related to robustness to changing error messages, one case was related to a build-system issue in the project being minimized, and 3 cases were due to a common issue blocking attempts at all inlining methods. All of these issues have been fixed since then.
 
 \subsubsection{RQ3: How long does it take to produce such reduced test cases?}
 
 We compute the duration of minimization as the time delta between the start and the end comments.
-This is an overapproximation of the actual time spent in the minimization process, since it also includes time setting up a VM, and possibly waiting in the queue for an available runner.
+This method overapproximates the actual time spent in the minimization process, since it also includes time setting up a VM and possibly waiting in the queue for an available runner.
 %
 %Note that while this precisely evaluates the time that developers using the minimizer had to wait for the results, it can overestimate the actual time spent by the minimizer on the example, if the minimizer run was queued for a while before starting to run in GitHub Actions.
 We can look at this duration for both successful and failed runs.
 
-For failed runs, we observe that the average duration for the minimization to conclude is 5 minutes (306 seconds) and that the maximum duration is 15 minutes (890 seconds). This is not surprising as it means that time spent beyond that will always be spent performing actual minimization tasks.
+For failed runs, we observe that the average duration for the minimization to conclude is 5 minutes (306 seconds) and that the maximum duration is 15 minutes (890 seconds).
+% The next sentence confused me and seemed to do more harm than good.
+%This is not surprising as it means that time spent beyond that will always be spent performing actual minimization tasks.
 
 For successful runs, we observe more variety. The minimum duration is 4 minutes (232 seconds), the maximum duration is 20 hours (73072 seconds), and the average is 104 minutes (6238 seconds). 50\% of the successful runs finish in under 20 minutes (1218 seconds), and 80\% finish in under 140 minutes (8396 seconds). This number is still reasonable compared to the time that contributors routinely spend waiting for the results of Coq's CI~\cite{zimmermann:tel-02451322}.
 
@@ -623,34 +622,34 @@ For successful runs, we observe more variety. The minimum duration is 4 minutes 
 
 For the last three questions, we focus mainly on the 42 recent minimization runs that are known to have produced standalone files.
 
-The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to Coq's test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 270 lines and the maximum size is 2648 lines. But 25\% of the reduced cases are under 39 lines, 50\% are under 114 lines, and 75\% are under 262 lines.
+The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to Coq's test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 270 lines, and the maximum size is 2648 lines. However, 25\% of the reduced cases are under 39 lines, 50\% are under 114 lines, and 75\% are under 262 lines.
 
 Results on the full set of 144 successful mininimization runs are of the same order of magnitude, with an average at 367 lines and a maximum size of 3804 lines.
 
-Developers have the possibility of performing additional minimization manually and restart the automatic minimization process on their manually reduced case. This can help obtain even more reduced cases, but we have not evaluated this feature quantitatively.
+Developers have the option to perform additional minimization manually and restart the automatic minimization process on their manually reduced cases, which can help obtain even more reduced cases, but we have not evaluated this feature quantitatively.
 
 \subsubsection{RQ5: How long do the reduced cases take to run?}
 
-Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Our recent 42 standalone cases all had this data available. We observe that the reduced cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
+Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Our recent 42 standalone cases all had this field available. We observe that the reduced cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
 
 \subsubsection{RQ6: What is the amount of code reduction?}
 
-To compute how much code reduction there was, we use data that the minimizer records about each minimization step (how many lines it started from and how many lines it ended up with). These numbers go up at times because of the process of inlining external dependencies. On the other hand, dependencies are only inlined if they couldn't be simply removed, so these numbers do not include the size of the files that were previously imported but did not need to be inlined during the minimization process.
+To compute how much code reduction there was, we use data that the minimizer records about each minimization step (how many lines it started from and how many lines it ended up with). These numbers go up at times because of the process of inlining external dependencies. On the other hand, dependencies are only inlined if they could not simply be removed, so these numbers do not include the size of the files that were previously imported but did not need to be inlined during the minimization process.
 
-We aggregate these numbers by simply taking the sum of the differences in line number at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 31\%, which means that the final test case size is on average one-third the size of the original test (including the dependencies which actually matter for the test case).
+We aggregate these numbers by simply taking the sum of the differences in line count at the beginning and the end of each minimization step. We compute the amount of code reduction by taking the ratio of the final size over the total test-case size, defined as being the sum of the final size and the total number of removed lines. We obtain an average figure of 31\%, which means that the final test-case size is on average one-third the size of the original test (including the dependencies that actually matter for the test case).
 
-If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 50\%, which means that the final file is on average half the size of the file we started from. Note that because of dependency inlining, nothing prevents the reduced test case to be sometimes longer than the file we started from, and this does happen in 6 out of 42 cases. If we look only at the 36 cases for which there was some code reduction, we get that the average reduction is by a factor of 4 to 5. If we look only at the 6 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
+If we compute the size difference only looking at the initial file we started from and the final file we obtained, without accounting for the inlined dependencies, then we get an average ratio of 50\%, which means that the final file is on average half the size of the file we started from. Note that because of dependency inlining, nothing prevents the reduced test case from being longer than the file we started from, which does happen in 6 out of 42 cases. If we look only at the 36 cases for which there was some code reduction, we get that the average reduction is by a factor of 4 to 5. If we look only at the 6 cases for which there was code expansion, we get that the average expansion is by a factor of 2.
 
 \subsection{Limitations of our Evaluation}
 
 Evaluating a bug minimizer for a proof assistant such as Coq is difficult because there is no preexisting benchmark that it could be run on. In this paper, we have decided to take advantage of the integration of our minimizer in the CI infrastructure of Coq to evaluate it on real use cases where Coq developers have felt the need for it.
 
-While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using re-runs of the  minimization on the same project in the same PR), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
-Since we always account only for first runs, this means that many cases where the minimizer has been counted to have failed have been eventually fixed and would result in a successful run today. Subsequent runs on other projects or other PRs may have succeeded thanks to earlier fixes.
+While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using reruns of the  minimization on the same project in the same PR), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
+Since we always account only for first runs, many cases where the minimizer has been counted as failing have been eventually fixed and would result in successful runs today. Subsequent runs on other projects or other PRs may have succeeded thanks to earlier fixes.
 
-Other limitations are that our computation of the minimization duration is an overapproximation which also includes the time for things such as setting up a VM to run the process, and that our evaluation of several research questions is based only on a subset of recent minimizer runs.
+Other limitations are that our computation of the minimization duration is an overapproximation that also includes the time for things such as setting up a VM to run the process, and that our evaluation of several research questions is based only on a subset of recent minimizer runs.
 
-Due to all these limitations, our evaluation should only be understood as demonstrating the feasibility of our approach and the usefulness of its application to the development of Coq. However, it should not be understood as a basis that future versions of the minimizer, or alternative minimizers, can compare to, since today's version would already obtain different results if it were re-run on all these cases.
+Due to all these limitations, our evaluation should only be understood as demonstrating the feasibility of our approach and the usefulness of its application to the development of Coq. However, it should not be understood as a basis that future versions of the minimizer, or alternative minimizers, can compare to, since today's version would already obtain different results if it were rerun on all these cases.
 
 \section{Related Work}\label{sec:related-work}
 
