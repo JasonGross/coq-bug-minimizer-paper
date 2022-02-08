@@ -22,6 +22,8 @@ PDFS := coq-bug-minimizer.pdf
 .PHONY: all
 all: $(PDFS)
 
+coq-bug-minimizer.pdf: coq-bug-minimizer.bib
+
 .tex.pdf: $<.tex
 	$(SHOW)"PDFLATEX (run 1)"
 	$(HIDE)$(PDFLATEX) $(LATEXFLAGS) $(LATEX_EXTRA_FLAGS) $<
