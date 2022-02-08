@@ -457,7 +457,7 @@ Second, we want to adjust references so that they still point at the same underl
 Coq helpfully emits \emph{globalization} files, which contain information about how Coq resolves almost all names in the file.
 Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the file we're inlining and the names that refer to constants in the file we're inlining.
 
-However, we cannot just blindly update all names because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}} and are not complete\footnote{They are missing information, for example, on tactic name resolution and on the way notations are intepreted.}.
+However, we cannot just blindly update all names because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}} and are not complete\footnote{They are missing information, for example, on tactic name resolution and notation interpretation.}.
 Instead, we've found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
 \texttt{Require} statements are sensitive to the searchpath flags (\verb|-Q| and \verb|-R|) passed to Coq.
 If we are inlining a file from Flocq into a file from VST, for example, the \texttt{Require}s in the Flocq file may not resolve to the same files on disk when compiling with the compiler flags that VST uses.
