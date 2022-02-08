@@ -147,7 +147,11 @@ Then, they may have to take on the daunting task of figuring out the larger proj
 The current debugging process can be significantly optimized for developer experience.
 Additionally, the current process does not easily yield test cases to add to the test suite.
 Instead the test cases remain buried in external developments whereas we would like to bring bugs to the center!
-In order to improve the debugging process, we built the Coq Bug Minimizer which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files.
+In order to improve the debugging process, we built the Coq Bug Minimizer%
+\footnote{%
+Available on GitHub in \href{https://github.com/JasonGross/coq-tools}{\texttt{JasonGross/coq-tools}}%
+}
+which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files.
 Typically, generated files reduce the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play with, understand, and fix bugs.
 Furthermore, we have integrated the Coq Bug Minimizer with coqbot to trigger \textbf{automatically} on reverse-CI failures, reducing the friction of building minimized files.
 
