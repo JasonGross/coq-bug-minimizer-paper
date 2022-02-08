@@ -449,7 +449,7 @@ We now have two choices: we can attempt to adjust the name of the constant on in
 We combine these strategies to maximize the chance of succesfully inlining dependencies.
 
 First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case we'd wrap the contents in \texttt{Module MSetPositive}).
-Furthermore, because users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, \texttt{MSetPositive.PositiveSet.t}, or even \texttt{PositiveSet.t} if they \texttt{Import MSetPositive}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
+Furthermore, since users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, or \texttt{MSetPositive.PositiveSet.t}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
 Finally, because Coq forbids multiple modules with the same absolute kernel name, we must wrap the top-level module in yet another module, with a uniquly generated identifier.
 While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy and very often one of them is adequate for reproducing buggy behavior.
 
