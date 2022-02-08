@@ -240,40 +240,21 @@ The Coq Bug Minimizer must work with the wide variety of build systems used in d
 \end{enumerate}
 
 Achieving each desideratum posed interesting challenges, and required making several design choices.
-Before proceeding to share solutions to these challanges, we note the ways in which test-case reduction is \emph{simpler} in the proof-assistant setting than in other settings.
+Before proceeding to share solutions to these challenges, we note the ways in which test-case reduction is \emph{simpler} in the proof-assistant setting than in other settings.
 
 
 \section{Simplifications of the Proof-Assistant Setting}\label{sec:easier}
 
-Classic delta debugging~\cite{Zeller2002} uses binary search through program structure to find subprograms that can be removed while preserving properties relevant to triggering specific bugs for the chosen compiler.
-We found that a simpler method works well for minimizing Coq sources: first remove everything after the error-message-generating line, and then try removing the syntactic units beforehand in-order, one-at-a-time.
-Through this method, we reduce the number of ``experiments'' on program variants.
-The method is especially useful when each program variant requires significant processing time as is often the case in Coq.
-But why do we expect this simplified search process to yield good results?
+Classic delta debugging~\cite{Zeller2002} is a technique in test-case reduction for traditional compilers. 
+It employs binary search through program structure to find subprograms that can be removed while preserving properties relevant to triggering specific bugs for the chosen compiler.
+Coq's lack of forward-references permits a simpler method: first remove everything after the error-message-generating line, and then try removing the syntactic units beforehand in-order, one-at-a-time.
+Unlike in languages from Java to Haskell, where all functions in a file are considered mutually recursive, in Coq there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
+In this manner we reduce the number of ``experiments'' on program variants, which is especially useful when each program variant requires significant processing time as is often the case in Coq.
 
-\subsection{Dropping Code After a Bug-Triggering Line}
-
-The first reason is straightforward: Coq source files may not contain forward references.
-There is no convention as found in languages from Java to Haskell, where all functions in a file are considered mutually recursive.
-As a result, there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
-More accurately, this principle is applied to single commands processed by Coq (e.g., function definitions or individual tactics), not lines.
-
-As a result, the satisfyingly simple first step of test-case reduction is removing all lines following the command that triggers the bug.
-
-\subsection{Attempted Dropping of Candidate Lines in Order}
-
-Next, where classic delta debugging does binary search to find segments of source files that can be deleted without masking bugs, we step through all commands in-order, backward, starting after the one that triggers the bug.
-Why will we not miss important shrinking opportunities?
-One answer is that, even if we do, the savings in running time may be enough to justify the choice.
-Our empirical evaluation (\autoref{sec:evaluation}) demonstrates that we generally still realize good results.
-
-However, somewhat speculatively, we believe that it helps to be in a language where \emph{proof irrelevance} is such an important concept.
-Most details of a Coq development are supposed to be strongly encapsulated, in the sense that a change in one part should not be observable in another part.
-Theorem statements mediate between segments of a development.
-While a compiler might break during compilation of one function because of changes to the body of another function, it generally surprises us if one Coq proof breaks because of changes to another proof.
-Thus, it is generally safe to mark any proof as skipped (``admitted,'' in Coq parlance), without masking Coq bugs that arise later.
-Our minimizer tries its best to drop as many unneeded lemmas as possible, but then the second-best change is to mark admitted as many of their proofs as possible.
-
+Our empirical evaluation (\autoref{sec:evaluation}) demonstrates that this strategy is adequately performant.
+We conjecture that the reason for this adequate performance is that dependency trees of Coq theorems and proofs tend to be relatively deep compared to the number of definitions and theorems in any single file.
+This is borne out by the fact that our ``minimal'' test cases tend to be only about a third the size of the total amount of code in all files in the dependency tree of the initial test case.
+If instead there were orders of magnitude more useless lines than true dependent lines, we expect that a binary search strategy would be required for adequate performance.
 
 \section{Reproducing Buggy Behavior}\label{sec:error-messages}
 
