@@ -389,7 +389,7 @@ Therefore, we always try both styles of marking a lemma admitted.
 Some lemma proofs are declared as transparent rather than opaque, where later steps really do depend on their details.
 If those dependencies are too specific, then our shrinking heuristics are not going to work well.
 However, one common-enough case is where a later definition uses tactics to \emph{unfold} an earlier definition, going on to use other tactics that may very well be able to adapt to changes in that definition.
-There are at least two different ways to mark a proof as admitted, which switch up whether the associated definition is considered transparent or opaque.
+There are at least two different ways to mark a proof as admitted (\texttt{Admitted} vs.\ using a preexisting \texttt{Axiom}), which can switch up whether the associated definition is considered transparent or opaque.
 
 Additionally, we may want to admit some parts of the proof script without replacing all of it.
 Currently, we use a rather conservative heuristic:
