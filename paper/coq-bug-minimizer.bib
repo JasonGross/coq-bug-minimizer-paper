@@ -201,4 +201,37 @@ keywords = {test optimization, test program generation, Compiler testing, compil
   year={2016}
 }
 
+@inproceedings{emi,
+author = {Le, Vu and Afshari, Mehrdad and Su, Zhendong},
+title = {Compiler Validation via Equivalence modulo Inputs},
+year = {2014},
+isbn = {9781450327848},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2594291.2594334},
+doi = {10.1145/2594291.2594334},
+abstract = {We introduce equivalence modulo inputs (EMI), a simple, widely applicable methodology for validating optimizing compilers. Our key insight is to exploit the close interplay between (1) dynamically executing a program on some test inputs and (2) statically compiling the program to work on all possible inputs. Indeed, the test inputs induce a natural collection of the original program's EMI variants, which can help differentially test any compiler and specifically target the difficult-to-find miscompilations.To create a practical implementation of EMI for validating C compilers, we profile a program's test executions and stochastically prune its unexecuted code. Our extensive testing in eleven months has led to 147 confirmed, unique bug reports for GCC and LLVM alone. The majority of those bugs are miscompilations, and more than 100 have already been fixed.Beyond testing compilers, EMI can be adapted to validate program transformation and analysis systems in general. This work opens up this exciting, new direction.},
+booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {216–226},
+numpages = {11},
+keywords = {equivalent program variants, automated testing, miscompilation, compiler testing},
+location = {Edinburgh, United Kingdom},
+series = {PLDI '14}
+}
+
+@InProceedings{Nitpick,
+author="Blanchette, Jasmin Christian
+and Nipkow, Tobias",
+editor="Kaufmann, Matt
+and Paulson, Lawrence C.",
+title="Nitpick: A Counterexample Generator for Higher-Order Logic Based on a Relational Model Finder",
+booktitle="Interactive Theorem Proving",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="131--146",
+abstract="Nitpick is a counterexample generator for Isabelle/HOL that builds on Kodkod, a SAT-based first-order relational model finder. Nitpick supports unbounded quantification, (co)inductive predicates and datatypes, and (co)recursive functions. Fundamentally a finite model finder, it approximates infinite types by finite subsets. As case studies, we consider a security type system and a hotel key card system. Our experimental results on Isabelle theories and the TPTP library indicate that Nitpick generates more counterexamples than other model finders for higher-order logic, without restrictions on the form of the formulas to falsify.",
+isbn="978-3-642-14052-5"
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
