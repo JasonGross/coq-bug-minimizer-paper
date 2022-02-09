@@ -259,7 +259,7 @@ The Coq Bug Minimizer must tradeoff between preserving specific details of error
 Many research papers in the software-engineering community have been written on just this topic~\cite{Cleve2000,zeller2009programs,Burger2005,delta,Zeller2002}, but constraints in a proof-assistant setting are uncommon in conventional programming.
 For instance, highly automated Coq developments often have long compile times even for single files, so we may need to be more frugal in how many program variants we test.
 
-\item \textbf{Standalone files:} Creating standalone files that illuminate new test-cases and can be added to Coq's internal test suite.
+\item \textbf{Standalone files:} Creating standalone files that illuminate new test cases and can be added to Coq's internal test suite.
 This is difficult in dependently typed languages with metaprogramming facilities such as Coq.
 For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time resulting in tight coupling between files.
 
@@ -314,11 +314,11 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 \section{Minimal Files}\label{sec:minimal}
 
 Test-case reduction is powerful in making long source files more comprehensible to developers.
-In addition to this, external project in Coq can take minutes or hours to compile, so the edit-compile-test-debug loop is long.
+In addition to this, external projects in Coq can take minutes or hours to compile, so the edit-compile-test-debug loop is long.
 We have two additional goals to improve this workflow.
 \begin{enumerate}
-\item Finding minimal test cases as fast as possible, given that experimenting with each program variant has long compilation time
-\item Compilation of the test case in seconds or fractions of a second so that that developers can fluidly try hypotheses for solutions
+\item Finding minimal test cases as fast as possible, given that experimenting with each program variant has long compilation time.
+\item Compilation of the test case in seconds or fractions of a second so that developers can fluidly try hypotheses for solutions.
 \end{enumerate}
 
 \subsection{Making the Minimization Process Itself Fast}
@@ -361,7 +361,7 @@ However, removing statements, grouped into definitions as necessary, sufficies f
 \subsubsection{The Program Construct}
 One Coq construct that does not fit neatly into this approach is \verb|Program|, where a function definition is associated with following proofs of obligations related to dependent typing.
 We cannot just look for \verb|Program| statements followed by \verb|Obligation| blocks to remove all together, because \verb|Obligation| blocks can be interleaved with other definitions.
-Luckily, we can replace any obligation block with a use of the \verb|Admit Obligations| command, which admits all remaining obligations -- and it happily handles any case with \emph{no} remaining obligations, so we need not worry about introducing duplicate invocations.
+Luckily, we can replace any obligation block with a use of the \verb|Admit Obligations| command, which admits all remaining obligations---and it happily handles any case with \emph{no} remaining obligations, so we need not worry about introducing duplicate invocations.
 
 \subsubsection{Empty Sections and Modules}
 Removing statements one-at-a-time will not always be able to remove empty sections (nor empty \verb|Module|s or \verb|Module Type|s).
@@ -575,7 +575,7 @@ To evaluate the usefulness of our bug minimizer, we investigate several research
 
 \subsection{Data Collection and Analysis}
 
-To support replicating the results, we provide our data collection and analysis code (as a Jupyter notebook) and our dataset (as a CSV file) in the supplementary materials.
+To support reproducing the results, we provide our data collection and analysis code (as a Jupyter notebook) and our dataset (as a CSV file) in the supplementary materials.
 
 We retrieve the runs of the bug minimizer by looking for PRs in the Coq GitHub repository with the words ``coqbot ci minimize'', and we fetch all comments from the bot (timestamp and body text) from these PRs using GitHub's GraphQL API.
 We exclude PRs opened by the first author, as most of these PRs were for testing the minimizer integration and debugging issues.
@@ -613,7 +613,7 @@ The accompanying notebook contains specific comments for each of the failed runs
 
 We consider that a reduced test case will be most useful if any dependency beyond Coq's standard library was successfully inlined, leaving it possible to run the reduced test case without needing to import any additional dependency. As a result, it is more likely that the test case can be added to Coq's test suite.
 
-To measure how often the reduced test case is standalone, we rely on the minimizer recording when it failed to inline a dependency in the header comments of the minimized file. This feature was only added recently, so we only perform this measurements on the 47 successful runs of the minimizer that had this information available.
+To measure how often the reduced test case is standalone, we rely on the minimizer recording when it failed to inline a dependency in the header comments of the minimized file. This feature was only added recently, so we only perform this measurement on the 47 successful runs of the minimizer that had this information available.
 On these 47 runs, there were only 5 failures to inline dependencies fully, i.e., the minimizer produced a fully standalone file in 89\% of the cases.
 
 Looking at the 5 failures to inline dependencies, we observe several types of reasons. One case was related to robustness to changing error messages, one case was related to a build-system issue in the project being minimized, and 3 cases were due to a common issue blocking attempts at all inlining methods. All of these issues have been fixed since then.
