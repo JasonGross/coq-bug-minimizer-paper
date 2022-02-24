@@ -25,7 +25,7 @@
 
 \author{Théo Zimmermann}{Inria, Université de Paris, CNRS, IRIF, F-75013, Paris, France \and \url{https://www.theozimmermann.net} }{theo@irif.fr}{https://orcid.org/0000-0002-3580-8806}{}
 
-\author{Miraya Poddar-Agrawal}{Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA% \and \url{https://github.com/miraya-pa}
+\author{Miraya Poddar-Agrawal}{Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA
 }{ragrawal@reed.edu}{https://orcid.org/0000-0001-7617-9180}{}
 
 \author{Adam Chlipala}{CSAIL, Massachusetts Institute of Technology, 77 Massachusetts Ave., Cambridge, MA 02139, USA \and \url{http://adam.chlipala.net/} }{adamc@csail.mit.edu}{https://orcid.org/0000-0001-7085-9417}{}
@@ -186,13 +186,9 @@ Typically, minimized files reduce the total number of lines of code involved in 
 Furthermore, we have integrated the Coq Bug Minimizer with coqbot~\cite{zimmermann:hal-03479327} to trigger \textbf{automatically} on reverse-CI failures, reducing the friction of building minimized files.
 
 Test-case reduction has already a rich literature~\cite{chen_survey_compiler_testing}. However, it is focused mostly on traditional languages such as C, and even generic reduction techniques may not apply so well to proof assistants.
-%The state of the art in bug minimization for compilers is delta debugging.
-%The delta tool~\cite{delta} preprocesses files into well-balanced blocks of code to determine the granularity of code removal, and then it runs binary search on removing blocks of code.
-%However, bug minimization is different for proof assistants than for compilers of more traditional languages, with unique challenges and applicable tricks.
 %
 In this paper, we share what we have learnt about where test-case reduction is harder and where it is easier in Coq than in traditional compilers, and describe how we got around the difficulties.
 Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case reduction has been and where the biggest opportunities for improvement remain.
-%Already, Coq developers are happy with the time the bug minimizer saves them, and our methods may be of interest to the developers of other proof assistants who are interested in more easily supporting backwards compatibility and industry-scale projects.
 We believe that our methods may be of interest for developers of other proof assistants who are also facing a tradeoff between enabling evolution and preserving stability, in a context of industrial use.
 
 For the mobile reader, \autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
@@ -527,12 +523,6 @@ We then pass this information to the bug minimizer:
 
 
 
-% Maybe this part should return later.
-%% Where do the \texttt{Require}s go?
-
-%% Coq warns that \texttt{Require}s inside modules are deprecated.
-%% While we haven't encountered any issues from wrapping additional modules around \texttt{Require}s, we do try strategies of moving the \texttt{Require}s up to the top of the file.
-%% \todo{exmaple?}
 
 
 \section{An Alternative Usage Mode}\label{sec:alt-usage}
@@ -583,7 +573,7 @@ When the minimizer is triggered, the bot answers with a comment ``I have initiat
 %
 Then, when it finishes minimizing a project, it produces a comment with the minimized file.
 %
-This file starts with header comments containing useful information about the minimization process. %truncated to 32KiB (half of GitHub's comment limit), which generally amounts to about 700 lines.
+This file starts with header comments containing useful information about the minimization process.
 %
 The comment may also contain ``interrupted by timeout, being automatically continued'' if the minimization process timed out and has to be restarted to go further, which the bot automatically does.
 %
@@ -623,12 +613,9 @@ Looking at the 5 failures to inline dependencies, we observe several types of re
 We compute the duration of minimization as the time delta between the start and the end comments.
 This method overapproximates the actual time spent in the minimization process, since it also includes time setting up a VM and possibly waiting in the queue for an available runner.
 %
-%Note that while this precisely evaluates the time that developers using the minimizer had to wait for the results, it can overestimate the actual time spent by the minimizer on the example, if the minimizer run was queued for a while before starting to run in GitHub Actions.
 We can look at this duration for both successful and failed runs.
 
 For failed runs, we observe that the average duration for the minimization to conclude is 5 minutes (306 seconds) and that the maximum duration is 15 minutes (890 seconds).
-% The next sentence confused me and seemed to do more harm than good.
-%This is not surprising as it means that time spent beyond that will always be spent performing actual minimization tasks.
 
 For successful runs, we observe more variety. The minimum duration is 4 minutes (232 seconds), the maximum duration is 20 hours (73072 seconds), and the average is 104 minutes (6238 seconds). 50\% of the successful runs finish in under 20 minutes (1218 seconds), and 80\% finish in under 140 minutes (8396 seconds). This number is still reasonable compared to the time that contributors routinely spend waiting for the results of Coq's CI~\cite{zimmermann:tel-02451322}.
 
@@ -691,15 +678,13 @@ Testing-based approaches to debugging \emph{proof assistants themselves} are a c
 \section{Future Work}\label{sec:future-work}
 
 We were pleasantly surprised to find that several ``shortcuts'' in the logistics behind the minimizer led to good results empirically, but some of these may be worth revisiting to improve results even more.
-%Our Coq-binary wrappers that log extra information could be changed to use separate log files rather than the same stream as other Coq output, though there are associated challenges in handling parallel builds.
 In various places, we use workarounds (like \texttt{.glob} files) to avoid integrating a proper Coq parser, but there would be advantages like being able to remove specific fields from record types.
 We remove single commands at a time, rather than removing entire well-balanced command blocks, which probably costs us in minimization time.
-%Inlining of a dependency is tried only at the precise spot where it is required \emph{or} at the very top of the file being minimized, while trying other locations could be worthwhile.
 
 A broader opportunity is finding related groups of commands that need to be removed together, to avoid changing the error message.
 For instance, we might want to move a lemma out of a module, to the top level of a file.
 Removing the commands that open and close the module might suffice, even if removing either one alone disturbs the error message.
-A general-enough version of this process could replace many specific passes. % (like removing empty sections and modules).
+A general-enough version of this process could replace many specific passes.
 
 One remaining aggravation is proper handling of lemma proofs within sections, where the details of the lemma proof influence which section variables are kept in the lemma's type.
 We could use the \verb|Set Suggest Proof Using| command to insert \verb|Proof using| clauses.
@@ -716,309 +701,5 @@ Minimizing multiple files in parallel, rather than only inlining files, would al
 \nocite{coqpl-15-coq-bug-minimizer}
 %% Bibliography
 \bibliography{coq-bug-minimizer.bib}
-
-\begin{comment}
-% Appendicies are forbidden in ITP
-%% Appendix
-\appendix
-\section{Appendix}
-
-Text of appendix \ldots
-
-\subsection{Code that was moved}
-
-\subsubsection{Code from \autoref{code:program:1:orig}}\label{code:program:1}
-\begin{verbatim}
-Require Import Coq.Program.Tactics.
-Section __.
-Context (arg : True).
-Lemma complicated (pf : arg = arg) : True = False.
-Admitted.
-Axiom bad : False.
-Definition another_False := False.
-Program Definition irrelevant
-  : another_False /\ another_False := conj _ _.
-Next Obligation. exact bad. Qed.
-Next Obligation. exact bad. Qed.
-End __.
-Lemma boom : True -> False.
-Proof. rewrite (complicated I eq_refl).
-\end{verbatim}
-\subsubsection{Code from \autoref{code:program:2:orig}}\label{code:program:2}
-\begin{verbatim}
-Require Import Coq.Program.Tactics.
-Section __.
-Context (arg : True).
-Lemma complicated (pf : arg = arg) : True = False.
-Admitted.
-Definition another_False := False.
-Program Definition irrelevant
-  : another_False /\ another_False := conj _ _.
-Next Obligation. Admitted.
-Next Obligation. Admitted.
-End __.
-Lemma boom : True -> False.
-Proof. rewrite (complicated I eq_refl).
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:program:3:orig}}\label{code:program:3}
-\begin{verbatim}
-Section __.
-Context (arg : True).
-Lemma complicated (pf : arg = arg) : True = False.
-Admitted.
-End __.
-Lemma boom : True -> False.
-Proof. rewrite (complicated I eq_refl).
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:section:1:orig}}\label{code:section:1}
-\begin{verbatim}
-Section useless.
-End useless.
-Module useful.
-Lemma complicated : True = False.
-Admitted.
-End useful.
-Lemma boom : True -> False.
-Proof. rewrite useful.complicated.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:section:2:orig}}\label{code:section:2}
-\begin{verbatim}
-Section useless.
-End useless.
-Module useful.
-Lemma complicated : True = False.
-Admitted.
-Lemma boom : True -> False.
-Proof. rewrite useful.complicated.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:export-modules:1:orig}}\label{code:export-modules:1}
-\begin{verbatim}
-Module foo.
-Lemma complicated : True = False.
-Admitted.
-End foo.
-Import foo.
-Lemma boom : True -> False.
-Proof. rewrite complicated.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:export-modules:2:orig}}\label{code:export-modules:2}
-\begin{verbatim}
-Module A.
-  Module A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module A.
-    Axiom A : Set.
-  End A.
-End B.
-Module A1. Export A. End A1.
-Module B1. Export B. End B1.
-Module Import A2. Import A1. Import A.
- Definition A2 := A. End A2.
-Module Import B2. Import B1. Import A.
- Definition B2 := A. End B2.
-Check eq_refl : A2 = B2.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:export-modules:3:orig}}\label{code:export-modules:3}
-\begin{verbatim}
-Module A.
-  Module Export A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module Export A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Export A1. Export A. End A1.
-Module Export B1. Export B. End B1.
-Module Import A2. Import A1. Import A.
- Definition A2 := A. End A2.
-Module Import B2. Import B1. Import A.
- Definition B2 := A. End B2.
-Check eq_refl : A2 = B2.
-\end{verbatim}
-
-
-\subsubsection{Code from \autoref{code:export-modules:4:orig}}\label{code:export-modules:4}
-\begin{verbatim}
-Module Export A.
-  Axiom A : Set.
-End A.
-Module B.
-  Module Export A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Export A1. Export A. End A1.
-Export B.
-Module Import A2. Import A1.
- Definition A2 := A. End A2.
-Definition B2 := A.
-Check eq_refl : A2 = B2.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:export-modules:5:orig}}\label{code:export-modules:5}
-\begin{verbatim}
-Module A.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Import A1. Export A. End A1.
-Module Import B1. Export B. End B1.
-Module Import A2. Import A1.
- Import A. Definition A2 := A. End A2.
-Module Import B2. Import B1.
- Import A. Definition B2 := A. End B2.
-Check eq_refl : A2 = B2.
-\end{verbatim}
-\subsubsection{Code from \autoref{code:export-modules:6:orig}}\label{code:export-modules:6}
-\begin{verbatim}
-Module A.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End A.
-Module B.
-  Module Import A.
-    Axiom A : Set.
-  End A.
-End B.
-Module Import A1. Export A. End A1.
-Export B.
-Module Import A2. Import A1. Import A.
- Definition A2 := A. End A2.
-Import A. Definition B2 := A.
-Check eq_refl : A2 = B2.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:abstract:1:orig}}\label{code:abstract:1}
-\begin{verbatim}
-Section foo.
-  Context (a : nat).
-  Definition foo : nat.
-  Proof.
-    refine (_ + _).
-    all: abstract exact a.
-  Defined.
-End foo.
-Goal True.
-  pose (foo 5) as x.
-  lazymatch (eval unfold x, foo in x) with
-  | ?x + ?y => idtac
-  | ?v => fail 0 "bad" v
-  end.
-\end{verbatim}
-
-\subsubsection{Code from \autoref{code:ltac-support:1:orig}}\label{code:ltac-support:1}
-\begin{verbatim}
-Module Export AdmitTactic.
-Module Import LocalFalse.
-Inductive False : Prop := .
-End LocalFalse.
-Axiom proof_admitted : False.
-Ltac admit := abstract case proof_admitted.
-End AdmitTactic.
-\end{verbatim}
-\subsubsection{Code from \autoref{code:ltac-support:2:orig}}\label{code:ltac-support:2}
-\begin{verbatim}
-Module Export AdmitTactic.
-Module Import LocalFalse.
-Inductive False : Prop := .
-End LocalFalse.
-Axiom proof_admitted : False.
-Tactic Notation "admit"
-  := abstract case proof_admitted.
-End AdmitTactic.
-\end{verbatim}
-
-
-\subsection{Text from \autoref{text:ltac-fragment}}\label{text:ltac-fragment}
-There are three more corner-cases which result in us using slightly different code in practice.
-
-First, because libraries like HoTT don't load the standard library by default, we need to declare our own \verb|False| inductive and we must also load support for Ltac.
-In all versions of Coq prior to 8.12, \verb|Require Import Coq.Init.Notations| was adequate to get Ltac.
-In Coq 8.12 and later, we need to either \verb|Require Import Coq.Init.Ltac| (which did not exist in prior versions of Coq) or \verb|Declare ML Module "ltac_plugin"|.
-We choose the latter of these two, for compatibility with developments like HoTT which may not have a \verb|Coq.Init.Ltac| file available.
-
-Note that we need to issue \verb|Inductive False : Prop := .| rather than \verb|Inductive False := .|, because any developments that pass \verb|-set "Universe Polymorphism"| on the command-line will otherwise end up with a polymorphic \verb|False| inductive which will introduce extra universes when using the \verb|admit| tactic which may break some files.
-(This was encountered in the wild; see \url{https://github.com/JasonGross/coq-tools/issues/74} for details.\todo{better urls?})
-
-Second, because the file we're minimizing may make use of \verb|False| and may rely on it being syntactically equal to the version in Coq's standard library \todo{does this need an example?}, we must wrap our \verb|Inductive False| in a module that is not exported to the file.
-This means that the \verb|admit| tactic must itself be in a module that is exported.
-We could alternatively qualify the version of \verb|False| that we're using, but this would prevent removal of our \verb|Inductive False|, and we would prefer to be able to remove this line when the Coq standard library is available.
-The code we now have, after the Ltac support snippet, is:
-\\\todo{code moved to \autoref{code:ltac-support:1}}\label{code:ltac-support:1:orig}
-
-Third, and finally, the line \texttt{Ltac admit := abstract case proof\_admitted} errors in Coq 8.4 with ``Error: Reserved Ltac name admit.''
-Hence we use \texttt{Tactic Notation "admit" := abstract case proof\_admitted} instead.
-
-Thus the fragment we add for the \verb|admit| tactic is ultimately:
-\\\todo{code moved to \autoref{code:ltac-support:2}}\label{code:ltac-support:2:orig}
-
-
-\section{controlflow}
-\begin{enumerate}
-\item Repeat the following steps until a fixed point is reached, skipping any steps that change the error message in a forbidden way.
-\begin{enumerate}
-\item Remove comments, inserting a header comment with metadata about minimization statistics.
-\item Insert a further header which defines the \verb|admit| tactic.
-  We must define this tactic ourselves to handle files which build with a non-standard standard library (such as HoTT) and hence don't have access to \verb|Coq.Compat.AdmitAxiom|.
-  To support multiple versions of Coq, we need to feature-test Coq to see what fragment of code grants us access to Ltac without loading the standard library; this feature-test is done once and for all for a single run of the bug minimizer.
-\item Split \verb|Require| statements from \verb|Import|/\verb|Export|, disambiguating the statements at the same time.
-  (If we don't disambiguate them, the \verb|Import|s might point to the wrong module.)
-\item Move the \verb|Require| statements to the top of the file, transitively closing them (this allows us to remove \verb|Require| statements which are only needed to transitively require other files).
-\item Parse the file into statements (with exactly two exceptions, statements in Coq end with \verb|.| or \verb|...| followed by whitespace; the exceptions are \verb|{| and \verb|}|).
-  Note that this is complicated by needing to handle strings which contain a full stop followed by whitespace, and by the fact that comments in Coq are well-balanced and nestable and can contain strings which themselves contain comment identifiers without nesting further comments.
-\item Remove statements after the line which generates the error.
-\item Split the statements into structured blocks, one per definition/proof.
-  We should not assume that we can remove lines from the end of a proof without breaking things, so we treat each theorem/lemma/definition block, combined with its proof, as a unit.
-  This is made simpler by the fact that Coq strongly discourages nested proofs, and by the fact that Coq generally forces definitions and their bodies to be side-by-side.
-  There are a couple of exceptions to this strategy, that have dedicated passes for handling them:
-  \begin{itemize}
-  \item \verb|Program| \verb|Definition|s, \verb|Fixpoint|s, etc, have \verb|Obligation| blocks which can be interwoven with other definitions.
-    The solution here is to replace such \verb|Obligation| blocks with \verb|Admit Obligations|, which is thankfully a no-op when no obligations are present.
-    \todo{Insert some code showing how minimization of program definitions proceeds with admit obligations}
-  \item Sections, modules, and module types have paired vernacular delimiters.
-    Currently there is some code to eliminate empty blocks, but it doesn't work very well, and misses many cases.
-    There's an open feature request for a \verb|Try| vernacular command at \coqissue{15051}, which would solve the issue of coupled commands in general.
-  \end{itemize}
-\item Repeat the following steps until a fixed point is reached (order presented here is not faithful to the minimizer):
-  \begin{itemize}
-  \item Remove each structured block (whose removal does not change the error message), one at a time, from the end of the file to the beginning of the file.
-  \item Replace proof scripts with \verb|Admitted|.
-    (There's some nuance about the best ordering strategy to try here, whether to first try all the \verb|Qed| lemmas, whether to first try all lemmas and definitions at once, or whether to just go one at a time in reverse order.)
-    Also, we actually replace them with \verb|admit. Defined.| so that previously unfoldable constants remain unfoldable.
-    Technically we should try \verb|Admitted| when the proof script previously ended with \verb|Qed| and replacing with \verb|admit. Defined.| fails, because it might be the case that some later tactic relies on this definition not being unfoldable, but we have not encountered such a case yet, and it seems quite unlikely.
-  \item Replace \verb|abstract tac| with \verb|admit|, potentially simplifying proof scripts and decreasing dependencies.
-  \item Split \verb|Definition foo args : ty := body.| into \verb|Definition foo args : ty.| and \verb|Proof. refine (body). Defined.| so that such definitions can potentially be admitted later.
-  \item Replace \verb|Module Foo| with \verb|Module Export Foo|, potentially allowing the removal of \verb|Import| statements later, and potentially eventually allowing the removal of the module itself.
-  \item Split \verb|Import| and \verb|Export| statements containing multiple modules into separate statements, so they can be removed separately.
-  \item Early on, some likely-to-succeed steps are tried, such as removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definition.
-    This step is superseded by removing each and every structured block one at a time, but may result in faster minimization.
-  \end{itemize}
-\end{enumerate}
-\item All of the steps above are applied in a single pass of a process that loops until no further progress is possible.
-After we have tried all possible command deletions and kept the ones that preserved the bug, we consider finding a module dependency to inline.
-Inlining dependencies is an interesting technical challenge, due to nuances in how Coq binds names and handles global state.
-\end{enumerate}
-
-
-\end{comment}
 
 \end{document}
