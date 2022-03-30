@@ -1,0 +1,193 @@
+----------------------- REVIEW 1 ---------------------
+SUBMISSION: 53
+TITLE: Automatic Test-Case Reduction in Proof Assistants: A Case Study in Coq
+AUTHORS: Jason Gross, Théo Zimmermann, Miraya Poddar-Agrawal and Adam Chlipala
+
+----------- Overall evaluation -----------
+SCORE: 1 (weak accept)
+----- TEXT:
+Summary
+╌╌╌╌╌╌╌
+
+  This article presents the Coq Bug Minimizer and reports on its
+  integration in Coq CI.
+
+  This tool is designed to minimize code that triggers Coq bugs. It is
+  mainly used for bugs appearing in existing developments (when an
+  addition in Coq's code generates an error in a previously error-free
+  Coq development), but can also be used to minimize new developments.
+
+  It is integrated in Coq CI: when a bug appears, Coq developers can
+  launch the minimizer to get a simpler test case. The authors report
+  benchmarks on 191 runs of such use-cases, to evaluate the success
+  rate, times, and the quality of the minimized test case. They also
+  report that these benchmarks have been used to improve the tool.
+
+
+Evaluation
+╌╌╌╌╌╌╌╌╌╌
+
+  The benchmarks attest from the actual use of the Coq Bug Minimizer by
+  Coq developers, which shows the usability of the software. It
+  definitely deserves to be presented.
+
+  What bothers me is that the paper is of unequal quality, entering
+  sometimes into very low level details. I think it would be more
+  interesting to have two parts: first bring out the general lessons
+  that could be reused for other proof assistants, then enter into the
+  details regarding the application to Coq. To give an example, the
+  question of blocks is probably similar e.g. in Isabelle, but not of
+  the opacity of proofs.
+
+  Anyway, I find the work useful and interesting, so I am in favor of
+  acceptance.
+
+
+Questions
+╌╌╌╌╌╌╌╌╌
+
+  • Does the minimizer handles meta-programming code (OCaml, coq-elpi)?
+    I am surprised that the article does not mention it.
+
+  • In addition to the quantitative benchmarks, do you have qualitative
+    feedback from users? I think that would be really valuable for the
+    article.
+
+  • In Sec.5.3, I do not get why using `Admitted` to make a proof
+    transparent is useful, since its body is empty anyway.
+
+  • In Sec.5.2.4, why going through interactive mode instead of using
+    `Parameter`/`Axiom`? (Maybe this is related to the previous
+    question.)
+
+
+Minor remarks
+╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  • In Sec.5.1, I think you can go faster when explaining that proofs
+    are going to be admitted instead of simply removed, it seems quite
+    natural.
+
+
+
+----------------------- REVIEW 2 ---------------------
+SUBMISSION: 53
+TITLE: Automatic Test-Case Reduction in Proof Assistants: A Case Study in Coq
+AUTHORS: Jason Gross, Théo Zimmermann, Miraya Poddar-Agrawal and Adam Chlipala
+
+----------- Overall evaluation -----------
+SCORE: 1 (weak accept)
+----- TEXT:
+This paper presents a tool for reproducing bugs that may arise during Coq's
+software development process. The tool, which is triggered
+automatically when a continuous integration (CI) test fails, produces
+a minimal standalone Coq file that exhibits the same faulty behavior as the CI
+test in the development version. The paper discusses design choices
+and includes a performance evaluation that shows, among other things,
+that the generated files are on average one-third the size of the
+original test and compile in 1.25s.
+
+The tool presented in this paper is clearly useful to the community of
+Coq developers. I'm not sure how much of the insights and design
+choices generalize to other proof assistants. The basic idea is quite
+simple and general: start with the failing file, remove the text after the error line,
+and keep removing definitions walking backwards from the error line until a minimal
+file is found. The details, however, are either Coq-centric or
+described in a way that requires familiarity with the syntax,
+concepts, and tools of the proof assistant, e.g., (to mention just a few)
+* Lines 163-180: 3 of 5 criteria to compare error messages are related
+to universes.
+* Line 216-218: What is "coqtop -emacs -time" and why this is
+relevant to the reader?
+* Line 324: What does coq/coq#14587 mean?
+* Line 336: "If we are inlining a file from Flocq into a file from
+VST,..." What?
+* Line 431: The whole Section 8 is cryptic to me.
+* Line 661: " We could use the Set Suggest Proof Using command to
+insert Proof using clauses."  What?
+
+Minor comments:
+* Language is at times too colloquial for a scientific paper, e.g.,
+   - "we would like to bring bugs to the center!" (line 56): what does
+   this mean.
+   - "For the mobile reader" (line 72): mobile reader?
+   - "To add color to our picture," (line 82)
+* Line 16: Spell acronym CI before using it.
+* Line 39: Explain what is "reverse" CI. Some readers may not be
+familiar with this concept.
+
+
+
+----------------------- REVIEW 3 ---------------------
+SUBMISSION: 53
+TITLE: Automatic Test-Case Reduction in Proof Assistants: A Case Study in Coq
+AUTHORS: Jason Gross, Théo Zimmermann, Miraya Poddar-Agrawal and Adam Chlipala
+
+----------- Overall evaluation -----------
+SCORE: 2 (accept)
+----- TEXT:
+This paper is about advanced tooling for Coq. It addresses the
+well-known problem of repairing user developments, after changes in
+the main proof assistant. The Coq community has only loose coupling of
+core Coq development with library development (reasons for that are
+explained in the paper). This demands special tool support, in order
+to isolate problems seen in user libraries, especially about
+dependencies and imports.
+
+One approach of the authors is to trim-down failed library sessions to
+standalone files that expose the problem already. To actually get
+there, turns out surprisingly difficult to manage. The problem is
+treated here with great scrutiny, also on the background of
+conventional test-case reduction schemes from the literature. This
+uncovers a lot of specific problems of Coq: sometimes the nature of
+formal proof checking simplifies things, but often there are
+historical accidents in the prover implementation than hinder clear
+isolation of failure spots (e.g. complex name space management,
+pervasive global state).
+
+This work is definitely relevant to the Coq universe, to support even
+greater applications.  Concerning other proof assistants, the authors
+claim in the abstract "We expect that our insights will generalize to
+other proof assistants", but this expectation is unproven. As a
+non-Coq person, I do find the paper interesting to read and relevant
+to understand general problems in the design space of proof
+assistants. Often though, its usefulness to other proof assistants
+will be the avoidance of such problems in the core system, instead of
+building similar tools around that. In particular, I would argue that
+an important conclusion is that proof assistants should not be seen as
+"compiler" on a single file, but to work properly on whole projects
+with all dependencies. Thus the zoo of custom build tools seen in
+applications can be eliminated.
+
+Further conclusions are specific to Coq: some cleanup of legacy
+concepts that get in the way today (e.g. remains of nested lemmas, or
+odd policies of files as modules and resulting name space policies; or
+global state that is not easily controlled by a program).
+
+After some fine-tuning in the wording here and there, this paper looks
+fine for acceptance.
+
+
+Hints to the authors.
+
+Line 211, "Since Coq forbids nested lemmas": This is difficult to
+understand for non-Coq people.
+
+Line 262, "gotchas": Sounds like US slang to me.
+
+Line 323, "uniquly": bad spelling.
+
+Line 367: The example snippets are typographically confusing. Maybe
+you can afford a few line breaks here.
+
+Line 454 concerning "GitHub Action workflow": Why use GitHub at all?
+The problem is one of batch-queue management, which deserves better
+tool support than the odd push/pull pipelines on repositories we often
+see today.
+
+Line 626 concerning "Qed": How about reforming Coq syntax in that
+respect? Or is that too heretical.
+
+Line 685, "fully handle global state ..." sounds rather
+discouraging. Is there any chance to manage Coq options in a more
+robust (stateless) manner, to avoid such worries in the first place?
