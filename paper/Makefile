@@ -19,8 +19,16 @@ BIBTEX?=bibtex
 
 PDFS := coq-bug-minimizer.pdf
 
-.PHONY: all
-all: $(PDFS)
+CAMERA_READY_FILES := coq-bug-minimizer.bib coq-bug-minimizer.tex cc-by.pdf lipics-logo-bw.pdf lipics-v2021.cls orcid.pdf
+CAMERA_READY_ZIP := camera-ready.zip
+
+.PHONY: all camera-ready
+all: $(PDFS) $(CAMERA_READY_ZIP)
+
+camera-ready: $(CAMERA_READY_ZIP)
+
+$(CAMERA_READY_ZIP): $(CAMERA_READY_FILES)
+	zip -r $@ $(CAMERA_READY_FILES)
 
 coq-bug-minimizer.pdf: coq-bug-minimizer.bib
 
