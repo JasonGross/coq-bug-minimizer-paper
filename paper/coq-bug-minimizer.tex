@@ -387,15 +387,15 @@ To allow eventual removal of \verb|unused1| and \verb|unused2| even when the \ve
 We mentioned how admitting proofs is a very handy step to shrink files and get them processed more quickly.
 There are, however, a few gotchas to keep in mind.
 
-The first quirk is around transparency vs. opacity of lemma definitions; that is, whether the generated proof term is accessible to later definitions.
-Either choice (transparent vs. opaque) can break some developments.
+The first quirk is around transparency vs.\ opacity of lemma definitions; that is, whether the generated proof term is accessible to later definitions.
+Either choice (transparent vs.\ opaque) can break some developments.
 Marking a proof-mode definition \emph{opaque} will break later definitions that unfold the definition and then perform further tactic-based surgery on it, while marking a proof-mode definition \emph{transparent} could cause previously failing unfoldings to succeed.
 Therefore, we always try both styles of marking a lemma admitted.
 
 Some lemma proofs are declared as transparent rather than opaque, where later steps really do depend on their details.
 If those dependencies are too specific, then our shrinking heuristics are not going to work well.
 However, one common-enough case is where a later definition uses tactics to \emph{unfold} an earlier definition, going on to use other tactics that may very well be able to adapt to changes in that definition.
-There are at least two different ways to mark a proof as admitted (\texttt{Admitted} vs.\ using a preexisting \texttt{Axiom}), which can switch up whether the associated definition is considered transparent or opaque.
+There are at least two different ways to mark a proof as admitted (\texttt{Admitted} vs.\ using a preexisting \texttt{Axiom}), which can switch up whether the associated definition is considered opaque or transparent.
 
 Additionally, we may want to admit some parts of the proof script without replacing all of it.
 Currently, we use a rather conservative heuristic:
@@ -436,14 +436,14 @@ We combine these strategies to maximize the chance of succesfully inlining depen
 
 First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case, we wrap the contents in \texttt{Module MSetPositive}).
 Furthermore, since users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, or \texttt{MSetPositive.PositiveSet.t}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
-Finally, because Coq forbids multiple modules with the same absolute kernel name, we must wrap the top-level module in yet another module, with a uniquly generated identifier.
-While this strategy is not perfect, running afoul of \coqbug{14587} for example, we try a couple of variations on this strategy, and very often one of them is adequate for reproducing buggy behavior.
+Finally, because Coq forbids multiple modules with the same absolute kernel name, we must wrap the top-level module in yet another module, with a uniquely generated identifier.
+While this strategy is not perfect, running afoul of bug \coqbug{14587} for example, we try a couple of variations on this strategy, and very often one of them is adequate for reproducing buggy behavior.
 
 Second, we want to adjust references so that they still point at the same underlying object after inlining.
 Coq helpfully emits \emph{globalization} files, which contain information about how Coq resolves almost all names in the file.
 Since Coq generates and installs these \texttt{.glob} files, we can use this information to transform both the names in the files we inline and the names that refer to constants in that file.
 
-However, we cannot just blindly update all names, because these \texttt{.glob} files are not perfectly accurate\footnote{See \coqbug{15497} and \coqbug{14537}.} and are not complete\footnote{They are missing information, for example, on tactic-name resolution and notation interpretation.}.
+However, we cannot just blindly update all names, because these \texttt{.glob} files are not perfectly accurate\footnote{See bugs \coqbug{15497} and \coqbug{14537}.} and are not complete\footnote{They are missing information, for example, on tactic-name resolution and notation interpretation.}.
 Instead, we have found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
 \texttt{Require} statements are sensitive to the searchpath flags (\verb|-Q| and \verb|-R|) passed to Coq.
 If we are inlining a file from Flocq into a file from VST, for example, the \texttt{Require}s in the Flocq file may not resolve to the same files on disk when compiling with the compiler flags that VST uses.
@@ -687,7 +687,7 @@ Removing the commands that open and close the module might suffice, even if remo
 A general-enough version of this process could replace many specific passes.
 
 One remaining aggravation is proper handling of lemma proofs within sections, where the details of the lemma proof influence which section variables are kept in the lemma's type.
-We could use the \verb|Set Suggest Proof Using| command to insert \verb|Proof using| clauses.
+We could use the \verb|Set Suggest Proof Using| command to instruct Coq to tell us which section variables are used by each proof; we could then insert \verb|Proof using| clauses to allow us to replace the proof with \verb|Admitted| without changing the dependency on section variables.
 
 As mentioned in \autoref{sec:linearize-global-state}, we would like to improve the ability of the minimizer to linearize dependency trees and handle Coq's global state.
 We could, for example, print out the full table of flag settings at a particular point, reset them to the initial values before inlining a file, and then restore them after inlining.
