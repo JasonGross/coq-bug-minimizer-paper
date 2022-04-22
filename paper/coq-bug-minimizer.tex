@@ -347,7 +347,7 @@ Proof. reflexivity.
 results in an error about nested proofs, if there is a theorem afterward.
 
 We instead group statements into \emph{definition} blocks to be removed all at once.
-We get information about definitions by parsing the output of \texttt{coqtop -emacs -time}.
+Coq luckily has a mode\footnote{It can be accessed by invoking \texttt{coqtop -emacs -time}.} that emits information about the boundaries of these definition blocks.
 This way, we can remove the lemma block all at once.
 
 We could in theory deal with more complicated nesting structure, for example trying to remove an entire section or module at a time.
@@ -446,7 +446,7 @@ Since Coq generates and installs these \texttt{.glob} files, we can use this inf
 However, we cannot just blindly update all names, because these \texttt{.glob} files are not perfectly accurate\footnote{See bugs \coqbug{15497} and \coqbug{14537}.} and are not complete\footnote{They are missing information, for example, on tactic-name resolution and notation interpretation.}.
 Instead, we have found in practice that the most important names to resolve are those used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements.
 \texttt{Require} statements are sensitive to the searchpath flags (\verb|-Q| and \verb|-R|) passed to Coq.
-If we are inlining a file from Flocq into a file from VST, for example, the \texttt{Require}s in the Flocq file may not resolve to the same files on disk when compiling with the compiler flags that VST uses.
+If we are inlining a file from Flocq into a file from VST,\footnote{Flocq is a Coq library on floating-point arithmetic, and VST is a Coq library for verification of C code, which relies on Flocq.} for example, the \texttt{Require}s in the Flocq file may not resolve to the same files on disk when compiling with the compiler flags that VST uses.
 \texttt{Import} and \texttt{Export} statements, while not dependent on searchpath flags to the same extent as \texttt{Require}, still seem empirically more likely to refer to potentially ambiguous names than most other statements.
 Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, and \texttt{Export} statements when inlining, letting Coq determine all other name resolution.
 
@@ -681,7 +681,9 @@ We were pleasantly surprised to find that several ``shortcuts'' in the logistics
 In various places, we use workarounds (like \texttt{.glob} files) to avoid integrating a proper Coq parser, but there would be advantages like being able to remove specific fields from record types.
 We remove single commands at a time, rather than removing entire well-balanced command blocks, which probably costs us in minimization time.
 
-A broader opportunity is finding related groups of commands that need to be removed together, to avoid changing the error message.
+Integrating with Coq's parser would also allow us to more naturally handle code associated with Coq developments but which uses different statement-ending conventions than standard Coq code, such as coq-elpi code and OCaml plugin code.
+
+Another broader opportunity is finding related groups of commands that need to be removed together, to avoid changing the error message.
 For instance, we might want to move a lemma out of a module, to the top level of a file.
 Removing the commands that open and close the module might suffice, even if removing either one alone disturbs the error message.
 A general-enough version of this process could replace many specific passes.
