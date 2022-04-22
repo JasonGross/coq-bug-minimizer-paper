@@ -192,8 +192,8 @@ Drawing on empirical results from nearly a year of use in Coq's production CI sy
 We believe that our methods may be of interest for developers of other proof assistants who are also facing a tradeoff between enabling evolution and preserving stability, in a context of industrial use.
 
 For the mobile reader, \autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
-\autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq.
-Then \autorefs{sec:error-messages,sec:minimal,sec:standalone,sec:smooth-dev-experience} explore the four desiderata and describe the details of our solution to the more important challenges of each.
+\autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq and, we expect, in other proof assistants.
+Then \autorefs{sec:error-messages,sec:minimal,sec:standalone,sec:smooth-dev-experience} explore the four desiderata and describe the details of our solution to the more important challenges of each; while we expect that most of these details will be specific to Coq, they highlight which aspects of proof assistant design are relevant to test-case reduction in a way that we expect will generalize to other proof assistants.
 \autoref{sec:alt-usage} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
 Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} discusses our thoughts on the most worthwhile improvements to make to our tooling.
 
@@ -291,6 +291,7 @@ However, the error message of the generated file does not need to be \emph{exact
 Thus, we modify our goal to reproducing buggy behavior in place of reproducing the ``same'' bug.
 
 We apply the following relaxations in comparing error messages.
+While these particular relaxations are specific to Coq, we expect that other proof assistants will have a similarly limited set of relaxations.
 \begin{enumerate}
 
 \item Universe inconsistencies are how Coq prevents users from proving absurdity by assuming a ``set of all sets.''
@@ -322,6 +323,7 @@ We have two additional goals to improve this workflow.
 In our goal to get the shortest reproducing test case as quickly as possible, it helps to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
 
 The slowest part of almost all Coq developments is proof scripts.
+(We expect this is also true of other tactic-based proof assistants.)
 Hence we attempt to remove proof scripts as early as possible.
 Since proof assistants check that proofs are valid, we cannot simply remove a proof, like we might remove a function body in a traditional programming language.
 However, most proof assistants have some mechanism for ``giving up'' on a proof or ``trusting'' the user, and Coq is no exception.
