@@ -487,17 +487,17 @@ This strategy ensures that we only inline dependencies that are actually necessa
 
 In order to analyze a specific source file, we need to take a few steps.
 \begin{enumerate}
-\item Unpack and install both the succeeding and failing versions of Coq and corresponding developments.
+\item Unpack and install both the succeeding and failing versions of Coq and the tested projects.
 \item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with, as well as \texttt{COQPATH} (an environment variable listing directories to be searched for imported modules) and the current directory.
-\item Run Coq on the succeeding and failing developments, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
+\item Run the succeeding and failing versions of Coq on the tested projects, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
 \item Parse the build log to determine the buggy file name and the arguments to pass to Coq, using the extra logging introduced by our wrappers.
   This workflow means that we need not interface directly with varied build systems of different tested projects.
-\item Run Coq on the buggy file.
+\item Run the failing version of Coq on the file triggering the buggy behavior.
 \item Parse the error message, ensuring that it matches with the error message from the build log.
   (See \autoref{sec:error-messages} for subtleties in that comparison)
 \end{enumerate}
 
-Again, the goal of the minimizer is to take a tested project that succeeds on the tip of the master branch and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
+Again, the goal of the minimizer is to take a tested project that succeeds on the tip of Coq's master branch and fails on a given Coq pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
 In order to do so efficiently, we reuse the CI artifacts from Coq.
 We download the prebuilt versions of Coq from master and from the tip of the PR.
 From just these artifacts and the name of the failing project, we must assemble enough information to run the bug minimizer.
@@ -557,7 +557,7 @@ If someone answers with a comment to trigger minimization, then the bot prepares
 
 To evaluate the usefulness of our bug minimizer, we investigate several research questions:
 \begin{description}
-\item[RQ1:] How often does the minimizer successfully produce a reduced test case from the RDCT failures it was triggered on?
+\item[RQ1:] How often does the minimizer successfully produce a reduced test case from the RDCT failure it was triggered on?
 \item[RQ2:] How often is this reduced test case fully standalone (no dependencies other than Coq's standard library)?
 \item[RQ3:] How long does it take to produce such reduced test cases?
 \item[RQ4:] What is the size of the reduced cases?
@@ -661,14 +661,14 @@ Our work is at the crossing of two research areas: research on debugging techniq
 Debugging is a largely explored topic, but mostly with a focus on more mainstream and less formal languages than Coq.
 In this research domain, test-case-reduction techniques have been studied for standard programming languages and compilers~\cite{chen_survey_compiler_testing}. There are two types of approaches that have been proposed. First, there are generic approaches that are supposed to work for any programming language, by using structure information on the program being reduced. Examples include delta debugging~\cite{Zeller2002} but also the generalized tree-reduction algorithm~\cite{herfert2017automatically} and the syntax-guided Perses tool~\cite{herfert2017automatically}. These generic techniques would not be likely to work well for Coq programs without careful adaptation, because many Coq programs can be considered syntactically valid even if completely nonsensical. For instance, we have already mentioned the issue with removing a \texttt{Qed} statement at the end of a tactic-based proof. Despite breaking a semantic block of code, this change does not actually produce a syntactically invalid Coq program.
 
-Second, there are programming-language-specific approaches, which take advantage of specific knowledge to make the test reduction more performant. Our own work is related to this second category, where most tools focus on mainstream languages like C. Some are even dedicated to reducing the output of specific test-generation frameworks such as Csmith~\cite{regehr2012test}.
+Second, there are programming-language-specific approaches, which take advantage of specific knowledge to make the test-case reduction more performant. Our own work is related to this second category, where most tools focus on mainstream languages like C. Some are even dedicated to reducing the output of specific test-generation frameworks such as Csmith~\cite{regehr2012test}.
 
 However, work on generating many diverse test cases from nothing has complementary value.
 Csmith~\cite{yang2011finding} has an effective algorithm based on knowledge of C semantics, to provoke undefined behavior.
 Techniques like equivalence modulo inputs~\cite{emi} find compiler bugs via differential testing, where a compiler is run on programs that are known to have the same semantics.
 Perhaps this generative approach would also be useful for proof assistants, composed fruitfully with test-case reduction as we have presented.
 
-Finally, the literature has identified the issue of \emph{slippage} in test reduction~\cite{chen2013taming,holmes2016mitigating}, which is when the initial and reduced cases produce different compiler bugs. This challenge was one of the main ones we had to account for in designing our bug minimizer (see \autoref{sec:error-messages}).
+Finally, the literature has identified the issue of \emph{slippage} in test-case reduction~\cite{chen2013taming,holmes2016mitigating}, which is when the initial and reduced cases produce different compiler bugs. This challenge was one of the main ones we had to account for in designing our bug minimizer (see \autoref{sec:error-messages}).
 
 Proof-assistant ecosystems were already no stranger to testing techniques.
 For instance, Isabelle/HOL's Nitpick~\cite{Nitpick} uses Boolean satisfiability to find theorem counterexamples.
