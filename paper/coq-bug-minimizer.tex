@@ -148,11 +148,11 @@
 
 \begin{abstract}
   As the adoption of proof assistants increases, there is a need for efficiency in identifying, documenting, and fixing compatibility issues that arise from proof assistant evolution.
-  We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} with \emph{minimal} and \emph{standalone} files, integrated with coqbot to trigger \emph{automatically} on Coq reverse CI failures.
+  We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} with \emph{minimal} and \emph{standalone} files, integrated with coqbot to trigger \emph{automatically} on failures from Coq's reverse dependency compatibility testing.
   Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments: enabling Coq developers to easily obtain modular test-case files for fast experimentation.
   In this paper, we describe insights about how test-case reduction is different in Coq than in traditional compilers.
 We expect that our insights will generalize to other proof assistants.
-  We evaluate the Coq Bug Minimizer on over 150 CI failures.
+  We evaluate the Coq Bug Minimizer on over 150 compatibility testing failures.
   Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of the time.
   The minimizer produces a fully standalone test case 89\% of the time, and it is on average about one-third the size of the original test.
   The average reduced test case compiles in 1.25 seconds, with 75\% taking under half a second.
@@ -164,12 +164,12 @@ In the world of machine verification, the dream is to prove the correctness of e
 Projects such as Coq Coq Correct!~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
 However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, lacking even adequate test-suite coverage!
 
-As a solution to expanding the test-suite coverage for the proof assistant Coq, developers adopted ``reverse'' continuous integration (CI)~\cite{zimmermann:tel-02451322,ochoa2022breakbot} wherein changes in Coq are tested against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
+As a solution to expanding the test-suite coverage for the Coq proof assistant, developers adopted ``reverse dependency compatibility testing'' (RDCT) ~\cite{ochoa2022breakbot,zimmermann:tel-02451322}, wherein changes in Coq are tested in continuous integration (CI) against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
 In this manner, user-centric concerns are well addressed.
 To prevent the crowdsourced test suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
 \emph{We believe that to facilitate the use of proof assistants in industry-scale projects, it is essential to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
 
-Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by the reverse CI is a time- and effort-intensive process for developers.
+Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by RDCT is a time- and effort-intensive process for developers.
 They must perform many steps before beginning to understand and work on the bug.
 First, developers will tediously sit through the process of downloading, setting up, and compiling the external project.
 Then, they may have to take on the daunting task of figuring out the larger project context which is not even directly relevant to the bug!
@@ -183,7 +183,7 @@ Available on GitHub in \href{https://github.com/JasonGross/coq-tools}{\texttt{Ja
 }
 which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standalone} files.
 Typically, minimized files reduce the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play with, understand, and fix bugs.
-Furthermore, we have integrated the Coq Bug Minimizer with coqbot~\cite{zimmermann:hal-03479327} to trigger \textbf{automatically} on reverse-CI failures, reducing the friction of building minimized files.
+Furthermore, we have integrated the Coq Bug Minimizer with coqbot~\cite{zimmermann:hal-03479327} to trigger \textbf{automatically} on RDCT failures, reducing the friction of building minimized files.
 
 Test-case reduction has already a rich literature~\cite{chen_survey_compiler_testing}. However, it is focused mostly on traditional languages such as C, and even generic reduction techniques may not apply so well to proof assistants.
 %
@@ -202,7 +202,7 @@ Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI
 \section{Desiderata}\label{sec:example}
 
 
-To add color to our picture, let's begin with a constructed example of minimizing a reverse-CI failure.
+To add color to our picture, let's begin with a constructed example of minimizing an RDCT failure.
 Our objective is to explore the space of file modifications that will aid human understanding of the bug.
 Consider the following Coq source file:
 \begin{verbatim}
@@ -286,7 +286,7 @@ If instead there were orders of magnitude more useless lines than true dependent
 
 How do we know modifications to source files are genuine simplifications that have not masked bugs?
 What does it mean to reproduce the ``same'' bug?
-We generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq, with the same error message that showed up in the reverse CI.
+We generate a file that succeeds on the previous version of Coq and continues to fail on the modified version of Coq, with the same error message that showed up in the RDCT failure.
 However, the error message of the generated file does not need to be \emph{exactly} the same as in the original file, so long as the reason for the error message is the same.
 Thus, we modify our goal to reproducing buggy behavior in place of reproducing the ``same'' bug.
 
@@ -491,17 +491,17 @@ In order to analyze a specific source file, we need to take a few steps.
 \item Replace the Coq binaries with wrappers that print out the arguments that Coq was called with, as well as \texttt{COQPATH} (an environment variable listing directories to be searched for imported modules) and the current directory.
 \item Run Coq on the succeeding and failing developments, ensuring that the version that should pass does in fact pass, and the version that should fail has a recognizable error message.
 \item Parse the build log to determine the buggy file name and the arguments to pass to Coq, using the extra logging introduced by our wrappers.
-  This workflow means that we need not interface directly with varied build systems of different contributions on the CI.
+  This workflow means that we need not interface directly with varied build systems of different tested projects.
 \item Run Coq on the buggy file.
 \item Parse the error message, ensuring that it matches with the error message from the build log.
   (See \autoref{sec:error-messages} for subtleties in that comparison)
 \end{enumerate}
 
-Again, the goal of the minimizer is to take a CI development that succeeds on the tip of the master branch and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
+Again, the goal of the minimizer is to take a tested project that succeeds on the tip of the master branch and fails on a given pull request (PR), emitting a small, standalone file that succeeds on master and fails in the same way on the PR.
 In order to do so efficiently, we reuse the CI artifacts from Coq.
 We download the prebuilt versions of Coq from master and from the tip of the PR.
-From just these artifacts and the name of the failing CI development, we must assemble enough information to run the bug minimizer.
-We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this CI development, into different directories: one for the version of Coq expected to pass and another for the version of Coq expected to fail.
+From just these artifacts and the name of the failing project, we must assemble enough information to run the bug minimizer.
+We replicate Coq's generic CI workflow to install Coq as well as any dependencies of this project, into different directories: one for the version of Coq expected to pass and another for the version of Coq expected to fail.
 We also reuse Coq's generic CI workflow to figure out the error message and the failing file we want to minimize.
 
 Let us justify the extra information that our Coq wrapper programs log.
@@ -529,7 +529,7 @@ We then pass this information to the bug minimizer:
 
 \section{An Alternative Usage Mode}\label{sec:alt-usage}
 
-Up to this point, we have talked about using the Coq Bug Minimizer exclusively to minimize reverse-CI failures for debugging faulty changes in Coq.
+Up to this point, we have talked about using the Coq Bug Minimizer exclusively to minimize RDCT failures for debugging faulty changes in Coq.
 Our tool can also be used to minimize test cases for newly found bugs in Coq.
 In this mode, a bug reporter can write a shell script that invokes a \emph{single} version of Coq to produce buggy behavior on some Coq file, asking coqbot to produce a minimal example from this script.
 When running in this mode, we place an additional constraint on the minimizer that the proof script generating the error message should be left untouched,
@@ -557,7 +557,7 @@ If someone answers with a comment to trigger minimization, then the bot prepares
 
 To evaluate the usefulness of our bug minimizer, we investigate several research questions:
 \begin{description}
-\item[RQ1:] How often does the minimizer successfully produce a reduced test case from the CI failures it was triggered on?
+\item[RQ1:] How often does the minimizer successfully produce a reduced test case from the RDCT failures it was triggered on?
 \item[RQ2:] How often is this reduced test case fully standalone (no dependencies other than Coq's standard library)?
 \item[RQ3:] How long does it take to produce such reduced test cases?
 \item[RQ4:] What is the size of the reduced cases?
@@ -584,7 +584,7 @@ We ignore these comments, only looking for final reduction outputs.
 Finally, the bot posts a comment starting with ``Error: Could not minimize file'' when it was not able to minimize the requested failure, for instance, because it could not reproduce it or could not reproduce the successful run on the base branch.
 
 We match comments indicating the start of the minimization with comments indicating the end of it, using these two comments to determine if the minimizer was able to produce a reduced test case, find how long it took, and answer our other research questions.
-To avoid double-counting multiple runs on the same CI failure, we only look at the first bug-minimizer trigger on a given PR and a given project.
+To avoid double-counting multiple runs on the same RDCT failure, we only look at the first bug-minimizer trigger on a given PR and a given project.
 
 \subsection{Results}
 
@@ -645,7 +645,7 @@ If we compute the size difference only looking at the initial file we started fr
 
 \subsection{Limitations of our Evaluation}
 
-Evaluating a bug minimizer for a proof assistant such as Coq is difficult because there is no preexisting benchmark that it could be run on. In this paper, we have decided to take advantage of the integration of our minimizer in the CI infrastructure of Coq to evaluate it on real use cases where Coq developers have felt the need for it.
+Evaluating a bug minimizer for a proof assistant such as Coq is difficult because there is no preexisting benchmark that it could be run on. In this paper, we have decided to take advantage of the integration of our minimizer in the RDCT infrastructure of Coq to evaluate it on real use cases where Coq developers have felt the need for it.
 
 While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using reruns of the  minimization on the same project in the same PR), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
 Since we always account only for first runs, many cases where the minimizer has been counted as failing have been eventually fixed and would result in successful runs today. Subsequent runs on other projects or other PRs may have succeeded thanks to earlier fixes.
