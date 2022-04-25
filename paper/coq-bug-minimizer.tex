@@ -164,7 +164,7 @@ In the world of machine verification, the dream is to prove the correctness of e
 Projects such as Coq Coq Correct!~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
 However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, lacking even adequate test-suite coverage!
 
-As a solution to expanding the test-suite coverage for the Coq proof assistant, developers adopted ``reverse dependency compatibility testing'' (RDCT) ~\cite{ochoa2022breakbot,zimmermann:tel-02451322}, wherein changes in Coq are tested in continuous integration (CI) against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
+As a solution to expanding the test-suite coverage for the Coq proof assistant, developers adopted ``reverse dependency compatibility testing'' (RDCT)~\cite{ochoa2022breakbot,zimmermann:tel-02451322}, wherein changes in Coq are tested in continuous integration (CI) against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
 In this manner, user-centric concerns are well addressed.
 To prevent the crowdsourced test suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
 \emph{We believe that to facilitate the use of proof assistants in industry-scale projects, it is essential to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
