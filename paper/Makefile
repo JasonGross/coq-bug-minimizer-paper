@@ -28,6 +28,7 @@ all: $(PDFS) $(CAMERA_READY_ZIP)
 camera-ready: $(CAMERA_READY_ZIP)
 
 $(CAMERA_READY_ZIP): $(CAMERA_READY_FILES)
+	rm -f $@
 	zip -r $@ $(CAMERA_READY_FILES)
 
 coq-bug-minimizer.pdf: coq-bug-minimizer.bib
