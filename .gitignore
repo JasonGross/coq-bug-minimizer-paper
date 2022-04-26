@@ -282,6 +282,7 @@ TSWLatexianTemp*
 
 # Build outputs
 paper/coq-bug-minimizer.pdf
+paper/camera-ready.zip
 
 # Notebook checkpoints
 notebook/.ipynb_checkpoints
