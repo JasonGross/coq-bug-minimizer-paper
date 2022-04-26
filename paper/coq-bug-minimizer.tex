@@ -147,13 +147,13 @@
 \maketitle
 
 \begin{abstract}
-  As the adoption of proof assistants increases, there is a need for efficiency in identifying, documenting, and fixing compatibility issues that arise from proof assistant evolution.
+  As the adoption of proof assistants increases, there is a need for efficiency in identifying, documenting, and fixing compatibility issues that arise from proof-assistant evolution.
   We present the Coq Bug Minimizer, a tool for \emph{reproducing buggy behavior} with \emph{minimal} and \emph{standalone} files, integrated with coqbot to trigger \emph{automatically} on failures from Coq's reverse dependency compatibility testing.
-  Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments: enabling Coq developers to easily obtain modular test-case files for fast experimentation.
+  Our tool eliminates the overhead of having to download, set up, compile, and then explore and understand large developments, enabling Coq developers to easily obtain modular test-case files for fast experimentation.
   In this paper, we describe insights about how test-case reduction is different in Coq than in traditional compilers.
 We expect that our insights will generalize to other proof assistants.
   We evaluate the Coq Bug Minimizer on over 150 compatibility testing failures.
-  Our tool succeeds in reducing failures to smaller test cases in roughly 75\% of the time.
+  Our tool succeeds in reducing failures to smaller test cases roughly 75\% of the time.
   The minimizer produces a fully standalone test case 89\% of the time, and it is on average about one-third the size of the original test.
   The average reduced test case compiles in 1.25 seconds, with 75\% taking under half a second.
 \end{abstract}
@@ -162,21 +162,21 @@ We expect that our insights will generalize to other proof assistants.
 
 In the world of machine verification, the dream is to prove the correctness of every program.
 Projects such as Coq Coq Correct!~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
-However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, lacking even adequate test-suite coverage!
+However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, lacking even adequate test-suite coverage.
 
 As a solution to expanding the test-suite coverage for the Coq proof assistant, developers adopted ``reverse dependency compatibility testing'' (RDCT)~\cite{ochoa2022breakbot,zimmermann:tel-02451322}, wherein changes in Coq are tested in continuous integration (CI) against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
-In this manner, user-centric concerns are well addressed.
+In this manner, user-centric concerns are well-addressed.
 To prevent the crowdsourced test suite from shrinking, when Coq evolves in a desired direction but breaks some external project in the process, developers of Coq will fix the compatibility issue in the external project.
-\emph{We believe that to facilitate the use of proof assistants in industry-scale projects, it is essential to make it easy to find, understand, and fix compatibility issues as the proof assistant continues to evolve.}
+\emph{We believe that to facilitate the use of proof assistants in industry-scale projects, it is essential to make it easy to find, understand, and fix compatibility issues as a proof assistant continues to evolve.}
 
 Since the external projects in the Coq test suite are large and intricate, debugging and fixing failures reported by RDCT is a time- and effort-intensive process for developers.
 They must perform many steps before beginning to understand and work on the bug.
-First, developers will tediously sit through the process of downloading, setting up, and compiling the external project.
-Then, they may have to take on the daunting task of figuring out the larger project context which is not even directly relevant to the bug!
+First, developers will endure the tedium of downloading, setting up, and compiling the external project.
+Then, they may have to take on the daunting task of figuring out the larger project context, which is not even directly relevant to the bug.
 
 The current debugging process can be significantly optimized for developer experience.
 Additionally, the current process does not easily yield test cases to add to Coq's internal test suite.
-Instead the test cases remain buried in external developments whereas we would like to bring bugs to the center!
+Instead the test cases remain buried in external developments, whereas we would like to bring bugs to the center.
 In order to improve the debugging process, we built the Coq Bug Minimizer%
 \footnote{%
 Available on GitHub in \href{https://github.com/JasonGross/coq-tools}{\texttt{JasonGross/coq-tools}}%
@@ -185,17 +185,17 @@ which \textbf{reproduces buggy behavior} in \textbf{minimal} and \textbf{standal
 Typically, minimized files reduce the total number of lines of code involved in exhibiting buggy behavior by about a factor of three, making it significantly easier for developers to observe, play with, understand, and fix bugs.
 Furthermore, we have integrated the Coq Bug Minimizer with coqbot~\cite{zimmermann:hal-03479327} to trigger \textbf{automatically} on RDCT failures, reducing the friction of building minimized files.
 
-Test-case reduction has already a rich literature~\cite{chen_survey_compiler_testing}. However, it is focused mostly on traditional languages such as C, and even generic reduction techniques may not apply so well to proof assistants.
+Test-case reduction already has a rich literature~\cite{chen_survey_compiler_testing}. However, it is focused mostly on traditional languages such as C, and even generic reduction techniques may not apply so well to proof assistants.
 %
-In this paper, we share what we have learnt about where test-case reduction is harder and where it is easier in Coq than in traditional compilers, and describe how we got around the difficulties.
+In this paper, we share what we have learned about where test-case reduction is harder and where it is easier in Coq than in traditional compilers, and we describe how we got around the difficulties.
 Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case reduction has been and where the biggest opportunities for improvement remain.
 We believe that our methods may be of interest for developers of other proof assistants who are also facing a tradeoff between enabling evolution and preserving stability, in a context of industrial use.
 
 The structure of the paper is as follows.
-\autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
+\autoref{sec:example} introduces a constructed example of test-case reduction in Coq, articulating desiderata for test-case reduction in the proof-assistant setting.
 \autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq and, we expect, in other proof assistants.
-Then \autorefs{sec:error-messages,sec:minimal,sec:standalone,sec:smooth-dev-experience} explore the four desiderata and describe the details of our solution to the more important challenges of each; while we expect that most of these details will be specific to Coq, they highlight which aspects of proof assistant design are relevant to test-case reduction in a way that we expect will generalize to other proof assistants.
-\autoref{sec:alt-usage} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
+Then \autorefs{sec:error-messages,sec:minimal,sec:standalone,sec:smooth-dev-experience} explore the four desiderata and describe the details of our solution to the more important challenges of each; while we expect that most of these details will be specific to Coq, they highlight which aspects of proof-assistant design are relevant to test-case reduction in a way that we expect will generalize to other proof assistants.
+\autoref{sec:alt-usage} forays into the applicability of the Coq Bug Minimizer for bug-reporter workflow as a secondary use case.
 Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI, with analysis of how effectively different test cases were minimized; \autoref{sec:related-work} describes connections to related work; and \autoref{sec:future-work} discusses our thoughts on the most worthwhile improvements to make to our tooling.
 
 
@@ -203,7 +203,7 @@ Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI
 \section{Desiderata}\label{sec:example}
 
 
-Let's begin with a constructed example of minimizing an RDCT failure.
+Let us begin with a constructed example of minimizing an RDCT failure.
 Our objective is to explore the space of file modifications that will aid human understanding of the bug.
 Consider the following Coq source file:
 \begin{verbatim}
@@ -248,25 +248,25 @@ Proof. crush.
 From the above process we can extrapolate desiderata for the Coq Bug Minimizer.
 
 \begin{enumerate}
-\item \textbf{Reproducing buggy behavior:} Deciding when two source files indicate the same bug.
+\item \textbf{Reproducing buggy behavior,} deciding when two source files indicate the same bug.
 Many reasonable file simplifications lead to incidental changes in error messages.
-The Coq Bug Minimizer must tradeoff between preserving specific details of error messages and aiding human understanding of the underlying bug.
+The Coq Bug Minimizer must trade off between preserving specific details of error messages and aiding human understanding of the underlying bug.
 
-\item \textbf{Minimal files:} Exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting.
+\item \textbf{Minimal files,} exploring the space of program simplifications in a smart way with respect to constraints of the proof-assistant setting.
 Many research papers in the software-engineering community have been written on just this topic~\cite{Cleve2000,zeller2009programs,Burger2005,delta,Zeller2002}, but constraints in a proof-assistant setting are uncommon in conventional programming.
 For instance, highly automated Coq developments often have long compile times even for single files, so we may need to be more frugal in how many program variants we test.
 
-\item \textbf{Standalone files:} Creating standalone files that illuminate new test cases and can be added to Coq's internal test suite.
+\item \textbf{Standalone files,} creating standalone files that illuminate new test cases and can be added to Coq's internal test suite.
 This is difficult in dependently typed languages with metaprogramming facilities such as Coq.
-For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time resulting in tight coupling between files.
+For instance, eliminating needless dependencies in simply typed languages may be trivial, but dependently typed languages eliminate the distinction between runtime and compile time, resulting in tight coupling between files.
 
-\item \textbf{Smooth developer experience:} Automatically finding which file triggered a bug, with which compilation settings, including path information to find dependencies.
+\item \textbf{Smooth developer experience,} automatically finding which file triggered a bug, with which compilation settings, including path information to find dependencies.
 The Coq Bug Minimizer must work with the wide variety of build systems used in different Coq libraries.
 
 
 \end{enumerate}
 
-Achieving each desideratum posed interesting challenges, and required making several design choices.
+Achieving each desideratum posed interesting challenges and required making several design choices.
 Before proceeding to share solutions to these challenges, we note the ways in which test-case reduction is \emph{simpler} in the proof-assistant setting than in other settings.
 
 
@@ -276,7 +276,7 @@ Classic delta debugging~\cite{Zeller2002} is a technique in test-case reduction 
 It employs binary search through program structure to find subprograms that can be removed while preserving properties relevant to triggering specific bugs for the chosen compiler.
 Coq's lack of forward references permits a simpler method: first remove everything after the error-message-generating line, and then try removing the syntactic units beforehand in-order, one-at-a-time.
 Unlike in languages from Java to Haskell, where all functions in a file are considered mutually recursive, in Coq there should be no way for one error-message-generating line of a file to change behavior based on modifications to later lines.
-In this manner we reduce the number of ``experiments'' on program variants, which is especially useful when each program variant requires significant processing time as is often the case in Coq.
+In this manner we reduce the number of ``experiments'' on program variants, which is especially useful when each program variant requires significant processing time, as is often the case in Coq.
 
 Our empirical evaluation (\autoref{sec:evaluation}) demonstrates that this strategy is adequately performant.
 We conjecture that the reason for this adequate performance is that dependency trees of Coq theorems and proofs tend to be relatively deep compared to the number of definitions and theorems in any single file.
@@ -312,19 +312,19 @@ Rather than requiring output files to mimic the error messages exactly, we only 
 \section{Minimal Files}\label{sec:minimal}
 
 Test-case reduction is powerful in making long source files more comprehensible to developers.
-In addition to this, external projects in Coq can take minutes or hours to compile, so the edit-compile-test-debug loop is long.
+In addition, external projects in Coq can take minutes or hours to compile, so the edit-compile-test-debug loop is long.
 We have two additional goals to improve this workflow.
 \begin{enumerate}
-\item Finding minimal test cases as fast as possible, given that experimenting with each program variant has long compilation time.
-\item Compilation of the test case in seconds or fractions of a second so that developers can fluidly try hypotheses for solutions.
+\item Finding minimal test cases as quickly as possible, given that experimenting with each program variant has long compilation time
+\item Compilation of the test case in seconds or fractions of a second, so that developers can fluidly try hypotheses for solutions
 \end{enumerate}
 
 \subsection{Making the Minimization Process Itself Fast}
 
-In our goal to get the shortest reproducing test case as quickly as possible, it helps to first make any changes that might significantly speed up the execution time, and only after we're done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
+In our goal to get the shortest reproducing test case as quickly as possible, it helps to first make any changes that might significantly speed up the execution time, and only after we are done with all of the changes that might improve running time should we try to further minimize the file with changes that are unlikely to impact compile time.
 
 The slowest part of almost all Coq developments is proof scripts.
-(We expect this is also true of other tactic-based proof assistants.)
+(We expect the same is true of other tactic-based proof assistants.)
 Hence we attempt to remove proof scripts as early as possible.
 Since proof assistants check that proofs are valid, we cannot simply remove a proof, like we might remove a function body in a traditional programming language.
 However, most proof assistants have some mechanism for ``giving up'' on a proof or ``trusting'' the user, and Coq is no exception.
@@ -355,9 +355,9 @@ This way, we can remove the lemma block all at once.
 
 We could in theory deal with more complicated nesting structure, for example trying to remove an entire section or module at a time.
 The delta tool~\cite{delta} is in fact built around preprocessing the file into one that exposes nested structure clearly, then removing well-parenthesized blocks.
-However, removing statements, grouped into definitions as necessary, sufficies for removing time-consuming code.
+However, removing statements, grouped into definitions as necessary, suffices for removing time-consuming code.
 
-\subsubsection{The Program Construct}
+\subsubsection{The \texttt{Program} Construct}
 One Coq construct that does not fit neatly into this approach is \verb|Program|, where a function definition is associated with following proofs of obligations related to dependent typing.
 We cannot just look for \verb|Program| statements followed by \verb|Obligation| blocks to remove all together, because \verb|Obligation| blocks can be interleaved with other definitions.
 Luckily, we can replace any obligation block with a use of the \verb|Admit Obligations| command, which admits all remaining obligations---and it happily handles any case with \emph{no} remaining obligations, so we need not worry about introducing duplicate invocations.
@@ -378,10 +378,10 @@ Often that change renders later \verb|Import| commands redundant, so they are re
 One pass in the minimizer tries to replace traditional definitions with uses of the interactive proof mode, which is a first step toward admitting those proof bodies (i.e., postulating existence of identifiers rather than giving their definitions) in later steps.
 
 \subsubsection{Early Removal of Unused Constants}
-There are some likely-to-succeed steps that we try early on, which are superseded by removing each and every structured block one at a time but may result in faster minimization.
-The primary example of this sort of step is removing tactics, \verb|Variable| and \verb|Context| statements, and definitions which are not referred to at all after their definitions.
+There are some likely-to-succeed steps that we try early on, which are superseded by removing each and every structured block one-at-a-time but may result in faster minimization.
+The primary example of this sort of step is removing tactics, \verb|Variable| and \verb|Context| statements, and definitions that are not referenced after their definitions.
 
-\subsubsection{Splitting \texttt{Import} and \texttt{Export}s}\label{sec:split-imports}
+\subsubsection{Splitting \texttt{Import}s and \texttt{Export}s}\label{sec:split-imports}
 It may be the case that users import modules that they never use, such as in \texttt{Import unused1 used unused2}.
 To allow eventual removal of \verb|unused1| and \verb|unused2| even when the \verb|Import used| statement cannot be removed, we have a pass that attempts to split such statements into separate \verb|Import| statements, resulting in \texttt{Import unused1. Import used. Import unused2.}
 
@@ -416,7 +416,7 @@ While the complex structure of external developments is a boon to stress-testing
 \end{enumerate}
 
 Na\"ively, the way to produce a standalone file is to \emph{linearize} the dependency tree and combine the contents of all files.
-We saw an example of roughly this strategy in \autoref{sec:example}, and e.g.\ C compilers follow this strategy in preprocessing \verb|#include| statements.
+We saw an example of roughly this strategy in \autoref{sec:example}, and e.g.\ C compilers follow this strategy in preprocessing \verb|#include| directives.
 
 Two difficulties arise when following this strategy in Coq:
 \begin{enumerate}
@@ -435,7 +435,7 @@ For example, the constant \texttt{Coq.MSets.MSetPositive.PositiveSet.t} is defin
 If we were to inline this file into some other file \texttt{bug.v}, then the constant becomes \texttt{bug.PositiveSet.t}.
 We now have two choices: we can attempt to adjust the name of the constant on inlining, or we can adjust references to the constant.
 
-We combine these strategies to maximize the chance of succesfully inlining dependencies.
+We combine these strategies to maximize the chance of successfully inlining dependencies.
 
 First, as shown in the example in \autoref{sec:example}, we wrap the contents in a module whose name matches that of the file (in this case, we wrap the contents in \texttt{Module MSetPositive}).
 Furthermore, since users can refer to this constant as \texttt{Coq.MSets.MSetPositive.PositiveSet.t}, \texttt{MSets.MSetPositive.PositiveSet.t}, or \texttt{MSetPositive.PositiveSet.t}, we can wrap this module in further modules (\texttt{Coq} and \texttt{MSets}) and \texttt{Export} them to make this naming scheme available.
@@ -456,7 +456,7 @@ Hence we choose to resolve the names used in \texttt{Require}, \texttt{Import}, 
 \subsection{Addressing Nonlinearizability of Global State}\label{sec:linearize-global-state}
 While shadowing and name resolution are mechanically resolvable at least in theory, the global state of Coq is sufficiently disorganized that we are not aware of any fully general technical means of linearizing Coq files.\footnote{%
 The \texttt{Require} command results in many side effects, including global setting of flags, opacity, and argument status; behavior of \texttt{auto with *}; hint databases; global overwriting of Ltac definitions; presence or absence of constants that change the behavior of built-in tactics such as \texttt{tauto}; and even the presence of constants with certain kernel names can change shadowing behavior.
-Some of these effects can even be set on the command-line, and at present there is no way to determine what flags were used to compile a given installed file.
+Some of these effects can even be set on the command line, and at present there is no way to determine what flags were used to compile a given installed file.
 }
 Hence our approach here consists of several partial workarounds.
 
@@ -469,14 +469,14 @@ We try inserting the file being inlined at the top of the file, as well as at th
 In the future, we might also want to try moving \texttt{Require}s up higher in the file, to try to handle more situations.
 
 In \autoref{sec:future-work}, we discuss a few potential future avenues to better handling of global state.
-For example, we may want to more explicitly manage the state before and after inlining a file by taking advantange of Coq's ability to print the current settings of flags with \texttt{Print Options}.
+For example, we may want to more explicitly manage the state before and after inlining a file by taking advantage of Coq's ability to print the current settings of flags with \texttt{Print Options}.
 
 \subsection{Getting to Standalone Files Quickly}
-We have a flag that allows inlining dependencies all at once, much like \texttt{gcc} inlines all \verb|#include|d files at once.
+We have a flag that allows inlining dependencies all-at-once, much like \texttt{gcc} inlines all \verb|#include|d files at-once.
 While originally all files were minimized in that way, having to process such a large file slowed down minimization drastically, often resulting in minimization times of multiple weeks.
 As a result, the current default behavior is to minimize the current file before inlining other files.
 
-Futhermore, we want to ensure that we only inline files that are actually used.
+Furthermore, we want to ensure that we only inline files that are actually used.
 Much like we want to split \texttt{Import} and \verb|Export| statements in \autoref{sec:split-imports}, we also want to split \verb|Require| statements, for example from \texttt{Require unused1 used unused2.} to \texttt{Require unused1. Require used. Require unused2.}
 
 Additionally, if the buggy behavior depends on a file only for its own dependencies, we prefer to inline the transitive dependency directly rather than needing to inline the entire intermediate file.
@@ -513,7 +513,7 @@ We can locate the error message by looking for the last instance of \texttt{File
 (Note that warning messages also emit the \texttt{File $\ldots$} line, but we do not want to catch warnings.)
 We look for the last instance of the wrapper debug printout information that points at the same file, though, so long as we were careful always to build single-threadedly, we could instead just look for the most recent debug printout before the error message.
 
-Given this information, we adjust the arguments so that we can tell the bug minimizer where the dependencies live both for the passing and failing versions of Coq.
+Given this information, we adjust the arguments so that we can tell the bug minimizer where the dependencies live for both the passing and failing versions of Coq.
 We then pass this information to the bug minimizer:
 \begin{itemize}
 \item the location of the file to be minimized;
@@ -550,9 +550,9 @@ to customize the desired reproducing case, trusting that the entire file will no
 
 \subsection{Triggering the Minimizer}
 
-The Coq project uses a custom, multi-task bot to automate everyday tasks, including triggering CI and reporting its results to the GitHub repository~\cite{zimmermann:hal-03479327}. We have extended this bot to automatically propose and manage the minimization of failing test cases. The bot posts a comment to propose to run minimization when a PR has passed Coq's internal test suite but has failures with external projects, and these external projects have built successfully on the base commit (on the master branch).
+The Coq project uses a custom bot to automate everyday tasks, including triggering CI and reporting its results to the GitHub repository~\cite{zimmermann:hal-03479327}. We have extended this bot to automatically propose and manage the minimization of failing test cases. The bot posts a comment to propose to run minimization when a PR has passed Coq's internal test suite but has failures with external projects, where these external projects have built successfully on the base commit (on the master branch).
 
-If someone answers with a comment to trigger minimization, then the bot prepares a branch with all the information needed by the minimizer and pushes this branch to an external repository dedicated to running the minimizer. This triggers a GitHub Action workflow which will proceed with the minimization process. GitHub Action jobs have a 6-hour timeout, so by the limit, the bot answers back with the results of the minimization process. If the minimization was stopped because of the timeout, then the bot automatically restarts it by reusing the file obtained at the previous step.
+If someone answers with a comment to trigger minimization, then the bot prepares a branch with all the information needed by the minimizer and pushes this branch to an external repository dedicated to running the minimizer. This triggers a GitHub Action workflow that proceeds with the minimization process. GitHub Action jobs have a 6-hour timeout, so by the limit, the bot answers back with the results of the minimization process. If the minimization was stopped because of the timeout, then the bot automatically restarts it by reusing the file obtained at the previous step.
 
 \subsection{Research Questions}
 
@@ -561,7 +561,7 @@ To evaluate the usefulness of our bug minimizer, we investigate several research
 \item[RQ1:] How often does the minimizer successfully produce a reduced test case from the RDCT failure it was triggered on?
 \item[RQ2:] How often is this reduced test case fully standalone (no dependencies other than Coq's standard library)?
 \item[RQ3:] How long does it take to produce such reduced test cases?
-\item[RQ4:] What is the size of the reduced cases?
+\item[RQ4:] What are the sizes of the reduced cases?
 \item[RQ5:] How long do the reduced cases take to run?
 \item[RQ6:] What is the amount of code reduction?
 \end{description}
@@ -622,19 +622,19 @@ For failed runs, we observe that the average duration for the minimization to co
 
 For successful runs, we observe more variety. The minimum duration is 4 minutes (232 seconds), the maximum duration is 20 hours (73072 seconds), and the average is 104 minutes (6238 seconds). 50\% of the successful runs finish in under 20 minutes (1218 seconds), and 80\% finish in under 140 minutes (8396 seconds). This number is still reasonable compared to the time that contributors routinely spend waiting for the results of Coq's CI~\cite{zimmermann:tel-02451322}.
 
-\subsubsection{RQ4: What is the size of the reduced cases?}
+\subsubsection{RQ4: What are the sizes of the reduced cases?}
 
 For the last three questions, we focus mainly on the 42 recent minimization runs that are known to have produced standalone files.
 
 The shorter the reduced test case, the more useful it is: it can help developers understand the problem more quickly, and it makes it more likely that it will be added to Coq's test suite. Here again, there is some variety in the size of the reduced cases (counted in number of lines). The average size is 270 lines, and the maximum size is 2648 lines. However, 25\% of the reduced cases are under 39 lines, 50\% are under 114 lines, and 75\% are under 262 lines.
 
-Results on the full set of 144 successful mininimization runs are of the same order of magnitude, with an average at 367 lines and a maximum size of 3804 lines.
+Results on the full set of 144 successful minimization runs are of the same order of magnitude, with an average at 367 lines and a maximum size of 3804 lines.
 
 Developers have the option to perform additional minimization manually and restart the automatic minimization process on their manually reduced cases, which can help obtain even more reduced cases, but we have not evaluated this feature quantitatively.
 
 \subsubsection{RQ5: How long do the reduced cases take to run?}
 
-Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Our recent 42 standalone cases all had this field available. We observe that the reduced cases take on average 1.25 seconds to run, although 75\% of them take under half-a-second, while the maximum time is 26.5 seconds.
+Following a recent addition, the minimizer has reported the expected \texttt{coqc} compile time as part of the header comments in the minimized file. Our recent 42 standalone cases all had this field available. We observe that the reduced cases take on average 1.25 seconds to run, although 75\% of them take under half a second, while the maximum time is 26.5 seconds.
 
 \subsubsection{RQ6: What is the amount of code reduction?}
 
@@ -651,15 +651,15 @@ Evaluating a bug minimizer for a proof assistant such as Coq is difficult becaus
 While we have taken steps to ensure that the evaluation is as unbiased as possible (such as not using reruns of the  minimization on the same project in the same PR), our evaluation is still limited by our choice to use real use cases. In particular, it should be noted that our evaluation results are not obtained on a fixed version of the minimizer. On the contrary, the minimizer has evolved (and is still evolving) in reaction to the very same cases on which we have evaluated it.
 Since we always account only for first runs, many cases where the minimizer has been counted as failing have been eventually fixed and would result in successful runs today. Subsequent runs on other projects or other PRs may have succeeded thanks to earlier fixes.
 
-Other limitations are that our computation of the minimization duration is an overapproximation that also includes the time for things such as setting up a VM to run the process, and that our evaluation of several research questions is based only on a subset of recent minimizer runs.
+Other limitations are that our computation of the minimization duration is an overapproximation that also includes the time for e.g. setting up a VM to run the process, and that our evaluation of several research questions is based only on a subset of recent minimizer runs.
 
 Due to all these limitations, our evaluation should only be understood as demonstrating the feasibility of our approach and the usefulness of its application to the development of Coq. However, it should not be understood as a basis that future versions of the minimizer, or alternative minimizers, can compare to, since today's version would already obtain different results if it were rerun on all these cases.
 
 \section{Related Work}\label{sec:related-work}
 
-Our work is at the crossing of two research areas: research on debugging techniques, which is a subdomain of software-engineering research, and research on proof assistants.
+Our work is at the intersection of two research areas: research on debugging techniques, which is a subdomain of software-engineering research; and research on proof assistants.
 
-Debugging is a largely explored topic, but mostly with a focus on more mainstream and less formal languages than Coq.
+Debugging is a thoroughly explored topic, but mostly with a focus on more mainstream and less formal languages than Coq.
 In this research domain, test-case-reduction techniques have been studied for standard programming languages and compilers~\cite{chen_survey_compiler_testing}. There are two types of approaches that have been proposed. First, there are generic approaches that are supposed to work for any programming language, by using structure information on the program being reduced. Examples include delta debugging~\cite{Zeller2002} but also the generalized tree-reduction algorithm~\cite{herfert2017automatically} and the syntax-guided Perses tool~\cite{herfert2017automatically}. These generic techniques would not be likely to work well for Coq programs without careful adaptation, because many Coq programs can be considered syntactically valid even if completely nonsensical. For instance, we have already mentioned the issue with removing a \texttt{Qed} statement at the end of a tactic-based proof. Despite breaking a semantic block of code, this change does not actually produce a syntactically invalid Coq program.
 
 Second, there are programming-language-specific approaches, which take advantage of specific knowledge to make the test-case reduction more performant. Our own work is related to this second category, where most tools focus on mainstream languages like C. Some are even dedicated to reducing the output of specific test-generation frameworks such as Csmith~\cite{regehr2012test}.
@@ -684,7 +684,7 @@ We were pleasantly surprised to find that several ``shortcuts'' in the logistics
 In various places, we use workarounds (like \texttt{.glob} files) to avoid integrating a proper Coq parser, but there would be advantages like being able to remove specific fields from record types.
 We remove single commands at a time, rather than removing entire well-balanced command blocks, which probably costs us in minimization time.
 
-Integrating with Coq's parser would also allow us to more naturally handle code associated with Coq developments but which uses different statement-ending conventions than standard Coq code, such as coq-elpi code and OCaml plugin code.
+Integrating with Coq's parser would also allow us to more naturally handle code associated with Coq developments but that uses different statement-ending conventions than standard Coq code, such as coq-elpi code and OCaml plugin code.
 
 Another broader opportunity is finding related groups of commands that need to be removed together, to avoid changing the error message.
 For instance, we might want to move a lemma out of a module, to the top level of a file.
@@ -692,7 +692,7 @@ Removing the commands that open and close the module might suffice, even if remo
 A general-enough version of this process could replace many specific passes.
 
 One remaining aggravation is proper handling of lemma proofs within sections, where the details of the lemma proof influence which section variables are kept in the lemma's type.
-We could use the \verb|Set Suggest Proof Using| command to instruct Coq to tell us which section variables are used by each proof; we could then insert \verb|Proof using| clauses to allow us to replace the proof with \verb|Admitted| without changing the dependency on section variables.
+We could use the \verb|Set Suggest Proof Using| command to instruct Coq to tell us which section variables are used by each proof; we could then insert \verb|Proof using| clauses to allow us to replace proofs with \verb|Admitted| without changing dependencies on section variables.
 
 As mentioned in \autoref{sec:linearize-global-state}, we would like to improve the ability of the minimizer to linearize dependency trees and handle Coq's global state.
 We could, for example, print out the full table of flag settings at a particular point, reset them to the initial values before inlining a file, and then restore them after inlining.
