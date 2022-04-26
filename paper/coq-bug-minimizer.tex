@@ -191,7 +191,8 @@ In this paper, we share what we have learnt about where test-case reduction is h
 Drawing on empirical results from nearly a year of use in Coq's production CI system, we reflect on how effective our style of test-case reduction has been and where the biggest opportunities for improvement remain.
 We believe that our methods may be of interest for developers of other proof assistants who are also facing a tradeoff between enabling evolution and preserving stability, in a context of industrial use.
 
-For the mobile reader, \autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
+The structure of the paper is as follows.
+\autoref{sec:example} introduces a constructed example of test-case reduction in Coq, and articulates desiderata for test-case reduction in the proof-assistant setting.
 \autoref{sec:easier} details aspects of traditional-setting test-case reduction that are simpler or irrelevant in Coq and, we expect, in other proof assistants.
 Then \autorefs{sec:error-messages,sec:minimal,sec:standalone,sec:smooth-dev-experience} explore the four desiderata and describe the details of our solution to the more important challenges of each; while we expect that most of these details will be specific to Coq, they highlight which aspects of proof assistant design are relevant to test-case reduction in a way that we expect will generalize to other proof assistants.
 \autoref{sec:alt-usage} forays into the applicability of the Coq Bug Minimizer for bug reporter workflow as a secondary use case.
@@ -202,7 +203,7 @@ Finally, \autoref{sec:evaluation} presents our deployment in Coq's production CI
 \section{Desiderata}\label{sec:example}
 
 
-To add color to our picture, let's begin with a constructed example of minimizing an RDCT failure.
+Let's begin with a constructed example of minimizing an RDCT failure.
 Our objective is to explore the space of file modifications that will aid human understanding of the bug.
 Consider the following Coq source file:
 \begin{verbatim}
