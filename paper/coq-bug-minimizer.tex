@@ -21,16 +21,16 @@
 \title{Automatic Test-Case Reduction in Proof Assistants: A Case Study in Coq}
 \titlerunning{Automatic Test-Case Reduction in Coq}%TODO optional, please use if title is longer than one line
 
-\author{Jason Gross}{CSAIL, Massachusetts Institute of Technology, 77 Massachusetts Ave., Cambridge, MA 02139, USA \and MIRI, USA \and \url{https://jasongross.github.io/} }{jgross@mit.edu}{https://orcid.org/0000-0002-9427-4891}{}%TODO mandatory, please use full name; only 1 author per \author macro; first two parameters are mandatory, other parameters can be empty. Please provide at least the name of the affiliation and the country. The full address is optional. Use additional curly braces to indicate the correct name splitting when the last name consists of multiple name parts.
+\author{Jason Gross}{CSAIL, Massachusetts Institute of Technology, Cambridge, MA, USA \and Machine Intelligence Research Institute, Berkeley, CA, USA \and \url{https://jasongross.github.io/} }{jgross@mit.edu}{https://orcid.org/0000-0002-9427-4891}{}%TODO mandatory, please use full name; only 1 author per \author macro; first two parameters are mandatory, other parameters can be empty. Please provide at least the name of the affiliation and the country. The full address is optional. Use additional curly braces to indicate the correct name splitting when the last name consists of multiple name parts.
 
 \author{Théo Zimmermann}{Inria, Université Paris Cité, CNRS, IRIF, F-75013, Paris, France \and \url{https://www.theozimmermann.net} }{theo@irif.fr}{https://orcid.org/0000-0002-3580-8806}{}
 
-\author{Miraya Poddar-Agrawal}{Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA
+\author{Miraya Poddar-Agrawal}{Reed College, Portland, OR, USA
 }{ragrawal@reed.edu}{https://orcid.org/0000-0001-7617-9180}{}
 
-\author{Adam Chlipala}{CSAIL, Massachusetts Institute of Technology, 77 Massachusetts Ave., Cambridge, MA 02139, USA \and \url{http://adam.chlipala.net/} }{adamc@csail.mit.edu}{https://orcid.org/0000-0001-7085-9417}{}
+\author{Adam Chlipala}{CSAIL, Massachusetts Institute of Technology, Cambridge, MA, USA \and \url{http://adam.chlipala.net/} }{adamc@csail.mit.edu}{https://orcid.org/0000-0001-7085-9417}{}
 
-\authorrunning{J. Gross and T. Zimmermann and M. Poddar-Agrawal and A. Chlipala} %TODO mandatory. First: Use abbreviated first/middle names. Second (only in severe cases): Use first author plus 'et al.'
+\authorrunning{J. Gross, T. Zimmermann, M. Poddar-Agrawal, and A. Chlipala} %TODO mandatory. First: Use abbreviated first/middle names. Second (only in severe cases): Use first author plus 'et al.'
 
 \Copyright{Jason Gross and Théo Zimmermann and Miraya Poddar-Agrawal and Adam Chlipala} %TODO mandatory, please use full first names. LIPIcs license is "CC-BY";  http://creativecommons.org/licenses/by/3.0/
 
@@ -73,8 +73,13 @@
 \relatedversiondetails[%linktext={opt. text shown instead of the URL},
   cite=coqpl-15-coq-bug-minimizer]{Earlier}{https://jasongross.github.io/papers/2015-coq-bug-minimizer.pdf} %linktext and cite are optional
 
-\supplement{\url{https://doi.org/10.6084/m9.figshare.19141952.v1}, \\\url{https://github.com/JasonGross/coq-tools}}
-%\supplementdetails[linktext={opt. text shown instead of the URL}, cite=DBLP:books/mk/GrayR93, subcategory={Description, Subcategory}, swhid={Software Heritage Identifier}]{General Classification (e.g. Software, Dataset, Model, ...)}{URL to related version} %linktext, cite, and subcategory are optional
+%\supplement{\url{https://doi.org/10.6084/m9.figshare.19141952.v1}, \\\url{https://github.com/JasonGross/coq-tools}}
+\supplementdetails[%linktext={opt. text shown instead of the URL}, cite=DBLP:books/mk/GrayR93,
+subcategory={Data and Data Analysis Script}%, swhid={Software Heritage Identifier}
+]{Software}{https://doi.org/10.6084/m9.figshare.19141952.v1} %linktext, cite, and subcategory are optional
+\supplementdetails[%linktext={opt. text shown instead of the URL}, cite=DBLP:books/mk/GrayR93,
+subcategory={Source Code}%, swhid={Software Heritage Identifier}
+]{Software}{https://github.com/JasonGross/coq-tools} %linktext, cite, and subcategory are optional
 
 \funding{%
   This work was supported in part by a Google Research Award, National Science Foundation grants CCF-1253229, CCF-1512611, and CCF-1521584, and the National Science Foundation Graduate Research Fellowship under Grant Nos.\ 1122374 and 1745302.
@@ -166,7 +171,7 @@ We expect that our insights will generalize to other proof assistants.
 
 In the world of machine verification, the dream is to prove the correctness of every program.
 Projects such as Coq Coq Correct!~\cite{coq-coq-correct} make significant progress towards this dream for even our most foundational tools: proof assistants themselves.
-However, large swathes of proof-assistant software—such as tactic languages, elaboration hints, and document managers—remain unproven, lacking even adequate test-suite coverage.
+However, large swathes of proof-assistant software -- such as tactic languages, elaboration hints, and document managers -- remain unproven, lacking even adequate test-suite coverage.
 
 As a solution to expanding the test-suite coverage for the Coq proof assistant, developers adopted ``reverse dependency compatibility testing'' (RDCT)~\cite{ochoa2022breakbot,zimmermann:tel-02451322}, wherein changes in Coq are tested in continuous integration (CI) against a crowdsourced suite of external Coq projects maintained by different teams in different repositories.
 In this manner, user-centric concerns are well-addressed.
@@ -364,7 +369,7 @@ However, removing statements, grouped into definitions as necessary, suffices fo
 \subsubsection{The \texttt{Program} Construct}
 One Coq construct that does not fit neatly into this approach is \verb|Program|, where a function definition is associated with following proofs of obligations related to dependent typing.
 We cannot just look for \verb|Program| statements followed by \verb|Obligation| blocks to remove all together, because \verb|Obligation| blocks can be interleaved with other definitions.
-Luckily, we can replace any obligation block with a use of the \verb|Admit Obligations| command, which admits all remaining obligations---and it happily handles any case with \emph{no} remaining obligations, so we need not worry about introducing duplicate invocations.
+Luckily, we can replace any obligation block with a use of the \verb|Admit Obligations| command, which admits all remaining obligations -- and it happily handles any case with \emph{no} remaining obligations, so we need not worry about introducing duplicate invocations.
 
 \subsubsection{Empty Sections and Modules}
 Removing statements one-at-a-time will not always be able to remove empty sections (nor empty \verb|Module|s or \verb|Module Type|s).
