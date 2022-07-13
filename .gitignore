@@ -289,3 +289,8 @@ notebook/.ipynb_checkpoints
 
 # ITP Format
 *.vtc
+
+# PPTX presentation files
+presentation/*.pptx
+presentation/*.zip
+presentation/*.tmp/
