@@ -5,9 +5,14 @@ all: $(PPTX)
 
 define add_uncompress
 uncompress::
+	rm -rf $(1)
 	mkdir -p $(1)
 	unzip -od $(1) $(1).pptx
-	find $(1) -name "*.xml" | xargs sed -i 's/>/>\n/g'
+	for f in $$$$(find $(1) -name "*.xlsx"); do \
+	  unzip -od "$$$$f.dir" "$$$$f"; \
+	  rm -f "$$$$f"; \
+	done
+	find "$(1)" -name "*.xml" -o -name "*.rels" | xargs sed -i 's/>/>\n/g'
 endef
 
 $(foreach p,$(PPTX:.pptx=),$(eval $(call add_uncompress,$(p))))
@@ -19,14 +24,19 @@ $(PPTX:.pptx=.zip): %.zip : $$(wildcard %/* %/*/* %/*/*/* %/*/*/*/*)
 	rm -f $@
 	rm -rf $*.tmp
 	cp -a $* $*.tmp
-	for f in $$(find $*.tmp -name "*.xml"); do \
-	  cat $$f | tr '\n' '\0' | sed 's/>\x0/>/g' | tr '\0' '\n' > $$f.bak; \
-	  mv $$f.bak $$f; \
+	for f in $$(find $*.tmp -name "*.xml" -o -name "*.rels"); do \
+	  cat "$$f" | tr '\n' '\0' | sed 's/>\x0/>/g' | tr '\0' '\n' > "$$f.bak"; \
+	  mv "$$f.bak" "$$f"; \
 	done
-	cd $*.tmp && zip -r ../$@ .
+	for f in $$(find "$$(pwd)/$*.tmp" -name "*.xlsx.dir" -type d | sed 's/\.dir$$//g'); do \
+	  rm -f "$$f"; \
+	  (cd "$$f.dir" && zip -r "../$$(basename "$$f")" . ); \
+	  rm -rf "$$f.dir"; \
+	done
+	cd "$*.tmp" && zip -r "../$@" .
 
 $(PPTX): %.pptx: %.zip
-	cp $< $@
+	cp "$<" "$@"
 
 uncompress::
 .PHONY: uncompress
