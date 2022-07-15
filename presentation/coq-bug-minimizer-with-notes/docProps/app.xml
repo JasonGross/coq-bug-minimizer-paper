@@ -2,19 +2,19 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-3</TotalTime>
+13</TotalTime>
 <Words>
-30</Words>
+135</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-6</Paragraphs>
+20</Paragraphs>
 <Slides>
-2</Slides>
+4</Slides>
 <Notes>
-0</Notes>
+1</Notes>
 <HiddenSlides>
 0</HiddenSlides>
 <MMClips>
@@ -45,24 +45,28 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-2</vt:i4>
+4</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="6" baseType="lpstr">
+<vt:vector size="8" baseType="lpstr">
+<vt:lpstr>
+Calibri Light</vt:lpstr>
 <vt:lpstr>
 Calibri</vt:lpstr>
 <vt:lpstr>
 Arial</vt:lpstr>
 <vt:lpstr>
-Calibri Light</vt:lpstr>
-<vt:lpstr>
 Office Theme</vt:lpstr>
 <vt:lpstr>
 Automatic Test-Case Reduction in Proof Assistants A Case Study in Coq</vt:lpstr>
 <vt:lpstr>
-PowerPoint Presentation</vt:lpstr>
+Context</vt:lpstr>
+<vt:lpstr>
+What I did in my PhD (AKA Why I care about wasted dev time)</vt:lpstr>
+<vt:lpstr>
+This Presentation </vt:lpstr>
 </vt:vector>
 </TitlesOfParts>
 <LinksUpToDate>
