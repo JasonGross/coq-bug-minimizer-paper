@@ -3,6 +3,8 @@ PPTX := coq-bug-minimizer-with-notes.pptx
 all: $(PPTX)
 .PHONY: all
 
+FIND_ARGS_NEWLINE_EXTS := -name "*.xml" -o -name "*.rels" -o -name "*.svg"
+
 define add_uncompress
 uncompress::
 	rm -rf $(1)
@@ -12,7 +14,7 @@ uncompress::
 	  unzip -od "$$$$f.dir" "$$$$f"; \
 	  rm -f "$$$$f"; \
 	done
-	find "$(1)" -name "*.xml" -o -name "*.rels" | xargs sed -i 's/>/>\n/g'
+	find "$(1)" $(FIND_ARGS_NEWLINE_EXTS) | xargs sed -i 's/>/>\n/g'
 endef
 
 $(foreach p,$(PPTX:.pptx=),$(eval $(call add_uncompress,$(p))))
@@ -24,7 +26,7 @@ $(PPTX:.pptx=.zip): %.zip : $$(wildcard %/* %/*/* %/*/*/* %/*/*/*/*)
 	rm -f $@
 	rm -rf $*.tmp
 	cp -a $* $*.tmp
-	for f in $$(find $*.tmp -name "*.xml" -o -name "*.rels"); do \
+	for f in $$(find $*.tmp $(FIND_ARGS_NEWLINE_EXTS)); do \
 	  cat "$$f" | tr '\n' '\0' | sed 's/>\x0/>/g' | tr '\0' '\n' > "$$f.bak"; \
 	  mv "$$f.bak" "$$f"; \
 	done
