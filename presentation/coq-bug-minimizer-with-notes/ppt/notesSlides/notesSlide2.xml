@@ -46,6 +46,30 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
+This project started because I got tired of manually minimizing test-cases for reporting bugs in Coq.</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+The first commit dates to April 2013, and you can see a corresponding jump in my ability to report bugs from 2013 to 2014.</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Although I originally developed this tool to help me minimize freshly discovered bugs, I think it’s even more useful in helping developers debug regressions, and that’s the story I’ll be focusing on.</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
 Of the ≈9000 issues reported, I’ve reported over 1900.  (The next-most prolific reporter is at 226.)</a:t>
 </a:r>
 </a:p>

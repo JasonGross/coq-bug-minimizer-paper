@@ -63,7 +63,9 @@ This Presentation </a:t>
 </p:nvSpPr>
 <p:spPr/>
 <p:txBody>
-<a:bodyPr/>
+<a:bodyPr>
+<a:normAutofit fontScale="77500" lnSpcReduction="20000"/>
+</a:bodyPr>
 <a:lstStyle/>
 <a:p>
 <a:r>
@@ -79,7 +81,59 @@ Here I’ll be talking about a particular case of time wasted by proof assistant
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-This project arose out </a:t>
+The Coq Bug Minimizer is a tool for automatically reproducing buggy behavior with minimal and standalone files</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+I’ll Tell You:</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Origin Story</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+The Waste We Seek To Eliminate</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+How We Eliminate Waste</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+How We Make This Work</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+What You Might Want To Take Away For Your Proof Assistant</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Future Work</a:t>
 </a:r>
 </a:p>
 </p:txBody>
