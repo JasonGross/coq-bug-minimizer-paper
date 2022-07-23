@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-This Presentation </a:t>
+Outline</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -69,18 +69,11 @@ This Presentation </a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Here I’ll be talking about a particular case of time wasted by proof assistant developers, maintainers, and bug reporters, largely centered around dealing with regressions in the proof assistant</a:t>
+Context and The Problem</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-This project arose out </a:t>
-</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -137,7 +130,7 @@ ITP 2022</a:t>
 <a:fld id="{0C15E411-308A-4D86-8429-FD58BA44175C}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-4</a:t>
+6</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -146,7 +139,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1993174798"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2766084732"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

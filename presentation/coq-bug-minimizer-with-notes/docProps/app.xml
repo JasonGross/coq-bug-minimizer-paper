@@ -2,19 +2,19 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-13</TotalTime>
+2223</TotalTime>
 <Words>
-135</Words>
+210</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-20</Paragraphs>
+33</Paragraphs>
 <Slides>
-4</Slides>
+6</Slides>
 <Notes>
-1</Notes>
+2</Notes>
 <HiddenSlides>
 0</HiddenSlides>
 <MMClips>
@@ -45,12 +45,12 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-4</vt:i4>
+6</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="8" baseType="lpstr">
+<vt:vector size="10" baseType="lpstr">
 <vt:lpstr>
 Calibri Light</vt:lpstr>
 <vt:lpstr>
@@ -67,6 +67,10 @@ Context</vt:lpstr>
 What I did in my PhD (AKA Why I care about wasted dev time)</vt:lpstr>
 <vt:lpstr>
 This Presentation </vt:lpstr>
+<vt:lpstr>
+Origin Story: Coq Bug Reports By Year</vt:lpstr>
+<vt:lpstr>
+Outline</vt:lpstr>
 </vt:vector>
 </TitlesOfParts>
 <LinksUpToDate>

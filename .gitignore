@@ -294,3 +294,7 @@ notebook/.ipynb_checkpoints
 presentation/*.pptx
 presentation/*.zip
 presentation/*.tmp/
+
+presentation/all-issues.json
+presentation/all-issues.json.inprogress
+presentation/all-issues.json.tmp
