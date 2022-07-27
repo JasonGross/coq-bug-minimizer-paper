@@ -2,21 +2,21 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-2241</TotalTime>
+5375</TotalTime>
 <Words>
-342</Words>
+827</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-46</Paragraphs>
+136</Paragraphs>
 <Slides>
-7</Slides>
+24</Slides>
 <Notes>
 2</Notes>
 <HiddenSlides>
-0</HiddenSlides>
+13</HiddenSlides>
 <MMClips>
 0</MMClips>
 <ScaleCrop>
@@ -45,12 +45,12 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-7</vt:i4>
+24</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="11" baseType="lpstr">
+<vt:vector size="28" baseType="lpstr">
 <vt:lpstr>
 Calibri Light</vt:lpstr>
 <vt:lpstr>
@@ -62,17 +62,51 @@ Office Theme</vt:lpstr>
 <vt:lpstr>
 Automatic Test-Case Reduction in Proof Assistants A Case Study in Coq</vt:lpstr>
 <vt:lpstr>
+Category Theory Library Minimization in Coq</vt:lpstr>
+<vt:lpstr>
+Origin Story: Coq Bug Reports By Year</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+Goal: Automate This!</vt:lpstr>
+<vt:lpstr>
+What it looks like now:</vt:lpstr>
+<vt:lpstr>
+What needs to be automated?</vt:lpstr>
+<vt:lpstr>
+To Automate, we need a Spec</vt:lpstr>
+<vt:lpstr>
+How do we do this?</vt:lpstr>
+<vt:lpstr>
+How to make your proof assistant amenable to minimization</vt:lpstr>
+<vt:lpstr>
+Future Work</vt:lpstr>
+<vt:lpstr>
 Context</vt:lpstr>
 <vt:lpstr>
 What I did in my PhD (AKA Why I care about wasted dev time)</vt:lpstr>
 <vt:lpstr>
 This Presentation </vt:lpstr>
 <vt:lpstr>
-Origin Story: Coq Bug Reports By Year</vt:lpstr>
+What the Coq Bug Minimizer Does</vt:lpstr>
 <vt:lpstr>
-Time Wasted: Bug Reporters</vt:lpstr>
+How do you know it does it right?</vt:lpstr>
 <vt:lpstr>
-PowerPoint Presentation</vt:lpstr>
+How does it do it?</vt:lpstr>
+<vt:lpstr>
+Trouble with Inlining: Linearizability</vt:lpstr>
+<vt:lpstr>
+Plot about how often file is standalone</vt:lpstr>
+<vt:lpstr>
+Useful: no forward references</vt:lpstr>
+<vt:lpstr>
+Plot about time saved</vt:lpstr>
+<vt:lpstr>
+How long does minimizer take to run</vt:lpstr>
+<vt:lpstr>
+Coqbot Workflow</vt:lpstr>
+<vt:lpstr>
+Takeaways for Other Proof Assistants</vt:lpstr>
 </vt:vector>
 </TitlesOfParts>
 <LinksUpToDate>

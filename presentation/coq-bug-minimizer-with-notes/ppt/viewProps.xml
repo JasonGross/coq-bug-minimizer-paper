@@ -26,5 +26,14 @@
 <p:origin x="0" y="0"/>
 </p:cViewPr>
 </p:notesTextViewPr>
+<p:sorterViewPr>
+<p:cViewPr>
+<p:scale>
+<a:sx n="100" d="100"/>
+<a:sy n="100" d="100"/>
+</p:scale>
+<p:origin x="0" y="0"/>
+</p:cViewPr>
+</p:sorterViewPr>
 <p:gridSpacing cx="76200" cy="76200"/>
 </p:viewPr>
