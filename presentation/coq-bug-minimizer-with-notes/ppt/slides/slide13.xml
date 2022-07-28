@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{DD4B6D55-5604-4E73-929D-16C46E78C4AA}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{7703F409-61DA-4C4A-9D6E-9CB70DD1B431}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -37,7 +37,11 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Goal: Automate This!</a:t>
+</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -46,7 +50,7 @@
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E13F2430-6974-4322-A4C7-DA60FE93EEE5}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{842DFFD6-DCCF-4A4F-B6F4-BC7CBC069032}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -62,21 +66,7 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-And now that I’m a </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqdev</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, I also see this from the other side, making changes to Coq and having that introduce bugs that need to be debugged</a:t>
-</a:r>
+<a:endParaRPr lang="en-US"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -85,7 +75,7 @@ coqdev</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{24B72354-D291-489E-8C32-DA56FB21AA0E}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{017DD78E-C47D-426A-8EF2-2C595978FA9E}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -114,7 +104,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{AAA33F1C-80AC-4C70-ACF7-D4AC3406481D}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4BB91C45-D295-4FCD-B72E-8433DBFF9CA0}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -142,7 +132,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2033450912"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3913551364"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

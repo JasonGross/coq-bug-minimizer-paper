@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{3A1E504F-9140-45C2-9BD0-4E2CFD756DED}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D47F68F2-3837-4FEA-89FE-B8392148CDA8}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Future Work</a:t>
+What needs to be automated?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ Future Work</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D5442E0E-C522-4764-80B0-7A14EF795A31}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{20B95191-EBD9-44FD-9B2F-E7CB57CB0195}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,35 +69,37 @@ Future Work</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Better </a:t>
+Workflow automation (responding to user’s comment, replying as a comment)</a:t>
 </a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Removing code to shorten example (in compile time and loc)</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Adjustments to minimize compile time</a:t>
+</a:r>
+</a:p>
+<a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0" err="1"/>
 <a:t>
-inlining</a:t>
+Inlining</a:t>
 </a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ and linearization (to reduce complexity)</a:t>
+</a:r>
+</a:p>
+<a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-More minimization</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-More automation of bug reporter work flow</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Other proof assistants???</a:t>
-</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -106,7 +108,7 @@ Other proof assistants???</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4995442F-1097-4604-943A-CFAE7615CD93}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1F28ABAD-B6DB-41ED-9B2B-BBC9B0544040}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -135,7 +137,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9F8A79F1-3C18-4307-9C90-155CF5964429}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D28AA560-A50A-4A95-A663-DA333C19F4BF}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -163,7 +165,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1896450209"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2388925750"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

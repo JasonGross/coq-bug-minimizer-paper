@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1BF5EED2-54C8-4736-96D2-ABE6DF4CE8AC}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{5A50B304-B9AF-4FCB-B23D-E55F90FDA4BE}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -37,11 +37,7 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-What it looks like now:</a:t>
-</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -50,7 +46,7 @@ What it looks like now:</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{2DD29D6B-E4EF-4D52-911F-7D2978B20ECD}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{DE56E374-9322-4D03-B8C5-3655631CAD83}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -66,21 +62,7 @@ What it looks like now:</a:t>
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-@</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqbot</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- ci minimize workflow</a:t>
-</a:r>
+<a:endParaRPr lang="en-US"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -89,7 +71,7 @@ coqbot</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{FAC32474-0374-4486-BA5A-572877C8EB12}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{ED15D9DC-BF4F-44C9-B389-3BB5B1534F10}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -118,7 +100,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D4E4A873-B1F7-4B65-AE6E-52DF6AB810C2}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9ECDA20C-1131-4ACC-BA58-738E76E782AC}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -143,14 +125,281 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="7" name="Picture 6">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{ACAABE1C-9EC9-4B08-898C-AB1E9F9117AB}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr/>
+</p:nvPicPr>
+<p:blipFill rotWithShape="1">
+<a:blip r:embed="rId3"/>
+<a:srcRect t="64391" r="27927" b="-1"/>
+<a:stretch/>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="2967192"/>
+<a:ext cx="8787161" cy="2442116"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="8" name="Picture 7">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E8C86E43-9494-4809-9F81-618CEED4B892}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr/>
+</p:nvPicPr>
+<p:blipFill rotWithShape="1">
+<a:blip r:embed="rId4"/>
+<a:srcRect t="9931" r="27927" b="73380"/>
+<a:stretch/>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="5604669"/>
+<a:ext cx="8787161" cy="1144588"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="9" name="Picture 8">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E347A5B0-60C2-4285-A386-E0726BE790E5}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr/>
+</p:nvPicPr>
+<p:blipFill rotWithShape="1">
+<a:blip r:embed="rId3"/>
+<a:srcRect t="4065" r="27927" b="55284"/>
+<a:stretch/>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="0"/>
+<a:ext cx="8787161" cy="2787805"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
+<p:sp>
+<p:nvSpPr>
+<p:cNvPr id="12" name="Rectangle 11">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{F0FFEC33-2155-417A-BD7F-05E7395734AA}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvSpPr/>
+<p:nvPr/>
+</p:nvSpPr>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="6858000"/>
+<a:ext cx="8787161" cy="1340453"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+<a:blipFill dpi="0" rotWithShape="1">
+<a:blip r:embed="rId5">
+<a:alphaModFix amt="0"/>
+</a:blip>
+<a:srcRect/>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</a:blipFill>
+<a:ln>
+<a:noFill/>
+</a:ln>
+</p:spPr>
+<p:style>
+<a:lnRef idx="2">
+<a:schemeClr val="accent1">
+<a:shade val="50000"/>
+</a:schemeClr>
+</a:lnRef>
+<a:fillRef idx="1">
+<a:schemeClr val="accent1"/>
+</a:fillRef>
+<a:effectRef idx="0">
+<a:schemeClr val="accent1"/>
+</a:effectRef>
+<a:fontRef idx="minor">
+<a:schemeClr val="lt1"/>
+</a:fontRef>
+</p:style>
+<p:txBody>
+<a:bodyPr rtlCol="0" anchor="ctr"/>
+<a:lstStyle/>
+<a:p>
+<a:pPr algn="ctr"/>
+<a:endParaRPr lang="en-US"/>
+</a:p>
+</p:txBody>
+</p:sp>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="982738837"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2221203180"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
+<p:timing>
+<p:tnLst>
+<p:par>
+<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
+<p:childTnLst>
+<p:seq concurrent="1" nextAc="seek">
+<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
+<p:childTnLst>
+<p:par>
+<p:cTn id="3" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="4" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="5" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="6" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="7"/>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="7" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="8" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="10" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="8"/>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+<p:prevCondLst>
+<p:cond evt="onPrev" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:prevCondLst>
+<p:nextCondLst>
+<p:cond evt="onNext" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:nextCondLst>
+</p:seq>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:tnLst>
+</p:timing>
 </p:sld>

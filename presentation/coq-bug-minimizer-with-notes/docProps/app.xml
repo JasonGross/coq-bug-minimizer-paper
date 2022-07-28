@@ -2,23 +2,23 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-6615</TotalTime>
+7651</TotalTime>
 <Words>
-1084</Words>
+1266</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-189</Paragraphs>
+216</Paragraphs>
 <Slides>
-39</Slides>
+33</Slides>
 <Notes>
-10</Notes>
+16</Notes>
 <HiddenSlides>
-13</HiddenSlides>
+3</HiddenSlides>
 <MMClips>
-3</MMClips>
+2</MMClips>
 <ScaleCrop>
 false</ScaleCrop>
 <HeadingPairs>
@@ -45,12 +45,12 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-39</vt:i4>
+33</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="43" baseType="lpstr">
+<vt:vector size="37" baseType="lpstr">
 <vt:lpstr>
 Calibri</vt:lpstr>
 <vt:lpstr>
@@ -84,13 +84,11 @@ PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
 Origin Story: Coq Bug Reports By Year</vt:lpstr>
 <vt:lpstr>
-PowerPoint Presentation</vt:lpstr>
-<vt:lpstr>
 Goal: Automate This!</vt:lpstr>
 <vt:lpstr>
 PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
-What it looks like now:</vt:lpstr>
+Automating the coqdev experience</vt:lpstr>
 <vt:lpstr>
 PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
@@ -100,43 +98,33 @@ PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
 PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
-To Automate, we need a Spec</vt:lpstr>
+How Much Time Does This Save?</vt:lpstr>
 <vt:lpstr>
-To Automate, we need a Spec</vt:lpstr>
+How Long Does It Take?</vt:lpstr>
+<vt:lpstr>
+Minimizer Running Time CDF</vt:lpstr>
+<vt:lpstr>
+CI Running Time</vt:lpstr>
+<vt:lpstr>
+Specification Summary</vt:lpstr>
+<vt:lpstr>
+Specification Details</vt:lpstr>
 <vt:lpstr>
 What needs to be automated?</vt:lpstr>
 <vt:lpstr>
 How do we do this?</vt:lpstr>
 <vt:lpstr>
+Linearization</vt:lpstr>
+<vt:lpstr>
 How to make your proof assistant amenable to minimization</vt:lpstr>
 <vt:lpstr>
 Future Work</vt:lpstr>
-<vt:lpstr>
-Context</vt:lpstr>
 <vt:lpstr>
 What I did in my PhD (AKA Why I care about wasted dev time)</vt:lpstr>
 <vt:lpstr>
 This Presentation </vt:lpstr>
 <vt:lpstr>
-What the Coq Bug Minimizer Does</vt:lpstr>
-<vt:lpstr>
-How do you know it does it right?</vt:lpstr>
-<vt:lpstr>
-How does it do it?</vt:lpstr>
-<vt:lpstr>
-Trouble with Inlining: Linearizability</vt:lpstr>
-<vt:lpstr>
-Plot about how often file is standalone</vt:lpstr>
-<vt:lpstr>
-Useful: no forward references</vt:lpstr>
-<vt:lpstr>
-Plot about time saved</vt:lpstr>
-<vt:lpstr>
-How long does minimizer take to run</vt:lpstr>
-<vt:lpstr>
-Coqbot Workflow</vt:lpstr>
-<vt:lpstr>
-Takeaways for Other Proof Assistants</vt:lpstr>
+Minimizer Running Time</vt:lpstr>
 </vt:vector>
 </TitlesOfParts>
 <LinksUpToDate>

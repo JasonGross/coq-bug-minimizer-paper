@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="2" xr:uid="{CCD03CBF-0911-45C7-A56C-0F5078B4218F}" name="all_ci_pipelines" displayName="all_ci_pipelines" ref="A1:J29038" tableType="queryTable" totalsRowShown="0">
+<autoFilter ref="A1:J29038" xr:uid="{E7D6A77F-5017-4F57-BCF7-8B249486C435}"/>
+<tableColumns count="10">
+<tableColumn id="1" xr3:uid="{0652678F-5F33-4500-85D5-4ED37F0BC2A1}" uniqueName="1" name="created_at" queryTableFieldId="1" dataDxfId="6"/>
+<tableColumn id="2" xr3:uid="{D86FE377-AE2A-41C2-B79A-2BC6DBDB8273}" uniqueName="2" name="id" queryTableFieldId="2"/>
+<tableColumn id="3" xr3:uid="{6E0E407A-ED90-485D-8031-16B0CA2F4FED}" uniqueName="3" name="iid" queryTableFieldId="3"/>
+<tableColumn id="4" xr3:uid="{27329206-CD9D-4E83-A981-7D2BDA0DB580}" uniqueName="4" name="project_id" queryTableFieldId="4"/>
+<tableColumn id="5" xr3:uid="{FC91B6A5-47BF-4AE7-90B3-A7F85D00907C}" uniqueName="5" name="ref" queryTableFieldId="5" dataDxfId="5"/>
+<tableColumn id="6" xr3:uid="{1082AA64-4644-4C37-A14B-B3D0954DAB73}" uniqueName="6" name="sha" queryTableFieldId="6" dataDxfId="4"/>
+<tableColumn id="7" xr3:uid="{0FE8A775-CA8A-4610-8723-0C785C988DAF}" uniqueName="7" name="source" queryTableFieldId="7" dataDxfId="3"/>
+<tableColumn id="8" xr3:uid="{815582EB-94E7-4054-8DE4-E2B4B7BC0EC7}" uniqueName="8" name="status" queryTableFieldId="8" dataDxfId="2"/>
+<tableColumn id="9" xr3:uid="{A24401EA-372B-4B0C-9247-B16EFCF2807B}" uniqueName="9" name="updated_at" queryTableFieldId="9" dataDxfId="1"/>
+<tableColumn id="10" xr3:uid="{710E6876-7B50-4E66-A2F5-4E8C20A51A16}" uniqueName="10" name="web_url" queryTableFieldId="10" dataDxfId="0"/>
+</tableColumns>
+<tableStyleInfo name="TableStyleMedium7" showFirstColumn="0" showLastColumn="0" showRowStripes="1" showColumnStripes="0"/>
+</table>

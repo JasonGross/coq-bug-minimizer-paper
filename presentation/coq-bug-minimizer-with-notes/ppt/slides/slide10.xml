@@ -164,6 +164,9 @@ ITP 2022</a:t>
 <p:cTn id="3" fill="hold">
 <p:stCondLst>
 <p:cond delay="indefinite"/>
+<p:cond evt="onBegin" delay="0">
+<p:tn val="2"/>
+</p:cond>
 </p:stCondLst>
 <p:childTnLst>
 <p:par>
@@ -173,7 +176,7 @@ ITP 2022</a:t>
 </p:stCondLst>
 <p:childTnLst>
 <p:par>
-<p:cTn id="5" presetID="1" presetClass="mediacall" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:cTn id="5" presetID="1" presetClass="mediacall" presetSubtype="0" fill="hold" nodeType="afterEffect">
 <p:stCondLst>
 <p:cond delay="0"/>
 </p:stCondLst>

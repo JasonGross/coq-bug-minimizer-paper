@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" show="0">
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
 <p:cSld>
 <p:spTree>
 <p:nvGrpSpPr>
@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{B164663B-D326-4E3E-8A91-B9E0BDBBA1E8}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Context</a:t>
+How do we do this?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ Context</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{C51139A0-A4F1-4C68-A926-01A6C8C3D196}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,15 +69,28 @@ Context</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-I’m generally interested in finding things that waste developer time and figuring out how to automate them</a:t>
+Interfacing with Coq externally</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Why do I care?</a:t>
+Delta debugging / brute force</a:t>
 </a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Tricks for </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+inlining</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 <a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
@@ -89,7 +102,7 @@ Why do I care?</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{95BC93D2-37D6-4986-B656-71084BD3BD1F}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -118,7 +131,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{62B8B9DC-79C7-45DA-AD4F-07E502043EFD}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -146,7 +159,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2834627504"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1716998016"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
