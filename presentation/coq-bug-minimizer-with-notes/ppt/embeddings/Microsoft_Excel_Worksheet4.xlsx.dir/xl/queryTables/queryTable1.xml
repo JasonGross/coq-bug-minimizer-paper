@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<queryTable xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr16" xmlns:xr16="http://schemas.microsoft.com/office/spreadsheetml/2017/revision16" name="ExternalData_1" connectionId="1" xr16:uid="{A2FB74A2-8A0C-47F5-B39B-CF6D1C889CB9}" autoFormatId="16" applyNumberFormats="0" applyBorderFormats="0" applyFontFormats="0" applyPatternFormats="0" applyAlignmentFormats="0" applyWidthHeightFormats="0">
+<queryTableRefresh nextId="15">
+<queryTableFields count="14">
+<queryTableField id="1" name="target" tableColumnId="1"/>
+<queryTableField id="2" name="number" tableColumnId="2"/>
+<queryTableField id="3" name="date_start" tableColumnId="3"/>
+<queryTableField id="4" name="date_end" tableColumnId="4"/>
+<queryTableField id="5" name="body" tableColumnId="5"/>
+<queryTableField id="6" name="targets" tableColumnId="6"/>
+<queryTableField id="7" name="runtime" tableColumnId="7"/>
+<queryTableField id="8" name="initial_size" tableColumnId="8"/>
+<queryTableField id="9" name="final_size" tableColumnId="9"/>
+<queryTableField id="10" name="inline_failure" tableColumnId="10"/>
+<queryTableField id="11" name="truncated" tableColumnId="11"/>
+<queryTableField id="12" name="total_line_reduction" tableColumnId="12"/>
+<queryTableField id="13" name="success" tableColumnId="13"/>
+<queryTableField id="14" name="duration" tableColumnId="14"/>
+</queryTableFields>
+</queryTableRefresh>
+</queryTable>

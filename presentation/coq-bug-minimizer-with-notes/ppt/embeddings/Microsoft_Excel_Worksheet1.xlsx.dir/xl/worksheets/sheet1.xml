@@ -4,7 +4,7 @@
 <dimension ref="A1:F213"/>
 <sheetViews>
 <sheetView tabSelected="1" workbookViewId="0">
-<selection activeCell="D1" sqref="D1"/>
+<selection activeCell="F2" sqref="F2"/>
 </sheetView>
 </sheetViews>
 <sheetFormatPr defaultRowHeight="14.5" x14ac:dyDescent="0.35"/>

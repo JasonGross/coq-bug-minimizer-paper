@@ -60,6 +60,29 @@ Test 75 projects in the ecosystem</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
+Often takes 2—4 hours for the CI to complete and </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+coqbot</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US"/>
+<a:t>
+to reply</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
 TODO: insert how long projects take to run after </a:t>
 </a:r>
 <a:r>

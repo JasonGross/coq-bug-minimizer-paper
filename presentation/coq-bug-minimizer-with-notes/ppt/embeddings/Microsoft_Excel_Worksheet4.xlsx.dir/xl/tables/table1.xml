@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="2" xr:uid="{648610A5-DF8F-4C83-AE29-0E4AF1E4CEDC}" name="minimization_pairs" displayName="minimization_pairs" ref="A1:N251" tableType="queryTable" totalsRowShown="0">
+<autoFilter ref="A1:N251" xr:uid="{2AEF6F15-C97C-4784-BDBF-BBE8F9D32745}"/>
+<tableColumns count="14">
+<tableColumn id="1" xr3:uid="{646039B3-F657-487D-857B-C49D7F477540}" uniqueName="1" name="target" queryTableFieldId="1" dataDxfId="4"/>
+<tableColumn id="2" xr3:uid="{CCA64802-7826-4A08-A95E-22DA31DB87E7}" uniqueName="2" name="number" queryTableFieldId="2"/>
+<tableColumn id="3" xr3:uid="{487F24C4-0CED-4F03-A27F-3A33FA92E764}" uniqueName="3" name="date_start" queryTableFieldId="3" dataDxfId="3"/>
+<tableColumn id="4" xr3:uid="{B227E52D-71C9-4F28-83A1-702EBA01BDA1}" uniqueName="4" name="date_end" queryTableFieldId="4" dataDxfId="2"/>
+<tableColumn id="5" xr3:uid="{6FC20C60-303C-42B2-8C4E-D06F724E3BC2}" uniqueName="5" name="body" queryTableFieldId="5" dataDxfId="1"/>
+<tableColumn id="6" xr3:uid="{02191D0F-7F8D-4B6B-AA7D-D7C1875C24E3}" uniqueName="6" name="targets" queryTableFieldId="6" dataDxfId="0"/>
+<tableColumn id="7" xr3:uid="{F35DCF66-BE12-40D6-B829-32E40AB3647A}" uniqueName="7" name="runtime" queryTableFieldId="7"/>
+<tableColumn id="8" xr3:uid="{F74EE3CD-B600-40BA-BA7A-869FEC680A38}" uniqueName="8" name="initial_size" queryTableFieldId="8"/>
+<tableColumn id="9" xr3:uid="{C8CEF1CB-53E0-4678-A05A-06A3DBD3E822}" uniqueName="9" name="final_size" queryTableFieldId="9"/>
+<tableColumn id="10" xr3:uid="{E6520297-62A6-4D93-85A9-16A71B72E161}" uniqueName="10" name="inline_failure" queryTableFieldId="10"/>
+<tableColumn id="11" xr3:uid="{4745BE36-13CF-444C-A130-D35D8781E1D9}" uniqueName="11" name="truncated" queryTableFieldId="11"/>
+<tableColumn id="12" xr3:uid="{E8FB2EEF-D7D8-45BC-990D-39A79608D879}" uniqueName="12" name="total_line_reduction" queryTableFieldId="12"/>
+<tableColumn id="13" xr3:uid="{0CD3756B-8EF7-4063-8D44-19733CA0358C}" uniqueName="13" name="success" queryTableFieldId="13"/>
+<tableColumn id="14" xr3:uid="{34EFC643-5799-496B-A75C-1A8117202C32}" uniqueName="14" name="duration" queryTableFieldId="14"/>
+</tableColumns>
+<tableStyleInfo name="TableStyleMedium7" showFirstColumn="0" showLastColumn="0" showRowStripes="1" showColumnStripes="0"/>
+</table>
