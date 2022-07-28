@@ -2,23 +2,23 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-6365</TotalTime>
+6615</TotalTime>
 <Words>
-981</Words>
+1084</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-152</Paragraphs>
+189</Paragraphs>
 <Slides>
-25</Slides>
+39</Slides>
 <Notes>
-4</Notes>
+10</Notes>
 <HiddenSlides>
 13</HiddenSlides>
 <MMClips>
-0</MMClips>
+3</MMClips>
 <ScaleCrop>
 false</ScaleCrop>
 <HeadingPairs>
@@ -45,18 +45,18 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-25</vt:i4>
+39</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="29" baseType="lpstr">
-<vt:lpstr>
-Calibri Light</vt:lpstr>
+<vt:vector size="43" baseType="lpstr">
 <vt:lpstr>
 Calibri</vt:lpstr>
 <vt:lpstr>
 Arial</vt:lpstr>
+<vt:lpstr>
+Calibri Light</vt:lpstr>
 <vt:lpstr>
 Office Theme</vt:lpstr>
 <vt:lpstr>
@@ -64,13 +64,41 @@ Automatic Test-Case Reduction in Proof Assistants A Case Study in Coq</vt:lpstr>
 <vt:lpstr>
 Category Theory Library Minimization in Coq</vt:lpstr>
 <vt:lpstr>
+Category Theory Library Minimization in Coq</vt:lpstr>
+<vt:lpstr>
+Category Theory Library Minimization in Coq</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+Category Theory Library Minimization in Coq</vt:lpstr>
+<vt:lpstr>
+Category Theory Library Minimization in Coq</vt:lpstr>
+<vt:lpstr>
+Category Theory Library Minimization in Coq</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
 Origin Story: Coq Bug Reports By Year</vt:lpstr>
 <vt:lpstr>
 PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
 Goal: Automate This!</vt:lpstr>
 <vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
 What it looks like now:</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
+<vt:lpstr>
+PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
 To Automate, we need a Spec</vt:lpstr>
 <vt:lpstr>

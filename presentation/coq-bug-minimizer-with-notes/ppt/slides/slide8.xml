@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D6BA1D7C-CF31-447E-9464-488D49EECF0D}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{3784C6D9-B624-4F56-9759-9FE188AE8666}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,62 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-To Automate, we need a Spec</a:t>
-</a:r>
-</a:p>
-</p:txBody>
-</p:sp>
-<p:sp>
-<p:nvSpPr>
-<p:cNvPr id="3" name="Content Placeholder 2">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{EBCE240F-9556-481C-BA1F-D62215F2752D}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvSpPr>
-<a:spLocks noGrp="1"/>
-</p:cNvSpPr>
-<p:nvPr>
-<p:ph idx="1"/>
-</p:nvPr>
-</p:nvSpPr>
-<p:spPr/>
-<p:txBody>
-<a:bodyPr>
-<a:normAutofit/>
-</a:bodyPr>
-<a:lstStyle/>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-What does “the same possible problem” mean?</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:pPr lvl="1"/>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-In bug reporting case: “same” error message, without changing the final bit of code</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:pPr lvl="2"/>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-“print ‘exact Error message’” is not a valid minimization</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:pPr lvl="1"/>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-In CI case: should also succeed on the successful version of Coq</a:t>
+Category Theory Library Minimization in Coq</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -105,7 +50,7 @@ In CI case: should also succeed on the successful version of Coq</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{61383B3C-75F7-486C-9A9D-76F5655A2766}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{77AB9854-4D1E-4DF9-87EE-DA86618C8685}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -122,7 +67,7 @@ In CI case: should also succeed on the successful version of Coq</a:t>
 <a:lstStyle/>
 <a:p>
 <a:r>
-<a:rPr lang="en-US"/>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
 ITP 2022</a:t>
 </a:r>
@@ -134,7 +79,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{C320533C-2483-4E14-99DF-447E268914F9}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{0C258FD1-4CF5-4C8A-A4B0-C7096AE7D02F}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -159,10 +104,48 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="10" name="Content Placeholder 9">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{2F6B481C-2F7C-4DE3-9FDE-864898C070E8}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noGrp="1" noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr>
+<p:ph idx="1"/>
+</p:nvPr>
+</p:nvPicPr>
+<p:blipFill>
+<a:blip r:embed="rId3">
+<a:extLst>
+<a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+<a14:useLocalDpi xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" val="0"/>
+</a:ext>
+</a:extLst>
+</a:blip>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="-33453"/>
+<a:ext cx="12192000" cy="6488882"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1673432270"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="4113492986"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

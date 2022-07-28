@@ -46,49 +46,8 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-This project started because I got tired of manually minimizing test-cases for reporting bugs in Coq.</a:t>
+https://github.com/HoTT/coq/issues/7</a:t>
 </a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-The first commit dates to April 2013, and you can see a corresponding jump in my ability to report bugs from 2013 to 2014.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Although I originally developed this tool to help me minimize freshly discovered bugs, I think it’s even more useful in helping developers debug regressions, and that’s the story I’ll be focusing on.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Of the ≈9000 issues reported, I’ve reported over 1900.  (The next-most prolific reporter is at 226.)</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-GitHub transition happened in October 2017</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Plot includes everyone who’s reported more than three issues ever; all of the three-and-under contributors are lumped together and displayed up top.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -119,7 +78,7 @@ Plot includes everyone who’s reported more than three issues ever; all of the 
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="77782482"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3237931894"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

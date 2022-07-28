@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1BF5EED2-54C8-4736-96D2-ABE6DF4CE8AC}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{5083E9F8-A211-4BFF-A158-408BDE3459CE}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -37,50 +37,7 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-What it looks like now:</a:t>
-</a:r>
-</a:p>
-</p:txBody>
-</p:sp>
-<p:sp>
-<p:nvSpPr>
-<p:cNvPr id="3" name="Content Placeholder 2">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{2DD29D6B-E4EF-4D52-911F-7D2978B20ECD}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvSpPr>
-<a:spLocks noGrp="1"/>
-</p:cNvSpPr>
-<p:nvPr>
-<p:ph idx="1"/>
-</p:nvPr>
-</p:nvSpPr>
-<p:spPr/>
-<p:txBody>
-<a:bodyPr/>
-<a:lstStyle/>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-@</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqbot</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- ci minimize workflow</a:t>
-</a:r>
+<a:endParaRPr lang="en-US"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -89,7 +46,7 @@ coqbot</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{FAC32474-0374-4486-BA5A-572877C8EB12}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{129D1F97-0D4E-4B16-A085-E20346CBCA50}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -118,7 +75,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D4E4A873-B1F7-4B65-AE6E-52DF6AB810C2}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9ACB9BE8-7601-4806-BC9C-824E6A69BBD9}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -143,10 +100,45 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="9" name="Content Placeholder 8">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E26E9D88-C709-415F-8DCB-D6CB4CA3F951}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noGrp="1" noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr>
+<p:ph idx="1"/>
+</p:nvPr>
+</p:nvPicPr>
+<p:blipFill>
+<a:blip r:embed="rId2">
+<a:extLst>
+<a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+<a14:useLocalDpi xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" val="0"/>
+</a:ext>
+</a:extLst>
+</a:blip>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="-33453"/>
+<a:ext cx="12192000" cy="6488882"/>
+</a:xfrm>
+</p:spPr>
+</p:pic>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="982738837"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="852689263"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

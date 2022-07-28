@@ -46,17 +46,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Talk about problem being only potential, e.g., replacing “1 + 1” as </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-nat</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- vs Z</a:t>
+https://github.com/HoTT/coq/issues/7</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -79,7 +69,7 @@ nat</a:t>
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-7</a:t>
+4</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -88,7 +78,7 @@ nat</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3290160189"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2050760467"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

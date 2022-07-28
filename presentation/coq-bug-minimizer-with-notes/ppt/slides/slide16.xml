@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" show="0">
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
 <p:cSld>
 <p:spTree>
 <p:nvGrpSpPr>
@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{2A89A933-2BDD-419B-8264-2715A89FA0A0}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1BF5EED2-54C8-4736-96D2-ABE6DF4CE8AC}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-What the Coq Bug Minimizer Does</a:t>
+What it looks like now:</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ What the Coq Bug Minimizer Does</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{84A47AEE-6F89-4B9E-B1F1-5BC5E727B4FE}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{2DD29D6B-E4EF-4D52-911F-7D2978B20ECD}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,14 +69,17 @@ What the Coq Bug Minimizer Does</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-You give it big development where Coq emits some error message</a:t>
+@</a:t>
 </a:r>
-</a:p>
-<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+coqbot</a:t>
+</a:r>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-It gives you a small hopefully standalone file with the same error message</a:t>
+ ci minimize workflow</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -86,7 +89,7 @@ It gives you a small hopefully standalone file with the same error message</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1E2CF37A-DCA6-4253-B4C7-1D36FD60AA05}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{FAC32474-0374-4486-BA5A-572877C8EB12}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -115,7 +118,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{BB4DF845-8A65-4A06-843A-FB0FDA9634A1}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D4E4A873-B1F7-4B65-AE6E-52DF6AB810C2}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -143,7 +146,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="4253681684"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="982738837"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

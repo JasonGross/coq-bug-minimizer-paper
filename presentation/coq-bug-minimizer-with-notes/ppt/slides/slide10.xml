@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{3784C6D9-B624-4F56-9759-9FE188AE8666}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,60 +40,8 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How do we do this?</a:t>
+Category Theory Library Minimization in Coq</a:t>
 </a:r>
-</a:p>
-</p:txBody>
-</p:sp>
-<p:sp>
-<p:nvSpPr>
-<p:cNvPr id="3" name="Content Placeholder 2">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvSpPr>
-<a:spLocks noGrp="1"/>
-</p:cNvSpPr>
-<p:nvPr>
-<p:ph idx="1"/>
-</p:nvPr>
-</p:nvSpPr>
-<p:spPr/>
-<p:txBody>
-<a:bodyPr/>
-<a:lstStyle/>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Interfacing with Coq externally</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Delta debugging / brute force</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Tricks for </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -102,7 +50,7 @@ inlining</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{77AB9854-4D1E-4DF9-87EE-DA86618C8685}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -119,7 +67,7 @@ inlining</a:t>
 <a:lstStyle/>
 <a:p>
 <a:r>
-<a:rPr lang="en-US"/>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
 ITP 2022</a:t>
 </a:r>
@@ -131,7 +79,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{0C258FD1-4CF5-4C8A-A4B0-C7096AE7D02F}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -156,14 +104,187 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="7" name="explawbug-minimize-removelines-03-30">
+<a:hlinkClick r:id="" action="ppaction://media"/>
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9D8FA44B-2311-455E-8338-0C65ABF6593B}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr>
+<a:videoFile r:link="rId2"/>
+<p:extLst>
+<p:ext uri="{DAA4B4D4-6D71-4841-9C94-3DE7FCFB9230}">
+<p14:media xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" r:embed="rId1"/>
+</p:ext>
+</p:extLst>
+</p:nvPr>
+</p:nvPicPr>
+<p:blipFill>
+<a:blip r:embed="rId5"/>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="0" y="-33453"/>
+<a:ext cx="12192000" cy="6488113"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1716998016"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1104700023"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
+<p:timing>
+<p:tnLst>
+<p:par>
+<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
+<p:childTnLst>
+<p:seq concurrent="1" nextAc="seek">
+<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
+<p:childTnLst>
+<p:par>
+<p:cTn id="3" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="4" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="5" presetID="1" presetClass="mediacall" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:cmd type="call" cmd="playFrom(0.0)">
+<p:cBhvr>
+<p:cTn id="6" dur="48984" fill="hold"/>
+<p:tgtEl>
+<p:spTgt spid="7"/>
+</p:tgtEl>
+</p:cBhvr>
+</p:cmd>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+<p:prevCondLst>
+<p:cond evt="onPrev" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:prevCondLst>
+<p:nextCondLst>
+<p:cond evt="onNext" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:nextCondLst>
+</p:seq>
+<p:video>
+<p:cMediaNode vol="80000">
+<p:cTn id="7" fill="hold" display="0">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="7"/>
+</p:tgtEl>
+</p:cMediaNode>
+</p:video>
+<p:seq concurrent="1" nextAc="seek">
+<p:cTn id="8" restart="whenNotActive" fill="hold" evtFilter="cancelBubble" nodeType="interactiveSeq">
+<p:stCondLst>
+<p:cond evt="onClick" delay="0">
+<p:tgtEl>
+<p:spTgt spid="7"/>
+</p:tgtEl>
+</p:cond>
+</p:stCondLst>
+<p:endSync evt="end" delay="0">
+<p:rtn val="all"/>
+</p:endSync>
+<p:childTnLst>
+<p:par>
+<p:cTn id="9" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="10" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="11" presetID="2" presetClass="mediacall" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:cmd type="call" cmd="togglePause">
+<p:cBhvr>
+<p:cTn id="12" dur="1" fill="hold"/>
+<p:tgtEl>
+<p:spTgt spid="7"/>
+</p:tgtEl>
+</p:cBhvr>
+</p:cmd>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+<p:nextCondLst>
+<p:cond evt="onClick" delay="0">
+<p:tgtEl>
+<p:spTgt spid="7"/>
+</p:tgtEl>
+</p:cond>
+</p:nextCondLst>
+</p:seq>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:tnLst>
+</p:timing>
 </p:sld>

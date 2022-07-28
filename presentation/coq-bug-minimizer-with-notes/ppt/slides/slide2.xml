@@ -47,93 +47,6 @@ Category Theory Library Minimization in Coq</a:t>
 </p:sp>
 <p:sp>
 <p:nvSpPr>
-<p:cNvPr id="3" name="Content Placeholder 2">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{A6690388-BB5C-40E0-84A3-2E7E7578CF05}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvSpPr>
-<a:spLocks noGrp="1"/>
-</p:cNvSpPr>
-<p:nvPr>
-<p:ph idx="1"/>
-</p:nvPr>
-</p:nvSpPr>
-<p:spPr/>
-<p:txBody>
-<a:bodyPr/>
-<a:lstStyle/>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Insert example here</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Anomaly</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Want to be a friendly bug reporter (not have </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqdevs</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- spend forever compiling)</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Tedious attempts to remove code</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Tricky </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- of files</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Much time spent, including waiting to compiler</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-</p:txBody>
-</p:sp>
-<p:sp>
-<p:nvSpPr>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
@@ -187,6 +100,31 @@ ITP 2022</a:t>
 <a:t>
 2</a:t>
 </a:fld>
+<a:endParaRPr lang="en-US"/>
+</a:p>
+</p:txBody>
+</p:sp>
+<p:sp>
+<p:nvSpPr>
+<p:cNvPr id="11" name="Content Placeholder 10">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E314AB43-84EA-4ED8-845E-431FAB1B7093}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvSpPr>
+<a:spLocks noGrp="1"/>
+</p:cNvSpPr>
+<p:nvPr>
+<p:ph idx="1"/>
+</p:nvPr>
+</p:nvSpPr>
+<p:spPr/>
+<p:txBody>
+<a:bodyPr/>
+<a:lstStyle/>
+<a:p>
 <a:endParaRPr lang="en-US"/>
 </a:p>
 </p:txBody>

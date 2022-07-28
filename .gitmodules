@@ -1,0 +1,6 @@
+[submodule "presentation/initial-bug/HoTT-coq"]
+	path = presentation/initial-bug/HoTT-coq
+	url = git@github.com:HoTT/coq.git
+[submodule "presentation/initial-bug/catdb"]
+	path = presentation/initial-bug/catdb
+	url = git@github.com:JasonGross/catdb.git
