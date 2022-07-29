@@ -297,5 +297,5 @@ presentation/*.zip
 presentation/*.tmp/
 
 presentation/all-issues.json
-presentation/*.json.inprogress
-presentation/*.json.tmp
+*.json.inprogress
+*.json.tmp
