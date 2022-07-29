@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cx:chartSpace xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex">
+<cx:chartData>
+<cx:data id="0">
+<cx:strDim type="cat">
+<cx:f>
+_xlchart.v1.0</cx:f>
+</cx:strDim>
+<cx:numDim type="val">
+<cx:f>
+_xlchart.v1.2</cx:f>
+</cx:numDim>
+</cx:data>
+<cx:data id="1">
+<cx:strDim type="cat">
+<cx:f>
+_xlchart.v1.0</cx:f>
+</cx:strDim>
+<cx:numDim type="val">
+<cx:f>
+_xlchart.v1.4</cx:f>
+</cx:numDim>
+</cx:data>
+</cx:chartData>
+<cx:chart>
+<cx:plotArea>
+<cx:plotAreaRegion>
+<cx:plotSurface>
+<cx:spPr>
+<a:solidFill>
+<a:srgbClr val="00B050" />
+</a:solidFill>
+</cx:spPr>
+</cx:plotSurface>
+<cx:series layoutId="boxWhisker" uniqueId="{CF03E6AF-DE2E-4DF3-BF5A-F4A628A94C48}">
+<cx:tx>
+<cx:txData>
+<cx:f>
+_xlchart.v1.1</cx:f>
+<cx:v>
+failed job</cx:v>
+</cx:txData>
+</cx:tx>
+<cx:spPr>
+<a:solidFill>
+<a:srgbClr val="FF0000" />
+</a:solidFill>
+<a:ln>
+<a:solidFill>
+<a:srgbClr val="C00000" />
+</a:solidFill>
+</a:ln>
+</cx:spPr>
+<cx:dataId val="0" />
+<cx:layoutPr>
+<cx:statistics quartileMethod="exclusive" />
+</cx:layoutPr>
+</cx:series>
+<cx:series layoutId="boxWhisker" uniqueId="{82FB3F24-2654-422A-8B8A-CD150DEB1051}">
+<cx:tx>
+<cx:txData>
+<cx:f>
+_xlchart.v1.3</cx:f>
+<cx:v>
+successful job</cx:v>
+</cx:txData>
+</cx:tx>
+<cx:spPr>
+<a:solidFill>
+<a:srgbClr val="00B050" />
+</a:solidFill>
+<a:ln>
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000" />
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+</cx:spPr>
+<cx:dataId val="1" />
+<cx:layoutPr>
+<cx:statistics quartileMethod="exclusive" />
+</cx:layoutPr>
+</cx:series>
+</cx:plotAreaRegion>
+<cx:axis id="0">
+<cx:catScaling gapWidth="1" />
+<cx:tickLabels />
+</cx:axis>
+<cx:axis id="1">
+<cx:valScaling max="0.14000000000000001" />
+<cx:majorGridlines />
+<cx:tickLabels />
+<cx:numFmt formatCode="[h]&quot;h&quot;m&quot;m&quot;;@" sourceLinked="0" />
+</cx:axis>
+</cx:plotArea>
+</cx:chart>
+<cx:printSettings>
+<cx:headerFooter alignWithMargins="1" differentOddEven="0" differentFirst="0" />
+<cx:pageMargins l="0.69999999999999996" r="0.69999999999999996" t="0.75" b="0.75" header="0.29999999999999999" footer="0.29999999999999999" />
+<cx:pageSetup paperSize="1" firstPageNumber="1" orientation="default" blackAndWhite="0" draft="0" useFirstPageNumber="0" horizontalDpi="600" verticalDpi="600" copies="1" />
+</cx:printSettings>
+</cx:chartSpace>

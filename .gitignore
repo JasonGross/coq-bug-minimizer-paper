@@ -292,6 +292,7 @@ notebook/.ipynb_checkpoints
 
 # PPTX presentation files
 presentation/*.pptx
+presentation/*.xlsx
 presentation/*.zip
 presentation/*.tmp/
 

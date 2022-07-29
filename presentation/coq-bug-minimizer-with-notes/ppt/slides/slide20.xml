@@ -278,13 +278,13 @@ ITP 2022</a:t>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
-<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
-<mc:Choice xmlns:p159="http://schemas.microsoft.com/office/powerpoint/2015/09/main" Requires="p159">
+<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p159="http://schemas.microsoft.com/office/powerpoint/2015/09/main">
+<mc:Choice Requires="p159">
 <p:transition spd="slow" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" p14:dur="2000">
 <p159:morph option="byObject"/>
 </p:transition>
 </mc:Choice>
-<mc:Fallback>
+<mc:Fallback xmlns="">
 <p:transition spd="slow">
 <p:fade/>
 </p:transition>

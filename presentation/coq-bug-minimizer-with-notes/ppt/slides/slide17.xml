@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-TODO: how long do projects take on CI?</a:t>
+How Long Do Projects Take On CI?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -66,56 +66,7 @@ TODO: how long do projects take on CI?</a:t>
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-Bbv</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, bedrock2, color, f-c-l, </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-gappa</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-itauto</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, rewriter, </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-Verdi_raft</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-vst</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- </a:t>
-</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -178,64 +129,36 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
-<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
-<mc:Choice xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" Requires="cx1">
-<p:graphicFrame>
-<p:nvGraphicFramePr>
-<p:cNvPr id="8" name="Chart 7">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E41C58B9-C19B-4EE1-8F05-CDA8A202FDBD}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvGraphicFramePr/>
-<p:nvPr/>
-</p:nvGraphicFramePr>
-<p:xfrm>
-<a:off x="2032000" y="719666"/>
-<a:ext cx="8128000" cy="5418667"/>
-</p:xfrm>
-<a:graphic>
-<a:graphicData uri="http://schemas.microsoft.com/office/drawing/2014/chartex">
-<cx:chart xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="rId2"/>
-</a:graphicData>
-</a:graphic>
-</p:graphicFrame>
-</mc:Choice>
-<mc:Fallback>
 <p:pic>
 <p:nvPicPr>
-<p:cNvPr id="8" name="Chart 7">
+<p:cNvPr id="7" name="Picture 6">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E41C58B9-C19B-4EE1-8F05-CDA8A202FDBD}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{C2A3104B-3B03-403F-A917-612A91A6B369}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
 <p:cNvPicPr>
-<a:picLocks noGrp="1" noRot="1" noChangeAspect="1" noMove="1" noResize="1" noEditPoints="1" noAdjustHandles="1" noChangeArrowheads="1" noChangeShapeType="1"/>
+<a:picLocks noChangeAspect="1"/>
 </p:cNvPicPr>
 <p:nvPr/>
 </p:nvPicPr>
 <p:blipFill>
-<a:blip r:embed="rId3"/>
+<a:blip r:embed="rId2"/>
 <a:stretch>
 <a:fillRect/>
 </a:stretch>
 </p:blipFill>
 <p:spPr>
 <a:xfrm>
-<a:off x="2032000" y="719666"/>
-<a:ext cx="8128000" cy="5418667"/>
+<a:off x="1280772" y="1494263"/>
+<a:ext cx="9630456" cy="4682699"/>
 </a:xfrm>
 <a:prstGeom prst="rect">
 <a:avLst/>
 </a:prstGeom>
 </p:spPr>
 </p:pic>
-</mc:Fallback>
-</mc:AlternateContent>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">

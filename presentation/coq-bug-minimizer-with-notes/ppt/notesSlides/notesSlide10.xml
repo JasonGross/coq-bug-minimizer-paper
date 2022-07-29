@@ -70,25 +70,14 @@ coqbot</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
- to reply</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-TODO: insert how long projects take to run after </a:t>
+ </a:t>
 </a:r>
 <a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:rPr lang="en-US"/>
 <a:t>
-coqbot</a:t>
+to reply</a:t>
 </a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- reply to talk about, point out ones from this slide</a:t>
-</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>

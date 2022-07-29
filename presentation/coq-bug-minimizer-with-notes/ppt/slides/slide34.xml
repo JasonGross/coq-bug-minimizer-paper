@@ -45,8 +45,8 @@ Minimizer Running Time</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
-<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
-<mc:Choice xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" Requires="cx1">
+<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex">
+<mc:Choice Requires="cx1">
 <p:graphicFrame>
 <p:nvGraphicFramePr>
 <p:cNvPr id="8" name="Content Placeholder 7">
@@ -79,7 +79,7 @@ Minimizer Running Time</a:t>
 </a:graphic>
 </p:graphicFrame>
 </mc:Choice>
-<mc:Fallback>
+<mc:Fallback xmlns="">
 <p:pic>
 <p:nvPicPr>
 <p:cNvPr id="8" name="Content Placeholder 7">

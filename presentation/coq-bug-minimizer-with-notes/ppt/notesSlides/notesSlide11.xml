@@ -73,23 +73,6 @@ coqbot</a:t>
  to reply</a:t>
 </a:r>
 </a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-TODO: insert how long projects take to run after </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqbot</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- reply to talk about, point out ones from this slide</a:t>
-</a:r>
-</a:p>
 </p:txBody>
 </p:sp>
 <p:sp>

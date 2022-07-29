@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="25" uniqueCount="6">
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="6" uniqueCount="6">
 <si>
 <t>
-Series1</t>
+n</t>
 </si>
 <si>
 <t>
-Series2</t>
+%</t>
 </si>
 <si>
 <t>
-Series3</t>
+%2</t>
 </si>
 <si>
 <t>
-Category 1</t>
+successful runs</t>
 </si>
 <si>
 <t>
-Category 2</t>
+failing runs</t>
 </si>
 <si>
 <t>
-Category 3</t>
+%3</t>
 </si>
 </sst>
