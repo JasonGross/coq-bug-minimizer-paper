@@ -156,35 +156,6 @@ ITP 2022</a:t>
 </p:pic>
 <p:pic>
 <p:nvPicPr>
-<p:cNvPr id="8" name="Picture 7">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E8C86E43-9494-4809-9F81-618CEED4B892}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvPicPr>
-<a:picLocks noChangeAspect="1"/>
-</p:cNvPicPr>
-<p:nvPr/>
-</p:nvPicPr>
-<p:blipFill rotWithShape="1">
-<a:blip r:embed="rId4"/>
-<a:srcRect t="9931" r="27927" b="73380"/>
-<a:stretch/>
-</p:blipFill>
-<p:spPr>
-<a:xfrm>
-<a:off x="0" y="5604669"/>
-<a:ext cx="8787161" cy="1144588"/>
-</a:xfrm>
-<a:prstGeom prst="rect">
-<a:avLst/>
-</a:prstGeom>
-</p:spPr>
-</p:pic>
-<p:pic>
-<p:nvPicPr>
 <p:cNvPr id="9" name="Picture 8">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
@@ -233,7 +204,7 @@ ITP 2022</a:t>
 <a:avLst/>
 </a:prstGeom>
 <a:blipFill dpi="0" rotWithShape="1">
-<a:blip r:embed="rId5">
+<a:blip r:embed="rId4">
 <a:alphaModFix amt="0"/>
 </a:blip>
 <a:srcRect/>
@@ -315,52 +286,6 @@ ITP 2022</a:t>
 </p:cTn>
 <p:tgtEl>
 <p:spTgt spid="7"/>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="7" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="8" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="10" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="8"/>
 </p:tgtEl>
 <p:attrNameLst>
 <p:attrName>

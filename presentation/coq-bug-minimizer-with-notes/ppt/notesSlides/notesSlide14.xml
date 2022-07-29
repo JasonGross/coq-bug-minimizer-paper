@@ -43,7 +43,21 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Talk about problem being only potential, e.g., replacing “1 + 1” as </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+nat</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ vs Z</a:t>
+</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -74,7 +88,7 @@
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2948300905"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3290160189"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

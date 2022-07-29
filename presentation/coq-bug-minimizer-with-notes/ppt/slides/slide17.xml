@@ -178,6 +178,64 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
+<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+<mc:Choice xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" Requires="cx1">
+<p:graphicFrame>
+<p:nvGraphicFramePr>
+<p:cNvPr id="8" name="Chart 7">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E41C58B9-C19B-4EE1-8F05-CDA8A202FDBD}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvGraphicFramePr/>
+<p:nvPr/>
+</p:nvGraphicFramePr>
+<p:xfrm>
+<a:off x="2032000" y="719666"/>
+<a:ext cx="8128000" cy="5418667"/>
+</p:xfrm>
+<a:graphic>
+<a:graphicData uri="http://schemas.microsoft.com/office/drawing/2014/chartex">
+<cx:chart xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="rId2"/>
+</a:graphicData>
+</a:graphic>
+</p:graphicFrame>
+</mc:Choice>
+<mc:Fallback>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="8" name="Chart 7">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E41C58B9-C19B-4EE1-8F05-CDA8A202FDBD}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noGrp="1" noRot="1" noChangeAspect="1" noMove="1" noResize="1" noEditPoints="1" noAdjustHandles="1" noChangeArrowheads="1" noChangeShapeType="1"/>
+</p:cNvPicPr>
+<p:nvPr/>
+</p:nvPicPr>
+<p:blipFill>
+<a:blip r:embed="rId3"/>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="2032000" y="719666"/>
+<a:ext cx="8128000" cy="5418667"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
+</mc:Fallback>
+</mc:AlternateContent>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">

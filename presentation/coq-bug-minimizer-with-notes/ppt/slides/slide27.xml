@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D47F68F2-3837-4FEA-89FE-B8392148CDA8}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How do we do this?</a:t>
+What needs to be automated?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ How do we do this?</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{20B95191-EBD9-44FD-9B2F-E7CB57CB0195}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,28 +69,34 @@ How do we do this?</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Interfacing with Coq externally</a:t>
+Workflow automation (responding to user’s comment, replying as a comment)</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Delta debugging / brute force</a:t>
+Removing code to shorten example (in compile time and loc)</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Tricks for </a:t>
+Adjustments to minimize compile time</a:t>
 </a:r>
+</a:p>
+<a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0" err="1"/>
 <a:t>
-inlining</a:t>
+Inlining</a:t>
 </a:r>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ and linearization (to reduce complexity)</a:t>
+</a:r>
 </a:p>
 <a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
@@ -102,7 +108,7 @@ inlining</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1F28ABAD-B6DB-41ED-9B2B-BBC9B0544040}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -131,7 +137,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D28AA560-A50A-4A95-A663-DA333C19F4BF}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -159,7 +165,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1716998016"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2388925750"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

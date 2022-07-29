@@ -1,0 +1,2056 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cx:chartSpace xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex">
+<cx:chartData>
+<cx:externalData r:id="rId1" cx:autoUpdate="0" />
+<cx:data id="0">
+<cx:strDim type="cat">
+<cx:f>
+Sheet1!$A$2:$A$246</cx:f>
+<cx:lvl ptCount="245">
+<cx:pt idx="0">
+ci-metacoq</cx:pt>
+<cx:pt idx="1">
+ci-elpi</cx:pt>
+<cx:pt idx="2">
+ci-hott</cx:pt>
+<cx:pt idx="3">
+ci-metacoq</cx:pt>
+<cx:pt idx="4">
+ci-sf</cx:pt>
+<cx:pt idx="5">
+ci-metacoq</cx:pt>
+<cx:pt idx="6">
+ci-iris</cx:pt>
+<cx:pt idx="7">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="8">
+ci-category_theory</cx:pt>
+<cx:pt idx="9">
+ci-itauto</cx:pt>
+<cx:pt idx="10">
+ci-equations</cx:pt>
+<cx:pt idx="11">
+ci-aac_tactics</cx:pt>
+<cx:pt idx="12">
+ci-bbv</cx:pt>
+<cx:pt idx="13">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="14">
+ci-metacoq</cx:pt>
+<cx:pt idx="15">
+ci-argosy</cx:pt>
+<cx:pt idx="16">
+ci-metacoq</cx:pt>
+<cx:pt idx="17">
+ci-metacoq</cx:pt>
+<cx:pt idx="18">
+ci-equations</cx:pt>
+<cx:pt idx="19">
+ci-category_theory</cx:pt>
+<cx:pt idx="20">
+ci-mtac2</cx:pt>
+<cx:pt idx="21">
+ci-fourcolor</cx:pt>
+<cx:pt idx="22">
+ci-vst</cx:pt>
+<cx:pt idx="23">
+ci-hott</cx:pt>
+<cx:pt idx="24">
+ci-elpi</cx:pt>
+<cx:pt idx="25">
+ci-category_theory</cx:pt>
+<cx:pt idx="26">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="27">
+ci-category_theory</cx:pt>
+<cx:pt idx="28">
+ci-equations</cx:pt>
+<cx:pt idx="29">
+ci-color</cx:pt>
+<cx:pt idx="30">
+ci-hott</cx:pt>
+<cx:pt idx="31">
+ci-equations</cx:pt>
+<cx:pt idx="32">
+ci-perennial</cx:pt>
+<cx:pt idx="33">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="34">
+ci-coquelicot</cx:pt>
+<cx:pt idx="35">
+ci-rewriter</cx:pt>
+<cx:pt idx="36">
+ci-unimath</cx:pt>
+<cx:pt idx="37">
+ci-metacoq</cx:pt>
+<cx:pt idx="38">
+ci-equations</cx:pt>
+<cx:pt idx="39">
+ci-equations</cx:pt>
+<cx:pt idx="40">
+ci-rewriter</cx:pt>
+<cx:pt idx="41">
+ci-metacoq</cx:pt>
+<cx:pt idx="42">
+ci-mtac2</cx:pt>
+<cx:pt idx="43">
+ci-stdlib2</cx:pt>
+<cx:pt idx="44">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="45">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="46">
+ci-bedrock2</cx:pt>
+<cx:pt idx="47">
+ci-bedrock2</cx:pt>
+<cx:pt idx="48">
+ci-quickchick</cx:pt>
+<cx:pt idx="49">
+ci-bedrock2</cx:pt>
+<cx:pt idx="50">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="51">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="52">
+ci-mathcomp</cx:pt>
+<cx:pt idx="53">
+ci-iris</cx:pt>
+<cx:pt idx="54">
+ci-hott</cx:pt>
+<cx:pt idx="55">
+ci-bedrock2</cx:pt>
+<cx:pt idx="56">
+ci-category_theory</cx:pt>
+<cx:pt idx="57">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="58">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="59">
+ci-rewriter</cx:pt>
+<cx:pt idx="60">
+ci-quickchick</cx:pt>
+<cx:pt idx="61">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="62">
+ci-math_classes</cx:pt>
+<cx:pt idx="63">
+ci-coq_performance_tests</cx:pt>
+<cx:pt idx="64">
+ci-elpi</cx:pt>
+<cx:pt idx="65">
+ci-quickchick</cx:pt>
+<cx:pt idx="66">
+ci-quickchick</cx:pt>
+<cx:pt idx="67">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="68">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="69">
+ci-menhir</cx:pt>
+<cx:pt idx="70">
+ci-unimath</cx:pt>
+<cx:pt idx="71">
+ci-argosy</cx:pt>
+<cx:pt idx="72">
+ci-coquelicot</cx:pt>
+<cx:pt idx="73">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="74">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="75">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="76">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="77">
+ci-bbv</cx:pt>
+<cx:pt idx="78">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="79">
+ci-mtac2</cx:pt>
+<cx:pt idx="80">
+ci-category_theory</cx:pt>
+<cx:pt idx="81">
+ci-hott</cx:pt>
+<cx:pt idx="82">
+ci-metacoq</cx:pt>
+<cx:pt idx="83">
+ci-bedrock2</cx:pt>
+<cx:pt idx="84">
+ci-metacoq</cx:pt>
+<cx:pt idx="85">
+ci-hott</cx:pt>
+<cx:pt idx="86">
+ci-hott</cx:pt>
+<cx:pt idx="87">
+ci-bbv</cx:pt>
+<cx:pt idx="88">
+ci-iris</cx:pt>
+<cx:pt idx="89">
+ci-sf</cx:pt>
+<cx:pt idx="90">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="91">
+ci-rewriter</cx:pt>
+<cx:pt idx="92">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="93">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="94">
+ci-compcert</cx:pt>
+<cx:pt idx="95">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="96">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="97">
+ci-hott</cx:pt>
+<cx:pt idx="98">
+ci-flocq</cx:pt>
+<cx:pt idx="99">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="100">
+ci-bedrock2</cx:pt>
+<cx:pt idx="101">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="102">
+ci-gappa</cx:pt>
+<cx:pt idx="103">
+ci-bedrock2</cx:pt>
+<cx:pt idx="104">
+ci-math_classes</cx:pt>
+<cx:pt idx="105">
+ci-rewriter</cx:pt>
+<cx:pt idx="106">
+ci-vst</cx:pt>
+<cx:pt idx="107">
+ci-fcsl_pcm</cx:pt>
+<cx:pt idx="108">
+ci-vst</cx:pt>
+<cx:pt idx="109">
+ci-compcert</cx:pt>
+<cx:pt idx="110">
+ci-bedrock2</cx:pt>
+<cx:pt idx="111">
+ci-mtac2</cx:pt>
+<cx:pt idx="112">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="113">
+ci-compcert</cx:pt>
+<cx:pt idx="114">
+ci-hott</cx:pt>
+<cx:pt idx="115">
+ci-vst</cx:pt>
+<cx:pt idx="116">
+ci-category_theory</cx:pt>
+<cx:pt idx="117">
+ci-bedrock2</cx:pt>
+<cx:pt idx="118">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="119">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="120">
+ci-perennial</cx:pt>
+<cx:pt idx="121">
+ci-menhir</cx:pt>
+<cx:pt idx="122">
+ci-rewriter</cx:pt>
+<cx:pt idx="123">
+ci-math_classes</cx:pt>
+<cx:pt idx="124">
+ci-category_theory</cx:pt>
+<cx:pt idx="125">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="126">
+ci-quickchick</cx:pt>
+<cx:pt idx="127">
+ci-iris</cx:pt>
+<cx:pt idx="128">
+ci-iris</cx:pt>
+<cx:pt idx="129">
+ci-perennial</cx:pt>
+<cx:pt idx="130">
+ci-hott</cx:pt>
+<cx:pt idx="131">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="132">
+ci-perennial</cx:pt>
+<cx:pt idx="133">
+ci-mtac2</cx:pt>
+<cx:pt idx="134">
+ci-perennial</cx:pt>
+<cx:pt idx="135">
+ci-hott</cx:pt>
+<cx:pt idx="136">
+ci-iris</cx:pt>
+<cx:pt idx="137">
+ci-vst</cx:pt>
+<cx:pt idx="138">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="139">
+ci-interval</cx:pt>
+<cx:pt idx="140">
+ci-unimath</cx:pt>
+<cx:pt idx="141">
+ci-compcert</cx:pt>
+<cx:pt idx="142">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="143">
+ci-menhir</cx:pt>
+<cx:pt idx="144">
+ci-color</cx:pt>
+<cx:pt idx="145">
+ci-mathcomp</cx:pt>
+<cx:pt idx="146">
+ci-rewriter</cx:pt>
+<cx:pt idx="147">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="148">
+ci-compcert</cx:pt>
+<cx:pt idx="149">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="150">
+ci-math_classes</cx:pt>
+<cx:pt idx="151">
+ci-color</cx:pt>
+<cx:pt idx="152">
+ci-hott</cx:pt>
+<cx:pt idx="153">
+ci-itauto</cx:pt>
+<cx:pt idx="154">
+ci-iris</cx:pt>
+<cx:pt idx="155">
+ci-bedrock2</cx:pt>
+<cx:pt idx="156">
+ci-coqprime</cx:pt>
+<cx:pt idx="157">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="158">
+ci-perennial</cx:pt>
+<cx:pt idx="159">
+ci-perennial</cx:pt>
+<cx:pt idx="160">
+ci-hott</cx:pt>
+<cx:pt idx="161">
+ci-iris</cx:pt>
+<cx:pt idx="162">
+ci-tlc</cx:pt>
+<cx:pt idx="163">
+ci-menhir</cx:pt>
+<cx:pt idx="164">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="165">
+ci-tlc</cx:pt>
+<cx:pt idx="166">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="167">
+ci-coqprime</cx:pt>
+<cx:pt idx="168">
+ci-bedrock2</cx:pt>
+<cx:pt idx="169">
+ci-geocoq</cx:pt>
+<cx:pt idx="170">
+ci-fcsl_pcm</cx:pt>
+<cx:pt idx="171">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="172">
+ci-tlc</cx:pt>
+<cx:pt idx="173">
+ci-hott</cx:pt>
+<cx:pt idx="174">
+ci-sf</cx:pt>
+<cx:pt idx="175">
+ci-hott</cx:pt>
+<cx:pt idx="176">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="177">
+ci-hott</cx:pt>
+<cx:pt idx="178">
+ci-iris</cx:pt>
+<cx:pt idx="179">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="180">
+ci-rewriter</cx:pt>
+<cx:pt idx="181">
+ci-hott</cx:pt>
+<cx:pt idx="182">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="183">
+ci-argosy</cx:pt>
+<cx:pt idx="184">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="185">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="186">
+ci-hott</cx:pt>
+<cx:pt idx="187">
+ci-argosy</cx:pt>
+<cx:pt idx="188">
+ci-iris</cx:pt>
+<cx:pt idx="189">
+ci-unimath</cx:pt>
+<cx:pt idx="190">
+ci-vst</cx:pt>
+<cx:pt idx="191">
+ci-hott</cx:pt>
+<cx:pt idx="192">
+ci-bignums</cx:pt>
+<cx:pt idx="193">
+ci-metacoq</cx:pt>
+<cx:pt idx="194">
+ci-perennial</cx:pt>
+<cx:pt idx="195">
+ci-color</cx:pt>
+<cx:pt idx="196">
+ci-hott</cx:pt>
+<cx:pt idx="197">
+ci-vst</cx:pt>
+<cx:pt idx="198">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="199">
+ci-color</cx:pt>
+<cx:pt idx="200">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="201">
+ci-iris</cx:pt>
+<cx:pt idx="202">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="203">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="204">
+ci-mathcomp</cx:pt>
+<cx:pt idx="205">
+ci-hott</cx:pt>
+<cx:pt idx="206">
+ci-geocoq</cx:pt>
+<cx:pt idx="207">
+ci-iris</cx:pt>
+<cx:pt idx="208">
+ci-bedrock2</cx:pt>
+<cx:pt idx="209">
+ci-iris</cx:pt>
+<cx:pt idx="210">
+ci-perennial</cx:pt>
+<cx:pt idx="211">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="212">
+ci-metacoq</cx:pt>
+<cx:pt idx="213">
+ci-color</cx:pt>
+<cx:pt idx="214">
+ci-vst</cx:pt>
+<cx:pt idx="215">
+ci-vst</cx:pt>
+<cx:pt idx="216">
+ci-iris</cx:pt>
+<cx:pt idx="217">
+ci-perennial</cx:pt>
+<cx:pt idx="218">
+ci-unimath</cx:pt>
+<cx:pt idx="219">
+ci-bedrock2</cx:pt>
+<cx:pt idx="220">
+ci-coq_performance_tests</cx:pt>
+<cx:pt idx="221">
+ci-perennial</cx:pt>
+<cx:pt idx="222">
+ci-metacoq</cx:pt>
+<cx:pt idx="223">
+ci-coq_performance_tests</cx:pt>
+<cx:pt idx="224">
+ci-perennial</cx:pt>
+<cx:pt idx="225">
+ci-vst</cx:pt>
+<cx:pt idx="226">
+ci-bedrock2</cx:pt>
+<cx:pt idx="227">
+ci-finmap</cx:pt>
+<cx:pt idx="228">
+ci-rewriter</cx:pt>
+<cx:pt idx="229">
+ci-bedrock2</cx:pt>
+<cx:pt idx="230">
+ci-rewriter</cx:pt>
+<cx:pt idx="231">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="232">
+ci-compcert</cx:pt>
+<cx:pt idx="233">
+ci-perennial</cx:pt>
+<cx:pt idx="234">
+ci-mathcomp</cx:pt>
+<cx:pt idx="235">
+ci-color</cx:pt>
+<cx:pt idx="236">
+ci-mathcomp</cx:pt>
+<cx:pt idx="237">
+ci-perennial</cx:pt>
+<cx:pt idx="238">
+ci-category_theory</cx:pt>
+<cx:pt idx="239">
+ci-jasmin</cx:pt>
+<cx:pt idx="240">
+ci-vst</cx:pt>
+<cx:pt idx="241">
+ci-bedrock2</cx:pt>
+<cx:pt idx="242">
+ci-bedrock2</cx:pt>
+<cx:pt idx="243">
+ci-analysis</cx:pt>
+<cx:pt idx="244">
+ci-mathcomp</cx:pt>
+</cx:lvl>
+</cx:strDim>
+<cx:numDim type="val">
+<cx:f>
+Sheet1!$C$2:$C$246</cx:f>
+<cx:lvl ptCount="245" formatCode="General">
+<cx:pt idx="0">
+0</cx:pt>
+<cx:pt idx="1">
+0</cx:pt>
+<cx:pt idx="2">
+0</cx:pt>
+<cx:pt idx="3">
+0</cx:pt>
+<cx:pt idx="4">
+0</cx:pt>
+<cx:pt idx="5">
+0</cx:pt>
+<cx:pt idx="6">
+0</cx:pt>
+<cx:pt idx="7">
+0</cx:pt>
+<cx:pt idx="8">
+0</cx:pt>
+<cx:pt idx="9">
+0</cx:pt>
+<cx:pt idx="10">
+0</cx:pt>
+<cx:pt idx="11">
+232</cx:pt>
+<cx:pt idx="12">
+236</cx:pt>
+<cx:pt idx="13">
+238</cx:pt>
+<cx:pt idx="14">
+0</cx:pt>
+<cx:pt idx="15">
+256</cx:pt>
+<cx:pt idx="16">
+0</cx:pt>
+<cx:pt idx="17">
+0</cx:pt>
+<cx:pt idx="18">
+270</cx:pt>
+<cx:pt idx="19">
+0</cx:pt>
+<cx:pt idx="20">
+283</cx:pt>
+<cx:pt idx="21">
+0</cx:pt>
+<cx:pt idx="22">
+0</cx:pt>
+<cx:pt idx="23">
+0</cx:pt>
+<cx:pt idx="24">
+311</cx:pt>
+<cx:pt idx="25">
+0</cx:pt>
+<cx:pt idx="26">
+322</cx:pt>
+<cx:pt idx="27">
+0</cx:pt>
+<cx:pt idx="28">
+323</cx:pt>
+<cx:pt idx="29">
+0</cx:pt>
+<cx:pt idx="30">
+0</cx:pt>
+<cx:pt idx="31">
+338</cx:pt>
+<cx:pt idx="32">
+339</cx:pt>
+<cx:pt idx="33">
+347</cx:pt>
+<cx:pt idx="34">
+352</cx:pt>
+<cx:pt idx="35">
+359</cx:pt>
+<cx:pt idx="36">
+360</cx:pt>
+<cx:pt idx="37">
+0</cx:pt>
+<cx:pt idx="38">
+360</cx:pt>
+<cx:pt idx="39">
+367</cx:pt>
+<cx:pt idx="40">
+369</cx:pt>
+<cx:pt idx="41">
+370</cx:pt>
+<cx:pt idx="42">
+370</cx:pt>
+<cx:pt idx="43">
+373</cx:pt>
+<cx:pt idx="44">
+379</cx:pt>
+<cx:pt idx="45">
+380</cx:pt>
+<cx:pt idx="46">
+387</cx:pt>
+<cx:pt idx="47">
+387</cx:pt>
+<cx:pt idx="48">
+388</cx:pt>
+<cx:pt idx="49">
+391</cx:pt>
+<cx:pt idx="50">
+0</cx:pt>
+<cx:pt idx="51">
+394</cx:pt>
+<cx:pt idx="52">
+402</cx:pt>
+<cx:pt idx="53">
+0</cx:pt>
+<cx:pt idx="54">
+430</cx:pt>
+<cx:pt idx="55">
+0</cx:pt>
+<cx:pt idx="56">
+457</cx:pt>
+<cx:pt idx="57">
+459</cx:pt>
+<cx:pt idx="58">
+467</cx:pt>
+<cx:pt idx="59">
+477</cx:pt>
+<cx:pt idx="60">
+481</cx:pt>
+<cx:pt idx="61">
+485</cx:pt>
+<cx:pt idx="62">
+486</cx:pt>
+<cx:pt idx="63">
+496</cx:pt>
+<cx:pt idx="64">
+527</cx:pt>
+<cx:pt idx="65">
+0</cx:pt>
+<cx:pt idx="66">
+534</cx:pt>
+<cx:pt idx="67">
+539</cx:pt>
+<cx:pt idx="68">
+0</cx:pt>
+<cx:pt idx="69">
+558</cx:pt>
+<cx:pt idx="70">
+562</cx:pt>
+<cx:pt idx="71">
+568</cx:pt>
+<cx:pt idx="72">
+571</cx:pt>
+<cx:pt idx="73">
+582</cx:pt>
+<cx:pt idx="74">
+0</cx:pt>
+<cx:pt idx="75">
+609</cx:pt>
+<cx:pt idx="76">
+616</cx:pt>
+<cx:pt idx="77">
+619</cx:pt>
+<cx:pt idx="78">
+627</cx:pt>
+<cx:pt idx="79">
+627</cx:pt>
+<cx:pt idx="80">
+634</cx:pt>
+<cx:pt idx="81">
+645</cx:pt>
+<cx:pt idx="82">
+0</cx:pt>
+<cx:pt idx="83">
+671</cx:pt>
+<cx:pt idx="84">
+0</cx:pt>
+<cx:pt idx="85">
+690</cx:pt>
+<cx:pt idx="86">
+716</cx:pt>
+<cx:pt idx="87">
+723</cx:pt>
+<cx:pt idx="88">
+730</cx:pt>
+<cx:pt idx="89">
+736</cx:pt>
+<cx:pt idx="90">
+741</cx:pt>
+<cx:pt idx="91">
+758</cx:pt>
+<cx:pt idx="92">
+765</cx:pt>
+<cx:pt idx="93">
+777</cx:pt>
+<cx:pt idx="94">
+786</cx:pt>
+<cx:pt idx="95">
+791</cx:pt>
+<cx:pt idx="96">
+792</cx:pt>
+<cx:pt idx="97">
+822</cx:pt>
+<cx:pt idx="98">
+834</cx:pt>
+<cx:pt idx="99">
+844</cx:pt>
+<cx:pt idx="100">
+864</cx:pt>
+<cx:pt idx="101">
+871</cx:pt>
+<cx:pt idx="102">
+902</cx:pt>
+<cx:pt idx="103">
+903</cx:pt>
+<cx:pt idx="104">
+908</cx:pt>
+<cx:pt idx="105">
+910</cx:pt>
+<cx:pt idx="106">
+919</cx:pt>
+<cx:pt idx="107">
+936</cx:pt>
+<cx:pt idx="108">
+937</cx:pt>
+<cx:pt idx="109">
+0</cx:pt>
+<cx:pt idx="110">
+971</cx:pt>
+<cx:pt idx="111">
+983</cx:pt>
+<cx:pt idx="112">
+994</cx:pt>
+<cx:pt idx="113">
+998</cx:pt>
+<cx:pt idx="114">
+1038</cx:pt>
+<cx:pt idx="115">
+1051</cx:pt>
+<cx:pt idx="116">
+1057</cx:pt>
+<cx:pt idx="117">
+1087</cx:pt>
+<cx:pt idx="118">
+1122</cx:pt>
+<cx:pt idx="119">
+1176</cx:pt>
+<cx:pt idx="120">
+1208</cx:pt>
+<cx:pt idx="121">
+1209</cx:pt>
+<cx:pt idx="122">
+1228</cx:pt>
+<cx:pt idx="123">
+1245</cx:pt>
+<cx:pt idx="124">
+1337</cx:pt>
+<cx:pt idx="125">
+1340</cx:pt>
+<cx:pt idx="126">
+1399</cx:pt>
+<cx:pt idx="127">
+1419</cx:pt>
+<cx:pt idx="128">
+1486</cx:pt>
+<cx:pt idx="129">
+1520</cx:pt>
+<cx:pt idx="130">
+1579</cx:pt>
+<cx:pt idx="131">
+1707</cx:pt>
+<cx:pt idx="132">
+0</cx:pt>
+<cx:pt idx="133">
+1755</cx:pt>
+<cx:pt idx="134">
+1794</cx:pt>
+<cx:pt idx="135">
+1857</cx:pt>
+<cx:pt idx="136">
+1905</cx:pt>
+<cx:pt idx="137">
+1971</cx:pt>
+<cx:pt idx="138">
+2051</cx:pt>
+<cx:pt idx="139">
+2064</cx:pt>
+<cx:pt idx="140">
+2085</cx:pt>
+<cx:pt idx="141">
+2156</cx:pt>
+<cx:pt idx="142">
+2163</cx:pt>
+<cx:pt idx="143">
+2209</cx:pt>
+<cx:pt idx="144">
+2370</cx:pt>
+<cx:pt idx="145">
+2385</cx:pt>
+<cx:pt idx="146">
+2421</cx:pt>
+<cx:pt idx="147">
+2498</cx:pt>
+<cx:pt idx="148">
+2597</cx:pt>
+<cx:pt idx="149">
+2620</cx:pt>
+<cx:pt idx="150">
+2697</cx:pt>
+<cx:pt idx="151">
+2758</cx:pt>
+<cx:pt idx="152">
+2860</cx:pt>
+<cx:pt idx="153">
+2936</cx:pt>
+<cx:pt idx="154">
+3187</cx:pt>
+<cx:pt idx="155">
+3322</cx:pt>
+<cx:pt idx="156">
+3517</cx:pt>
+<cx:pt idx="157">
+3527</cx:pt>
+<cx:pt idx="158">
+3550</cx:pt>
+<cx:pt idx="159">
+3570</cx:pt>
+<cx:pt idx="160">
+3576</cx:pt>
+<cx:pt idx="161">
+3607</cx:pt>
+<cx:pt idx="162">
+3742</cx:pt>
+<cx:pt idx="163">
+3814</cx:pt>
+<cx:pt idx="164">
+3919</cx:pt>
+<cx:pt idx="165">
+4036</cx:pt>
+<cx:pt idx="166">
+4083</cx:pt>
+<cx:pt idx="167">
+4121</cx:pt>
+<cx:pt idx="168">
+4154</cx:pt>
+<cx:pt idx="169">
+4168</cx:pt>
+<cx:pt idx="170">
+4195</cx:pt>
+<cx:pt idx="171">
+4223</cx:pt>
+<cx:pt idx="172">
+4389</cx:pt>
+<cx:pt idx="173">
+4533</cx:pt>
+<cx:pt idx="174">
+4664</cx:pt>
+<cx:pt idx="175">
+4822</cx:pt>
+<cx:pt idx="176">
+5050</cx:pt>
+<cx:pt idx="177">
+5063</cx:pt>
+<cx:pt idx="178">
+5092</cx:pt>
+<cx:pt idx="179">
+5222</cx:pt>
+<cx:pt idx="180">
+5255</cx:pt>
+<cx:pt idx="181">
+5428</cx:pt>
+<cx:pt idx="182">
+5449</cx:pt>
+<cx:pt idx="183">
+5759</cx:pt>
+<cx:pt idx="184">
+5953</cx:pt>
+<cx:pt idx="185">
+6401</cx:pt>
+<cx:pt idx="186">
+6467</cx:pt>
+<cx:pt idx="187">
+7068</cx:pt>
+<cx:pt idx="188">
+7275</cx:pt>
+<cx:pt idx="189">
+7779</cx:pt>
+<cx:pt idx="190">
+7907</cx:pt>
+<cx:pt idx="191">
+8308</cx:pt>
+<cx:pt idx="192">
+8529</cx:pt>
+<cx:pt idx="193">
+8713</cx:pt>
+<cx:pt idx="194">
+8848</cx:pt>
+<cx:pt idx="195">
+9350</cx:pt>
+<cx:pt idx="196">
+10419</cx:pt>
+<cx:pt idx="197">
+11077</cx:pt>
+<cx:pt idx="198">
+11298</cx:pt>
+<cx:pt idx="199">
+11622</cx:pt>
+<cx:pt idx="200">
+11729</cx:pt>
+<cx:pt idx="201">
+11955</cx:pt>
+<cx:pt idx="202">
+13828</cx:pt>
+<cx:pt idx="203">
+15179</cx:pt>
+<cx:pt idx="204">
+15398</cx:pt>
+<cx:pt idx="205">
+16280</cx:pt>
+<cx:pt idx="206">
+16415</cx:pt>
+<cx:pt idx="207">
+16436</cx:pt>
+<cx:pt idx="208">
+16637</cx:pt>
+<cx:pt idx="209">
+16988</cx:pt>
+<cx:pt idx="210">
+18379</cx:pt>
+<cx:pt idx="211">
+19054</cx:pt>
+<cx:pt idx="212">
+19178</cx:pt>
+<cx:pt idx="213">
+19204</cx:pt>
+<cx:pt idx="214">
+19204</cx:pt>
+<cx:pt idx="215">
+19219</cx:pt>
+<cx:pt idx="216">
+19221</cx:pt>
+<cx:pt idx="217">
+19241</cx:pt>
+<cx:pt idx="218">
+19298</cx:pt>
+<cx:pt idx="219">
+19601</cx:pt>
+<cx:pt idx="220">
+19642</cx:pt>
+<cx:pt idx="221">
+19757</cx:pt>
+<cx:pt idx="222">
+20076</cx:pt>
+<cx:pt idx="223">
+20233</cx:pt>
+<cx:pt idx="224">
+22204</cx:pt>
+<cx:pt idx="225">
+22299</cx:pt>
+<cx:pt idx="226">
+23181</cx:pt>
+<cx:pt idx="227">
+26666</cx:pt>
+<cx:pt idx="228">
+27019</cx:pt>
+<cx:pt idx="229">
+29204</cx:pt>
+<cx:pt idx="230">
+30293</cx:pt>
+<cx:pt idx="231">
+35806</cx:pt>
+<cx:pt idx="232">
+38239</cx:pt>
+<cx:pt idx="233">
+38445</cx:pt>
+<cx:pt idx="234">
+38948</cx:pt>
+<cx:pt idx="235">
+44000</cx:pt>
+<cx:pt idx="236">
+54408</cx:pt>
+<cx:pt idx="237">
+57151</cx:pt>
+<cx:pt idx="238">
+57243</cx:pt>
+<cx:pt idx="239">
+66952</cx:pt>
+<cx:pt idx="240">
+71665</cx:pt>
+<cx:pt idx="241">
+73072</cx:pt>
+<cx:pt idx="242">
+74524</cx:pt>
+<cx:pt idx="243">
+76278</cx:pt>
+<cx:pt idx="244">
+83501</cx:pt>
+</cx:lvl>
+</cx:numDim>
+</cx:data>
+<cx:data id="1">
+<cx:strDim type="cat">
+<cx:f>
+Sheet1!$A$2:$A$246</cx:f>
+<cx:lvl ptCount="245">
+<cx:pt idx="0">
+ci-metacoq</cx:pt>
+<cx:pt idx="1">
+ci-elpi</cx:pt>
+<cx:pt idx="2">
+ci-hott</cx:pt>
+<cx:pt idx="3">
+ci-metacoq</cx:pt>
+<cx:pt idx="4">
+ci-sf</cx:pt>
+<cx:pt idx="5">
+ci-metacoq</cx:pt>
+<cx:pt idx="6">
+ci-iris</cx:pt>
+<cx:pt idx="7">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="8">
+ci-category_theory</cx:pt>
+<cx:pt idx="9">
+ci-itauto</cx:pt>
+<cx:pt idx="10">
+ci-equations</cx:pt>
+<cx:pt idx="11">
+ci-aac_tactics</cx:pt>
+<cx:pt idx="12">
+ci-bbv</cx:pt>
+<cx:pt idx="13">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="14">
+ci-metacoq</cx:pt>
+<cx:pt idx="15">
+ci-argosy</cx:pt>
+<cx:pt idx="16">
+ci-metacoq</cx:pt>
+<cx:pt idx="17">
+ci-metacoq</cx:pt>
+<cx:pt idx="18">
+ci-equations</cx:pt>
+<cx:pt idx="19">
+ci-category_theory</cx:pt>
+<cx:pt idx="20">
+ci-mtac2</cx:pt>
+<cx:pt idx="21">
+ci-fourcolor</cx:pt>
+<cx:pt idx="22">
+ci-vst</cx:pt>
+<cx:pt idx="23">
+ci-hott</cx:pt>
+<cx:pt idx="24">
+ci-elpi</cx:pt>
+<cx:pt idx="25">
+ci-category_theory</cx:pt>
+<cx:pt idx="26">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="27">
+ci-category_theory</cx:pt>
+<cx:pt idx="28">
+ci-equations</cx:pt>
+<cx:pt idx="29">
+ci-color</cx:pt>
+<cx:pt idx="30">
+ci-hott</cx:pt>
+<cx:pt idx="31">
+ci-equations</cx:pt>
+<cx:pt idx="32">
+ci-perennial</cx:pt>
+<cx:pt idx="33">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="34">
+ci-coquelicot</cx:pt>
+<cx:pt idx="35">
+ci-rewriter</cx:pt>
+<cx:pt idx="36">
+ci-unimath</cx:pt>
+<cx:pt idx="37">
+ci-metacoq</cx:pt>
+<cx:pt idx="38">
+ci-equations</cx:pt>
+<cx:pt idx="39">
+ci-equations</cx:pt>
+<cx:pt idx="40">
+ci-rewriter</cx:pt>
+<cx:pt idx="41">
+ci-metacoq</cx:pt>
+<cx:pt idx="42">
+ci-mtac2</cx:pt>
+<cx:pt idx="43">
+ci-stdlib2</cx:pt>
+<cx:pt idx="44">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="45">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="46">
+ci-bedrock2</cx:pt>
+<cx:pt idx="47">
+ci-bedrock2</cx:pt>
+<cx:pt idx="48">
+ci-quickchick</cx:pt>
+<cx:pt idx="49">
+ci-bedrock2</cx:pt>
+<cx:pt idx="50">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="51">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="52">
+ci-mathcomp</cx:pt>
+<cx:pt idx="53">
+ci-iris</cx:pt>
+<cx:pt idx="54">
+ci-hott</cx:pt>
+<cx:pt idx="55">
+ci-bedrock2</cx:pt>
+<cx:pt idx="56">
+ci-category_theory</cx:pt>
+<cx:pt idx="57">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="58">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="59">
+ci-rewriter</cx:pt>
+<cx:pt idx="60">
+ci-quickchick</cx:pt>
+<cx:pt idx="61">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="62">
+ci-math_classes</cx:pt>
+<cx:pt idx="63">
+ci-coq_performance_tests</cx:pt>
+<cx:pt idx="64">
+ci-elpi</cx:pt>
+<cx:pt idx="65">
+ci-quickchick</cx:pt>
+<cx:pt idx="66">
+ci-quickchick</cx:pt>
+<cx:pt idx="67">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="68">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="69">
+ci-menhir</cx:pt>
+<cx:pt idx="70">
+ci-unimath</cx:pt>
+<cx:pt idx="71">
+ci-argosy</cx:pt>
+<cx:pt idx="72">
+ci-coquelicot</cx:pt>
+<cx:pt idx="73">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="74">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="75">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="76">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="77">
+ci-bbv</cx:pt>
+<cx:pt idx="78">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="79">
+ci-mtac2</cx:pt>
+<cx:pt idx="80">
+ci-category_theory</cx:pt>
+<cx:pt idx="81">
+ci-hott</cx:pt>
+<cx:pt idx="82">
+ci-metacoq</cx:pt>
+<cx:pt idx="83">
+ci-bedrock2</cx:pt>
+<cx:pt idx="84">
+ci-metacoq</cx:pt>
+<cx:pt idx="85">
+ci-hott</cx:pt>
+<cx:pt idx="86">
+ci-hott</cx:pt>
+<cx:pt idx="87">
+ci-bbv</cx:pt>
+<cx:pt idx="88">
+ci-iris</cx:pt>
+<cx:pt idx="89">
+ci-sf</cx:pt>
+<cx:pt idx="90">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="91">
+ci-rewriter</cx:pt>
+<cx:pt idx="92">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="93">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="94">
+ci-compcert</cx:pt>
+<cx:pt idx="95">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="96">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="97">
+ci-hott</cx:pt>
+<cx:pt idx="98">
+ci-flocq</cx:pt>
+<cx:pt idx="99">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="100">
+ci-bedrock2</cx:pt>
+<cx:pt idx="101">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="102">
+ci-gappa</cx:pt>
+<cx:pt idx="103">
+ci-bedrock2</cx:pt>
+<cx:pt idx="104">
+ci-math_classes</cx:pt>
+<cx:pt idx="105">
+ci-rewriter</cx:pt>
+<cx:pt idx="106">
+ci-vst</cx:pt>
+<cx:pt idx="107">
+ci-fcsl_pcm</cx:pt>
+<cx:pt idx="108">
+ci-vst</cx:pt>
+<cx:pt idx="109">
+ci-compcert</cx:pt>
+<cx:pt idx="110">
+ci-bedrock2</cx:pt>
+<cx:pt idx="111">
+ci-mtac2</cx:pt>
+<cx:pt idx="112">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="113">
+ci-compcert</cx:pt>
+<cx:pt idx="114">
+ci-hott</cx:pt>
+<cx:pt idx="115">
+ci-vst</cx:pt>
+<cx:pt idx="116">
+ci-category_theory</cx:pt>
+<cx:pt idx="117">
+ci-bedrock2</cx:pt>
+<cx:pt idx="118">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="119">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="120">
+ci-perennial</cx:pt>
+<cx:pt idx="121">
+ci-menhir</cx:pt>
+<cx:pt idx="122">
+ci-rewriter</cx:pt>
+<cx:pt idx="123">
+ci-math_classes</cx:pt>
+<cx:pt idx="124">
+ci-category_theory</cx:pt>
+<cx:pt idx="125">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="126">
+ci-quickchick</cx:pt>
+<cx:pt idx="127">
+ci-iris</cx:pt>
+<cx:pt idx="128">
+ci-iris</cx:pt>
+<cx:pt idx="129">
+ci-perennial</cx:pt>
+<cx:pt idx="130">
+ci-hott</cx:pt>
+<cx:pt idx="131">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="132">
+ci-perennial</cx:pt>
+<cx:pt idx="133">
+ci-mtac2</cx:pt>
+<cx:pt idx="134">
+ci-perennial</cx:pt>
+<cx:pt idx="135">
+ci-hott</cx:pt>
+<cx:pt idx="136">
+ci-iris</cx:pt>
+<cx:pt idx="137">
+ci-vst</cx:pt>
+<cx:pt idx="138">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="139">
+ci-interval</cx:pt>
+<cx:pt idx="140">
+ci-unimath</cx:pt>
+<cx:pt idx="141">
+ci-compcert</cx:pt>
+<cx:pt idx="142">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="143">
+ci-menhir</cx:pt>
+<cx:pt idx="144">
+ci-color</cx:pt>
+<cx:pt idx="145">
+ci-mathcomp</cx:pt>
+<cx:pt idx="146">
+ci-rewriter</cx:pt>
+<cx:pt idx="147">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="148">
+ci-compcert</cx:pt>
+<cx:pt idx="149">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="150">
+ci-math_classes</cx:pt>
+<cx:pt idx="151">
+ci-color</cx:pt>
+<cx:pt idx="152">
+ci-hott</cx:pt>
+<cx:pt idx="153">
+ci-itauto</cx:pt>
+<cx:pt idx="154">
+ci-iris</cx:pt>
+<cx:pt idx="155">
+ci-bedrock2</cx:pt>
+<cx:pt idx="156">
+ci-coqprime</cx:pt>
+<cx:pt idx="157">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="158">
+ci-perennial</cx:pt>
+<cx:pt idx="159">
+ci-perennial</cx:pt>
+<cx:pt idx="160">
+ci-hott</cx:pt>
+<cx:pt idx="161">
+ci-iris</cx:pt>
+<cx:pt idx="162">
+ci-tlc</cx:pt>
+<cx:pt idx="163">
+ci-menhir</cx:pt>
+<cx:pt idx="164">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="165">
+ci-tlc</cx:pt>
+<cx:pt idx="166">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="167">
+ci-coqprime</cx:pt>
+<cx:pt idx="168">
+ci-bedrock2</cx:pt>
+<cx:pt idx="169">
+ci-geocoq</cx:pt>
+<cx:pt idx="170">
+ci-fcsl_pcm</cx:pt>
+<cx:pt idx="171">
+ci-relation_algebra</cx:pt>
+<cx:pt idx="172">
+ci-tlc</cx:pt>
+<cx:pt idx="173">
+ci-hott</cx:pt>
+<cx:pt idx="174">
+ci-sf</cx:pt>
+<cx:pt idx="175">
+ci-hott</cx:pt>
+<cx:pt idx="176">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="177">
+ci-hott</cx:pt>
+<cx:pt idx="178">
+ci-iris</cx:pt>
+<cx:pt idx="179">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="180">
+ci-rewriter</cx:pt>
+<cx:pt idx="181">
+ci-hott</cx:pt>
+<cx:pt idx="182">
+ci-verdi_raft</cx:pt>
+<cx:pt idx="183">
+ci-argosy</cx:pt>
+<cx:pt idx="184">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="185">
+ci-cross_crypto</cx:pt>
+<cx:pt idx="186">
+ci-hott</cx:pt>
+<cx:pt idx="187">
+ci-argosy</cx:pt>
+<cx:pt idx="188">
+ci-iris</cx:pt>
+<cx:pt idx="189">
+ci-unimath</cx:pt>
+<cx:pt idx="190">
+ci-vst</cx:pt>
+<cx:pt idx="191">
+ci-hott</cx:pt>
+<cx:pt idx="192">
+ci-bignums</cx:pt>
+<cx:pt idx="193">
+ci-metacoq</cx:pt>
+<cx:pt idx="194">
+ci-perennial</cx:pt>
+<cx:pt idx="195">
+ci-color</cx:pt>
+<cx:pt idx="196">
+ci-hott</cx:pt>
+<cx:pt idx="197">
+ci-vst</cx:pt>
+<cx:pt idx="198">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="199">
+ci-color</cx:pt>
+<cx:pt idx="200">
+ci-fiat_crypto_legacy</cx:pt>
+<cx:pt idx="201">
+ci-iris</cx:pt>
+<cx:pt idx="202">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="203">
+ci-fiat_crypto</cx:pt>
+<cx:pt idx="204">
+ci-mathcomp</cx:pt>
+<cx:pt idx="205">
+ci-hott</cx:pt>
+<cx:pt idx="206">
+ci-geocoq</cx:pt>
+<cx:pt idx="207">
+ci-iris</cx:pt>
+<cx:pt idx="208">
+ci-bedrock2</cx:pt>
+<cx:pt idx="209">
+ci-iris</cx:pt>
+<cx:pt idx="210">
+ci-perennial</cx:pt>
+<cx:pt idx="211">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="212">
+ci-metacoq</cx:pt>
+<cx:pt idx="213">
+ci-color</cx:pt>
+<cx:pt idx="214">
+ci-vst</cx:pt>
+<cx:pt idx="215">
+ci-vst</cx:pt>
+<cx:pt idx="216">
+ci-iris</cx:pt>
+<cx:pt idx="217">
+ci-perennial</cx:pt>
+<cx:pt idx="218">
+ci-unimath</cx:pt>
+<cx:pt idx="219">
+ci-bedrock2</cx:pt>
+<cx:pt idx="220">
+ci-coq_performance_tests</cx:pt>
+<cx:pt idx="221">
+ci-perennial</cx:pt>
+<cx:pt idx="222">
+ci-metacoq</cx:pt>
+<cx:pt idx="223">
+ci-coq_performance_tests</cx:pt>
+<cx:pt idx="224">
+ci-perennial</cx:pt>
+<cx:pt idx="225">
+ci-vst</cx:pt>
+<cx:pt idx="226">
+ci-bedrock2</cx:pt>
+<cx:pt idx="227">
+ci-finmap</cx:pt>
+<cx:pt idx="228">
+ci-rewriter</cx:pt>
+<cx:pt idx="229">
+ci-bedrock2</cx:pt>
+<cx:pt idx="230">
+ci-rewriter</cx:pt>
+<cx:pt idx="231">
+ci-fiat_parsers</cx:pt>
+<cx:pt idx="232">
+ci-compcert</cx:pt>
+<cx:pt idx="233">
+ci-perennial</cx:pt>
+<cx:pt idx="234">
+ci-mathcomp</cx:pt>
+<cx:pt idx="235">
+ci-color</cx:pt>
+<cx:pt idx="236">
+ci-mathcomp</cx:pt>
+<cx:pt idx="237">
+ci-perennial</cx:pt>
+<cx:pt idx="238">
+ci-category_theory</cx:pt>
+<cx:pt idx="239">
+ci-jasmin</cx:pt>
+<cx:pt idx="240">
+ci-vst</cx:pt>
+<cx:pt idx="241">
+ci-bedrock2</cx:pt>
+<cx:pt idx="242">
+ci-bedrock2</cx:pt>
+<cx:pt idx="243">
+ci-analysis</cx:pt>
+<cx:pt idx="244">
+ci-mathcomp</cx:pt>
+</cx:lvl>
+</cx:strDim>
+<cx:numDim type="val">
+<cx:f>
+Sheet1!$D$2:$D$246</cx:f>
+<cx:lvl ptCount="245" formatCode="General">
+<cx:pt idx="0">
+170</cx:pt>
+<cx:pt idx="1">
+175</cx:pt>
+<cx:pt idx="2">
+182</cx:pt>
+<cx:pt idx="3">
+183</cx:pt>
+<cx:pt idx="4">
+195</cx:pt>
+<cx:pt idx="5">
+205</cx:pt>
+<cx:pt idx="6">
+206</cx:pt>
+<cx:pt idx="7">
+215</cx:pt>
+<cx:pt idx="8">
+220</cx:pt>
+<cx:pt idx="9">
+223</cx:pt>
+<cx:pt idx="10">
+230</cx:pt>
+<cx:pt idx="11">
+0</cx:pt>
+<cx:pt idx="12">
+0</cx:pt>
+<cx:pt idx="13">
+0</cx:pt>
+<cx:pt idx="14">
+252</cx:pt>
+<cx:pt idx="15">
+0</cx:pt>
+<cx:pt idx="16">
+264</cx:pt>
+<cx:pt idx="17">
+266</cx:pt>
+<cx:pt idx="18">
+0</cx:pt>
+<cx:pt idx="19">
+277</cx:pt>
+<cx:pt idx="20">
+0</cx:pt>
+<cx:pt idx="21">
+298</cx:pt>
+<cx:pt idx="22">
+301</cx:pt>
+<cx:pt idx="23">
+305</cx:pt>
+<cx:pt idx="24">
+0</cx:pt>
+<cx:pt idx="25">
+319</cx:pt>
+<cx:pt idx="26">
+0</cx:pt>
+<cx:pt idx="27">
+322</cx:pt>
+<cx:pt idx="28">
+0</cx:pt>
+<cx:pt idx="29">
+333</cx:pt>
+<cx:pt idx="30">
+337</cx:pt>
+<cx:pt idx="31">
+0</cx:pt>
+<cx:pt idx="32">
+0</cx:pt>
+<cx:pt idx="33">
+0</cx:pt>
+<cx:pt idx="34">
+0</cx:pt>
+<cx:pt idx="35">
+0</cx:pt>
+<cx:pt idx="36">
+0</cx:pt>
+<cx:pt idx="37">
+360</cx:pt>
+<cx:pt idx="38">
+0</cx:pt>
+<cx:pt idx="39">
+0</cx:pt>
+<cx:pt idx="40">
+0</cx:pt>
+<cx:pt idx="41">
+0</cx:pt>
+<cx:pt idx="42">
+0</cx:pt>
+<cx:pt idx="43">
+0</cx:pt>
+<cx:pt idx="44">
+0</cx:pt>
+<cx:pt idx="45">
+0</cx:pt>
+<cx:pt idx="46">
+0</cx:pt>
+<cx:pt idx="47">
+0</cx:pt>
+<cx:pt idx="48">
+0</cx:pt>
+<cx:pt idx="49">
+0</cx:pt>
+<cx:pt idx="50">
+393</cx:pt>
+<cx:pt idx="51">
+0</cx:pt>
+<cx:pt idx="52">
+0</cx:pt>
+<cx:pt idx="53">
+417</cx:pt>
+<cx:pt idx="54">
+0</cx:pt>
+<cx:pt idx="55">
+443</cx:pt>
+<cx:pt idx="56">
+0</cx:pt>
+<cx:pt idx="57">
+0</cx:pt>
+<cx:pt idx="58">
+0</cx:pt>
+<cx:pt idx="59">
+0</cx:pt>
+<cx:pt idx="60">
+0</cx:pt>
+<cx:pt idx="61">
+0</cx:pt>
+<cx:pt idx="62">
+0</cx:pt>
+<cx:pt idx="63">
+0</cx:pt>
+<cx:pt idx="64">
+0</cx:pt>
+<cx:pt idx="65">
+527</cx:pt>
+<cx:pt idx="66">
+0</cx:pt>
+<cx:pt idx="67">
+0</cx:pt>
+<cx:pt idx="68">
+555</cx:pt>
+<cx:pt idx="69">
+0</cx:pt>
+<cx:pt idx="70">
+0</cx:pt>
+<cx:pt idx="71">
+0</cx:pt>
+<cx:pt idx="72">
+0</cx:pt>
+<cx:pt idx="73">
+0</cx:pt>
+<cx:pt idx="74">
+593</cx:pt>
+<cx:pt idx="75">
+0</cx:pt>
+<cx:pt idx="76">
+0</cx:pt>
+<cx:pt idx="77">
+0</cx:pt>
+<cx:pt idx="78">
+0</cx:pt>
+<cx:pt idx="79">
+0</cx:pt>
+<cx:pt idx="80">
+0</cx:pt>
+<cx:pt idx="81">
+0</cx:pt>
+<cx:pt idx="82">
+666</cx:pt>
+<cx:pt idx="83">
+0</cx:pt>
+<cx:pt idx="84">
+685</cx:pt>
+<cx:pt idx="85">
+0</cx:pt>
+<cx:pt idx="86">
+0</cx:pt>
+<cx:pt idx="87">
+0</cx:pt>
+<cx:pt idx="88">
+0</cx:pt>
+<cx:pt idx="89">
+0</cx:pt>
+<cx:pt idx="90">
+0</cx:pt>
+<cx:pt idx="91">
+0</cx:pt>
+<cx:pt idx="92">
+0</cx:pt>
+<cx:pt idx="93">
+0</cx:pt>
+<cx:pt idx="94">
+0</cx:pt>
+<cx:pt idx="95">
+0</cx:pt>
+<cx:pt idx="96">
+0</cx:pt>
+<cx:pt idx="97">
+0</cx:pt>
+<cx:pt idx="98">
+0</cx:pt>
+<cx:pt idx="99">
+0</cx:pt>
+<cx:pt idx="100">
+0</cx:pt>
+<cx:pt idx="101">
+0</cx:pt>
+<cx:pt idx="102">
+0</cx:pt>
+<cx:pt idx="103">
+0</cx:pt>
+<cx:pt idx="104">
+0</cx:pt>
+<cx:pt idx="105">
+0</cx:pt>
+<cx:pt idx="106">
+0</cx:pt>
+<cx:pt idx="107">
+0</cx:pt>
+<cx:pt idx="108">
+0</cx:pt>
+<cx:pt idx="109">
+959</cx:pt>
+<cx:pt idx="110">
+0</cx:pt>
+<cx:pt idx="111">
+0</cx:pt>
+<cx:pt idx="112">
+0</cx:pt>
+<cx:pt idx="113">
+0</cx:pt>
+<cx:pt idx="114">
+0</cx:pt>
+<cx:pt idx="115">
+0</cx:pt>
+<cx:pt idx="116">
+0</cx:pt>
+<cx:pt idx="117">
+0</cx:pt>
+<cx:pt idx="118">
+0</cx:pt>
+<cx:pt idx="119">
+0</cx:pt>
+<cx:pt idx="120">
+0</cx:pt>
+<cx:pt idx="121">
+0</cx:pt>
+<cx:pt idx="122">
+0</cx:pt>
+<cx:pt idx="123">
+0</cx:pt>
+<cx:pt idx="124">
+0</cx:pt>
+<cx:pt idx="125">
+0</cx:pt>
+<cx:pt idx="126">
+0</cx:pt>
+<cx:pt idx="127">
+0</cx:pt>
+<cx:pt idx="128">
+0</cx:pt>
+<cx:pt idx="129">
+0</cx:pt>
+<cx:pt idx="130">
+0</cx:pt>
+<cx:pt idx="131">
+0</cx:pt>
+<cx:pt idx="132">
+1712</cx:pt>
+<cx:pt idx="133">
+0</cx:pt>
+<cx:pt idx="134">
+0</cx:pt>
+<cx:pt idx="135">
+0</cx:pt>
+<cx:pt idx="136">
+0</cx:pt>
+<cx:pt idx="137">
+0</cx:pt>
+<cx:pt idx="138">
+0</cx:pt>
+<cx:pt idx="139">
+0</cx:pt>
+<cx:pt idx="140">
+0</cx:pt>
+<cx:pt idx="141">
+0</cx:pt>
+<cx:pt idx="142">
+0</cx:pt>
+<cx:pt idx="143">
+0</cx:pt>
+<cx:pt idx="144">
+0</cx:pt>
+<cx:pt idx="145">
+0</cx:pt>
+<cx:pt idx="146">
+0</cx:pt>
+<cx:pt idx="147">
+0</cx:pt>
+<cx:pt idx="148">
+0</cx:pt>
+<cx:pt idx="149">
+0</cx:pt>
+<cx:pt idx="150">
+0</cx:pt>
+<cx:pt idx="151">
+0</cx:pt>
+<cx:pt idx="152">
+0</cx:pt>
+<cx:pt idx="153">
+0</cx:pt>
+<cx:pt idx="154">
+0</cx:pt>
+<cx:pt idx="155">
+0</cx:pt>
+<cx:pt idx="156">
+0</cx:pt>
+<cx:pt idx="157">
+0</cx:pt>
+<cx:pt idx="158">
+0</cx:pt>
+<cx:pt idx="159">
+0</cx:pt>
+<cx:pt idx="160">
+0</cx:pt>
+<cx:pt idx="161">
+0</cx:pt>
+<cx:pt idx="162">
+0</cx:pt>
+<cx:pt idx="163">
+0</cx:pt>
+<cx:pt idx="164">
+0</cx:pt>
+<cx:pt idx="165">
+0</cx:pt>
+<cx:pt idx="166">
+0</cx:pt>
+<cx:pt idx="167">
+0</cx:pt>
+<cx:pt idx="168">
+0</cx:pt>
+<cx:pt idx="169">
+0</cx:pt>
+<cx:pt idx="170">
+0</cx:pt>
+<cx:pt idx="171">
+0</cx:pt>
+<cx:pt idx="172">
+0</cx:pt>
+<cx:pt idx="173">
+0</cx:pt>
+<cx:pt idx="174">
+0</cx:pt>
+<cx:pt idx="175">
+0</cx:pt>
+<cx:pt idx="176">
+0</cx:pt>
+<cx:pt idx="177">
+0</cx:pt>
+<cx:pt idx="178">
+0</cx:pt>
+<cx:pt idx="179">
+0</cx:pt>
+<cx:pt idx="180">
+0</cx:pt>
+<cx:pt idx="181">
+0</cx:pt>
+<cx:pt idx="182">
+0</cx:pt>
+<cx:pt idx="183">
+0</cx:pt>
+<cx:pt idx="184">
+0</cx:pt>
+<cx:pt idx="185">
+0</cx:pt>
+<cx:pt idx="186">
+0</cx:pt>
+<cx:pt idx="187">
+0</cx:pt>
+<cx:pt idx="188">
+0</cx:pt>
+<cx:pt idx="189">
+0</cx:pt>
+<cx:pt idx="190">
+0</cx:pt>
+<cx:pt idx="191">
+0</cx:pt>
+<cx:pt idx="192">
+0</cx:pt>
+<cx:pt idx="193">
+0</cx:pt>
+<cx:pt idx="194">
+0</cx:pt>
+<cx:pt idx="195">
+0</cx:pt>
+<cx:pt idx="196">
+0</cx:pt>
+<cx:pt idx="197">
+0</cx:pt>
+<cx:pt idx="198">
+0</cx:pt>
+<cx:pt idx="199">
+0</cx:pt>
+<cx:pt idx="200">
+0</cx:pt>
+<cx:pt idx="201">
+0</cx:pt>
+<cx:pt idx="202">
+0</cx:pt>
+<cx:pt idx="203">
+0</cx:pt>
+<cx:pt idx="204">
+0</cx:pt>
+<cx:pt idx="205">
+0</cx:pt>
+<cx:pt idx="206">
+0</cx:pt>
+<cx:pt idx="207">
+0</cx:pt>
+<cx:pt idx="208">
+0</cx:pt>
+<cx:pt idx="209">
+0</cx:pt>
+<cx:pt idx="210">
+0</cx:pt>
+<cx:pt idx="211">
+0</cx:pt>
+<cx:pt idx="212">
+0</cx:pt>
+<cx:pt idx="213">
+0</cx:pt>
+<cx:pt idx="214">
+0</cx:pt>
+<cx:pt idx="215">
+0</cx:pt>
+<cx:pt idx="216">
+0</cx:pt>
+<cx:pt idx="217">
+0</cx:pt>
+<cx:pt idx="218">
+0</cx:pt>
+<cx:pt idx="219">
+0</cx:pt>
+<cx:pt idx="220">
+0</cx:pt>
+<cx:pt idx="221">
+0</cx:pt>
+<cx:pt idx="222">
+0</cx:pt>
+<cx:pt idx="223">
+0</cx:pt>
+<cx:pt idx="224">
+0</cx:pt>
+<cx:pt idx="225">
+0</cx:pt>
+<cx:pt idx="226">
+0</cx:pt>
+<cx:pt idx="227">
+0</cx:pt>
+<cx:pt idx="228">
+0</cx:pt>
+<cx:pt idx="229">
+0</cx:pt>
+<cx:pt idx="230">
+0</cx:pt>
+<cx:pt idx="231">
+0</cx:pt>
+<cx:pt idx="232">
+0</cx:pt>
+<cx:pt idx="233">
+0</cx:pt>
+<cx:pt idx="234">
+0</cx:pt>
+<cx:pt idx="235">
+0</cx:pt>
+<cx:pt idx="236">
+0</cx:pt>
+<cx:pt idx="237">
+0</cx:pt>
+<cx:pt idx="238">
+0</cx:pt>
+<cx:pt idx="239">
+0</cx:pt>
+<cx:pt idx="240">
+0</cx:pt>
+<cx:pt idx="241">
+0</cx:pt>
+<cx:pt idx="242">
+0</cx:pt>
+<cx:pt idx="243">
+0</cx:pt>
+<cx:pt idx="244">
+0</cx:pt>
+</cx:lvl>
+</cx:numDim>
+</cx:data>
+</cx:chartData>
+<cx:chart>
+<cx:plotArea>
+<cx:plotAreaRegion>
+<cx:series layoutId="boxWhisker" uniqueId="{00000004-816E-4CC4-BEB8-492E916C3609}">
+<cx:tx>
+<cx:txData>
+<cx:f>
+Sheet1!$C$1</cx:f>
+<cx:v>
+duration success</cx:v>
+</cx:txData>
+</cx:tx>
+<cx:dataId val="0" />
+<cx:layoutPr>
+<cx:statistics quartileMethod="exclusive" />
+</cx:layoutPr>
+</cx:series>
+<cx:series layoutId="boxWhisker" uniqueId="{00000005-816E-4CC4-BEB8-492E916C3609}">
+<cx:tx>
+<cx:txData>
+<cx:f>
+Sheet1!$D$1</cx:f>
+<cx:v>
+duration failure</cx:v>
+</cx:txData>
+</cx:tx>
+<cx:dataId val="1" />
+<cx:layoutPr>
+<cx:statistics quartileMethod="exclusive" />
+</cx:layoutPr>
+</cx:series>
+</cx:plotAreaRegion>
+<cx:axis id="0">
+<cx:catScaling />
+<cx:majorGridlines />
+<cx:tickLabels />
+</cx:axis>
+<cx:axis id="1">
+<cx:valScaling />
+<cx:majorGridlines />
+<cx:tickLabels />
+<cx:txPr>
+<a:bodyPr spcFirstLastPara="1" vertOverflow="ellipsis" horzOverflow="overflow" wrap="square" lIns="0" tIns="0" rIns="0" bIns="0" anchor="ctr" anchorCtr="1" />
+<a:lstStyle />
+<a:p>
+<a:pPr algn="ctr" rtl="0">
+<a:defRPr />
+</a:pPr>
+<a:endParaRPr lang="en-US" sz="1197" b="0" i="0" u="none" strike="noStrike" kern="1200" baseline="0">
+<a:solidFill>
+<a:prstClr val="black">
+<a:lumMod val="65000" />
+<a:lumOff val="35000" />
+</a:prstClr>
+</a:solidFill>
+<a:latin typeface="Calibri" panose="020F0502020204030204" />
+</a:endParaRPr>
+</a:p>
+</cx:txPr>
+</cx:axis>
+</cx:plotArea>
+</cx:chart>
+</cx:chartSpace>
