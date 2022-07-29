@@ -76,7 +76,7 @@ Make it possible to have a single file with the same semantics as code in multip
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-“trust me, it’s true”</a:t>
+Primitive for “trust me, it’s true”</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -87,10 +87,16 @@ Lack of forward references is nice</a:t>
 </a:r>
 </a:p>
 <a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Automation of the workflow is very nice</a:t>
+Don’t forget the last mile of automating integration with CI!</a:t>
 </a:r>
 </a:p>
 </p:txBody>

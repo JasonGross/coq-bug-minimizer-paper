@@ -179,6 +179,84 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="6" name="Graphic 5">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E9D8DEB9-7C9F-4DE2-BF60-E6D96F939778}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr/>
+</p:nvPicPr>
+<p:blipFill>
+<a:blip r:embed="rId3">
+<a:extLst>
+<a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+<a14:useLocalDpi xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" val="0"/>
+</a:ext>
+<a:ext uri="{96DAC541-7B7A-43D3-8B79-37D633B846F1}">
+<asvg:svgBlip xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main" r:embed="rId4"/>
+</a:ext>
+</a:extLst>
+</a:blip>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="2894904" y="5546071"/>
+<a:ext cx="1604963" cy="829981"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
+<p:pic>
+<p:nvPicPr>
+<p:cNvPr id="8" name="Graphic 7">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{42C06FFE-A398-456D-ABD5-4AD3E7CCD908}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</p:cNvPicPr>
+<p:nvPr/>
+</p:nvPicPr>
+<p:blipFill>
+<a:blip r:embed="rId5">
+<a:extLst>
+<a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+<a14:useLocalDpi xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" val="0"/>
+</a:ext>
+<a:ext uri="{96DAC541-7B7A-43D3-8B79-37D633B846F1}">
+<asvg:svgBlip xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main" r:embed="rId6"/>
+</a:ext>
+</a:extLst>
+</a:blip>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</p:blipFill>
+<p:spPr>
+<a:xfrm>
+<a:off x="7692134" y="5546071"/>
+<a:ext cx="2695575" cy="790575"/>
+</a:xfrm>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</p:spPr>
+</p:pic>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">

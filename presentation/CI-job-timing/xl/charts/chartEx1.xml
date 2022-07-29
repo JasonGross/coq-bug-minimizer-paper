@@ -53,6 +53,7 @@ failed job</cx:v>
 </cx:spPr>
 <cx:dataId val="0" />
 <cx:layoutPr>
+<cx:visibility meanLine="0" nonoutliers="0" outliers="0" />
 <cx:statistics quartileMethod="exclusive" />
 </cx:layoutPr>
 </cx:series>
@@ -79,6 +80,7 @@ successful job</cx:v>
 </cx:spPr>
 <cx:dataId val="1" />
 <cx:layoutPr>
+<cx:visibility meanLine="0" meanMarker="1" nonoutliers="0" outliers="0" />
 <cx:statistics quartileMethod="exclusive" />
 </cx:layoutPr>
 </cx:series>

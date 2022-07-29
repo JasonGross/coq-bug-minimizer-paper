@@ -46,51 +46,31 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Gotchas:</a:t>
+“Broke” means project no longer compiles</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="171450" indent="-171450">
-<a:buFontTx/>
-<a:buChar char="-"/>
-</a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Not line by line, but blocks</a:t>
+Test 75 projects in the ecosystem</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="171450" indent="-171450">
-<a:buFontTx/>
-<a:buChar char="-"/>
-</a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Minimal coupling, lack of forward references</a:t>
+Often takes 2—4 hours for the CI to complete and </a:t>
 </a:r>
-</a:p>
-<a:p>
-<a:pPr marL="171450" indent="-171450">
-<a:buFontTx/>
-<a:buChar char="-"/>
-</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0"/>
+<a:rPr lang="en-US" dirty="0" err="1"/>
 <a:t>
-Trust me</a:t>
+coqbot</a:t>
 </a:r>
-</a:p>
-<a:p>
-<a:pPr marL="171450" indent="-171450">
-<a:buFontTx/>
-<a:buChar char="-"/>
-</a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Linearization</a:t>
+ to reply</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -113,7 +93,7 @@ Linearization</a:t>
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-28</a:t>
+18</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -122,7 +102,7 @@ Linearization</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3652673611"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2552736769"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

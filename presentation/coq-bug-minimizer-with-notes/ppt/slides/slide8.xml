@@ -67,10 +67,11 @@ Category Theory Library Minimization in Coq</a:t>
 <a:lstStyle/>
 <a:p>
 <a:r>
-<a:rPr lang="en-US" dirty="0"/>
+<a:rPr lang="en-US"/>
 <a:t>
 ITP 2022</a:t>
 </a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>

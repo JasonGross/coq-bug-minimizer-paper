@@ -273,7 +273,11 @@ B.v</a:t>
 <a:prstGeom prst="ellipse">
 <a:avLst/>
 </a:prstGeom>
-<a:ln w="76200"/>
+<a:ln w="76200">
+<a:solidFill>
+<a:schemeClr val="accent3"/>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -343,6 +347,16 @@ C.v</a:t>
 <a:prstGeom prst="rightArrow">
 <a:avLst/>
 </a:prstGeom>
+<a:solidFill>
+<a:schemeClr val="accent3"/>
+</a:solidFill>
+<a:ln>
+<a:solidFill>
+<a:schemeClr val="accent3">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -389,6 +403,16 @@ C.v</a:t>
 <a:prstGeom prst="rightArrow">
 <a:avLst/>
 </a:prstGeom>
+<a:solidFill>
+<a:schemeClr val="accent3"/>
+</a:solidFill>
+<a:ln>
+<a:solidFill>
+<a:schemeClr val="accent3">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -494,7 +518,13 @@ C.v</a:t>
 <a:avLst/>
 </a:prstGeom>
 <a:noFill/>
-<a:ln w="76200"/>
+<a:ln w="76200">
+<a:solidFill>
+<a:schemeClr val="bg2">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -669,7 +699,11 @@ B.v</a:t>
 <a:prstGeom prst="ellipse">
 <a:avLst/>
 </a:prstGeom>
-<a:ln w="76200"/>
+<a:ln w="76200">
+<a:solidFill>
+<a:schemeClr val="accent3"/>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -721,7 +755,13 @@ C.v</a:t>
 <a:avLst/>
 </a:prstGeom>
 <a:noFill/>
-<a:ln w="76200"/>
+<a:ln w="76200">
+<a:solidFill>
+<a:schemeClr val="bg2">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -896,7 +936,11 @@ A.v</a:t>
 <a:prstGeom prst="ellipse">
 <a:avLst/>
 </a:prstGeom>
-<a:ln w="76200"/>
+<a:ln w="76200">
+<a:solidFill>
+<a:schemeClr val="accent3"/>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
@@ -977,7 +1021,7 @@ or</a:t>
 </p:nvSpPr>
 <p:spPr>
 <a:xfrm>
-<a:off x="10526275" y="3537648"/>
+<a:off x="10336708" y="3537648"/>
 <a:ext cx="505267" cy="923330"/>
 </a:xfrm>
 <a:prstGeom prst="rect">

@@ -96,7 +96,7 @@ In bug reporting case: “same” error message, without changing the final bit 
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-In CI case: should also succeed on the successful version of Coq</a:t>
+In CI case: should also succeed on the master version of Coq</a:t>
 </a:r>
 </a:p>
 </p:txBody>

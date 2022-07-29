@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 
-for n in "-100" "-500" ""; do
-    cat ci-data$n.json | jq '(if .name[:7] == "plugin:" then .name[7:] else if .name[:8] == "library:" then .name[8:] else null end end) as $name
-    | (if $name[:3] == "ci-" then $name[3:] else $name end) as $name
-    | select($name != null)
-    | ($name | gsub("-"; "_")) as $name
+for n in "-100" "-500" "-2022" ""; do
+    cat ci-data$n.json | jq 'select(.short_name != null)
     | . as $orig
-    | {ci:$name,duration,status}' | jq -cs 'group_by(.ci)
+    | {ci:.short_name,duration,status}' | jq -cs 'group_by(.ci)
     | map(([.[] | select(.status == "success") | .duration]) as $s
     | ([.[] | select(.status == "failed") | .duration]) as $f
     | (if ($s | length) > 0 then ($s | add/length) else null end) as $ms

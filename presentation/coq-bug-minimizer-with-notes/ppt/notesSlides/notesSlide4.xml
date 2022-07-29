@@ -43,6 +43,216 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Almost 3000 lines of code across 20 dependencies</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Files: </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+Notations.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+Common.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+FEqualDep.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+StructureEquality.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+SpecializedCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+Category.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+DiscreteCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+NatCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+Functor.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+InitialTerminalCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+ProductCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+SumCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+NaturalTransformation.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+FunctorCategory.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+ProductInducedFunctors.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+SumInducedFunctors.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+FunctorialComposition.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+TypeclassUnreifiedSimplification.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+FunctorProduct.v</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+LtacReifiedSimplification.v</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
@@ -65,7 +275,7 @@
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-9</a:t>
+5</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -74,7 +284,7 @@
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2163328582"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2187061612"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

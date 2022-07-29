@@ -1,0 +1,34 @@
+\documentclass{minimal}
+\pagestyle{empty}
+\usepackage{pgfplots}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{external}
+%\tikzexternalize
+\makeatletter
+\pgfplotsset{
+    boxplot/hide outliers/.code={
+        \def\pgfplotsplothandlerboxplot@outlier{}%
+    }
+}
+\newcommand{\einput}[1]{\@@input #1 \space}
+\newcommand{\beginTikzpictureStamped}[2][]{%
+    {%
+        \everyeof{\noexpand}% IDK why \noexpand is the magic one, but I got it from http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/oberdiek/catchfile.pdf
+        \long\xdef\@tikzstamp{#2}%
+    }%
+    \def\@dobegintikzpicture{\begin{tikzpicture}[#1]}%
+    \expandafter\@dobegintikzpicture\expandafter\def\expandafter\tikzstamp\expandafter{\@tikzstamp}%
+}
+\newcommand{\TikzpictureStamped}[3][]{\beginTikzpictureStamped[#1]{#2}#3\end{tikzpicture}}%
+\makeatother
+\begin{document}
+\beginTikzpictureStamped{
+  \einput{ci-boxplots.lst.tex}
+  \einput{ci-boxplots.all.tex.md5}
+}
+%y=1cm, try min ticks=2,
+\begin{axis}[boxplot/draw direction=y,boxplot/hide outliers]
+  \einput{ci-boxplots.all.tex}
+\end{axis}
+\end{tikzpicture}
+\end{document}

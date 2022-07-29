@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for n in "-100" "-500" ""; do
+for n in "-100" "-500" "-2022" ""; do
 
 { echo '"CI job","failed job","successful job"';
   jq -cr '(if .success != null then .success else [] end) as $s | (if .failed != null then .failed else [] end) as $f | .ci as $ci | [$f,$s] | transpose | .[] | [$ci,.[]] | @csv' ci-durations-sorted$n.json;

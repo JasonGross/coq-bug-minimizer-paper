@@ -6,15 +6,16 @@ function to_csv() {
 
 to_csv all-ci-pipelines
 
-ls ci-data/*.jobs.json | sort -h | tac | xargs jq -cr 'select(.duration != null) | (if .pipeline.iid == null then .pipeline.id else null end) as $id | (if .ref[:3] == "pr-" then .ref else (.ref + "@" + .pipeline.sha) end) as $ref | {iid:.pipeline.iid,id:.pipeline.id,ref:$ref,name,duration,status,created_at}' | jq -scr 'sort_by(.created_at) | reverse | .[]' > ci-data.json
+ls ci-data/*.jobs.json | sort -h | tac | xargs jq -cr 'select(.duration != null)
+   | (if .pipeline.iid == null then .pipeline.id else null end) as $id
+   | (if .ref[:3] == "pr-" then .ref else (.ref + "@" + .pipeline.sha) end) as $ref
+   | (if .name[:7] == "plugin:" then .name[7:] else if .name[:8] == "library:" then .name[8:] else null end end) as $short_name
+   | (if $short_name[:3] == "ci-" then $short_name[3:] else $short_name end) as $short_name
+   | (if $short_name == null then null else ($short_name | gsub("-"; "_")) end) as $short_name
+   | {iid:.pipeline.iid,id:.pipeline.id,ref:$ref,name,duration,status,created_at,short_name:$short_name}' | jq -scr 'sort_by(.created_at) | reverse | .[]' > ci-data.json.tmp
+mv ci-data.json.tmp ci-data.json
 
 to_csv ci-data
 
-head -10000 ci-data.json > ci-data-10000.json
-to_csv ci-data-10000
-head -1000 ci-data-10000.json > ci-data-1000.json
-to_csv ci-data-1000
-head -500 ci-data-1000.json > ci-data-500.json
-to_csv ci-data-500
-head -100 ci-data-500.json > ci-data-100.json
-to_csv ci-data-100
+./subset-ci-data.sh
+./split-ci-data.sh

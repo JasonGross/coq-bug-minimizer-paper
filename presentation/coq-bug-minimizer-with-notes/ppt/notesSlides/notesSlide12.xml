@@ -46,42 +46,14 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-25% of runs succeed within 11 minutes</a:t>
+Running at 8x</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Almost 50% within half an hour</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Almost 75% within 2 hours</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-90% within 6 hours</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Over 95% within 12 hours</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-No runs yet that succeeded and took more than a day</a:t>
+Took about 3.5 minutes</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -104,7 +76,7 @@ No runs yet that succeeded and took more than a day</a:t>
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-23</a:t>
+14</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -113,7 +85,7 @@ No runs yet that succeeded and took more than a day</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1382038971"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="944339761"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

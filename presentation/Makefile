@@ -1,9 +1,40 @@
 PPTX := coq-bug-minimizer-with-notes.pptx
 XLSX := CI-job-timing.xlsx
+PDFS := ci-timing-data-box-whisker.pdf
 
-all: $(PPTX) $(XLSX)
-.PHONY: all
+all: $(PPTX) $(XLSX) $(PDFS)
+.PHONY: all pdf
 
+PDFLATEX?=lualatex # pdflatex
+LATEXFLAGS?=--shell-escape --synctex=1
+LATEX_EXTRA_FLAGS?=
+MD5?=md5sum
+
+pdf: $(PDFS)
+
+%.md5: %
+	$(MD5) '$<' | awk '{print $$1}' > '$@'
+
+ci-timing-data-box-whisker.pdf: ci-durations-sorted-2022.csv.md5 ci-boxplots.lst ci-boxplots.lst.tex ci-boxplots.all.tex ci-boxplots.all.tex.md5
+
+ci-boxplots.lst: ci-jobs-by-ave-duration-2022.json
+	jq -crs 'sort_by(.ave_success_duration) | map(.name) | (.[:10] + .[-10:]) as $$interesting | .[] | . as $$n | select((["bbv", "bedrock2", "color", "fiat_crypto_legacy", "gappa", "itauto", "rewriter", "verdi_raft", "vst"]+$$interesting) | index($$n) != null)' $< > $@
+
+ci-boxplots.lst.tex: ci-boxplots.lst
+	cat $< | sed 's|^\(.*\)$$|\\einput{ci-timing-by-job/\1-2022-failed.txt.md5}\\einput{ci-timing-by-job/\1-2022-success.txt.md5}|g' > $@
+
+add_success_failure = $(addsuffix -2022-failed,$(1)) $(addsuffix -2022-success,$(1))
+
+ci-timing-data-box-whisker.pdf: $(addprefix ci-timing-by-job/,$(addsuffix .txt.md5,$(call add_success_failure,$(shell cat ci-boxplots.lst))))
+
+ADD_PLOT_BOXPLOT=\\addplot+[boxplot,$(1)] table[y index=0]
+ci-boxplots.all.tex: ci-boxplots.lst
+	cat $< | sed 's|^\(.*\)$$|\\message{\1-success }$(call ADD_PLOT_BOXPLOT,green){ci-timing-by-job/\1-2022-success.txt}; \\message{\1-failed }$(call ADD_PLOT_BOXPLOT,red){ci-timing-by-job/\1-2022-failed.txt};|g' > $@
+
+
+$(PDFS): %.pdf : %.tex
+	@ $(PDFLATEX) $(LATEXFLAGS) $(LATEX_EXTRA_FLAGS) $<
+	@ $(PDFLATEX) $(LATEXFLAGS) $(LATEX_EXTRA_FLAGS) $<
 
 FIND_ARGS_NEWLINE_EXTS := -name "*.xml" -o -name "*.rels" -o -name "*.svg"
 

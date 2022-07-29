@@ -78,7 +78,7 @@ Input: a development displaying a potential problem with Coq</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Output: a single (shorter, faster) file displaying the same possible problem</a:t>
+Output: a single (shorter, faster) file displaying the same potential problem</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -93,7 +93,7 @@ Desires:</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Fully automated, no interaction beyond pointing it at the issue initially</a:t>
+File should be standalone, as short as possible, as fast as possible</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -101,7 +101,7 @@ Fully automated, no interaction beyond pointing it at the issue initially</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-File should be standalone, as short as possible, as fast as possible</a:t>
+Fully automated, no interaction beyond pointing it at the issue initially</a:t>
 </a:r>
 </a:p>
 </p:txBody>

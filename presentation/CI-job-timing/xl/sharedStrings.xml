@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="252691" uniqueCount="29">
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="313377" uniqueCount="33">
 <si>
 <t>
 CI job</t>
@@ -116,5 +116,21 @@ math_comp</t>
 <si>
 <t>
 fiat_crypto</t>
+</si>
+<si>
+<t>
+paramcoq</t>
+</si>
+<si>
+<t>
+autosubst</t>
+</si>
+<si>
+<t>
+stdlib2</t>
+</si>
+<si>
+<t>
+metacoq</t>
 </si>
 </sst>
