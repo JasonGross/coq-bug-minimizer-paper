@@ -1,29 +1,172 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="6" uniqueCount="6">
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="42" uniqueCount="42">
 <si>
-<t xml:space="preserve">
- </t>
+<t>
+ci</t>
 </si>
 <si>
 <t>
-Time Spent in my PhD</t>
+8.87% (failed)</t>
 </si>
 <si>
 <t>
-Coding new things</t>
+lower quartile (failed)</t>
 </si>
 <si>
 <t>
-Misc</t>
+delta median (failed)</t>
 </si>
 <si>
 <t>
-Discovering interesting new things</t>
+delta upper quartile (failed)</t>
 </si>
 <si>
 <t>
-Performance engineering
-(working around slowness in Coq)</t>
+91.13% (failed)</t>
+</si>
+<si>
+<t>
+mean (failed)</t>
+</si>
+<si>
+<t>
+8.87% (success)</t>
+</si>
+<si>
+<t>
+lower quartile (success)</t>
+</si>
+<si>
+<t>
+delta median (success)</t>
+</si>
+<si>
+<t>
+delta upper quartile (success)</t>
+</si>
+<si>
+<t>
+91.13% (success)</t>
+</si>
+<si>
+<t>
+mean (success)</t>
+</si>
+<si>
+<t>
+reduction-effects</t>
+</si>
+<si>
+<t>
+coqtail</t>
+</si>
+<si>
+<t>
+coq-dpdgraph</t>
+</si>
+<si>
+<t>
+vscoq</t>
+</si>
+<si>
+<t>
+aac-tactics</t>
+</si>
+<si>
+<t>
+paramcoq</t>
+</si>
+<si>
+<t>
+bigenough</t>
+</si>
+<si>
+<t>
+autosubst</t>
+</si>
+<si>
+<t>
+stdlib2</t>
+</si>
+<si>
+<t>
+bbv</t>
+</si>
+<si>
+<t>
+gappa</t>
+</si>
+<si>
+<t>
+itauto</t>
+</si>
+<si>
+<t>
+rewriter</t>
+</si>
+<si>
+<t>
+color</t>
+</si>
+<si>
+<t>
+verdi-raft</t>
+</si>
+<si>
+<t>
+iris</t>
+</si>
+<si>
+<t>
+perennial</t>
+</si>
+<si>
+<t>
+metacoq</t>
+</si>
+<si>
+<t>
+fourcolor</t>
+</si>
+<si>
+<t>
+category-theory</t>
+</si>
+<si>
+<t>
+fiat-crypto-legacy</t>
+</si>
+<si>
+<t>
+vst</t>
+</si>
+<si>
+<t>
+bedrock2</t>
+</si>
+<si>
+<t>
+unimath</t>
+</si>
+<si>
+<t>
+fiat-crypto</t>
+</si>
+<si>
+<t>
+whisker 2.15% (failed)</t>
+</si>
+<si>
+<t>
+whisker 97.85% (failed)</t>
+</si>
+<si>
+<t>
+whisker 2.15% (success)</t>
+</si>
+<si>
+<t>
+whisker 97.85% (success)</t>
 </si>
 </sst>

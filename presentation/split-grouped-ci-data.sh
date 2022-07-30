@@ -15,7 +15,7 @@ jq -cr '(.success | map(select(.created_at > "2022"))) as $s
 
 function make_percentile() {
     # array loc descr
-    echo "| ($1 | ((length-1) * $2) as \$i | (\$i - (\$i|floor)) as \$w | .[\$i|floor]*\$w + .[\$i|ceil]*(1-\$w)) as $3"
+    echo "| ($1 | ((length-1) * $2) as \$i | (\$i - (\$i|floor)) as \$w | .[\$i|floor]*(1-\$w) + .[\$i|ceil]*\$w) as $3"
 }
 
 function make_stats_dict() {
@@ -29,7 +29,7 @@ function make_stats_dict() {
 }
 
 function make_stats() {
-    echo "(.$1 | map(.duration)) as \$new_$1
+    echo "(.$1 | map(.duration / 60 / 60 / 24)) as \$new_$1
         | (\$new_$1 | add/length) as \$ave_$2
         | (\$new_$1 | sort) as \$sorted_$2
         | \$sorted_$2[0] as \$min_$2

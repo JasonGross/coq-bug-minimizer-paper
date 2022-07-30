@@ -101,21 +101,16 @@
 <a:defRPr/>
 </a:pPr>
 <a:r>
-<a:rPr lang="en-US"/>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
 MIT logo from https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
-<a:rPr lang="en-US"/>
-<a:t>
-INRIA </a:t>
-</a:r>
-<a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-from https://www.inria.fr/en/charter-use-visual-identity-inria</a:t>
+INRIA from https://www.inria.fr/en/charter-use-visual-identity-inria</a:t>
 </a:r>
 </a:p>
 </p:txBody>

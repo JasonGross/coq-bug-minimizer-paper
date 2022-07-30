@@ -2,21 +2,21 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-8973</TotalTime>
+10478</TotalTime>
 <Words>
-1774</Words>
+1666</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-277</Paragraphs>
+262</Paragraphs>
 <Slides>
-34</Slides>
+31</Slides>
 <Notes>
-24</Notes>
+23</Notes>
 <HiddenSlides>
-3</HiddenSlides>
+0</HiddenSlides>
 <MMClips>
 2</MMClips>
 <ScaleCrop>
@@ -45,12 +45,12 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-34</vt:i4>
+31</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="38" baseType="lpstr">
+<vt:vector size="35" baseType="lpstr">
 <vt:lpstr>
 Calibri</vt:lpstr>
 <vt:lpstr>
@@ -121,12 +121,6 @@ Linearization</vt:lpstr>
 How to make your proof assistant amenable to minimization</vt:lpstr>
 <vt:lpstr>
 Future Work</vt:lpstr>
-<vt:lpstr>
-What I did in my PhD (AKA Why I care about wasted dev time)</vt:lpstr>
-<vt:lpstr>
-This Presentation </vt:lpstr>
-<vt:lpstr>
-Minimizer Running Time</vt:lpstr>
 </vt:vector>
 </TitlesOfParts>
 <LinksUpToDate>
