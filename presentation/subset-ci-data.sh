@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-function to_csv() {
-    cat $1.json | jq -sr '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' > $1.csv
-}
+. ./to_csv_jq.sh
 
 jq -cr 'select(.created_at > "2022")' ci-data.json > ci-data-2022.json
 to_csv ci-data-2022
