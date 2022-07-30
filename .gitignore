@@ -297,5 +297,9 @@ presentation/*.zip
 presentation/*.tmp/
 
 presentation/all-issues.json
+presentation/ci-timing-by-job/*.json
+presentation/ci-boxplots.all.tex
+presentation/ci-boxplots.lst.tex
+presentation/ci-timing-data-box-whisker-*.pdf
 *.json.inprogress
 *.json.tmp
