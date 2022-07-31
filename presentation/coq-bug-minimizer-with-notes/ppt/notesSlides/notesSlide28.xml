@@ -83,14 +83,17 @@ inlining</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-The minimizer succeeds on about 85% of cases where it is invoked---most failures are from earlier on when I was still debugging the automation.</a:t>
+About 86% of the files the minimizer produces </a:t>
 </a:r>
-</a:p>
-<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+arefully</a:t>
+</a:r>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Of the cases where it succeeds, a fully standalone file is produced about 86% of the time.</a:t>
+ standalone</a:t>
 </a:r>
 </a:p>
 </p:txBody>

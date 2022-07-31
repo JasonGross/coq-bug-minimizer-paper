@@ -46,18 +46,14 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Talk about problem being only potential, e.g., replacing “1 + 1” as </a:t>
+Talk about problem being only potential, e.g., replacing “1 + 1” as real in goal (sin( (1 + 1) * pi) = 0) vs </a:t>
 </a:r>
 <a:r>
 <a:rPr lang="en-US" dirty="0" err="1"/>
 <a:t>
 nat</a:t>
 </a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- vs Z</a:t>
-</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>

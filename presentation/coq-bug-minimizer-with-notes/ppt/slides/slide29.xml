@@ -246,7 +246,7 @@ style.visibility</p:attrName>
 <p:tgtEl>
 <p:spTgt spid="3">
 <p:txEl>
-<p:pRg st="2" end="2"/>
+<p:pRg st="1" end="1"/>
 </p:txEl>
 </p:spTgt>
 </p:tgtEl>
@@ -296,7 +296,7 @@ style.visibility</p:attrName>
 <p:tgtEl>
 <p:spTgt spid="3">
 <p:txEl>
-<p:pRg st="1" end="1"/>
+<p:pRg st="2" end="2"/>
 </p:txEl>
 </p:spTgt>
 </p:tgtEl>
