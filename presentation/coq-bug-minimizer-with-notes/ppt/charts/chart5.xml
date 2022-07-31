@@ -1,0 +1,10069 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<c:chartSpace xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:c16r2="http://schemas.microsoft.com/office/drawing/2015/06/chart">
+<c:date1904 val="0"/>
+<c:lang val="en-US"/>
+<c:roundedCorners val="0"/>
+<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+<mc:Choice Requires="c14" xmlns:c14="http://schemas.microsoft.com/office/drawing/2007/8/2/chart">
+<c14:style val="102"/>
+</mc:Choice>
+<mc:Fallback>
+<c:style val="2"/>
+</mc:Fallback>
+</mc:AlternateContent>
+<c:chart>
+<c:autoTitleDeleted val="1"/>
+<c:plotArea>
+<c:layout/>
+<c:barChart>
+<c:barDir val="col"/>
+<c:grouping val="stacked"/>
+<c:varyColors val="0"/>
+<c:ser>
+<c:idx val="2"/>
+<c:order val="2"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$D$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+lower quartile (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:noFill/>
+<a:ln w="25400">
+<a:noFill/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:invertIfNegative val="0"/>
+<c:errBars>
+<c:errBarType val="minus"/>
+<c:errValType val="cust"/>
+<c:noEndCap val="1"/>
+<c:plus>
+<c:numLit>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+1</c:v>
+</c:pt>
+</c:numLit>
+</c:plus>
+<c:minus>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$B$2:$B$1048576</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="1048575"/>
+<c:pt idx="0">
+<c:v>
+1.3667843316377301E-3</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+1.3772863450925901E-3</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+2.8220666448495302E-4</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+3.6459434862268501E-4</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+2.4629177872685101E-4</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.7441373074074001E-3</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+7.5152838859953493E-5</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+1.4977366125462899E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+1.3732441808449001E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+2.6703717274305502E-4</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+3.1755247114583298E-4</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+1.4367292091145799E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+2.9711704972222098E-4</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+1.4726706670370299E-3</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+8.8135384488425899E-4</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+7.1160600677083296E-4</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+2.04391327893518E-4</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+1.13457264858796E-3</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+1.5602240306018501E-3</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+1.5442498283101799E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+1.7371022969907401E-4</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+4.6746600305555498E-4</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+1.53776082980324E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+1.5800991848726801E-3</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+1.6887413175231401E-3</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+3.7991431684027702E-4</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+3.0638764478009198E-4</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+1.71664052372106E-3</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+1.6845168623263801E-4</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+1.1985643093171299E-3</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+1.2103165355902699E-4</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+1.6616517449652699E-3</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+3.8537908165509098E-4</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+4.8960216893518497E-4</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+1.0080506183738399E-3</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+3.57311655578703E-4</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+4.2804895417245399E-4</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+4.1793564253472202E-4</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+3.13362974538194E-3</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+1.0782571008159699E-3</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+9.4575497456018498E-4</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+1.73446105016203E-3</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+2.8747915671064801E-3</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+6.0445972384259199E-4</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+4.4099137349537E-4</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+2.59184915665509E-4</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+6.0666010824074002E-4</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+6.4909370162036998E-4</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+2.47239810274884E-3</c:v>
+</c:pt>
+<c:pt idx="147">
+<c:v>
+1.25366918424189E-3</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+4.5166361134259199E-4</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+1.0564312744328699E-3</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+1.5508422301562499E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+1.4852454110242999E-3</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+3.2233937928240799E-4</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+6.35614252887731E-4</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+1.5048110962499999E-3</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+1.8108668636573999E-4</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+8.7453675398148096E-4</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+1.6757011193287001E-3</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+3.5374089768518499E-4</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+6.6558777920717603E-4</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+1.8277606163368001E-3</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+3.2175426790567101E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:minus>
+<c:spPr>
+<a:noFill/>
+<a:ln w="19050" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:errBars>
+<c:cat>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:cat>
+<c:val>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$D$2:$D$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0">
+<c:v>
+1.79944058738425E-3</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+1.7995231944444401E-3</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+1.9631555931712901E-3</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+1.9990432870370298E-3</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+1.78055283564814E-3</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.9928784606481399E-3</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+1.7141109722222201E-3</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+1.75647755208333E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+1.74984257523148E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+1.87257346643518E-3</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+2.0099728993055498E-3</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+1.6803835156249901E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+1.96394362268518E-3</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+1.87658007523148E-3</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+1.9879973032407398E-3</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+1.78301203993055E-3</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+1.8186952199074E-3</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+2.0080136342592501E-3</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+1.71525988425925E-3</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+1.7879360011574001E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+1.81673335648148E-3</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+2.0831538599537002E-3</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+1.7603123553240701E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+1.73429095486111E-3</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+3.4953229861111098E-3</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+1.9767207349536998E-3</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+1.9515746412036999E-3</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+1.8114117100694401E-3</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+1.813220625E-3</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+2.1248188165509199E-3</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+1.7611484664351799E-3</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+2.2771323668981402E-3</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+2.0288727893518501E-3</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+2.3534808333333301E-3</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+2.7466677575231401E-3</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+2.12965816550925E-3</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+2.0768104513888799E-3</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+2.0322379195601798E-3</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+4.0899063917823998E-3</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+2.6856980844907402E-3</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+2.1978783593750001E-3</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+2.44361539351851E-3</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+3.1257910532407401E-3</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+2.0735144733796201E-3</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+2.1174797800925902E-3</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+1.8998457436342499E-3</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+1.9657304629629598E-3</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+2.1901818749999998E-3</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+4.2386947251157403E-3</c:v>
+</c:pt>
+<c:pt idx="147">
+<c:v>
+1.72193196180555E-3</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+2.1343936805555499E-3</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+2.7590839641203702E-3</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+1.80145165798611E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+1.7963087181712899E-3</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+2.4611524421296301E-3</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+2.3452124710648102E-3</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+3.3909453819444399E-3</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+2.7521053240740702E-4</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+2.4660436689814798E-3</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+3.3557396006944399E-3</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+2.3252105092592501E-3</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+2.3622313831018499E-3</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+3.5225392563657401E-3</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+4.8957069704861104E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:val>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000002-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="3"/>
+<c:order val="3"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$E$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+delta median (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:solidFill>
+<a:srgbClr val="FF0000"/>
+</a:solidFill>
+<a:ln w="25400">
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:invertIfNegative val="0"/>
+<c:cat>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:cat>
+<c:val>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$E$2:$E$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0">
+<c:v>
+1.4790077835648101E-4</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+1.8452075231481499E-4</c:v>
+</c:pt>
+<c:pt idx="6" formatCode="0.00E+00">
+<c:v>
+7.1478162615740503E-5</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+1.03782094907407E-4</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+2.4456628472222203E-4</c:v>
+</c:pt>
+<c:pt idx="15" formatCode="0.00E+00">
+<c:v>
+9.4243634259259194E-5</c:v>
+</c:pt>
+<c:pt idx="18" formatCode="0.00E+00">
+<c:v>
+2.7691151620370301E-5</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+2.4677196180555503E-4</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+3.3034795717592602E-4</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+1.41394554398148E-4</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+2.9377097800925897E-4</c:v>
+</c:pt>
+<c:pt idx="33" formatCode="0.00E+00">
+<c:v>
+9.0328110532407195E-5</c:v>
+</c:pt>
+<c:pt idx="36" formatCode="0.00E+00">
+<c:v>
+9.2277187499999804E-5</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+5.3594255208333301E-4</c:v>
+</c:pt>
+<c:pt idx="42" formatCode="0.00E+00">
+<c:v>
+6.9283078703703501E-5</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+2.13050517939814E-4</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+8.9116199074074001E-4</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+1.2450206018518501E-4</c:v>
+</c:pt>
+<c:pt idx="54" formatCode="0.00E+00">
+<c:v>
+3.9573315972222103E-5</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+8.5161560185185103E-4</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+3.5760325231481402E-4</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+1.6235844328703599E-4</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+8.8292576967592597E-4</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+9.7065203125E-4</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+1.0715912037036899E-4</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+1.5335648726851799E-4</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+1.2546493634259199E-4</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+9.8463448784722189E-4</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+3.8853191550925902E-4</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+1.05404777199073E-4</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+4.2749539351851802E-4</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+1.4965814236111099E-4</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+1.17642928240741E-4</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+5.9512953703703703E-4</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+8.9876806423611099E-4</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+1.3927645254629501E-4</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+2.1630020833333301E-4</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+3.7339838339120299E-3</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+2.3871285011574001E-4</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+6.8589216030092498E-3</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+2.4889136863425902E-4</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+5.8501342592592604E-4</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+3.6307290509259103E-4</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+2.9949968171296201E-4</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+1.71214641203703E-4</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+1.56759632523148E-4</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+2.7557409722222197E-4</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+7.9855256018518499E-3</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+1.6298227864583301E-3</c:v>
+</c:pt>
+<c:pt idx="147" formatCode="0.00E+00">
+<c:v>
+2.6645353009259001E-5</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+1.77258611111111E-4</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+3.39400464699074E-3</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+1.2655485503472201E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+1.8155830969328698E-2</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+5.5849590277777701E-4</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+4.8244232060185098E-4</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+7.1351581018518398E-4</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+1.3921926388888799E-3</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+1.9122952349536999E-2</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+4.4624104745370302E-4</c:v>
+</c:pt>
+<c:pt idx="180" formatCode="0.00E+00">
+<c:v>
+9.2082146990740994E-5</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+1.43650831018518E-3</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+9.0600107485532405E-2</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+4.96879515711805E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:val>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000003-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="4"/>
+<c:order val="4"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$F$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+delta upper quartile (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:solidFill>
+<a:srgbClr val="FF0000"/>
+</a:solidFill>
+<a:ln w="25400">
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:invertIfNegative val="0"/>
+<c:errBars>
+<c:errBarType val="plus"/>
+<c:errValType val="cust"/>
+<c:noEndCap val="1"/>
+<c:plus>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$H$2:$H$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0">
+<c:v>
+9.0043422361110203E-5</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+5.8893394171296003E-4</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+1.21827962476852E-4</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+1.75001278969907E-4</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+1.18202416087962E-4</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.48283475462962E-4</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+5.7041744745254504E-3</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+3.2686943153009199E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+2.08793404571758E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+2.8527150839120199E-4</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+4.38830047297452E-4</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+4.6791058521816996E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+0.118137798964999</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+4.6791903668982098E-5</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+5.3582848030092503E-4</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+8.2531385471064801E-4</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+2.5746878055555602E-4</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+0.123433310780208</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+5.5338402856539301E-3</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+3.5871988646122501E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+7.9810759671296305E-4</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+9.5289186943286997E-4</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+1.4724605093518501E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+6.2551972151620404E-4</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+2.12204318547452E-4</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+2.8407845670717501E-4</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+1.39559462398147E-3</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+3.3605895233217598E-4</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+1.9422301912905E-3</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+6.76865998206017E-4</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+1.59704527690972E-3</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+3.0493391198495299E-3</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+2.5711529948263898E-3</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+2.2253257243286702E-3</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+9.2281759655671205E-4</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+4.3805613089353601E-2</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+4.4089330773437402E-3</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+8.5810435707563401E-2</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+2.0042357866724499E-3</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+1.2496551510449101E-5</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+0.118267439602372</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+5.06596667755786E-2</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+1.78714855462501E-2</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+0.114299183006886</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+8.3728312600462908E-3</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+1.6863497291012702E-2</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+1.06799554126388E-2</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+0.113271232644386</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+1.13149586170717E-3</c:v>
+</c:pt>
+<c:pt idx="147">
+<c:v>
+1.32814102871411E-2</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+1.25528569438425E-2</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+2.28905247889463E-2</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+2.9399746302893499E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+2.6478553772540499E-2</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+1.8388416450983699E-2</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+1.46388250267476E-2</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+6.7036558552430195E-2</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+1.8430395296296199E-4</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+2.3476971678240401E-2</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+0.119417350781423</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+5.1877267969843703E-2</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+0.11718493516254</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+2.7551950200891202E-2</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+1.2712154036921199E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:plus>
+<c:minus>
+<c:numLit>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+1</c:v>
+</c:pt>
+</c:numLit>
+</c:minus>
+<c:spPr>
+<a:noFill/>
+<a:ln w="19050" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:errBars>
+<c:cat>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:cat>
+<c:val>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$F$2:$F$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0" formatCode="0.00E+00">
+<c:v>
+9.2483255208333594E-5</c:v>
+</c:pt>
+<c:pt idx="3" formatCode="0.00E+00">
+<c:v>
+9.1396666666666794E-5</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+1.33210266203703E-4</c:v>
+</c:pt>
+<c:pt idx="9" formatCode="0.00E+00">
+<c:v>
+6.5776487268518505E-5</c:v>
+</c:pt>
+<c:pt idx="12" formatCode="0.00E+00">
+<c:v>
+9.2198819444444497E-5</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.4719041666666599E-4</c:v>
+</c:pt>
+<c:pt idx="18" formatCode="0.00E+00">
+<c:v>
+2.5784690393518399E-5</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+2.0427737268518501E-4</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+1.8865130208333301E-4</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+1.3390399884259199E-4</c:v>
+</c:pt>
+<c:pt idx="30" formatCode="0.00E+00">
+<c:v>
+8.0405975115740297E-5</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+5.69010648148148E-4</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+6.2415687731481404E-3</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+1.2898756365740699E-4</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+2.18054456018518E-4</c:v>
+</c:pt>
+<c:pt idx="45" formatCode="0.00E+00">
+<c:v>
+6.4436221064814597E-5</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+1.2607262731481399E-4</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+3.00434571759259E-4</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+9.3314339699073997E-4</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+1.14834635416666E-4</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+7.5628384259259201E-4</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+1.7216170138888799E-4</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+4.0464175925925802E-4</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+5.7149440972222097E-4</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+1.17011325231482E-4</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+1.56965886574074E-3</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+1.3953536168981399E-4</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+9.5274756655092498E-4</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+3.2444075810185099E-4</c:v>
+</c:pt>
+<c:pt idx="87" formatCode="0.00E+00">
+<c:v>
+6.8056464120370093E-5</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+1.57848616898148E-4</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+6.27719754050925E-4</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+1.3747881944444401E-4</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+1.5675929976851799E-3</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+6.11404832175926E-4</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+2.5669873148148098E-3</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+1.3897068981481399E-3</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+4.7465768518518601E-4</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+4.1097214120370401E-4</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+0.115484916264467</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+4.3130217476851796E-3</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+1.43331444444444E-3</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+2.06287395833333E-4</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+9.2206570486111101E-3</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+7.1138538194444399E-4</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+4.0534872685185099E-4</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+1.6983704513888801E-3</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+2.9682488252314801E-3</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+8.2504612702546196E-3</c:v>
+</c:pt>
+<c:pt idx="147" formatCode="0.00E+00">
+<c:v>
+1.0615636574074101E-5</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+1.3809634490740701E-3</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+6.1037024421296297E-3</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+8.19544682002314E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+5.5496997453703704E-3</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+3.5204429571759201E-3</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+2.6288909866898102E-3</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+9.7474256944444495E-4</c:v>
+</c:pt>
+<c:pt idx="171" formatCode="0.00E+00">
+<c:v>
+6.9083964120370496E-5</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+1.61873306712962E-3</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+1.8205804629629601E-3</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+4.4858936631944401E-4</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+4.04789107349537E-3</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+4.7381400954861E-3</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+7.0558977792245306E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:val>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000004-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="10"/>
+<c:order val="10"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$L$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+lower quartile (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:noFill/>
+<a:ln w="25400">
+<a:noFill/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:invertIfNegative val="0"/>
+<c:errBars>
+<c:errBarType val="minus"/>
+<c:errValType val="cust"/>
+<c:noEndCap val="1"/>
+<c:plus>
+<c:numLit>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+1</c:v>
+</c:pt>
+</c:numLit>
+</c:plus>
+<c:minus>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$J$2:$J$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+1.3972606561921301E-4</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+1.38583302025463E-4</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+1.57530967766204E-4</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+1.39798980648148E-4</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+1.39570775648148E-4</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+1.56171933518518E-4</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+1.59094504930555E-4</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+1.7579058478009199E-4</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+1.7695278062499999E-4</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+1.59774884542824E-4</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+1.94690116435185E-4</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+1.8494902355323999E-4</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+1.2940017704861099E-4</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+1.97621943657406E-4</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+1.16589066458333E-4</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+1.47034073709491E-4</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+1.3132712353587899E-4</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+1.3681612123842601E-4</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+2.4464974888888802E-4</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+1.8301071324074099E-4</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+1.42723947581018E-4</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+1.4480867048611001E-4</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+2.5587690629629597E-4</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+3.71015062974536E-4</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+1.9632301162036999E-4</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+1.6923231273148099E-4</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+1.6607713419560199E-4</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+2.0458325517360999E-4</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+1.5372857925347199E-4</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+1.7234766444444401E-4</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+2.40059054340277E-4</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+1.9121329731481399E-4</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+2.27088612089121E-4</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+2.7979929148148203E-4</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+2.6211289648148101E-4</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+2.8634586597222299E-4</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+3.60921519074073E-4</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+5.4174702546296298E-4</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+1.3565408411747601E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+2.9158908767361102E-4</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+6.1925291111110999E-4</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.1295432906018501E-3</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+5.3529701593750003E-4</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+3.6142543861689998E-4</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+9.5697444586458295E-3</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+5.6810956614583401E-4</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+8.0120984055555104E-4</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+5.2813271229166701E-4</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+4.1112394966145802E-3</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+8.6551583136574195E-4</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+7.8552130898726998E-4</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+6.3983490729976802E-3</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+8.3954128810184996E-4</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+8.7668507415393504E-3</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+6.9246632236111098E-3</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+1.40676219038194E-3</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+3.3084290189814799E-3</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+9.5159813117476301E-4</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+1.2855430061805499E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+1.3435551332465199E-3</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+2.44704365274305E-3</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+4.0319980418749898E-3</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+2.1358500112627299E-2</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+2.3509650287476799E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:minus>
+<c:spPr>
+<a:noFill/>
+<a:ln w="19050" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:errBars>
+<c:cat>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:cat>
+<c:val>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$L$2:$L$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+2.0646060966435101E-3</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+2.11238864004629E-3</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+2.14265809027777E-3</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+2.19998416666666E-3</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+2.2085994791666598E-3</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+2.23854358796296E-3</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+2.2529532812500001E-3</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+2.2795502083333302E-3</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+2.2931123842592502E-3</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+2.3484767505786998E-3</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+2.46648799768518E-3</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+2.5189277141203698E-3</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+2.6182611776620298E-3</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+2.6846250868055501E-3</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+2.7152618460648099E-3</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+2.7686989843749999E-3</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+2.9000138599537002E-3</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+2.9977963020833302E-3</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+3.0240956597222201E-3</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+3.09865375578703E-3</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+3.4207556423611102E-3</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+3.4327410185185101E-3</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+3.5436297106481401E-3</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+3.66258812499999E-3</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+3.7141852199074001E-3</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+3.6987874768518499E-3</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+3.8862255063657398E-3</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+3.88940618634259E-3</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+4.0658351533564797E-3</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+4.16613917824074E-3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+4.1933479745370301E-3</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+3.7641409259259202E-3</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+4.7448518258101802E-3</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+5.6807574421296296E-3</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+6.0245513310185099E-3</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+6.4547842129629596E-3</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+7.6039394097222202E-3</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+8.4833557407407393E-3</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+7.4508024074073998E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+9.8431359027777703E-3</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+9.8107681018518508E-3</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.10256395601851E-2</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+1.07864679166666E-2</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+1.14372957783564E-2</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+1.18177364814814E-2</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+1.2191300746527699E-2</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+1.2746139166666601E-2</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+1.34350533912037E-2</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+1.3558330969328699E-2</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+1.4884001533564801E-2</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+1.8187812187499999E-2</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+2.00230056192129E-2</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+2.05387780787037E-2</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+2.2275303411458301E-2</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+2.6079454456018499E-2</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+2.65712578414351E-2</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+3.07583012934027E-2</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+3.3540838075810098E-2</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+3.7864410387731397E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+4.5240982991898097E-2</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+4.7610782743055503E-2</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+4.5971015642361099E-2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+8.0923515052083297E-2</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+9.34794410532407E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:val>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{0000000A-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="11"/>
+<c:order val="11"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$M$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+delta median (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:solidFill>
+<a:srgbClr val="00B050"/>
+</a:solidFill>
+<a:ln w="25400">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:invertIfNegative val="0"/>
+<c:cat>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:cat>
+<c:val>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$M$2:$M$192</c:f>
+<c:numCache>
+<c:formatCode>
+0.00E+00</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+5.4900807291666302E-5</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+5.0228234953703799E-5</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+5.3490057870370101E-5</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+5.0671562499999599E-5</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+5.6143726851851901E-5</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+5.7107905092592698E-5</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+6.2188883101851894E-5</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+6.6234363425926495E-5</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+6.3493246527777694E-5</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+5.0995795717592303E-5</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+6.4238518518518802E-5</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+9.1962100694444602E-5</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+4.7166501736111299E-5</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+7.4968460648147995E-5</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+5.18614062499996E-5</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+6.0628573495370099E-5</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+7.2290885416667096E-5</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+5.4415052083332303E-5</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+8.3215358796296204E-5</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+7.8273807870370198E-5</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+6.8011545138888603E-5</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+6.06664699074072E-5</c:v>
+</c:pt>
+<c:pt idx="67" formatCode="General">
+<c:v>
+1.2571109375000001E-4</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+9.4152175925926295E-5</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+7.7721817129629799E-5</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+9.5797175925925606E-5</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+6.9541085069444304E-5</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+8.3231331018519402E-5</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+8.0707595486111103E-5</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+9.7389942129629301E-5</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+9.70234259259272E-5</c:v>
+</c:pt>
+<c:pt idx="94" formatCode="General">
+<c:v>
+1.14238194444444E-4</c:v>
+</c:pt>
+<c:pt idx="97" formatCode="General">
+<c:v>
+1.3865567997685101E-4</c:v>
+</c:pt>
+<c:pt idx="100" formatCode="General">
+<c:v>
+1.0696966435184999E-4</c:v>
+</c:pt>
+<c:pt idx="103" formatCode="General">
+<c:v>
+1.2608601851851899E-4</c:v>
+</c:pt>
+<c:pt idx="106" formatCode="General">
+<c:v>
+1.4946906249999899E-4</c:v>
+</c:pt>
+<c:pt idx="109" formatCode="General">
+<c:v>
+1.9936105324074E-4</c:v>
+</c:pt>
+<c:pt idx="112" formatCode="General">
+<c:v>
+3.3359400462962897E-4</c:v>
+</c:pt>
+<c:pt idx="115" formatCode="General">
+<c:v>
+2.1121737094907402E-3</c:v>
+</c:pt>
+<c:pt idx="118" formatCode="General">
+<c:v>
+1.3644740740740701E-4</c:v>
+</c:pt>
+<c:pt idx="121" formatCode="General">
+<c:v>
+3.7505232638889E-4</c:v>
+</c:pt>
+<c:pt idx="124" formatCode="General">
+<c:v>
+2.3102317129629501E-4</c:v>
+</c:pt>
+<c:pt idx="127" formatCode="General">
+<c:v>
+3.2944480324074098E-4</c:v>
+</c:pt>
+<c:pt idx="130" formatCode="General">
+<c:v>
+1.5370721354166601E-4</c:v>
+</c:pt>
+<c:pt idx="133" formatCode="General">
+<c:v>
+2.5451855902777499E-4</c:v>
+</c:pt>
+<c:pt idx="136" formatCode="General">
+<c:v>
+3.5263060763889102E-4</c:v>
+</c:pt>
+<c:pt idx="139" formatCode="General">
+<c:v>
+3.9222277777777698E-4</c:v>
+</c:pt>
+<c:pt idx="142" formatCode="General">
+<c:v>
+3.4386916087962902E-4</c:v>
+</c:pt>
+<c:pt idx="145" formatCode="General">
+<c:v>
+4.3326264178241E-4</c:v>
+</c:pt>
+<c:pt idx="148" formatCode="General">
+<c:v>
+4.4146380208333498E-4</c:v>
+</c:pt>
+<c:pt idx="151" formatCode="General">
+<c:v>
+3.5689227430555102E-4</c:v>
+</c:pt>
+<c:pt idx="154" formatCode="General">
+<c:v>
+4.58822725694446E-4</c:v>
+</c:pt>
+<c:pt idx="157" formatCode="General">
+<c:v>
+3.9053369212962898E-4</c:v>
+</c:pt>
+<c:pt idx="160" formatCode="General">
+<c:v>
+1.0140200954861099E-3</c:v>
+</c:pt>
+<c:pt idx="163" formatCode="General">
+<c:v>
+7.46454618055555E-4</c:v>
+</c:pt>
+<c:pt idx="166" formatCode="General">
+<c:v>
+7.5206417245369996E-4</c:v>
+</c:pt>
+<c:pt idx="169" formatCode="General">
+<c:v>
+2.3769331221064698E-3</c:v>
+</c:pt>
+<c:pt idx="172" formatCode="General">
+<c:v>
+4.1485004918982E-4</c:v>
+</c:pt>
+<c:pt idx="175" formatCode="General">
+<c:v>
+6.2547455439815303E-4</c:v>
+</c:pt>
+<c:pt idx="178" formatCode="General">
+<c:v>
+8.97393570601853E-4</c:v>
+</c:pt>
+<c:pt idx="181" formatCode="General">
+<c:v>
+1.4107527083333301E-3</c:v>
+</c:pt>
+<c:pt idx="184" formatCode="General">
+<c:v>
+9.38491107060185E-3</c:v>
+</c:pt>
+<c:pt idx="187" formatCode="General">
+<c:v>
+9.5763649710648002E-3</c:v>
+</c:pt>
+<c:pt idx="190" formatCode="General">
+<c:v>
+6.3169176562499901E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:val>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{0000000B-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="12"/>
+<c:order val="12"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$N$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+delta upper quartile (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:solidFill>
+<a:srgbClr val="00B050"/>
+</a:solidFill>
+<a:ln w="25400">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:invertIfNegative val="0"/>
+<c:errBars>
+<c:errBarType val="plus"/>
+<c:errValType val="cust"/>
+<c:noEndCap val="1"/>
+<c:plus>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$P$2:$P$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+1.4103036917824E-4</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+1.64255302581018E-4</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+1.5572963854166601E-4</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+1.6959396083333401E-4</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+1.6020130476851799E-4</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+1.7296335101851801E-4</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+1.81939430219907E-4</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+1.6998664137731401E-4</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+1.49422263362268E-4</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+2.06048040468749E-4</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+2.2690832812499999E-4</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+2.1810744253472199E-4</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+1.5948072580439701E-4</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+2.08838220717592E-4</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+2.3784977438078399E-4</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+2.36478913292823E-4</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+2.92420669346063E-4</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+2.8561363425925898E-4</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+2.73202619270834E-4</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+2.3532620668981501E-4</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+3.44726584699067E-4</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+3.9471191099536601E-4</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+4.0186160209490702E-4</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+4.5955717085648101E-4</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+3.3430161974537E-4</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+4.55519247800925E-4</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+3.70145478206017E-4</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+4.2931898458333298E-4</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+1.4103567501446701E-3</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+4.9504523792823999E-4</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+4.7869028709490599E-4</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+2.75206982263888E-3</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+4.9659029523726605E-4</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+6.6560023236110803E-4</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+7.1395223555555402E-4</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+7.6112270740739799E-4</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+1.0218443130092501E-3</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+1.3246458868634201E-3</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+1.0910415956076299E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+9.6452830190972203E-4</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+1.2451579938888701E-3</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.52626985733795E-3</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+1.8363989828356401E-3</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+1.3214349608912E-3</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+1.94591772078703E-3</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+1.67078084872685E-3</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+1.9683756585184998E-3</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+1.69598548738425E-3</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+2.0674733149073999E-3</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+1.84780269728009E-3</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+2.5673334511458002E-3</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+2.8659711318750002E-3</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+3.2860160336573999E-3</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+9.8144532418981394E-3</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+3.91210774814813E-3</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+4.6346461045833204E-3</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+4.5693238509259201E-3</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+3.1099967640104199E-3</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+1.63575366497105E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+5.6036757171585702E-3</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+7.5640702249536902E-3</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+1.01314003423495E-2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+9.69398488803235E-3</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+7.7447986330034602E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:plus>
+<c:minus>
+<c:numLit>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+1</c:v>
+</c:pt>
+</c:numLit>
+</c:minus>
+<c:spPr>
+<a:noFill/>
+<a:ln w="19050" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:errBars>
+<c:cat>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:cat>
+<c:val>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$N$2:$N$192</c:f>
+<c:numCache>
+<c:formatCode>
+0.00E+00</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+4.79862528935184E-5</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+4.7722627314814699E-5</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+4.5881597222222397E-5</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+5.0571018518518398E-5</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+5.3101805555555697E-5</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+4.95399652777777E-5</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+5.8757447916666397E-5</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+5.6596490162036297E-5</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+5.25260821759251E-5</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+4.69825983796298E-5</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+6.1338640046296102E-5</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+7.8533252314814795E-5</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+5.0982146990740002E-5</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+8.7082763310185503E-5</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+5.4190772569444502E-5</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+6.3050578703704099E-5</c:v>
+</c:pt>
+<c:pt idx="49" formatCode="General">
+<c:v>
+1.07967745949073E-4</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+6.1032158564815203E-5</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+7.6931128472221697E-5</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+7.2621681134258894E-5</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+8.18083738425923E-5</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+8.0811469907408201E-5</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+9.8229927662037001E-5</c:v>
+</c:pt>
+<c:pt idx="70" formatCode="General">
+<c:v>
+1.02190694444444E-4</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+8.7046157407407305E-5</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+8.6188449074073997E-5</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+9.8315199652777597E-5</c:v>
+</c:pt>
+<c:pt idx="82" formatCode="General">
+<c:v>
+1.1007115162036899E-4</c:v>
+</c:pt>
+<c:pt idx="85" formatCode="General">
+<c:v>
+1.2998772569444399E-4</c:v>
+</c:pt>
+<c:pt idx="88" formatCode="General">
+<c:v>
+1.20793229166666E-4</c:v>
+</c:pt>
+<c:pt idx="91" formatCode="General">
+<c:v>
+1.09138003472221E-4</c:v>
+</c:pt>
+<c:pt idx="94" formatCode="General">
+<c:v>
+3.5643928240740698E-4</c:v>
+</c:pt>
+<c:pt idx="97" formatCode="General">
+<c:v>
+1.4209789351851801E-4</c:v>
+</c:pt>
+<c:pt idx="100" formatCode="General">
+<c:v>
+1.27047592592593E-4</c:v>
+</c:pt>
+<c:pt idx="103" formatCode="General">
+<c:v>
+1.39672106481481E-4</c:v>
+</c:pt>
+<c:pt idx="106" formatCode="General">
+<c:v>
+1.9672203703703601E-4</c:v>
+</c:pt>
+<c:pt idx="109" formatCode="General">
+<c:v>
+2.7120994212963002E-4</c:v>
+</c:pt>
+<c:pt idx="112" formatCode="General">
+<c:v>
+3.15354913194444E-4</c:v>
+</c:pt>
+<c:pt idx="115" formatCode="General">
+<c:v>
+3.41105729166665E-4</c:v>
+</c:pt>
+<c:pt idx="118" formatCode="General">
+<c:v>
+1.5642203125000001E-4</c:v>
+</c:pt>
+<c:pt idx="121" formatCode="General">
+<c:v>
+3.2538298611110801E-4</c:v>
+</c:pt>
+<c:pt idx="124" formatCode="General">
+<c:v>
+2.6430627314814799E-4</c:v>
+</c:pt>
+<c:pt idx="127" formatCode="General">
+<c:v>
+3.25369837962961E-4</c:v>
+</c:pt>
+<c:pt idx="130" formatCode="General">
+<c:v>
+2.38533469328705E-4</c:v>
+</c:pt>
+<c:pt idx="133" formatCode="General">
+<c:v>
+3.3844244502314902E-4</c:v>
+</c:pt>
+<c:pt idx="136" formatCode="General">
+<c:v>
+5.0995109953703196E-4</c:v>
+</c:pt>
+<c:pt idx="139" formatCode="General">
+<c:v>
+5.1392712962963403E-4</c:v>
+</c:pt>
+<c:pt idx="142" formatCode="General">
+<c:v>
+5.6247154224537202E-4</c:v>
+</c:pt>
+<c:pt idx="145" formatCode="General">
+<c:v>
+6.0009484664351595E-4</c:v>
+</c:pt>
+<c:pt idx="148" formatCode="General">
+<c:v>
+4.54278773148146E-4</c:v>
+</c:pt>
+<c:pt idx="151" formatCode="General">
+<c:v>
+4.3229028356481897E-4</c:v>
+</c:pt>
+<c:pt idx="154" formatCode="General">
+<c:v>
+5.0514677662036604E-4</c:v>
+</c:pt>
+<c:pt idx="157" formatCode="General">
+<c:v>
+4.6907230324074199E-4</c:v>
+</c:pt>
+<c:pt idx="160" formatCode="General">
+<c:v>
+2.0959485995370301E-3</c:v>
+</c:pt>
+<c:pt idx="163" formatCode="General">
+<c:v>
+7.4791976851851499E-4</c:v>
+</c:pt>
+<c:pt idx="166" formatCode="General">
+<c:v>
+8.8260523148148801E-4</c:v>
+</c:pt>
+<c:pt idx="169" formatCode="General">
+<c:v>
+9.7466185185185396E-4</c:v>
+</c:pt>
+<c:pt idx="172" formatCode="General">
+<c:v>
+5.3892389756943898E-4</c:v>
+</c:pt>
+<c:pt idx="175" formatCode="General">
+<c:v>
+6.9515309606481203E-4</c:v>
+</c:pt>
+<c:pt idx="178" formatCode="General">
+<c:v>
+1.76058497395832E-3</c:v>
+</c:pt>
+<c:pt idx="181" formatCode="General">
+<c:v>
+2.27367749421297E-3</c:v>
+</c:pt>
+<c:pt idx="184" formatCode="General">
+<c:v>
+2.60158047453702E-3</c:v>
+</c:pt>
+<c:pt idx="187" formatCode="General">
+<c:v>
+9.5617076678240695E-3</c:v>
+</c:pt>
+<c:pt idx="190" formatCode="General">
+<c:v>
+1.34292420515046E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:val>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{0000000C-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:dLbls>
+<c:showLegendKey val="0"/>
+<c:showVal val="0"/>
+<c:showCatName val="0"/>
+<c:showSerName val="0"/>
+<c:showPercent val="0"/>
+<c:showBubbleSize val="0"/>
+</c:dLbls>
+<c:gapWidth val="45"/>
+<c:overlap val="100"/>
+<c:axId val="1984158928"/>
+<c:axId val="1838093280"/>
+</c:barChart>
+<c:scatterChart>
+<c:scatterStyle val="lineMarker"/>
+<c:varyColors val="0"/>
+<c:ser>
+<c:idx val="1"/>
+<c:order val="1"/>
+<c:tx>
+<c:strRef>
+<c:f>
+Sheet1!$C$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+8.87% (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="dash"/>
+<c:size val="7"/>
+<c:spPr>
+<a:solidFill>
+<a:srgbClr val="C00000">
+<a:alpha val="95000"/>
+</a:srgbClr>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:f>
+Sheet1!$A$2:$A$75</c:f>
+<c:strCache>
+<c:ptCount val="74"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:f>
+Sheet1!$C$2:$C$75</c:f>
+<c:numCache>
+<c:formatCode>
+[h]"h"m"m"s"s"</c:formatCode>
+<c:ptCount val="74"/>
+<c:pt idx="0">
+<c:v>
+1.69901629940856E-3</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+1.6939678222314799E-3</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+1.7608221962488401E-3</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+1.7917363984050901E-3</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+1.70344398736111E-3</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.71323699333333E-3</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+1.6648640561400399E-3</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+1.65310297950231E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+1.6964179284722201E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+1.7341449512152699E-3</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+3.4063529016655002E-3</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+1.7482412871215199E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+1.75245158756828E-3</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+2.4467799227581E-3</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+1.74794466880555E-3</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+2.2569706892476798E-3</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+1.7829836026851799E-3</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+2.4122578485138799E-3</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+1.3663665667361101E-4</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+2.1589372635092501E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+1.7850913330439799E-3</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+2.23904308044675E-3</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+1.89615639751041E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+2.1322987951319398E-3</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+3.04002178124537E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000001-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="5"/>
+<c:order val="5"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$G$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+91.13% (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="dash"/>
+<c:size val="7"/>
+<c:spPr>
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:srgbClr val="C00000"/>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$G$2:$G$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0">
+<c:v>
+2.07820415751736E-3</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+2.1878362046666602E-3</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+2.2248848495821701E-3</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+2.2324827150601799E-3</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+2.1878721666990699E-3</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+2.3212336532407399E-3</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+2.2475236889837901E-3</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+2.3358855379953698E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+2.3887798851273102E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+2.2465268089699002E-3</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+2.5434473155000002E-3</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+2.6206410119073999E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+0.126424286553666</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+2.5829340886412001E-3</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+2.6616734374536998E-3</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+2.8089684675902701E-3</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+2.9326639182291601E-3</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+7.2920450824583401E-3</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+3.6012149934178199E-3</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+3.78330525517477E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+3.4881851485509198E-3</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+3.0008684651041599E-3</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+4.0461286008842499E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+3.7895769210347201E-3</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+3.8225066899375002E-3</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+3.8594734351828702E-3</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+3.0018023773715199E-3</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+3.9391533424664301E-3</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+3.1610560607094802E-3</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+2.4257706223912E-3</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+3.1956064571412E-3</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+4.6111700298958301E-3</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+3.96635783063425E-3</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+5.4651657446296298E-3</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+4.91092511416087E-3</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+6.3437431686654997E-3</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+5.9623705802430496E-3</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+6.9196433724976799E-3</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+5.5189282289502296E-3</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+0.12503264163491001</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+1.32790613410115E-2</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+7.4853968920648101E-3</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+8.0791120279583295E-3</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+0.125722774776064</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+6.9667405830601799E-3</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+6.5767267757673503E-3</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+1.22956021861111E-2</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+0.125182981663645</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+1.48642912943993E-2</c:v>
+</c:pt>
+<c:pt idx="147">
+<c:v>
+2.19550486986342E-3</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+6.2925391528703698E-3</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+2.25215751844536E-2</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+1.30989814739317E-2</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+2.7934731460943201E-2</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+1.4866950416099501E-2</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+1.0668034663392299E-2</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+2.0504534791083301E-2</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+1.8119499538449E-3</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+3.4907025640518501E-2</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+1.26651170303819E-2</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+7.66517201210647E-3</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+3.7520728430993001E-2</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+0.12322963546200601</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+0.125198016645725</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000005-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="7"/>
+<c:order val="7"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$I$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+mean (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="x"/>
+<c:size val="10"/>
+<c:spPr>
+<a:noFill/>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent2">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$I$2:$I$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0">
+<c:v>
+1.8558026284722199E-3</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+1.9354121211013599E-3</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+2.1077464886831202E-3</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+2.0418788493036101E-3</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+1.94436938014403E-3</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+2.07179998342478E-3</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+2.37021343653549E-3</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+2.0749118491602001E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+2.07813856844589E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+2.00686655591866E-3</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+2.2151678979700799E-3</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+2.1309803150720099E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+3.0288872379115199E-2</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+2.06458438657407E-3</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+2.1344672658128901E-3</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+1.9919315332031198E-3</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+2.5135288424295698E-3</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+1.2923479842491901E-2</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+2.51837421643518E-3</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+2.7469084463183401E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+2.41598780495169E-3</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+2.3014709961917501E-3</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+2.4941159410612501E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+2.4022054993386201E-3</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+3.5281393002852099E-3</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+2.6934531041666598E-3</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+2.1566370276331001E-3</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+3.4903848557098702E-3</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+2.3415267196073299E-3</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+2.1391611906828702E-3</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+2.23752310991236E-3</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+2.7444602433770501E-3</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+2.42841544847513E-3</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+3.6064593143004101E-3</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+3.52858832569007E-3</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+9.5243588733691098E-3</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+4.2044558220807604E-3</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+8.3472334559811807E-3</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+4.13817560515872E-3</c:v>
+</c:pt>
+<c:pt idx="117">
+<c:v>
+4.9614052107041499E-2</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+1.0597950100278501E-2</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+6.8045993897306398E-3</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+6.7166218241279003E-3</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+3.2717761036348797E-2</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+4.0834119449881896E-3</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+5.1486332205794502E-3</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+5.4813914474400802E-3</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+2.6441264029176799E-2</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+7.63939135628858E-3</c:v>
+</c:pt>
+<c:pt idx="147">
+<c:v>
+3.0543823871527699E-3</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+3.58128745383374E-3</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+1.10391561052009E-2</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+6.0387351177662004E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+1.72999889519844E-2</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+6.9881007091108296E-3</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+4.8891928428631496E-3</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+8.9741809974028895E-3</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+1.1454640717592499E-3</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+1.75475224708697E-2</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+8.5974729641998798E-3</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+6.2807828091242203E-3</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+1.43774038475315E-2</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+6.7134117639031196E-2</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+6.4438914955673707E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000007-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="9"/>
+<c:order val="9"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$K$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+8.87% (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="dash"/>
+<c:size val="7"/>
+<c:spPr>
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$K$2:$K$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+2.00242978471296E-3</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+2.05326673829861E-3</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+2.08311430644675E-3</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+2.13940090716666E-3</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+2.1491737728333302E-3</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+2.1750707798518501E-3</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+2.1865721049583301E-3</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+2.2157612408796202E-3</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+2.2259553175983699E-3</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+2.2829910571076301E-3</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+2.3975732678587899E-3</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+2.44114353454861E-3</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+2.5436138174536999E-3</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+2.6122915133703702E-3</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+2.65778287991666E-3</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+2.7029471548437401E-3</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+2.8383640554108698E-3</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+2.93882085677083E-3</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+2.9300391209189799E-3</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+3.02211279928935E-3</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+3.3546215114467499E-3</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+3.36982363983796E-3</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+3.43028022826851E-3</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+3.5646874729027699E-3</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+3.6456620334814802E-3</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+3.6121926558101802E-3</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+3.812942497103E-3</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+3.7998371269710599E-3</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+3.9973768351331002E-3</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+4.08261789841898E-3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+4.0850044635416596E-3</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+3.6701544128888799E-3</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+4.6322976402974501E-3</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+5.5749092009675901E-3</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+5.8969306054814799E-3</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+6.3171551927962899E-3</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+7.4348626736296299E-3</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+8.2047976333912004E-3</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+6.2904533414236104E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+9.7120578175810095E-3</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+9.4645299086481404E-3</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.08126536020694E-2</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+1.0511363938527699E-2</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+1.12958996683912E-2</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+1.1575150622747599E-2</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+1.1882232532662001E-2</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+1.23649382539166E-2</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+1.3194490536160799E-2</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+1.30958308173611E-2</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+1.44629120856273E-2</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+1.7837857954576299E-2</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+1.9568671371004601E-2</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+2.01583030710972E-2</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+2.1537961549634201E-2</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+2.5345539571481401E-2</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+2.5968590233555501E-2</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+2.8259390339003401E-2</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+3.3074341607793899E-2</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+2.59736973240439E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+4.4519990903703698E-2</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+4.6484202686319399E-2</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+4.3162006587798597E-2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+7.2680317768428204E-2</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+9.0506932187681702E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000009-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="13"/>
+<c:order val="13"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$O$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+91.13% (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="dash"/>
+<c:size val="7"/>
+<c:spPr>
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$O$2:$O$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+2.2147887882141199E-3</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+2.2664652685509198E-3</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+2.2960165606365698E-3</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+2.3566962176111098E-3</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+2.3734145267962901E-3</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+2.4071243951296201E-3</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+2.43024576539814E-3</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+2.4528823620254599E-3</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+2.46463922058796E-3</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+2.5171190730092501E-3</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+2.65921590510416E-3</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+2.7607313409953702E-3</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+2.7922953698124899E-3</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+2.9391236933194401E-3</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+2.9128788102326299E-3</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+2.9850879628541601E-3</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+3.2013116225902698E-3</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+3.2255773072916599E-3</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+3.2796281784861102E-3</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+3.3397180915868E-3</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+3.70038078498611E-3</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+3.7209391410648099E-3</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+3.8789267218298602E-3</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+4.0070859966319398E-3</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+3.9989266378101804E-3</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+4.1097919012731401E-3</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+4.2269039749363397E-3</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+4.2393079492083303E-3</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+4.6662996769212903E-3</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+4.5845226062893501E-3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+4.5770753058796201E-3</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+6.4727487623981398E-3</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+5.2139715222013798E-3</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+6.1902181821712901E-3</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+6.5467367624999998E-3</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+7.1675081064907402E-3</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+8.4484466357222197E-3</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+9.6198172540509202E-3</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+1.0308026273508099E-2</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+1.05126774690972E-2</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+1.09561865177222E-2</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.2055787563962901E-2</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+1.2102331026692101E-2</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+1.2348749664188601E-2</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+1.32778116078217E-2</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+1.36668049603819E-2</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+1.4360527398601801E-2</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+1.49510800531782E-2</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+1.53000729091435E-2</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+1.6476728255738399E-2</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+1.9944003486244199E-2</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+2.19928550409722E-2</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+2.2700605068851801E-2</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+3.3746894803320597E-2</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+2.88780241791666E-2</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+2.96707956828101E-2</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+3.5587358196087902E-2</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+3.5552907894332103E-2</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+4.0507086993286999E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+5.05761901153935E-2</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+5.4274537467148103E-2</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+6.4875046724254606E-2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+0.103587410947062</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+0.11802930302369199</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{0000000D-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:ser>
+<c:idx val="15"/>
+<c:order val="15"/>
+<c:tx>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$Q$1</c:f>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+mean (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="x"/>
+<c:size val="10"/>
+<c:spPr>
+<a:noFill/>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent6">
+<a:lumMod val="50000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c:f>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:f>
+'ci-data-stats-2022-boxplots'!$Q$2:$Q$192</c:f>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+2.1333666436603701E-3</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+2.1754023429059201E-3</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+2.2202127673479699E-3</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+2.2764751824390799E-3</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+2.2835121713287998E-3</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+2.3166042216065099E-3</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+2.3205119092525499E-3</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+2.3578645453864199E-3</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+2.3604257164434499E-3</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+2.4262516091718002E-3</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+2.54555695983198E-3</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+2.6183526467521501E-3</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+2.6700182384500298E-3</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+2.7750727180683699E-3</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+2.7993787721429801E-3</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+2.8492742059053602E-3</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+3.0167427392072698E-3</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+3.0791948130646099E-3</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+3.1157996942128702E-3</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+3.18993051404098E-3</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+3.5127395226517001E-3</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+3.5336886496522102E-3</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+3.6787833207276902E-3</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+3.78114863939427E-3</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+3.8225166950819501E-3</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+3.8431332312103901E-3</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+3.9980192641883398E-3</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+4.00231280132769E-3</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+4.2708706591991696E-3</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+4.3254322681155E-3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+4.3341121096829201E-3</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+4.4539451234172104E-3</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+4.9092737798946502E-3</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+5.8282527738744401E-3</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+6.1979886350504798E-3</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+6.6796345239396896E-3</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+8.0473073795579494E-3</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+8.8579923199896896E-3</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+8.9846217895459997E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+1.00556687011958E-2</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+1.0270779445013501E-2</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.1383449170140199E-2</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+1.16230243329466E-2</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+1.17498754960458E-2</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+1.2037733751997201E-2</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+1.26963345331901E-2</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+1.3308796179223099E-2</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+1.3998831913469499E-2</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+1.4017493512199899E-2</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+1.5419520502154701E-2</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+1.8713573837785501E-2</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+2.04828306741082E-2</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+2.11689347336716E-2</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+2.4721793668026501E-2</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+2.6831041072624299E-2</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+2.7563849206999801E-2</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+3.2611316658768298E-2</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+3.4149039362042298E-2</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+3.7679457763968499E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+4.6891232613063501E-2</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+4.9679659431427499E-2</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+5.31331264574883E-2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+8.9608367861003596E-2</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+0.101530576279129</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{0000000F-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c:ser>
+<c:dLbls>
+<c:showLegendKey val="0"/>
+<c:showVal val="0"/>
+<c:showCatName val="0"/>
+<c:showSerName val="0"/>
+<c:showPercent val="0"/>
+<c:showBubbleSize val="0"/>
+</c:dLbls>
+<c:axId val="1984158928"/>
+<c:axId val="1838093280"/>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:filteredScatterSeries>
+<c15:ser>
+<c:idx val="6"/>
+<c:order val="6"/>
+<c:tx>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$H$1</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+whisker 97.85% (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="circle"/>
+<c:size val="5"/>
+<c:spPr>
+<a:solidFill>
+<a:schemeClr val="accent1">
+<a:lumMod val="60000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent1">
+<a:lumMod val="60000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$H$2:$H$192</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="0" formatCode="0.00E+00">
+<c:v>
+9.0043422361110203E-5</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+5.8893394171296003E-4</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+1.21827962476852E-4</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+1.75001278969907E-4</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+1.18202416087962E-4</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.48283475462962E-4</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+5.7041744745254504E-3</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+3.2686943153009199E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+2.08793404571758E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+2.8527150839120199E-4</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+4.38830047297452E-4</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+4.6791058521816996E-3</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+0.118137798964999</c:v>
+</c:pt>
+<c:pt idx="39" formatCode="0.00E+00">
+<c:v>
+4.6791903668982098E-5</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+5.3582848030092503E-4</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+8.2531385471064801E-4</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+2.5746878055555602E-4</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+0.123433310780208</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+5.5338402856539301E-3</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+3.5871988646122501E-3</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+7.9810759671296305E-4</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+9.5289186943286997E-4</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+1.4724605093518501E-3</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+6.2551972151620404E-4</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+2.12204318547452E-4</c:v>
+</c:pt>
+<c:pt idx="75">
+<c:v>
+2.8407845670717501E-4</c:v>
+</c:pt>
+<c:pt idx="78">
+<c:v>
+1.39559462398147E-3</c:v>
+</c:pt>
+<c:pt idx="81">
+<c:v>
+3.3605895233217598E-4</c:v>
+</c:pt>
+<c:pt idx="84">
+<c:v>
+1.9422301912905E-3</c:v>
+</c:pt>
+<c:pt idx="87">
+<c:v>
+6.76865998206017E-4</c:v>
+</c:pt>
+<c:pt idx="90">
+<c:v>
+1.59704527690972E-3</c:v>
+</c:pt>
+<c:pt idx="93">
+<c:v>
+3.0493391198495299E-3</c:v>
+</c:pt>
+<c:pt idx="96">
+<c:v>
+2.5711529948263898E-3</c:v>
+</c:pt>
+<c:pt idx="99">
+<c:v>
+2.2253257243286702E-3</c:v>
+</c:pt>
+<c:pt idx="102">
+<c:v>
+9.2281759655671205E-4</c:v>
+</c:pt>
+<c:pt idx="105">
+<c:v>
+4.3805613089353601E-2</c:v>
+</c:pt>
+<c:pt idx="108">
+<c:v>
+4.4089330773437402E-3</c:v>
+</c:pt>
+<c:pt idx="111">
+<c:v>
+8.5810435707563401E-2</c:v>
+</c:pt>
+<c:pt idx="114">
+<c:v>
+2.0042357866724499E-3</c:v>
+</c:pt>
+<c:pt idx="117" formatCode="0.00E+00">
+<c:v>
+1.2496551510449101E-5</c:v>
+</c:pt>
+<c:pt idx="120">
+<c:v>
+0.118267439602372</c:v>
+</c:pt>
+<c:pt idx="123">
+<c:v>
+5.06596667755786E-2</c:v>
+</c:pt>
+<c:pt idx="126">
+<c:v>
+1.78714855462501E-2</c:v>
+</c:pt>
+<c:pt idx="129">
+<c:v>
+0.114299183006886</c:v>
+</c:pt>
+<c:pt idx="132">
+<c:v>
+8.3728312600462908E-3</c:v>
+</c:pt>
+<c:pt idx="135">
+<c:v>
+1.6863497291012702E-2</c:v>
+</c:pt>
+<c:pt idx="138">
+<c:v>
+1.06799554126388E-2</c:v>
+</c:pt>
+<c:pt idx="141">
+<c:v>
+0.113271232644386</c:v>
+</c:pt>
+<c:pt idx="144">
+<c:v>
+1.13149586170717E-3</c:v>
+</c:pt>
+<c:pt idx="147">
+<c:v>
+1.32814102871411E-2</c:v>
+</c:pt>
+<c:pt idx="150">
+<c:v>
+1.25528569438425E-2</c:v>
+</c:pt>
+<c:pt idx="153">
+<c:v>
+2.28905247889463E-2</c:v>
+</c:pt>
+<c:pt idx="156">
+<c:v>
+2.9399746302893499E-3</c:v>
+</c:pt>
+<c:pt idx="159">
+<c:v>
+2.6478553772540499E-2</c:v>
+</c:pt>
+<c:pt idx="162">
+<c:v>
+1.8388416450983699E-2</c:v>
+</c:pt>
+<c:pt idx="165">
+<c:v>
+1.46388250267476E-2</c:v>
+</c:pt>
+<c:pt idx="168">
+<c:v>
+6.7036558552430195E-2</c:v>
+</c:pt>
+<c:pt idx="171">
+<c:v>
+1.8430395296296199E-4</c:v>
+</c:pt>
+<c:pt idx="174">
+<c:v>
+2.3476971678240401E-2</c:v>
+</c:pt>
+<c:pt idx="177">
+<c:v>
+0.119417350781423</c:v>
+</c:pt>
+<c:pt idx="180">
+<c:v>
+5.1877267969843703E-2</c:v>
+</c:pt>
+<c:pt idx="183">
+<c:v>
+0.11718493516254</c:v>
+</c:pt>
+<c:pt idx="186">
+<c:v>
+2.7551950200891202E-2</c:v>
+</c:pt>
+<c:pt idx="189">
+<c:v>
+1.2712154036921199E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000006-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c15:ser>
+</c15:filteredScatterSeries>
+<c15:filteredScatterSeries>
+<c15:ser>
+<c:idx val="8"/>
+<c:order val="8"/>
+<c:tx>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$J$1</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+whisker 2.15% (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="circle"/>
+<c:size val="5"/>
+<c:spPr>
+<a:solidFill>
+<a:schemeClr val="accent3">
+<a:lumMod val="60000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent3">
+<a:lumMod val="60000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$J$2:$J$192</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+1.3972606561921301E-4</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+1.38583302025463E-4</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+1.57530967766204E-4</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+1.39798980648148E-4</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+1.39570775648148E-4</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+1.56171933518518E-4</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+1.59094504930555E-4</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+1.7579058478009199E-4</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+1.7695278062499999E-4</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+1.59774884542824E-4</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+1.94690116435185E-4</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+1.8494902355323999E-4</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+1.2940017704861099E-4</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+1.97621943657406E-4</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+1.16589066458333E-4</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+1.47034073709491E-4</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+1.3132712353587899E-4</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+1.3681612123842601E-4</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+2.4464974888888802E-4</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+1.8301071324074099E-4</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+1.42723947581018E-4</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+1.4480867048611001E-4</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+2.5587690629629597E-4</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+3.71015062974536E-4</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+1.9632301162036999E-4</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+1.6923231273148099E-4</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+1.6607713419560199E-4</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+2.0458325517360999E-4</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+1.5372857925347199E-4</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+1.7234766444444401E-4</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+2.40059054340277E-4</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+1.9121329731481399E-4</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+2.27088612089121E-4</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+2.7979929148148203E-4</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+2.6211289648148101E-4</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+2.8634586597222299E-4</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+3.60921519074073E-4</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+5.4174702546296298E-4</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+1.3565408411747601E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+2.9158908767361102E-4</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+6.1925291111110999E-4</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.1295432906018501E-3</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+5.3529701593750003E-4</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+3.6142543861689998E-4</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+9.5697444586458295E-3</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+5.6810956614583401E-4</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+8.0120984055555104E-4</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+5.2813271229166701E-4</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+4.1112394966145802E-3</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+8.6551583136574195E-4</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+7.8552130898726998E-4</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+6.3983490729976802E-3</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+8.3954128810184996E-4</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+8.7668507415393504E-3</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+6.9246632236111098E-3</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+1.40676219038194E-3</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+3.3084290189814799E-3</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+9.5159813117476301E-4</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+1.2855430061805499E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+1.3435551332465199E-3</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+2.44704365274305E-3</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+4.0319980418749898E-3</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+2.1358500112627299E-2</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+2.3509650287476799E-2</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000008-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c15:ser>
+</c15:filteredScatterSeries>
+<c15:filteredScatterSeries>
+<c15:ser>
+<c:idx val="14"/>
+<c:order val="14"/>
+<c:tx>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$P$1</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+whisker 97.85% (success)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="circle"/>
+<c:size val="5"/>
+<c:spPr>
+<a:solidFill>
+<a:schemeClr val="accent3">
+<a:lumMod val="80000"/>
+<a:lumOff val="20000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent3">
+<a:lumMod val="80000"/>
+<a:lumOff val="20000"/>
+</a:schemeClr>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$A$2:$A$192</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+coqhammer</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+finmap</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+lean-importer</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+mathcomp-word</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+argosy</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+paco</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+menhir</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+tlc</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+mczify</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+deriving</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+bignums</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+mtac2</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+fcsl-pcm</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+coquelicot</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+relation-algebra</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+plugin-tutorial</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+sf</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+flocq3</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+flocq</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+coqprime</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+equations</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+math-classes</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+quickchick</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+elpi</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+hott</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+engine-bench</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+analysis</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+coq-tools</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+compcert</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+jasmin</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+cross-crypto</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+fiat-parsers</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+mathcomp-base</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+mathcomp</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+coq-performance-tests</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+oddorder</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+corn</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+geocoq</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+fiat-crypto-ocaml</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:formulaRef>
+<c15:sqref>
+'ci-data-stats-2022-boxplots'!$P$2:$P$192</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:numCache>
+<c:formatCode>
+General</c:formatCode>
+<c:ptCount val="191"/>
+<c:pt idx="1">
+<c:v>
+1.4103036917824E-4</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+1.64255302581018E-4</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+1.5572963854166601E-4</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+1.6959396083333401E-4</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+1.6020130476851799E-4</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+1.7296335101851801E-4</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+1.81939430219907E-4</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+1.6998664137731401E-4</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+1.49422263362268E-4</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+2.06048040468749E-4</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+2.2690832812499999E-4</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+2.1810744253472199E-4</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+1.5948072580439701E-4</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+2.08838220717592E-4</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+2.3784977438078399E-4</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+2.36478913292823E-4</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+2.92420669346063E-4</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+2.8561363425925898E-4</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+2.73202619270834E-4</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+2.3532620668981501E-4</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+3.44726584699067E-4</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+3.9471191099536601E-4</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+4.0186160209490702E-4</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+4.5955717085648101E-4</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+3.3430161974537E-4</c:v>
+</c:pt>
+<c:pt idx="76">
+<c:v>
+4.55519247800925E-4</c:v>
+</c:pt>
+<c:pt idx="79">
+<c:v>
+3.70145478206017E-4</c:v>
+</c:pt>
+<c:pt idx="82">
+<c:v>
+4.2931898458333298E-4</c:v>
+</c:pt>
+<c:pt idx="85">
+<c:v>
+1.4103567501446701E-3</c:v>
+</c:pt>
+<c:pt idx="88">
+<c:v>
+4.9504523792823999E-4</c:v>
+</c:pt>
+<c:pt idx="91">
+<c:v>
+4.7869028709490599E-4</c:v>
+</c:pt>
+<c:pt idx="94">
+<c:v>
+2.75206982263888E-3</c:v>
+</c:pt>
+<c:pt idx="97">
+<c:v>
+4.9659029523726605E-4</c:v>
+</c:pt>
+<c:pt idx="100">
+<c:v>
+6.6560023236110803E-4</c:v>
+</c:pt>
+<c:pt idx="103">
+<c:v>
+7.1395223555555402E-4</c:v>
+</c:pt>
+<c:pt idx="106">
+<c:v>
+7.6112270740739799E-4</c:v>
+</c:pt>
+<c:pt idx="109">
+<c:v>
+1.0218443130092501E-3</c:v>
+</c:pt>
+<c:pt idx="112">
+<c:v>
+1.3246458868634201E-3</c:v>
+</c:pt>
+<c:pt idx="115">
+<c:v>
+1.0910415956076299E-3</c:v>
+</c:pt>
+<c:pt idx="118">
+<c:v>
+9.6452830190972203E-4</c:v>
+</c:pt>
+<c:pt idx="121">
+<c:v>
+1.2451579938888701E-3</c:v>
+</c:pt>
+<c:pt idx="124">
+<c:v>
+1.52626985733795E-3</c:v>
+</c:pt>
+<c:pt idx="127">
+<c:v>
+1.8363989828356401E-3</c:v>
+</c:pt>
+<c:pt idx="130">
+<c:v>
+1.3214349608912E-3</c:v>
+</c:pt>
+<c:pt idx="133">
+<c:v>
+1.94591772078703E-3</c:v>
+</c:pt>
+<c:pt idx="136">
+<c:v>
+1.67078084872685E-3</c:v>
+</c:pt>
+<c:pt idx="139">
+<c:v>
+1.9683756585184998E-3</c:v>
+</c:pt>
+<c:pt idx="142">
+<c:v>
+1.69598548738425E-3</c:v>
+</c:pt>
+<c:pt idx="145">
+<c:v>
+2.0674733149073999E-3</c:v>
+</c:pt>
+<c:pt idx="148">
+<c:v>
+1.84780269728009E-3</c:v>
+</c:pt>
+<c:pt idx="151">
+<c:v>
+2.5673334511458002E-3</c:v>
+</c:pt>
+<c:pt idx="154">
+<c:v>
+2.8659711318750002E-3</c:v>
+</c:pt>
+<c:pt idx="157">
+<c:v>
+3.2860160336573999E-3</c:v>
+</c:pt>
+<c:pt idx="160">
+<c:v>
+9.8144532418981394E-3</c:v>
+</c:pt>
+<c:pt idx="163">
+<c:v>
+3.91210774814813E-3</c:v>
+</c:pt>
+<c:pt idx="166">
+<c:v>
+4.6346461045833204E-3</c:v>
+</c:pt>
+<c:pt idx="169">
+<c:v>
+4.5693238509259201E-3</c:v>
+</c:pt>
+<c:pt idx="172">
+<c:v>
+3.1099967640104199E-3</c:v>
+</c:pt>
+<c:pt idx="175">
+<c:v>
+1.63575366497105E-2</c:v>
+</c:pt>
+<c:pt idx="178">
+<c:v>
+5.6036757171585702E-3</c:v>
+</c:pt>
+<c:pt idx="181">
+<c:v>
+7.5640702249536902E-3</c:v>
+</c:pt>
+<c:pt idx="184">
+<c:v>
+1.01314003423495E-2</c:v>
+</c:pt>
+<c:pt idx="187">
+<c:v>
+9.69398488803235E-3</c:v>
+</c:pt>
+<c:pt idx="190">
+<c:v>
+7.7447986330034602E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{0000000E-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c15:ser>
+</c15:filteredScatterSeries>
+</c:ext>
+</c:extLst>
+</c:scatterChart>
+<c:scatterChart>
+<c:scatterStyle val="lineMarker"/>
+<c:varyColors val="0"/>
+<c:dLbls>
+<c:showLegendKey val="0"/>
+<c:showVal val="0"/>
+<c:showCatName val="0"/>
+<c:showSerName val="0"/>
+<c:showPercent val="0"/>
+<c:showBubbleSize val="0"/>
+</c:dLbls>
+<c:axId val="2086298288"/>
+<c:axId val="2086299120"/>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}" xmlns:c15="http://schemas.microsoft.com/office/drawing/2012/chart">
+<c15:filteredScatterSeries>
+<c15:ser>
+<c:idx val="0"/>
+<c:order val="0"/>
+<c:tx>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}">
+<c15:formulaRef>
+<c15:sqref>
+Sheet1!$B$1</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="1"/>
+<c:pt idx="0">
+<c:v>
+whisker 2.15% (failed)</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:tx>
+<c:spPr>
+<a:ln w="25400" cap="rnd">
+<a:noFill/>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:marker>
+<c:symbol val="circle"/>
+<c:size val="5"/>
+<c:spPr>
+<a:solidFill>
+<a:schemeClr val="accent1"/>
+</a:solidFill>
+<a:ln w="9525">
+<a:solidFill>
+<a:schemeClr val="accent1"/>
+</a:solidFill>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:marker>
+<c:xVal>
+<c:strRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}">
+<c15:formulaRef>
+<c15:sqref>
+Sheet1!$A$2:$A$75</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:strCache>
+<c:ptCount val="74"/>
+<c:pt idx="1">
+<c:v>
+reduction-effects</c:v>
+</c:pt>
+<c:pt idx="4">
+<c:v>
+coqtail</c:v>
+</c:pt>
+<c:pt idx="7">
+<c:v>
+coq-dpdgraph</c:v>
+</c:pt>
+<c:pt idx="10">
+<c:v>
+vscoq</c:v>
+</c:pt>
+<c:pt idx="13">
+<c:v>
+aac-tactics</c:v>
+</c:pt>
+<c:pt idx="16">
+<c:v>
+paramcoq</c:v>
+</c:pt>
+<c:pt idx="19">
+<c:v>
+bigenough</c:v>
+</c:pt>
+<c:pt idx="22">
+<c:v>
+autosubst</c:v>
+</c:pt>
+<c:pt idx="25">
+<c:v>
+stdlib2</c:v>
+</c:pt>
+<c:pt idx="28">
+<c:v>
+bbv</c:v>
+</c:pt>
+<c:pt idx="31">
+<c:v>
+gappa</c:v>
+</c:pt>
+<c:pt idx="34">
+<c:v>
+itauto</c:v>
+</c:pt>
+<c:pt idx="37">
+<c:v>
+rewriter</c:v>
+</c:pt>
+<c:pt idx="40">
+<c:v>
+color</c:v>
+</c:pt>
+<c:pt idx="43">
+<c:v>
+verdi-raft</c:v>
+</c:pt>
+<c:pt idx="46">
+<c:v>
+iris</c:v>
+</c:pt>
+<c:pt idx="49">
+<c:v>
+perennial</c:v>
+</c:pt>
+<c:pt idx="52">
+<c:v>
+metacoq</c:v>
+</c:pt>
+<c:pt idx="55">
+<c:v>
+fourcolor</c:v>
+</c:pt>
+<c:pt idx="58">
+<c:v>
+category-theory</c:v>
+</c:pt>
+<c:pt idx="61">
+<c:v>
+fiat-crypto-legacy</c:v>
+</c:pt>
+<c:pt idx="64">
+<c:v>
+vst</c:v>
+</c:pt>
+<c:pt idx="67">
+<c:v>
+bedrock2</c:v>
+</c:pt>
+<c:pt idx="70">
+<c:v>
+unimath</c:v>
+</c:pt>
+<c:pt idx="73">
+<c:v>
+fiat-crypto</c:v>
+</c:pt>
+</c:strCache>
+</c:strRef>
+</c:xVal>
+<c:yVal>
+<c:numRef>
+<c:extLst>
+<c:ext uri="{02D57815-91ED-43cb-92C2-25804820EDAC}">
+<c15:formulaRef>
+<c15:sqref>
+Sheet1!$B$2:$B$75</c15:sqref>
+</c15:formulaRef>
+</c:ext>
+</c:extLst>
+<c:numCache>
+<c:formatCode>
+[h]"h"m"m"s"s"</c:formatCode>
+<c:ptCount val="74"/>
+<c:pt idx="0">
+<c:v>
+1.3667843316377301E-3</c:v>
+</c:pt>
+<c:pt idx="3">
+<c:v>
+1.3772863450925901E-3</c:v>
+</c:pt>
+<c:pt idx="6">
+<c:v>
+2.8220666448495302E-4</c:v>
+</c:pt>
+<c:pt idx="9">
+<c:v>
+3.6459434862268501E-4</c:v>
+</c:pt>
+<c:pt idx="12">
+<c:v>
+2.4629177872685101E-4</c:v>
+</c:pt>
+<c:pt idx="15">
+<c:v>
+1.7441373074074001E-3</c:v>
+</c:pt>
+<c:pt idx="18">
+<c:v>
+7.5152838859953493E-5</c:v>
+</c:pt>
+<c:pt idx="21">
+<c:v>
+1.4977366125462899E-3</c:v>
+</c:pt>
+<c:pt idx="24">
+<c:v>
+1.3732441808449001E-3</c:v>
+</c:pt>
+<c:pt idx="27">
+<c:v>
+2.6703717274305502E-4</c:v>
+</c:pt>
+<c:pt idx="30">
+<c:v>
+1.6887413175231401E-3</c:v>
+</c:pt>
+<c:pt idx="33">
+<c:v>
+3.7991431684027702E-4</c:v>
+</c:pt>
+<c:pt idx="36">
+<c:v>
+9.4575497456018498E-4</c:v>
+</c:pt>
+<c:pt idx="39">
+<c:v>
+2.47239810274884E-3</c:v>
+</c:pt>
+<c:pt idx="42">
+<c:v>
+4.5166361134259199E-4</c:v>
+</c:pt>
+<c:pt idx="45">
+<c:v>
+3.2233937928240799E-4</c:v>
+</c:pt>
+<c:pt idx="48">
+<c:v>
+6.35614252887731E-4</c:v>
+</c:pt>
+<c:pt idx="51">
+<c:v>
+1.5048110962499999E-3</c:v>
+</c:pt>
+<c:pt idx="54">
+<c:v>
+1.8108668636573999E-4</c:v>
+</c:pt>
+<c:pt idx="57">
+<c:v>
+8.7453675398148096E-4</c:v>
+</c:pt>
+<c:pt idx="60">
+<c:v>
+1.6757011193287001E-3</c:v>
+</c:pt>
+<c:pt idx="63">
+<c:v>
+3.5374089768518499E-4</c:v>
+</c:pt>
+<c:pt idx="66">
+<c:v>
+6.6558777920717603E-4</c:v>
+</c:pt>
+<c:pt idx="69">
+<c:v>
+1.8277606163368001E-3</c:v>
+</c:pt>
+<c:pt idx="72">
+<c:v>
+3.2175426790567101E-3</c:v>
+</c:pt>
+</c:numCache>
+</c:numRef>
+</c:yVal>
+<c:smooth val="0"/>
+<c:extLst>
+<c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+<c16:uniqueId val="{00000000-D9C7-43A0-8954-BDD1E1F6D0B1}"/>
+</c:ext>
+</c:extLst>
+</c15:ser>
+</c15:filteredScatterSeries>
+</c:ext>
+</c:extLst>
+</c:scatterChart>
+<c:catAx>
+<c:axId val="1984158928"/>
+<c:scaling>
+<c:orientation val="minMax"/>
+</c:scaling>
+<c:delete val="0"/>
+<c:axPos val="b"/>
+<c:numFmt formatCode="General" sourceLinked="1"/>
+<c:majorTickMark val="none"/>
+<c:minorTickMark val="none"/>
+<c:tickLblPos val="nextTo"/>
+<c:spPr>
+<a:noFill/>
+<a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="tx1">
+<a:lumMod val="15000"/>
+<a:lumOff val="85000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:txPr>
+<a:bodyPr rot="-60000000" spcFirstLastPara="1" vertOverflow="ellipsis" vert="horz" wrap="square" anchor="ctr" anchorCtr="1"/>
+<a:lstStyle/>
+<a:p>
+<a:pPr>
+<a:defRPr sz="1197" b="0" i="0" u="none" strike="noStrike" kern="1200" baseline="0">
+<a:solidFill>
+<a:schemeClr val="tx1">
+<a:lumMod val="65000"/>
+<a:lumOff val="35000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:latin typeface="+mn-lt"/>
+<a:ea typeface="+mn-ea"/>
+<a:cs typeface="+mn-cs"/>
+</a:defRPr>
+</a:pPr>
+<a:endParaRPr lang="en-US"/>
+</a:p>
+</c:txPr>
+<c:crossAx val="1838093280"/>
+<c:crosses val="autoZero"/>
+<c:auto val="0"/>
+<c:lblAlgn val="ctr"/>
+<c:lblOffset val="100"/>
+<c:tickLblSkip val="1"/>
+<c:noMultiLvlLbl val="0"/>
+</c:catAx>
+<c:valAx>
+<c:axId val="1838093280"/>
+<c:scaling>
+<c:orientation val="minMax"/>
+<c:max val="0.14000000000000001"/>
+<c:min val="0"/>
+</c:scaling>
+<c:delete val="0"/>
+<c:axPos val="l"/>
+<c:majorGridlines>
+<c:spPr>
+<a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="tx1">
+<a:lumMod val="15000"/>
+<a:lumOff val="85000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:round/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:majorGridlines>
+<c:numFmt formatCode="h&quot;h&quot;" sourceLinked="0"/>
+<c:majorTickMark val="none"/>
+<c:minorTickMark val="none"/>
+<c:tickLblPos val="nextTo"/>
+<c:spPr>
+<a:noFill/>
+<a:ln>
+<a:noFill/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:txPr>
+<a:bodyPr rot="-60000000" spcFirstLastPara="1" vertOverflow="ellipsis" vert="horz" wrap="square" anchor="ctr" anchorCtr="1"/>
+<a:lstStyle/>
+<a:p>
+<a:pPr>
+<a:defRPr sz="1197" b="0" i="0" u="none" strike="noStrike" kern="1200" baseline="0">
+<a:solidFill>
+<a:schemeClr val="tx1">
+<a:lumMod val="65000"/>
+<a:lumOff val="35000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:latin typeface="+mn-lt"/>
+<a:ea typeface="+mn-ea"/>
+<a:cs typeface="+mn-cs"/>
+</a:defRPr>
+</a:pPr>
+<a:endParaRPr lang="en-US"/>
+</a:p>
+</c:txPr>
+<c:crossAx val="1984158928"/>
+<c:crosses val="autoZero"/>
+<c:crossBetween val="between"/>
+<c:majorUnit val="4.1666700000000008E-2"/>
+</c:valAx>
+<c:valAx>
+<c:axId val="2086299120"/>
+<c:scaling>
+<c:orientation val="minMax"/>
+</c:scaling>
+<c:delete val="1"/>
+<c:axPos val="r"/>
+<c:numFmt formatCode="[h]&quot;h&quot;m&quot;m&quot;s&quot;s&quot;" sourceLinked="1"/>
+<c:majorTickMark val="out"/>
+<c:minorTickMark val="none"/>
+<c:tickLblPos val="nextTo"/>
+<c:crossAx val="2086298288"/>
+<c:crosses val="max"/>
+<c:crossBetween val="midCat"/>
+</c:valAx>
+<c:valAx>
+<c:axId val="2086298288"/>
+<c:scaling>
+<c:orientation val="minMax"/>
+</c:scaling>
+<c:delete val="1"/>
+<c:axPos val="t"/>
+<c:majorTickMark val="out"/>
+<c:minorTickMark val="none"/>
+<c:tickLblPos val="nextTo"/>
+<c:crossAx val="2086299120"/>
+<c:crosses val="max"/>
+<c:crossBetween val="midCat"/>
+</c:valAx>
+<c:spPr>
+<a:noFill/>
+<a:ln>
+<a:noFill/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+</c:plotArea>
+<c:plotVisOnly val="1"/>
+<c:dispBlanksAs val="gap"/>
+<c:extLst>
+<c:ext uri="{56B9EC1D-385E-4148-901F-78D8002777C0}" xmlns:c16r3="http://schemas.microsoft.com/office/drawing/2017/03/chart">
+<c16r3:dataDisplayOptions16>
+<c16r3:dispNaAsBlank val="1"/>
+</c16r3:dataDisplayOptions16>
+</c:ext>
+</c:extLst>
+<c:showDLblsOverMax val="0"/>
+</c:chart>
+<c:spPr>
+<a:noFill/>
+<a:ln>
+<a:noFill/>
+</a:ln>
+<a:effectLst/>
+</c:spPr>
+<c:txPr>
+<a:bodyPr/>
+<a:lstStyle/>
+<a:p>
+<a:pPr>
+<a:defRPr/>
+</a:pPr>
+<a:endParaRPr lang="en-US"/>
+</a:p>
+</c:txPr>
+<c:externalData r:id="rId3">
+<c:autoUpdate val="0"/>
+</c:externalData>
+</c:chartSpace>

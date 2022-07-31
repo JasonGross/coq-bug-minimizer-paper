@@ -58,7 +58,7 @@ function make_stats() {
 for suffix in "" "-2022"; do
     jq -cr "$(make_stats "success" "s")
         | $(make_stats "failed" "f")
-        | "'{name} + $stats_s + $stats_f' "ci-data-grouped-compressed${suffix}.json" > "ci-data-stats${suffix}.json"
+        | "'{name} + $stats_s + $stats_f' "ci-data-grouped-compressed${suffix}.json" | jq -scr 'sort_by(.ave_s) | .[]' > "ci-data-stats${suffix}.json"
     to_csv "ci-data-stats${suffix}"
     jq -scr 'sort_by(.ave_s)
        | (.[:10] + .[-10:] | map(.name)) as $interesting
