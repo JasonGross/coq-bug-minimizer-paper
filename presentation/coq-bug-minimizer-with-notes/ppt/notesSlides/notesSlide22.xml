@@ -46,14 +46,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-The minimizer succeeds on about 85% of cases where it is invoked---most failures are from earlier on when I was still debugging the automation.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Of the cases where it succeeds, a fully standalone file is produced about 86% of the time.</a:t>
+TODO: fix design</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -85,7 +78,7 @@ Of the cases where it succeeds, a fully standalone file is produced about 86% of
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="444238760"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1246710187"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
