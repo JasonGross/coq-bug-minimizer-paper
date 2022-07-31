@@ -2,19 +2,19 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-10531</TotalTime>
+10661</TotalTime>
 <Words>
-1719</Words>
+2053</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-274</Paragraphs>
+328</Paragraphs>
 <Slides>
-33</Slides>
+37</Slides>
 <Notes>
-25</Notes>
+29</Notes>
 <HiddenSlides>
 0</HiddenSlides>
 <MMClips>
@@ -29,7 +29,7 @@ Fonts Used</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-3</vt:i4>
+4</vt:i4>
 </vt:variant>
 <vt:variant>
 <vt:lpstr>
@@ -45,16 +45,18 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-33</vt:i4>
+37</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="37" baseType="lpstr">
+<vt:vector size="42" baseType="lpstr">
 <vt:lpstr>
 Calibri</vt:lpstr>
 <vt:lpstr>
 Arial</vt:lpstr>
+<vt:lpstr>
+Consolas</vt:lpstr>
 <vt:lpstr>
 Calibri Light</vt:lpstr>
 <vt:lpstr>
@@ -117,6 +119,14 @@ What needs to be automated?</vt:lpstr>
 How do we do this?</vt:lpstr>
 <vt:lpstr>
 Delta Debugging / Brute Force Removal</vt:lpstr>
+<vt:lpstr>
+Coupling</vt:lpstr>
+<vt:lpstr>
+Coupling</vt:lpstr>
+<vt:lpstr>
+Coupling</vt:lpstr>
+<vt:lpstr>
+Coupling</vt:lpstr>
 <vt:lpstr>
 How do we do this?</vt:lpstr>
 <vt:lpstr>

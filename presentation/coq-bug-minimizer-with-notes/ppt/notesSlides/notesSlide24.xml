@@ -46,51 +46,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-When </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- a file, names can change …</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-The most important consideration in </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, though, is linearization</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-The minimizer succeeds on about 85% of cases where it is invoked---most failures are from earlier on when I was still debugging the automation.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Of the cases where it succeeds, a fully standalone file is produced about 86% of the time.</a:t>
+It’s not valid to remove just one of them, and we can insert other statements between the data declaration and the body.</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -122,7 +78,7 @@ Of the cases where it succeeds, a fully standalone file is produced about 86% of
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="444238760"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="4165020980"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

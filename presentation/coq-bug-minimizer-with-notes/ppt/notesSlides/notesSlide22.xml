@@ -43,11 +43,7 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-TODO: fix design</a:t>
-</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
