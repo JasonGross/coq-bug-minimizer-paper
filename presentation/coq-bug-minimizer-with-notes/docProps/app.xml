@@ -2,19 +2,19 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-10787</TotalTime>
+10829</TotalTime>
 <Words>
-2238</Words>
+2359</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-353</Paragraphs>
+360</Paragraphs>
 <Slides>
 38</Slides>
 <Notes>
-30</Notes>
+31</Notes>
 <HiddenSlides>
 1</HiddenSlides>
 <MMClips>
@@ -90,7 +90,7 @@ Goal: Automate This!</vt:lpstr>
 <vt:lpstr>
 PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>
-Automating the coqdev experience</vt:lpstr>
+Debugging Regressions: coqdev experience</vt:lpstr>
 <vt:lpstr>
 PowerPoint Presentation</vt:lpstr>
 <vt:lpstr>

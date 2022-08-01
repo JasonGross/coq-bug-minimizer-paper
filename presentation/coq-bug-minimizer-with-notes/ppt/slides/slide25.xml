@@ -104,6 +104,14 @@ File should be standalone, as short as possible, as fast as possible</a:t>
 Fully automated, no interaction beyond pointing it at the issue initially</a:t>
 </a:r>
 </a:p>
+<a:p>
+<a:pPr lvl="1"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Interruptible and resumable: user should be able to do a manual pass over the file at any point and resume automatic minimization from there</a:t>
+</a:r>
+</a:p>
 </p:txBody>
 </p:sp>
 <p:sp>

@@ -46,7 +46,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Failed pipelines in red, succeeding pipelines in green; many green dots are hidden by red dots.</a:t>
+Failed pipelines in red, succeeding pipelines in green; many red dots are hidden by green dots.</a:t>
 </a:r>
 </a:p>
 </p:txBody>

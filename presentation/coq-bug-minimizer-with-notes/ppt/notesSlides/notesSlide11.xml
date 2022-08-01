@@ -63,28 +63,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Of the ≈9000 issues reported, I’ve reported over 1900.  (The next-most prolific reporter is at 226.)</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-This project started because I got tired of manually minimizing test-cases for reporting bugs in Coq.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-The first commit dates to April 2013, and you can see a corresponding jump in my ability to report bugs from 2013 to 2014.</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-I originally developed this tool to help me minimize freshly discovered bugs.</a:t>
+Of the ≈9000 issues reported, I’ve reported over 1900.</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -108,17 +87,14 @@ I originally developed this tool to help me minimize freshly discovered bugs.</a
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Now that I’m a </a:t>
+This project started because I got tired of manually minimizing test-cases for reporting bugs in Coq.</a:t>
 </a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqdev</a:t>
-</a:r>
+</a:p>
+<a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-, I also see this from the other side, making changes to Coq and having that introduce bugs that need to be debugged.</a:t>
+The first commit dates to April 2013, and you can see a corresponding jump in my ability to report bugs from 2013 to 2014.</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -126,6 +102,30 @@ coqdev</a:t>
 </a:p>
 <a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:pPr marL="0" marR="0" lvl="0" indent="0" algn="l" defTabSz="914400" rtl="0" eaLnBrk="1" fontAlgn="auto" latinLnBrk="0" hangingPunct="1">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:spcAft>
+<a:spcPts val="0"/>
+</a:spcAft>
+<a:buClrTx/>
+<a:buSzTx/>
+<a:buFontTx/>
+<a:buNone/>
+<a:tabLst/>
+<a:defRPr/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+(The next-most prolific reporter is at 226.)</a:t>
+</a:r>
 </a:p>
 <a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>

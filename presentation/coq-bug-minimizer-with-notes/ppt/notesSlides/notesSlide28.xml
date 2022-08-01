@@ -83,17 +83,7 @@ inlining</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-About 86% of the files the minimizer produces </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-arefully</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
- standalone</a:t>
+About 86% of the files the minimizer produces are fully standalone</a:t>
 </a:r>
 </a:p>
 </p:txBody>
