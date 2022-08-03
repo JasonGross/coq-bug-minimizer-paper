@@ -4,9 +4,10 @@
 
 kind="$1"
 if [ "$kind" == '--no-header' ]; then
-    kind=""
+    shift
+    kind="$1"
 else
-    echo 'initial_size,final_size,total_line_reduction'
+    echo 'initial_size,final_size,total_line_reduction,origin'
 fi
 
 while IFS="" read -r line; do

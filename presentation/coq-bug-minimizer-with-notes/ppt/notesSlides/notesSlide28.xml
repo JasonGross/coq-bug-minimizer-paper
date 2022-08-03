@@ -43,7 +43,11 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+In Coq, the entire block is a single statement, and it’s not possible to insert other statements in the middle</a:t>
+</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -74,7 +78,7 @@
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="4183761141"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3144452849"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

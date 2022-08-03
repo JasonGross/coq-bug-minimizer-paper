@@ -102,6 +102,9 @@
 <Override PartName="/ppt/charts/style4.xml" ContentType="application/vnd.ms-office.chartstyle+xml"/>
 <Override PartName="/ppt/charts/colors4.xml" ContentType="application/vnd.ms-office.chartcolorstyle+xml"/>
 <Override PartName="/ppt/notesSlides/notesSlide20.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
+<Override PartName="/ppt/charts/chart5.xml" ContentType="application/vnd.openxmlformats-officedocument.drawingml.chart+xml"/>
+<Override PartName="/ppt/charts/style5.xml" ContentType="application/vnd.ms-office.chartstyle+xml"/>
+<Override PartName="/ppt/charts/colors5.xml" ContentType="application/vnd.ms-office.chartcolorstyle+xml"/>
 <Override PartName="/ppt/notesSlides/notesSlide21.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
 <Override PartName="/ppt/notesSlides/notesSlide22.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
 <Override PartName="/ppt/notesSlides/notesSlide23.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
@@ -114,9 +117,10 @@
 <Override PartName="/ppt/notesSlides/notesSlide30.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
 <Override PartName="/ppt/notesSlides/notesSlide31.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
 <Override PartName="/ppt/notesSlides/notesSlide32.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
-<Override PartName="/ppt/charts/chart5.xml" ContentType="application/vnd.openxmlformats-officedocument.drawingml.chart+xml"/>
-<Override PartName="/ppt/charts/style5.xml" ContentType="application/vnd.ms-office.chartstyle+xml"/>
-<Override PartName="/ppt/charts/colors5.xml" ContentType="application/vnd.ms-office.chartcolorstyle+xml"/>
+<Override PartName="/ppt/notesSlides/notesSlide33.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>
+<Override PartName="/ppt/charts/chart6.xml" ContentType="application/vnd.openxmlformats-officedocument.drawingml.chart+xml"/>
+<Override PartName="/ppt/charts/style6.xml" ContentType="application/vnd.ms-office.chartstyle+xml"/>
+<Override PartName="/ppt/charts/colors6.xml" ContentType="application/vnd.ms-office.chartcolorstyle+xml"/>
 <Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>
 <Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>
 </Types>

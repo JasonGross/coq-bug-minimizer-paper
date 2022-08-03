@@ -46,23 +46,24 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Note: While I don’t have concrete plans to extend this tool to other proof assistants, I’m happy to act as an advisor.</a:t>
+Note: when we integrated the minimizer with </a:t>
 </a:r>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+coqbot</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+, the number of apparent uses and users of the minimizer drastically increased.</a:t>
+</a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-(I did start working on a Lean port, but didn’t get very far for lack of available time.)</a:t>
+Note: increased usage led to quicker improvement of the minimizer itself</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -94,7 +95,7 @@ Note: While I don’t have concrete plans to extend this tool to other proof ass
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="330362370"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1692457997"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
