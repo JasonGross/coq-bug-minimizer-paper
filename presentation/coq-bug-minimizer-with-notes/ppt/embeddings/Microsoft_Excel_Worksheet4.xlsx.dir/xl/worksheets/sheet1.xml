@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac xr xr2 xr3" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xr:uid="{4E190602-B1A3-4919-8F1A-A775CFBDBAEB}">
-<dimension ref="A1:G310"/>
+<dimension ref="A1:G554"/>
 <sheetViews>
-<sheetView topLeftCell="A293" workbookViewId="0">
-<selection activeCell="F310" sqref="F310"/>
+<sheetView topLeftCell="A331" workbookViewId="0">
+<selection activeCell="F331" sqref="F331"/>
 </sheetView>
 </sheetViews>
 <sheetFormatPr defaultRowHeight="14.5" x14ac:dyDescent="0.35"/>
@@ -11134,8 +11134,8792 @@ Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
 </c>
 </row>
 <row r="310" spans="1:7" x14ac:dyDescent="0.35">
-<c r="E310" s="3"/>
-<c r="G310" s="8"/>
+<c r="A310">
+<v>
+63</v>
+</c>
+<c r="B310">
+<v>
+45</v>
+</c>
+<c r="C310">
+<v>
+2328</v>
+</c>
+<c r="D310" t="s">
+<v>
+10</v>
+</c>
+<c r="E310" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2373</v>
+</c>
+<c r="F310" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+52.733333333333334</v>
+</c>
+<c r="G310" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98103666245259169</v>
+</c>
+</row>
+<row r="311" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A311">
+<v>
+40</v>
+</c>
+<c r="B311">
+<v>
+26</v>
+</c>
+<c r="C311">
+<v>
+14</v>
+</c>
+<c r="D311" t="s">
+<v>
+10</v>
+</c>
+<c r="E311" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+40</v>
+</c>
+<c r="F311" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.5384615384615385</v>
+</c>
+<c r="G311" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.35</v>
+</c>
+</row>
+<row r="312" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A312">
+<v>
+490</v>
+</c>
+<c r="B312">
+<v>
+38</v>
+</c>
+<c r="C312">
+<v>
+466</v>
+</c>
+<c r="D312" t="s">
+<v>
+10</v>
+</c>
+<c r="E312" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+504</v>
+</c>
+<c r="F312" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+13.263157894736842</v>
+</c>
+<c r="G312" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.92460317460317465</v>
+</c>
+</row>
+<row r="313" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A313">
+<v>
+759</v>
+</c>
+<c r="B313">
+<v>
+44</v>
+</c>
+<c r="C313">
+<v>
+2194</v>
+</c>
+<c r="D313" t="s">
+<v>
+10</v>
+</c>
+<c r="E313" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2238</v>
+</c>
+<c r="F313" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+50.863636363636367</v>
+</c>
+<c r="G313" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98033958891867734</v>
+</c>
+</row>
+<row r="314" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A314">
+<v>
+2012</v>
+</c>
+<c r="B314">
+<v>
+19</v>
+</c>
+<c r="C314">
+<v>
+1993</v>
+</c>
+<c r="D314" t="s">
+<v>
+10</v>
+</c>
+<c r="E314" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2012</v>
+</c>
+<c r="F314" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+105.89473684210526</v>
+</c>
+<c r="G314" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99055666003976139</v>
+</c>
+</row>
+<row r="315" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A315">
+<v>
+2702</v>
+</c>
+<c r="B315">
+<v>
+41</v>
+</c>
+<c r="C315">
+<v>
+2894</v>
+</c>
+<c r="D315" t="s">
+<v>
+10</v>
+</c>
+<c r="E315" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2935</v>
+</c>
+<c r="F315" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+71.58536585365853</v>
+</c>
+<c r="G315" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98603066439523002</v>
+</c>
+</row>
+<row r="316" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A316">
+<v>
+657</v>
+</c>
+<c r="B316">
+<v>
+80</v>
+</c>
+<c r="C316">
+<v>
+4648</v>
+</c>
+<c r="D316" t="s">
+<v>
+10</v>
+</c>
+<c r="E316" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4728</v>
+</c>
+<c r="F316" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+59.1</v>
+</c>
+<c r="G316" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98307952622673433</v>
+</c>
+</row>
+<row r="317" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A317">
+<v>
+372</v>
+</c>
+<c r="B317">
+<v>
+22</v>
+</c>
+<c r="C317">
+<v>
+3603</v>
+</c>
+<c r="D317" t="s">
+<v>
+10</v>
+</c>
+<c r="E317" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3625</v>
+</c>
+<c r="F317" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+164.77272727272728</v>
+</c>
+<c r="G317" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99393103448275866</v>
+</c>
+</row>
+<row r="318" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A318">
+<v>
+225</v>
+</c>
+<c r="B318">
+<v>
+46</v>
+</c>
+<c r="C318">
+<v>
+1199</v>
+</c>
+<c r="D318" t="s">
+<v>
+10</v>
+</c>
+<c r="E318" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1245</v>
+</c>
+<c r="F318" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+27.065217391304348</v>
+</c>
+<c r="G318" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96305220883534137</v>
+</c>
+</row>
+<row r="319" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A319">
+<v>
+185</v>
+</c>
+<c r="B319">
+<v>
+174</v>
+</c>
+<c r="C319">
+<v>
+11</v>
+</c>
+<c r="D319" t="s">
+<v>
+10</v>
+</c>
+<c r="E319" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+185</v>
+</c>
+<c r="F319" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.0632183908045978</v>
+</c>
+<c r="G319" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+5.9459459459459463E-2</v>
+</c>
+</row>
+<row r="320" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A320">
+<v>
+434</v>
+</c>
+<c r="B320">
+<v>
+23</v>
+</c>
+<c r="C320">
+<v>
+2264</v>
+</c>
+<c r="D320" t="s">
+<v>
+10</v>
+</c>
+<c r="E320" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2287</v>
+</c>
+<c r="F320" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+99.434782608695656</v>
+</c>
+<c r="G320" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98994315697420199</v>
+</c>
+</row>
+<row r="321" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A321">
+<v>
+58</v>
+</c>
+<c r="B321">
+<v>
+30</v>
+</c>
+<c r="C321">
+<v>
+21</v>
+</c>
+<c r="D321" t="s">
+<v>
+10</v>
+</c>
+<c r="E321" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+51</v>
+</c>
+<c r="F321" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.7</v>
+</c>
+<c r="G321" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.41176470588235292</v>
+</c>
+</row>
+<row r="322" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A322">
+<v>
+185</v>
+</c>
+<c r="B322">
+<v>
+174</v>
+</c>
+<c r="C322">
+<v>
+11</v>
+</c>
+<c r="D322" t="s">
+<v>
+10</v>
+</c>
+<c r="E322" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+185</v>
+</c>
+<c r="F322" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.0632183908045978</v>
+</c>
+<c r="G322" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+5.9459459459459463E-2</v>
+</c>
+</row>
+<row r="323" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A323">
+<v>
+473</v>
+</c>
+<c r="B323">
+<v>
+35</v>
+</c>
+<c r="C323">
+<v>
+583</v>
+</c>
+<c r="D323" t="s">
+<v>
+10</v>
+</c>
+<c r="E323" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+618</v>
+</c>
+<c r="F323" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+17.657142857142858</v>
+</c>
+<c r="G323" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.94336569579288021</v>
+</c>
+</row>
+<row r="324" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A324">
+<v>
+2352</v>
+</c>
+<c r="B324">
+<v>
+50</v>
+</c>
+<c r="C324">
+<v>
+2278</v>
+</c>
+<c r="D324" t="s">
+<v>
+10</v>
+</c>
+<c r="E324" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2328</v>
+</c>
+<c r="F324" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.56</v>
+</c>
+<c r="G324" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97852233676975942</v>
+</c>
+</row>
+<row r="325" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A325">
+<v>
+7916</v>
+</c>
+<c r="B325">
+<v>
+43</v>
+</c>
+<c r="C325">
+<v>
+7839</v>
+</c>
+<c r="D325" t="s">
+<v>
+10</v>
+</c>
+<c r="E325" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7882</v>
+</c>
+<c r="F325" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+183.30232558139534</v>
+</c>
+<c r="G325" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99454453184470948</v>
+</c>
+</row>
+<row r="326" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A326">
+<v>
+91</v>
+</c>
+<c r="B326">
+<v>
+82</v>
+</c>
+<c r="C326">
+<v>
+2608</v>
+</c>
+<c r="D326" t="s">
+<v>
+10</v>
+</c>
+<c r="E326" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2690</v>
+</c>
+<c r="F326" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+32.804878048780488</v>
+</c>
+<c r="G326" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96951672862453531</v>
+</c>
+</row>
+<row r="327" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A327">
+<v>
+324</v>
+</c>
+<c r="B327">
+<v>
+109</v>
+</c>
+<c r="C327">
+<v>
+686</v>
+</c>
+<c r="D327" t="s">
+<v>
+10</v>
+</c>
+<c r="E327" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+795</v>
+</c>
+<c r="F327" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+7.2935779816513762</v>
+</c>
+<c r="G327" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.86289308176100632</v>
+</c>
+</row>
+<row r="328" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A328">
+<v>
+148</v>
+</c>
+<c r="B328">
+<v>
+44</v>
+</c>
+<c r="C328">
+<v>
+1021</v>
+</c>
+<c r="D328" t="s">
+<v>
+10</v>
+</c>
+<c r="E328" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1065</v>
+</c>
+<c r="F328" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+24.204545454545453</v>
+</c>
+<c r="G328" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.95868544600938965</v>
+</c>
+</row>
+<row r="329" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A329">
+<v>
+5752</v>
+</c>
+<c r="B329">
+<v>
+77</v>
+</c>
+<c r="C329">
+<v>
+4405</v>
+</c>
+<c r="D329" t="s">
+<v>
+10</v>
+</c>
+<c r="E329" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4482</v>
+</c>
+<c r="F329" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+58.20779220779221</v>
+</c>
+<c r="G329" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98282016956715756</v>
+</c>
+</row>
+<row r="330" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A330">
+<v>
+269</v>
+</c>
+<c r="B330">
+<v>
+676</v>
+</c>
+<c r="C330">
+<v>
+763</v>
+</c>
+<c r="D330" t="s">
+<v>
+10</v>
+</c>
+<c r="E330" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1439</v>
+</c>
+<c r="F330" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+2.1286982248520712</v>
+</c>
+<c r="G330" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.53022932592077832</v>
+</c>
+</row>
+<row r="331" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A331">
+<v>
+7916</v>
+</c>
+<c r="B331">
+<v>
+43</v>
+</c>
+<c r="C331">
+<v>
+7839</v>
+</c>
+<c r="D331" t="s">
+<v>
+10</v>
+</c>
+<c r="E331" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7882</v>
+</c>
+<c r="F331" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+183.30232558139534</v>
+</c>
+<c r="G331" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99454453184470948</v>
+</c>
+</row>
+<row r="332" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A332">
+<v>
+7593</v>
+</c>
+<c r="B332">
+<v>
+20</v>
+</c>
+<c r="C332">
+<v>
+7598</v>
+</c>
+<c r="D332" t="s">
+<v>
+10</v>
+</c>
+<c r="E332" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7618</v>
+</c>
+<c r="F332" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+380.9</v>
+</c>
+<c r="G332" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99737463901286427</v>
+</c>
+</row>
+<row r="333" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A333">
+<v>
+7593</v>
+</c>
+<c r="B333">
+<v>
+20</v>
+</c>
+<c r="C333">
+<v>
+7598</v>
+</c>
+<c r="D333" t="s">
+<v>
+10</v>
+</c>
+<c r="E333" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7618</v>
+</c>
+<c r="F333" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+380.9</v>
+</c>
+<c r="G333" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99737463901286427</v>
+</c>
+</row>
+<row r="334" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A334">
+<v>
+7916</v>
+</c>
+<c r="B334">
+<v>
+306</v>
+</c>
+<c r="C334">
+<v>
+7794</v>
+</c>
+<c r="D334" t="s">
+<v>
+10</v>
+</c>
+<c r="E334" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8100</v>
+</c>
+<c r="F334" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+26.470588235294116</v>
+</c>
+<c r="G334" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9622222222222222</v>
+</c>
+</row>
+<row r="335" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A335">
+<v>
+258</v>
+</c>
+<c r="B335">
+<v>
+153</v>
+</c>
+<c r="C335">
+<v>
+127</v>
+</c>
+<c r="D335" t="s">
+<v>
+10</v>
+</c>
+<c r="E335" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+280</v>
+</c>
+<c r="F335" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.8300653594771241</v>
+</c>
+<c r="G335" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.45357142857142857</v>
+</c>
+</row>
+<row r="336" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A336">
+<v>
+7372</v>
+</c>
+<c r="B336">
+<v>
+10</v>
+</c>
+<c r="C336">
+<v>
+7336</v>
+</c>
+<c r="D336" t="s">
+<v>
+10</v>
+</c>
+<c r="E336" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7346</v>
+</c>
+<c r="F336" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+734.6</v>
+</c>
+<c r="G336" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99863871494690992</v>
+</c>
+</row>
+<row r="337" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A337">
+<v>
+196</v>
+</c>
+<c r="B337">
+<v>
+151</v>
+</c>
+<c r="C337">
+<v>
+55</v>
+</c>
+<c r="D337" t="s">
+<v>
+10</v>
+</c>
+<c r="E337" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+206</v>
+</c>
+<c r="F337" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.3642384105960266</v>
+</c>
+<c r="G337" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.26699029126213591</v>
+</c>
+</row>
+<row r="338" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A338">
+<v>
+3442</v>
+</c>
+<c r="B338">
+<v>
+40</v>
+</c>
+<c r="C338">
+<v>
+3402</v>
+</c>
+<c r="D338" t="s">
+<v>
+10</v>
+</c>
+<c r="E338" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3442</v>
+</c>
+<c r="F338" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+86.05</v>
+</c>
+<c r="G338" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98837884950610111</v>
+</c>
+</row>
+<row r="339" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A339">
+<v>
+114</v>
+</c>
+<c r="B339">
+<v>
+578</v>
+</c>
+<c r="C339">
+<v>
+498</v>
+</c>
+<c r="D339" t="s">
+<v>
+10</v>
+</c>
+<c r="E339" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1076</v>
+</c>
+<c r="F339" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.8615916955017302</v>
+</c>
+<c r="G339" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.46282527881040891</v>
+</c>
+</row>
+<row r="340" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A340">
+<v>
+114</v>
+</c>
+<c r="B340">
+<v>
+104</v>
+</c>
+<c r="C340">
+<v>
+720</v>
+</c>
+<c r="D340" t="s">
+<v>
+10</v>
+</c>
+<c r="E340" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+824</v>
+</c>
+<c r="F340" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+7.9230769230769234</v>
+</c>
+<c r="G340" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.87378640776699024</v>
+</c>
+</row>
+<row r="341" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A341">
+<v>
+224</v>
+</c>
+<c r="B341">
+<v>
+65</v>
+</c>
+<c r="C341">
+<v>
+708</v>
+</c>
+<c r="D341" t="s">
+<v>
+10</v>
+</c>
+<c r="E341" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+773</v>
+</c>
+<c r="F341" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+11.892307692307693</v>
+</c>
+<c r="G341" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.91591203104786545</v>
+</c>
+</row>
+<row r="342" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A342">
+<v>
+184</v>
+</c>
+<c r="B342">
+<v>
+214</v>
+</c>
+<c r="C342">
+<v>
+519</v>
+</c>
+<c r="D342" t="s">
+<v>
+10</v>
+</c>
+<c r="E342" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+733</v>
+</c>
+<c r="F342" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.4252336448598131</v>
+</c>
+<c r="G342" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.7080491132332879</v>
+</c>
+</row>
+<row r="343" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A343">
+<v>
+184</v>
+</c>
+<c r="B343">
+<v>
+214</v>
+</c>
+<c r="C343">
+<v>
+519</v>
+</c>
+<c r="D343" t="s">
+<v>
+10</v>
+</c>
+<c r="E343" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+733</v>
+</c>
+<c r="F343" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.4252336448598131</v>
+</c>
+<c r="G343" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.7080491132332879</v>
+</c>
+</row>
+<row r="344" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A344">
+<v>
+1291</v>
+</c>
+<c r="B344">
+<v>
+8</v>
+</c>
+<c r="C344">
+<v>
+4420</v>
+</c>
+<c r="D344" t="s">
+<v>
+10</v>
+</c>
+<c r="E344" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4428</v>
+</c>
+<c r="F344" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+553.5</v>
+</c>
+<c r="G344" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99819331526648603</v>
+</c>
+</row>
+<row r="345" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A345">
+<v>
+1426</v>
+</c>
+<c r="B345">
+<v>
+201</v>
+</c>
+<c r="C345">
+<v>
+1202</v>
+</c>
+<c r="D345" t="s">
+<v>
+10</v>
+</c>
+<c r="E345" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1403</v>
+</c>
+<c r="F345" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+6.9800995024875618</v>
+</c>
+<c r="G345" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.85673556664290806</v>
+</c>
+</row>
+<row r="346" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A346">
+<v>
+1099</v>
+</c>
+<c r="B346">
+<v>
+41</v>
+</c>
+<c r="C346">
+<v>
+1076</v>
+</c>
+<c r="D346" t="s">
+<v>
+10</v>
+</c>
+<c r="E346" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1117</v>
+</c>
+<c r="F346" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+27.243902439024389</v>
+</c>
+<c r="G346" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96329453894359895</v>
+</c>
+</row>
+<row r="347" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A347">
+<v>
+17950</v>
+</c>
+<c r="B347">
+<v>
+478</v>
+</c>
+<c r="C347">
+<v>
+16537</v>
+</c>
+<c r="D347" t="s">
+<v>
+10</v>
+</c>
+<c r="E347" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+17015</v>
+</c>
+<c r="F347" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+35.596234309623433</v>
+</c>
+<c r="G347" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97190714075815454</v>
+</c>
+</row>
+<row r="348" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A348">
+<v>
+3649</v>
+</c>
+<c r="B348">
+<v>
+235</v>
+</c>
+<c r="C348">
+<v>
+2089</v>
+</c>
+<c r="D348" t="s">
+<v>
+10</v>
+</c>
+<c r="E348" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2324</v>
+</c>
+<c r="F348" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+9.8893617021276601</v>
+</c>
+<c r="G348" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.89888123924268504</v>
+</c>
+</row>
+<row r="349" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A349">
+<v>
+2352</v>
+</c>
+<c r="B349">
+<v>
+37</v>
+</c>
+<c r="C349">
+<v>
+2200</v>
+</c>
+<c r="D349" t="s">
+<v>
+10</v>
+</c>
+<c r="E349" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2237</v>
+</c>
+<c r="F349" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+60.45945945945946</v>
+</c>
+<c r="G349" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98345999105945459</v>
+</c>
+</row>
+<row r="350" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A350">
+<v>
+581</v>
+</c>
+<c r="B350">
+<v>
+37</v>
+</c>
+<c r="C350">
+<v>
+1317</v>
+</c>
+<c r="D350" t="s">
+<v>
+10</v>
+</c>
+<c r="E350" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1354</v>
+</c>
+<c r="F350" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+36.594594594594597</v>
+</c>
+<c r="G350" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97267355982274739</v>
+</c>
+</row>
+<row r="351" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A351">
+<v>
+4286</v>
+</c>
+<c r="B351">
+<v>
+34</v>
+</c>
+<c r="C351">
+<v>
+4272</v>
+</c>
+<c r="D351" t="s">
+<v>
+10</v>
+</c>
+<c r="E351" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4306</v>
+</c>
+<c r="F351" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+126.64705882352941</v>
+</c>
+<c r="G351" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99210404087320014</v>
+</c>
+</row>
+<row r="352" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A352">
+<v>
+210</v>
+</c>
+<c r="B352">
+<v>
+121</v>
+</c>
+<c r="C352">
+<v>
+560</v>
+</c>
+<c r="D352" t="s">
+<v>
+10</v>
+</c>
+<c r="E352" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+681</v>
+</c>
+<c r="F352" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+5.6280991735537187</v>
+</c>
+<c r="G352" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.82232011747430245</v>
+</c>
+</row>
+<row r="353" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A353">
+<v>
+210</v>
+</c>
+<c r="B353">
+<v>
+57</v>
+</c>
+<c r="C353">
+<v>
+574</v>
+</c>
+<c r="D353" t="s">
+<v>
+10</v>
+</c>
+<c r="E353" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+631</v>
+</c>
+<c r="F353" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+11.070175438596491</v>
+</c>
+<c r="G353" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.90966719492868464</v>
+</c>
+</row>
+<row r="354" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A354">
+<v>
+16780</v>
+</c>
+<c r="B354">
+<v>
+360</v>
+</c>
+<c r="C354">
+<v>
+15825</v>
+</c>
+<c r="D354" t="s">
+<v>
+10</v>
+</c>
+<c r="E354" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+16185</v>
+</c>
+<c r="F354" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+44.958333333333336</v>
+</c>
+<c r="G354" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97775718257645972</v>
+</c>
+</row>
+<row r="355" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A355">
+<v>
+324</v>
+</c>
+<c r="B355">
+<v>
+10</v>
+</c>
+<c r="C355">
+<v>
+2542</v>
+</c>
+<c r="D355" t="s">
+<v>
+10</v>
+</c>
+<c r="E355" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2552</v>
+</c>
+<c r="F355" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+255.2</v>
+</c>
+<c r="G355" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99608150470219436</v>
+</c>
+</row>
+<row r="356" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A356">
+<v>
+324</v>
+</c>
+<c r="B356">
+<v>
+10</v>
+</c>
+<c r="C356">
+<v>
+2542</v>
+</c>
+<c r="D356" t="s">
+<v>
+10</v>
+</c>
+<c r="E356" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2552</v>
+</c>
+<c r="F356" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+255.2</v>
+</c>
+<c r="G356" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99608150470219436</v>
+</c>
+</row>
+<row r="357" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A357">
+<v>
+42</v>
+</c>
+<c r="B357">
+<v>
+32</v>
+</c>
+<c r="C357">
+<v>
+69</v>
+</c>
+<c r="D357" t="s">
+<v>
+10</v>
+</c>
+<c r="E357" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+101</v>
+</c>
+<c r="F357" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.15625</v>
+</c>
+<c r="G357" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.68316831683168322</v>
+</c>
+</row>
+<row r="358" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A358">
+<v>
+42</v>
+</c>
+<c r="B358">
+<v>
+12</v>
+</c>
+<c r="C358">
+<v>
+89</v>
+</c>
+<c r="D358" t="s">
+<v>
+10</v>
+</c>
+<c r="E358" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+101</v>
+</c>
+<c r="F358" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+8.4166666666666661</v>
+</c>
+<c r="G358" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.88118811881188119</v>
+</c>
+</row>
+<row r="359" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A359">
+<v>
+981</v>
+</c>
+<c r="B359">
+<v>
+33</v>
+</c>
+<c r="C359">
+<v>
+948</v>
+</c>
+<c r="D359" t="s">
+<v>
+10</v>
+</c>
+<c r="E359" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+981</v>
+</c>
+<c r="F359" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+29.727272727272727</v>
+</c>
+<c r="G359" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96636085626911317</v>
+</c>
+</row>
+<row r="360" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A360">
+<v>
+308</v>
+</c>
+<c r="B360">
+<v>
+99</v>
+</c>
+<c r="C360">
+<v>
+223</v>
+</c>
+<c r="D360" t="s">
+<v>
+10</v>
+</c>
+<c r="E360" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+322</v>
+</c>
+<c r="F360" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.2525252525252526</v>
+</c>
+<c r="G360" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.69254658385093171</v>
+</c>
+</row>
+<row r="361" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A361">
+<v>
+1972</v>
+</c>
+<c r="B361">
+<v>
+105</v>
+</c>
+<c r="C361">
+<v>
+1850</v>
+</c>
+<c r="D361" t="s">
+<v>
+10</v>
+</c>
+<c r="E361" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1955</v>
+</c>
+<c r="F361" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+18.61904761904762</v>
+</c>
+<c r="G361" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.94629156010230175</v>
+</c>
+</row>
+<row r="362" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A362">
+<v>
+8752</v>
+</c>
+<c r="B362">
+<v>
+41</v>
+</c>
+<c r="C362">
+<v>
+8622</v>
+</c>
+<c r="D362" t="s">
+<v>
+10</v>
+</c>
+<c r="E362" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8663</v>
+</c>
+<c r="F362" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+211.29268292682926</v>
+</c>
+<c r="G362" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99526722844280269</v>
+</c>
+</row>
+<row r="363" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A363">
+<v>
+1373</v>
+</c>
+<c r="B363">
+<v>
+16</v>
+</c>
+<c r="C363">
+<v>
+1357</v>
+</c>
+<c r="D363" t="s">
+<v>
+10</v>
+</c>
+<c r="E363" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1373</v>
+</c>
+<c r="F363" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+85.8125</v>
+</c>
+<c r="G363" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98834668608885656</v>
+</c>
+</row>
+<row r="364" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A364">
+<v>
+1373</v>
+</c>
+<c r="B364">
+<v>
+16</v>
+</c>
+<c r="C364">
+<v>
+1357</v>
+</c>
+<c r="D364" t="s">
+<v>
+10</v>
+</c>
+<c r="E364" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1373</v>
+</c>
+<c r="F364" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+85.8125</v>
+</c>
+<c r="G364" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98834668608885656</v>
+</c>
+</row>
+<row r="365" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A365">
+<v>
+5752</v>
+</c>
+<c r="B365">
+<v>
+79</v>
+</c>
+<c r="C365">
+<v>
+4434</v>
+</c>
+<c r="D365" t="s">
+<v>
+10</v>
+</c>
+<c r="E365" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4513</v>
+</c>
+<c r="F365" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+57.12658227848101</v>
+</c>
+<c r="G365" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98249501440283626</v>
+</c>
+</row>
+<row r="366" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A366">
+<v>
+3649</v>
+</c>
+<c r="B366">
+<v>
+235</v>
+</c>
+<c r="C366">
+<v>
+2089</v>
+</c>
+<c r="D366" t="s">
+<v>
+10</v>
+</c>
+<c r="E366" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2324</v>
+</c>
+<c r="F366" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+9.8893617021276601</v>
+</c>
+<c r="G366" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.89888123924268504</v>
+</c>
+</row>
+<row r="367" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A367">
+<v>
+8772</v>
+</c>
+<c r="B367">
+<v>
+579</v>
+</c>
+<c r="C367">
+<v>
+8166</v>
+</c>
+<c r="D367" t="s">
+<v>
+10</v>
+</c>
+<c r="E367" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8745</v>
+</c>
+<c r="F367" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+15.103626943005182</v>
+</c>
+<c r="G367" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.93379073756432251</v>
+</c>
+</row>
+<row r="368" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A368">
+<v>
+625</v>
+</c>
+<c r="B368">
+<v>
+50</v>
+</c>
+<c r="C368">
+<v>
+491</v>
+</c>
+<c r="D368" t="s">
+<v>
+10</v>
+</c>
+<c r="E368" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+541</v>
+</c>
+<c r="F368" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+10.82</v>
+</c>
+<c r="G368" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.90757855822550837</v>
+</c>
+</row>
+<row r="369" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A369">
+<v>
+9557</v>
+</c>
+<c r="B369">
+<v>
+33</v>
+</c>
+<c r="C369">
+<v>
+9524</v>
+</c>
+<c r="D369" t="s">
+<v>
+10</v>
+</c>
+<c r="E369" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9557</v>
+</c>
+<c r="F369" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+289.60606060606062</v>
+</c>
+<c r="G369" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99654703358794605</v>
+</c>
+</row>
+<row r="370" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A370">
+<v>
+716</v>
+</c>
+<c r="B370">
+<v>
+73</v>
+</c>
+<c r="C370">
+<v>
+653</v>
+</c>
+<c r="D370" t="s">
+<v>
+10</v>
+</c>
+<c r="E370" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+726</v>
+</c>
+<c r="F370" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+9.9452054794520546</v>
+</c>
+<c r="G370" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.89944903581267222</v>
+</c>
+</row>
+<row r="371" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A371">
+<v>
+4286</v>
+</c>
+<c r="B371">
+<v>
+34</v>
+</c>
+<c r="C371">
+<v>
+4272</v>
+</c>
+<c r="D371" t="s">
+<v>
+10</v>
+</c>
+<c r="E371" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4306</v>
+</c>
+<c r="F371" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+126.64705882352941</v>
+</c>
+<c r="G371" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99210404087320014</v>
+</c>
+</row>
+<row r="372" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A372">
+<v>
+491</v>
+</c>
+<c r="B372">
+<v>
+54</v>
+</c>
+<c r="C372">
+<v>
+437</v>
+</c>
+<c r="D372" t="s">
+<v>
+10</v>
+</c>
+<c r="E372" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+491</v>
+</c>
+<c r="F372" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+9.0925925925925934</v>
+</c>
+<c r="G372" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.89002036659877803</v>
+</c>
+</row>
+<row r="373" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A373">
+<v>
+4431</v>
+</c>
+<c r="B373">
+<v>
+362</v>
+</c>
+<c r="C373">
+<v>
+9372</v>
+</c>
+<c r="D373" t="s">
+<v>
+10</v>
+</c>
+<c r="E373" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9734</v>
+</c>
+<c r="F373" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+26.88950276243094</v>
+</c>
+<c r="G373" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96281076638586394</v>
+</c>
+</row>
+<row r="374" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A374">
+<v>
+5752</v>
+</c>
+<c r="B374">
+<v>
+13</v>
+</c>
+<c r="C374">
+<v>
+4469</v>
+</c>
+<c r="D374" t="s">
+<v>
+10</v>
+</c>
+<c r="E374" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4482</v>
+</c>
+<c r="F374" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+344.76923076923077</v>
+</c>
+<c r="G374" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99709950914770196</v>
+</c>
+</row>
+<row r="375" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A375">
+<v>
+457</v>
+</c>
+<c r="B375">
+<v>
+45</v>
+</c>
+<c r="C375">
+<v>
+412</v>
+</c>
+<c r="D375" t="s">
+<v>
+10</v>
+</c>
+<c r="E375" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+457</v>
+</c>
+<c r="F375" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+10.155555555555555</v>
+</c>
+<c r="G375" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.90153172866520792</v>
+</c>
+</row>
+<row r="376" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A376">
+<v>
+2073</v>
+</c>
+<c r="B376">
+<v>
+92</v>
+</c>
+<c r="C376">
+<v>
+1871</v>
+</c>
+<c r="D376" t="s">
+<v>
+10</v>
+</c>
+<c r="E376" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1963</v>
+</c>
+<c r="F376" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+21.336956521739129</v>
+</c>
+<c r="G376" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.95313295975547629</v>
+</c>
+</row>
+<row r="377" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A377">
+<v>
+2352</v>
+</c>
+<c r="B377">
+<v>
+50</v>
+</c>
+<c r="C377">
+<v>
+2278</v>
+</c>
+<c r="D377" t="s">
+<v>
+10</v>
+</c>
+<c r="E377" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2328</v>
+</c>
+<c r="F377" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.56</v>
+</c>
+<c r="G377" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97852233676975942</v>
+</c>
+</row>
+<row r="378" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A378">
+<v>
+7251</v>
+</c>
+<c r="B378">
+<v>
+20</v>
+</c>
+<c r="C378">
+<v>
+1086</v>
+</c>
+<c r="D378" t="s">
+<v>
+10</v>
+</c>
+<c r="E378" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1106</v>
+</c>
+<c r="F378" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+55.3</v>
+</c>
+<c r="G378" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98191681735985537</v>
+</c>
+</row>
+<row r="379" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A379">
+<v>
+6056</v>
+</c>
+<c r="B379">
+<v>
+40</v>
+</c>
+<c r="C379">
+<v>
+6036</v>
+</c>
+<c r="D379" t="s">
+<v>
+10</v>
+</c>
+<c r="E379" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6076</v>
+</c>
+<c r="F379" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+151.9</v>
+</c>
+<c r="G379" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99341672152732063</v>
+</c>
+</row>
+<row r="380" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A380">
+<v>
+9593</v>
+</c>
+<c r="B380">
+<v>
+90</v>
+</c>
+<c r="C380">
+<v>
+9596</v>
+</c>
+<c r="D380" t="s">
+<v>
+10</v>
+</c>
+<c r="E380" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9686</v>
+</c>
+<c r="F380" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+107.62222222222222</v>
+</c>
+<c r="G380" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99070823869502378</v>
+</c>
+</row>
+<row r="381" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A381">
+<v>
+121</v>
+</c>
+<c r="B381">
+<v>
+30</v>
+</c>
+<c r="C381">
+<v>
+520</v>
+</c>
+<c r="D381" t="s">
+<v>
+10</v>
+</c>
+<c r="E381" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+550</v>
+</c>
+<c r="F381" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+18.333333333333332</v>
+</c>
+<c r="G381" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.94545454545454544</v>
+</c>
+</row>
+<row r="382" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A382">
+<v>
+21</v>
+</c>
+<c r="B382">
+<v>
+7</v>
+</c>
+<c r="C382">
+<v>
+14</v>
+</c>
+<c r="D382" t="s">
+<v>
+10</v>
+</c>
+<c r="E382" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+21</v>
+</c>
+<c r="F382" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3</v>
+</c>
+<c r="G382" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.66666666666666663</v>
+</c>
+</row>
+<row r="383" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A383">
+<v>
+5752</v>
+</c>
+<c r="B383">
+<v>
+64</v>
+</c>
+<c r="C383">
+<v>
+4421</v>
+</c>
+<c r="D383" t="s">
+<v>
+10</v>
+</c>
+<c r="E383" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4485</v>
+</c>
+<c r="F383" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+70.078125</v>
+</c>
+<c r="G383" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98573021181716836</v>
+</c>
+</row>
+<row r="384" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A384">
+<v>
+5752</v>
+</c>
+<c r="B384">
+<v>
+64</v>
+</c>
+<c r="C384">
+<v>
+4421</v>
+</c>
+<c r="D384" t="s">
+<v>
+10</v>
+</c>
+<c r="E384" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4485</v>
+</c>
+<c r="F384" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+70.078125</v>
+</c>
+<c r="G384" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98573021181716836</v>
+</c>
+</row>
+<row r="385" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A385">
+<v>
+2352</v>
+</c>
+<c r="B385">
+<v>
+33</v>
+</c>
+<c r="C385">
+<v>
+2205</v>
+</c>
+<c r="D385" t="s">
+<v>
+10</v>
+</c>
+<c r="E385" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2238</v>
+</c>
+<c r="F385" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+67.818181818181813</v>
+</c>
+<c r="G385" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98525469168900803</v>
+</c>
+</row>
+<row r="386" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A386">
+<v>
+2227</v>
+</c>
+<c r="B386">
+<v>
+120</v>
+</c>
+<c r="C386">
+<v>
+7768</v>
+</c>
+<c r="D386" t="s">
+<v>
+10</v>
+</c>
+<c r="E386" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7888</v>
+</c>
+<c r="F386" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+65.733333333333334</v>
+</c>
+<c r="G386" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98478701825557813</v>
+</c>
+</row>
+<row r="387" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A387">
+<v>
+2227</v>
+</c>
+<c r="B387">
+<v>
+31</v>
+</c>
+<c r="C387">
+<v>
+7837</v>
+</c>
+<c r="D387" t="s">
+<v>
+10</v>
+</c>
+<c r="E387" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7868</v>
+</c>
+<c r="F387" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+253.80645161290323</v>
+</c>
+<c r="G387" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99605998983223187</v>
+</c>
+</row>
+<row r="388" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A388">
+<v>
+6735</v>
+</c>
+<c r="B388">
+<v>
+72</v>
+</c>
+<c r="C388">
+<v>
+6584</v>
+</c>
+<c r="D388" t="s">
+<v>
+10</v>
+</c>
+<c r="E388" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6656</v>
+</c>
+<c r="F388" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+92.444444444444443</v>
+</c>
+<c r="G388" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98918269230769229</v>
+</c>
+</row>
+<row r="389" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A389">
+<v>
+21</v>
+</c>
+<c r="B389">
+<v>
+7</v>
+</c>
+<c r="C389">
+<v>
+14</v>
+</c>
+<c r="D389" t="s">
+<v>
+10</v>
+</c>
+<c r="E389" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+21</v>
+</c>
+<c r="F389" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3</v>
+</c>
+<c r="G389" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.66666666666666663</v>
+</c>
+</row>
+<row r="390" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A390">
+<v>
+1656</v>
+</c>
+<c r="B390">
+<v>
+7</v>
+</c>
+<c r="C390">
+<v>
+1454</v>
+</c>
+<c r="D390" t="s">
+<v>
+10</v>
+</c>
+<c r="E390" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1461</v>
+</c>
+<c r="F390" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+208.71428571428572</v>
+</c>
+<c r="G390" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99520876112251877</v>
+</c>
+</row>
+<row r="391" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A391">
+<v>
+740</v>
+</c>
+<c r="B391">
+<v>
+233</v>
+</c>
+<c r="C391">
+<v>
+683</v>
+</c>
+<c r="D391" t="s">
+<v>
+10</v>
+</c>
+<c r="E391" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+916</v>
+</c>
+<c r="F391" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.9313304721030042</v>
+</c>
+<c r="G391" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.74563318777292575</v>
+</c>
+</row>
+<row r="392" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A392">
+<v>
+13699</v>
+</c>
+<c r="B392">
+<v>
+200</v>
+</c>
+<c r="C392">
+<v>
+13427</v>
+</c>
+<c r="D392" t="s">
+<v>
+10</v>
+</c>
+<c r="E392" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+13627</v>
+</c>
+<c r="F392" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+68.135000000000005</v>
+</c>
+<c r="G392" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98532325530197407</v>
+</c>
+</row>
+<row r="393" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A393">
+<v>
+7725</v>
+</c>
+<c r="B393">
+<v>
+13</v>
+</c>
+<c r="C393">
+<v>
+7685</v>
+</c>
+<c r="D393" t="s">
+<v>
+10</v>
+</c>
+<c r="E393" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7698</v>
+</c>
+<c r="F393" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+592.15384615384619</v>
+</c>
+<c r="G393" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99831124967524032</v>
+</c>
+</row>
+<row r="394" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A394">
+<v>
+102</v>
+</c>
+<c r="B394">
+<v>
+33</v>
+</c>
+<c r="C394">
+<v>
+397</v>
+</c>
+<c r="D394" t="s">
+<v>
+10</v>
+</c>
+<c r="E394" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+430</v>
+</c>
+<c r="F394" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+13.030303030303031</v>
+</c>
+<c r="G394" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.92325581395348832</v>
+</c>
+</row>
+<row r="395" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A395">
+<v>
+7411</v>
+</c>
+<c r="B395">
+<v>
+19</v>
+</c>
+<c r="C395">
+<v>
+5967</v>
+</c>
+<c r="D395" t="s">
+<v>
+10</v>
+</c>
+<c r="E395" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5986</v>
+</c>
+<c r="F395" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+315.05263157894734</v>
+</c>
+<c r="G395" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99682592716338125</v>
+</c>
+</row>
+<row r="396" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A396">
+<v>
+702</v>
+</c>
+<c r="B396">
+<v>
+29</v>
+</c>
+<c r="C396">
+<v>
+5090</v>
+</c>
+<c r="D396" t="s">
+<v>
+10</v>
+</c>
+<c r="E396" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5119</v>
+</c>
+<c r="F396" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+176.51724137931035</v>
+</c>
+<c r="G396" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99433483102168396</v>
+</c>
+</row>
+<row r="397" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A397">
+<v>
+3154</v>
+</c>
+<c r="B397">
+<v>
+20</v>
+</c>
+<c r="C397">
+<v>
+3063</v>
+</c>
+<c r="D397" t="s">
+<v>
+10</v>
+</c>
+<c r="E397" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3083</v>
+</c>
+<c r="F397" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+154.15</v>
+</c>
+<c r="G397" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99351281219591303</v>
+</c>
+</row>
+<row r="398" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A398">
+<v>
+7425</v>
+</c>
+<c r="B398">
+<v>
+20</v>
+</c>
+<c r="C398">
+<v>
+7367</v>
+</c>
+<c r="D398" t="s">
+<v>
+10</v>
+</c>
+<c r="E398" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7387</v>
+</c>
+<c r="F398" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+369.35</v>
+</c>
+<c r="G398" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99729254095031816</v>
+</c>
+</row>
+<row r="399" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A399">
+<v>
+83</v>
+</c>
+<c r="B399">
+<v>
+70</v>
+</c>
+<c r="C399">
+<v>
+13</v>
+</c>
+<c r="D399" t="s">
+<v>
+10</v>
+</c>
+<c r="E399" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+83</v>
+</c>
+<c r="F399" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.1857142857142857</v>
+</c>
+<c r="G399" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.15662650602409639</v>
+</c>
+</row>
+<row r="400" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A400">
+<v>
+184</v>
+</c>
+<c r="B400">
+<v>
+76</v>
+</c>
+<c r="C400">
+<v>
+126</v>
+</c>
+<c r="D400" t="s">
+<v>
+10</v>
+</c>
+<c r="E400" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+202</v>
+</c>
+<c r="F400" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+2.6578947368421053</v>
+</c>
+<c r="G400" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.62376237623762376</v>
+</c>
+</row>
+<row r="401" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A401">
+<v>
+7931</v>
+</c>
+<c r="B401">
+<v>
+8</v>
+</c>
+<c r="C401">
+<v>
+7895</v>
+</c>
+<c r="D401" t="s">
+<v>
+10</v>
+</c>
+<c r="E401" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7903</v>
+</c>
+<c r="F401" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+987.875</v>
+</c>
+<c r="G401" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9989877261799317</v>
+</c>
+</row>
+<row r="402" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A402">
+<v>
+16213</v>
+</c>
+<c r="B402">
+<v>
+19</v>
+</c>
+<c r="C402">
+<v>
+15387</v>
+</c>
+<c r="D402" t="s">
+<v>
+10</v>
+</c>
+<c r="E402" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+15406</v>
+</c>
+<c r="F402" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+810.84210526315792</v>
+</c>
+<c r="G402" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99876671426716868</v>
+</c>
+</row>
+<row r="403" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A403">
+<v>
+1127</v>
+</c>
+<c r="B403">
+<v>
+38</v>
+</c>
+<c r="C403">
+<v>
+1100</v>
+</c>
+<c r="D403" t="s">
+<v>
+10</v>
+</c>
+<c r="E403" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1138</v>
+</c>
+<c r="F403" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+29.94736842105263</v>
+</c>
+<c r="G403" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96660808435852374</v>
+</c>
+</row>
+<row r="404" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A404">
+<v>
+2744</v>
+</c>
+<c r="B404">
+<v>
+147</v>
+</c>
+<c r="C404">
+<v>
+2597</v>
+</c>
+<c r="D404" t="s">
+<v>
+10</v>
+</c>
+<c r="E404" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2744</v>
+</c>
+<c r="F404" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+18.666666666666668</v>
+</c>
+<c r="G404" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9464285714285714</v>
+</c>
+</row>
+<row r="405" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A405">
+<v>
+6729</v>
+</c>
+<c r="B405">
+<v>
+115</v>
+</c>
+<c r="C405">
+<v>
+6351</v>
+</c>
+<c r="D405" t="s">
+<v>
+10</v>
+</c>
+<c r="E405" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6466</v>
+</c>
+<c r="F405" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+56.22608695652174</v>
+</c>
+<c r="G405" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98221466130528923</v>
+</c>
+</row>
+<row r="406" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A406">
+<v>
+148</v>
+</c>
+<c r="B406">
+<v>
+55</v>
+</c>
+<c r="C406">
+<v>
+105</v>
+</c>
+<c r="D406" t="s">
+<v>
+10</v>
+</c>
+<c r="E406" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+160</v>
+</c>
+<c r="F406" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+2.9090909090909092</v>
+</c>
+<c r="G406" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.65625</v>
+</c>
+</row>
+<row r="407" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A407">
+<v>
+148</v>
+</c>
+<c r="B407">
+<v>
+55</v>
+</c>
+<c r="C407">
+<v>
+105</v>
+</c>
+<c r="D407" t="s">
+<v>
+10</v>
+</c>
+<c r="E407" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+160</v>
+</c>
+<c r="F407" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+2.9090909090909092</v>
+</c>
+<c r="G407" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.65625</v>
+</c>
+</row>
+<row r="408" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A408">
+<v>
+5449</v>
+</c>
+<c r="B408">
+<v>
+44</v>
+</c>
+<c r="C408">
+<v>
+5405</v>
+</c>
+<c r="D408" t="s">
+<v>
+10</v>
+</c>
+<c r="E408" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5449</v>
+</c>
+<c r="F408" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+123.84090909090909</v>
+</c>
+<c r="G408" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99192512387594056</v>
+</c>
+</row>
+<row r="409" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A409">
+<v>
+14440</v>
+</c>
+<c r="B409">
+<v>
+40</v>
+</c>
+<c r="C409">
+<v>
+14563</v>
+</c>
+<c r="D409" t="s">
+<v>
+10</v>
+</c>
+<c r="E409" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+14603</v>
+</c>
+<c r="F409" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+365.07499999999999</v>
+</c>
+<c r="G409" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99726083681435318</v>
+</c>
+</row>
+<row r="410" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A410">
+<v>
+3171</v>
+</c>
+<c r="B410">
+<v>
+14</v>
+</c>
+<c r="C410">
+<v>
+3149</v>
+</c>
+<c r="D410" t="s">
+<v>
+10</v>
+</c>
+<c r="E410" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3163</v>
+</c>
+<c r="F410" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+225.92857142857142</v>
+</c>
+<c r="G410" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99557382232058178</v>
+</c>
+</row>
+<row r="411" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A411">
+<v>
+365</v>
+</c>
+<c r="B411">
+<v>
+331</v>
+</c>
+<c r="C411">
+<v>
+3934</v>
+</c>
+<c r="D411" t="s">
+<v>
+10</v>
+</c>
+<c r="E411" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4265</v>
+</c>
+<c r="F411" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+12.885196374622357</v>
+</c>
+<c r="G411" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.92239155920281357</v>
+</c>
+</row>
+<row r="412" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A412">
+<v>
+5479</v>
+</c>
+<c r="B412">
+<v>
+25</v>
+</c>
+<c r="C412">
+<v>
+4960</v>
+</c>
+<c r="D412" t="s">
+<v>
+10</v>
+</c>
+<c r="E412" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4985</v>
+</c>
+<c r="F412" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+199.4</v>
+</c>
+<c r="G412" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99498495486459382</v>
+</c>
+</row>
+<row r="413" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A413">
+<v>
+19803</v>
+</c>
+<c r="B413">
+<v>
+23</v>
+</c>
+<c r="C413">
+<v>
+19215</v>
+</c>
+<c r="D413" t="s">
+<v>
+10</v>
+</c>
+<c r="E413" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+19238</v>
+</c>
+<c r="F413" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+836.43478260869563</v>
+</c>
+<c r="G413" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99880444952697789</v>
+</c>
+</row>
+<row r="414" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A414">
+<v>
+6391</v>
+</c>
+<c r="B414">
+<v>
+34</v>
+</c>
+<c r="C414">
+<v>
+6320</v>
+</c>
+<c r="D414" t="s">
+<v>
+10</v>
+</c>
+<c r="E414" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6354</v>
+</c>
+<c r="F414" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+186.88235294117646</v>
+</c>
+<c r="G414" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99464903997481902</v>
+</c>
+</row>
+<row r="415" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A415">
+<v>
+44</v>
+</c>
+<c r="B415">
+<v>
+54</v>
+</c>
+<c r="C415">
+<v>
+40</v>
+</c>
+<c r="D415" t="s">
+<v>
+10</v>
+</c>
+<c r="E415" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+94</v>
+</c>
+<c r="F415" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.7407407407407407</v>
+</c>
+<c r="G415" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.42553191489361702</v>
+</c>
+</row>
+<row r="416" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A416">
+<v>
+13503</v>
+</c>
+<c r="B416">
+<v>
+26</v>
+</c>
+<c r="C416">
+<v>
+13413</v>
+</c>
+<c r="D416" t="s">
+<v>
+10</v>
+</c>
+<c r="E416" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+13439</v>
+</c>
+<c r="F416" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+516.88461538461536</v>
+</c>
+<c r="G416" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99806533224198224</v>
+</c>
+</row>
+<row r="417" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A417">
+<v>
+538</v>
+</c>
+<c r="B417">
+<v>
+31</v>
+</c>
+<c r="C417">
+<v>
+507</v>
+</c>
+<c r="D417" t="s">
+<v>
+10</v>
+</c>
+<c r="E417" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+538</v>
+</c>
+<c r="F417" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+17.35483870967742</v>
+</c>
+<c r="G417" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.94237918215613381</v>
+</c>
+</row>
+<row r="418" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A418">
+<v>
+5968</v>
+</c>
+<c r="B418">
+<v>
+21</v>
+</c>
+<c r="C418">
+<v>
+4450</v>
+</c>
+<c r="D418" t="s">
+<v>
+10</v>
+</c>
+<c r="E418" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4471</v>
+</c>
+<c r="F418" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+212.9047619047619</v>
+</c>
+<c r="G418" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99530306419145609</v>
+</c>
+</row>
+<row r="419" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A419">
+<v>
+5968</v>
+</c>
+<c r="B419">
+<v>
+21</v>
+</c>
+<c r="C419">
+<v>
+4450</v>
+</c>
+<c r="D419" t="s">
+<v>
+10</v>
+</c>
+<c r="E419" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4471</v>
+</c>
+<c r="F419" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+212.9047619047619</v>
+</c>
+<c r="G419" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99530306419145609</v>
+</c>
+</row>
+<row r="420" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A420">
+<v>
+11239</v>
+</c>
+<c r="B420">
+<v>
+21</v>
+</c>
+<c r="C420">
+<v>
+10387</v>
+</c>
+<c r="D420" t="s">
+<v>
+10</v>
+</c>
+<c r="E420" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10408</v>
+</c>
+<c r="F420" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+495.61904761904759</v>
+</c>
+<c r="G420" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99798232129131437</v>
+</c>
+</row>
+<row r="421" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A421">
+<v>
+10940</v>
+</c>
+<c r="B421">
+<v>
+66</v>
+</c>
+<c r="C421">
+<v>
+11246</v>
+</c>
+<c r="D421" t="s">
+<v>
+10</v>
+</c>
+<c r="E421" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+11312</v>
+</c>
+<c r="F421" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+171.39393939393941</v>
+</c>
+<c r="G421" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99416548797736914</v>
+</c>
+</row>
+<row r="422" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A422">
+<v>
+2980</v>
+</c>
+<c r="B422">
+<v>
+43</v>
+</c>
+<c r="C422">
+<v>
+2925</v>
+</c>
+<c r="D422" t="s">
+<v>
+10</v>
+</c>
+<c r="E422" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2968</v>
+</c>
+<c r="F422" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+69.023255813953483</v>
+</c>
+<c r="G422" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98551212938005395</v>
+</c>
+</row>
+<row r="423" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A423">
+<v>
+452</v>
+</c>
+<c r="B423">
+<v>
+25</v>
+</c>
+<c r="C423">
+<v>
+1143</v>
+</c>
+<c r="D423" t="s">
+<v>
+10</v>
+</c>
+<c r="E423" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1168</v>
+</c>
+<c r="F423" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.72</v>
+</c>
+<c r="G423" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97859589041095896</v>
+</c>
+</row>
+<row r="424" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A424">
+<v>
+906</v>
+</c>
+<c r="B424">
+<v>
+23</v>
+</c>
+<c r="C424">
+<v>
+903</v>
+</c>
+<c r="D424" t="s">
+<v>
+10</v>
+</c>
+<c r="E424" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+926</v>
+</c>
+<c r="F424" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+40.260869565217391</v>
+</c>
+<c r="G424" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97516198704103674</v>
+</c>
+</row>
+<row r="425" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A425">
+<v>
+391</v>
+</c>
+<c r="B425">
+<v>
+135</v>
+</c>
+<c r="C425">
+<v>
+2751</v>
+</c>
+<c r="D425" t="s">
+<v>
+10</v>
+</c>
+<c r="E425" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2886</v>
+</c>
+<c r="F425" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+21.377777777777776</v>
+</c>
+<c r="G425" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.95322245322245325</v>
+</c>
+</row>
+<row r="426" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A426">
+<v>
+9432</v>
+</c>
+<c r="B426">
+<v>
+36</v>
+</c>
+<c r="C426">
+<v>
+9250</v>
+</c>
+<c r="D426" t="s">
+<v>
+10</v>
+</c>
+<c r="E426" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9286</v>
+</c>
+<c r="F426" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+257.94444444444446</v>
+</c>
+<c r="G426" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99612319620934742</v>
+</c>
+</row>
+<row r="427" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A427">
+<v>
+653</v>
+</c>
+<c r="B427">
+<v>
+89</v>
+</c>
+<c r="C427">
+<v>
+1078</v>
+</c>
+<c r="D427" t="s">
+<v>
+10</v>
+</c>
+<c r="E427" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1167</v>
+</c>
+<c r="F427" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+13.112359550561798</v>
+</c>
+<c r="G427" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.92373607540702651</v>
+</c>
+</row>
+<row r="428" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A428">
+<v>
+4557</v>
+</c>
+<c r="B428">
+<v>
+11</v>
+</c>
+<c r="C428">
+<v>
+4540</v>
+</c>
+<c r="D428" t="s">
+<v>
+10</v>
+</c>
+<c r="E428" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4551</v>
+</c>
+<c r="F428" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+413.72727272727275</v>
+</c>
+<c r="G428" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99758294880246101</v>
+</c>
+</row>
+<row r="429" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A429">
+<v>
+3160</v>
+</c>
+<c r="B429">
+<v>
+15</v>
+</c>
+<c r="C429">
+<v>
+3130</v>
+</c>
+<c r="D429" t="s">
+<v>
+10</v>
+</c>
+<c r="E429" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3145</v>
+</c>
+<c r="F429" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+209.66666666666666</v>
+</c>
+<c r="G429" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99523052464228934</v>
+</c>
+</row>
+<row r="430" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A430">
+<v>
+2809</v>
+</c>
+<c r="B430">
+<v>
+39</v>
+</c>
+<c r="C430">
+<v>
+2770</v>
+</c>
+<c r="D430" t="s">
+<v>
+10</v>
+</c>
+<c r="E430" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2809</v>
+</c>
+<c r="F430" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+72.025641025641022</v>
+</c>
+<c r="G430" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98611605553577786</v>
+</c>
+</row>
+<row r="431" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A431">
+<v>
+1829</v>
+</c>
+<c r="B431">
+<v>
+18</v>
+</c>
+<c r="C431">
+<v>
+1821</v>
+</c>
+<c r="D431" t="s">
+<v>
+10</v>
+</c>
+<c r="E431" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1839</v>
+</c>
+<c r="F431" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+102.16666666666667</v>
+</c>
+<c r="G431" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9902120717781403</v>
+</c>
+</row>
+<row r="432" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A432">
+<v>
+6746</v>
+</c>
+<c r="B432">
+<v>
+19</v>
+</c>
+<c r="C432">
+<v>
+2578</v>
+</c>
+<c r="D432" t="s">
+<v>
+10</v>
+</c>
+<c r="E432" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2597</v>
+</c>
+<c r="F432" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+136.68421052631578</v>
+</c>
+<c r="G432" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99268386599922986</v>
+</c>
+</row>
+<row r="433" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A433">
+<v>
+7140</v>
+</c>
+<c r="B433">
+<v>
+29</v>
+</c>
+<c r="C433">
+<v>
+7068</v>
+</c>
+<c r="D433" t="s">
+<v>
+10</v>
+</c>
+<c r="E433" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7097</v>
+</c>
+<c r="F433" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+244.72413793103448</v>
+</c>
+<c r="G433" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9959137663801606</v>
+</c>
+</row>
+<row r="434" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A434">
+<v>
+7593</v>
+</c>
+<c r="B434">
+<v>
+28</v>
+</c>
+<c r="C434">
+<v>
+7580</v>
+</c>
+<c r="D434" t="s">
+<v>
+10</v>
+</c>
+<c r="E434" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7608</v>
+</c>
+<c r="F434" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+271.71428571428572</v>
+</c>
+<c r="G434" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99631966351209256</v>
+</c>
+</row>
+<row r="435" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A435">
+<v>
+7386</v>
+</c>
+<c r="B435">
+<v>
+22</v>
+</c>
+<c r="C435">
+<v>
+7321</v>
+</c>
+<c r="D435" t="s">
+<v>
+10</v>
+</c>
+<c r="E435" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7343</v>
+</c>
+<c r="F435" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+333.77272727272725</v>
+</c>
+<c r="G435" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99700394933950698</v>
+</c>
+</row>
+<row r="436" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A436">
+<v>
+10805</v>
+</c>
+<c r="B436">
+<v>
+17</v>
+</c>
+<c r="C436">
+<v>
+10909</v>
+</c>
+<c r="D436" t="s">
+<v>
+10</v>
+</c>
+<c r="E436" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10926</v>
+</c>
+<c r="F436" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+642.70588235294122</v>
+</c>
+<c r="G436" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99844407834523152</v>
+</c>
+</row>
+<row r="437" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A437">
+<v>
+11716</v>
+</c>
+<c r="B437">
+<v>
+21</v>
+</c>
+<c r="C437">
+<v>
+10934</v>
+</c>
+<c r="D437" t="s">
+<v>
+10</v>
+</c>
+<c r="E437" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10955</v>
+</c>
+<c r="F437" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+521.66666666666663</v>
+</c>
+<c r="G437" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99808306709265171</v>
+</c>
+</row>
+<row r="438" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A438">
+<v>
+6343</v>
+</c>
+<c r="B438">
+<v>
+41</v>
+</c>
+<c r="C438">
+<v>
+6078</v>
+</c>
+<c r="D438" t="s">
+<v>
+10</v>
+</c>
+<c r="E438" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6119</v>
+</c>
+<c r="F438" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+149.2439024390244</v>
+</c>
+<c r="G438" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99329955875142995</v>
+</c>
+</row>
+<row r="439" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A439">
+<v>
+178</v>
+</c>
+<c r="B439">
+<v>
+11</v>
+</c>
+<c r="C439">
+<v>
+190</v>
+</c>
+<c r="D439" t="s">
+<v>
+10</v>
+</c>
+<c r="E439" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+201</v>
+</c>
+<c r="F439" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+18.272727272727273</v>
+</c>
+<c r="G439" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.94527363184079605</v>
+</c>
+</row>
+<row r="440" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A440">
+<v>
+9492</v>
+</c>
+<c r="B440">
+<v>
+119</v>
+</c>
+<c r="C440">
+<v>
+9373</v>
+</c>
+<c r="D440" t="s">
+<v>
+10</v>
+</c>
+<c r="E440" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9492</v>
+</c>
+<c r="F440" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+79.764705882352942</v>
+</c>
+<c r="G440" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98746312684365778</v>
+</c>
+</row>
+<row r="441" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A441">
+<v>
+8669</v>
+</c>
+<c r="B441">
+<v>
+34</v>
+</c>
+<c r="C441">
+<v>
+8595</v>
+</c>
+<c r="D441" t="s">
+<v>
+10</v>
+</c>
+<c r="E441" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8629</v>
+</c>
+<c r="F441" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+253.79411764705881</v>
+</c>
+<c r="G441" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99605979835438641</v>
+</c>
+</row>
+<row r="442" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A442">
+<v>
+2964</v>
+</c>
+<c r="B442">
+<v>
+90</v>
+</c>
+<c r="C442">
+<v>
+2874</v>
+</c>
+<c r="D442" t="s">
+<v>
+10</v>
+</c>
+<c r="E442" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2964</v>
+</c>
+<c r="F442" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+32.93333333333333</v>
+</c>
+<c r="G442" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96963562753036436</v>
+</c>
+</row>
+<row r="443" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A443">
+<v>
+8235</v>
+</c>
+<c r="B443">
+<v>
+37</v>
+</c>
+<c r="C443">
+<v>
+8309</v>
+</c>
+<c r="D443" t="s">
+<v>
+10</v>
+</c>
+<c r="E443" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8346</v>
+</c>
+<c r="F443" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+225.56756756756758</v>
+</c>
+<c r="G443" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99556673855739275</v>
+</c>
+</row>
+<row r="444" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A444">
+<v>
+6074</v>
+</c>
+<c r="B444">
+<v>
+15</v>
+</c>
+<c r="C444">
+<v>
+5558</v>
+</c>
+<c r="D444" t="s">
+<v>
+10</v>
+</c>
+<c r="E444" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5573</v>
+</c>
+<c r="F444" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+371.53333333333336</v>
+</c>
+<c r="G444" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99730845146240799</v>
+</c>
+</row>
+<row r="445" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A445">
+<v>
+273</v>
+</c>
+<c r="B445">
+<v>
+42</v>
+</c>
+<c r="C445">
+<v>
+216</v>
+</c>
+<c r="D445" t="s">
+<v>
+10</v>
+</c>
+<c r="E445" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+258</v>
+</c>
+<c r="F445" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+6.1428571428571432</v>
+</c>
+<c r="G445" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.83720930232558144</v>
+</c>
+</row>
+<row r="446" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A446">
+<v>
+830</v>
+</c>
+<c r="B446">
+<v>
+11</v>
+</c>
+<c r="C446">
+<v>
+797</v>
+</c>
+<c r="D446" t="s">
+<v>
+10</v>
+</c>
+<c r="E446" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+808</v>
+</c>
+<c r="F446" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+73.454545454545453</v>
+</c>
+<c r="G446" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98638613861386137</v>
+</c>
+</row>
+<row r="447" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A447">
+<v>
+270</v>
+</c>
+<c r="B447">
+<v>
+59</v>
+</c>
+<c r="C447">
+<v>
+197</v>
+</c>
+<c r="D447" t="s">
+<v>
+10</v>
+</c>
+<c r="E447" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+256</v>
+</c>
+<c r="F447" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+4.3389830508474576</v>
+</c>
+<c r="G447" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.76953125</v>
+</c>
+</row>
+<row r="448" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A448">
+<v>
+2407</v>
+</c>
+<c r="B448">
+<v>
+46</v>
+</c>
+<c r="C448">
+<v>
+3212</v>
+</c>
+<c r="D448" t="s">
+<v>
+10</v>
+</c>
+<c r="E448" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3258</v>
+</c>
+<c r="F448" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+70.826086956521735</v>
+</c>
+<c r="G448" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98588090853284227</v>
+</c>
+</row>
+<row r="449" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A449">
+<v>
+2964</v>
+</c>
+<c r="B449">
+<v>
+29</v>
+</c>
+<c r="C449">
+<v>
+3394</v>
+</c>
+<c r="D449" t="s">
+<v>
+10</v>
+</c>
+<c r="E449" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3423</v>
+</c>
+<c r="F449" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+118.03448275862068</v>
+</c>
+<c r="G449" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99152789950335962</v>
+</c>
+</row>
+<row r="450" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A450">
+<v>
+5302</v>
+</c>
+<c r="B450">
+<v>
+17</v>
+</c>
+<c r="C450">
+<v>
+5258</v>
+</c>
+<c r="D450" t="s">
+<v>
+10</v>
+</c>
+<c r="E450" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5275</v>
+</c>
+<c r="F450" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+310.29411764705884</v>
+</c>
+<c r="G450" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99677725118483407</v>
+</c>
+</row>
+<row r="451" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A451">
+<v>
+3744</v>
+</c>
+<c r="B451">
+<v>
+28</v>
+</c>
+<c r="C451">
+<v>
+3718</v>
+</c>
+<c r="D451" t="s">
+<v>
+10</v>
+</c>
+<c r="E451" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3746</v>
+</c>
+<c r="F451" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+133.78571428571428</v>
+</c>
+<c r="G451" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99252536038441008</v>
+</c>
+</row>
+<row r="452" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A452">
+<v>
+178</v>
+</c>
+<c r="B452">
+<v>
+11</v>
+</c>
+<c r="C452">
+<v>
+190</v>
+</c>
+<c r="D452" t="s">
+<v>
+10</v>
+</c>
+<c r="E452" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+201</v>
+</c>
+<c r="F452" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+18.272727272727273</v>
+</c>
+<c r="G452" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.94527363184079605</v>
+</c>
+</row>
+<row r="453" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A453">
+<v>
+6469</v>
+</c>
+<c r="B453">
+<v>
+48</v>
+</c>
+<c r="C453">
+<v>
+5852</v>
+</c>
+<c r="D453" t="s">
+<v>
+10</v>
+</c>
+<c r="E453" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5900</v>
+</c>
+<c r="F453" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+122.91666666666667</v>
+</c>
+<c r="G453" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99186440677966103</v>
+</c>
+</row>
+<row r="454" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A454">
+<v>
+9554</v>
+</c>
+<c r="B454">
+<v>
+55</v>
+</c>
+<c r="C454">
+<v>
+9467</v>
+</c>
+<c r="D454" t="s">
+<v>
+10</v>
+</c>
+<c r="E454" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9522</v>
+</c>
+<c r="F454" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+173.12727272727273</v>
+</c>
+<c r="G454" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99422390254148285</v>
+</c>
+</row>
+<row r="455" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A455">
+<v>
+14990</v>
+</c>
+<c r="B455">
+<v>
+29</v>
+</c>
+<c r="C455">
+<v>
+14935</v>
+</c>
+<c r="D455" t="s">
+<v>
+10</v>
+</c>
+<c r="E455" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+14964</v>
+</c>
+<c r="F455" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+516</v>
+</c>
+<c r="G455" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99806201550387597</v>
+</c>
+</row>
+<row r="456" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A456">
+<v>
+5553</v>
+</c>
+<c r="B456">
+<v>
+25</v>
+</c>
+<c r="C456">
+<v>
+5215</v>
+</c>
+<c r="D456" t="s">
+<v>
+10</v>
+</c>
+<c r="E456" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5240</v>
+</c>
+<c r="F456" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+209.6</v>
+</c>
+<c r="G456" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99522900763358779</v>
+</c>
+</row>
+<row r="457" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A457">
+<v>
+5098</v>
+</c>
+<c r="B457">
+<v>
+25</v>
+</c>
+<c r="C457">
+<v>
+5045</v>
+</c>
+<c r="D457" t="s">
+<v>
+10</v>
+</c>
+<c r="E457" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5070</v>
+</c>
+<c r="F457" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+202.8</v>
+</c>
+<c r="G457" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99506903353057197</v>
+</c>
+</row>
+<row r="458" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A458">
+<v>
+6236</v>
+</c>
+<c r="B458">
+<v>
+30</v>
+</c>
+<c r="C458">
+<v>
+6047</v>
+</c>
+<c r="D458" t="s">
+<v>
+10</v>
+</c>
+<c r="E458" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6077</v>
+</c>
+<c r="F458" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+202.56666666666666</v>
+</c>
+<c r="G458" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99506335362843512</v>
+</c>
+</row>
+<row r="459" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A459">
+<v>
+156</v>
+</c>
+<c r="B459">
+<v>
+113</v>
+</c>
+<c r="C459">
+<v>
+5850</v>
+</c>
+<c r="D459" t="s">
+<v>
+10</v>
+</c>
+<c r="E459" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5963</v>
+</c>
+<c r="F459" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+52.769911504424776</v>
+</c>
+<c r="G459" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98104980714405499</v>
+</c>
+</row>
+<row r="460" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A460">
+<v>
+2236</v>
+</c>
+<c r="B460">
+<v>
+34</v>
+</c>
+<c r="C460">
+<v>
+1919</v>
+</c>
+<c r="D460" t="s">
+<v>
+10</v>
+</c>
+<c r="E460" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1953</v>
+</c>
+<c r="F460" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+57.441176470588232</v>
+</c>
+<c r="G460" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98259088581669229</v>
+</c>
+</row>
+<row r="461" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A461">
+<v>
+2236</v>
+</c>
+<c r="B461">
+<v>
+34</v>
+</c>
+<c r="C461">
+<v>
+1919</v>
+</c>
+<c r="D461" t="s">
+<v>
+10</v>
+</c>
+<c r="E461" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1953</v>
+</c>
+<c r="F461" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+57.441176470588232</v>
+</c>
+<c r="G461" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98259088581669229</v>
+</c>
+</row>
+<row r="462" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A462">
+<v>
+452</v>
+</c>
+<c r="B462">
+<v>
+25</v>
+</c>
+<c r="C462">
+<v>
+1143</v>
+</c>
+<c r="D462" t="s">
+<v>
+10</v>
+</c>
+<c r="E462" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1168</v>
+</c>
+<c r="F462" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.72</v>
+</c>
+<c r="G462" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97859589041095896</v>
+</c>
+</row>
+<row r="463" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A463">
+<v>
+319</v>
+</c>
+<c r="B463">
+<v>
+14</v>
+</c>
+<c r="C463">
+<v>
+371</v>
+</c>
+<c r="D463" t="s">
+<v>
+10</v>
+</c>
+<c r="E463" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+385</v>
+</c>
+<c r="F463" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+27.5</v>
+</c>
+<c r="G463" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96363636363636362</v>
+</c>
+</row>
+<row r="464" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A464">
+<v>
+967</v>
+</c>
+<c r="B464">
+<v>
+35</v>
+</c>
+<c r="C464">
+<v>
+922</v>
+</c>
+<c r="D464" t="s">
+<v>
+10</v>
+</c>
+<c r="E464" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+957</v>
+</c>
+<c r="F464" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+27.342857142857142</v>
+</c>
+<c r="G464" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96342737722048066</v>
+</c>
+</row>
+<row r="465" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A465">
+<v>
+1995</v>
+</c>
+<c r="B465">
+<v>
+65</v>
+</c>
+<c r="C465">
+<v>
+1930</v>
+</c>
+<c r="D465" t="s">
+<v>
+10</v>
+</c>
+<c r="E465" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1995</v>
+</c>
+<c r="F465" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+30.692307692307693</v>
+</c>
+<c r="G465" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.96741854636591473</v>
+</c>
+</row>
+<row r="466" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A466">
+<v>
+2078</v>
+</c>
+<c r="B466">
+<v>
+29</v>
+</c>
+<c r="C466">
+<v>
+2015</v>
+</c>
+<c r="D466" t="s">
+<v>
+10</v>
+</c>
+<c r="E466" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2044</v>
+</c>
+<c r="F466" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+70.482758620689651</v>
+</c>
+<c r="G466" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.985812133072407</v>
+</c>
+</row>
+<row r="467" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A467">
+<v>
+3149</v>
+</c>
+<c r="B467">
+<v>
+86</v>
+</c>
+<c r="C467">
+<v>
+3072</v>
+</c>
+<c r="D467" t="s">
+<v>
+10</v>
+</c>
+<c r="E467" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3158</v>
+</c>
+<c r="F467" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+36.720930232558139</v>
+</c>
+<c r="G467" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97276757441418615</v>
+</c>
+</row>
+<row r="468" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A468">
+<v>
+3149</v>
+</c>
+<c r="B468">
+<v>
+86</v>
+</c>
+<c r="C468">
+<v>
+3072</v>
+</c>
+<c r="D468" t="s">
+<v>
+10</v>
+</c>
+<c r="E468" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3158</v>
+</c>
+<c r="F468" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+36.720930232558139</v>
+</c>
+<c r="G468" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97276757441418615</v>
+</c>
+</row>
+<row r="469" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A469">
+<v>
+2809</v>
+</c>
+<c r="B469">
+<v>
+39</v>
+</c>
+<c r="C469">
+<v>
+2770</v>
+</c>
+<c r="D469" t="s">
+<v>
+10</v>
+</c>
+<c r="E469" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2809</v>
+</c>
+<c r="F469" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+72.025641025641022</v>
+</c>
+<c r="G469" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98611605553577786</v>
+</c>
+</row>
+<row r="470" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A470">
+<v>
+11971</v>
+</c>
+<c r="B470">
+<v>
+61</v>
+</c>
+<c r="C470">
+<v>
+7866</v>
+</c>
+<c r="D470" t="s">
+<v>
+10</v>
+</c>
+<c r="E470" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7927</v>
+</c>
+<c r="F470" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+129.95081967213116</v>
+</c>
+<c r="G470" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99230478112779108</v>
+</c>
+</row>
+<row r="471" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A471">
+<v>
+925</v>
+</c>
+<c r="B471">
+<v>
+76</v>
+</c>
+<c r="C471">
+<v>
+831</v>
+</c>
+<c r="D471" t="s">
+<v>
+10</v>
+</c>
+<c r="E471" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+907</v>
+</c>
+<c r="F471" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+11.934210526315789</v>
+</c>
+<c r="G471" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.91620727673649394</v>
+</c>
+</row>
+<row r="472" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A472">
+<v>
+6462</v>
+</c>
+<c r="B472">
+<v>
+27</v>
+</c>
+<c r="C472">
+<v>
+6450</v>
+</c>
+<c r="D472" t="s">
+<v>
+10</v>
+</c>
+<c r="E472" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6477</v>
+</c>
+<c r="F472" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+239.88888888888889</v>
+</c>
+<c r="G472" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99583140342751275</v>
+</c>
+</row>
+<row r="473" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A473">
+<v>
+9518</v>
+</c>
+<c r="B473">
+<v>
+77</v>
+</c>
+<c r="C473">
+<v>
+9401</v>
+</c>
+<c r="D473" t="s">
+<v>
+10</v>
+</c>
+<c r="E473" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9478</v>
+</c>
+<c r="F473" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+123.09090909090909</v>
+</c>
+<c r="G473" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99187592319054652</v>
+</c>
+</row>
+<row r="474" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A474">
+<v>
+9518</v>
+</c>
+<c r="B474">
+<v>
+77</v>
+</c>
+<c r="C474">
+<v>
+9401</v>
+</c>
+<c r="D474" t="s">
+<v>
+10</v>
+</c>
+<c r="E474" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9478</v>
+</c>
+<c r="F474" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+123.09090909090909</v>
+</c>
+<c r="G474" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99187592319054652</v>
+</c>
+</row>
+<row r="475" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A475">
+<v>
+7593</v>
+</c>
+<c r="B475">
+<v>
+28</v>
+</c>
+<c r="C475">
+<v>
+7580</v>
+</c>
+<c r="D475" t="s">
+<v>
+10</v>
+</c>
+<c r="E475" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7608</v>
+</c>
+<c r="F475" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+271.71428571428572</v>
+</c>
+<c r="G475" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99631966351209256</v>
+</c>
+</row>
+<row r="476" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A476">
+<v>
+861</v>
+</c>
+<c r="B476">
+<v>
+106</v>
+</c>
+<c r="C476">
+<v>
+755</v>
+</c>
+<c r="D476" t="s">
+<v>
+10</v>
+</c>
+<c r="E476" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+861</v>
+</c>
+<c r="F476" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+8.1226415094339615</v>
+</c>
+<c r="G476" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.87688734030197446</v>
+</c>
+</row>
+<row r="477" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A477">
+<v>
+861</v>
+</c>
+<c r="B477">
+<v>
+53</v>
+</c>
+<c r="C477">
+<v>
+824</v>
+</c>
+<c r="D477" t="s">
+<v>
+10</v>
+</c>
+<c r="E477" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+877</v>
+</c>
+<c r="F477" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+16.547169811320753</v>
+</c>
+<c r="G477" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.93956670467502845</v>
+</c>
+</row>
+<row r="478" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A478">
+<v>
+277</v>
+</c>
+<c r="B478">
+<v>
+55</v>
+</c>
+<c r="C478">
+<v>
+17923</v>
+</c>
+<c r="D478" t="s">
+<v>
+10</v>
+</c>
+<c r="E478" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+17978</v>
+</c>
+<c r="F478" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+326.87272727272727</v>
+</c>
+<c r="G478" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99694070530648571</v>
+</c>
+</row>
+<row r="479" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A479">
+<v>
+10759</v>
+</c>
+<c r="B479">
+<v>
+38</v>
+</c>
+<c r="C479">
+<v>
+10720</v>
+</c>
+<c r="D479" t="s">
+<v>
+10</v>
+</c>
+<c r="E479" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10758</v>
+</c>
+<c r="F479" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+283.10526315789474</v>
+</c>
+<c r="G479" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99646774493400259</v>
+</c>
+</row>
+<row r="480" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A480">
+<v>
+10759</v>
+</c>
+<c r="B480">
+<v>
+38</v>
+</c>
+<c r="C480">
+<v>
+10720</v>
+</c>
+<c r="D480" t="s">
+<v>
+10</v>
+</c>
+<c r="E480" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10758</v>
+</c>
+<c r="F480" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+283.10526315789474</v>
+</c>
+<c r="G480" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99646774493400259</v>
+</c>
+</row>
+<row r="481" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A481">
+<v>
+1638</v>
+</c>
+<c r="B481">
+<v>
+20</v>
+</c>
+<c r="C481">
+<v>
+1617</v>
+</c>
+<c r="D481" t="s">
+<v>
+10</v>
+</c>
+<c r="E481" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1637</v>
+</c>
+<c r="F481" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+81.849999999999994</v>
+</c>
+<c r="G481" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98778252901649355</v>
+</c>
+</row>
+<row r="482" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A482">
+<v>
+6046</v>
+</c>
+<c r="B482">
+<v>
+19</v>
+</c>
+<c r="C482">
+<v>
+6024</v>
+</c>
+<c r="D482" t="s">
+<v>
+10</v>
+</c>
+<c r="E482" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6043</v>
+</c>
+<c r="F482" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+318.05263157894734</v>
+</c>
+<c r="G482" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99685586629157708</v>
+</c>
+</row>
+<row r="483" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A483">
+<v>
+2674</v>
+</c>
+<c r="B483">
+<v>
+61</v>
+</c>
+<c r="C483">
+<v>
+2592</v>
+</c>
+<c r="D483" t="s">
+<v>
+10</v>
+</c>
+<c r="E483" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2653</v>
+</c>
+<c r="F483" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+43.491803278688522</v>
+</c>
+<c r="G483" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97700716170373159</v>
+</c>
+</row>
+<row r="484" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A484">
+<v>
+13477</v>
+</c>
+<c r="B484">
+<v>
+65</v>
+</c>
+<c r="C484">
+<v>
+13414</v>
+</c>
+<c r="D484" t="s">
+<v>
+10</v>
+</c>
+<c r="E484" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+13479</v>
+</c>
+<c r="F484" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+207.36923076923077</v>
+</c>
+<c r="G484" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9951776838044365</v>
+</c>
+</row>
+<row r="485" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A485">
+<v>
+6329</v>
+</c>
+<c r="B485">
+<v>
+72</v>
+</c>
+<c r="C485">
+<v>
+6267</v>
+</c>
+<c r="D485" t="s">
+<v>
+10</v>
+</c>
+<c r="E485" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6339</v>
+</c>
+<c r="F485" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+88.041666666666671</v>
+</c>
+<c r="G485" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98864174159962137</v>
+</c>
+</row>
+<row r="486" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A486">
+<v>
+11542</v>
+</c>
+<c r="B486">
+<v>
+15</v>
+</c>
+<c r="C486">
+<v>
+11551</v>
+</c>
+<c r="D486" t="s">
+<v>
+10</v>
+</c>
+<c r="E486" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+11566</v>
+</c>
+<c r="F486" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+771.06666666666672</v>
+</c>
+<c r="G486" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99870309527926682</v>
+</c>
+</row>
+<row r="487" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A487">
+<v>
+1924</v>
+</c>
+<c r="B487">
+<v>
+37</v>
+</c>
+<c r="C487">
+<v>
+1877</v>
+</c>
+<c r="D487" t="s">
+<v>
+10</v>
+</c>
+<c r="E487" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1914</v>
+</c>
+<c r="F487" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+51.729729729729726</v>
+</c>
+<c r="G487" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98066875653082552</v>
+</c>
+</row>
+<row r="488" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A488">
+<v>
+11678</v>
+</c>
+<c r="B488">
+<v>
+47</v>
+</c>
+<c r="C488">
+<v>
+10851</v>
+</c>
+<c r="D488" t="s">
+<v>
+10</v>
+</c>
+<c r="E488" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10898</v>
+</c>
+<c r="F488" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+231.87234042553192</v>
+</c>
+<c r="G488" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9956872820701046</v>
+</c>
+</row>
+<row r="489" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A489">
+<v>
+7372</v>
+</c>
+<c r="B489">
+<v>
+46</v>
+</c>
+<c r="C489">
+<v>
+7287</v>
+</c>
+<c r="D489" t="s">
+<v>
+10</v>
+</c>
+<c r="E489" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7333</v>
+</c>
+<c r="F489" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+159.41304347826087</v>
+</c>
+<c r="G489" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99372698759034506</v>
+</c>
+</row>
+<row r="490" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A490">
+<v>
+210</v>
+</c>
+<c r="B490">
+<v>
+194</v>
+</c>
+<c r="C490">
+<v>
+16</v>
+</c>
+<c r="D490" t="s">
+<v>
+10</v>
+</c>
+<c r="E490" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+210</v>
+</c>
+<c r="F490" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.0824742268041236</v>
+</c>
+<c r="G490" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+7.6190476190476197E-2</v>
+</c>
+</row>
+<row r="491" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A491">
+<v>
+5752</v>
+</c>
+<c r="B491">
+<v>
+36</v>
+</c>
+<c r="C491">
+<v>
+4616</v>
+</c>
+<c r="D491" t="s">
+<v>
+10</v>
+</c>
+<c r="E491" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4652</v>
+</c>
+<c r="F491" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+129.22222222222223</v>
+</c>
+<c r="G491" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99226139294926918</v>
+</c>
+</row>
+<row r="492" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A492">
+<v>
+7421</v>
+</c>
+<c r="B492">
+<v>
+38</v>
+</c>
+<c r="C492">
+<v>
+7038</v>
+</c>
+<c r="D492" t="s">
+<v>
+10</v>
+</c>
+<c r="E492" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7076</v>
+</c>
+<c r="F492" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+186.21052631578948</v>
+</c>
+<c r="G492" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99462973431317125</v>
+</c>
+</row>
+<row r="493" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A493">
+<v>
+14259</v>
+</c>
+<c r="B493">
+<v>
+30</v>
+</c>
+<c r="C493">
+<v>
+14141</v>
+</c>
+<c r="D493" t="s">
+<v>
+10</v>
+</c>
+<c r="E493" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+14171</v>
+</c>
+<c r="F493" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+472.36666666666667</v>
+</c>
+<c r="G493" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9978830004939665</v>
+</c>
+</row>
+<row r="494" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A494">
+<v>
+3419</v>
+</c>
+<c r="B494">
+<v>
+14</v>
+</c>
+<c r="C494">
+<v>
+3423</v>
+</c>
+<c r="D494" t="s">
+<v>
+10</v>
+</c>
+<c r="E494" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3437</v>
+</c>
+<c r="F494" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+245.5</v>
+</c>
+<c r="G494" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99592668024439923</v>
+</c>
+</row>
+<row r="495" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A495">
+<v>
+5353</v>
+</c>
+<c r="B495">
+<v>
+35</v>
+</c>
+<c r="C495">
+<v>
+5289</v>
+</c>
+<c r="D495" t="s">
+<v>
+10</v>
+</c>
+<c r="E495" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5324</v>
+</c>
+<c r="F495" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+152.11428571428573</v>
+</c>
+<c r="G495" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99342599549211119</v>
+</c>
+</row>
+<row r="496" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A496">
+<v>
+97</v>
+</c>
+<c r="B496">
+<v>
+83</v>
+</c>
+<c r="C496">
+<v>
+14</v>
+</c>
+<c r="D496" t="s">
+<v>
+10</v>
+</c>
+<c r="E496" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+97</v>
+</c>
+<c r="F496" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.1686746987951808</v>
+</c>
+<c r="G496" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.14432989690721648</v>
+</c>
+</row>
+<row r="497" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A497">
+<v>
+5752</v>
+</c>
+<c r="B497">
+<v>
+20</v>
+</c>
+<c r="C497">
+<v>
+4620</v>
+</c>
+<c r="D497" t="s">
+<v>
+10</v>
+</c>
+<c r="E497" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4640</v>
+</c>
+<c r="F497" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+232</v>
+</c>
+<c r="G497" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99568965517241381</v>
+</c>
+</row>
+<row r="498" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A498">
+<v>
+12653</v>
+</c>
+<c r="B498">
+<v>
+56</v>
+</c>
+<c r="C498">
+<v>
+11735</v>
+</c>
+<c r="D498" t="s">
+<v>
+10</v>
+</c>
+<c r="E498" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+11791</v>
+</c>
+<c r="F498" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+210.55357142857142</v>
+</c>
+<c r="G498" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99525061487575273</v>
+</c>
+</row>
+<row r="499" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A499">
+<v>
+2352</v>
+</c>
+<c r="B499">
+<v>
+50</v>
+</c>
+<c r="C499">
+<v>
+2278</v>
+</c>
+<c r="D499" t="s">
+<v>
+10</v>
+</c>
+<c r="E499" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2328</v>
+</c>
+<c r="F499" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.56</v>
+</c>
+<c r="G499" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97852233676975942</v>
+</c>
+</row>
+<row r="500" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A500">
+<v>
+149</v>
+</c>
+<c r="B500">
+<v>
+31</v>
+</c>
+<c r="C500">
+<v>
+421</v>
+</c>
+<c r="D500" t="s">
+<v>
+10</v>
+</c>
+<c r="E500" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+452</v>
+</c>
+<c r="F500" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+14.580645161290322</v>
+</c>
+<c r="G500" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.93141592920353977</v>
+</c>
+</row>
+<row r="501" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A501">
+<v>
+5968</v>
+</c>
+<c r="B501">
+<v>
+45</v>
+</c>
+<c r="C501">
+<v>
+4424</v>
+</c>
+<c r="D501" t="s">
+<v>
+10</v>
+</c>
+<c r="E501" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4469</v>
+</c>
+<c r="F501" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+99.311111111111117</v>
+</c>
+<c r="G501" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98993063325128661</v>
+</c>
+</row>
+<row r="502" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A502">
+<v>
+6303</v>
+</c>
+<c r="B502">
+<v>
+36</v>
+</c>
+<c r="C502">
+<v>
+6264</v>
+</c>
+<c r="D502" t="s">
+<v>
+10</v>
+</c>
+<c r="E502" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6300</v>
+</c>
+<c r="F502" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+175</v>
+</c>
+<c r="G502" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99428571428571433</v>
+</c>
+</row>
+<row r="503" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A503">
+<v>
+7794</v>
+</c>
+<c r="B503">
+<v>
+158</v>
+</c>
+<c r="C503">
+<v>
+7595</v>
+</c>
+<c r="D503" t="s">
+<v>
+10</v>
+</c>
+<c r="E503" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7753</v>
+</c>
+<c r="F503" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+49.069620253164558</v>
+</c>
+<c r="G503" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97962079195150265</v>
+</c>
+</row>
+<row r="504" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A504">
+<v>
+322</v>
+</c>
+<c r="B504">
+<v>
+122</v>
+</c>
+<c r="C504">
+<v>
+11020</v>
+</c>
+<c r="D504" t="s">
+<v>
+10</v>
+</c>
+<c r="E504" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+11142</v>
+</c>
+<c r="F504" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+91.327868852459019</v>
+</c>
+<c r="G504" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9890504397774188</v>
+</c>
+</row>
+<row r="505" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A505">
+<v>
+224</v>
+</c>
+<c r="B505">
+<v>
+65</v>
+</c>
+<c r="C505">
+<v>
+708</v>
+</c>
+<c r="D505" t="s">
+<v>
+10</v>
+</c>
+<c r="E505" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+773</v>
+</c>
+<c r="F505" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+11.892307692307693</v>
+</c>
+<c r="G505" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.91591203104786545</v>
+</c>
+</row>
+<row r="506" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A506">
+<v>
+14001</v>
+</c>
+<c r="B506">
+<v>
+89</v>
+</c>
+<c r="C506">
+<v>
+13814</v>
+</c>
+<c r="D506" t="s">
+<v>
+10</v>
+</c>
+<c r="E506" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+13903</v>
+</c>
+<c r="F506" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+156.2134831460674</v>
+</c>
+<c r="G506" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99359850392001725</v>
+</c>
+</row>
+<row r="507" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A507">
+<v>
+5104</v>
+</c>
+<c r="B507">
+<v>
+52</v>
+</c>
+<c r="C507">
+<v>
+5010</v>
+</c>
+<c r="D507" t="s">
+<v>
+10</v>
+</c>
+<c r="E507" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5062</v>
+</c>
+<c r="F507" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+97.34615384615384</v>
+</c>
+<c r="G507" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98972738048202291</v>
+</c>
+</row>
+<row r="508" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A508">
+<v>
+444</v>
+</c>
+<c r="B508">
+<v>
+255</v>
+</c>
+<c r="C508">
+<v>
+737</v>
+</c>
+<c r="D508" t="s">
+<v>
+10</v>
+</c>
+<c r="E508" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+992</v>
+</c>
+<c r="F508" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.8901960784313725</v>
+</c>
+<c r="G508" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.74294354838709675</v>
+</c>
+</row>
+<row r="509" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A509">
+<v>
+7668</v>
+</c>
+<c r="B509">
+<v>
+80</v>
+</c>
+<c r="C509">
+<v>
+7588</v>
+</c>
+<c r="D509" t="s">
+<v>
+10</v>
+</c>
+<c r="E509" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7668</v>
+</c>
+<c r="F509" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+95.85</v>
+</c>
+<c r="G509" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98956703182055294</v>
+</c>
+</row>
+<row r="510" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A510">
+<v>
+1889</v>
+</c>
+<c r="B510">
+<v>
+144</v>
+</c>
+<c r="C510">
+<v>
+1759</v>
+</c>
+<c r="D510" t="s">
+<v>
+10</v>
+</c>
+<c r="E510" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1903</v>
+</c>
+<c r="F510" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+13.215277777777779</v>
+</c>
+<c r="G510" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.92433000525486075</v>
+</c>
+</row>
+<row r="511" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A511">
+<v>
+1168</v>
+</c>
+<c r="B511">
+<v>
+101</v>
+</c>
+<c r="C511">
+<v>
+5183</v>
+</c>
+<c r="D511" t="s">
+<v>
+10</v>
+</c>
+<c r="E511" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5284</v>
+</c>
+<c r="F511" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+52.316831683168317</v>
+</c>
+<c r="G511" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98088569265707792</v>
+</c>
+</row>
+<row r="512" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A512">
+<v>
+452</v>
+</c>
+<c r="B512">
+<v>
+24</v>
+</c>
+<c r="C512">
+<v>
+811</v>
+</c>
+<c r="D512" t="s">
+<v>
+10</v>
+</c>
+<c r="E512" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+835</v>
+</c>
+<c r="F512" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+34.791666666666664</v>
+</c>
+<c r="G512" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97125748502994014</v>
+</c>
+</row>
+<row r="513" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A513">
+<v>
+1681</v>
+</c>
+<c r="B513">
+<v>
+284</v>
+</c>
+<c r="C513">
+<v>
+20507</v>
+</c>
+<c r="D513" t="s">
+<v>
+10</v>
+</c>
+<c r="E513" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+20791</v>
+</c>
+<c r="F513" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+73.207746478873233</v>
+</c>
+<c r="G513" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98634024337453707</v>
+</c>
+</row>
+<row r="514" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A514">
+<v>
+5135</v>
+</c>
+<c r="B514">
+<v>
+28</v>
+</c>
+<c r="C514">
+<v>
+4603</v>
+</c>
+<c r="D514" t="s">
+<v>
+10</v>
+</c>
+<c r="E514" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4631</v>
+</c>
+<c r="F514" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+165.39285714285714</v>
+</c>
+<c r="G514" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99395378967825521</v>
+</c>
+</row>
+<row r="515" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A515">
+<v>
+3418</v>
+</c>
+<c r="B515">
+<v>
+82</v>
+</c>
+<c r="C515">
+<v>
+3336</v>
+</c>
+<c r="D515" t="s">
+<v>
+10</v>
+</c>
+<c r="E515" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3418</v>
+</c>
+<c r="F515" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+41.68292682926829</v>
+</c>
+<c r="G515" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97600936220011703</v>
+</c>
+</row>
+<row r="516" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A516">
+<v>
+5968</v>
+</c>
+<c r="B516">
+<v>
+59</v>
+</c>
+<c r="C516">
+<v>
+4411</v>
+</c>
+<c r="D516" t="s">
+<v>
+10</v>
+</c>
+<c r="E516" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+4470</v>
+</c>
+<c r="F516" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+75.762711864406782</v>
+</c>
+<c r="G516" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98680089485458611</v>
+</c>
+</row>
+<row r="517" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A517">
+<v>
+6082</v>
+</c>
+<c r="B517">
+<v>
+93</v>
+</c>
+<c r="C517">
+<v>
+6344</v>
+</c>
+<c r="D517" t="s">
+<v>
+10</v>
+</c>
+<c r="E517" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6437</v>
+</c>
+<c r="F517" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+69.215053763440864</v>
+</c>
+<c r="G517" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98555227590492467</v>
+</c>
+</row>
+<row r="518" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A518">
+<v>
+8338</v>
+</c>
+<c r="B518">
+<v>
+86</v>
+</c>
+<c r="C518">
+<v>
+7519</v>
+</c>
+<c r="D518" t="s">
+<v>
+10</v>
+</c>
+<c r="E518" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7605</v>
+</c>
+<c r="F518" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+88.430232558139537</v>
+</c>
+<c r="G518" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98869165023011174</v>
+</c>
+</row>
+<row r="519" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A519">
+<v>
+11218</v>
+</c>
+<c r="B519">
+<v>
+94</v>
+</c>
+<c r="C519">
+<v>
+11058</v>
+</c>
+<c r="D519" t="s">
+<v>
+10</v>
+</c>
+<c r="E519" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+11152</v>
+</c>
+<c r="F519" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+118.63829787234043</v>
+</c>
+<c r="G519" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99157101865136299</v>
+</c>
+</row>
+<row r="520" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A520">
+<v>
+12178</v>
+</c>
+<c r="B520">
+<v>
+56</v>
+</c>
+<c r="C520">
+<v>
+12193</v>
+</c>
+<c r="D520" t="s">
+<v>
+10</v>
+</c>
+<c r="E520" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+12249</v>
+</c>
+<c r="F520" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+218.73214285714286</v>
+</c>
+<c r="G520" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99542819822026285</v>
+</c>
+</row>
+<row r="521" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A521">
+<v>
+8808</v>
+</c>
+<c r="B521">
+<v>
+82</v>
+</c>
+<c r="C521">
+<v>
+8683</v>
+</c>
+<c r="D521" t="s">
+<v>
+10</v>
+</c>
+<c r="E521" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8765</v>
+</c>
+<c r="F521" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+106.89024390243902</v>
+</c>
+<c r="G521" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9906446092413006</v>
+</c>
+</row>
+<row r="522" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A522">
+<v>
+12095</v>
+</c>
+<c r="B522">
+<v>
+99</v>
+</c>
+<c r="C522">
+<v>
+11794</v>
+</c>
+<c r="D522" t="s">
+<v>
+10</v>
+</c>
+<c r="E522" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+11893</v>
+</c>
+<c r="F522" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+120.13131313131314</v>
+</c>
+<c r="G522" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99167577566635834</v>
+</c>
+</row>
+<row r="523" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A523">
+<v>
+25856</v>
+</c>
+<c r="B523">
+<v>
+198</v>
+</c>
+<c r="C523">
+<v>
+24773</v>
+</c>
+<c r="D523" t="s">
+<v>
+10</v>
+</c>
+<c r="E523" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+24971</v>
+</c>
+<c r="F523" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+126.11616161616162</v>
+</c>
+<c r="G523" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99207080213047139</v>
+</c>
+</row>
+<row r="524" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A524">
+<v>
+3595</v>
+</c>
+<c r="B524">
+<v>
+48</v>
+</c>
+<c r="C524">
+<v>
+3271</v>
+</c>
+<c r="D524" t="s">
+<v>
+10</v>
+</c>
+<c r="E524" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+3319</v>
+</c>
+<c r="F524" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+69.145833333333329</v>
+</c>
+<c r="G524" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98553781259415485</v>
+</c>
+</row>
+<row r="525" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A525">
+<v>
+183</v>
+</c>
+<c r="B525">
+<v>
+56</v>
+</c>
+<c r="C525">
+<v>
+68</v>
+</c>
+<c r="D525" t="s">
+<v>
+10</v>
+</c>
+<c r="E525" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+124</v>
+</c>
+<c r="F525" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+2.2142857142857144</v>
+</c>
+<c r="G525" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.54838709677419351</v>
+</c>
+</row>
+<row r="526" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A526">
+<v>
+12105</v>
+</c>
+<c r="B526">
+<v>
+57</v>
+</c>
+<c r="C526">
+<v>
+11989</v>
+</c>
+<c r="D526" t="s">
+<v>
+10</v>
+</c>
+<c r="E526" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+12046</v>
+</c>
+<c r="F526" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+211.33333333333334</v>
+</c>
+<c r="G526" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99526813880126186</v>
+</c>
+</row>
+<row r="527" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A527">
+<v>
+12105</v>
+</c>
+<c r="B527">
+<v>
+57</v>
+</c>
+<c r="C527">
+<v>
+11989</v>
+</c>
+<c r="D527" t="s">
+<v>
+10</v>
+</c>
+<c r="E527" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+12046</v>
+</c>
+<c r="F527" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+211.33333333333334</v>
+</c>
+<c r="G527" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99526813880126186</v>
+</c>
+</row>
+<row r="528" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A528">
+<v>
+5302</v>
+</c>
+<c r="B528">
+<v>
+68</v>
+</c>
+<c r="C528">
+<v>
+5378</v>
+</c>
+<c r="D528" t="s">
+<v>
+10</v>
+</c>
+<c r="E528" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+5446</v>
+</c>
+<c r="F528" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+80.088235294117652</v>
+</c>
+<c r="G528" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98751377157546827</v>
+</c>
+</row>
+<row r="529" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A529">
+<v>
+14001</v>
+</c>
+<c r="B529">
+<v>
+64</v>
+</c>
+<c r="C529">
+<v>
+13777</v>
+</c>
+<c r="D529" t="s">
+<v>
+10</v>
+</c>
+<c r="E529" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+13841</v>
+</c>
+<c r="F529" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+216.265625</v>
+</c>
+<c r="G529" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99537605664330608</v>
+</c>
+</row>
+<row r="530" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A530">
+<v>
+8657</v>
+</c>
+<c r="B530">
+<v>
+30</v>
+</c>
+<c r="C530">
+<v>
+8041</v>
+</c>
+<c r="D530" t="s">
+<v>
+10</v>
+</c>
+<c r="E530" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8071</v>
+</c>
+<c r="F530" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+269.03333333333336</v>
+</c>
+<c r="G530" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99628298847726426</v>
+</c>
+</row>
+<row r="531" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A531">
+<v>
+8657</v>
+</c>
+<c r="B531">
+<v>
+30</v>
+</c>
+<c r="C531">
+<v>
+8041</v>
+</c>
+<c r="D531" t="s">
+<v>
+10</v>
+</c>
+<c r="E531" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8071</v>
+</c>
+<c r="F531" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+269.03333333333336</v>
+</c>
+<c r="G531" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99628298847726426</v>
+</c>
+</row>
+<row r="532" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A532">
+<v>
+7268</v>
+</c>
+<c r="B532">
+<v>
+48</v>
+</c>
+<c r="C532">
+<v>
+6532</v>
+</c>
+<c r="D532" t="s">
+<v>
+10</v>
+</c>
+<c r="E532" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6580</v>
+</c>
+<c r="F532" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+137.08333333333334</v>
+</c>
+<c r="G532" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9927051671732523</v>
+</c>
+</row>
+<row r="533" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A533">
+<v>
+6764</v>
+</c>
+<c r="B533">
+<v>
+71</v>
+</c>
+<c r="C533">
+<v>
+6668</v>
+</c>
+<c r="D533" t="s">
+<v>
+10</v>
+</c>
+<c r="E533" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6739</v>
+</c>
+<c r="F533" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+94.91549295774648</v>
+</c>
+<c r="G533" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98946431221249442</v>
+</c>
+</row>
+<row r="534" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A534">
+<v>
+360</v>
+</c>
+<c r="B534">
+<v>
+271</v>
+</c>
+<c r="C534">
+<v>
+579</v>
+</c>
+<c r="D534" t="s">
+<v>
+10</v>
+</c>
+<c r="E534" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+850</v>
+</c>
+<c r="F534" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.1365313653136533</v>
+</c>
+<c r="G534" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.68117647058823527</v>
+</c>
+</row>
+<row r="535" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A535">
+<v>
+360</v>
+</c>
+<c r="B535">
+<v>
+271</v>
+</c>
+<c r="C535">
+<v>
+579</v>
+</c>
+<c r="D535" t="s">
+<v>
+10</v>
+</c>
+<c r="E535" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+850</v>
+</c>
+<c r="F535" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+3.1365313653136533</v>
+</c>
+<c r="G535" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.68117647058823527</v>
+</c>
+</row>
+<row r="536" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A536">
+<v>
+15831</v>
+</c>
+<c r="B536">
+<v>
+66</v>
+</c>
+<c r="C536">
+<v>
+15586</v>
+</c>
+<c r="D536" t="s">
+<v>
+10</v>
+</c>
+<c r="E536" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+15652</v>
+</c>
+<c r="F536" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+237.15151515151516</v>
+</c>
+<c r="G536" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99578328648096093</v>
+</c>
+</row>
+<row r="537" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A537">
+<v>
+287</v>
+</c>
+<c r="B537">
+<v>
+208</v>
+</c>
+<c r="C537">
+<v>
+79</v>
+</c>
+<c r="D537" t="s">
+<v>
+10</v>
+</c>
+<c r="E537" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+287</v>
+</c>
+<c r="F537" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+1.3798076923076923</v>
+</c>
+<c r="G537" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.27526132404181186</v>
+</c>
+</row>
+<row r="538" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A538">
+<v>
+7372</v>
+</c>
+<c r="B538">
+<v>
+505</v>
+</c>
+<c r="C538">
+<v>
+6860</v>
+</c>
+<c r="D538" t="s">
+<v>
+10</v>
+</c>
+<c r="E538" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7365</v>
+</c>
+<c r="F538" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+14.584158415841584</v>
+</c>
+<c r="G538" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.93143245078071957</v>
+</c>
+</row>
+<row r="539" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A539">
+<v>
+9039</v>
+</c>
+<c r="B539">
+<v>
+77</v>
+</c>
+<c r="C539">
+<v>
+8275</v>
+</c>
+<c r="D539" t="s">
+<v>
+10</v>
+</c>
+<c r="E539" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8352</v>
+</c>
+<c r="F539" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+108.46753246753246</v>
+</c>
+<c r="G539" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99078065134099613</v>
+</c>
+</row>
+<row r="540" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A540">
+<v>
+15037</v>
+</c>
+<c r="B540">
+<v>
+37</v>
+</c>
+<c r="C540">
+<v>
+14544</v>
+</c>
+<c r="D540" t="s">
+<v>
+10</v>
+</c>
+<c r="E540" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+14581</v>
+</c>
+<c r="F540" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+394.08108108108109</v>
+</c>
+<c r="G540" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99746245113503873</v>
+</c>
+</row>
+<row r="541" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A541">
+<v>
+2901</v>
+</c>
+<c r="B541">
+<v>
+63</v>
+</c>
+<c r="C541">
+<v>
+2849</v>
+</c>
+<c r="D541" t="s">
+<v>
+10</v>
+</c>
+<c r="E541" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2912</v>
+</c>
+<c r="F541" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.222222222222221</v>
+</c>
+<c r="G541" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97836538461538458</v>
+</c>
+</row>
+<row r="542" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A542">
+<v>
+2901</v>
+</c>
+<c r="B542">
+<v>
+63</v>
+</c>
+<c r="C542">
+<v>
+2849</v>
+</c>
+<c r="D542" t="s">
+<v>
+10</v>
+</c>
+<c r="E542" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2912</v>
+</c>
+<c r="F542" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+46.222222222222221</v>
+</c>
+<c r="G542" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97836538461538458</v>
+</c>
+</row>
+<row r="543" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A543">
+<v>
+7184</v>
+</c>
+<c r="B543">
+<v>
+209</v>
+</c>
+<c r="C543">
+<v>
+6973</v>
+</c>
+<c r="D543" t="s">
+<v>
+10</v>
+</c>
+<c r="E543" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7182</v>
+</c>
+<c r="F543" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+34.363636363636367</v>
+</c>
+<c r="G543" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97089947089947093</v>
+</c>
+</row>
+<row r="544" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A544">
+<v>
+9012</v>
+</c>
+<c r="B544">
+<v>
+33</v>
+</c>
+<c r="C544">
+<v>
+8945</v>
+</c>
+<c r="D544" t="s">
+<v>
+10</v>
+</c>
+<c r="E544" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8978</v>
+</c>
+<c r="F544" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+272.06060606060606</v>
+</c>
+<c r="G544" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99632434840721762</v>
+</c>
+</row>
+<row r="545" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A545">
+<v>
+3302</v>
+</c>
+<c r="B545">
+<v>
+221</v>
+</c>
+<c r="C545">
+<v>
+2694</v>
+</c>
+<c r="D545" t="s">
+<v>
+10</v>
+</c>
+<c r="E545" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+2915</v>
+</c>
+<c r="F545" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+13.190045248868778</v>
+</c>
+<c r="G545" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.92418524871355057</v>
+</c>
+</row>
+<row r="546" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A546">
+<v>
+9765</v>
+</c>
+<c r="B546">
+<v>
+64</v>
+</c>
+<c r="C546">
+<v>
+9665</v>
+</c>
+<c r="D546" t="s">
+<v>
+10</v>
+</c>
+<c r="E546" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+9729</v>
+</c>
+<c r="F546" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+152.015625</v>
+</c>
+<c r="G546" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99342172885188607</v>
+</c>
+</row>
+<row r="547" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A547">
+<v>
+6694</v>
+</c>
+<c r="B547">
+<v>
+52</v>
+</c>
+<c r="C547">
+<v>
+6075</v>
+</c>
+<c r="D547" t="s">
+<v>
+10</v>
+</c>
+<c r="E547" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+6127</v>
+</c>
+<c r="F547" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+117.82692307692308</v>
+</c>
+<c r="G547" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.99151297535498617</v>
+</c>
+</row>
+<row r="548" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A548">
+<v>
+8760</v>
+</c>
+<c r="B548">
+<v>
+157</v>
+</c>
+<c r="C548">
+<v>
+7902</v>
+</c>
+<c r="D548" t="s">
+<v>
+10</v>
+</c>
+<c r="E548" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+8059</v>
+</c>
+<c r="F548" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+51.331210191082803</v>
+</c>
+<c r="G548" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.98051867477354515</v>
+</c>
+</row>
+<row r="549" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A549">
+<v>
+375</v>
+</c>
+<c r="B549">
+<v>
+264</v>
+</c>
+<c r="C549">
+<v>
+1185</v>
+</c>
+<c r="D549" t="s">
+<v>
+10</v>
+</c>
+<c r="E549" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+1449</v>
+</c>
+<c r="F549" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+5.4886363636363633</v>
+</c>
+<c r="G549" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.81780538302277428</v>
+</c>
+</row>
+<row r="550" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A550">
+<v>
+8731</v>
+</c>
+<c r="B550">
+<v>
+218</v>
+</c>
+<c r="C550">
+<v>
+7717</v>
+</c>
+<c r="D550" t="s">
+<v>
+10</v>
+</c>
+<c r="E550" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7935</v>
+</c>
+<c r="F550" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+36.399082568807337</v>
+</c>
+<c r="G550" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9725267800882168</v>
+</c>
+</row>
+<row r="551" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A551">
+<v>
+6522</v>
+</c>
+<c r="B551">
+<v>
+361</v>
+</c>
+<c r="C551">
+<v>
+6982</v>
+</c>
+<c r="D551" t="s">
+<v>
+10</v>
+</c>
+<c r="E551" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+7343</v>
+</c>
+<c r="F551" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+20.340720221606649</v>
+</c>
+<c r="G551" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.9508375323437287</v>
+</c>
+</row>
+<row r="552" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A552">
+<v>
+11678</v>
+</c>
+<c r="B552">
+<v>
+243</v>
+</c>
+<c r="C552">
+<v>
+10704</v>
+</c>
+<c r="D552" t="s">
+<v>
+10</v>
+</c>
+<c r="E552" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+10947</v>
+</c>
+<c r="F552" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+45.049382716049379</v>
+</c>
+<c r="G552" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97780213757193757</v>
+</c>
+</row>
+<row r="553" spans="1:7" x14ac:dyDescent="0.35">
+<c r="A553">
+<v>
+13477</v>
+</c>
+<c r="B553">
+<v>
+363</v>
+</c>
+<c r="C553">
+<v>
+13212</v>
+</c>
+<c r="D553" t="s">
+<v>
+10</v>
+</c>
+<c r="E553" s="3">
+<f>
+Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</f>
+<v>
+13575</v>
+</c>
+<c r="F553" s="6">
+<f>
+Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</f>
+<v>
+37.396694214876035</v>
+</c>
+<c r="G553" s="1">
+<f>
+(Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</f>
+<v>
+0.97325966850828727</v>
+</c>
+</row>
+<row r="554" spans="1:7" x14ac:dyDescent="0.35">
+<c r="E554" s="3"/>
+<c r="G554" s="8"/>
 </row>
 </sheetData>
 <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>

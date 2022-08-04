@@ -53,7 +53,7 @@ How much we minimize is a proxy for how useful minimization is.</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Almost 50% of runs achieve an order-of-magnitude reduction in the number of </a:t>
+Over 60% of runs achieve an order-of-magnitude reduction in the number of </a:t>
 </a:r>
 <a:r>
 <a:rPr lang="en-US" dirty="0" err="1"/>
@@ -66,7 +66,17 @@ LoC.</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-20% achieve a 100x reduction or more</a:t>
+3</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US"/>
+<a:t>
+0</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+% achieve a 100x reduction or more</a:t>
 </a:r>
 </a:p>
 <a:p>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="317" uniqueCount="10">
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="561" uniqueCount="11">
 <si>
 <t>
 initial_size</t>
@@ -40,5 +40,9 @@ Percentile</t>
 <si>
 <t>
 ci-minimization</t>
+</si>
+<si>
+<t>
+manual-issues</t>
 </si>
 </sst>
