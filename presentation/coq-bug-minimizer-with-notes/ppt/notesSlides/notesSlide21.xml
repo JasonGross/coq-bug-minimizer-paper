@@ -46,20 +46,38 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Talk about problem being only potential, e.g., replacing “1 + 1” as real in goal (sin(pi * (1 + 1)) = 0) vs </a:t>
+Final running time / CI failure time</a:t>
 </a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-nat</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Possibly note: final bullet (interruptible) doesn’t contain any conceptual challenges and is relatively straightforward, if quite useful, to implement</a:t>
+50% achieve a reduction of nearly 1000x</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" marR="0" lvl="0" indent="0" algn="l" defTabSz="914400" rtl="0" eaLnBrk="1" fontAlgn="auto" latinLnBrk="0" hangingPunct="1">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:spcAft>
+<a:spcPts val="0"/>
+</a:spcAft>
+<a:buClrTx/>
+<a:buSzTx/>
+<a:buFontTx/>
+<a:buNone/>
+<a:tabLst/>
+<a:defRPr/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Over 90% achieve a reduction of at least 200x</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -82,7 +100,7 @@ Possibly note: final bullet (interruptible) doesn’t contain any conceptual cha
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-27</a:t>
+26</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -91,7 +109,7 @@ Possibly note: final bullet (interruptible) doesn’t contain any conceptual cha
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3290160189"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3737411368"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

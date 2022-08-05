@@ -10,7 +10,7 @@ ls ci-data/*.jobs.json | sort -h | tac | xargs jq -cr 'select(.duration != null)
    | (if .name[:7] == "plugin:" then .name[7:] else if .name[:8] == "library:" then .name[8:] else null end end) as $short_name
    | (if $short_name[:3] == "ci-" then $short_name[3:] else $short_name end) as $short_name
    | (if $short_name == null then null else ($short_name | gsub("-"; "_")) end) as $short_name
-   | {iid:.pipeline.iid,id:.pipeline.id,ref:$ref,name,duration,status,created_at,short_name:$short_name}' | jq -scr 'sort_by(.created_at) | reverse | .[]' > ci-data.json.tmp
+   | {iid:.pipeline.iid,id:.pipeline.id,ref:$ref,name,duration,status,created_at,stated_at,finished_at,short_name:$short_name,parent_id1:.commit.parent_ids[0],parent_id2:.commit.parent_ids[1]}' | jq -scr 'sort_by(.created_at) | reverse | .[]' > ci-data.json.tmp
 mv ci-data.json.tmp ci-data.json
 
 to_csv ci-data

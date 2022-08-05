@@ -2,19 +2,19 @@
 
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
 <TotalTime>
-16012</TotalTime>
+16163</TotalTime>
 <Words>
-2632</Words>
+2867</Words>
 <Application>
 Microsoft Office PowerPoint</Application>
 <PresentationFormat>
 Widescreen</PresentationFormat>
 <Paragraphs>
-398</Paragraphs>
+447</Paragraphs>
 <Slides>
-43</Slides>
+45</Slides>
 <Notes>
-34</Notes>
+37</Notes>
 <HiddenSlides>
 1</HiddenSlides>
 <MMClips>
@@ -29,7 +29,7 @@ Fonts Used</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-4</vt:i4>
+5</vt:i4>
 </vt:variant>
 <vt:variant>
 <vt:lpstr>
@@ -45,20 +45,22 @@ Slide Titles</vt:lpstr>
 </vt:variant>
 <vt:variant>
 <vt:i4>
-43</vt:i4>
+45</vt:i4>
 </vt:variant>
 </vt:vector>
 </HeadingPairs>
 <TitlesOfParts>
-<vt:vector size="48" baseType="lpstr">
-<vt:lpstr>
-Consolas</vt:lpstr>
+<vt:vector size="51" baseType="lpstr">
 <vt:lpstr>
 Calibri Light</vt:lpstr>
 <vt:lpstr>
 Calibri</vt:lpstr>
 <vt:lpstr>
+Cambria</vt:lpstr>
+<vt:lpstr>
 Arial</vt:lpstr>
+<vt:lpstr>
+Consolas</vt:lpstr>
 <vt:lpstr>
 Office Theme</vt:lpstr>
 <vt:lpstr>
@@ -110,9 +112,13 @@ Minimizer Running Time CDF</vt:lpstr>
 <vt:lpstr>
 How Long Do Projects Take On CI?</vt:lpstr>
 <vt:lpstr>
-How Much Do We Minimize?</vt:lpstr>
+How Much Do We Minimize (LoC)?</vt:lpstr>
 <vt:lpstr>
-How Much Do We Minimize?</vt:lpstr>
+How Much Do We Minimize (Time)?</vt:lpstr>
+<vt:lpstr>
+How Minimal is Minimal in Absolute LoC?</vt:lpstr>
+<vt:lpstr>
+How Minimal is Minimal in Absolute Time?</vt:lpstr>
 <vt:lpstr>
 Specification Summary</vt:lpstr>
 <vt:lpstr>

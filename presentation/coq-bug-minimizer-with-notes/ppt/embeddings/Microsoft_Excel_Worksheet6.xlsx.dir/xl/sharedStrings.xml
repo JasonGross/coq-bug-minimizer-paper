@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="562" uniqueCount="12">
+<si>
+<t>
+initial_size</t>
+</si>
+<si>
+<t>
+final_size</t>
+</si>
+<si>
+<t>
+total_line_reduction</t>
+</si>
+<si>
+<t>
+test-suite</t>
+</si>
+<si>
+<t>
+origin</t>
+</si>
+<si>
+<t>
+# Lines Initial</t>
+</si>
+<si>
+<t>
+% Reduction</t>
+</si>
+<si>
+<t>
+Reduction Factor</t>
+</si>
+<si>
+<t>
+Percentile</t>
+</si>
+<si>
+<t>
+ci-minimization</t>
+</si>
+<si>
+<t>
+manual-issues</t>
+</si>
+<si>
+<t>
+Lines of Code</t>
+</si>
+</sst>

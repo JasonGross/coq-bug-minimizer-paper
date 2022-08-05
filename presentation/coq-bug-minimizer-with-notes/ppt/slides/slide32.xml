@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9445A641-17DF-46B7-953B-D9775EC313C3}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Coupling</a:t>
+How do we do this?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ Coupling</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{742B6695-227A-494D-BAC1-73F3EB50D93B}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -63,715 +63,74 @@ Coupling</a:t>
 </p:nvSpPr>
 <p:spPr/>
 <p:txBody>
-<a:bodyPr>
-<a:normAutofit fontScale="85000" lnSpcReduction="20000"/>
-</a:bodyPr>
+<a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Coupling in </a:t>
+Interfacing with Coq externally</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Delta debugging / brute force</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Tricks for </a:t>
 </a:r>
 <a:r>
 <a:rPr lang="en-US" dirty="0" err="1"/>
 <a:t>
-Agda</a:t>
+inlining</a:t>
 </a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-:</a:t>
+To Achieve Adequate Performance:</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
-data</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-ℕ</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="0550AE"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Set</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-where</a:t>
+Inline files one-by-one</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
-  </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-zero</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : ℕ</a:t>
+Remove proof scripts as early as possible</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
-  </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-succ</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : ℕ </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- ℕ</a:t>
+Linear pass to remove code, don’t consider all subsets</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-data</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Even</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : ℕ </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="0550AE"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Set</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:endParaRPr>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-data</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Odd</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : ℕ </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="0550AE"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Set</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:endParaRPr>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-data</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Even</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-where</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:endParaRPr>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-  </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-even-zero</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : Even zero</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-  </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-even-</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-succ</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-∀</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- {n} </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- Odd n </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- Even (</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-succ</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- n)</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-data</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-Odd</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-where</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:endParaRPr>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:lnSpc>
-<a:spcPct val="120000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:buNone/>
-</a:pPr>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-  </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-odd-</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1">
-<a:solidFill>
-<a:srgbClr val="8250DF"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-succ</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- : </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-∀</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- {n} </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- Even n </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:srgbClr val="CF222E"/>
-</a:solidFill>
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-→</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- Odd (</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
-succ</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
-</a:rPr>
-<a:t>
- n)</a:t>
-</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -780,7 +139,7 @@ succ</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4A1BCD61-1AAD-4FB2-A5D6-AEFCB0D502A4}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -809,7 +168,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4F8B285D-764D-44E8-965F-AE8699887334}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -837,11 +196,187 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1982019551"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1716998016"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
+<p:timing>
+<p:tnLst>
+<p:par>
+<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
+<p:childTnLst>
+<p:seq concurrent="1" nextAc="seek">
+<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
+<p:childTnLst>
+<p:par>
+<p:cTn id="3" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="4" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="5" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="6" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="4" end="4"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="7" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="8" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="5" end="5"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="10" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="6" end="6"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="11" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="12" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="7" end="7"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+<p:prevCondLst>
+<p:cond evt="onPrev" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:prevCondLst>
+<p:nextCondLst>
+<p:cond evt="onNext" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:nextCondLst>
+</p:seq>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:tnLst>
+</p:timing>
 </p:sld>

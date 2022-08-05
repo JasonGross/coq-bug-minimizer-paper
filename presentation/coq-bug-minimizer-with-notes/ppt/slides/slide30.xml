@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D6BA1D7C-CF31-447E-9464-488D49EECF0D}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How do we do this?</a:t>
+Specification Details</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ How do we do this?</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{EBCE240F-9556-481C-BA1F-D62215F2752D}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -63,74 +63,41 @@ How do we do this?</a:t>
 </p:nvSpPr>
 <p:spPr/>
 <p:txBody>
-<a:bodyPr/>
+<a:bodyPr>
+<a:normAutofit/>
+</a:bodyPr>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Interfacing with Coq externally</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Delta debugging / brute force</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Tricks for </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:pPr marL="0" indent="0">
-<a:buNone/>
-</a:pPr>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
 <a:pPr marL="0" indent="0">
 <a:buNone/>
 </a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-To Achieve Adequate Performance:</a:t>
+What does “the same behavior” mean?</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Inline files one-by-one</a:t>
+In bug reporting case: “same” error message, without changing the final bit of code</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr lvl="1"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+“print ‘exact error message’” is not a valid minimization</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Remove proof scripts as early as possible</a:t>
+In CI case: should also succeed on the master version of Coq</a:t>
 </a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Linear pass to remove code, don’t consider all subsets</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -139,7 +106,7 @@ Linear pass to remove code, don’t consider all subsets</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{61383B3C-75F7-486C-9A9D-76F5655A2766}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -168,7 +135,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{C320533C-2483-4E14-99DF-447E268914F9}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -196,187 +163,11 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1716998016"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1673432270"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
-<p:timing>
-<p:tnLst>
-<p:par>
-<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
-<p:childTnLst>
-<p:seq concurrent="1" nextAc="seek">
-<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
-<p:childTnLst>
-<p:par>
-<p:cTn id="3" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="4" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="5" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="6" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="4" end="4"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="7" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="8" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="5" end="5"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="10" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="6" end="6"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="11" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="12" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="7" end="7"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-<p:prevCondLst>
-<p:cond evt="onPrev" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:prevCondLst>
-<p:nextCondLst>
-<p:cond evt="onNext" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:nextCondLst>
-</p:seq>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:tnLst>
-</p:timing>
 </p:sld>

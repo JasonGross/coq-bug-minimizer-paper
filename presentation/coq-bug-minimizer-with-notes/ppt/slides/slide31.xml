@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E43C14E4-3539-45D6-B378-29D7D44FB833}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D47F68F2-3837-4FEA-89FE-B8392148CDA8}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Delta Debugging / Brute Force Removal</a:t>
+What needs to be automated?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ Delta Debugging / Brute Force Removal</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{FCC26BBD-7859-459F-B1AD-5CF71D02AEA7}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{20B95191-EBD9-44FD-9B2F-E7CB57CB0195}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,21 +69,33 @@ Delta Debugging / Brute Force Removal</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-“Trust me, it’s true” primitives</a:t>
+Workflow automation (responding to user’s comment, replying as a comment)</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Not line by line, but blocks</a:t>
+Removing code to shorten example (in compile time and LoC)</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Minimal coupling, lack of forward references</a:t>
+Adjustments to minimize compile time</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+Inlining</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ and linearization (to reduce complexity)</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -96,7 +108,7 @@ Minimal coupling, lack of forward references</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{05AEFA8B-7559-464B-90B5-59D799AD3F0D}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1F28ABAD-B6DB-41ED-9B2B-BBC9B0544040}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -125,7 +137,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1A78E304-2627-4248-8B24-D370E0164C41}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D28AA560-A50A-4A95-A663-DA333C19F4BF}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -153,191 +165,11 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2938557337"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2388925750"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
-<p:timing>
-<p:tnLst>
-<p:par>
-<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
-<p:childTnLst>
-<p:seq concurrent="1" nextAc="seek">
-<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
-<p:childTnLst>
-<p:par>
-<p:cTn id="3" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="4" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="5" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="6" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="0" end="0"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="7" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="8" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="10" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="1" end="1"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="11" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="12" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="13" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr>
-<p:cTn id="14" dur="1" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-</p:cTn>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="2" end="2"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.visibility</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="visible"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-<p:prevCondLst>
-<p:cond evt="onPrev" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:prevCondLst>
-<p:nextCondLst>
-<p:cond evt="onNext" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:nextCondLst>
-</p:seq>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:tnLst>
-</p:timing>
 </p:sld>

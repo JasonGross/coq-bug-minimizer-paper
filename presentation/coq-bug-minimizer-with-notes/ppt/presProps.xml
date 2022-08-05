@@ -2,8 +2,10 @@
 
 <p:presentationPr xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
 <p:clrMru>
+<a:srgbClr val="6E7781"/>
 <a:srgbClr val="CF222E"/>
 <a:srgbClr val="953800"/>
+<a:srgbClr val="507E32"/>
 <a:srgbClr val="8250DF"/>
 <a:srgbClr val="0550AE"/>
 <a:srgbClr val="FF7B72"/>
