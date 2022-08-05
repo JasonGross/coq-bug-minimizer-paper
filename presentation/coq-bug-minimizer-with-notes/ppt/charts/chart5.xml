@@ -129,7 +129,7 @@ Reduction Factor (LoC)</c:v>
 Sheet2!$A$2:$A$100</c:f>
 <c:numCache>
 <c:formatCode>
-0\×;@</c:formatCode>
+#,##0\×;@</c:formatCode>
 <c:ptCount val="99"/>
 <c:pt idx="0">
 <c:v>
@@ -1853,7 +1853,7 @@ General</c:formatCode>
 <a:effectLst/>
 </c:spPr>
 </c:majorGridlines>
-<c:numFmt formatCode="0\×;@" sourceLinked="1"/>
+<c:numFmt formatCode="#,##0\×;@" sourceLinked="1"/>
 <c:majorTickMark val="none"/>
 <c:minorTickMark val="none"/>
 <c:tickLblPos val="nextTo"/>
