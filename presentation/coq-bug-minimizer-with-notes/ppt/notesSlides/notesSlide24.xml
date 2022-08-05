@@ -46,7 +46,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Talk about problem being only potential, e.g., replacing “1 + 1” as real in goal (sin(pi * (1 + 1)) = 0) vs </a:t>
+Talk about problem being only potential, e.g., replacing “1 + 1” as real in goal (0 = sin(pi * (1 + 1))) vs </a:t>
 </a:r>
 <a:r>
 <a:rPr lang="en-US" dirty="0" err="1"/>
