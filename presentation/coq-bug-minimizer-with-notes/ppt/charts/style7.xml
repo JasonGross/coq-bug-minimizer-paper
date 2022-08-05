@@ -1,4 +1,4 @@
-<cs:chartStyle xmlns:cs="http://schemas.microsoft.com/office/drawing/2012/chartStyle" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" id="240">
+<cs:chartStyle xmlns:cs="http://schemas.microsoft.com/office/drawing/2012/chartStyle" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" id="201">
 <cs:axisTitle>
 <cs:lnRef idx="0"/>
 <cs:fillRef idx="0"/>
@@ -25,8 +25,8 @@
 <a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
 <a:solidFill>
 <a:schemeClr val="tx1">
-<a:lumMod val="25000"/>
-<a:lumOff val="75000"/>
+<a:lumMod val="15000"/>
+<a:lumOff val="85000"/>
 </a:schemeClr>
 </a:solidFill>
 <a:round/>
@@ -127,7 +127,7 @@
 <a:schemeClr val="tx1"/>
 </cs:fontRef>
 <cs:spPr>
-<a:ln w="19050" cap="rnd">
+<a:ln w="28575" cap="rnd">
 <a:solidFill>
 <a:schemeClr val="phClr"/>
 </a:solidFill>
@@ -159,10 +159,10 @@
 <cs:lnRef idx="0">
 <cs:styleClr val="auto"/>
 </cs:lnRef>
-<cs:fillRef idx="0"/>
+<cs:fillRef idx="1"/>
 <cs:effectRef idx="0"/>
 <cs:fontRef idx="minor">
-<a:schemeClr val="dk1"/>
+<a:schemeClr val="tx1"/>
 </cs:fontRef>
 <cs:spPr>
 <a:ln w="9525" cap="rnd">
@@ -202,23 +202,22 @@
 <cs:fillRef idx="0"/>
 <cs:effectRef idx="0"/>
 <cs:fontRef idx="minor">
-<a:schemeClr val="tx1"/>
+<a:schemeClr val="dk1"/>
 </cs:fontRef>
 <cs:spPr>
 <a:solidFill>
 <a:schemeClr val="dk1">
-<a:lumMod val="75000"/>
-<a:lumOff val="25000"/>
+<a:lumMod val="65000"/>
+<a:lumOff val="35000"/>
 </a:schemeClr>
 </a:solidFill>
-<a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
+<a:ln w="9525">
 <a:solidFill>
 <a:schemeClr val="tx1">
 <a:lumMod val="65000"/>
 <a:lumOff val="35000"/>
 </a:schemeClr>
 </a:solidFill>
-<a:round/>
 </a:ln>
 </cs:spPr>
 </cs:downBar>
@@ -323,8 +322,8 @@
 <a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
 <a:solidFill>
 <a:schemeClr val="tx1">
-<a:lumMod val="50000"/>
-<a:lumOff val="50000"/>
+<a:lumMod val="75000"/>
+<a:lumOff val="25000"/>
 </a:schemeClr>
 </a:solidFill>
 <a:round/>
@@ -456,20 +455,19 @@
 <cs:fillRef idx="0"/>
 <cs:effectRef idx="0"/>
 <cs:fontRef idx="minor">
-<a:schemeClr val="tx1"/>
+<a:schemeClr val="dk1"/>
 </cs:fontRef>
 <cs:spPr>
 <a:solidFill>
 <a:schemeClr val="lt1"/>
 </a:solidFill>
-<a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
+<a:ln w="9525">
 <a:solidFill>
 <a:schemeClr val="tx1">
-<a:lumMod val="65000"/>
-<a:lumOff val="35000"/>
+<a:lumMod val="15000"/>
+<a:lumOff val="85000"/>
 </a:schemeClr>
 </a:solidFill>
-<a:round/>
 </a:ln>
 </cs:spPr>
 </cs:upBar>
@@ -483,17 +481,6 @@
 <a:lumOff val="35000"/>
 </a:schemeClr>
 </cs:fontRef>
-<cs:spPr>
-<a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
-<a:solidFill>
-<a:schemeClr val="tx1">
-<a:lumMod val="25000"/>
-<a:lumOff val="75000"/>
-</a:schemeClr>
-</a:solidFill>
-<a:round/>
-</a:ln>
-</cs:spPr>
 <cs:defRPr sz="1197" kern="1200"/>
 </cs:valueAxis>
 <cs:wall>

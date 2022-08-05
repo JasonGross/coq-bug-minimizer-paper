@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="6" uniqueCount="6">
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="7" uniqueCount="7">
 <si>
 <t>
 n</t>
@@ -23,6 +23,10 @@ failing runs</t>
 </si>
 <si>
 <t>
-%3</t>
+successful runs (minutes)</t>
+</si>
+<si>
+<t>
+failing runs (minutes)</t>
 </si>
 </sst>

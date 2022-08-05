@@ -1,108 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac xr xr2 xr3" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xr:uid="{0ED1B266-6F41-4296-A582-08D63754A2F3}">
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac xr xr2 xr3" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xr:uid="{B3A3D807-2081-4037-B0BA-2AF70108E76F}">
 <dimension ref="A1:T109"/>
 <sheetViews>
-<sheetView tabSelected="1" topLeftCell="L1" workbookViewId="0">
-<selection activeCell="S1" sqref="S1"/>
+<sheetView workbookViewId="0">
+<selection sqref="A1:T109"/>
 </sheetView>
 </sheetViews>
 <sheetFormatPr defaultRowHeight="14.5" x14ac:dyDescent="0.35"/>
 <sheetData>
-<row r="1" spans="1:20" x14ac:dyDescent="0.35">
+<row r="1" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A1" t="s">
 <v>
-0</v>
+570</v>
 </c>
 <c r="B1" t="s">
 <v>
-1</v>
+569</v>
 </c>
 <c r="C1" t="s">
 <v>
-2</v>
+568</v>
 </c>
 <c r="D1" t="s">
 <v>
-3</v>
+567</v>
 </c>
 <c r="E1" t="s">
 <v>
-4</v>
+566</v>
 </c>
 <c r="F1" t="s">
 <v>
-5</v>
+565</v>
 </c>
 <c r="G1" t="s">
 <v>
-6</v>
+564</v>
 </c>
 <c r="H1" t="s">
 <v>
-7</v>
+563</v>
 </c>
 <c r="I1" t="s">
 <v>
-8</v>
+562</v>
 </c>
 <c r="J1" t="s">
 <v>
-9</v>
+561</v>
 </c>
 <c r="K1" t="s">
 <v>
-10</v>
+560</v>
 </c>
 <c r="L1" t="s">
 <v>
-11</v>
+559</v>
 </c>
 <c r="M1" t="s">
 <v>
-12</v>
+558</v>
 </c>
 <c r="N1" t="s">
 <v>
-13</v>
+557</v>
 </c>
 <c r="O1" t="s">
 <v>
-14</v>
+556</v>
 </c>
 <c r="P1" t="s">
 <v>
-15</v>
+555</v>
 </c>
 <c r="Q1" t="s">
 <v>
-16</v>
+554</v>
 </c>
 <c r="R1" t="s">
 <v>
-559</v>
+553</v>
 </c>
-<c r="S1" s="2" t="s">
+<c r="S1" s="10" t="s">
 <v>
-557</v>
+552</v>
 </c>
-<c r="T1" s="3" t="s">
+<c r="T1" s="9" t="s">
 <v>
-558</v>
+551</v>
 </c>
 </row>
-<row r="2" spans="1:20" x14ac:dyDescent="0.35">
+<row r="2" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A2" t="s">
 <v>
-17</v>
+542</v>
 </c>
 <c r="B2" t="s">
 <v>
-18</v>
+550</v>
 </c>
 <c r="C2" t="s">
 <v>
-19</v>
+540</v>
 </c>
 <c r="D2">
 <v>
@@ -110,7 +110,7 @@
 </c>
 <c r="E2" t="s">
 <v>
-20</v>
+549</v>
 </c>
 <c r="F2">
 <v>
@@ -122,7 +122,7 @@
 </c>
 <c r="H2" t="s">
 <v>
-21</v>
+229</v>
 </c>
 <c r="I2">
 <v>
@@ -130,15 +130,15 @@
 </c>
 <c r="J2" t="s">
 <v>
-22</v>
+538</v>
 </c>
 <c r="K2" t="s">
 <v>
-23</v>
+537</v>
 </c>
 <c r="L2" t="s">
 <v>
-24</v>
+487</v>
 </c>
 <c r="M2">
 <v>
@@ -146,15 +146,15 @@
 </c>
 <c r="N2" t="s">
 <v>
-25</v>
+228</v>
 </c>
 <c r="P2" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q2" t="s">
 <v>
-27</v>
+227</v>
 </c>
 <c r="R2">
 <f>
@@ -162,31 +162,29 @@ D2/M2</f>
 <v>
 1552.1121017964072</v>
 </c>
-<c r="S2" s="2">
+<c r="S2" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D2),'ci-timing-data-with-minimizatio'!D2/60/60/24,"")</f>
-<v>
-3.0000314930555554E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T2" s="3">
+<c r="T2" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M2),'ci-timing-data-with-minimizatio'!M2,"")</f>
-<v>
-0.16700000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="3" spans="1:20" x14ac:dyDescent="0.35">
+<row r="3" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A3" t="s">
 <v>
-17</v>
+542</v>
 </c>
 <c r="B3" t="s">
 <v>
-28</v>
+548</v>
 </c>
 <c r="C3" t="s">
 <v>
-19</v>
+540</v>
 </c>
 <c r="D3">
 <v>
@@ -194,7 +192,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M2),'ci-timing-data-with-minimizat
 </c>
 <c r="E3" t="s">
 <v>
-29</v>
+547</v>
 </c>
 <c r="F3">
 <v>
@@ -206,7 +204,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M2),'ci-timing-data-with-minimizat
 </c>
 <c r="H3" t="s">
 <v>
-30</v>
+414</v>
 </c>
 <c r="I3">
 <v>
@@ -214,15 +212,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M2),'ci-timing-data-with-minimizat
 </c>
 <c r="J3" t="s">
 <v>
-22</v>
+538</v>
 </c>
 <c r="K3" t="s">
 <v>
-23</v>
+537</v>
 </c>
 <c r="L3" t="s">
 <v>
-24</v>
+487</v>
 </c>
 <c r="M3">
 <v>
@@ -230,47 +228,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M2),'ci-timing-data-with-minimizat
 </c>
 <c r="N3" t="s">
 <v>
-31</v>
+410</v>
 </c>
 <c r="P3" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q3" t="s">
 <v>
-32</v>
+409</v>
 </c>
 <c r="R3">
-<f t="shared" ref="R3:R66" si="0">
+<f>
 D3/M3</f>
 <v>
 889.0692393822394</v>
 </c>
-<c r="S3" s="2">
+<c r="S3" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D3),'ci-timing-data-with-minimizatio'!D3/60/60/24,"")</f>
-<v>
-2.6651496875E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T3" s="3">
+<c r="T3" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M3),'ci-timing-data-with-minimizatio'!M3,"")</f>
-<v>
-0.25900000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="4" spans="1:20" x14ac:dyDescent="0.35">
+<row r="4" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A4" t="s">
 <v>
-17</v>
+542</v>
 </c>
 <c r="B4" t="s">
 <v>
-33</v>
+546</v>
 </c>
 <c r="C4" t="s">
 <v>
-19</v>
+540</v>
 </c>
 <c r="D4">
 <v>
@@ -278,7 +274,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M3),'ci-timing-data-with-minimizat
 </c>
 <c r="E4" t="s">
 <v>
-34</v>
+545</v>
 </c>
 <c r="F4">
 <v>
@@ -290,7 +286,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M3),'ci-timing-data-with-minimizat
 </c>
 <c r="H4" t="s">
 <v>
-35</v>
+46</v>
 </c>
 <c r="I4">
 <v>
@@ -298,15 +294,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M3),'ci-timing-data-with-minimizat
 </c>
 <c r="J4" t="s">
 <v>
-22</v>
+538</v>
 </c>
 <c r="K4" t="s">
 <v>
-23</v>
+537</v>
 </c>
 <c r="L4" t="s">
 <v>
-24</v>
+487</v>
 </c>
 <c r="M4">
 <v>
@@ -314,46 +310,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M3),'ci-timing-data-with-minimizat
 </c>
 <c r="N4" t="s">
 <v>
-36</v>
+43</v>
 </c>
 <c r="P4" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q4" t="s">
 <v>
-37</v>
+42</v>
 </c>
 <c r="R4">
-<f t="shared" si="0"/>
+<f>
+D4/M4</f>
 <v>
 1647.3735782312926</v>
 </c>
-<c r="S4" s="2">
+<c r="S4" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D4),'ci-timing-data-with-minimizatio'!D4/60/60/24,"")</f>
-<v>
-2.8028231018518515E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T4" s="3">
+<c r="T4" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M4),'ci-timing-data-with-minimizatio'!M4,"")</f>
-<v>
-0.14699999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="5" spans="1:20" x14ac:dyDescent="0.35">
+<row r="5" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A5" t="s">
 <v>
-17</v>
+542</v>
 </c>
 <c r="B5" t="s">
 <v>
-38</v>
+544</v>
 </c>
 <c r="C5" t="s">
 <v>
-19</v>
+540</v>
 </c>
 <c r="D5">
 <v>
@@ -361,7 +356,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M4),'ci-timing-data-with-minimizat
 </c>
 <c r="E5" t="s">
 <v>
-39</v>
+543</v>
 </c>
 <c r="F5">
 <v>
@@ -373,7 +368,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M4),'ci-timing-data-with-minimizat
 </c>
 <c r="H5" t="s">
 <v>
-40</v>
+79</v>
 </c>
 <c r="I5">
 <v>
@@ -381,15 +376,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M4),'ci-timing-data-with-minimizat
 </c>
 <c r="J5" t="s">
 <v>
-22</v>
+538</v>
 </c>
 <c r="K5" t="s">
 <v>
-23</v>
+537</v>
 </c>
 <c r="L5" t="s">
 <v>
-24</v>
+487</v>
 </c>
 <c r="M5">
 <v>
@@ -397,46 +392,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M4),'ci-timing-data-with-minimizat
 </c>
 <c r="N5" t="s">
 <v>
-41</v>
+76</v>
 </c>
 <c r="P5" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q5" t="s">
 <v>
-42</v>
+75</v>
 </c>
 <c r="R5">
-<f t="shared" si="0"/>
+<f>
+D5/M5</f>
 <v>
 2347.0336705882355</v>
 </c>
-<c r="S5" s="2">
+<c r="S5" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D5),'ci-timing-data-with-minimizatio'!D5/60/60/24,"")</f>
-<v>
-6.9270090972222221E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T5" s="3">
+<c r="T5" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M5),'ci-timing-data-with-minimizatio'!M5,"")</f>
-<v>
-0.255</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="6" spans="1:20" x14ac:dyDescent="0.35">
+<row r="6" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A6" t="s">
 <v>
-17</v>
+542</v>
 </c>
 <c r="B6" t="s">
 <v>
-43</v>
+541</v>
 </c>
 <c r="C6" t="s">
 <v>
-19</v>
+540</v>
 </c>
 <c r="D6">
 <v>
@@ -444,7 +438,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M5),'ci-timing-data-with-minimizat
 </c>
 <c r="E6" t="s">
 <v>
-44</v>
+539</v>
 </c>
 <c r="F6">
 <v>
@@ -456,7 +450,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M5),'ci-timing-data-with-minimizat
 </c>
 <c r="H6" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I6">
 <v>
@@ -464,15 +458,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M5),'ci-timing-data-with-minimizat
 </c>
 <c r="J6" t="s">
 <v>
-22</v>
+538</v>
 </c>
 <c r="K6" t="s">
 <v>
-23</v>
+537</v>
 </c>
 <c r="L6" t="s">
 <v>
-24</v>
+487</v>
 </c>
 <c r="M6">
 <v>
@@ -480,46 +474,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M5),'ci-timing-data-with-minimizat
 </c>
 <c r="N6" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P6" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q6" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R6">
-<f t="shared" si="0"/>
+<f>
+D6/M6</f>
 <v>
 3913.7654144736839</v>
 </c>
-<c r="S6" s="2">
+<c r="S6" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D6),'ci-timing-data-with-minimizatio'!D6/60/60/24,"")</f>
-<v>
-2.0655984131944444E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T6" s="3">
+<c r="T6" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M6),'ci-timing-data-with-minimizatio'!M6,"")</f>
-<v>
-0.45600000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="7" spans="1:20" x14ac:dyDescent="0.35">
+<row r="7" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A7" t="s">
 <v>
-48</v>
+529</v>
 </c>
 <c r="B7" t="s">
 <v>
-49</v>
+536</v>
 </c>
 <c r="C7" t="s">
 <v>
-50</v>
+527</v>
 </c>
 <c r="D7">
 <v>
@@ -527,7 +520,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M6),'ci-timing-data-with-minimizat
 </c>
 <c r="E7" t="s">
 <v>
-51</v>
+535</v>
 </c>
 <c r="F7">
 <v>
@@ -539,7 +532,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M6),'ci-timing-data-with-minimizat
 </c>
 <c r="H7" t="s">
 <v>
-52</v>
+108</v>
 </c>
 <c r="I7">
 <v>
@@ -547,15 +540,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M6),'ci-timing-data-with-minimizat
 </c>
 <c r="J7" t="s">
 <v>
-53</v>
+525</v>
 </c>
 <c r="K7" t="s">
 <v>
-54</v>
+524</v>
 </c>
 <c r="L7" t="s">
 <v>
-55</v>
+523</v>
 </c>
 <c r="M7">
 <v>
@@ -563,46 +556,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M6),'ci-timing-data-with-minimizat
 </c>
 <c r="N7" t="s">
 <v>
-56</v>
+107</v>
 </c>
 <c r="P7" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q7" t="s">
 <v>
-57</v>
+106</v>
 </c>
 <c r="R7">
-<f t="shared" si="0"/>
+<f>
+D7/M7</f>
 <v>
 484.10028183361629</v>
 </c>
-<c r="S7" s="2">
+<c r="S7" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D7),'ci-timing-data-with-minimizatio'!D7/60/60/24,"")</f>
-<v>
-3.3001743749999997E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T7" s="3">
+<c r="T7" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M7),'ci-timing-data-with-minimizatio'!M7,"")</f>
-<v>
-0.58899999999999997</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="8" spans="1:20" x14ac:dyDescent="0.35">
+<row r="8" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A8" t="s">
 <v>
-48</v>
+529</v>
 </c>
 <c r="B8" t="s">
 <v>
-58</v>
+534</v>
 </c>
 <c r="C8" t="s">
 <v>
-50</v>
+527</v>
 </c>
 <c r="D8">
 <v>
@@ -610,7 +602,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M7),'ci-timing-data-with-minimizat
 </c>
 <c r="E8" t="s">
 <v>
-59</v>
+533</v>
 </c>
 <c r="F8">
 <v>
@@ -622,7 +614,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M7),'ci-timing-data-with-minimizat
 </c>
 <c r="H8" t="s">
 <v>
-60</v>
+532</v>
 </c>
 <c r="I8">
 <v>
@@ -630,15 +622,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M7),'ci-timing-data-with-minimizat
 </c>
 <c r="J8" t="s">
 <v>
-53</v>
+525</v>
 </c>
 <c r="K8" t="s">
 <v>
-54</v>
+524</v>
 </c>
 <c r="L8" t="s">
 <v>
-55</v>
+523</v>
 </c>
 <c r="M8">
 <v>
@@ -646,46 +638,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M7),'ci-timing-data-with-minimizat
 </c>
 <c r="N8" t="s">
 <v>
-61</v>
+531</v>
 </c>
 <c r="P8" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q8" t="s">
 <v>
-62</v>
+530</v>
 </c>
 <c r="R8">
-<f t="shared" si="0"/>
+<f>
+D8/M8</f>
 <v>
 30.856077547805299</v>
 </c>
-<c r="S8" s="2">
+<c r="S8" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D8),'ci-timing-data-with-minimizatio'!D8/60/60/24,"")</f>
-<v>
-1.3148117488425926E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T8" s="3">
+<c r="T8" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M8),'ci-timing-data-with-minimizatio'!M8,"")</f>
-<v>
-36.816000000000003</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="9" spans="1:20" x14ac:dyDescent="0.35">
+<row r="9" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A9" t="s">
 <v>
-48</v>
+529</v>
 </c>
 <c r="B9" t="s">
 <v>
-63</v>
+528</v>
 </c>
 <c r="C9" t="s">
 <v>
-50</v>
+527</v>
 </c>
 <c r="D9">
 <v>
@@ -693,7 +684,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M8),'ci-timing-data-with-minimizat
 </c>
 <c r="E9" t="s">
 <v>
-64</v>
+526</v>
 </c>
 <c r="F9">
 <v>
@@ -705,7 +696,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M8),'ci-timing-data-with-minimizat
 </c>
 <c r="H9" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I9">
 <v>
@@ -713,15 +704,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M8),'ci-timing-data-with-minimizat
 </c>
 <c r="J9" t="s">
 <v>
-53</v>
+525</v>
 </c>
 <c r="K9" t="s">
 <v>
-54</v>
+524</v>
 </c>
 <c r="L9" t="s">
 <v>
-55</v>
+523</v>
 </c>
 <c r="M9">
 <v>
@@ -729,46 +720,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M8),'ci-timing-data-with-minimizat
 </c>
 <c r="N9" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P9" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q9" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R9">
-<f t="shared" si="0"/>
+<f>
+D9/M9</f>
 <v>
 341.65880333333337</v>
 </c>
-<c r="S9" s="2">
+<c r="S9" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D9),'ci-timing-data-with-minimizatio'!D9/60/60/24,"")</f>
-<v>
-2.372630578703704E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T9" s="3">
+<c r="T9" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M9),'ci-timing-data-with-minimizatio'!M9,"")</f>
-<v>
-0.6</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="10" spans="1:20" x14ac:dyDescent="0.35">
+<row r="10" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A10" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B10" t="s">
 <v>
-66</v>
+522</v>
 </c>
 <c r="C10" t="s">
 <v>
-67</v>
+521</v>
 </c>
 <c r="D10">
 <v>
@@ -776,7 +766,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M9),'ci-timing-data-with-minimizat
 </c>
 <c r="E10" t="s">
 <v>
-68</v>
+520</v>
 </c>
 <c r="F10">
 <v>
@@ -788,7 +778,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M9),'ci-timing-data-with-minimizat
 </c>
 <c r="H10" t="s">
 <v>
-69</v>
+446</v>
 </c>
 <c r="I10">
 <v>
@@ -796,15 +786,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M9),'ci-timing-data-with-minimizat
 </c>
 <c r="J10" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K10" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L10" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M10">
 <v>
@@ -812,46 +802,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M9),'ci-timing-data-with-minimizat
 </c>
 <c r="N10" t="s">
 <v>
-73</v>
+442</v>
 </c>
 <c r="P10" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q10" t="s">
 <v>
-74</v>
+441</v>
 </c>
 <c r="R10">
-<f t="shared" si="0"/>
+<f>
+D10/M10</f>
 <v>
 2103.2679437652814</v>
 </c>
-<c r="S10" s="2">
+<c r="S10" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D10),'ci-timing-data-with-minimizatio'!D10/60/60/24,"")</f>
-<v>
-9.9564420023148144E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T10" s="3">
+<c r="T10" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M10),'ci-timing-data-with-minimizatio'!M10,"")</f>
-<v>
-0.40899999999999997</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="11" spans="1:20" x14ac:dyDescent="0.35">
+<row r="11" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A11" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B11" t="s">
 <v>
-75</v>
+519</v>
 </c>
 <c r="C11" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D11">
 <v>
@@ -859,7 +848,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M10),'ci-timing-data-with-minimiza
 </c>
 <c r="E11" t="s">
 <v>
-77</v>
+518</v>
 </c>
 <c r="F11">
 <v>
@@ -871,7 +860,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M10),'ci-timing-data-with-minimiza
 </c>
 <c r="H11" t="s">
 <v>
-78</v>
+120</v>
 </c>
 <c r="I11">
 <v>
@@ -879,15 +868,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M10),'ci-timing-data-with-minimiza
 </c>
 <c r="J11" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K11" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L11" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M11">
 <v>
@@ -895,46 +884,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M10),'ci-timing-data-with-minimiza
 </c>
 <c r="N11" t="s">
 <v>
-79</v>
+119</v>
 </c>
 <c r="P11" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q11" t="s">
 <v>
-80</v>
+118</v>
 </c>
 <c r="R11">
-<f t="shared" si="0"/>
+<f>
+D11/M11</f>
 <v>
 600.08055754475697</v>
 </c>
-<c r="S11" s="2">
+<c r="S11" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D11),'ci-timing-data-with-minimizatio'!D11/60/60/24,"")</f>
-<v>
-2.7156423379629626E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T11" s="3">
+<c r="T11" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M11),'ci-timing-data-with-minimizatio'!M11,"")</f>
-<v>
-0.39100000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="12" spans="1:20" x14ac:dyDescent="0.35">
+<row r="12" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A12" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B12" t="s">
 <v>
-81</v>
+517</v>
 </c>
 <c r="C12" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D12">
 <v>
@@ -942,7 +930,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M11),'ci-timing-data-with-minimiza
 </c>
 <c r="E12" t="s">
 <v>
-82</v>
+516</v>
 </c>
 <c r="F12">
 <v>
@@ -954,7 +942,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M11),'ci-timing-data-with-minimiza
 </c>
 <c r="H12" t="s">
 <v>
-83</v>
+515</v>
 </c>
 <c r="I12">
 <v>
@@ -962,15 +950,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M11),'ci-timing-data-with-minimiza
 </c>
 <c r="J12" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K12" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L12" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M12">
 <v>
@@ -978,46 +966,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M11),'ci-timing-data-with-minimiza
 </c>
 <c r="N12" t="s">
 <v>
-84</v>
+514</v>
 </c>
 <c r="P12" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q12" t="s">
 <v>
-85</v>
+513</v>
 </c>
 <c r="R12">
-<f t="shared" si="0"/>
+<f>
+D12/M12</f>
 <v>
 981.33907943925237</v>
 </c>
-<c r="S12" s="2">
+<c r="S12" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D12),'ci-timing-data-with-minimizatio'!D12/60/60/24,"")</f>
-<v>
-2.4306315162037034E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T12" s="3">
+<c r="T12" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M12),'ci-timing-data-with-minimizatio'!M12,"")</f>
-<v>
-0.214</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="13" spans="1:20" x14ac:dyDescent="0.35">
+<row r="13" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A13" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B13" t="s">
 <v>
-86</v>
+512</v>
 </c>
 <c r="C13" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D13">
 <v>
@@ -1025,7 +1012,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M12),'ci-timing-data-with-minimiza
 </c>
 <c r="E13" t="s">
 <v>
-87</v>
+511</v>
 </c>
 <c r="F13">
 <v>
@@ -1037,7 +1024,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M12),'ci-timing-data-with-minimiza
 </c>
 <c r="H13" t="s">
 <v>
-88</v>
+510</v>
 </c>
 <c r="I13">
 <v>
@@ -1045,15 +1032,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M12),'ci-timing-data-with-minimiza
 </c>
 <c r="J13" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K13" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L13" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M13">
 <v>
@@ -1061,46 +1048,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M12),'ci-timing-data-with-minimiza
 </c>
 <c r="N13" t="s">
 <v>
-89</v>
+509</v>
 </c>
 <c r="P13" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q13" t="s">
 <v>
-90</v>
+508</v>
 </c>
 <c r="R13">
-<f t="shared" si="0"/>
+<f>
+D13/M13</f>
 <v>
 1565.2740717131476</v>
 </c>
-<c r="S13" s="2">
+<c r="S13" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D13),'ci-timing-data-with-minimizatio'!D13/60/60/24,"")</f>
-<v>
-4.547266111111112E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T13" s="3">
+<c r="T13" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M13),'ci-timing-data-with-minimizatio'!M13,"")</f>
-<v>
-0.251</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="14" spans="1:20" x14ac:dyDescent="0.35">
+<row r="14" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A14" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B14" t="s">
 <v>
-91</v>
+507</v>
 </c>
 <c r="C14" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D14">
 <v>
@@ -1108,7 +1094,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M13),'ci-timing-data-with-minimiza
 </c>
 <c r="E14" t="s">
 <v>
-92</v>
+506</v>
 </c>
 <c r="F14">
 <v>
@@ -1120,7 +1106,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M13),'ci-timing-data-with-minimiza
 </c>
 <c r="H14" t="s">
 <v>
-40</v>
+79</v>
 </c>
 <c r="I14">
 <v>
@@ -1128,15 +1114,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M13),'ci-timing-data-with-minimiza
 </c>
 <c r="J14" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K14" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L14" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M14">
 <v>
@@ -1144,46 +1130,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M13),'ci-timing-data-with-minimiza
 </c>
 <c r="N14" t="s">
 <v>
-41</v>
+76</v>
 </c>
 <c r="P14" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q14" t="s">
 <v>
-42</v>
+75</v>
 </c>
 <c r="R14">
-<f t="shared" si="0"/>
+<f>
+D14/M14</f>
 <v>
 332.74642299189389</v>
 </c>
-<c r="S14" s="2">
+<c r="S14" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D14),'ci-timing-data-with-minimizatio'!D14/60/60/24,"")</f>
-<v>
-5.2261214814814808E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T14" s="3">
+<c r="T14" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M14),'ci-timing-data-with-minimizatio'!M14,"")</f>
-<v>
-1.357</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="15" spans="1:20" x14ac:dyDescent="0.35">
+<row r="15" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A15" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B15" t="s">
 <v>
-93</v>
+505</v>
 </c>
 <c r="C15" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D15">
 <v>
@@ -1191,7 +1176,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M14),'ci-timing-data-with-minimiza
 </c>
 <c r="E15" t="s">
 <v>
-94</v>
+504</v>
 </c>
 <c r="F15">
 <v>
@@ -1203,7 +1188,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M14),'ci-timing-data-with-minimiza
 </c>
 <c r="H15" t="s">
 <v>
-95</v>
+255</v>
 </c>
 <c r="I15">
 <v>
@@ -1211,15 +1196,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M14),'ci-timing-data-with-minimiza
 </c>
 <c r="J15" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K15" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L15" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M15">
 <v>
@@ -1227,46 +1212,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M14),'ci-timing-data-with-minimiza
 </c>
 <c r="N15" t="s">
 <v>
-96</v>
+254</v>
 </c>
 <c r="P15" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q15" t="s">
 <v>
-97</v>
+253</v>
 </c>
 <c r="R15">
-<f t="shared" si="0"/>
+<f>
+D15/M15</f>
 <v>
 243.28236866359447</v>
 </c>
-<c r="S15" s="2">
+<c r="S15" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D15),'ci-timing-data-with-minimizatio'!D15/60/60/24,"")</f>
-<v>
-3.0551084490740739E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T15" s="3">
+<c r="T15" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M15),'ci-timing-data-with-minimizatio'!M15,"")</f>
-<v>
-1.085</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="16" spans="1:20" x14ac:dyDescent="0.35">
+<row r="16" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A16" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B16" t="s">
 <v>
-98</v>
+503</v>
 </c>
 <c r="C16" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D16">
 <v>
@@ -1274,7 +1258,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M15),'ci-timing-data-with-minimiza
 </c>
 <c r="E16" t="s">
 <v>
-99</v>
+502</v>
 </c>
 <c r="F16">
 <v>
@@ -1286,7 +1270,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M15),'ci-timing-data-with-minimiza
 </c>
 <c r="H16" t="s">
 <v>
-100</v>
+250</v>
 </c>
 <c r="I16">
 <v>
@@ -1294,15 +1278,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M15),'ci-timing-data-with-minimiza
 </c>
 <c r="J16" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K16" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L16" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M16">
 <v>
@@ -1310,46 +1294,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M15),'ci-timing-data-with-minimiza
 </c>
 <c r="N16" t="s">
 <v>
-101</v>
+249</v>
 </c>
 <c r="P16" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q16" t="s">
 <v>
-102</v>
+248</v>
 </c>
 <c r="R16">
-<f t="shared" si="0"/>
+<f>
+D16/M16</f>
 <v>
 585.72873023255806</v>
 </c>
-<c r="S16" s="2">
+<c r="S16" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D16),'ci-timing-data-with-minimizatio'!D16/60/60/24,"")</f>
-<v>
-2.9150851157407408E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T16" s="3">
+<c r="T16" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M16),'ci-timing-data-with-minimizatio'!M16,"")</f>
-<v>
-0.43</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="17" spans="1:20" x14ac:dyDescent="0.35">
+<row r="17" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A17" t="s">
 <v>
-65</v>
+501</v>
 </c>
 <c r="B17" t="s">
 <v>
-103</v>
+500</v>
 </c>
 <c r="C17" t="s">
 <v>
-76</v>
+499</v>
 </c>
 <c r="D17">
 <v>
@@ -1357,7 +1340,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M16),'ci-timing-data-with-minimiza
 </c>
 <c r="E17" t="s">
 <v>
-104</v>
+498</v>
 </c>
 <c r="F17">
 <v>
@@ -1369,7 +1352,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M16),'ci-timing-data-with-minimiza
 </c>
 <c r="H17" t="s">
 <v>
-105</v>
+166</v>
 </c>
 <c r="I17">
 <v>
@@ -1377,15 +1360,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M16),'ci-timing-data-with-minimiza
 </c>
 <c r="J17" t="s">
 <v>
-70</v>
+497</v>
 </c>
 <c r="K17" t="s">
 <v>
-71</v>
+496</v>
 </c>
 <c r="L17" t="s">
 <v>
-72</v>
+495</v>
 </c>
 <c r="M17">
 <v>
@@ -1393,46 +1376,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M16),'ci-timing-data-with-minimiza
 </c>
 <c r="N17" t="s">
 <v>
-106</v>
+162</v>
 </c>
 <c r="P17" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q17" t="s">
 <v>
-107</v>
+161</v>
 </c>
 <c r="R17">
-<f t="shared" si="0"/>
+<f>
+D17/M17</f>
 <v>
 1117.838273489933</v>
 </c>
-<c r="S17" s="2">
+<c r="S17" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D17),'ci-timing-data-with-minimizatio'!D17/60/60/24,"")</f>
-<v>
-7.7110140162037037E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T17" s="3">
+<c r="T17" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M17),'ci-timing-data-with-minimizatio'!M17,"")</f>
-<v>
-0.59599999999999997</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="18" spans="1:20" x14ac:dyDescent="0.35">
+<row r="18" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A18" t="s">
 <v>
-108</v>
+494</v>
 </c>
 <c r="B18" t="s">
 <v>
-109</v>
+493</v>
 </c>
 <c r="C18" t="s">
 <v>
-110</v>
+492</v>
 </c>
 <c r="D18">
 <v>
@@ -1440,7 +1422,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M17),'ci-timing-data-with-minimiza
 </c>
 <c r="E18" t="s">
 <v>
-111</v>
+491</v>
 </c>
 <c r="F18">
 <v>
@@ -1452,7 +1434,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M17),'ci-timing-data-with-minimiza
 </c>
 <c r="H18" t="s">
 <v>
-112</v>
+490</v>
 </c>
 <c r="I18">
 <v>
@@ -1460,15 +1442,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M17),'ci-timing-data-with-minimiza
 </c>
 <c r="J18" t="s">
 <v>
-113</v>
+489</v>
 </c>
 <c r="K18" t="s">
 <v>
-114</v>
+488</v>
 </c>
 <c r="L18" t="s">
 <v>
-24</v>
+487</v>
 </c>
 <c r="M18">
 <v>
@@ -1476,46 +1458,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M17),'ci-timing-data-with-minimiza
 </c>
 <c r="N18" t="s">
 <v>
-115</v>
+486</v>
 </c>
 <c r="P18" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q18" t="s">
 <v>
-116</v>
+485</v>
 </c>
 <c r="R18">
-<f t="shared" si="0"/>
+<f>
+D18/M18</f>
 <v>
 208.62664509929533</v>
 </c>
-<c r="S18" s="2">
+<c r="S18" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D18),'ci-timing-data-with-minimizatio'!D18/60/60/24,"")</f>
-<v>
-7.5385692824074084E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T18" s="3">
+<c r="T18" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M18),'ci-timing-data-with-minimizatio'!M18,"")</f>
-<v>
-3.1219999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="19" spans="1:20" x14ac:dyDescent="0.35">
+<row r="19" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A19" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B19" t="s">
 <v>
-118</v>
+484</v>
 </c>
 <c r="C19" t="s">
 <v>
-119</v>
+469</v>
 </c>
 <c r="D19">
 <v>
@@ -1523,7 +1504,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M18),'ci-timing-data-with-minimiza
 </c>
 <c r="E19" t="s">
 <v>
-120</v>
+483</v>
 </c>
 <c r="F19">
 <v>
@@ -1535,7 +1516,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M18),'ci-timing-data-with-minimiza
 </c>
 <c r="H19" t="s">
 <v>
-30</v>
+414</v>
 </c>
 <c r="I19">
 <v>
@@ -1543,15 +1524,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M18),'ci-timing-data-with-minimiza
 </c>
 <c r="J19" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K19" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L19" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M19">
 <v>
@@ -1559,46 +1540,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M18),'ci-timing-data-with-minimiza
 </c>
 <c r="N19" t="s">
 <v>
-31</v>
+410</v>
 </c>
 <c r="P19" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q19" t="s">
 <v>
-32</v>
+409</v>
 </c>
 <c r="R19">
-<f t="shared" si="0"/>
+<f>
+D19/M19</f>
 <v>
 393.06169182389942</v>
 </c>
-<c r="S19" s="2">
+<c r="S19" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D19),'ci-timing-data-with-minimizatio'!D19/60/60/24,"")</f>
-<v>
-2.1700280902777779E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T19" s="3">
+<c r="T19" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M19),'ci-timing-data-with-minimizatio'!M19,"")</f>
-<v>
-0.47699999999999998</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="20" spans="1:20" x14ac:dyDescent="0.35">
+<row r="20" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A20" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B20" t="s">
 <v>
-124</v>
+482</v>
 </c>
 <c r="C20" t="s">
 <v>
-119</v>
+469</v>
 </c>
 <c r="D20">
 <v>
@@ -1606,7 +1586,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M19),'ci-timing-data-with-minimiza
 </c>
 <c r="E20" t="s">
 <v>
-125</v>
+481</v>
 </c>
 <c r="F20">
 <v>
@@ -1618,7 +1598,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M19),'ci-timing-data-with-minimiza
 </c>
 <c r="H20" t="s">
 <v>
-69</v>
+446</v>
 </c>
 <c r="I20">
 <v>
@@ -1626,15 +1606,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M19),'ci-timing-data-with-minimiza
 </c>
 <c r="J20" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K20" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L20" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M20">
 <v>
@@ -1642,46 +1622,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M19),'ci-timing-data-with-minimiza
 </c>
 <c r="N20" t="s">
 <v>
-73</v>
+442</v>
 </c>
 <c r="P20" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q20" t="s">
 <v>
-74</v>
+441</v>
 </c>
 <c r="R20">
-<f t="shared" si="0"/>
+<f>
+D20/M20</f>
 <v>
 4.6701506286214061</v>
 </c>
-<c r="S20" s="2">
+<c r="S20" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D20),'ci-timing-data-with-minimizatio'!D20/60/60/24,"")</f>
-<v>
-2.4720988310185186E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T20" s="3">
+<c r="T20" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M20),'ci-timing-data-with-minimizatio'!M20,"")</f>
-<v>
-45.734999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="21" spans="1:20" x14ac:dyDescent="0.35">
+<row r="21" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A21" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B21" t="s">
 <v>
-126</v>
+480</v>
 </c>
 <c r="C21" t="s">
 <v>
-127</v>
+475</v>
 </c>
 <c r="D21">
 <v>
@@ -1689,7 +1668,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M20),'ci-timing-data-with-minimiza
 </c>
 <c r="E21" t="s">
 <v>
-128</v>
+479</v>
 </c>
 <c r="F21">
 <v>
@@ -1701,7 +1680,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M20),'ci-timing-data-with-minimiza
 </c>
 <c r="H21" t="s">
 <v>
-78</v>
+120</v>
 </c>
 <c r="I21">
 <v>
@@ -1709,15 +1688,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M20),'ci-timing-data-with-minimiza
 </c>
 <c r="J21" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K21" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L21" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M21">
 <v>
@@ -1725,46 +1704,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M20),'ci-timing-data-with-minimiza
 </c>
 <c r="N21" t="s">
 <v>
-79</v>
+119</v>
 </c>
 <c r="P21" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q21" t="s">
 <v>
-80</v>
+118</v>
 </c>
 <c r="R21">
-<f t="shared" si="0"/>
+<f>
+D21/M21</f>
 <v>
 849.23878629690057</v>
 </c>
-<c r="S21" s="2">
+<c r="S21" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D21),'ci-timing-data-with-minimizatio'!D21/60/60/24,"")</f>
-<v>
-6.0252705555555557E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T21" s="3">
+<c r="T21" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M21),'ci-timing-data-with-minimizatio'!M21,"")</f>
-<v>
-0.61299999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="22" spans="1:20" x14ac:dyDescent="0.35">
+<row r="22" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A22" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B22" t="s">
 <v>
-129</v>
+478</v>
 </c>
 <c r="C22" t="s">
 <v>
-127</v>
+475</v>
 </c>
 <c r="D22">
 <v>
@@ -1772,7 +1750,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M21),'ci-timing-data-with-minimiza
 </c>
 <c r="E22" t="s">
 <v>
-130</v>
+477</v>
 </c>
 <c r="F22">
 <v>
@@ -1784,7 +1762,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M21),'ci-timing-data-with-minimiza
 </c>
 <c r="H22" t="s">
 <v>
-131</v>
+279</v>
 </c>
 <c r="I22">
 <v>
@@ -1792,15 +1770,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M21),'ci-timing-data-with-minimiza
 </c>
 <c r="J22" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K22" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L22" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M22">
 <v>
@@ -1808,46 +1786,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M21),'ci-timing-data-with-minimiza
 </c>
 <c r="N22" t="s">
 <v>
-132</v>
+278</v>
 </c>
 <c r="P22" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q22" t="s">
 <v>
-133</v>
+277</v>
 </c>
 <c r="R22">
-<f t="shared" si="0"/>
+<f>
+D22/M22</f>
 <v>
 2109.6266791044777</v>
 </c>
-<c r="S22" s="2">
+<c r="S22" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D22),'ci-timing-data-with-minimizatio'!D22/60/60/24,"")</f>
-<v>
-6.5437494212962971E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T22" s="3">
+<c r="T22" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M22),'ci-timing-data-with-minimizatio'!M22,"")</f>
-<v>
-0.26800000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="23" spans="1:20" x14ac:dyDescent="0.35">
+<row r="23" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A23" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B23" t="s">
 <v>
-134</v>
+476</v>
 </c>
 <c r="C23" t="s">
 <v>
-127</v>
+475</v>
 </c>
 <c r="D23">
 <v>
@@ -1855,7 +1832,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M22),'ci-timing-data-with-minimiza
 </c>
 <c r="E23" t="s">
 <v>
-135</v>
+474</v>
 </c>
 <c r="F23">
 <v>
@@ -1867,7 +1844,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M22),'ci-timing-data-with-minimiza
 </c>
 <c r="H23" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I23">
 <v>
@@ -1875,15 +1852,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M22),'ci-timing-data-with-minimiza
 </c>
 <c r="J23" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K23" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L23" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M23">
 <v>
@@ -1891,46 +1868,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M22),'ci-timing-data-with-minimiza
 </c>
 <c r="N23" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P23" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q23" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R23">
-<f t="shared" si="0"/>
+<f>
+D23/M23</f>
 <v>
 490.61872770700637</v>
 </c>
-<c r="S23" s="2">
+<c r="S23" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D23),'ci-timing-data-with-minimizatio'!D23/60/60/24,"")</f>
-<v>
-3.5660713078703703E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T23" s="3">
+<c r="T23" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M23),'ci-timing-data-with-minimizatio'!M23,"")</f>
-<v>
-0.628</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="24" spans="1:20" x14ac:dyDescent="0.35">
+<row r="24" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A24" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B24" t="s">
 <v>
-139</v>
+473</v>
 </c>
 <c r="C24" t="s">
 <v>
-119</v>
+469</v>
 </c>
 <c r="D24">
 <v>
@@ -1938,7 +1914,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M23),'ci-timing-data-with-minimiza
 </c>
 <c r="E24" t="s">
 <v>
-140</v>
+472</v>
 </c>
 <c r="F24">
 <v>
@@ -1950,7 +1926,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M23),'ci-timing-data-with-minimiza
 </c>
 <c r="H24" t="s">
 <v>
-35</v>
+46</v>
 </c>
 <c r="I24">
 <v>
@@ -1958,15 +1934,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M23),'ci-timing-data-with-minimiza
 </c>
 <c r="J24" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K24" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L24" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M24">
 <v>
@@ -1974,46 +1950,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M23),'ci-timing-data-with-minimiza
 </c>
 <c r="N24" t="s">
 <v>
-36</v>
+43</v>
 </c>
 <c r="P24" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q24" t="s">
 <v>
-37</v>
+42</v>
 </c>
 <c r="R24">
-<f t="shared" si="0"/>
+<f>
+D24/M24</f>
 <v>
 192.23443540669857</v>
 </c>
-<c r="S24" s="2">
+<c r="S24" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D24),'ci-timing-data-with-minimizatio'!D24/60/60/24,"")</f>
-<v>
-2.7900692361111108E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T24" s="3">
+<c r="T24" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M24),'ci-timing-data-with-minimizatio'!M24,"")</f>
-<v>
-1.254</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="25" spans="1:20" x14ac:dyDescent="0.35">
+<row r="25" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A25" t="s">
 <v>
-117</v>
+471</v>
 </c>
 <c r="B25" t="s">
 <v>
-141</v>
+470</v>
 </c>
 <c r="C25" t="s">
 <v>
-119</v>
+469</v>
 </c>
 <c r="D25">
 <v>
@@ -2021,7 +1996,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M24),'ci-timing-data-with-minimiza
 </c>
 <c r="E25" t="s">
 <v>
-142</v>
+468</v>
 </c>
 <c r="F25">
 <v>
@@ -2033,7 +2008,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M24),'ci-timing-data-with-minimiza
 </c>
 <c r="H25" t="s">
 <v>
-143</v>
+140</v>
 </c>
 <c r="I25">
 <v>
@@ -2041,15 +2016,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M24),'ci-timing-data-with-minimiza
 </c>
 <c r="J25" t="s">
 <v>
-121</v>
+467</v>
 </c>
 <c r="K25" t="s">
 <v>
-122</v>
+466</v>
 </c>
 <c r="L25" t="s">
 <v>
-123</v>
+465</v>
 </c>
 <c r="M25">
 <v>
@@ -2057,46 +2032,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M24),'ci-timing-data-with-minimiza
 </c>
 <c r="N25" t="s">
 <v>
-144</v>
+136</v>
 </c>
 <c r="P25" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q25" t="s">
 <v>
-145</v>
+135</v>
 </c>
 <c r="R25">
-<f t="shared" si="0"/>
+<f>
+D25/M25</f>
 <v>
 1633.0158621212122</v>
 </c>
-<c r="S25" s="2">
+<c r="S25" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D25),'ci-timing-data-with-minimizatio'!D25/60/60/24,"")</f>
-<v>
-1.2474426724537037E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T25" s="3">
+<c r="T25" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M25),'ci-timing-data-with-minimizatio'!M25,"")</f>
-<v>
-0.66</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="26" spans="1:20" x14ac:dyDescent="0.35">
+<row r="26" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A26" t="s">
 <v>
-146</v>
+464</v>
 </c>
 <c r="B26" t="s">
 <v>
-147</v>
+463</v>
 </c>
 <c r="C26" t="s">
 <v>
-148</v>
+462</v>
 </c>
 <c r="D26">
 <v>
@@ -2104,7 +2078,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M25),'ci-timing-data-with-minimiza
 </c>
 <c r="E26" t="s">
 <v>
-149</v>
+461</v>
 </c>
 <c r="F26">
 <v>
@@ -2116,7 +2090,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M25),'ci-timing-data-with-minimiza
 </c>
 <c r="H26" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I26">
 <v>
@@ -2124,15 +2098,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M25),'ci-timing-data-with-minimiza
 </c>
 <c r="J26" t="s">
 <v>
-151</v>
+460</v>
 </c>
 <c r="K26" t="s">
 <v>
-152</v>
+459</v>
 </c>
 <c r="L26" t="s">
 <v>
-153</v>
+458</v>
 </c>
 <c r="M26">
 <v>
@@ -2140,46 +2114,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M25),'ci-timing-data-with-minimiza
 </c>
 <c r="N26" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P26" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q26" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R26">
-<f t="shared" si="0"/>
+<f>
+D26/M26</f>
 <v>
 2468.8395270270275</v>
 </c>
-<c r="S26" s="2">
+<c r="S26" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D26),'ci-timing-data-with-minimizatio'!D26/60/60/24,"")</f>
-<v>
-4.2290306712962971E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T26" s="3">
+<c r="T26" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M26),'ci-timing-data-with-minimizatio'!M26,"")</f>
-<v>
-0.14799999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="27" spans="1:20" x14ac:dyDescent="0.35">
+<row r="27" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A27" t="s">
 <v>
-156</v>
+457</v>
 </c>
 <c r="B27" t="s">
 <v>
-157</v>
+456</v>
 </c>
 <c r="C27" t="s">
 <v>
-158</v>
+455</v>
 </c>
 <c r="D27">
 <v>
@@ -2187,7 +2160,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M26),'ci-timing-data-with-minimiza
 </c>
 <c r="E27" t="s">
 <v>
-159</v>
+454</v>
 </c>
 <c r="F27">
 <v>
@@ -2199,7 +2172,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M26),'ci-timing-data-with-minimiza
 </c>
 <c r="H27" t="s">
 <v>
-52</v>
+108</v>
 </c>
 <c r="I27">
 <v>
@@ -2207,15 +2180,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M26),'ci-timing-data-with-minimiza
 </c>
 <c r="J27" t="s">
 <v>
-160</v>
+453</v>
 </c>
 <c r="K27" t="s">
 <v>
-161</v>
+452</v>
 </c>
 <c r="L27" t="s">
 <v>
-162</v>
+451</v>
 </c>
 <c r="M27">
 <v>
@@ -2223,46 +2196,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M26),'ci-timing-data-with-minimiza
 </c>
 <c r="N27" t="s">
 <v>
-56</v>
+107</v>
 </c>
 <c r="P27" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q27" t="s">
 <v>
-57</v>
+106</v>
 </c>
 <c r="R27">
-<f t="shared" si="0"/>
+<f>
+D27/M27</f>
 <v>
 1408.921225225225</v>
 </c>
-<c r="S27" s="2">
+<c r="S27" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D27),'ci-timing-data-with-minimizatio'!D27/60/60/24,"")</f>
-<v>
-3.6201448148148151E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T27" s="3">
+<c r="T27" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M27),'ci-timing-data-with-minimizatio'!M27,"")</f>
-<v>
-0.222</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="28" spans="1:20" x14ac:dyDescent="0.35">
+<row r="28" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A28" t="s">
 <v>
-163</v>
+450</v>
 </c>
 <c r="B28" t="s">
 <v>
-164</v>
+449</v>
 </c>
 <c r="C28" t="s">
 <v>
-165</v>
+448</v>
 </c>
 <c r="D28">
 <v>
@@ -2270,7 +2242,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M27),'ci-timing-data-with-minimiza
 </c>
 <c r="E28" t="s">
 <v>
-166</v>
+447</v>
 </c>
 <c r="F28">
 <v>
@@ -2282,7 +2254,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M27),'ci-timing-data-with-minimiza
 </c>
 <c r="H28" t="s">
 <v>
-69</v>
+446</v>
 </c>
 <c r="I28">
 <v>
@@ -2290,15 +2262,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M27),'ci-timing-data-with-minimiza
 </c>
 <c r="J28" t="s">
 <v>
-167</v>
+445</v>
 </c>
 <c r="K28" t="s">
 <v>
-168</v>
+444</v>
 </c>
 <c r="L28" t="s">
 <v>
-169</v>
+443</v>
 </c>
 <c r="M28">
 <v>
@@ -2306,46 +2278,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M27),'ci-timing-data-with-minimiza
 </c>
 <c r="N28" t="s">
 <v>
-73</v>
+442</v>
 </c>
 <c r="P28" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q28" t="s">
 <v>
-74</v>
+441</v>
 </c>
 <c r="R28">
-<f t="shared" si="0"/>
+<f>
+D28/M28</f>
 <v>
 108.06192108265063</v>
 </c>
-<c r="S28" s="2">
+<c r="S28" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D28),'ci-timing-data-with-minimizatio'!D28/60/60/24,"")</f>
-<v>
-1.20606609375E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T28" s="3">
+<c r="T28" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M28),'ci-timing-data-with-minimizatio'!M28,"")</f>
-<v>
-9.6430000000000007</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="29" spans="1:20" x14ac:dyDescent="0.35">
+<row r="29" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A29" t="s">
 <v>
-170</v>
+440</v>
 </c>
 <c r="B29" t="s">
 <v>
-171</v>
+439</v>
 </c>
 <c r="C29" t="s">
 <v>
-172</v>
+438</v>
 </c>
 <c r="D29">
 <v>
@@ -2353,7 +2324,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M28),'ci-timing-data-with-minimiza
 </c>
 <c r="E29" t="s">
 <v>
-173</v>
+437</v>
 </c>
 <c r="F29">
 <v>
@@ -2365,7 +2336,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M28),'ci-timing-data-with-minimiza
 </c>
 <c r="H29" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I29">
 <v>
@@ -2373,15 +2344,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M28),'ci-timing-data-with-minimiza
 </c>
 <c r="J29" t="s">
 <v>
-174</v>
+436</v>
 </c>
 <c r="K29" t="s">
 <v>
-175</v>
+435</v>
 </c>
 <c r="L29" t="s">
 <v>
-176</v>
+434</v>
 </c>
 <c r="M29">
 <v>
@@ -2389,46 +2360,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M28),'ci-timing-data-with-minimiza
 </c>
 <c r="N29" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P29" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q29" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R29">
-<f t="shared" si="0"/>
+<f>
+D29/M29</f>
 <v>
 3259.9294982817873</v>
 </c>
-<c r="S29" s="2">
+<c r="S29" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D29),'ci-timing-data-with-minimizatio'!D29/60/60/24,"")</f>
-<v>
-1.0979623657407407E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T29" s="3">
+<c r="T29" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M29),'ci-timing-data-with-minimizatio'!M29,"")</f>
-<v>
-0.29099999999999998</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="30" spans="1:20" x14ac:dyDescent="0.35">
+<row r="30" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A30" t="s">
 <v>
-177</v>
+433</v>
 </c>
 <c r="B30" t="s">
 <v>
-178</v>
+432</v>
 </c>
 <c r="C30" t="s">
 <v>
-179</v>
+431</v>
 </c>
 <c r="D30">
 <v>
@@ -2436,7 +2406,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M29),'ci-timing-data-with-minimiza
 </c>
 <c r="E30" t="s">
 <v>
-180</v>
+430</v>
 </c>
 <c r="F30">
 <v>
@@ -2448,7 +2418,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M29),'ci-timing-data-with-minimiza
 </c>
 <c r="H30" t="s">
 <v>
-52</v>
+108</v>
 </c>
 <c r="I30">
 <v>
@@ -2456,15 +2426,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M29),'ci-timing-data-with-minimiza
 </c>
 <c r="J30" t="s">
 <v>
-181</v>
+429</v>
 </c>
 <c r="K30" t="s">
 <v>
-182</v>
+428</v>
 </c>
 <c r="L30" t="s">
 <v>
-183</v>
+427</v>
 </c>
 <c r="M30">
 <v>
@@ -2472,46 +2442,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M29),'ci-timing-data-with-minimiza
 </c>
 <c r="N30" t="s">
 <v>
-56</v>
+107</v>
 </c>
 <c r="P30" t="s">
 <v>
-184</v>
+426</v>
 </c>
 <c r="Q30" t="s">
 <v>
-57</v>
+106</v>
 </c>
 <c r="R30">
-<f t="shared" si="0"/>
+<f>
+D30/M30</f>
 <v>
 47547.767445026177</v>
 </c>
-<c r="S30" s="2">
+<c r="S30" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D30),'ci-timing-data-with-minimizatio'!D30/60/60/24,"")</f>
-<v>
-0.10511138405092592</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T30" s="3">
+<c r="T30" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M30),'ci-timing-data-with-minimizatio'!M30,"")</f>
-<v>
-0.191</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="31" spans="1:20" x14ac:dyDescent="0.35">
+<row r="31" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A31" t="s">
 <v>
-185</v>
+425</v>
 </c>
 <c r="B31" t="s">
 <v>
-186</v>
+424</v>
 </c>
 <c r="C31" t="s">
 <v>
-187</v>
+423</v>
 </c>
 <c r="D31">
 <v>
@@ -2519,7 +2488,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M30),'ci-timing-data-with-minimiza
 </c>
 <c r="E31" t="s">
 <v>
-188</v>
+422</v>
 </c>
 <c r="F31">
 <v>
@@ -2531,7 +2500,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M30),'ci-timing-data-with-minimiza
 </c>
 <c r="H31" t="s">
 <v>
-143</v>
+140</v>
 </c>
 <c r="I31">
 <v>
@@ -2539,15 +2508,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M30),'ci-timing-data-with-minimiza
 </c>
 <c r="J31" t="s">
 <v>
-189</v>
+421</v>
 </c>
 <c r="K31" t="s">
 <v>
-190</v>
+420</v>
 </c>
 <c r="L31" t="s">
 <v>
-191</v>
+419</v>
 </c>
 <c r="M31">
 <v>
@@ -2555,46 +2524,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M30),'ci-timing-data-with-minimiza
 </c>
 <c r="N31" t="s">
 <v>
-144</v>
+136</v>
 </c>
 <c r="P31" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q31" t="s">
 <v>
-145</v>
+135</v>
 </c>
 <c r="R31">
-<f t="shared" si="0"/>
+<f>
+D31/M31</f>
 <v>
 492.74876845033543</v>
 </c>
-<c r="S31" s="2">
+<c r="S31" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D31),'ci-timing-data-with-minimizatio'!D31/60/60/24,"")</f>
-<v>
-3.4851709768518514E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T31" s="3">
+<c r="T31" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M31),'ci-timing-data-with-minimizatio'!M31,"")</f>
-<v>
-6.1109999999999998</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="32" spans="1:20" x14ac:dyDescent="0.35">
+<row r="32" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A32" t="s">
 <v>
-192</v>
+418</v>
 </c>
 <c r="B32" t="s">
 <v>
-193</v>
+417</v>
 </c>
 <c r="C32" t="s">
 <v>
-194</v>
+416</v>
 </c>
 <c r="D32">
 <v>
@@ -2602,7 +2570,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M31),'ci-timing-data-with-minimiza
 </c>
 <c r="E32" t="s">
 <v>
-195</v>
+415</v>
 </c>
 <c r="F32">
 <v>
@@ -2614,7 +2582,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M31),'ci-timing-data-with-minimiza
 </c>
 <c r="H32" t="s">
 <v>
-30</v>
+414</v>
 </c>
 <c r="I32">
 <v>
@@ -2622,15 +2590,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M31),'ci-timing-data-with-minimiza
 </c>
 <c r="J32" t="s">
 <v>
-196</v>
+413</v>
 </c>
 <c r="K32" t="s">
 <v>
-197</v>
+412</v>
 </c>
 <c r="L32" t="s">
 <v>
-198</v>
+411</v>
 </c>
 <c r="M32">
 <v>
@@ -2638,46 +2606,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M31),'ci-timing-data-with-minimiza
 </c>
 <c r="N32" t="s">
 <v>
-31</v>
+410</v>
 </c>
 <c r="P32" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q32" t="s">
 <v>
-32</v>
+409</v>
 </c>
 <c r="R32">
-<f t="shared" si="0"/>
+<f>
+D32/M32</f>
 <v>
 2764.265048076923</v>
 </c>
-<c r="S32" s="2">
+<c r="S32" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D32),'ci-timing-data-with-minimizatio'!D32/60/60/24,"")</f>
-<v>
-3.3273560763888888E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T32" s="3">
+<c r="T32" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M32),'ci-timing-data-with-minimizatio'!M32,"")</f>
-<v>
-0.104</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="33" spans="1:20" x14ac:dyDescent="0.35">
+<row r="33" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A33" t="s">
 <v>
-199</v>
+408</v>
 </c>
 <c r="B33" t="s">
 <v>
-200</v>
+407</v>
 </c>
 <c r="C33" t="s">
 <v>
-201</v>
+406</v>
 </c>
 <c r="D33">
 <v>
@@ -2685,7 +2652,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M32),'ci-timing-data-with-minimiza
 </c>
 <c r="E33" t="s">
 <v>
-202</v>
+405</v>
 </c>
 <c r="F33">
 <v>
@@ -2697,7 +2664,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M32),'ci-timing-data-with-minimiza
 </c>
 <c r="H33" t="s">
 <v>
-203</v>
+27</v>
 </c>
 <c r="I33">
 <v>
@@ -2705,15 +2672,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M32),'ci-timing-data-with-minimiza
 </c>
 <c r="J33" t="s">
 <v>
-204</v>
+404</v>
 </c>
 <c r="K33" t="s">
 <v>
-205</v>
+403</v>
 </c>
 <c r="L33" t="s">
 <v>
-206</v>
+402</v>
 </c>
 <c r="M33">
 <v>
@@ -2721,46 +2688,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M32),'ci-timing-data-with-minimiza
 </c>
 <c r="N33" t="s">
 <v>
-207</v>
+23</v>
 </c>
 <c r="P33" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q33" t="s">
 <v>
-208</v>
+22</v>
 </c>
 <c r="R33">
-<f t="shared" si="0"/>
+<f>
+D33/M33</f>
 <v>
 531.03166568914946</v>
 </c>
-<c r="S33" s="2">
+<c r="S33" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D33),'ci-timing-data-with-minimizatio'!D33/60/60/24,"")</f>
-<v>
-4.1917082870370371E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T33" s="3">
+<c r="T33" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M33),'ci-timing-data-with-minimizatio'!M33,"")</f>
-<v>
-0.68200000000000005</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="34" spans="1:20" x14ac:dyDescent="0.35">
+<row r="34" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A34" t="s">
 <v>
-209</v>
+399</v>
 </c>
 <c r="B34" t="s">
 <v>
-210</v>
+401</v>
 </c>
 <c r="C34" t="s">
 <v>
-211</v>
+397</v>
 </c>
 <c r="D34">
 <v>
@@ -2768,7 +2734,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M33),'ci-timing-data-with-minimiza
 </c>
 <c r="E34" t="s">
 <v>
-212</v>
+400</v>
 </c>
 <c r="F34">
 <v>
@@ -2780,7 +2746,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M33),'ci-timing-data-with-minimiza
 </c>
 <c r="H34" t="s">
 <v>
-213</v>
+390</v>
 </c>
 <c r="I34">
 <v>
@@ -2788,15 +2754,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M33),'ci-timing-data-with-minimiza
 </c>
 <c r="J34" t="s">
 <v>
-214</v>
+395</v>
 </c>
 <c r="K34" t="s">
 <v>
-215</v>
+394</v>
 </c>
 <c r="L34" t="s">
 <v>
-216</v>
+393</v>
 </c>
 <c r="M34">
 <v>
@@ -2804,46 +2770,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M33),'ci-timing-data-with-minimiza
 </c>
 <c r="N34" t="s">
 <v>
-217</v>
+389</v>
 </c>
 <c r="P34" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q34" t="s">
 <v>
-218</v>
+388</v>
 </c>
 <c r="R34">
-<f t="shared" si="0"/>
+<f>
+D34/M34</f>
 <v>
 1005.6174805825243</v>
 </c>
-<c r="S34" s="2">
+<c r="S34" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D34),'ci-timing-data-with-minimizatio'!D34/60/60/24,"")</f>
-<v>
-2.3976527893518518E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T34" s="3">
+<c r="T34" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M34),'ci-timing-data-with-minimizatio'!M34,"")</f>
-<v>
-0.20599999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="35" spans="1:20" x14ac:dyDescent="0.35">
+<row r="35" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A35" t="s">
 <v>
-209</v>
+399</v>
 </c>
 <c r="B35" t="s">
 <v>
-219</v>
+398</v>
 </c>
 <c r="C35" t="s">
 <v>
-211</v>
+397</v>
 </c>
 <c r="D35">
 <v>
@@ -2851,7 +2816,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M34),'ci-timing-data-with-minimiza
 </c>
 <c r="E35" t="s">
 <v>
-220</v>
+396</v>
 </c>
 <c r="F35">
 <v>
@@ -2863,7 +2828,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M34),'ci-timing-data-with-minimiza
 </c>
 <c r="H35" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I35">
 <v>
@@ -2871,15 +2836,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M34),'ci-timing-data-with-minimiza
 </c>
 <c r="J35" t="s">
 <v>
-214</v>
+395</v>
 </c>
 <c r="K35" t="s">
 <v>
-215</v>
+394</v>
 </c>
 <c r="L35" t="s">
 <v>
-216</v>
+393</v>
 </c>
 <c r="M35">
 <v>
@@ -2887,46 +2852,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M34),'ci-timing-data-with-minimiza
 </c>
 <c r="N35" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P35" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q35" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R35">
-<f t="shared" si="0"/>
+<f>
+D35/M35</f>
 <v>
 65.390437273748603</v>
 </c>
-<c r="S35" s="2">
+<c r="S35" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D35),'ci-timing-data-with-minimizatio'!D35/60/60/24,"")</f>
-<v>
-3.6377971736111112E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T35" s="3">
+<c r="T35" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M35),'ci-timing-data-with-minimizatio'!M35,"")</f>
-<v>
-48.066000000000003</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="36" spans="1:20" x14ac:dyDescent="0.35">
+<row r="36" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A36" t="s">
 <v>
-221</v>
+385</v>
 </c>
 <c r="B36" t="s">
 <v>
-222</v>
+392</v>
 </c>
 <c r="C36" t="s">
 <v>
-223</v>
+383</v>
 </c>
 <c r="D36">
 <v>
@@ -2934,7 +2898,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M35),'ci-timing-data-with-minimiza
 </c>
 <c r="E36" t="s">
 <v>
-224</v>
+391</v>
 </c>
 <c r="F36">
 <v>
@@ -2946,7 +2910,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M35),'ci-timing-data-with-minimiza
 </c>
 <c r="H36" t="s">
 <v>
-213</v>
+390</v>
 </c>
 <c r="I36">
 <v>
@@ -2954,15 +2918,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M35),'ci-timing-data-with-minimiza
 </c>
 <c r="J36" t="s">
 <v>
-225</v>
+381</v>
 </c>
 <c r="K36" t="s">
 <v>
-226</v>
+380</v>
 </c>
 <c r="L36" t="s">
 <v>
-227</v>
+379</v>
 </c>
 <c r="M36">
 <v>
@@ -2970,46 +2934,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M35),'ci-timing-data-with-minimiza
 </c>
 <c r="N36" t="s">
 <v>
-217</v>
+389</v>
 </c>
 <c r="P36" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q36" t="s">
 <v>
-218</v>
+388</v>
 </c>
 <c r="R36">
-<f t="shared" si="0"/>
+<f>
+D36/M36</f>
 <v>
 1582.9017759999999</v>
 </c>
-<c r="S36" s="2">
+<c r="S36" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D36),'ci-timing-data-with-minimizatio'!D36/60/60/24,"")</f>
-<v>
-2.2900778009259256E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T36" s="3">
+<c r="T36" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M36),'ci-timing-data-with-minimizatio'!M36,"")</f>
-<v>
-0.125</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="37" spans="1:20" x14ac:dyDescent="0.35">
+<row r="37" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A37" t="s">
 <v>
-221</v>
+385</v>
 </c>
 <c r="B37" t="s">
 <v>
-228</v>
+387</v>
 </c>
 <c r="C37" t="s">
 <v>
-223</v>
+383</v>
 </c>
 <c r="D37">
 <v>
@@ -3017,7 +2980,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M36),'ci-timing-data-with-minimiza
 </c>
 <c r="E37" t="s">
 <v>
-229</v>
+386</v>
 </c>
 <c r="F37">
 <v>
@@ -3029,7 +2992,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M36),'ci-timing-data-with-minimiza
 </c>
 <c r="H37" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I37">
 <v>
@@ -3037,15 +3000,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M36),'ci-timing-data-with-minimiza
 </c>
 <c r="J37" t="s">
 <v>
-225</v>
+381</v>
 </c>
 <c r="K37" t="s">
 <v>
-226</v>
+380</v>
 </c>
 <c r="L37" t="s">
 <v>
-227</v>
+379</v>
 </c>
 <c r="M37">
 <v>
@@ -3053,46 +3016,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M36),'ci-timing-data-with-minimiza
 </c>
 <c r="N37" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P37" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q37" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R37">
-<f t="shared" si="0"/>
+<f>
+D37/M37</f>
 <v>
 1578.8140588235294</v>
 </c>
-<c r="S37" s="2">
+<c r="S37" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D37),'ci-timing-data-with-minimizatio'!D37/60/60/24,"")</f>
-<v>
-2.4851702777777779E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T37" s="3">
+<c r="T37" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M37),'ci-timing-data-with-minimizatio'!M37,"")</f>
-<v>
-0.13600000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="38" spans="1:20" x14ac:dyDescent="0.35">
+<row r="38" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A38" t="s">
 <v>
-221</v>
+385</v>
 </c>
 <c r="B38" t="s">
 <v>
-230</v>
+384</v>
 </c>
 <c r="C38" t="s">
 <v>
-223</v>
+383</v>
 </c>
 <c r="D38">
 <v>
@@ -3100,7 +3062,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M37),'ci-timing-data-with-minimiza
 </c>
 <c r="E38" t="s">
 <v>
-231</v>
+382</v>
 </c>
 <c r="F38">
 <v>
@@ -3112,7 +3074,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M37),'ci-timing-data-with-minimiza
 </c>
 <c r="H38" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I38">
 <v>
@@ -3120,15 +3082,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M37),'ci-timing-data-with-minimiza
 </c>
 <c r="J38" t="s">
 <v>
-225</v>
+381</v>
 </c>
 <c r="K38" t="s">
 <v>
-226</v>
+380</v>
 </c>
 <c r="L38" t="s">
 <v>
-227</v>
+379</v>
 </c>
 <c r="M38">
 <v>
@@ -3136,46 +3098,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M37),'ci-timing-data-with-minimiza
 </c>
 <c r="N38" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P38" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q38" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R38">
-<f t="shared" si="0"/>
+<f>
+D38/M38</f>
 <v>
 1266.5820295566502</v>
 </c>
-<c r="S38" s="2">
+<c r="S38" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D38),'ci-timing-data-with-minimizatio'!D38/60/60/24,"")</f>
-<v>
-2.9758813888888891E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T38" s="3">
+<c r="T38" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M38),'ci-timing-data-with-minimizatio'!M38,"")</f>
-<v>
-0.20300000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="39" spans="1:20" x14ac:dyDescent="0.35">
+<row r="39" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A39" t="s">
 <v>
-232</v>
+376</v>
 </c>
 <c r="B39" t="s">
 <v>
-233</v>
+378</v>
 </c>
 <c r="C39" t="s">
 <v>
-234</v>
+374</v>
 </c>
 <c r="D39">
 <v>
@@ -3183,7 +3144,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M38),'ci-timing-data-with-minimiza
 </c>
 <c r="E39" t="s">
 <v>
-235</v>
+377</v>
 </c>
 <c r="F39">
 <v>
@@ -3195,7 +3156,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M38),'ci-timing-data-with-minimiza
 </c>
 <c r="H39" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I39">
 <v>
@@ -3203,15 +3164,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M38),'ci-timing-data-with-minimiza
 </c>
 <c r="J39" t="s">
 <v>
-237</v>
+366</v>
 </c>
 <c r="K39" t="s">
 <v>
-238</v>
+372</v>
 </c>
 <c r="L39" t="s">
 <v>
-239</v>
+371</v>
 </c>
 <c r="M39">
 <v>
@@ -3219,46 +3180,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M38),'ci-timing-data-with-minimiza
 </c>
 <c r="N39" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P39" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q39" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R39">
-<f t="shared" si="0"/>
+<f>
+D39/M39</f>
 <v>
 1264.6949714285713</v>
 </c>
-<c r="S39" s="2">
+<c r="S39" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D39),'ci-timing-data-with-minimizatio'!D39/60/60/24,"")</f>
-<v>
-6.6601413425925919E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T39" s="3">
+<c r="T39" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M39),'ci-timing-data-with-minimizatio'!M39,"")</f>
-<v>
-0.45500000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="40" spans="1:20" x14ac:dyDescent="0.35">
+<row r="40" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A40" t="s">
 <v>
-232</v>
+376</v>
 </c>
 <c r="B40" t="s">
 <v>
-242</v>
+375</v>
 </c>
 <c r="C40" t="s">
 <v>
-234</v>
+374</v>
 </c>
 <c r="D40">
 <v>
@@ -3266,7 +3226,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M39),'ci-timing-data-with-minimiza
 </c>
 <c r="E40" t="s">
 <v>
-243</v>
+373</v>
 </c>
 <c r="F40">
 <v>
@@ -3278,7 +3238,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M39),'ci-timing-data-with-minimiza
 </c>
 <c r="H40" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I40">
 <v>
@@ -3286,15 +3246,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M39),'ci-timing-data-with-minimiza
 </c>
 <c r="J40" t="s">
 <v>
-237</v>
+366</v>
 </c>
 <c r="K40" t="s">
 <v>
-238</v>
+372</v>
 </c>
 <c r="L40" t="s">
 <v>
-239</v>
+371</v>
 </c>
 <c r="M40">
 <v>
@@ -3302,46 +3262,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M39),'ci-timing-data-with-minimiza
 </c>
 <c r="N40" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P40" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q40" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R40">
-<f t="shared" si="0"/>
+<f>
+D40/M40</f>
 <v>
 1686.1830887850469</v>
 </c>
-<c r="S40" s="2">
+<c r="S40" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D40),'ci-timing-data-with-minimizatio'!D40/60/60/24,"")</f>
-<v>
-8.3528514120370361E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T40" s="3">
+<c r="T40" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M40),'ci-timing-data-with-minimizatio'!M40,"")</f>
-<v>
-0.42799999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="41" spans="1:20" x14ac:dyDescent="0.35">
+<row r="41" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A41" t="s">
 <v>
-244</v>
+360</v>
 </c>
 <c r="B41" t="s">
 <v>
-245</v>
+370</v>
 </c>
 <c r="C41" t="s">
 <v>
-246</v>
+358</v>
 </c>
 <c r="D41">
 <v>
@@ -3349,7 +3308,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M40),'ci-timing-data-with-minimiza
 </c>
 <c r="E41" t="s">
 <v>
-247</v>
+369</v>
 </c>
 <c r="F41">
 <v>
@@ -3361,7 +3320,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M40),'ci-timing-data-with-minimiza
 </c>
 <c r="H41" t="s">
 <v>
-248</v>
+363</v>
 </c>
 <c r="I41">
 <v>
@@ -3369,15 +3328,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M40),'ci-timing-data-with-minimiza
 </c>
 <c r="J41" t="s">
 <v>
-237</v>
+366</v>
 </c>
 <c r="K41" t="s">
 <v>
-249</v>
+354</v>
 </c>
 <c r="L41" t="s">
 <v>
-250</v>
+353</v>
 </c>
 <c r="M41">
 <v>
@@ -3385,46 +3344,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M40),'ci-timing-data-with-minimiza
 </c>
 <c r="N41" t="s">
 <v>
-251</v>
+362</v>
 </c>
 <c r="P41" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q41" t="s">
 <v>
-252</v>
+361</v>
 </c>
 <c r="R41">
-<f t="shared" si="0"/>
+<f>
+D41/M41</f>
 <v>
 4463.2882475247516</v>
 </c>
-<c r="S41" s="2">
+<c r="S41" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D41),'ci-timing-data-with-minimizatio'!D41/60/60/24,"")</f>
-<v>
-5.2175013078703701E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T41" s="3">
+<c r="T41" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M41),'ci-timing-data-with-minimizatio'!M41,"")</f>
-<v>
-0.10100000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="42" spans="1:20" x14ac:dyDescent="0.35">
+<row r="42" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A42" t="s">
 <v>
-244</v>
+360</v>
 </c>
 <c r="B42" t="s">
 <v>
-253</v>
+368</v>
 </c>
 <c r="C42" t="s">
 <v>
-246</v>
+358</v>
 </c>
 <c r="D42">
 <v>
@@ -3432,7 +3390,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M41),'ci-timing-data-with-minimiza
 </c>
 <c r="E42" t="s">
 <v>
-254</v>
+367</v>
 </c>
 <c r="F42">
 <v>
@@ -3444,7 +3402,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M41),'ci-timing-data-with-minimiza
 </c>
 <c r="H42" t="s">
 <v>
-255</v>
+356</v>
 </c>
 <c r="I42">
 <v>
@@ -3452,15 +3410,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M41),'ci-timing-data-with-minimiza
 </c>
 <c r="J42" t="s">
 <v>
-237</v>
+366</v>
 </c>
 <c r="K42" t="s">
 <v>
-249</v>
+354</v>
 </c>
 <c r="L42" t="s">
 <v>
-250</v>
+353</v>
 </c>
 <c r="M42">
 <v>
@@ -3468,46 +3426,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M41),'ci-timing-data-with-minimiza
 </c>
 <c r="N42" t="s">
 <v>
-256</v>
+352</v>
 </c>
 <c r="P42" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q42" t="s">
 <v>
-257</v>
+351</v>
 </c>
 <c r="R42">
-<f t="shared" si="0"/>
+<f>
+D42/M42</f>
 <v>
 592.90545530726263</v>
 </c>
-<c r="S42" s="2">
+<c r="S42" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D42),'ci-timing-data-with-minimizatio'!D42/60/60/24,"")</f>
-<v>
-2.4567147337962963E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T42" s="3">
+<c r="T42" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M42),'ci-timing-data-with-minimizatio'!M42,"")</f>
-<v>
-0.35799999999999998</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="43" spans="1:20" x14ac:dyDescent="0.35">
+<row r="43" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A43" t="s">
 <v>
-244</v>
+360</v>
 </c>
 <c r="B43" t="s">
 <v>
-258</v>
+365</v>
 </c>
 <c r="C43" t="s">
 <v>
-246</v>
+358</v>
 </c>
 <c r="D43">
 <v>
@@ -3515,7 +3472,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M42),'ci-timing-data-with-minimiza
 </c>
 <c r="E43" t="s">
 <v>
-259</v>
+364</v>
 </c>
 <c r="F43">
 <v>
@@ -3527,7 +3484,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M42),'ci-timing-data-with-minimiza
 </c>
 <c r="H43" t="s">
 <v>
-248</v>
+363</v>
 </c>
 <c r="I43">
 <v>
@@ -3535,15 +3492,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M42),'ci-timing-data-with-minimiza
 </c>
 <c r="J43" t="s">
 <v>
-260</v>
+355</v>
 </c>
 <c r="K43" t="s">
 <v>
-249</v>
+354</v>
 </c>
 <c r="L43" t="s">
 <v>
-250</v>
+353</v>
 </c>
 <c r="M43">
 <v>
@@ -3551,46 +3508,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M42),'ci-timing-data-with-minimiza
 </c>
 <c r="N43" t="s">
 <v>
-251</v>
+362</v>
 </c>
 <c r="P43" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q43" t="s">
 <v>
-252</v>
+361</v>
 </c>
 <c r="R43">
-<f t="shared" si="0"/>
+<f>
+D43/M43</f>
 <v>
 4913.3728910891086</v>
 </c>
-<c r="S43" s="2">
+<c r="S43" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D43),'ci-timing-data-with-minimizatio'!D43/60/60/24,"")</f>
-<v>
-5.7436419212962969E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T43" s="3">
+<c r="T43" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M43),'ci-timing-data-with-minimizatio'!M43,"")</f>
-<v>
-0.10100000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="44" spans="1:20" x14ac:dyDescent="0.35">
+<row r="44" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A44" t="s">
 <v>
-244</v>
+360</v>
 </c>
 <c r="B44" t="s">
 <v>
-261</v>
+359</v>
 </c>
 <c r="C44" t="s">
 <v>
-246</v>
+358</v>
 </c>
 <c r="D44">
 <v>
@@ -3598,7 +3554,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M43),'ci-timing-data-with-minimiza
 </c>
 <c r="E44" t="s">
 <v>
-262</v>
+357</v>
 </c>
 <c r="F44">
 <v>
@@ -3610,7 +3566,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M43),'ci-timing-data-with-minimiza
 </c>
 <c r="H44" t="s">
 <v>
-255</v>
+356</v>
 </c>
 <c r="I44">
 <v>
@@ -3618,15 +3574,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M43),'ci-timing-data-with-minimiza
 </c>
 <c r="J44" t="s">
 <v>
-260</v>
+355</v>
 </c>
 <c r="K44" t="s">
 <v>
-249</v>
+354</v>
 </c>
 <c r="L44" t="s">
 <v>
-250</v>
+353</v>
 </c>
 <c r="M44">
 <v>
@@ -3634,46 +3590,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M43),'ci-timing-data-with-minimiza
 </c>
 <c r="N44" t="s">
 <v>
-256</v>
+352</v>
 </c>
 <c r="P44" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q44" t="s">
 <v>
-257</v>
+351</v>
 </c>
 <c r="R44">
-<f t="shared" si="0"/>
+<f>
+D44/M44</f>
 <v>
 637.86793016759782</v>
 </c>
-<c r="S44" s="2">
+<c r="S44" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D44),'ci-timing-data-with-minimizatio'!D44/60/60/24,"")</f>
-<v>
-2.6430175810185186E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T44" s="3">
+<c r="T44" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M44),'ci-timing-data-with-minimizatio'!M44,"")</f>
-<v>
-0.35799999999999998</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="45" spans="1:20" x14ac:dyDescent="0.35">
+<row r="45" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A45" t="s">
 <v>
-263</v>
+341</v>
 </c>
 <c r="B45" t="s">
 <v>
-264</v>
+350</v>
 </c>
 <c r="C45" t="s">
 <v>
-265</v>
+339</v>
 </c>
 <c r="D45">
 <v>
@@ -3681,7 +3636,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M44),'ci-timing-data-with-minimiza
 </c>
 <c r="E45" t="s">
 <v>
-266</v>
+349</v>
 </c>
 <c r="F45">
 <v>
@@ -3693,7 +3648,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M44),'ci-timing-data-with-minimiza
 </c>
 <c r="H45" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I45">
 <v>
@@ -3701,15 +3656,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M44),'ci-timing-data-with-minimiza
 </c>
 <c r="J45" t="s">
 <v>
-267</v>
+337</v>
 </c>
 <c r="K45" t="s">
 <v>
-268</v>
+336</v>
 </c>
 <c r="L45" t="s">
 <v>
-269</v>
+335</v>
 </c>
 <c r="M45">
 <v>
@@ -3717,46 +3672,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M44),'ci-timing-data-with-minimiza
 </c>
 <c r="N45" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P45" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q45" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R45">
-<f t="shared" si="0"/>
+<f>
+D45/M45</f>
 <v>
 1755.9794890109888</v>
 </c>
-<c r="S45" s="2">
+<c r="S45" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D45),'ci-timing-data-with-minimizatio'!D45/60/60/24,"")</f>
-<v>
-7.397876550925925E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T45" s="3">
+<c r="T45" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M45),'ci-timing-data-with-minimizatio'!M45,"")</f>
-<v>
-0.36399999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="46" spans="1:20" x14ac:dyDescent="0.35">
+<row r="46" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A46" t="s">
 <v>
-263</v>
+341</v>
 </c>
 <c r="B46" t="s">
 <v>
-270</v>
+348</v>
 </c>
 <c r="C46" t="s">
 <v>
-265</v>
+339</v>
 </c>
 <c r="D46">
 <v>
@@ -3764,7 +3718,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M45),'ci-timing-data-with-minimiza
 </c>
 <c r="E46" t="s">
 <v>
-271</v>
+347</v>
 </c>
 <c r="F46">
 <v>
@@ -3776,7 +3730,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M45),'ci-timing-data-with-minimiza
 </c>
 <c r="H46" t="s">
 <v>
-272</v>
+346</v>
 </c>
 <c r="I46">
 <v>
@@ -3784,15 +3738,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M45),'ci-timing-data-with-minimiza
 </c>
 <c r="J46" t="s">
 <v>
-267</v>
+337</v>
 </c>
 <c r="K46" t="s">
 <v>
-268</v>
+336</v>
 </c>
 <c r="L46" t="s">
 <v>
-269</v>
+335</v>
 </c>
 <c r="M46">
 <v>
@@ -3800,46 +3754,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M45),'ci-timing-data-with-minimiza
 </c>
 <c r="N46" t="s">
 <v>
-273</v>
+345</v>
 </c>
 <c r="P46" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q46" t="s">
 <v>
-274</v>
+344</v>
 </c>
 <c r="R46">
-<f t="shared" si="0"/>
+<f>
+D46/M46</f>
 <v>
 86.978550825773425</v>
 </c>
-<c r="S46" s="2">
+<c r="S46" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D46),'ci-timing-data-with-minimizatio'!D46/60/60/24,"")</f>
-<v>
-4.3277869212962963E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T46" s="3">
+<c r="T46" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M46),'ci-timing-data-with-minimizatio'!M46,"")</f>
-<v>
-4.2990000000000004</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="47" spans="1:20" x14ac:dyDescent="0.35">
+<row r="47" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A47" t="s">
 <v>
-263</v>
+341</v>
 </c>
 <c r="B47" t="s">
 <v>
-275</v>
+343</v>
 </c>
 <c r="C47" t="s">
 <v>
-265</v>
+339</v>
 </c>
 <c r="D47">
 <v>
@@ -3847,7 +3800,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M46),'ci-timing-data-with-minimiza
 </c>
 <c r="E47" t="s">
 <v>
-276</v>
+342</v>
 </c>
 <c r="F47">
 <v>
@@ -3859,7 +3812,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M46),'ci-timing-data-with-minimiza
 </c>
 <c r="H47" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I47">
 <v>
@@ -3867,15 +3820,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M46),'ci-timing-data-with-minimiza
 </c>
 <c r="J47" t="s">
 <v>
-267</v>
+337</v>
 </c>
 <c r="K47" t="s">
 <v>
-268</v>
+336</v>
 </c>
 <c r="L47" t="s">
 <v>
-269</v>
+335</v>
 </c>
 <c r="M47">
 <v>
@@ -3883,46 +3836,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M46),'ci-timing-data-with-minimiza
 </c>
 <c r="N47" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P47" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q47" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R47">
-<f t="shared" si="0"/>
+<f>
+D47/M47</f>
 <v>
 1949.3716093750002</v>
 </c>
-<c r="S47" s="2">
+<c r="S47" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D47),'ci-timing-data-with-minimizatio'!D47/60/60/24,"")</f>
-<v>
-8.6638738194444453E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T47" s="3">
+<c r="T47" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M47),'ci-timing-data-with-minimizatio'!M47,"")</f>
-<v>
-0.38400000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="48" spans="1:20" x14ac:dyDescent="0.35">
+<row r="48" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A48" t="s">
 <v>
-263</v>
+341</v>
 </c>
 <c r="B48" t="s">
 <v>
-277</v>
+340</v>
 </c>
 <c r="C48" t="s">
 <v>
-265</v>
+339</v>
 </c>
 <c r="D48">
 <v>
@@ -3930,7 +3882,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M47),'ci-timing-data-with-minimiza
 </c>
 <c r="E48" t="s">
 <v>
-278</v>
+338</v>
 </c>
 <c r="F48">
 <v>
@@ -3942,7 +3894,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M47),'ci-timing-data-with-minimiza
 </c>
 <c r="H48" t="s">
 <v>
-279</v>
+37</v>
 </c>
 <c r="I48">
 <v>
@@ -3950,15 +3902,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M47),'ci-timing-data-with-minimiza
 </c>
 <c r="J48" t="s">
 <v>
-267</v>
+337</v>
 </c>
 <c r="K48" t="s">
 <v>
-268</v>
+336</v>
 </c>
 <c r="L48" t="s">
 <v>
-269</v>
+335</v>
 </c>
 <c r="M48">
 <v>
@@ -3966,46 +3918,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M47),'ci-timing-data-with-minimiza
 </c>
 <c r="N48" t="s">
 <v>
-280</v>
+33</v>
 </c>
 <c r="P48" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q48" t="s">
 <v>
-281</v>
+32</v>
 </c>
 <c r="R48">
-<f t="shared" si="0"/>
+<f>
+D48/M48</f>
 <v>
 1099.6728333333333</v>
 </c>
-<c r="S48" s="2">
+<c r="S48" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D48),'ci-timing-data-with-minimizatio'!D48/60/60/24,"")</f>
-<v>
-3.1310129282407406E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T48" s="3">
+<c r="T48" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M48),'ci-timing-data-with-minimizatio'!M48,"")</f>
-<v>
-0.246</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="49" spans="1:20" x14ac:dyDescent="0.35">
+<row r="49" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A49" t="s">
 <v>
-282</v>
+328</v>
 </c>
 <c r="B49" t="s">
 <v>
-283</v>
+334</v>
 </c>
 <c r="C49" t="s">
 <v>
-284</v>
+326</v>
 </c>
 <c r="D49">
 <v>
@@ -4013,7 +3964,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M48),'ci-timing-data-with-minimiza
 </c>
 <c r="E49" t="s">
 <v>
-285</v>
+333</v>
 </c>
 <c r="F49">
 <v>
@@ -4025,7 +3976,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M48),'ci-timing-data-with-minimiza
 </c>
 <c r="H49" t="s">
 <v>
-286</v>
+306</v>
 </c>
 <c r="I49">
 <v>
@@ -4033,15 +3984,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M48),'ci-timing-data-with-minimiza
 </c>
 <c r="J49" t="s">
 <v>
-287</v>
+324</v>
 </c>
 <c r="K49" t="s">
 <v>
-288</v>
+323</v>
 </c>
 <c r="L49" t="s">
 <v>
-289</v>
+322</v>
 </c>
 <c r="M49">
 <v>
@@ -4049,46 +4000,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M48),'ci-timing-data-with-minimiza
 </c>
 <c r="N49" t="s">
 <v>
-290</v>
+305</v>
 </c>
 <c r="P49" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q49" t="s">
 <v>
-291</v>
+304</v>
 </c>
 <c r="R49">
-<f t="shared" si="0"/>
+<f>
+D49/M49</f>
 <v>
 1247.1573115577889</v>
 </c>
-<c r="S49" s="2">
+<c r="S49" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D49),'ci-timing-data-with-minimizatio'!D49/60/60/24,"")</f>
-<v>
-2.872503530092592E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T49" s="3">
+<c r="T49" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M49),'ci-timing-data-with-minimizatio'!M49,"")</f>
-<v>
-0.19900000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="50" spans="1:20" x14ac:dyDescent="0.35">
+<row r="50" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A50" t="s">
 <v>
-282</v>
+328</v>
 </c>
 <c r="B50" t="s">
 <v>
-292</v>
+332</v>
 </c>
 <c r="C50" t="s">
 <v>
-284</v>
+326</v>
 </c>
 <c r="D50">
 <v>
@@ -4096,7 +4046,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M49),'ci-timing-data-with-minimiza
 </c>
 <c r="E50" t="s">
 <v>
-293</v>
+331</v>
 </c>
 <c r="F50">
 <v>
@@ -4108,7 +4058,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M49),'ci-timing-data-with-minimiza
 </c>
 <c r="H50" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I50">
 <v>
@@ -4116,15 +4066,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M49),'ci-timing-data-with-minimiza
 </c>
 <c r="J50" t="s">
 <v>
-287</v>
+324</v>
 </c>
 <c r="K50" t="s">
 <v>
-288</v>
+323</v>
 </c>
 <c r="L50" t="s">
 <v>
-289</v>
+322</v>
 </c>
 <c r="M50">
 <v>
@@ -4132,46 +4082,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M49),'ci-timing-data-with-minimiza
 </c>
 <c r="N50" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P50" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q50" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R50">
-<f t="shared" si="0"/>
+<f>
+D50/M50</f>
 <v>
 175.38029019823787</v>
 </c>
-<c r="S50" s="2">
+<c r="S50" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D50),'ci-timing-data-with-minimizatio'!D50/60/60/24,"")</f>
-<v>
-2.2117403263888887E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T50" s="3">
+<c r="T50" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M50),'ci-timing-data-with-minimizatio'!M50,"")</f>
-<v>
-10.896000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="51" spans="1:20" x14ac:dyDescent="0.35">
+<row r="51" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A51" t="s">
 <v>
-282</v>
+328</v>
 </c>
 <c r="B51" t="s">
 <v>
-294</v>
+330</v>
 </c>
 <c r="C51" t="s">
 <v>
-284</v>
+326</v>
 </c>
 <c r="D51">
 <v>
@@ -4179,7 +4128,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M50),'ci-timing-data-with-minimiza
 </c>
 <c r="E51" t="s">
 <v>
-295</v>
+329</v>
 </c>
 <c r="F51">
 <v>
@@ -4191,7 +4140,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M50),'ci-timing-data-with-minimiza
 </c>
 <c r="H51" t="s">
 <v>
-296</v>
+63</v>
 </c>
 <c r="I51">
 <v>
@@ -4199,15 +4148,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M50),'ci-timing-data-with-minimiza
 </c>
 <c r="J51" t="s">
 <v>
-287</v>
+324</v>
 </c>
 <c r="K51" t="s">
 <v>
-288</v>
+323</v>
 </c>
 <c r="L51" t="s">
 <v>
-289</v>
+322</v>
 </c>
 <c r="M51">
 <v>
@@ -4215,46 +4164,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M50),'ci-timing-data-with-minimiza
 </c>
 <c r="N51" t="s">
 <v>
-297</v>
+59</v>
 </c>
 <c r="P51" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q51" t="s">
 <v>
-298</v>
+58</v>
 </c>
 <c r="R51">
-<f t="shared" si="0"/>
+<f>
+D51/M51</f>
 <v>
 1722.7058749999999</v>
 </c>
-<c r="S51" s="2">
+<c r="S51" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D51),'ci-timing-data-with-minimizatio'!D51/60/60/24,"")</f>
-<v>
-1.1006176423611111E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T51" s="3">
+<c r="T51" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M51),'ci-timing-data-with-minimizatio'!M51,"")</f>
-<v>
-0.55200000000000005</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="52" spans="1:20" x14ac:dyDescent="0.35">
+<row r="52" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A52" t="s">
 <v>
-282</v>
+328</v>
 </c>
 <c r="B52" t="s">
 <v>
-299</v>
+327</v>
 </c>
 <c r="C52" t="s">
 <v>
-284</v>
+326</v>
 </c>
 <c r="D52">
 <v>
@@ -4262,7 +4210,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M51),'ci-timing-data-with-minimiza
 </c>
 <c r="E52" t="s">
 <v>
-300</v>
+325</v>
 </c>
 <c r="F52">
 <v>
@@ -4274,7 +4222,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M51),'ci-timing-data-with-minimiza
 </c>
 <c r="H52" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I52">
 <v>
@@ -4282,15 +4230,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M51),'ci-timing-data-with-minimiza
 </c>
 <c r="J52" t="s">
 <v>
-287</v>
+324</v>
 </c>
 <c r="K52" t="s">
 <v>
-288</v>
+323</v>
 </c>
 <c r="L52" t="s">
 <v>
-289</v>
+322</v>
 </c>
 <c r="M52">
 <v>
@@ -4298,46 +4246,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M51),'ci-timing-data-with-minimiza
 </c>
 <c r="N52" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P52" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q52" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R52">
-<f t="shared" si="0"/>
+<f>
+D52/M52</f>
 <v>
 1109.9970907079646</v>
 </c>
-<c r="S52" s="2">
+<c r="S52" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D52),'ci-timing-data-with-minimizatio'!D52/60/60/24,"")</f>
-<v>
-2.9034646122685189E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T52" s="3">
+<c r="T52" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M52),'ci-timing-data-with-minimizatio'!M52,"")</f>
-<v>
-2.2599999999999998</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="53" spans="1:20" x14ac:dyDescent="0.35">
+<row r="53" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A53" t="s">
 <v>
-301</v>
+321</v>
 </c>
 <c r="B53" t="s">
 <v>
-302</v>
+320</v>
 </c>
 <c r="C53" t="s">
 <v>
-303</v>
+319</v>
 </c>
 <c r="D53">
 <v>
@@ -4345,7 +4292,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M52),'ci-timing-data-with-minimiza
 </c>
 <c r="E53" t="s">
 <v>
-304</v>
+318</v>
 </c>
 <c r="F53">
 <v>
@@ -4357,7 +4304,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M52),'ci-timing-data-with-minimiza
 </c>
 <c r="H53" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I53">
 <v>
@@ -4365,15 +4312,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M52),'ci-timing-data-with-minimiza
 </c>
 <c r="J53" t="s">
 <v>
-305</v>
+317</v>
 </c>
 <c r="K53" t="s">
 <v>
-306</v>
+316</v>
 </c>
 <c r="L53" t="s">
 <v>
-307</v>
+315</v>
 </c>
 <c r="M53">
 <v>
@@ -4381,46 +4328,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M52),'ci-timing-data-with-minimiza
 </c>
 <c r="N53" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P53" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q53" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R53">
-<f t="shared" si="0"/>
+<f>
+D53/M53</f>
 <v>
 964.29822426470571</v>
 </c>
-<c r="S53" s="2">
+<c r="S53" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D53),'ci-timing-data-with-minimizatio'!D53/60/60/24,"")</f>
-<v>
-3.0357536689814813E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T53" s="3">
+<c r="T53" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M53),'ci-timing-data-with-minimizatio'!M53,"")</f>
-<v>
-0.27200000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="54" spans="1:20" x14ac:dyDescent="0.35">
+<row r="54" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A54" t="s">
 <v>
-308</v>
+314</v>
 </c>
 <c r="B54" t="s">
 <v>
-309</v>
+313</v>
 </c>
 <c r="C54" t="s">
 <v>
-310</v>
+312</v>
 </c>
 <c r="D54">
 <v>
@@ -4440,7 +4386,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M53),'ci-timing-data-with-minimiza
 </c>
 <c r="H54" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I54">
 <v>
@@ -4448,15 +4394,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M53),'ci-timing-data-with-minimiza
 </c>
 <c r="J54" t="s">
 <v>
-312</v>
+297</v>
 </c>
 <c r="K54" t="s">
 <v>
-313</v>
+310</v>
 </c>
 <c r="L54" t="s">
 <v>
-314</v>
+309</v>
 </c>
 <c r="M54">
 <v>
@@ -4464,46 +4410,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M53),'ci-timing-data-with-minimiza
 </c>
 <c r="N54" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P54" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q54" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R54">
-<f t="shared" si="0"/>
+<f>
+D54/M54</f>
 <v>
 377.85358681318678</v>
 </c>
-<c r="S54" s="2">
+<c r="S54" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D54),'ci-timing-data-with-minimizatio'!D54/60/60/24,"")</f>
-<v>
-3.9797079166666669E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T54" s="3">
+<c r="T54" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M54),'ci-timing-data-with-minimizatio'!M54,"")</f>
-<v>
-0.91</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="55" spans="1:20" x14ac:dyDescent="0.35">
+<row r="55" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A55" t="s">
 <v>
-315</v>
+301</v>
 </c>
 <c r="B55" t="s">
 <v>
-316</v>
+308</v>
 </c>
 <c r="C55" t="s">
 <v>
-317</v>
+299</v>
 </c>
 <c r="D55">
 <v>
@@ -4511,7 +4456,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M54),'ci-timing-data-with-minimiza
 </c>
 <c r="E55" t="s">
 <v>
-318</v>
+307</v>
 </c>
 <c r="F55">
 <v>
@@ -4523,7 +4468,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M54),'ci-timing-data-with-minimiza
 </c>
 <c r="H55" t="s">
 <v>
-286</v>
+306</v>
 </c>
 <c r="I55">
 <v>
@@ -4531,15 +4476,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M54),'ci-timing-data-with-minimiza
 </c>
 <c r="J55" t="s">
 <v>
-312</v>
+297</v>
 </c>
 <c r="K55" t="s">
 <v>
-319</v>
+296</v>
 </c>
 <c r="L55" t="s">
 <v>
-320</v>
+295</v>
 </c>
 <c r="M55">
 <v>
@@ -4547,46 +4492,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M54),'ci-timing-data-with-minimiza
 </c>
 <c r="N55" t="s">
 <v>
-290</v>
+305</v>
 </c>
 <c r="P55" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q55" t="s">
 <v>
-291</v>
+304</v>
 </c>
 <c r="R55">
-<f t="shared" si="0"/>
+<f>
+D55/M55</f>
 <v>
 963.26002189781013</v>
 </c>
-<c r="S55" s="2">
+<c r="S55" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D55),'ci-timing-data-with-minimizatio'!D55/60/60/24,"")</f>
-<v>
-3.0547829398148148E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T55" s="3">
+<c r="T55" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M55),'ci-timing-data-with-minimizatio'!M55,"")</f>
-<v>
-0.27400000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="56" spans="1:20" x14ac:dyDescent="0.35">
+<row r="56" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A56" t="s">
 <v>
-315</v>
+301</v>
 </c>
 <c r="B56" t="s">
 <v>
-321</v>
+303</v>
 </c>
 <c r="C56" t="s">
 <v>
-317</v>
+299</v>
 </c>
 <c r="D56">
 <v>
@@ -4594,7 +4538,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M55),'ci-timing-data-with-minimiza
 </c>
 <c r="E56" t="s">
 <v>
-322</v>
+302</v>
 </c>
 <c r="F56">
 <v>
@@ -4606,7 +4550,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M55),'ci-timing-data-with-minimiza
 </c>
 <c r="H56" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I56">
 <v>
@@ -4614,15 +4558,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M55),'ci-timing-data-with-minimiza
 </c>
 <c r="J56" t="s">
 <v>
-312</v>
+297</v>
 </c>
 <c r="K56" t="s">
 <v>
-319</v>
+296</v>
 </c>
 <c r="L56" t="s">
 <v>
-320</v>
+295</v>
 </c>
 <c r="M56">
 <v>
@@ -4630,46 +4574,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M55),'ci-timing-data-with-minimiza
 </c>
 <c r="N56" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P56" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q56" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R56">
-<f t="shared" si="0"/>
+<f>
+D56/M56</f>
 <v>
 198.64140102092904</v>
 </c>
-<c r="S56" s="2">
+<c r="S56" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D56),'ci-timing-data-with-minimizatio'!D56/60/60/24,"")</f>
-<v>
-2.2519589386574074E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T56" s="3">
+<c r="T56" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M56),'ci-timing-data-with-minimizatio'!M56,"")</f>
-<v>
-9.7949999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="57" spans="1:20" x14ac:dyDescent="0.35">
+<row r="57" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A57" t="s">
 <v>
-315</v>
+301</v>
 </c>
 <c r="B57" t="s">
 <v>
-323</v>
+300</v>
 </c>
 <c r="C57" t="s">
 <v>
-317</v>
+299</v>
 </c>
 <c r="D57">
 <v>
@@ -4677,7 +4620,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M56),'ci-timing-data-with-minimiza
 </c>
 <c r="E57" t="s">
 <v>
-324</v>
+298</v>
 </c>
 <c r="F57">
 <v>
@@ -4689,7 +4632,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M56),'ci-timing-data-with-minimiza
 </c>
 <c r="H57" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I57">
 <v>
@@ -4697,15 +4640,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M56),'ci-timing-data-with-minimiza
 </c>
 <c r="J57" t="s">
 <v>
-312</v>
+297</v>
 </c>
 <c r="K57" t="s">
 <v>
-319</v>
+296</v>
 </c>
 <c r="L57" t="s">
 <v>
-320</v>
+295</v>
 </c>
 <c r="M57">
 <v>
@@ -4713,46 +4656,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M56),'ci-timing-data-with-minimiza
 </c>
 <c r="N57" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P57" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q57" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R57">
-<f t="shared" si="0"/>
+<f>
+D57/M57</f>
 <v>
 2100.8759666666665</v>
 </c>
-<c r="S57" s="2">
+<c r="S57" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D57),'ci-timing-data-with-minimizatio'!D57/60/60/24,"")</f>
-<v>
-4.3768249305555559E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T57" s="3">
+<c r="T57" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M57),'ci-timing-data-with-minimizatio'!M57,"")</f>
-<v>
-0.18</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="58" spans="1:20" x14ac:dyDescent="0.35">
+<row r="58" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A58" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B58" t="s">
 <v>
-326</v>
+294</v>
 </c>
 <c r="C58" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D58">
 <v>
@@ -4760,7 +4702,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M57),'ci-timing-data-with-minimiza
 </c>
 <c r="E58" t="s">
 <v>
-328</v>
+293</v>
 </c>
 <c r="F58">
 <v>
@@ -4772,23 +4714,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M57),'ci-timing-data-with-minimiza
 </c>
 <c r="H58" t="s">
 <v>
-21</v>
+229</v>
 </c>
 <c r="I58">
 <v>
 15518</v>
 </c>
-<c r="J58" s="1" t="s">
+<c r="J58" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K58" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L58" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M58">
 <v>
@@ -4796,46 +4738,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M57),'ci-timing-data-with-minimiza
 </c>
 <c r="N58" t="s">
 <v>
-25</v>
+228</v>
 </c>
 <c r="P58" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q58" t="s">
 <v>
-27</v>
+227</v>
 </c>
 <c r="R58">
-<f t="shared" si="0"/>
+<f>
+D58/M58</f>
 <v>
 1854.245923076923</v>
 </c>
-<c r="S58" s="2">
+<c r="S58" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D58),'ci-timing-data-with-minimizatio'!D58/60/60/24,"")</f>
-<v>
-2.5109580208333335E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T58" s="3">
+<c r="T58" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M58),'ci-timing-data-with-minimizatio'!M58,"")</f>
-<v>
-0.11700000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="59" spans="1:20" x14ac:dyDescent="0.35">
+<row r="59" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A59" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B59" t="s">
 <v>
-332</v>
+292</v>
 </c>
 <c r="C59" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D59">
 <v>
@@ -4843,7 +4784,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M58),'ci-timing-data-with-minimiza
 </c>
 <c r="E59" t="s">
 <v>
-333</v>
+291</v>
 </c>
 <c r="F59">
 <v>
@@ -4855,23 +4796,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M58),'ci-timing-data-with-minimiza
 </c>
 <c r="H59" t="s">
 <v>
-334</v>
+290</v>
 </c>
 <c r="I59">
 <v>
 15518</v>
 </c>
-<c r="J59" s="1" t="s">
+<c r="J59" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K59" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L59" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M59">
 <v>
@@ -4879,46 +4820,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M58),'ci-timing-data-with-minimiza
 </c>
 <c r="N59" t="s">
 <v>
-335</v>
+289</v>
 </c>
 <c r="P59" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q59" t="s">
 <v>
-336</v>
+288</v>
 </c>
 <c r="R59">
-<f t="shared" si="0"/>
+<f>
+D59/M59</f>
 <v>
 1676.6623538461538</v>
 </c>
-<c r="S59" s="2">
+<c r="S59" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D59),'ci-timing-data-with-minimizatio'!D59/60/60/24,"")</f>
-<v>
-2.5227558564814814E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T59" s="3">
+<c r="T59" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M59),'ci-timing-data-with-minimizatio'!M59,"")</f>
-<v>
-0.13</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="60" spans="1:20" x14ac:dyDescent="0.35">
+<row r="60" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A60" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B60" t="s">
 <v>
-337</v>
+287</v>
 </c>
 <c r="C60" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D60">
 <v>
@@ -4926,7 +4866,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M59),'ci-timing-data-with-minimiza
 </c>
 <c r="E60" t="s">
 <v>
-338</v>
+286</v>
 </c>
 <c r="F60">
 <v>
@@ -4938,23 +4878,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M59),'ci-timing-data-with-minimiza
 </c>
 <c r="H60" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I60">
 <v>
 15518</v>
 </c>
-<c r="J60" s="1" t="s">
+<c r="J60" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K60" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L60" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M60">
 <v>
@@ -4962,46 +4902,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M59),'ci-timing-data-with-minimiza
 </c>
 <c r="N60" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P60" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q60" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R60">
-<f t="shared" si="0"/>
+<f>
+D60/M60</f>
 <v>
 1031.528109375</v>
 </c>
-<c r="S60" s="2">
+<c r="S60" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D60),'ci-timing-data-with-minimizatio'!D60/60/60/24,"")</f>
-<v>
-3.0563795833333332E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T60" s="3">
+<c r="T60" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M60),'ci-timing-data-with-minimizatio'!M60,"")</f>
-<v>
-0.25600000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="61" spans="1:20" x14ac:dyDescent="0.35">
+<row r="61" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A61" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B61" t="s">
 <v>
-339</v>
+285</v>
 </c>
 <c r="C61" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D61">
 <v>
@@ -5009,7 +4948,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M60),'ci-timing-data-with-minimiza
 </c>
 <c r="E61" t="s">
 <v>
-340</v>
+284</v>
 </c>
 <c r="F61">
 <v>
@@ -5021,23 +4960,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M60),'ci-timing-data-with-minimiza
 </c>
 <c r="H61" t="s">
 <v>
-78</v>
+120</v>
 </c>
 <c r="I61">
 <v>
 15518</v>
 </c>
-<c r="J61" s="1" t="s">
+<c r="J61" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K61" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L61" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M61">
 <v>
@@ -5045,46 +4984,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M60),'ci-timing-data-with-minimiza
 </c>
 <c r="N61" t="s">
 <v>
-79</v>
+119</v>
 </c>
 <c r="P61" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q61" t="s">
 <v>
-80</v>
+118</v>
 </c>
 <c r="R61">
-<f t="shared" si="0"/>
+<f>
+D61/M61</f>
 <v>
 1431.8089324324326</v>
 </c>
-<c r="S61" s="2">
+<c r="S61" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D61),'ci-timing-data-with-minimizatio'!D61/60/60/24,"")</f>
-<v>
-2.4526356712962962E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T61" s="3">
+<c r="T61" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M61),'ci-timing-data-with-minimizatio'!M61,"")</f>
-<v>
-0.14799999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="62" spans="1:20" x14ac:dyDescent="0.35">
+<row r="62" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A62" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B62" t="s">
 <v>
-341</v>
+283</v>
 </c>
 <c r="C62" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D62">
 <v>
@@ -5092,7 +5030,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M61),'ci-timing-data-with-minimiza
 </c>
 <c r="E62" t="s">
 <v>
-342</v>
+282</v>
 </c>
 <c r="F62">
 <v>
@@ -5104,23 +5042,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M61),'ci-timing-data-with-minimiza
 </c>
 <c r="H62" t="s">
 <v>
-343</v>
+219</v>
 </c>
 <c r="I62">
 <v>
 15518</v>
 </c>
-<c r="J62" s="1" t="s">
+<c r="J62" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K62" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L62" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M62">
 <v>
@@ -5128,46 +5066,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M61),'ci-timing-data-with-minimiza
 </c>
 <c r="N62" t="s">
 <v>
-344</v>
+218</v>
 </c>
 <c r="P62" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q62" t="s">
 <v>
-345</v>
+217</v>
 </c>
 <c r="R62">
-<f t="shared" si="0"/>
+<f>
+D62/M62</f>
 <v>
 2151.005081395349</v>
 </c>
-<c r="S62" s="2">
+<c r="S62" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D62),'ci-timing-data-with-minimizatio'!D62/60/60/24,"")</f>
-<v>
-4.2820934490740738E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T62" s="3">
+<c r="T62" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M62),'ci-timing-data-with-minimizatio'!M62,"")</f>
-<v>
-0.17199999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="63" spans="1:20" x14ac:dyDescent="0.35">
+<row r="63" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A63" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B63" t="s">
 <v>
-346</v>
+281</v>
 </c>
 <c r="C63" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D63">
 <v>
@@ -5175,7 +5112,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M62),'ci-timing-data-with-minimiza
 </c>
 <c r="E63" t="s">
 <v>
-347</v>
+280</v>
 </c>
 <c r="F63">
 <v>
@@ -5187,23 +5124,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M62),'ci-timing-data-with-minimiza
 </c>
 <c r="H63" t="s">
 <v>
-131</v>
+279</v>
 </c>
 <c r="I63">
 <v>
 15518</v>
 </c>
-<c r="J63" s="1" t="s">
+<c r="J63" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K63" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L63" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M63">
 <v>
@@ -5211,46 +5148,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M62),'ci-timing-data-with-minimiza
 </c>
 <c r="N63" t="s">
 <v>
-132</v>
+278</v>
 </c>
 <c r="P63" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q63" t="s">
 <v>
-133</v>
+277</v>
 </c>
 <c r="R63">
-<f t="shared" si="0"/>
+<f>
+D63/M63</f>
 <v>
 1926.8110733333333</v>
 </c>
-<c r="S63" s="2">
+<c r="S63" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D63),'ci-timing-data-with-minimizatio'!D63/60/60/24,"")</f>
-<v>
-3.3451581134259258E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T63" s="3">
+<c r="T63" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M63),'ci-timing-data-with-minimizatio'!M63,"")</f>
-<v>
-0.15</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="64" spans="1:20" x14ac:dyDescent="0.35">
+<row r="64" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A64" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B64" t="s">
 <v>
-348</v>
+276</v>
 </c>
 <c r="C64" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D64">
 <v>
@@ -5258,7 +5194,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M63),'ci-timing-data-with-minimiza
 </c>
 <c r="E64" t="s">
 <v>
-349</v>
+275</v>
 </c>
 <c r="F64">
 <v>
@@ -5270,23 +5206,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M63),'ci-timing-data-with-minimiza
 </c>
 <c r="H64" t="s">
 <v>
-350</v>
+274</v>
 </c>
 <c r="I64">
 <v>
 15518</v>
 </c>
-<c r="J64" s="1" t="s">
+<c r="J64" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K64" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L64" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M64">
 <v>
@@ -5294,46 +5230,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M63),'ci-timing-data-with-minimiza
 </c>
 <c r="N64" t="s">
 <v>
-351</v>
+273</v>
 </c>
 <c r="P64" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q64" t="s">
 <v>
-352</v>
+272</v>
 </c>
 <c r="R64">
-<f t="shared" si="0"/>
+<f>
+D64/M64</f>
 <v>
 1374.1481420118341</v>
 </c>
-<c r="S64" s="2">
+<c r="S64" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D64),'ci-timing-data-with-minimizatio'!D64/60/60/24,"")</f>
-<v>
-2.6878592129629627E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T64" s="3">
+<c r="T64" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M64),'ci-timing-data-with-minimizatio'!M64,"")</f>
-<v>
-0.16900000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="65" spans="1:20" x14ac:dyDescent="0.35">
+<row r="65" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A65" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B65" t="s">
 <v>
-353</v>
+271</v>
 </c>
 <c r="C65" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D65">
 <v>
@@ -5341,7 +5276,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M64),'ci-timing-data-with-minimiza
 </c>
 <c r="E65" t="s">
 <v>
-354</v>
+270</v>
 </c>
 <c r="F65">
 <v>
@@ -5353,23 +5288,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M64),'ci-timing-data-with-minimiza
 </c>
 <c r="H65" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I65">
 <v>
 15518</v>
 </c>
-<c r="J65" s="1" t="s">
+<c r="J65" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K65" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L65" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M65">
 <v>
@@ -5377,46 +5312,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M64),'ci-timing-data-with-minimiza
 </c>
 <c r="N65" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P65" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q65" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R65">
-<f t="shared" si="0"/>
+<f>
+D65/M65</f>
 <v>
 835.4063886792452</v>
 </c>
-<c r="S65" s="2">
+<c r="S65" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D65),'ci-timing-data-with-minimizatio'!D65/60/60/24,"")</f>
-<v>
-2.5622996874999997E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T65" s="3">
+<c r="T65" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M65),'ci-timing-data-with-minimizatio'!M65,"")</f>
-<v>
-0.26500000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="66" spans="1:20" x14ac:dyDescent="0.35">
+<row r="66" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A66" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B66" t="s">
 <v>
-355</v>
+269</v>
 </c>
 <c r="C66" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D66">
 <v>
@@ -5424,7 +5358,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M65),'ci-timing-data-with-minimiza
 </c>
 <c r="E66" t="s">
 <v>
-356</v>
+268</v>
 </c>
 <c r="F66">
 <v>
@@ -5436,23 +5370,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M65),'ci-timing-data-with-minimiza
 </c>
 <c r="H66" t="s">
 <v>
-357</v>
+267</v>
 </c>
 <c r="I66">
 <v>
 15518</v>
 </c>
-<c r="J66" s="1" t="s">
+<c r="J66" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K66" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L66" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M66">
 <v>
@@ -5460,46 +5394,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M65),'ci-timing-data-with-minimiza
 </c>
 <c r="N66" t="s">
 <v>
-358</v>
+266</v>
 </c>
 <c r="P66" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q66" t="s">
 <v>
-359</v>
+265</v>
 </c>
 <c r="R66">
-<f t="shared" si="0"/>
+<f>
+D66/M66</f>
 <v>
 1174.0155691881919</v>
 </c>
-<c r="S66" s="2">
+<c r="S66" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D66),'ci-timing-data-with-minimizatio'!D66/60/60/24,"")</f>
-<v>
-1.4729547187499999E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T66" s="3">
+<c r="T66" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M66),'ci-timing-data-with-minimizatio'!M66,"")</f>
-<v>
-1.0840000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="67" spans="1:20" x14ac:dyDescent="0.35">
+<row r="67" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A67" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B67" t="s">
 <v>
-360</v>
+264</v>
 </c>
 <c r="C67" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D67">
 <v>
@@ -5507,7 +5440,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M66),'ci-timing-data-with-minimiza
 </c>
 <c r="E67" t="s">
 <v>
-361</v>
+263</v>
 </c>
 <c r="F67">
 <v>
@@ -5519,23 +5452,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M66),'ci-timing-data-with-minimiza
 </c>
 <c r="H67" t="s">
 <v>
-40</v>
+79</v>
 </c>
 <c r="I67">
 <v>
 15518</v>
 </c>
-<c r="J67" s="1" t="s">
+<c r="J67" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K67" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L67" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M67">
 <v>
@@ -5543,47 +5476,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M66),'ci-timing-data-with-minimiza
 </c>
 <c r="N67" t="s">
 <v>
-41</v>
+76</v>
 </c>
 <c r="P67" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q67" t="s">
 <v>
-42</v>
+75</v>
 </c>
 <c r="R67">
-<f t="shared" ref="R67:R109" si="1">
+<f>
 D67/M67</f>
 <v>
 964.35992473118279</v>
 </c>
-<c r="S67" s="2">
+<c r="S67" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D67),'ci-timing-data-with-minimizatio'!D67/60/60/24,"")</f>
-<v>
-5.190131539351852E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T67" s="3">
+<c r="T67" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M67),'ci-timing-data-with-minimizatio'!M67,"")</f>
-<v>
-0.46500000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="68" spans="1:20" x14ac:dyDescent="0.35">
+<row r="68" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A68" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B68" t="s">
 <v>
-362</v>
+262</v>
 </c>
 <c r="C68" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D68">
 <v>
@@ -5591,7 +5522,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M67),'ci-timing-data-with-minimiza
 </c>
 <c r="E68" t="s">
 <v>
-363</v>
+261</v>
 </c>
 <c r="F68">
 <v>
@@ -5603,23 +5534,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M67),'ci-timing-data-with-minimiza
 </c>
 <c r="H68" t="s">
 <v>
-364</v>
+260</v>
 </c>
 <c r="I68">
 <v>
 15518</v>
 </c>
-<c r="J68" s="1" t="s">
+<c r="J68" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K68" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L68" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M68">
 <v>
@@ -5627,46 +5558,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M67),'ci-timing-data-with-minimiza
 </c>
 <c r="N68" t="s">
 <v>
-365</v>
+259</v>
 </c>
 <c r="P68" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q68" t="s">
 <v>
-366</v>
+258</v>
 </c>
 <c r="R68">
-<f t="shared" si="1"/>
+<f>
+D68/M68</f>
 <v>
 354.77640881458967</v>
 </c>
-<c r="S68" s="2">
+<c r="S68" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D68),'ci-timing-data-with-minimizatio'!D68/60/60/24,"")</f>
-<v>
-2.7018851504629631E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T68" s="3">
+<c r="T68" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M68),'ci-timing-data-with-minimizatio'!M68,"")</f>
-<v>
-0.65800000000000003</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="69" spans="1:20" x14ac:dyDescent="0.35">
+<row r="69" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A69" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B69" t="s">
 <v>
-367</v>
+257</v>
 </c>
 <c r="C69" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D69">
 <v>
@@ -5674,7 +5604,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M68),'ci-timing-data-with-minimiza
 </c>
 <c r="E69" t="s">
 <v>
-368</v>
+256</v>
 </c>
 <c r="F69">
 <v>
@@ -5686,23 +5616,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M68),'ci-timing-data-with-minimiza
 </c>
 <c r="H69" t="s">
 <v>
-95</v>
+255</v>
 </c>
 <c r="I69">
 <v>
 15518</v>
 </c>
-<c r="J69" s="1" t="s">
+<c r="J69" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K69" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L69" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M69">
 <v>
@@ -5710,46 +5640,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M68),'ci-timing-data-with-minimiza
 </c>
 <c r="N69" t="s">
 <v>
-96</v>
+254</v>
 </c>
 <c r="P69" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q69" t="s">
 <v>
-97</v>
+253</v>
 </c>
 <c r="R69">
-<f t="shared" si="1"/>
+<f>
+D69/M69</f>
 <v>
 569.93768032786886</v>
 </c>
-<c r="S69" s="2">
+<c r="S69" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D69),'ci-timing-data-with-minimizatio'!D69/60/60/24,"")</f>
-<v>
-3.2190924537037033E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T69" s="3">
+<c r="T69" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M69),'ci-timing-data-with-minimizatio'!M69,"")</f>
-<v>
-0.48799999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="70" spans="1:20" x14ac:dyDescent="0.35">
+<row r="70" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A70" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B70" t="s">
 <v>
-369</v>
+252</v>
 </c>
 <c r="C70" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D70">
 <v>
@@ -5757,7 +5686,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M69),'ci-timing-data-with-minimiza
 </c>
 <c r="E70" t="s">
 <v>
-370</v>
+251</v>
 </c>
 <c r="F70">
 <v>
@@ -5769,23 +5698,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M69),'ci-timing-data-with-minimiza
 </c>
 <c r="H70" t="s">
 <v>
-100</v>
+250</v>
 </c>
 <c r="I70">
 <v>
 15518</v>
 </c>
-<c r="J70" s="1" t="s">
+<c r="J70" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K70" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L70" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M70">
 <v>
@@ -5793,46 +5722,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M69),'ci-timing-data-with-minimiza
 </c>
 <c r="N70" t="s">
 <v>
-101</v>
+249</v>
 </c>
 <c r="P70" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q70" t="s">
 <v>
-102</v>
+248</v>
 </c>
 <c r="R70">
-<f t="shared" si="1"/>
+<f>
+D70/M70</f>
 <v>
 798.04951622418878</v>
 </c>
-<c r="S70" s="2">
+<c r="S70" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D70),'ci-timing-data-with-minimizatio'!D70/60/60/24,"")</f>
-<v>
-3.1312359490740741E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T70" s="3">
+<c r="T70" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M70),'ci-timing-data-with-minimizatio'!M70,"")</f>
-<v>
-0.33900000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="71" spans="1:20" x14ac:dyDescent="0.35">
+<row r="71" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A71" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B71" t="s">
 <v>
-371</v>
+247</v>
 </c>
 <c r="C71" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D71">
 <v>
@@ -5840,7 +5768,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M70),'ci-timing-data-with-minimiza
 </c>
 <c r="E71" t="s">
 <v>
-372</v>
+246</v>
 </c>
 <c r="F71">
 <v>
@@ -5852,23 +5780,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M70),'ci-timing-data-with-minimiza
 </c>
 <c r="H71" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I71">
 <v>
 15518</v>
 </c>
-<c r="J71" s="1" t="s">
+<c r="J71" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K71" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L71" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M71">
 <v>
@@ -5876,46 +5804,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M70),'ci-timing-data-with-minimiza
 </c>
 <c r="N71" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P71" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q71" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R71">
-<f t="shared" si="1"/>
+<f>
+D71/M71</f>
 <v>
 1608.2234925373134</v>
 </c>
-<c r="S71" s="2">
+<c r="S71" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D71),'ci-timing-data-with-minimizatio'!D71/60/60/24,"")</f>
-<v>
-2.4942355092592594E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T71" s="3">
+<c r="T71" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M71),'ci-timing-data-with-minimizatio'!M71,"")</f>
-<v>
-0.13400000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="72" spans="1:20" x14ac:dyDescent="0.35">
+<row r="72" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A72" t="s">
 <v>
-325</v>
+245</v>
 </c>
 <c r="B72" t="s">
 <v>
-373</v>
+244</v>
 </c>
 <c r="C72" t="s">
 <v>
-327</v>
+243</v>
 </c>
 <c r="D72">
 <v>
@@ -5923,7 +5850,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M71),'ci-timing-data-with-minimiza
 </c>
 <c r="E72" t="s">
 <v>
-374</v>
+242</v>
 </c>
 <c r="F72">
 <v>
@@ -5935,23 +5862,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M71),'ci-timing-data-with-minimiza
 </c>
 <c r="H72" t="s">
 <v>
-375</v>
+241</v>
 </c>
 <c r="I72">
 <v>
 15518</v>
 </c>
-<c r="J72" s="1" t="s">
+<c r="J72" s="11" t="s">
 <v>
-329</v>
+240</v>
 </c>
 <c r="K72" t="s">
 <v>
-330</v>
+239</v>
 </c>
 <c r="L72" t="s">
 <v>
-331</v>
+238</v>
 </c>
 <c r="M72">
 <v>
@@ -5959,46 +5886,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M71),'ci-timing-data-with-minimiza
 </c>
 <c r="N72" t="s">
 <v>
-376</v>
+237</v>
 </c>
 <c r="P72" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q72" t="s">
 <v>
-377</v>
+236</v>
 </c>
 <c r="R72">
-<f t="shared" si="1"/>
+<f>
+D72/M72</f>
 <v>
 343.1979635854342</v>
 </c>
-<c r="S72" s="2">
+<c r="S72" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D72),'ci-timing-data-with-minimizatio'!D72/60/60/24,"")</f>
-<v>
-2.836149837962963E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T72" s="3">
+<c r="T72" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M72),'ci-timing-data-with-minimizatio'!M72,"")</f>
-<v>
-0.71399999999999997</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="73" spans="1:20" x14ac:dyDescent="0.35">
+<row r="73" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A73" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B73" t="s">
 <v>
-379</v>
+235</v>
 </c>
 <c r="C73" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D73">
 <v>
@@ -6006,7 +5932,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M72),'ci-timing-data-with-minimiza
 </c>
 <c r="E73" t="s">
 <v>
-381</v>
+234</v>
 </c>
 <c r="F73">
 <v>
@@ -6018,7 +5944,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M72),'ci-timing-data-with-minimiza
 </c>
 <c r="H73" t="s">
 <v>
-78</v>
+120</v>
 </c>
 <c r="I73">
 <v>
@@ -6026,15 +5952,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M72),'ci-timing-data-with-minimiza
 </c>
 <c r="J73" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K73" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L73" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M73">
 <v>
@@ -6042,46 +5968,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M72),'ci-timing-data-with-minimiza
 </c>
 <c r="N73" t="s">
 <v>
-79</v>
+119</v>
 </c>
 <c r="P73" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q73" t="s">
 <v>
-80</v>
+118</v>
 </c>
 <c r="R73">
-<f t="shared" si="1"/>
+<f>
+D73/M73</f>
 <v>
 2184.7354398382204</v>
 </c>
-<c r="S73" s="2">
+<c r="S73" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D73),'ci-timing-data-with-minimizatio'!D73/60/60/24,"")</f>
-<v>
-2.5008140624999998E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T73" s="3">
+<c r="T73" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M73),'ci-timing-data-with-minimizatio'!M73,"")</f>
-<v>
-0.98899999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="74" spans="1:20" x14ac:dyDescent="0.35">
+<row r="74" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A74" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B74" t="s">
 <v>
-385</v>
+233</v>
 </c>
 <c r="C74" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D74">
 <v>
@@ -6089,7 +6014,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M73),'ci-timing-data-with-minimiza
 </c>
 <c r="E74" t="s">
 <v>
-386</v>
+232</v>
 </c>
 <c r="F74">
 <v>
@@ -6101,7 +6026,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M73),'ci-timing-data-with-minimiza
 </c>
 <c r="H74" t="s">
 <v>
-105</v>
+166</v>
 </c>
 <c r="I74">
 <v>
@@ -6109,15 +6034,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M73),'ci-timing-data-with-minimiza
 </c>
 <c r="J74" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K74" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L74" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M74">
 <v>
@@ -6125,46 +6050,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M73),'ci-timing-data-with-minimiza
 </c>
 <c r="N74" t="s">
 <v>
-106</v>
+162</v>
 </c>
 <c r="P74" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q74" t="s">
 <v>
-107</v>
+161</v>
 </c>
 <c r="R74">
-<f t="shared" si="1"/>
+<f>
+D74/M74</f>
 <v>
 571.03683559685487</v>
 </c>
-<c r="S74" s="2">
+<c r="S74" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D74),'ci-timing-data-with-minimizatio'!D74/60/60/24,"")</f>
-<v>
-9.2463024652777778E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T74" s="3">
+<c r="T74" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M74),'ci-timing-data-with-minimizatio'!M74,"")</f>
-<v>
-1.399</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="75" spans="1:20" x14ac:dyDescent="0.35">
+<row r="75" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A75" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B75" t="s">
 <v>
-387</v>
+231</v>
 </c>
 <c r="C75" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D75">
 <v>
@@ -6172,7 +6096,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M74),'ci-timing-data-with-minimiza
 </c>
 <c r="E75" t="s">
 <v>
-388</v>
+230</v>
 </c>
 <c r="F75">
 <v>
@@ -6184,7 +6108,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M74),'ci-timing-data-with-minimiza
 </c>
 <c r="H75" t="s">
 <v>
-21</v>
+229</v>
 </c>
 <c r="I75">
 <v>
@@ -6192,15 +6116,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M74),'ci-timing-data-with-minimiza
 </c>
 <c r="J75" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K75" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L75" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M75">
 <v>
@@ -6208,46 +6132,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M74),'ci-timing-data-with-minimiza
 </c>
 <c r="N75" t="s">
 <v>
-25</v>
+228</v>
 </c>
 <c r="P75" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q75" t="s">
 <v>
-27</v>
+227</v>
 </c>
 <c r="R75">
-<f t="shared" si="1"/>
+<f>
+D75/M75</f>
 <v>
 591.87571204188475</v>
 </c>
-<c r="S75" s="2">
+<c r="S75" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D75),'ci-timing-data-with-minimizatio'!D75/60/60/24,"")</f>
-<v>
-2.6168578935185181E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T75" s="3">
+<c r="T75" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M75),'ci-timing-data-with-minimizatio'!M75,"")</f>
-<v>
-0.38200000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="76" spans="1:20" x14ac:dyDescent="0.35">
+<row r="76" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A76" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B76" t="s">
 <v>
-389</v>
+226</v>
 </c>
 <c r="C76" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D76">
 <v>
@@ -6255,7 +6178,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M75),'ci-timing-data-with-minimiza
 </c>
 <c r="E76" t="s">
 <v>
-390</v>
+225</v>
 </c>
 <c r="F76">
 <v>
@@ -6267,7 +6190,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M75),'ci-timing-data-with-minimiza
 </c>
 <c r="H76" t="s">
 <v>
-391</v>
+224</v>
 </c>
 <c r="I76">
 <v>
@@ -6275,15 +6198,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M75),'ci-timing-data-with-minimiza
 </c>
 <c r="J76" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K76" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L76" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M76">
 <v>
@@ -6291,46 +6214,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M75),'ci-timing-data-with-minimiza
 </c>
 <c r="N76" t="s">
 <v>
-392</v>
+223</v>
 </c>
 <c r="P76" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q76" t="s">
 <v>
-393</v>
+222</v>
 </c>
 <c r="R76">
-<f t="shared" si="1"/>
+<f>
+D76/M76</f>
 <v>
 950.38083526011565</v>
 </c>
-<c r="S76" s="2">
+<c r="S76" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D76),'ci-timing-data-with-minimizatio'!D76/60/60/24,"")</f>
-<v>
-3.8059232523148146E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T76" s="3">
+<c r="T76" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M76),'ci-timing-data-with-minimizatio'!M76,"")</f>
-<v>
-0.34599999999999997</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="77" spans="1:20" x14ac:dyDescent="0.35">
+<row r="77" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A77" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B77" t="s">
 <v>
-394</v>
+221</v>
 </c>
 <c r="C77" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D77">
 <v>
@@ -6338,7 +6260,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M76),'ci-timing-data-with-minimiza
 </c>
 <c r="E77" t="s">
 <v>
-395</v>
+220</v>
 </c>
 <c r="F77">
 <v>
@@ -6350,7 +6272,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M76),'ci-timing-data-with-minimiza
 </c>
 <c r="H77" t="s">
 <v>
-343</v>
+219</v>
 </c>
 <c r="I77">
 <v>
@@ -6358,15 +6280,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M76),'ci-timing-data-with-minimiza
 </c>
 <c r="J77" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K77" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L77" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M77">
 <v>
@@ -6374,46 +6296,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M76),'ci-timing-data-with-minimiza
 </c>
 <c r="N77" t="s">
 <v>
-344</v>
+218</v>
 </c>
 <c r="P77" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q77" t="s">
 <v>
-345</v>
+217</v>
 </c>
 <c r="R77">
-<f t="shared" si="1"/>
+<f>
+D77/M77</f>
 <v>
 1980.8284611398963</v>
 </c>
-<c r="S77" s="2">
+<c r="S77" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D77),'ci-timing-data-with-minimizatio'!D77/60/60/24,"")</f>
-<v>
-4.4247672800925928E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T77" s="3">
+<c r="T77" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M77),'ci-timing-data-with-minimizatio'!M77,"")</f>
-<v>
-0.193</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="78" spans="1:20" x14ac:dyDescent="0.35">
+<row r="78" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A78" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B78" t="s">
 <v>
-396</v>
+216</v>
 </c>
 <c r="C78" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D78">
 <v>
@@ -6421,7 +6342,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M77),'ci-timing-data-with-minimiza
 </c>
 <c r="E78" t="s">
 <v>
-397</v>
+215</v>
 </c>
 <c r="F78">
 <v>
@@ -6433,7 +6354,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M77),'ci-timing-data-with-minimiza
 </c>
 <c r="H78" t="s">
 <v>
-398</v>
+214</v>
 </c>
 <c r="I78">
 <v>
@@ -6441,15 +6362,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M77),'ci-timing-data-with-minimiza
 </c>
 <c r="J78" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K78" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L78" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M78">
 <v>
@@ -6457,46 +6378,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M77),'ci-timing-data-with-minimiza
 </c>
 <c r="N78" t="s">
 <v>
-399</v>
+213</v>
 </c>
 <c r="P78" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q78" t="s">
 <v>
-400</v>
+212</v>
 </c>
 <c r="R78">
-<f t="shared" si="1"/>
+<f>
+D78/M78</f>
 <v>
 624.09593388429755</v>
 </c>
-<c r="S78" s="2">
+<c r="S78" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D78),'ci-timing-data-with-minimizatio'!D78/60/60/24,"")</f>
-<v>
-3.4960929629629634E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T78" s="3">
+<c r="T78" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M78),'ci-timing-data-with-minimizatio'!M78,"")</f>
-<v>
-0.48399999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="79" spans="1:20" x14ac:dyDescent="0.35">
+<row r="79" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A79" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B79" t="s">
 <v>
-401</v>
+211</v>
 </c>
 <c r="C79" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D79">
 <v>
@@ -6504,7 +6424,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M78),'ci-timing-data-with-minimiza
 </c>
 <c r="E79" t="s">
 <v>
-402</v>
+210</v>
 </c>
 <c r="F79">
 <v>
@@ -6516,7 +6436,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M78),'ci-timing-data-with-minimiza
 </c>
 <c r="H79" t="s">
 <v>
-40</v>
+79</v>
 </c>
 <c r="I79">
 <v>
@@ -6524,15 +6444,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M78),'ci-timing-data-with-minimiza
 </c>
 <c r="J79" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K79" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L79" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M79">
 <v>
@@ -6540,46 +6460,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M78),'ci-timing-data-with-minimiza
 </c>
 <c r="N79" t="s">
 <v>
-41</v>
+76</v>
 </c>
 <c r="P79" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q79" t="s">
 <v>
-42</v>
+75</v>
 </c>
 <c r="R79">
-<f t="shared" si="1"/>
+<f>
+D79/M79</f>
 <v>
 1937.5779999999997</v>
 </c>
-<c r="S79" s="2">
+<c r="S79" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D79),'ci-timing-data-with-minimizatio'!D79/60/60/24,"")</f>
-<v>
-3.8347897916666662E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T79" s="3">
+<c r="T79" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M79),'ci-timing-data-with-minimizatio'!M79,"")</f>
-<v>
-0.17100000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="80" spans="1:20" x14ac:dyDescent="0.35">
+<row r="80" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A80" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B80" t="s">
 <v>
-403</v>
+209</v>
 </c>
 <c r="C80" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D80">
 <v>
@@ -6587,7 +6506,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M79),'ci-timing-data-with-minimiza
 </c>
 <c r="E80" t="s">
 <v>
-404</v>
+208</v>
 </c>
 <c r="F80">
 <v>
@@ -6599,7 +6518,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M79),'ci-timing-data-with-minimiza
 </c>
 <c r="H80" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I80">
 <v>
@@ -6607,15 +6526,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M79),'ci-timing-data-with-minimiza
 </c>
 <c r="J80" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K80" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L80" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M80">
 <v>
@@ -6623,46 +6542,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M79),'ci-timing-data-with-minimiza
 </c>
 <c r="N80" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P80" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q80" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R80">
-<f t="shared" si="1"/>
+<f>
+D80/M80</f>
 <v>
 19668.37313821138</v>
 </c>
-<c r="S80" s="2">
+<c r="S80" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D80),'ci-timing-data-with-minimizatio'!D80/60/60/24,"")</f>
-<v>
-2.8000114537037036E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T80" s="3">
+<c r="T80" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M80),'ci-timing-data-with-minimizatio'!M80,"")</f>
-<v>
-0.123</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="81" spans="1:20" x14ac:dyDescent="0.35">
+<row r="81" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A81" t="s">
 <v>
-378</v>
+207</v>
 </c>
 <c r="B81" t="s">
 <v>
-405</v>
+206</v>
 </c>
 <c r="C81" t="s">
 <v>
-380</v>
+205</v>
 </c>
 <c r="D81">
 <v>
@@ -6670,7 +6588,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M80),'ci-timing-data-with-minimiza
 </c>
 <c r="E81" t="s">
 <v>
-406</v>
+204</v>
 </c>
 <c r="F81">
 <v>
@@ -6682,7 +6600,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M80),'ci-timing-data-with-minimiza
 </c>
 <c r="H81" t="s">
 <v>
-407</v>
+203</v>
 </c>
 <c r="I81">
 <v>
@@ -6690,15 +6608,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M80),'ci-timing-data-with-minimiza
 </c>
 <c r="J81" t="s">
 <v>
-382</v>
+202</v>
 </c>
 <c r="K81" t="s">
 <v>
-383</v>
+201</v>
 </c>
 <c r="L81" t="s">
 <v>
-384</v>
+200</v>
 </c>
 <c r="M81">
 <v>
@@ -6706,46 +6624,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M80),'ci-timing-data-with-minimiza
 </c>
 <c r="N81" t="s">
 <v>
-408</v>
+199</v>
 </c>
 <c r="P81" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q81" t="s">
 <v>
-409</v>
+198</v>
 </c>
 <c r="R81">
-<f t="shared" si="1"/>
+<f>
+D81/M81</f>
 <v>
 2074.6605789473683</v>
 </c>
-<c r="S81" s="2">
+<c r="S81" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D81),'ci-timing-data-with-minimizatio'!D81/60/60/24,"")</f>
-<v>
-2.2811661458333335E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T81" s="3">
+<c r="T81" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M81),'ci-timing-data-with-minimizatio'!M81,"")</f>
-<v>
-9.5000000000000001E-2</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="82" spans="1:20" x14ac:dyDescent="0.35">
+<row r="82" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A82" t="s">
 <v>
-410</v>
+195</v>
 </c>
 <c r="B82" t="s">
 <v>
-411</v>
+197</v>
 </c>
 <c r="C82" t="s">
 <v>
-412</v>
+193</v>
 </c>
 <c r="D82">
 <v>
@@ -6753,7 +6670,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M81),'ci-timing-data-with-minimiza
 </c>
 <c r="E82" t="s">
 <v>
-413</v>
+196</v>
 </c>
 <c r="F82">
 <v>
@@ -6765,7 +6682,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M81),'ci-timing-data-with-minimiza
 </c>
 <c r="H82" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I82">
 <v>
@@ -6773,15 +6690,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M81),'ci-timing-data-with-minimiza
 </c>
 <c r="J82" t="s">
 <v>
-414</v>
+191</v>
 </c>
 <c r="K82" t="s">
 <v>
-415</v>
+190</v>
 </c>
 <c r="L82" t="s">
 <v>
-416</v>
+189</v>
 </c>
 <c r="M82">
 <v>
@@ -6789,46 +6706,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M81),'ci-timing-data-with-minimiza
 </c>
 <c r="N82" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P82" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q82" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R82">
-<f t="shared" si="1"/>
+<f>
+D82/M82</f>
 <v>
 1358.3355707762555</v>
 </c>
-<c r="S82" s="2">
+<c r="S82" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D82),'ci-timing-data-with-minimizatio'!D82/60/60/24,"")</f>
-<v>
-3.4430033564814815E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T82" s="3">
+<c r="T82" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M82),'ci-timing-data-with-minimizatio'!M82,"")</f>
-<v>
-0.219</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="83" spans="1:20" x14ac:dyDescent="0.35">
+<row r="83" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A83" t="s">
 <v>
-410</v>
+195</v>
 </c>
 <c r="B83" t="s">
 <v>
-417</v>
+194</v>
 </c>
 <c r="C83" t="s">
 <v>
-412</v>
+193</v>
 </c>
 <c r="D83">
 <v>
@@ -6836,7 +6752,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M82),'ci-timing-data-with-minimiza
 </c>
 <c r="E83" t="s">
 <v>
-418</v>
+192</v>
 </c>
 <c r="F83">
 <v>
@@ -6848,7 +6764,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M82),'ci-timing-data-with-minimiza
 </c>
 <c r="H83" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I83">
 <v>
@@ -6856,15 +6772,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M82),'ci-timing-data-with-minimiza
 </c>
 <c r="J83" t="s">
 <v>
-414</v>
+191</v>
 </c>
 <c r="K83" t="s">
 <v>
-415</v>
+190</v>
 </c>
 <c r="L83" t="s">
 <v>
-416</v>
+189</v>
 </c>
 <c r="M83">
 <v>
@@ -6872,46 +6788,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M82),'ci-timing-data-with-minimiza
 </c>
 <c r="N83" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P83" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q83" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R83">
-<f t="shared" si="1"/>
+<f>
+D83/M83</f>
 <v>
 1466.1017065637066</v>
 </c>
-<c r="S83" s="2">
+<c r="S83" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D83),'ci-timing-data-with-minimizatio'!D83/60/60/24,"")</f>
-<v>
-4.3949113657407411E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T83" s="3">
+<c r="T83" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M83),'ci-timing-data-with-minimizatio'!M83,"")</f>
-<v>
-0.25900000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="84" spans="1:20" x14ac:dyDescent="0.35">
-<c r="A84" s="1">
+<row r="84" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
+<c r="A84" s="11">
 <v>
 404600000</v>
 </c>
 <c r="B84" t="s">
 <v>
-419</v>
+188</v>
 </c>
 <c r="C84" t="s">
 <v>
-420</v>
+187</v>
 </c>
 <c r="D84">
 <v>
@@ -6919,7 +6834,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M83),'ci-timing-data-with-minimiza
 </c>
 <c r="E84" t="s">
 <v>
-421</v>
+186</v>
 </c>
 <c r="F84">
 <v>
@@ -6931,7 +6846,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M83),'ci-timing-data-with-minimiza
 </c>
 <c r="H84" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I84">
 <v>
@@ -6939,15 +6854,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M83),'ci-timing-data-with-minimiza
 </c>
 <c r="J84" t="s">
 <v>
-422</v>
+185</v>
 </c>
 <c r="K84" t="s">
 <v>
-423</v>
+184</v>
 </c>
 <c r="L84" t="s">
 <v>
-424</v>
+177</v>
 </c>
 <c r="M84">
 <v>
@@ -6955,46 +6870,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M83),'ci-timing-data-with-minimiza
 </c>
 <c r="N84" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P84" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q84" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R84">
-<f t="shared" si="1"/>
+<f>
+D84/M84</f>
 <v>
 944.73988652482285</v>
 </c>
-<c r="S84" s="2">
+<c r="S84" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D84),'ci-timing-data-with-minimizatio'!D84/60/60/24,"")</f>
-<v>
-6.1670520370370385E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T84" s="3">
+<c r="T84" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M84),'ci-timing-data-with-minimizatio'!M84,"")</f>
-<v>
-0.56399999999999995</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="85" spans="1:20" x14ac:dyDescent="0.35">
+<row r="85" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A85" t="s">
 <v>
-425</v>
+183</v>
 </c>
 <c r="B85" t="s">
 <v>
-426</v>
+182</v>
 </c>
 <c r="C85" t="s">
 <v>
-427</v>
+181</v>
 </c>
 <c r="D85">
 <v>
@@ -7002,7 +6916,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M84),'ci-timing-data-with-minimiza
 </c>
 <c r="E85" t="s">
 <v>
-428</v>
+180</v>
 </c>
 <c r="F85">
 <v>
@@ -7014,7 +6928,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M84),'ci-timing-data-with-minimiza
 </c>
 <c r="H85" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I85">
 <v>
@@ -7022,15 +6936,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M84),'ci-timing-data-with-minimiza
 </c>
 <c r="J85" t="s">
 <v>
-429</v>
+179</v>
 </c>
 <c r="K85" t="s">
 <v>
-430</v>
+178</v>
 </c>
 <c r="L85" t="s">
 <v>
-424</v>
+177</v>
 </c>
 <c r="M85">
 <v>
@@ -7038,46 +6952,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M84),'ci-timing-data-with-minimiza
 </c>
 <c r="N85" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P85" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q85" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R85">
-<f t="shared" si="1"/>
+<f>
+D85/M85</f>
 <v>
 131.10640724402137</v>
 </c>
-<c r="S85" s="2">
+<c r="S85" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D85),'ci-timing-data-with-minimizatio'!D85/60/60/24,"")</f>
-<v>
-1.960678111111111E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T85" s="3">
+<c r="T85" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M85),'ci-timing-data-with-minimizatio'!M85,"")</f>
-<v>
-12.920999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="86" spans="1:20" x14ac:dyDescent="0.35">
+<row r="86" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A86" t="s">
 <v>
-431</v>
+176</v>
 </c>
 <c r="B86" t="s">
 <v>
-432</v>
+175</v>
 </c>
 <c r="C86" t="s">
 <v>
-433</v>
+174</v>
 </c>
 <c r="D86">
 <v>
@@ -7085,7 +6998,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M85),'ci-timing-data-with-minimiza
 </c>
 <c r="E86" t="s">
 <v>
-434</v>
+173</v>
 </c>
 <c r="F86">
 <v>
@@ -7097,7 +7010,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M85),'ci-timing-data-with-minimiza
 </c>
 <c r="H86" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I86">
 <v>
@@ -7105,15 +7018,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M85),'ci-timing-data-with-minimiza
 </c>
 <c r="J86" t="s">
 <v>
-435</v>
+172</v>
 </c>
 <c r="K86" t="s">
 <v>
-436</v>
+171</v>
 </c>
 <c r="L86" t="s">
 <v>
-437</v>
+170</v>
 </c>
 <c r="M86">
 <v>
@@ -7121,46 +7034,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M85),'ci-timing-data-with-minimiza
 </c>
 <c r="N86" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P86" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q86" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R86">
-<f t="shared" si="1"/>
+<f>
+D86/M86</f>
 <v>
 16.730464196785633</v>
 </c>
-<c r="S86" s="2">
+<c r="S86" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D86),'ci-timing-data-with-minimizatio'!D86/60/60/24,"")</f>
-<v>
-5.1326120833333324E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T86" s="3">
+<c r="T86" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M86),'ci-timing-data-with-minimizatio'!M86,"")</f>
-<v>
-26.506</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="87" spans="1:20" x14ac:dyDescent="0.35">
+<row r="87" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A87">
 <v>
 5674313</v>
 </c>
 <c r="B87" t="s">
 <v>
-438</v>
+169</v>
 </c>
 <c r="C87" t="s">
 <v>
-439</v>
+168</v>
 </c>
 <c r="D87">
 <v>
@@ -7168,7 +7080,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M86),'ci-timing-data-with-minimiza
 </c>
 <c r="E87" t="s">
 <v>
-440</v>
+167</v>
 </c>
 <c r="F87">
 <v>
@@ -7180,7 +7092,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M86),'ci-timing-data-with-minimiza
 </c>
 <c r="H87" t="s">
 <v>
-105</v>
+166</v>
 </c>
 <c r="I87">
 <v>
@@ -7188,15 +7100,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M86),'ci-timing-data-with-minimiza
 </c>
 <c r="J87" t="s">
 <v>
-441</v>
+165</v>
 </c>
 <c r="K87" t="s">
 <v>
-442</v>
+164</v>
 </c>
 <c r="L87" t="s">
 <v>
-443</v>
+163</v>
 </c>
 <c r="M87">
 <v>
@@ -7204,46 +7116,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M86),'ci-timing-data-with-minimiza
 </c>
 <c r="N87" t="s">
 <v>
-106</v>
+162</v>
 </c>
 <c r="P87" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q87" t="s">
 <v>
-107</v>
+161</v>
 </c>
 <c r="R87">
-<f t="shared" si="1"/>
+<f>
+D87/M87</f>
 <v>
 947.7299243614932</v>
 </c>
-<c r="S87" s="2">
+<c r="S87" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D87),'ci-timing-data-with-minimizatio'!D87/60/60/24,"")</f>
-<v>
-1.1166540081018519E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T87" s="3">
+<c r="T87" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M87),'ci-timing-data-with-minimizatio'!M87,"")</f>
-<v>
-1.018</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="88" spans="1:20" x14ac:dyDescent="0.35">
+<row r="88" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A88" t="s">
 <v>
-444</v>
+158</v>
 </c>
 <c r="B88" t="s">
 <v>
-445</v>
+160</v>
 </c>
 <c r="C88" t="s">
 <v>
-446</v>
+156</v>
 </c>
 <c r="D88">
 <v>
@@ -7251,7 +7162,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M87),'ci-timing-data-with-minimiza
 </c>
 <c r="E88" t="s">
 <v>
-447</v>
+159</v>
 </c>
 <c r="F88">
 <v>
@@ -7263,7 +7174,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M87),'ci-timing-data-with-minimiza
 </c>
 <c r="H88" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I88">
 <v>
@@ -7271,15 +7182,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M87),'ci-timing-data-with-minimiza
 </c>
 <c r="J88" t="s">
 <v>
-448</v>
+154</v>
 </c>
 <c r="K88" t="s">
 <v>
-449</v>
+153</v>
 </c>
 <c r="L88" t="s">
 <v>
-450</v>
+152</v>
 </c>
 <c r="M88">
 <v>
@@ -7287,46 +7198,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M87),'ci-timing-data-with-minimiza
 </c>
 <c r="N88" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P88" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q88" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R88">
-<f t="shared" si="1"/>
+<f>
+D88/M88</f>
 <v>
 618.0998571428571</v>
 </c>
-<c r="S88" s="2">
+<c r="S88" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D88),'ci-timing-data-with-minimizatio'!D88/60/60/24,"")</f>
-<v>
-2.8043419444444447E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T88" s="3">
+<c r="T88" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M88),'ci-timing-data-with-minimizatio'!M88,"")</f>
-<v>
-0.39200000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="89" spans="1:20" x14ac:dyDescent="0.35">
+<row r="89" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A89" t="s">
 <v>
-444</v>
+158</v>
 </c>
 <c r="B89" t="s">
 <v>
-451</v>
+157</v>
 </c>
 <c r="C89" t="s">
 <v>
-446</v>
+156</v>
 </c>
 <c r="D89">
 <v>
@@ -7334,7 +7244,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M88),'ci-timing-data-with-minimiza
 </c>
 <c r="E89" t="s">
 <v>
-452</v>
+155</v>
 </c>
 <c r="F89">
 <v>
@@ -7346,7 +7256,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M88),'ci-timing-data-with-minimiza
 </c>
 <c r="H89" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I89">
 <v>
@@ -7354,15 +7264,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M88),'ci-timing-data-with-minimiza
 </c>
 <c r="J89" t="s">
 <v>
-448</v>
+154</v>
 </c>
 <c r="K89" t="s">
 <v>
-449</v>
+153</v>
 </c>
 <c r="L89" t="s">
 <v>
-450</v>
+152</v>
 </c>
 <c r="M89">
 <v>
@@ -7370,46 +7280,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M88),'ci-timing-data-with-minimiza
 </c>
 <c r="N89" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P89" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q89" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R89">
-<f t="shared" si="1"/>
+<f>
+D89/M89</f>
 <v>
 665.7458563049853</v>
 </c>
-<c r="S89" s="2">
+<c r="S89" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D89),'ci-timing-data-with-minimizatio'!D89/60/60/24,"")</f>
-<v>
-2.6275386226851851E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T89" s="3">
+<c r="T89" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M89),'ci-timing-data-with-minimizatio'!M89,"")</f>
-<v>
-0.34100000000000003</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="90" spans="1:20" x14ac:dyDescent="0.35">
+<row r="90" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A90" t="s">
 <v>
-453</v>
+151</v>
 </c>
 <c r="B90" t="s">
 <v>
-454</v>
+150</v>
 </c>
 <c r="C90" t="s">
 <v>
-455</v>
+149</v>
 </c>
 <c r="D90">
 <v>
@@ -7417,7 +7326,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M89),'ci-timing-data-with-minimiza
 </c>
 <c r="E90" t="s">
 <v>
-456</v>
+148</v>
 </c>
 <c r="F90">
 <v>
@@ -7429,23 +7338,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M89),'ci-timing-data-with-minimiza
 </c>
 <c r="H90" t="s">
 <v>
-143</v>
+140</v>
 </c>
 <c r="I90">
 <v>
 14137</v>
 </c>
-<c r="J90" s="1" t="s">
+<c r="J90" s="11" t="s">
 <v>
-457</v>
+147</v>
 </c>
 <c r="K90" t="s">
 <v>
-458</v>
+146</v>
 </c>
 <c r="L90" t="s">
 <v>
-459</v>
+145</v>
 </c>
 <c r="M90">
 <v>
@@ -7453,46 +7362,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M89),'ci-timing-data-with-minimiza
 </c>
 <c r="N90" t="s">
 <v>
-144</v>
+136</v>
 </c>
 <c r="P90" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q90" t="s">
 <v>
-145</v>
+135</v>
 </c>
 <c r="R90">
-<f t="shared" si="1"/>
+<f>
+D90/M90</f>
 <v>
 820.49329999999998</v>
 </c>
-<c r="S90" s="2">
+<c r="S90" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D90),'ci-timing-data-with-minimizatio'!D90/60/60/24,"")</f>
-<v>
-2.4690770601851855E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T90" s="3">
+<c r="T90" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M90),'ci-timing-data-with-minimizatio'!M90,"")</f>
-<v>
-0.26</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="91" spans="1:20" x14ac:dyDescent="0.35">
+<row r="91" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A91" t="s">
 <v>
-460</v>
+144</v>
 </c>
 <c r="B91" t="s">
 <v>
-461</v>
+143</v>
 </c>
 <c r="C91" t="s">
 <v>
-462</v>
+142</v>
 </c>
 <c r="D91">
 <v>
@@ -7500,7 +7408,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M90),'ci-timing-data-with-minimiza
 </c>
 <c r="E91" t="s">
 <v>
-463</v>
+141</v>
 </c>
 <c r="F91">
 <v>
@@ -7512,7 +7420,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M90),'ci-timing-data-with-minimiza
 </c>
 <c r="H91" t="s">
 <v>
-143</v>
+140</v>
 </c>
 <c r="I91">
 <v>
@@ -7520,15 +7428,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M90),'ci-timing-data-with-minimiza
 </c>
 <c r="J91" t="s">
 <v>
-464</v>
+139</v>
 </c>
 <c r="K91" t="s">
 <v>
-465</v>
+138</v>
 </c>
 <c r="L91" t="s">
 <v>
-466</v>
+137</v>
 </c>
 <c r="M91">
 <v>
@@ -7536,46 +7444,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M90),'ci-timing-data-with-minimiza
 </c>
 <c r="N91" t="s">
 <v>
-144</v>
+136</v>
 </c>
 <c r="P91" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q91" t="s">
 <v>
-145</v>
+135</v>
 </c>
 <c r="R91">
-<f t="shared" si="1"/>
+<f>
+D91/M91</f>
 <v>
 886.38004694835683</v>
 </c>
-<c r="S91" s="2">
+<c r="S91" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D91),'ci-timing-data-with-minimizatio'!D91/60/60/24,"")</f>
-<v>
-2.1851730324074074E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T91" s="3">
+<c r="T91" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M91),'ci-timing-data-with-minimizatio'!M91,"")</f>
-<v>
-0.21299999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="92" spans="1:20" x14ac:dyDescent="0.35">
+<row r="92" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A92" t="s">
 <v>
-467</v>
+134</v>
 </c>
 <c r="B92" t="s">
 <v>
-468</v>
+133</v>
 </c>
 <c r="C92" t="s">
 <v>
-469</v>
+132</v>
 </c>
 <c r="D92">
 <v>
@@ -7583,7 +7490,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M91),'ci-timing-data-with-minimiza
 </c>
 <c r="E92" t="s">
 <v>
-470</v>
+131</v>
 </c>
 <c r="F92">
 <v>
@@ -7595,7 +7502,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M91),'ci-timing-data-with-minimiza
 </c>
 <c r="H92" t="s">
 <v>
-78</v>
+120</v>
 </c>
 <c r="I92">
 <v>
@@ -7603,15 +7510,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M91),'ci-timing-data-with-minimiza
 </c>
 <c r="J92" t="s">
 <v>
-471</v>
+130</v>
 </c>
 <c r="K92" t="s">
 <v>
-472</v>
+129</v>
 </c>
 <c r="L92" t="s">
 <v>
-473</v>
+128</v>
 </c>
 <c r="M92">
 <v>
@@ -7619,46 +7526,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M91),'ci-timing-data-with-minimiza
 </c>
 <c r="N92" t="s">
 <v>
-79</v>
+119</v>
 </c>
 <c r="P92" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q92" t="s">
 <v>
-80</v>
+118</v>
 </c>
 <c r="R92">
-<f t="shared" si="1"/>
+<f>
+D92/M92</f>
 <v>
 1912.9459020771517</v>
 </c>
-<c r="S92" s="2">
+<c r="S92" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D92),'ci-timing-data-with-minimizatio'!D92/60/60/24,"")</f>
-<v>
-2.238412392361111E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T92" s="3">
+<c r="T92" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M92),'ci-timing-data-with-minimizatio'!M92,"")</f>
-<v>
-1.0109999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="93" spans="1:20" x14ac:dyDescent="0.35">
+<row r="93" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A93" t="s">
 <v>
-474</v>
+105</v>
 </c>
 <c r="B93" t="s">
 <v>
-475</v>
+127</v>
 </c>
 <c r="C93" t="s">
 <v>
-476</v>
+103</v>
 </c>
 <c r="D93">
 <v>
@@ -7666,7 +7572,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M92),'ci-timing-data-with-minimiza
 </c>
 <c r="E93" t="s">
 <v>
-477</v>
+126</v>
 </c>
 <c r="F93">
 <v>
@@ -7678,7 +7584,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M92),'ci-timing-data-with-minimiza
 </c>
 <c r="H93" t="s">
 <v>
-236</v>
+125</v>
 </c>
 <c r="I93">
 <v>
@@ -7686,15 +7592,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M92),'ci-timing-data-with-minimiza
 </c>
 <c r="J93" t="s">
 <v>
-478</v>
+100</v>
 </c>
 <c r="K93" t="s">
 <v>
-479</v>
+99</v>
 </c>
 <c r="L93" t="s">
 <v>
-480</v>
+98</v>
 </c>
 <c r="M93">
 <v>
@@ -7702,46 +7608,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M92),'ci-timing-data-with-minimiza
 </c>
 <c r="N93" t="s">
 <v>
-240</v>
+124</v>
 </c>
 <c r="P93" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q93" t="s">
 <v>
-241</v>
+123</v>
 </c>
 <c r="R93">
-<f t="shared" si="1"/>
+<f>
+D93/M93</f>
 <v>
 962.18665822784817</v>
 </c>
-<c r="S93" s="2">
+<c r="S93" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D93),'ci-timing-data-with-minimizatio'!D93/60/60/24,"")</f>
-<v>
-2.6393314583333331E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T93" s="3">
+<c r="T93" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M93),'ci-timing-data-with-minimizatio'!M93,"")</f>
-<v>
-0.23699999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="94" spans="1:20" x14ac:dyDescent="0.35">
+<row r="94" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A94" t="s">
 <v>
-474</v>
+105</v>
 </c>
 <c r="B94" t="s">
 <v>
-481</v>
+122</v>
 </c>
 <c r="C94" t="s">
 <v>
-476</v>
+103</v>
 </c>
 <c r="D94">
 <v>
@@ -7749,7 +7654,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M93),'ci-timing-data-with-minimiza
 </c>
 <c r="E94" t="s">
 <v>
-482</v>
+121</v>
 </c>
 <c r="F94">
 <v>
@@ -7761,7 +7666,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M93),'ci-timing-data-with-minimiza
 </c>
 <c r="H94" t="s">
 <v>
-78</v>
+120</v>
 </c>
 <c r="I94">
 <v>
@@ -7769,15 +7674,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M93),'ci-timing-data-with-minimiza
 </c>
 <c r="J94" t="s">
 <v>
-478</v>
+100</v>
 </c>
 <c r="K94" t="s">
 <v>
-479</v>
+99</v>
 </c>
 <c r="L94" t="s">
 <v>
-480</v>
+98</v>
 </c>
 <c r="M94">
 <v>
@@ -7785,46 +7690,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M93),'ci-timing-data-with-minimiza
 </c>
 <c r="N94" t="s">
 <v>
-79</v>
+119</v>
 </c>
 <c r="P94" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q94" t="s">
 <v>
-80</v>
+118</v>
 </c>
 <c r="R94">
-<f t="shared" si="1"/>
+<f>
+D94/M94</f>
 <v>
 240.87548729897659</v>
 </c>
-<c r="S94" s="2">
+<c r="S94" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D94),'ci-timing-data-with-minimizatio'!D94/60/60/24,"")</f>
-<v>
-3.0510895057870371E-2</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T94" s="3">
+<c r="T94" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M94),'ci-timing-data-with-minimizatio'!M94,"")</f>
-<v>
-10.944000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="95" spans="1:20" x14ac:dyDescent="0.35">
+<row r="95" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A95" t="s">
 <v>
-474</v>
+105</v>
 </c>
 <c r="B95" t="s">
 <v>
-483</v>
+117</v>
 </c>
 <c r="C95" t="s">
 <v>
-476</v>
+103</v>
 </c>
 <c r="D95">
 <v>
@@ -7832,7 +7736,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M94),'ci-timing-data-with-minimiza
 </c>
 <c r="E95" t="s">
 <v>
-484</v>
+116</v>
 </c>
 <c r="F95">
 <v>
@@ -7844,7 +7748,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M94),'ci-timing-data-with-minimiza
 </c>
 <c r="H95" t="s">
 <v>
-150</v>
+115</v>
 </c>
 <c r="I95">
 <v>
@@ -7852,15 +7756,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M94),'ci-timing-data-with-minimiza
 </c>
 <c r="J95" t="s">
 <v>
-478</v>
+100</v>
 </c>
 <c r="K95" t="s">
 <v>
-479</v>
+99</v>
 </c>
 <c r="L95" t="s">
 <v>
-480</v>
+98</v>
 </c>
 <c r="M95">
 <v>
@@ -7868,46 +7772,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M94),'ci-timing-data-with-minimiza
 </c>
 <c r="N95" t="s">
 <v>
-154</v>
+114</v>
 </c>
 <c r="P95" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q95" t="s">
 <v>
-155</v>
+113</v>
 </c>
 <c r="R95">
-<f t="shared" si="1"/>
+<f>
+D95/M95</f>
 <v>
 1054.9721857142858</v>
 </c>
-<c r="S95" s="2">
+<c r="S95" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D95),'ci-timing-data-with-minimizatio'!D95/60/60/24,"")</f>
-<v>
-2.5641685069444447E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T95" s="3">
+<c r="T95" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M95),'ci-timing-data-with-minimizatio'!M95,"")</f>
-<v>
-0.21</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="96" spans="1:20" x14ac:dyDescent="0.35">
+<row r="96" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A96" t="s">
 <v>
-474</v>
+105</v>
 </c>
 <c r="B96" t="s">
 <v>
-485</v>
+112</v>
 </c>
 <c r="C96" t="s">
 <v>
-476</v>
+103</v>
 </c>
 <c r="D96">
 <v>
@@ -7915,7 +7818,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M95),'ci-timing-data-with-minimiza
 </c>
 <c r="E96" t="s">
 <v>
-486</v>
+111</v>
 </c>
 <c r="F96">
 <v>
@@ -7927,7 +7830,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M95),'ci-timing-data-with-minimiza
 </c>
 <c r="H96" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I96">
 <v>
@@ -7935,15 +7838,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M95),'ci-timing-data-with-minimiza
 </c>
 <c r="J96" t="s">
 <v>
-478</v>
+100</v>
 </c>
 <c r="K96" t="s">
 <v>
-479</v>
+99</v>
 </c>
 <c r="L96" t="s">
 <v>
-480</v>
+98</v>
 </c>
 <c r="M96">
 <v>
@@ -7951,46 +7854,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M95),'ci-timing-data-with-minimiza
 </c>
 <c r="N96" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P96" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q96" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R96">
-<f t="shared" si="1"/>
+<f>
+D96/M96</f>
 <v>
 1220.4089755555556</v>
 </c>
-<c r="S96" s="2">
+<c r="S96" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D96),'ci-timing-data-with-minimizatio'!D96/60/60/24,"")</f>
-<v>
-6.3562967476851855E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T96" s="3">
+<c r="T96" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M96),'ci-timing-data-with-minimizatio'!M96,"")</f>
-<v>
-0.45</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="97" spans="1:20" x14ac:dyDescent="0.35">
+<row r="97" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A97" t="s">
 <v>
-474</v>
+105</v>
 </c>
 <c r="B97" t="s">
 <v>
-487</v>
+110</v>
 </c>
 <c r="C97" t="s">
 <v>
-476</v>
+103</v>
 </c>
 <c r="D97">
 <v>
@@ -7998,7 +7900,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M96),'ci-timing-data-with-minimiza
 </c>
 <c r="E97" t="s">
 <v>
-488</v>
+109</v>
 </c>
 <c r="F97">
 <v>
@@ -8010,7 +7912,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M96),'ci-timing-data-with-minimiza
 </c>
 <c r="H97" t="s">
 <v>
-52</v>
+108</v>
 </c>
 <c r="I97">
 <v>
@@ -8018,15 +7920,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M96),'ci-timing-data-with-minimiza
 </c>
 <c r="J97" t="s">
 <v>
-478</v>
+100</v>
 </c>
 <c r="K97" t="s">
 <v>
-479</v>
+99</v>
 </c>
 <c r="L97" t="s">
 <v>
-480</v>
+98</v>
 </c>
 <c r="M97">
 <v>
@@ -8034,46 +7936,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M96),'ci-timing-data-with-minimiza
 </c>
 <c r="N97" t="s">
 <v>
-56</v>
+107</v>
 </c>
 <c r="P97" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q97" t="s">
 <v>
-57</v>
+106</v>
 </c>
 <c r="R97">
-<f t="shared" si="1"/>
+<f>
+D97/M97</f>
 <v>
 1951.9446622516557</v>
 </c>
-<c r="S97" s="2">
+<c r="S97" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D97),'ci-timing-data-with-minimizatio'!D97/60/60/24,"")</f>
-<v>
-3.4113847685185183E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T97" s="3">
+<c r="T97" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M97),'ci-timing-data-with-minimizatio'!M97,"")</f>
-<v>
-0.151</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="98" spans="1:20" x14ac:dyDescent="0.35">
+<row r="98" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A98" t="s">
 <v>
-474</v>
+105</v>
 </c>
 <c r="B98" t="s">
 <v>
-489</v>
+104</v>
 </c>
 <c r="C98" t="s">
 <v>
-476</v>
+103</v>
 </c>
 <c r="D98">
 <v>
@@ -8081,7 +7982,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M97),'ci-timing-data-with-minimiza
 </c>
 <c r="E98" t="s">
 <v>
-490</v>
+102</v>
 </c>
 <c r="F98">
 <v>
@@ -8093,7 +7994,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M97),'ci-timing-data-with-minimiza
 </c>
 <c r="H98" t="s">
 <v>
-45</v>
+101</v>
 </c>
 <c r="I98">
 <v>
@@ -8101,15 +8002,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M97),'ci-timing-data-with-minimiza
 </c>
 <c r="J98" t="s">
 <v>
-478</v>
+100</v>
 </c>
 <c r="K98" t="s">
 <v>
-479</v>
+99</v>
 </c>
 <c r="L98" t="s">
 <v>
-480</v>
+98</v>
 </c>
 <c r="M98">
 <v>
@@ -8117,46 +8018,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M97),'ci-timing-data-with-minimiza
 </c>
 <c r="N98" t="s">
 <v>
-46</v>
+97</v>
 </c>
 <c r="P98" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q98" t="s">
 <v>
-47</v>
+96</v>
 </c>
 <c r="R98">
-<f t="shared" si="1"/>
+<f>
+D98/M98</f>
 <v>
 1737.7908778625954</v>
 </c>
-<c r="S98" s="2">
+<c r="S98" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D98),'ci-timing-data-with-minimizatio'!D98/60/60/24,"")</f>
-<v>
-2.6348449652777782E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T98" s="3">
+<c r="T98" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M98),'ci-timing-data-with-minimizatio'!M98,"")</f>
-<v>
-0.13100000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="99" spans="1:20" x14ac:dyDescent="0.35">
+<row r="99" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A99" t="s">
 <v>
-491</v>
+83</v>
 </c>
 <c r="B99" t="s">
 <v>
-492</v>
+95</v>
 </c>
 <c r="C99" t="s">
 <v>
-493</v>
+81</v>
 </c>
 <c r="D99">
 <v>
@@ -8164,7 +8064,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M98),'ci-timing-data-with-minimiza
 </c>
 <c r="E99" t="s">
 <v>
-494</v>
+94</v>
 </c>
 <c r="F99">
 <v>
@@ -8176,23 +8076,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M98),'ci-timing-data-with-minimiza
 </c>
 <c r="H99" t="s">
 <v>
-495</v>
+93</v>
 </c>
 <c r="I99">
 <v>
 15128</v>
 </c>
-<c r="J99" s="1" t="s">
+<c r="J99" s="11" t="s">
 <v>
-496</v>
+70</v>
 </c>
 <c r="K99" t="s">
 <v>
-497</v>
+78</v>
 </c>
 <c r="L99" t="s">
 <v>
-498</v>
+77</v>
 </c>
 <c r="M99">
 <v>
@@ -8200,46 +8100,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M98),'ci-timing-data-with-minimiza
 </c>
 <c r="N99" t="s">
 <v>
-499</v>
+92</v>
 </c>
 <c r="P99" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q99" t="s">
 <v>
-500</v>
+91</v>
 </c>
 <c r="R99">
-<f t="shared" si="1"/>
+<f>
+D99/M99</f>
 <v>
 657.04117522658601</v>
 </c>
-<c r="S99" s="2">
+<c r="S99" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D99),'ci-timing-data-with-minimizatio'!D99/60/60/24,"")</f>
-<v>
-2.5171369097222221E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T99" s="3">
+<c r="T99" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M99),'ci-timing-data-with-minimizatio'!M99,"")</f>
-<v>
-0.33100000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="100" spans="1:20" x14ac:dyDescent="0.35">
+<row r="100" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A100" t="s">
 <v>
-491</v>
+83</v>
 </c>
 <c r="B100" t="s">
 <v>
-501</v>
+90</v>
 </c>
 <c r="C100" t="s">
 <v>
-493</v>
+81</v>
 </c>
 <c r="D100">
 <v>
@@ -8247,7 +8146,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M99),'ci-timing-data-with-minimiza
 </c>
 <c r="E100" t="s">
 <v>
-502</v>
+89</v>
 </c>
 <c r="F100">
 <v>
@@ -8259,23 +8158,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M99),'ci-timing-data-with-minimiza
 </c>
 <c r="H100" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I100">
 <v>
 15128</v>
 </c>
-<c r="J100" s="1" t="s">
+<c r="J100" s="11" t="s">
 <v>
-496</v>
+70</v>
 </c>
 <c r="K100" t="s">
 <v>
-497</v>
+78</v>
 </c>
 <c r="L100" t="s">
 <v>
-498</v>
+77</v>
 </c>
 <c r="M100">
 <v>
@@ -8283,46 +8182,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M99),'ci-timing-data-with-minimiza
 </c>
 <c r="N100" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P100" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q100" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R100">
-<f t="shared" si="1"/>
+<f>
+D100/M100</f>
 <v>
 800.34645892857134</v>
 </c>
-<c r="S100" s="2">
+<c r="S100" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D100),'ci-timing-data-with-minimizatio'!D100/60/60/24,"")</f>
-<v>
-5.1874307523148144E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T100" s="3">
+<c r="T100" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M100),'ci-timing-data-with-minimizatio'!M100,"")</f>
-<v>
-0.56000000000000005</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="101" spans="1:20" x14ac:dyDescent="0.35">
+<row r="101" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A101" t="s">
 <v>
-491</v>
+83</v>
 </c>
 <c r="B101" t="s">
 <v>
-503</v>
+88</v>
 </c>
 <c r="C101" t="s">
 <v>
-493</v>
+81</v>
 </c>
 <c r="D101">
 <v>
@@ -8330,7 +8228,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M100),'ci-timing-data-with-minimiz
 </c>
 <c r="E101" t="s">
 <v>
-504</v>
+87</v>
 </c>
 <c r="F101">
 <v>
@@ -8342,23 +8240,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M100),'ci-timing-data-with-minimiz
 </c>
 <c r="H101" t="s">
 <v>
-505</v>
+86</v>
 </c>
 <c r="I101">
 <v>
 15128</v>
 </c>
-<c r="J101" s="1" t="s">
+<c r="J101" s="11" t="s">
 <v>
-496</v>
+70</v>
 </c>
 <c r="K101" t="s">
 <v>
-497</v>
+78</v>
 </c>
 <c r="L101" t="s">
 <v>
-498</v>
+77</v>
 </c>
 <c r="M101">
 <v>
@@ -8366,46 +8264,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M100),'ci-timing-data-with-minimiz
 </c>
 <c r="N101" t="s">
 <v>
-506</v>
+85</v>
 </c>
 <c r="P101" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q101" t="s">
 <v>
-507</v>
+84</v>
 </c>
 <c r="R101">
-<f t="shared" si="1"/>
+<f>
+D101/M101</f>
 <v>
 716.64191703056758</v>
 </c>
-<c r="S101" s="2">
+<c r="S101" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D101),'ci-timing-data-with-minimizatio'!D101/60/60/24,"")</f>
-<v>
-3.7988657175925919E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T101" s="3">
+<c r="T101" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M101),'ci-timing-data-with-minimizatio'!M101,"")</f>
-<v>
-0.45800000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="102" spans="1:20" x14ac:dyDescent="0.35">
+<row r="102" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A102" t="s">
 <v>
-491</v>
+83</v>
 </c>
 <c r="B102" t="s">
 <v>
-508</v>
+82</v>
 </c>
 <c r="C102" t="s">
 <v>
-493</v>
+81</v>
 </c>
 <c r="D102">
 <v>
@@ -8413,7 +8310,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M101),'ci-timing-data-with-minimiz
 </c>
 <c r="E102" t="s">
 <v>
-509</v>
+80</v>
 </c>
 <c r="F102">
 <v>
@@ -8425,23 +8322,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M101),'ci-timing-data-with-minimiz
 </c>
 <c r="H102" t="s">
 <v>
-40</v>
+79</v>
 </c>
 <c r="I102">
 <v>
 15128</v>
 </c>
-<c r="J102" s="1" t="s">
+<c r="J102" s="11" t="s">
 <v>
-496</v>
+70</v>
 </c>
 <c r="K102" t="s">
 <v>
-497</v>
+78</v>
 </c>
 <c r="L102" t="s">
 <v>
-498</v>
+77</v>
 </c>
 <c r="M102">
 <v>
@@ -8449,46 +8346,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M101),'ci-timing-data-with-minimiz
 </c>
 <c r="N102" t="s">
 <v>
-41</v>
+76</v>
 </c>
 <c r="P102" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q102" t="s">
 <v>
-42</v>
+75</v>
 </c>
 <c r="R102">
-<f t="shared" si="1"/>
+<f>
+D102/M102</f>
 <v>
 1783.5639555555556</v>
 </c>
-<c r="S102" s="2">
+<c r="S102" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D102),'ci-timing-data-with-minimizatio'!D102/60/60/24,"")</f>
-<v>
-4.6446978009259269E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T102" s="3">
+<c r="T102" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M102),'ci-timing-data-with-minimizatio'!M102,"")</f>
-<v>
-0.22500000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="103" spans="1:20" x14ac:dyDescent="0.35">
+<row r="103" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A103" t="s">
 <v>
-510</v>
+74</v>
 </c>
 <c r="B103" t="s">
 <v>
-511</v>
+73</v>
 </c>
 <c r="C103" t="s">
 <v>
-512</v>
+72</v>
 </c>
 <c r="D103">
 <v>
@@ -8496,7 +8392,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M102),'ci-timing-data-with-minimiz
 </c>
 <c r="E103" t="s">
 <v>
-513</v>
+71</v>
 </c>
 <c r="F103">
 <v>
@@ -8508,23 +8404,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M102),'ci-timing-data-with-minimiz
 </c>
 <c r="H103" t="s">
 <v>
-203</v>
+27</v>
 </c>
 <c r="I103">
 <v>
 15121</v>
 </c>
-<c r="J103" s="1" t="s">
+<c r="J103" s="11" t="s">
 <v>
-496</v>
+70</v>
 </c>
 <c r="K103" t="s">
 <v>
-514</v>
+69</v>
 </c>
 <c r="L103" t="s">
 <v>
-515</v>
+68</v>
 </c>
 <c r="M103">
 <v>
@@ -8532,46 +8428,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M102),'ci-timing-data-with-minimiz
 </c>
 <c r="N103" t="s">
 <v>
-207</v>
+23</v>
 </c>
 <c r="P103" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q103" t="s">
 <v>
-208</v>
+22</v>
 </c>
 <c r="R103">
-<f t="shared" si="1"/>
+<f>
+D103/M103</f>
 <v>
 1314.8858885542168</v>
 </c>
-<c r="S103" s="2">
+<c r="S103" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D103),'ci-timing-data-with-minimizatio'!D103/60/60/24,"")</f>
-<v>
-5.0525707754629631E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T103" s="3">
+<c r="T103" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M103),'ci-timing-data-with-minimizatio'!M103,"")</f>
-<v>
-0.33200000000000002</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="104" spans="1:20" x14ac:dyDescent="0.35">
+<row r="104" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A104" t="s">
 <v>
-516</v>
+67</v>
 </c>
 <c r="B104" t="s">
 <v>
-517</v>
+66</v>
 </c>
 <c r="C104" t="s">
 <v>
-518</v>
+65</v>
 </c>
 <c r="D104">
 <v>
@@ -8579,7 +8474,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M103),'ci-timing-data-with-minimiz
 </c>
 <c r="E104" t="s">
 <v>
-519</v>
+64</v>
 </c>
 <c r="F104">
 <v>
@@ -8591,23 +8486,23 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M103),'ci-timing-data-with-minimiz
 </c>
 <c r="H104" t="s">
 <v>
-296</v>
+63</v>
 </c>
 <c r="I104">
 <v>
 14736</v>
 </c>
-<c r="J104" s="1" t="s">
+<c r="J104" s="11" t="s">
 <v>
-520</v>
+62</v>
 </c>
 <c r="K104" t="s">
 <v>
-521</v>
+61</v>
 </c>
 <c r="L104" t="s">
 <v>
-522</v>
+60</v>
 </c>
 <c r="M104">
 <v>
@@ -8615,46 +8510,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M103),'ci-timing-data-with-minimiz
 </c>
 <c r="N104" t="s">
 <v>
-297</v>
+59</v>
 </c>
 <c r="P104" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q104" t="s">
 <v>
-298</v>
+58</v>
 </c>
 <c r="R104">
-<f t="shared" si="1"/>
+<f>
+D104/M104</f>
 <v>
 381.50402930728245</v>
 </c>
-<c r="S104" s="2">
+<c r="S104" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D104),'ci-timing-data-with-minimizatio'!D104/60/60/24,"")</f>
-<v>
-4.9719159374999999E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T104" s="3">
+<c r="T104" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M104),'ci-timing-data-with-minimizatio'!M104,"")</f>
-<v>
-1.1259999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="105" spans="1:20" x14ac:dyDescent="0.35">
+<row r="105" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A105" t="s">
 <v>
-523</v>
+57</v>
 </c>
 <c r="B105" t="s">
 <v>
-524</v>
+56</v>
 </c>
 <c r="C105" t="s">
 <v>
-525</v>
+55</v>
 </c>
 <c r="D105">
 <v>
@@ -8662,7 +8556,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M104),'ci-timing-data-with-minimiz
 </c>
 <c r="E105" t="s">
 <v>
-526</v>
+54</v>
 </c>
 <c r="F105">
 <v>
@@ -8674,7 +8568,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M104),'ci-timing-data-with-minimiz
 </c>
 <c r="H105" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I105">
 <v>
@@ -8682,15 +8576,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M104),'ci-timing-data-with-minimiz
 </c>
 <c r="J105" t="s">
 <v>
-527</v>
+53</v>
 </c>
 <c r="K105" t="s">
 <v>
-528</v>
+52</v>
 </c>
 <c r="L105" t="s">
 <v>
-529</v>
+51</v>
 </c>
 <c r="M105">
 <v>
@@ -8698,46 +8592,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M104),'ci-timing-data-with-minimiz
 </c>
 <c r="N105" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P105" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q105" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R105">
-<f t="shared" si="1"/>
+<f>
+D105/M105</f>
 <v>
 2071.9941264822132</v>
 </c>
-<c r="S105" s="2">
+<c r="S105" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D105),'ci-timing-data-with-minimizatio'!D105/60/60/24,"")</f>
-<v>
-6.0672976157407415E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T105" s="3">
+<c r="T105" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M105),'ci-timing-data-with-minimizatio'!M105,"")</f>
-<v>
-0.253</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="106" spans="1:20" x14ac:dyDescent="0.35">
+<row r="106" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A106" t="s">
 <v>
-530</v>
+50</v>
 </c>
 <c r="B106" t="s">
 <v>
-531</v>
+49</v>
 </c>
 <c r="C106" t="s">
 <v>
-532</v>
+48</v>
 </c>
 <c r="D106">
 <v>
@@ -8745,7 +8638,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M105),'ci-timing-data-with-minimiz
 </c>
 <c r="E106" t="s">
 <v>
-533</v>
+47</v>
 </c>
 <c r="F106">
 <v>
@@ -8757,7 +8650,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M105),'ci-timing-data-with-minimiz
 </c>
 <c r="H106" t="s">
 <v>
-35</v>
+46</v>
 </c>
 <c r="I106">
 <v>
@@ -8765,15 +8658,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M105),'ci-timing-data-with-minimiz
 </c>
 <c r="J106" t="s">
 <v>
-534</v>
+36</v>
 </c>
 <c r="K106" t="s">
 <v>
-535</v>
+45</v>
 </c>
 <c r="L106" t="s">
 <v>
-536</v>
+44</v>
 </c>
 <c r="M106">
 <v>
@@ -8781,46 +8674,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M105),'ci-timing-data-with-minimiz
 </c>
 <c r="N106" t="s">
 <v>
-36</v>
+43</v>
 </c>
 <c r="P106" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q106" t="s">
 <v>
-37</v>
+42</v>
 </c>
 <c r="R106">
-<f t="shared" si="1"/>
+<f>
+D106/M106</f>
 <v>
 215.22499118165788</v>
 </c>
-<c r="S106" s="2">
+<c r="S106" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D106),'ci-timing-data-with-minimizatio'!D106/60/60/24,"")</f>
-<v>
-2.8248280092592597E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T106" s="3">
+<c r="T106" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M106),'ci-timing-data-with-minimizatio'!M106,"")</f>
-<v>
-1.1339999999999999</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="107" spans="1:20" x14ac:dyDescent="0.35">
+<row r="107" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A107" t="s">
 <v>
-537</v>
+41</v>
 </c>
 <c r="B107" t="s">
 <v>
-538</v>
+40</v>
 </c>
 <c r="C107" t="s">
 <v>
-539</v>
+39</v>
 </c>
 <c r="D107">
 <v>
@@ -8828,7 +8720,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M106),'ci-timing-data-with-minimiz
 </c>
 <c r="E107" t="s">
 <v>
-540</v>
+38</v>
 </c>
 <c r="F107">
 <v>
@@ -8840,7 +8732,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M106),'ci-timing-data-with-minimiz
 </c>
 <c r="H107" t="s">
 <v>
-279</v>
+37</v>
 </c>
 <c r="I107">
 <v>
@@ -8848,15 +8740,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M106),'ci-timing-data-with-minimiz
 </c>
 <c r="J107" t="s">
 <v>
-534</v>
+36</v>
 </c>
 <c r="K107" t="s">
 <v>
-541</v>
+35</v>
 </c>
 <c r="L107" t="s">
 <v>
-542</v>
+34</v>
 </c>
 <c r="M107">
 <v>
@@ -8864,46 +8756,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M106),'ci-timing-data-with-minimiz
 </c>
 <c r="N107" t="s">
 <v>
-280</v>
+33</v>
 </c>
 <c r="P107" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q107" t="s">
 <v>
-281</v>
+32</v>
 </c>
 <c r="R107">
-<f t="shared" si="1"/>
+<f>
+D107/M107</f>
 <v>
 1502.6928993710692</v>
 </c>
-<c r="S107" s="2">
+<c r="S107" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D107),'ci-timing-data-with-minimizatio'!D107/60/60/24,"")</f>
-<v>
-2.7653723495370368E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T107" s="3">
+<c r="T107" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M107),'ci-timing-data-with-minimizatio'!M107,"")</f>
-<v>
-0.159</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="108" spans="1:20" x14ac:dyDescent="0.35">
+<row r="108" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A108" t="s">
 <v>
-543</v>
+31</v>
 </c>
 <c r="B108" t="s">
 <v>
-544</v>
+30</v>
 </c>
 <c r="C108" t="s">
 <v>
-545</v>
+29</v>
 </c>
 <c r="D108">
 <v>
@@ -8911,7 +8802,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M107),'ci-timing-data-with-minimiz
 </c>
 <c r="E108" t="s">
 <v>
-546</v>
+28</v>
 </c>
 <c r="F108">
 <v>
@@ -8923,7 +8814,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M107),'ci-timing-data-with-minimiz
 </c>
 <c r="H108" t="s">
 <v>
-203</v>
+27</v>
 </c>
 <c r="I108">
 <v>
@@ -8931,15 +8822,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M107),'ci-timing-data-with-minimiz
 </c>
 <c r="J108" t="s">
 <v>
-547</v>
+26</v>
 </c>
 <c r="K108" t="s">
 <v>
-548</v>
+25</v>
 </c>
 <c r="L108" t="s">
 <v>
-549</v>
+24</v>
 </c>
 <c r="M108">
 <v>
@@ -8947,46 +8838,45 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M107),'ci-timing-data-with-minimiz
 </c>
 <c r="N108" t="s">
 <v>
-207</v>
+23</v>
 </c>
 <c r="P108" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q108" t="s">
 <v>
-208</v>
+22</v>
 </c>
 <c r="R108">
-<f t="shared" si="1"/>
+<f>
+D108/M108</f>
 <v>
 404.17059919261823</v>
 </c>
-<c r="S108" s="2">
+<c r="S108" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D108),'ci-timing-data-with-minimizatio'!D108/60/60/24,"")</f>
-<v>
-8.1114793865740744E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T108" s="3">
+<c r="T108" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M108),'ci-timing-data-with-minimizatio'!M108,"")</f>
-<v>
-1.734</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
-<row r="109" spans="1:20" x14ac:dyDescent="0.35">
+<row r="109" spans="1:20" customFormat="1" x14ac:dyDescent="0.35">
 <c r="A109" t="s">
 <v>
-550</v>
+21</v>
 </c>
 <c r="B109" t="s">
 <v>
-551</v>
+20</v>
 </c>
 <c r="C109" t="s">
 <v>
-552</v>
+19</v>
 </c>
 <c r="D109">
 <v>
@@ -8994,7 +8884,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M108),'ci-timing-data-with-minimiz
 </c>
 <c r="E109" t="s">
 <v>
-553</v>
+18</v>
 </c>
 <c r="F109">
 <v>
@@ -9006,7 +8896,7 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M108),'ci-timing-data-with-minimiz
 </c>
 <c r="H109" t="s">
 <v>
-136</v>
+17</v>
 </c>
 <c r="I109">
 <v>
@@ -9014,15 +8904,15 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M108),'ci-timing-data-with-minimiz
 </c>
 <c r="J109" t="s">
 <v>
-554</v>
+16</v>
 </c>
 <c r="K109" t="s">
 <v>
-555</v>
+15</v>
 </c>
 <c r="L109" t="s">
 <v>
-556</v>
+14</v>
 </c>
 <c r="M109">
 <v>
@@ -9030,32 +8920,31 @@ IF(ISNUMBER('ci-timing-data-with-minimizatio'!M108),'ci-timing-data-with-minimiz
 </c>
 <c r="N109" t="s">
 <v>
-137</v>
+13</v>
 </c>
 <c r="P109" t="s">
 <v>
-26</v>
+12</v>
 </c>
 <c r="Q109" t="s">
 <v>
-138</v>
+11</v>
 </c>
 <c r="R109">
-<f t="shared" si="1"/>
+<f>
+D109/M109</f>
 <v>
 857.6744463937622</v>
 </c>
-<c r="S109" s="2">
+<c r="S109" s="10" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!D109),'ci-timing-data-with-minimizatio'!D109/60/60/24,"")</f>
-<v>
-5.0924420254629624E-3</v>
+IF(ISNUMBER(#REF!),#REF!/60/60/24,"")</f>
+<v/>
 </c>
-<c r="T109" s="3">
+<c r="T109" s="9" t="str">
 <f>
-IF(ISNUMBER('ci-timing-data-with-minimizatio'!M109),'ci-timing-data-with-minimizatio'!M109,"")</f>
-<v>
-0.51300000000000001</v>
+IF(ISNUMBER(#REF!),#REF!,"")</f>
+<v/>
 </c>
 </row>
 </sheetData>

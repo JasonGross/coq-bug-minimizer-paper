@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="2" xr:uid="{9FC0EAEF-07C6-4C94-ADEF-9B715E85AFFE}" name="Table13" displayName="Table13" ref="A1:C102" totalsRowShown="0">
+<tableColumns count="3">
+<tableColumn id="1" xr3:uid="{CC24BE34-4796-4D9D-A8E5-21C93ACD9521}" name="Minimized File Running Time" dataDxfId="2">
+<calculatedColumnFormula>
+_xlfn.PERCENTILE.INC('ci-timing-data-with-minimizatio'!M:M,ROUND(1-$C2,2))</calculatedColumnFormula>
+</tableColumn>
+<tableColumn id="2" xr3:uid="{A5C8FEAE-A0F9-428F-9F95-47F2EB5A8259}" name="Reduction Factor (Time)" dataDxfId="1">
+<calculatedColumnFormula>
+_xlfn.PERCENTILE.INC('ci-timing-data-with-minimizatio'!R:R,ROUND(1-$C2,2))</calculatedColumnFormula>
+</tableColumn>
+<tableColumn id="3" xr3:uid="{A5737DF3-76E9-40D9-95BF-AFA70FEC6A9F}" name="Percentile" dataDxfId="0">
+<calculatedColumnFormula>
+C1+0.01</calculatedColumnFormula>
+</tableColumn>
+</tableColumns>
+<tableStyleInfo showFirstColumn="0" showLastColumn="0" showRowStripes="1" showColumnStripes="0"/>
+</table>

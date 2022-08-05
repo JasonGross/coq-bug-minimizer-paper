@@ -46,31 +46,23 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-TODO: swap red and purple for consistency with previous slide</a:t>
+Note: While I don’t have concrete plans to extend this tool to other proof assistants, I’m happy to act as an advisor.</a:t>
 </a:r>
+</a:p>
+<a:p>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-The most important consideration in </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, though, is linearization</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-About 86% of the files the minimizer produces are fully standalone</a:t>
+(I did start working on a Lean port, but didn’t get very far for lack of available time.)</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -102,7 +94,7 @@ About 86% of the files the minimizer produces are fully standalone</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="444238760"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="330362370"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

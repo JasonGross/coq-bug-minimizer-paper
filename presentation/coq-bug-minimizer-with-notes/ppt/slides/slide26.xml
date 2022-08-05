@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{75685509-7E92-4124-B1A2-770CF77A9A35}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{F822BA67-CC34-4477-85F0-6C75962B66EC}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -32,7 +32,12 @@
 <p:ph type="title"/>
 </p:nvPr>
 </p:nvSpPr>
-<p:spPr/>
+<p:spPr>
+<a:xfrm>
+<a:off x="838200" y="365125"/>
+<a:ext cx="11353800" cy="1325563"/>
+</a:xfrm>
+</p:spPr>
 <p:txBody>
 <a:bodyPr/>
 <a:lstStyle/>
@@ -40,17 +45,17 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How Much Do We Minimize (Time)?</a:t>
+How Minimal is Minimal in Absolute Terms?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
 </p:sp>
 <p:graphicFrame>
 <p:nvGraphicFramePr>
-<p:cNvPr id="8" name="Content Placeholder 7">
+<p:cNvPr id="10" name="Content Placeholder 9">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D1EE2E1B-D793-48FF-99D3-BDDE0FA4F364}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{7A8ED4E0-484A-4D6B-A52F-2D7EA04DB760}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -61,7 +66,7 @@ How Much Do We Minimize (Time)?</a:t>
 <p:ph idx="1"/>
 <p:extLst>
 <p:ext uri="{D42A27DB-BD31-4B8C-83A1-F6EECF244321}">
-<p14:modId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3503407461"/>
+<p14:modId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2362886018"/>
 </p:ext>
 </p:extLst>
 </p:nvPr>
@@ -81,7 +86,7 @@ How Much Do We Minimize (Time)?</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{32C979CF-8338-4518-8E47-088404D824CA}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{37CE18D7-91AB-47F2-951D-AE9A194E5F40}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -110,7 +115,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{C1A399A4-0B0B-4F8C-983B-430D52F2EC84}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4EF30DA6-E78E-4B27-A46B-391FF92BA696}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -137,61 +142,10 @@ ITP 2022</a:t>
 </p:sp>
 <p:sp>
 <p:nvSpPr>
-<p:cNvPr id="9" name="Title 1">
+<p:cNvPr id="8" name="Arrow: Left 7">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1D2054A2-574B-423A-96C8-A3D46AC6A507}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvSpPr txBox="1">
-<a:spLocks/>
-</p:cNvSpPr>
-<p:nvPr/>
-</p:nvSpPr>
-<p:spPr>
-<a:xfrm>
-<a:off x="838200" y="365125"/>
-<a:ext cx="10515600" cy="1325563"/>
-</a:xfrm>
-<a:prstGeom prst="rect">
-<a:avLst/>
-</a:prstGeom>
-</p:spPr>
-<p:txBody>
-<a:bodyPr vert="horz" lIns="91440" tIns="45720" rIns="91440" bIns="45720" rtlCol="0" anchor="ctr">
-<a:normAutofit/>
-</a:bodyPr>
-<a:lstStyle>
-<a:lvl1pPr algn="l" defTabSz="914400" rtl="0" eaLnBrk="1" latinLnBrk="0" hangingPunct="1">
-<a:lnSpc>
-<a:spcPct val="90000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPct val="0"/>
-</a:spcBef>
-<a:buNone/>
-<a:defRPr sz="4400" kern="1200">
-<a:solidFill>
-<a:schemeClr val="tx1"/>
-</a:solidFill>
-<a:latin typeface="+mj-lt"/>
-<a:ea typeface="+mj-ea"/>
-<a:cs typeface="+mj-cs"/>
-</a:defRPr>
-</a:lvl1pPr>
-</a:lstStyle>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-</p:txBody>
-</p:sp>
-<p:sp>
-<p:nvSpPr>
-<p:cNvPr id="10" name="Arrow: Right 9">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{3849E2C4-0E00-4F82-9CF5-0EEB094A8ECE}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8F89D438-66D8-4E86-8E39-EC04B8F98548}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -200,29 +154,30 @@ ITP 2022</a:t>
 </p:nvSpPr>
 <p:spPr>
 <a:xfrm>
-<a:off x="2745059" y="6176963"/>
-<a:ext cx="6701883" cy="544512"/>
+<a:off x="2745059" y="6176962"/>
+<a:ext cx="6701883" cy="544513"/>
 </a:xfrm>
-<a:prstGeom prst="rightArrow">
+<a:prstGeom prst="leftArrow">
 <a:avLst/>
 </a:prstGeom>
-<a:noFill/>
-<a:ln w="38100"/>
+<a:ln w="38100">
+<a:solidFill>
+<a:srgbClr val="507E32"/>
+</a:solidFill>
+</a:ln>
 </p:spPr>
 <p:style>
 <a:lnRef idx="2">
-<a:schemeClr val="accent6">
-<a:shade val="50000"/>
-</a:schemeClr>
+<a:schemeClr val="accent6"/>
 </a:lnRef>
 <a:fillRef idx="1">
-<a:schemeClr val="accent6"/>
+<a:schemeClr val="lt1"/>
 </a:fillRef>
 <a:effectRef idx="0">
 <a:schemeClr val="accent6"/>
 </a:effectRef>
 <a:fontRef idx="minor">
-<a:schemeClr val="lt1"/>
+<a:schemeClr val="dk1"/>
 </a:fontRef>
 </p:style>
 <p:txBody>
@@ -231,11 +186,7 @@ ITP 2022</a:t>
 <a:p>
 <a:pPr algn="ctr"/>
 <a:r>
-<a:rPr lang="en-US" dirty="0">
-<a:solidFill>
-<a:schemeClr val="tx1"/>
-</a:solidFill>
-</a:rPr>
+<a:rPr lang="en-US" dirty="0"/>
 <a:t>
 Better</a:t>
 </a:r>
@@ -245,7 +196,7 @@ Better</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1515507295"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2241407681"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

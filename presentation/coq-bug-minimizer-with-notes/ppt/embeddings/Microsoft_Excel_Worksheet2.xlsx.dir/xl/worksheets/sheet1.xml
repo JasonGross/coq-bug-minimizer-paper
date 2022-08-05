@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac xr xr2 xr3" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xr:uid="{1245B588-147F-4F6A-84E6-4D4DFB01D8D0}">
-<dimension ref="A1:F213"/>
+<dimension ref="A1:G213"/>
 <sheetViews>
 <sheetView tabSelected="1" workbookViewId="0">
-<selection activeCell="F2" sqref="F2"/>
+<selection activeCell="B1" sqref="B1"/>
 </sheetView>
 </sheetViews>
 <sheetFormatPr defaultRowHeight="14.5" x14ac:dyDescent="0.35"/>
@@ -14,7 +14,7 @@
 <col min="3" max="3" width="10" customWidth="1"/>
 </cols>
 <sheetData>
-<row r="1" spans="1:6" x14ac:dyDescent="0.35">
+<row r="1" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A1" s="2" t="s">
 <v>
 0</v>
@@ -39,8 +39,12 @@
 <v>
 5</v>
 </c>
+<c r="G1" t="s">
+<v>
+6</v>
+</c>
 </row>
-<row r="2" spans="1:6" x14ac:dyDescent="0.35">
+<row r="2" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A2" s="2">
 <v>
 1</v>
@@ -67,12 +71,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A2/COUNT(Table1[failing runs]),
 </c>
 <c r="F2">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-6.4444444444444443E-2</v>
+3.8666666666666667</v>
+</c>
+<c r="G2" s="2">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+2.8333333333333335</v>
 </c>
 </row>
-<row r="3" spans="1:6" x14ac:dyDescent="0.35">
+<row r="3" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A3" s="2">
 <f>
 A2+1</f>
@@ -101,12 +111,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A3/COUNT(Table1[failing runs]),
 </c>
 <c r="F3">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-6.5555555555555547E-2</v>
+3.9333333333333331</v>
+</c>
+<c r="G3" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+2.9166666666666665</v>
 </c>
 </row>
-<row r="4" spans="1:6" x14ac:dyDescent="0.35">
+<row r="4" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A4" s="2">
 <f t="shared" ref="A4:A67" si="0">
 A3+1</f>
@@ -135,12 +151,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A4/COUNT(Table1[failing runs]),
 </c>
 <c r="F4">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-6.6111111111111107E-2</v>
+3.9666666666666668</v>
+</c>
+<c r="G4" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.0333333333333332</v>
 </c>
 </row>
-<row r="5" spans="1:6" x14ac:dyDescent="0.35">
+<row r="5" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A5" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -168,12 +190,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A5/COUNT(Table1[failing runs]),
 </c>
 <c r="F5">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-7.1111111111111111E-2</v>
+4.2666666666666666</v>
+</c>
+<c r="G5" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.05</v>
 </c>
 </row>
-<row r="6" spans="1:6" x14ac:dyDescent="0.35">
+<row r="6" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A6" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -201,12 +229,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A6/COUNT(Table1[failing runs]),
 </c>
 <c r="F6">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-7.4999999999999997E-2</v>
+4.5</v>
+</c>
+<c r="G6" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.25</v>
 </c>
 </row>
-<row r="7" spans="1:6" x14ac:dyDescent="0.35">
+<row r="7" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A7" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -234,12 +268,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A7/COUNT(Table1[failing runs]),
 </c>
 <c r="F7">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-7.8611111111111118E-2</v>
+4.7166666666666668</v>
+</c>
+<c r="G7" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.4166666666666665</v>
 </c>
 </row>
-<row r="8" spans="1:6" x14ac:dyDescent="0.35">
+<row r="8" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A8" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -267,12 +307,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A8/COUNT(Table1[failing runs]),
 </c>
 <c r="F8">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-8.638888888888889E-2</v>
+5.1833333333333336</v>
+</c>
+<c r="G8" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.4333333333333331</v>
 </c>
 </row>
-<row r="9" spans="1:6" x14ac:dyDescent="0.35">
+<row r="9" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A9" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -300,12 +346,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A9/COUNT(Table1[failing runs]),
 </c>
 <c r="F9">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-8.9444444444444438E-2</v>
+5.3666666666666663</v>
+</c>
+<c r="G9" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.5833333333333335</v>
 </c>
 </row>
-<row r="10" spans="1:6" x14ac:dyDescent="0.35">
+<row r="10" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A10" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -333,12 +385,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A10/COUNT(Table1[failing runs])
 </c>
 <c r="F10">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-8.9722222222222231E-2</v>
+5.3833333333333337</v>
+</c>
+<c r="G10" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.6666666666666665</v>
 </c>
 </row>
-<row r="11" spans="1:6" x14ac:dyDescent="0.35">
+<row r="11" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A11" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -366,12 +424,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A11/COUNT(Table1[failing runs])
 </c>
 <c r="F11">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-9.3888888888888897E-2</v>
+5.6333333333333337</v>
+</c>
+<c r="G11" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.7166666666666668</v>
 </c>
 </row>
-<row r="12" spans="1:6" x14ac:dyDescent="0.35">
+<row r="12" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A12" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -399,12 +463,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A12/COUNT(Table1[failing runs])
 </c>
 <c r="F12">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-9.4166666666666676E-2</v>
+5.65</v>
+</c>
+<c r="G12" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+3.8333333333333335</v>
 </c>
 </row>
-<row r="13" spans="1:6" x14ac:dyDescent="0.35">
+<row r="13" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A13" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -432,12 +502,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A13/COUNT(Table1[failing runs])
 </c>
 <c r="F13">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-9.6388888888888885E-2</v>
+5.7833333333333332</v>
+</c>
+<c r="G13" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+4.2</v>
 </c>
 </row>
-<row r="14" spans="1:6" x14ac:dyDescent="0.35">
+<row r="14" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A14" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -465,12 +541,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A14/COUNT(Table1[failing runs])
 </c>
 <c r="F14">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-9.7777777777777769E-2</v>
+5.8666666666666663</v>
+</c>
+<c r="G14" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+4.4000000000000004</v>
 </c>
 </row>
-<row r="15" spans="1:6" x14ac:dyDescent="0.35">
+<row r="15" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A15" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -498,12 +580,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A15/COUNT(Table1[failing runs])
 </c>
 <c r="F15">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-9.9722222222222226E-2</v>
+5.9833333333333334</v>
+</c>
+<c r="G15" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+4.4333333333333336</v>
 </c>
 </row>
-<row r="16" spans="1:6" x14ac:dyDescent="0.35">
+<row r="16" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A16" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -531,12 +619,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A16/COUNT(Table1[failing runs])
 </c>
 <c r="F16">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1</v>
+6</v>
+</c>
+<c r="G16" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+4.6166666666666663</v>
 </c>
 </row>
-<row r="17" spans="1:6" x14ac:dyDescent="0.35">
+<row r="17" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A17" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -564,12 +658,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A17/COUNT(Table1[failing runs])
 </c>
 <c r="F17">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1</v>
+6</v>
+</c>
+<c r="G17" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+4.9666666666666668</v>
 </c>
 </row>
-<row r="18" spans="1:6" x14ac:dyDescent="0.35">
+<row r="18" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A18" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -597,12 +697,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A18/COUNT(Table1[failing runs])
 </c>
 <c r="F18">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10194444444444443</v>
+6.1166666666666663</v>
+</c>
+<c r="G18" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+5.0166666666666666</v>
 </c>
 </row>
-<row r="19" spans="1:6" x14ac:dyDescent="0.35">
+<row r="19" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A19" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -630,12 +736,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A19/COUNT(Table1[failing runs])
 </c>
 <c r="F19">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10250000000000001</v>
+6.15</v>
+</c>
+<c r="G19" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+5.083333333333333</v>
 </c>
 </row>
-<row r="20" spans="1:6" x14ac:dyDescent="0.35">
+<row r="20" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A20" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -663,12 +775,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A20/COUNT(Table1[failing runs])
 </c>
 <c r="F20">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10277777777777779</v>
+6.166666666666667</v>
+</c>
+<c r="G20" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+5.3166666666666664</v>
 </c>
 </row>
-<row r="21" spans="1:6" x14ac:dyDescent="0.35">
+<row r="21" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A21" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -696,12 +814,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A21/COUNT(Table1[failing runs])
 </c>
 <c r="F21">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10277777777777779</v>
+6.166666666666667</v>
+</c>
+<c r="G21" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+5.3666666666666663</v>
 </c>
 </row>
-<row r="22" spans="1:6" x14ac:dyDescent="0.35">
+<row r="22" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A22" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -729,12 +853,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A22/COUNT(Table1[failing runs])
 </c>
 <c r="F22">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10361111111111111</v>
+6.2166666666666668</v>
+</c>
+<c r="G22" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+5.55</v>
 </c>
 </row>
-<row r="23" spans="1:6" x14ac:dyDescent="0.35">
+<row r="23" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A23" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -762,12 +892,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A23/COUNT(Table1[failing runs])
 </c>
 <c r="F23">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10527777777777778</v>
+6.3166666666666664</v>
+</c>
+<c r="G23" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+5.6166666666666663</v>
 </c>
 </row>
-<row r="24" spans="1:6" x14ac:dyDescent="0.35">
+<row r="24" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A24" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -795,12 +931,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A24/COUNT(Table1[failing runs])
 </c>
 <c r="F24">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10555555555555556</v>
+6.333333333333333</v>
+</c>
+<c r="G24" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+6</v>
 </c>
 </row>
-<row r="25" spans="1:6" x14ac:dyDescent="0.35">
+<row r="25" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A25" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -828,12 +970,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A25/COUNT(Table1[failing runs])
 </c>
 <c r="F25">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1075</v>
+6.45</v>
+</c>
+<c r="G25" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+6.55</v>
 </c>
 </row>
-<row r="26" spans="1:6" x14ac:dyDescent="0.35">
+<row r="26" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A26" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -861,12 +1009,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A26/COUNT(Table1[failing runs])
 </c>
 <c r="F26">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1075</v>
+6.45</v>
+</c>
+<c r="G26" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+6.95</v>
 </c>
 </row>
-<row r="27" spans="1:6" x14ac:dyDescent="0.35">
+<row r="27" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A27" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -894,12 +1048,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A27/COUNT(Table1[failing runs])
 </c>
 <c r="F27">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10777777777777778</v>
+6.4666666666666668</v>
+</c>
+<c r="G27" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+7.3833333333333337</v>
 </c>
 </row>
-<row r="28" spans="1:6" x14ac:dyDescent="0.35">
+<row r="28" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A28" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -927,12 +1087,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A28/COUNT(Table1[failing runs])
 </c>
 <c r="F28">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10861111111111112</v>
+6.5166666666666666</v>
+</c>
+<c r="G28" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+8.7833333333333332</v>
 </c>
 </row>
-<row r="29" spans="1:6" x14ac:dyDescent="0.35">
+<row r="29" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A29" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -960,12 +1126,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A29/COUNT(Table1[failing runs])
 </c>
 <c r="F29">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.10944444444444444</v>
+6.5666666666666664</v>
+</c>
+<c r="G29" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+9.25</v>
 </c>
 </row>
-<row r="30" spans="1:6" x14ac:dyDescent="0.35">
+<row r="30" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A30" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -993,12 +1165,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A30/COUNT(Table1[failing runs])
 </c>
 <c r="F30">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.11166666666666666</v>
+6.7</v>
+</c>
+<c r="G30" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+9.8833333333333329</v>
 </c>
 </row>
-<row r="31" spans="1:6" x14ac:dyDescent="0.35">
+<row r="31" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A31" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1026,12 +1204,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A31/COUNT(Table1[failing runs])
 </c>
 <c r="F31">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.11944444444444445</v>
+7.166666666666667</v>
+</c>
+<c r="G31" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+11.1</v>
 </c>
 </row>
-<row r="32" spans="1:6" x14ac:dyDescent="0.35">
+<row r="32" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A32" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1059,12 +1243,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A32/COUNT(Table1[failing runs])
 </c>
 <c r="F32">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.12694444444444444</v>
+7.6166666666666663</v>
+</c>
+<c r="G32" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+11.416666666666666</v>
 </c>
 </row>
-<row r="33" spans="1:6" x14ac:dyDescent="0.35">
+<row r="33" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A33" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1092,12 +1282,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A33/COUNT(Table1[failing runs])
 </c>
 <c r="F33">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1275</v>
+7.65</v>
+</c>
+<c r="G33" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+15.983333333333333</v>
 </c>
 </row>
-<row r="34" spans="1:6" x14ac:dyDescent="0.35">
+<row r="34" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A34" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1125,12 +1321,18 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A34/COUNT(Table1[failing runs])
 </c>
 <c r="F34">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.12972222222222221</v>
+7.7833333333333332</v>
+</c>
+<c r="G34" s="3">
+<f>
+Table1[[#This Row],[failing runs]]/60</f>
+<v>
+28.533333333333335</v>
 </c>
 </row>
-<row r="35" spans="1:6" x14ac:dyDescent="0.35">
+<row r="35" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A35" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1153,12 +1355,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A35/COUNT(Table1[failing runs])
 </c>
 <c r="F35">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.13250000000000001</v>
+7.95</v>
 </c>
+<c r="G35" s="3"/>
 </row>
-<row r="36" spans="1:6" x14ac:dyDescent="0.35">
+<row r="36" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A36" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1181,12 +1384,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A36/COUNT(Table1[failing runs])
 </c>
 <c r="F36">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.13361111111111112</v>
+8.0166666666666675</v>
 </c>
+<c r="G36" s="3"/>
 </row>
-<row r="37" spans="1:6" x14ac:dyDescent="0.35">
+<row r="37" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A37" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1209,12 +1413,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A37/COUNT(Table1[failing runs])
 </c>
 <c r="F37">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.13472222222222224</v>
+8.0833333333333339</v>
 </c>
+<c r="G37" s="3"/>
 </row>
-<row r="38" spans="1:6" x14ac:dyDescent="0.35">
+<row r="38" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A38" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1237,12 +1442,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A38/COUNT(Table1[failing runs])
 </c>
 <c r="F38">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.13499999999999998</v>
+8.1</v>
 </c>
+<c r="G38" s="3"/>
 </row>
-<row r="39" spans="1:6" x14ac:dyDescent="0.35">
+<row r="39" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A39" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1265,12 +1471,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A39/COUNT(Table1[failing runs])
 </c>
 <c r="F39">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1377777777777778</v>
+8.2666666666666675</v>
 </c>
+<c r="G39" s="3"/>
 </row>
-<row r="40" spans="1:6" x14ac:dyDescent="0.35">
+<row r="40" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A40" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1293,12 +1500,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A40/COUNT(Table1[failing runs])
 </c>
 <c r="F40">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.14638888888888887</v>
+8.7833333333333332</v>
 </c>
+<c r="G40" s="3"/>
 </row>
-<row r="41" spans="1:6" x14ac:dyDescent="0.35">
+<row r="41" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A41" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1321,12 +1529,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A41/COUNT(Table1[failing runs])
 </c>
 <c r="F41">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.14833333333333334</v>
+8.9</v>
 </c>
+<c r="G41" s="3"/>
 </row>
-<row r="42" spans="1:6" x14ac:dyDescent="0.35">
+<row r="42" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A42" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1349,12 +1558,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A42/COUNT(Table1[failing runs])
 </c>
 <c r="F42">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.1497222222222222</v>
+8.9833333333333325</v>
 </c>
+<c r="G42" s="3"/>
 </row>
-<row r="43" spans="1:6" x14ac:dyDescent="0.35">
+<row r="43" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A43" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1377,12 +1587,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A43/COUNT(Table1[failing runs])
 </c>
 <c r="F43">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.155</v>
+9.3000000000000007</v>
 </c>
+<c r="G43" s="3"/>
 </row>
-<row r="44" spans="1:6" x14ac:dyDescent="0.35">
+<row r="44" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A44" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1405,12 +1616,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A44/COUNT(Table1[failing runs])
 </c>
 <c r="F44">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.15611111111111112</v>
+9.3666666666666671</v>
 </c>
+<c r="G44" s="3"/>
 </row>
-<row r="45" spans="1:6" x14ac:dyDescent="0.35">
+<row r="45" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A45" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1433,12 +1645,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A45/COUNT(Table1[failing runs])
 </c>
 <c r="F45">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.15777777777777777</v>
+9.4666666666666668</v>
 </c>
+<c r="G45" s="3"/>
 </row>
-<row r="46" spans="1:6" x14ac:dyDescent="0.35">
+<row r="46" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A46" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1461,12 +1674,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A46/COUNT(Table1[failing runs])
 </c>
 <c r="F46">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.15861111111111112</v>
+9.5166666666666675</v>
 </c>
+<c r="G46" s="3"/>
 </row>
-<row r="47" spans="1:6" x14ac:dyDescent="0.35">
+<row r="47" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A47" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1489,12 +1703,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A47/COUNT(Table1[failing runs])
 </c>
 <c r="F47">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.16166666666666665</v>
+9.6999999999999993</v>
 </c>
+<c r="G47" s="3"/>
 </row>
-<row r="48" spans="1:6" x14ac:dyDescent="0.35">
+<row r="48" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A48" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1517,12 +1732,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A48/COUNT(Table1[failing runs])
 </c>
 <c r="F48">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.16916666666666666</v>
+10.15</v>
 </c>
+<c r="G48" s="3"/>
 </row>
-<row r="49" spans="1:6" x14ac:dyDescent="0.35">
+<row r="49" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A49" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1545,12 +1761,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A49/COUNT(Table1[failing runs])
 </c>
 <c r="F49">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.17111111111111113</v>
+10.266666666666667</v>
 </c>
+<c r="G49" s="3"/>
 </row>
-<row r="50" spans="1:6" x14ac:dyDescent="0.35">
+<row r="50" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A50" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1573,12 +1790,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A50/COUNT(Table1[failing runs])
 </c>
 <c r="F50">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.17194444444444443</v>
+10.316666666666666</v>
 </c>
+<c r="G50" s="3"/>
 </row>
-<row r="51" spans="1:6" x14ac:dyDescent="0.35">
+<row r="51" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A51" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1601,12 +1819,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A51/COUNT(Table1[failing runs])
 </c>
 <c r="F51">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.17416666666666666</v>
+10.45</v>
 </c>
+<c r="G51" s="3"/>
 </row>
-<row r="52" spans="1:6" x14ac:dyDescent="0.35">
+<row r="52" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A52" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1629,12 +1848,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A52/COUNT(Table1[failing runs])
 </c>
 <c r="F52">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.17416666666666666</v>
+10.45</v>
 </c>
+<c r="G52" s="3"/>
 </row>
-<row r="53" spans="1:6" x14ac:dyDescent="0.35">
+<row r="53" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A53" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1657,12 +1877,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A53/COUNT(Table1[failing runs])
 </c>
 <c r="F53">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.17611111111111111</v>
+10.566666666666666</v>
 </c>
+<c r="G53" s="3"/>
 </row>
-<row r="54" spans="1:6" x14ac:dyDescent="0.35">
+<row r="54" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A54" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1685,12 +1906,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A54/COUNT(Table1[failing runs])
 </c>
 <c r="F54">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.17916666666666667</v>
+10.75</v>
 </c>
+<c r="G54" s="3"/>
 </row>
-<row r="55" spans="1:6" x14ac:dyDescent="0.35">
+<row r="55" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A55" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1713,12 +1935,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A55/COUNT(Table1[failing runs])
 </c>
 <c r="F55">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.18638888888888888</v>
+11.183333333333334</v>
 </c>
+<c r="G55" s="3"/>
 </row>
-<row r="56" spans="1:6" x14ac:dyDescent="0.35">
+<row r="56" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A56" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1741,12 +1964,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A56/COUNT(Table1[failing runs])
 </c>
 <c r="F56">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.19166666666666668</v>
+11.5</v>
 </c>
+<c r="G56" s="3"/>
 </row>
-<row r="57" spans="1:6" x14ac:dyDescent="0.35">
+<row r="57" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A57" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1769,12 +1993,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A57/COUNT(Table1[failing runs])
 </c>
 <c r="F57">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.19888888888888889</v>
+11.933333333333334</v>
 </c>
+<c r="G57" s="3"/>
 </row>
-<row r="58" spans="1:6" x14ac:dyDescent="0.35">
+<row r="58" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A58" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1797,12 +2022,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A58/COUNT(Table1[failing runs])
 </c>
 <c r="F58">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.20083333333333334</v>
+12.05</v>
 </c>
+<c r="G58" s="3"/>
 </row>
-<row r="59" spans="1:6" x14ac:dyDescent="0.35">
+<row r="59" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A59" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1825,12 +2051,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A59/COUNT(Table1[failing runs])
 </c>
 <c r="F59">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.20277777777777778</v>
+12.166666666666666</v>
 </c>
+<c r="G59" s="3"/>
 </row>
-<row r="60" spans="1:6" x14ac:dyDescent="0.35">
+<row r="60" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A60" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1853,12 +2080,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A60/COUNT(Table1[failing runs])
 </c>
 <c r="F60">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.20444444444444446</v>
+12.266666666666667</v>
 </c>
+<c r="G60" s="3"/>
 </row>
-<row r="61" spans="1:6" x14ac:dyDescent="0.35">
+<row r="61" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A61" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1881,12 +2109,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A61/COUNT(Table1[failing runs])
 </c>
 <c r="F61">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.20583333333333334</v>
+12.35</v>
 </c>
+<c r="G61" s="3"/>
 </row>
-<row r="62" spans="1:6" x14ac:dyDescent="0.35">
+<row r="62" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A62" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1909,12 +2138,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A62/COUNT(Table1[failing runs])
 </c>
 <c r="F62">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.21055555555555555</v>
+12.633333333333333</v>
 </c>
+<c r="G62" s="3"/>
 </row>
-<row r="63" spans="1:6" x14ac:dyDescent="0.35">
+<row r="63" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A63" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1937,12 +2167,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A63/COUNT(Table1[failing runs])
 </c>
 <c r="F63">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.21249999999999999</v>
+12.75</v>
 </c>
+<c r="G63" s="3"/>
 </row>
-<row r="64" spans="1:6" x14ac:dyDescent="0.35">
+<row r="64" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A64" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1965,12 +2196,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A64/COUNT(Table1[failing runs])
 </c>
 <c r="F64">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.21583333333333332</v>
+12.95</v>
 </c>
+<c r="G64" s="3"/>
 </row>
-<row r="65" spans="1:6" x14ac:dyDescent="0.35">
+<row r="65" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A65" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -1993,12 +2225,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A65/COUNT(Table1[failing runs])
 </c>
 <c r="F65">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.21833333333333332</v>
+13.1</v>
 </c>
+<c r="G65" s="3"/>
 </row>
-<row r="66" spans="1:6" x14ac:dyDescent="0.35">
+<row r="66" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A66" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -2021,12 +2254,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A66/COUNT(Table1[failing runs])
 </c>
 <c r="F66">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.21972222222222224</v>
+13.183333333333334</v>
 </c>
+<c r="G66" s="3"/>
 </row>
-<row r="67" spans="1:6" x14ac:dyDescent="0.35">
+<row r="67" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A67" s="2">
 <f t="shared" si="0"/>
 <v>
@@ -2049,12 +2283,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A67/COUNT(Table1[failing runs])
 </c>
 <c r="F67">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.22</v>
+13.2</v>
 </c>
+<c r="G67" s="3"/>
 </row>
-<row r="68" spans="1:6" x14ac:dyDescent="0.35">
+<row r="68" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A68" s="2">
 <f t="shared" ref="A68:A131" si="1">
 A67+1</f>
@@ -2078,12 +2313,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A68/COUNT(Table1[failing runs])
 </c>
 <c r="F68">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.22833333333333333</v>
+13.7</v>
 </c>
+<c r="G68" s="3"/>
 </row>
-<row r="69" spans="1:6" x14ac:dyDescent="0.35">
+<row r="69" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A69" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2106,12 +2342,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A69/COUNT(Table1[failing runs])
 </c>
 <c r="F69">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.23166666666666666</v>
+13.9</v>
 </c>
+<c r="G69" s="3"/>
 </row>
-<row r="70" spans="1:6" x14ac:dyDescent="0.35">
+<row r="70" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A70" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2134,12 +2371,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A70/COUNT(Table1[failing runs])
 </c>
 <c r="F70">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.23444444444444443</v>
+14.066666666666666</v>
 </c>
+<c r="G70" s="3"/>
 </row>
-<row r="71" spans="1:6" x14ac:dyDescent="0.35">
+<row r="71" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A71" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2162,12 +2400,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A71/COUNT(Table1[failing runs])
 </c>
 <c r="F71">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.24000000000000002</v>
+14.4</v>
 </c>
+<c r="G71" s="3"/>
 </row>
-<row r="72" spans="1:6" x14ac:dyDescent="0.35">
+<row r="72" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A72" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2190,12 +2429,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A72/COUNT(Table1[failing runs])
 </c>
 <c r="F72">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.24194444444444446</v>
+14.516666666666667</v>
 </c>
+<c r="G72" s="3"/>
 </row>
-<row r="73" spans="1:6" x14ac:dyDescent="0.35">
+<row r="73" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A73" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2218,12 +2458,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A73/COUNT(Table1[failing runs])
 </c>
 <c r="F73">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.25055555555555553</v>
+15.033333333333333</v>
 </c>
+<c r="G73" s="3"/>
 </row>
-<row r="74" spans="1:6" x14ac:dyDescent="0.35">
+<row r="74" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A74" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2246,12 +2487,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A74/COUNT(Table1[failing runs])
 </c>
 <c r="F74">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.25083333333333335</v>
+15.05</v>
 </c>
+<c r="G74" s="3"/>
 </row>
-<row r="75" spans="1:6" x14ac:dyDescent="0.35">
+<row r="75" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A75" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2274,12 +2516,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A75/COUNT(Table1[failing runs])
 </c>
 <c r="F75">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.25222222222222224</v>
+15.133333333333333</v>
 </c>
+<c r="G75" s="3"/>
 </row>
-<row r="76" spans="1:6" x14ac:dyDescent="0.35">
+<row r="76" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A76" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2302,12 +2545,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A76/COUNT(Table1[failing runs])
 </c>
 <c r="F76">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.25277777777777777</v>
+15.166666666666666</v>
 </c>
+<c r="G76" s="3"/>
 </row>
-<row r="77" spans="1:6" x14ac:dyDescent="0.35">
+<row r="77" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A77" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2330,12 +2574,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A77/COUNT(Table1[failing runs])
 </c>
 <c r="F77">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.25527777777777777</v>
+15.316666666666666</v>
 </c>
+<c r="G77" s="3"/>
 </row>
-<row r="78" spans="1:6" x14ac:dyDescent="0.35">
+<row r="78" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A78" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2358,12 +2603,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A78/COUNT(Table1[failing runs])
 </c>
 <c r="F78">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.26</v>
+15.6</v>
 </c>
+<c r="G78" s="3"/>
 </row>
-<row r="79" spans="1:6" x14ac:dyDescent="0.35">
+<row r="79" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A79" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2386,12 +2632,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A79/COUNT(Table1[failing runs])
 </c>
 <c r="F79">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.26027777777777777</v>
+15.616666666666667</v>
 </c>
+<c r="G79" s="3"/>
 </row>
-<row r="80" spans="1:6" x14ac:dyDescent="0.35">
+<row r="80" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A80" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2414,12 +2661,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A80/COUNT(Table1[failing runs])
 </c>
 <c r="F80">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.26972222222222225</v>
+16.183333333333334</v>
 </c>
+<c r="G80" s="3"/>
 </row>
-<row r="81" spans="1:6" x14ac:dyDescent="0.35">
+<row r="81" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A81" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2442,12 +2690,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A81/COUNT(Table1[failing runs])
 </c>
 <c r="F81">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.27305555555555555</v>
+16.383333333333333</v>
 </c>
+<c r="G81" s="3"/>
 </row>
-<row r="82" spans="1:6" x14ac:dyDescent="0.35">
+<row r="82" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A82" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2470,12 +2719,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A82/COUNT(Table1[failing runs])
 </c>
 <c r="F82">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.27611111111111108</v>
+16.566666666666666</v>
 </c>
+<c r="G82" s="3"/>
 </row>
-<row r="83" spans="1:6" x14ac:dyDescent="0.35">
+<row r="83" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A83" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2498,12 +2748,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A83/COUNT(Table1[failing runs])
 </c>
 <c r="F83">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.2772222222222222</v>
+16.633333333333333</v>
 </c>
+<c r="G83" s="3"/>
 </row>
-<row r="84" spans="1:6" x14ac:dyDescent="0.35">
+<row r="84" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A84" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2526,12 +2777,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A84/COUNT(Table1[failing runs])
 </c>
 <c r="F84">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.28833333333333333</v>
+17.3</v>
 </c>
+<c r="G84" s="3"/>
 </row>
-<row r="85" spans="1:6" x14ac:dyDescent="0.35">
+<row r="85" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A85" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2554,12 +2806,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A85/COUNT(Table1[failing runs])
 </c>
 <c r="F85">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.29194444444444445</v>
+17.516666666666666</v>
 </c>
+<c r="G85" s="3"/>
 </row>
-<row r="86" spans="1:6" x14ac:dyDescent="0.35">
+<row r="86" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A86" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2582,12 +2835,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A86/COUNT(Table1[failing runs])
 </c>
 <c r="F86">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.2936111111111111</v>
+17.616666666666667</v>
 </c>
+<c r="G86" s="3"/>
 </row>
-<row r="87" spans="1:6" x14ac:dyDescent="0.35">
+<row r="87" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A87" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2610,12 +2864,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A87/COUNT(Table1[failing runs])
 </c>
 <c r="F87">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.30194444444444446</v>
+18.116666666666667</v>
 </c>
+<c r="G87" s="3"/>
 </row>
-<row r="88" spans="1:6" x14ac:dyDescent="0.35">
+<row r="88" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A88" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2638,12 +2893,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A88/COUNT(Table1[failing runs])
 </c>
 <c r="F88">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.31166666666666665</v>
+18.7</v>
 </c>
+<c r="G88" s="3"/>
 </row>
-<row r="89" spans="1:6" x14ac:dyDescent="0.35">
+<row r="89" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A89" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2666,12 +2922,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A89/COUNT(Table1[failing runs])
 </c>
 <c r="F89">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.32666666666666672</v>
+19.600000000000001</v>
 </c>
+<c r="G89" s="3"/>
 </row>
-<row r="90" spans="1:6" x14ac:dyDescent="0.35">
+<row r="90" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A90" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2694,12 +2951,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A90/COUNT(Table1[failing runs])
 </c>
 <c r="F90">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.33555555555555555</v>
+20.133333333333333</v>
 </c>
+<c r="G90" s="3"/>
 </row>
-<row r="91" spans="1:6" x14ac:dyDescent="0.35">
+<row r="91" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A91" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2722,12 +2980,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A91/COUNT(Table1[failing runs])
 </c>
 <c r="F91">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.33583333333333332</v>
+20.149999999999999</v>
 </c>
+<c r="G91" s="3"/>
 </row>
-<row r="92" spans="1:6" x14ac:dyDescent="0.35">
+<row r="92" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A92" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2750,12 +3009,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A92/COUNT(Table1[failing runs])
 </c>
 <c r="F92">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.34111111111111109</v>
+20.466666666666665</v>
 </c>
+<c r="G92" s="3"/>
 </row>
-<row r="93" spans="1:6" x14ac:dyDescent="0.35">
+<row r="93" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A93" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2778,12 +3038,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A93/COUNT(Table1[failing runs])
 </c>
 <c r="F93">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.34583333333333333</v>
+20.75</v>
 </c>
+<c r="G93" s="3"/>
 </row>
-<row r="94" spans="1:6" x14ac:dyDescent="0.35">
+<row r="94" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A94" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2806,12 +3067,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A94/COUNT(Table1[failing runs])
 </c>
 <c r="F94">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.37138888888888894</v>
+22.283333333333335</v>
 </c>
+<c r="G94" s="3"/>
 </row>
-<row r="95" spans="1:6" x14ac:dyDescent="0.35">
+<row r="95" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A95" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2834,12 +3096,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A95/COUNT(Table1[failing runs])
 </c>
 <c r="F95">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.37222222222222218</v>
+22.333333333333332</v>
 </c>
+<c r="G95" s="3"/>
 </row>
-<row r="96" spans="1:6" x14ac:dyDescent="0.35">
+<row r="96" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A96" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2862,12 +3125,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A96/COUNT(Table1[failing runs])
 </c>
 <c r="F96">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.38861111111111113</v>
+23.316666666666666</v>
 </c>
+<c r="G96" s="3"/>
 </row>
-<row r="97" spans="1:6" x14ac:dyDescent="0.35">
+<row r="97" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A97" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2890,12 +3154,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A97/COUNT(Table1[failing runs])
 </c>
 <c r="F97">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.39416666666666667</v>
+23.65</v>
 </c>
+<c r="G97" s="3"/>
 </row>
-<row r="98" spans="1:6" x14ac:dyDescent="0.35">
+<row r="98" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A98" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2918,12 +3183,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A98/COUNT(Table1[failing runs])
 </c>
 <c r="F98">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.41277777777777774</v>
+24.766666666666666</v>
 </c>
+<c r="G98" s="3"/>
 </row>
-<row r="99" spans="1:6" x14ac:dyDescent="0.35">
+<row r="99" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A99" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2946,12 +3212,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A99/COUNT(Table1[failing runs])
 </c>
 <c r="F99">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.42222222222222222</v>
+25.333333333333332</v>
 </c>
+<c r="G99" s="3"/>
 </row>
-<row r="100" spans="1:6" x14ac:dyDescent="0.35">
+<row r="100" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A100" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -2974,12 +3241,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A100/COUNT(Table1[failing runs]
 </c>
 <c r="F100">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.43861111111111112</v>
+26.316666666666666</v>
 </c>
+<c r="G100" s="3"/>
 </row>
-<row r="101" spans="1:6" x14ac:dyDescent="0.35">
+<row r="101" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A101" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3002,12 +3270,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A101/COUNT(Table1[failing runs]
 </c>
 <c r="F101">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.47416666666666668</v>
+28.45</v>
 </c>
+<c r="G101" s="3"/>
 </row>
-<row r="102" spans="1:6" x14ac:dyDescent="0.35">
+<row r="102" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A102" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3030,12 +3299,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A102/COUNT(Table1[failing runs]
 </c>
 <c r="F102">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.48749999999999999</v>
+29.25</v>
 </c>
+<c r="G102" s="3"/>
 </row>
-<row r="103" spans="1:6" x14ac:dyDescent="0.35">
+<row r="103" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A103" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3058,12 +3328,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A103/COUNT(Table1[failing runs]
 </c>
 <c r="F103">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.49833333333333329</v>
+29.9</v>
 </c>
+<c r="G103" s="3"/>
 </row>
-<row r="104" spans="1:6" x14ac:dyDescent="0.35">
+<row r="104" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A104" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3086,12 +3357,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A104/COUNT(Table1[failing runs]
 </c>
 <c r="F104">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.51583333333333337</v>
+30.95</v>
 </c>
+<c r="G104" s="3"/>
 </row>
-<row r="105" spans="1:6" x14ac:dyDescent="0.35">
+<row r="105" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A105" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3114,12 +3386,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A105/COUNT(Table1[failing runs]
 </c>
 <c r="F105">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.52916666666666667</v>
+31.75</v>
 </c>
+<c r="G105" s="3"/>
 </row>
-<row r="106" spans="1:6" x14ac:dyDescent="0.35">
+<row r="106" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A106" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3142,12 +3415,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A106/COUNT(Table1[failing runs]
 </c>
 <c r="F106">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.54749999999999999</v>
+32.85</v>
 </c>
+<c r="G106" s="3"/>
 </row>
-<row r="107" spans="1:6" x14ac:dyDescent="0.35">
+<row r="107" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A107" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3170,12 +3444,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A107/COUNT(Table1[failing runs]
 </c>
 <c r="F107">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.56972222222222213</v>
+34.18333333333333</v>
 </c>
+<c r="G107" s="3"/>
 </row>
-<row r="108" spans="1:6" x14ac:dyDescent="0.35">
+<row r="108" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A108" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3198,12 +3473,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A108/COUNT(Table1[failing runs]
 </c>
 <c r="F108">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.57333333333333336</v>
+34.4</v>
 </c>
+<c r="G108" s="3"/>
 </row>
-<row r="109" spans="1:6" x14ac:dyDescent="0.35">
+<row r="109" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A109" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3226,12 +3502,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A109/COUNT(Table1[failing runs]
 </c>
 <c r="F109">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.57916666666666672</v>
+34.75</v>
 </c>
+<c r="G109" s="3"/>
 </row>
-<row r="110" spans="1:6" x14ac:dyDescent="0.35">
+<row r="110" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A110" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3254,12 +3531,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A110/COUNT(Table1[failing runs]
 </c>
 <c r="F110">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.5988888888888888</v>
+35.93333333333333</v>
 </c>
+<c r="G110" s="3"/>
 </row>
-<row r="111" spans="1:6" x14ac:dyDescent="0.35">
+<row r="111" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A111" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3282,12 +3560,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A111/COUNT(Table1[failing runs]
 </c>
 <c r="F111">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.60083333333333333</v>
+36.049999999999997</v>
 </c>
+<c r="G111" s="3"/>
 </row>
-<row r="112" spans="1:6" x14ac:dyDescent="0.35">
+<row r="112" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A112" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3310,12 +3589,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A112/COUNT(Table1[failing runs]
 </c>
 <c r="F112">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.61361111111111122</v>
+36.81666666666667</v>
 </c>
+<c r="G112" s="3"/>
 </row>
-<row r="113" spans="1:6" x14ac:dyDescent="0.35">
+<row r="113" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A113" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3338,12 +3618,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A113/COUNT(Table1[failing runs]
 </c>
 <c r="F113">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.65833333333333333</v>
+39.5</v>
 </c>
+<c r="G113" s="3"/>
 </row>
-<row r="114" spans="1:6" x14ac:dyDescent="0.35">
+<row r="114" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A114" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3366,12 +3647,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A114/COUNT(Table1[failing runs]
 </c>
 <c r="F114">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.66249999999999998</v>
+39.75</v>
 </c>
+<c r="G114" s="3"/>
 </row>
-<row r="115" spans="1:6" x14ac:dyDescent="0.35">
+<row r="115" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A115" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3394,12 +3676,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A115/COUNT(Table1[failing runs]
 </c>
 <c r="F115">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.67249999999999999</v>
+40.35</v>
 </c>
+<c r="G115" s="3"/>
 </row>
-<row r="116" spans="1:6" x14ac:dyDescent="0.35">
+<row r="116" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A116" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3422,12 +3705,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A116/COUNT(Table1[failing runs]
 </c>
 <c r="F116">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.69388888888888889</v>
+41.633333333333333</v>
 </c>
+<c r="G116" s="3"/>
 </row>
-<row r="117" spans="1:6" x14ac:dyDescent="0.35">
+<row r="117" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A117" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3450,12 +3734,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A117/COUNT(Table1[failing runs]
 </c>
 <c r="F117">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.72138888888888886</v>
+43.283333333333331</v>
 </c>
+<c r="G117" s="3"/>
 </row>
-<row r="118" spans="1:6" x14ac:dyDescent="0.35">
+<row r="118" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A118" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3478,12 +3763,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A118/COUNT(Table1[failing runs]
 </c>
 <c r="F118">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.72777777777777775</v>
+43.666666666666664</v>
 </c>
+<c r="G118" s="3"/>
 </row>
-<row r="119" spans="1:6" x14ac:dyDescent="0.35">
+<row r="119" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A119" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3506,12 +3792,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A119/COUNT(Table1[failing runs]
 </c>
 <c r="F119">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.74916666666666676</v>
+44.95</v>
 </c>
+<c r="G119" s="3"/>
 </row>
-<row r="120" spans="1:6" x14ac:dyDescent="0.35">
+<row r="120" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A120" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3534,12 +3821,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A120/COUNT(Table1[failing runs]
 </c>
 <c r="F120">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.76611111111111119</v>
+45.966666666666669</v>
 </c>
+<c r="G120" s="3"/>
 </row>
-<row r="121" spans="1:6" x14ac:dyDescent="0.35">
+<row r="121" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A121" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3562,12 +3850,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A121/COUNT(Table1[failing runs]
 </c>
 <c r="F121">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.7944444444444444</v>
+47.666666666666664</v>
 </c>
+<c r="G121" s="3"/>
 </row>
-<row r="122" spans="1:6" x14ac:dyDescent="0.35">
+<row r="122" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A122" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3590,12 +3879,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A122/COUNT(Table1[failing runs]
 </c>
 <c r="F122">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.81555555555555548</v>
+48.93333333333333</v>
 </c>
+<c r="G122" s="3"/>
 </row>
-<row r="123" spans="1:6" x14ac:dyDescent="0.35">
+<row r="123" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A123" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3618,12 +3908,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A123/COUNT(Table1[failing runs]
 </c>
 <c r="F123">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.88527777777777783</v>
+53.116666666666667</v>
 </c>
+<c r="G123" s="3"/>
 </row>
-<row r="124" spans="1:6" x14ac:dyDescent="0.35">
+<row r="124" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A124" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3646,12 +3937,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A124/COUNT(Table1[failing runs]
 </c>
 <c r="F124">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.92277777777777781</v>
+55.366666666666667</v>
 </c>
+<c r="G124" s="3"/>
 </row>
-<row r="125" spans="1:6" x14ac:dyDescent="0.35">
+<row r="125" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A125" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3674,12 +3966,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A125/COUNT(Table1[failing runs]
 </c>
 <c r="F125">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.9769444444444445</v>
+58.616666666666667</v>
 </c>
+<c r="G125" s="3"/>
 </row>
-<row r="126" spans="1:6" x14ac:dyDescent="0.35">
+<row r="126" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A126" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3702,12 +3995,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A126/COUNT(Table1[failing runs]
 </c>
 <c r="F126">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.97972222222222216</v>
+58.783333333333331</v>
 </c>
+<c r="G126" s="3"/>
 </row>
-<row r="127" spans="1:6" x14ac:dyDescent="0.35">
+<row r="127" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A127" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3730,12 +4024,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A127/COUNT(Table1[failing runs]
 </c>
 <c r="F127">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.98611111111111105</v>
+59.166666666666664</v>
 </c>
+<c r="G127" s="3"/>
 </row>
-<row r="128" spans="1:6" x14ac:dyDescent="0.35">
+<row r="128" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A128" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3758,12 +4053,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A128/COUNT(Table1[failing runs]
 </c>
 <c r="F128">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.9916666666666667</v>
+59.5</v>
 </c>
+<c r="G128" s="3"/>
 </row>
-<row r="129" spans="1:6" x14ac:dyDescent="0.35">
+<row r="129" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A129" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3786,12 +4082,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A129/COUNT(Table1[failing runs]
 </c>
 <c r="F129">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-0.9933333333333334</v>
+59.6</v>
 </c>
+<c r="G129" s="3"/>
 </row>
-<row r="130" spans="1:6" x14ac:dyDescent="0.35">
+<row r="130" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A130" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3814,12 +4111,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A130/COUNT(Table1[failing runs]
 </c>
 <c r="F130">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.0019444444444445</v>
+60.116666666666667</v>
 </c>
+<c r="G130" s="3"/>
 </row>
-<row r="131" spans="1:6" x14ac:dyDescent="0.35">
+<row r="131" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A131" s="2">
 <f t="shared" si="1"/>
 <v>
@@ -3842,12 +4140,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A131/COUNT(Table1[failing runs]
 </c>
 <c r="F131">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.0394444444444444</v>
+62.366666666666667</v>
 </c>
+<c r="G131" s="3"/>
 </row>
-<row r="132" spans="1:6" x14ac:dyDescent="0.35">
+<row r="132" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A132" s="2">
 <f t="shared" ref="A132:A195" si="2">
 A131+1</f>
@@ -3871,12 +4170,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A132/COUNT(Table1[failing runs]
 </c>
 <c r="F132">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.0594444444444444</v>
+63.56666666666667</v>
 </c>
+<c r="G132" s="3"/>
 </row>
-<row r="133" spans="1:6" x14ac:dyDescent="0.35">
+<row r="133" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A133" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -3899,12 +4199,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A133/COUNT(Table1[failing runs]
 </c>
 <c r="F133">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.088611111111111</v>
+65.316666666666663</v>
 </c>
+<c r="G133" s="3"/>
 </row>
-<row r="134" spans="1:6" x14ac:dyDescent="0.35">
+<row r="134" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A134" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -3927,12 +4228,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A134/COUNT(Table1[failing runs]
 </c>
 <c r="F134">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.1211111111111112</v>
+67.266666666666666</v>
 </c>
+<c r="G134" s="3"/>
 </row>
-<row r="135" spans="1:6" x14ac:dyDescent="0.35">
+<row r="135" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A135" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -3955,12 +4257,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A135/COUNT(Table1[failing runs]
 </c>
 <c r="F135">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.1341666666666665</v>
+68.05</v>
 </c>
+<c r="G135" s="3"/>
 </row>
-<row r="136" spans="1:6" x14ac:dyDescent="0.35">
+<row r="136" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A136" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -3983,12 +4286,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A136/COUNT(Table1[failing runs]
 </c>
 <c r="F136">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.1447222222222222</v>
+68.683333333333337</v>
 </c>
+<c r="G136" s="3"/>
 </row>
-<row r="137" spans="1:6" x14ac:dyDescent="0.35">
+<row r="137" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A137" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4011,12 +4315,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A137/COUNT(Table1[failing runs]
 </c>
 <c r="F137">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.153888888888889</v>
+69.233333333333334</v>
 </c>
+<c r="G137" s="3"/>
 </row>
-<row r="138" spans="1:6" x14ac:dyDescent="0.35">
+<row r="138" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A138" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4039,12 +4344,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A138/COUNT(Table1[failing runs]
 </c>
 <c r="F138">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.1577777777777778</v>
+69.466666666666669</v>
 </c>
+<c r="G138" s="3"/>
 </row>
-<row r="139" spans="1:6" x14ac:dyDescent="0.35">
+<row r="139" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A139" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4067,12 +4373,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A139/COUNT(Table1[failing runs]
 </c>
 <c r="F139">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.1652777777777779</v>
+69.916666666666671</v>
 </c>
+<c r="G139" s="3"/>
 </row>
-<row r="140" spans="1:6" x14ac:dyDescent="0.35">
+<row r="140" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A140" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4095,12 +4402,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A140/COUNT(Table1[failing runs]
 </c>
 <c r="F140">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.1730555555555557</v>
+70.38333333333334</v>
 </c>
+<c r="G140" s="3"/>
 </row>
-<row r="141" spans="1:6" x14ac:dyDescent="0.35">
+<row r="141" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A141" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4123,12 +4431,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A141/COUNT(Table1[failing runs]
 </c>
 <c r="F141">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.2191666666666667</v>
+73.150000000000006</v>
 </c>
+<c r="G141" s="3"/>
 </row>
-<row r="142" spans="1:6" x14ac:dyDescent="0.35">
+<row r="142" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A142" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4151,12 +4460,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A142/COUNT(Table1[failing runs]
 </c>
 <c r="F142">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.2591666666666665</v>
+75.55</v>
 </c>
+<c r="G142" s="3"/>
 </row>
-<row r="143" spans="1:6" x14ac:dyDescent="0.35">
+<row r="143" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A143" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4179,12 +4489,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A143/COUNT(Table1[failing runs]
 </c>
 <c r="F143">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.2955555555555556</v>
+77.733333333333334</v>
 </c>
+<c r="G143" s="3"/>
 </row>
-<row r="144" spans="1:6" x14ac:dyDescent="0.35">
+<row r="144" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A144" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4207,12 +4518,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A144/COUNT(Table1[failing runs]
 </c>
 <c r="F144">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.3394444444444444</v>
+80.36666666666666</v>
 </c>
+<c r="G144" s="3"/>
 </row>
-<row r="145" spans="1:6" x14ac:dyDescent="0.35">
+<row r="145" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A145" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4235,12 +4547,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A145/COUNT(Table1[failing runs]
 </c>
 <c r="F145">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.4027777777777779</v>
+84.166666666666671</v>
 </c>
+<c r="G145" s="3"/>
 </row>
-<row r="146" spans="1:6" x14ac:dyDescent="0.35">
+<row r="146" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A146" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4263,12 +4576,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A146/COUNT(Table1[failing runs]
 </c>
 <c r="F146">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.4063888888888889</v>
+84.38333333333334</v>
 </c>
+<c r="G146" s="3"/>
 </row>
-<row r="147" spans="1:6" x14ac:dyDescent="0.35">
+<row r="147" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A147" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4291,12 +4605,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A147/COUNT(Table1[failing runs]
 </c>
 <c r="F147">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.4144444444444444</v>
+84.86666666666666</v>
 </c>
+<c r="G147" s="3"/>
 </row>
-<row r="148" spans="1:6" x14ac:dyDescent="0.35">
+<row r="148" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A148" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4319,12 +4634,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A148/COUNT(Table1[failing runs]
 </c>
 <c r="F148">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.4505555555555556</v>
+87.033333333333331</v>
 </c>
+<c r="G148" s="3"/>
 </row>
-<row r="149" spans="1:6" x14ac:dyDescent="0.35">
+<row r="149" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A149" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4347,12 +4663,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A149/COUNT(Table1[failing runs]
 </c>
 <c r="F149">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.4597222222222221</v>
+87.583333333333329</v>
 </c>
+<c r="G149" s="3"/>
 </row>
-<row r="150" spans="1:6" x14ac:dyDescent="0.35">
+<row r="150" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A150" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4375,12 +4692,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A150/COUNT(Table1[failing runs]
 </c>
 <c r="F150">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.5077777777777779</v>
+90.466666666666669</v>
 </c>
+<c r="G150" s="3"/>
 </row>
-<row r="151" spans="1:6" x14ac:dyDescent="0.35">
+<row r="151" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A151" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4403,12 +4721,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A151/COUNT(Table1[failing runs]
 </c>
 <c r="F151">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.513611111111111</v>
+90.816666666666663</v>
 </c>
+<c r="G151" s="3"/>
 </row>
-<row r="152" spans="1:6" x14ac:dyDescent="0.35">
+<row r="152" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A152" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4431,12 +4750,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A152/COUNT(Table1[failing runs]
 </c>
 <c r="F152">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.5997222222222223</v>
+95.983333333333334</v>
 </c>
+<c r="G152" s="3"/>
 </row>
-<row r="153" spans="1:6" x14ac:dyDescent="0.35">
+<row r="153" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A153" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4459,12 +4779,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A153/COUNT(Table1[failing runs]
 </c>
 <c r="F153">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.6536111111111111</v>
+99.216666666666669</v>
 </c>
+<c r="G153" s="3"/>
 </row>
-<row r="154" spans="1:6" x14ac:dyDescent="0.35">
+<row r="154" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A154" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4487,12 +4808,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A154/COUNT(Table1[failing runs]
 </c>
 <c r="F154">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.7780555555555557</v>
+106.68333333333334</v>
 </c>
+<c r="G154" s="3"/>
 </row>
-<row r="155" spans="1:6" x14ac:dyDescent="0.35">
+<row r="155" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A155" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4515,12 +4837,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A155/COUNT(Table1[failing runs]
 </c>
 <c r="F155">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.7963888888888888</v>
+107.78333333333333</v>
 </c>
+<c r="G155" s="3"/>
 </row>
-<row r="156" spans="1:6" x14ac:dyDescent="0.35">
+<row r="156" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A156" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4543,12 +4866,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A156/COUNT(Table1[failing runs]
 </c>
 <c r="F156">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-1.9633333333333334</v>
+117.8</v>
 </c>
+<c r="G156" s="3"/>
 </row>
-<row r="157" spans="1:6" x14ac:dyDescent="0.35">
+<row r="157" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A157" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4571,12 +4895,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A157/COUNT(Table1[failing runs]
 </c>
 <c r="F157">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.0208333333333335</v>
+121.25</v>
 </c>
+<c r="G157" s="3"/>
 </row>
-<row r="158" spans="1:6" x14ac:dyDescent="0.35">
+<row r="158" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A158" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4599,12 +4924,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A158/COUNT(Table1[failing runs]
 </c>
 <c r="F158">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.1608333333333336</v>
+129.65</v>
 </c>
+<c r="G158" s="3"/>
 </row>
-<row r="159" spans="1:6" x14ac:dyDescent="0.35">
+<row r="159" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A159" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4627,12 +4953,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A159/COUNT(Table1[failing runs]
 </c>
 <c r="F159">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.1963888888888889</v>
+131.78333333333333</v>
 </c>
+<c r="G159" s="3"/>
 </row>
-<row r="160" spans="1:6" x14ac:dyDescent="0.35">
+<row r="160" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A160" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4655,12 +4982,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A160/COUNT(Table1[failing runs]
 </c>
 <c r="F160">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.3077777777777779</v>
+138.46666666666667</v>
 </c>
+<c r="G160" s="3"/>
 </row>
-<row r="161" spans="1:6" x14ac:dyDescent="0.35">
+<row r="161" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A161" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4683,12 +5011,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A161/COUNT(Table1[failing runs]
 </c>
 <c r="F161">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.3691666666666666</v>
+142.15</v>
 </c>
+<c r="G161" s="3"/>
 </row>
-<row r="162" spans="1:6" x14ac:dyDescent="0.35">
+<row r="162" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A162" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4711,12 +5040,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A162/COUNT(Table1[failing runs]
 </c>
 <c r="F162">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.4202777777777778</v>
+145.21666666666667</v>
 </c>
+<c r="G162" s="3"/>
 </row>
-<row r="163" spans="1:6" x14ac:dyDescent="0.35">
+<row r="163" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A163" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4739,12 +5069,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A163/COUNT(Table1[failing runs]
 </c>
 <c r="F163">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.4577777777777778</v>
+147.46666666666667</v>
 </c>
+<c r="G163" s="3"/>
 </row>
-<row r="164" spans="1:6" x14ac:dyDescent="0.35">
+<row r="164" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A164" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4767,12 +5098,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A164/COUNT(Table1[failing runs]
 </c>
 <c r="F164">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.5972222222222223</v>
+155.83333333333334</v>
 </c>
+<c r="G164" s="3"/>
 </row>
-<row r="165" spans="1:6" x14ac:dyDescent="0.35">
+<row r="165" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A165" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4795,12 +5127,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A165/COUNT(Table1[failing runs]
 </c>
 <c r="F165">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-2.8941666666666666</v>
+173.65</v>
 </c>
+<c r="G165" s="3"/>
 </row>
-<row r="166" spans="1:6" x14ac:dyDescent="0.35">
+<row r="166" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A166" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4823,12 +5156,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A166/COUNT(Table1[failing runs]
 </c>
 <c r="F166">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-3.0769444444444445</v>
+184.61666666666667</v>
 </c>
+<c r="G166" s="3"/>
 </row>
-<row r="167" spans="1:6" x14ac:dyDescent="0.35">
+<row r="167" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A167" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4851,12 +5185,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A167/COUNT(Table1[failing runs]
 </c>
 <c r="F167">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-3.1383333333333336</v>
+188.3</v>
 </c>
+<c r="G167" s="3"/>
 </row>
-<row r="168" spans="1:6" x14ac:dyDescent="0.35">
+<row r="168" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A168" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4879,12 +5214,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A168/COUNT(Table1[failing runs]
 </c>
 <c r="F168">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-3.2283333333333331</v>
+193.7</v>
 </c>
+<c r="G168" s="3"/>
 </row>
-<row r="169" spans="1:6" x14ac:dyDescent="0.35">
+<row r="169" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A169" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4907,12 +5243,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A169/COUNT(Table1[failing runs]
 </c>
 <c r="F169">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-3.2580555555555555</v>
+195.48333333333332</v>
 </c>
+<c r="G169" s="3"/>
 </row>
-<row r="170" spans="1:6" x14ac:dyDescent="0.35">
+<row r="170" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A170" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4935,12 +5272,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A170/COUNT(Table1[failing runs]
 </c>
 <c r="F170">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-3.3208333333333333</v>
+199.25</v>
 </c>
+<c r="G170" s="3"/>
 </row>
-<row r="171" spans="1:6" x14ac:dyDescent="0.35">
+<row r="171" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A171" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4963,12 +5301,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A171/COUNT(Table1[failing runs]
 </c>
 <c r="F171">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-3.8411111111111111</v>
+230.46666666666667</v>
 </c>
+<c r="G171" s="3"/>
 </row>
-<row r="172" spans="1:6" x14ac:dyDescent="0.35">
+<row r="172" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A172" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -4991,12 +5330,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A172/COUNT(Table1[failing runs]
 </c>
 <c r="F172">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.216388888888889</v>
+252.98333333333332</v>
 </c>
+<c r="G172" s="3"/>
 </row>
-<row r="173" spans="1:6" x14ac:dyDescent="0.35">
+<row r="173" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A173" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5019,12 +5359,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A173/COUNT(Table1[failing runs]
 </c>
 <c r="F173">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.277222222222222</v>
+256.63333333333333</v>
 </c>
+<c r="G173" s="3"/>
 </row>
-<row r="174" spans="1:6" x14ac:dyDescent="0.35">
+<row r="174" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A174" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5047,12 +5388,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A174/COUNT(Table1[failing runs]
 </c>
 <c r="F174">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.5222222222222221</v>
+271.33333333333331</v>
 </c>
+<c r="G174" s="3"/>
 </row>
-<row r="175" spans="1:6" x14ac:dyDescent="0.35">
+<row r="175" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A175" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5075,12 +5417,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A175/COUNT(Table1[failing runs]
 </c>
 <c r="F175">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.5597222222222218</v>
+273.58333333333331</v>
 </c>
+<c r="G175" s="3"/>
 </row>
-<row r="176" spans="1:6" x14ac:dyDescent="0.35">
+<row r="176" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A176" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5103,12 +5446,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A176/COUNT(Table1[failing runs]
 </c>
 <c r="F176">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.565555555555556</v>
+273.93333333333334</v>
 </c>
+<c r="G176" s="3"/>
 </row>
-<row r="177" spans="1:6" x14ac:dyDescent="0.35">
+<row r="177" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A177" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5131,12 +5475,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A177/COUNT(Table1[failing runs]
 </c>
 <c r="F177">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.6213888888888892</v>
+277.28333333333336</v>
 </c>
+<c r="G177" s="3"/>
 </row>
-<row r="178" spans="1:6" x14ac:dyDescent="0.35">
+<row r="178" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A178" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5159,12 +5504,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A178/COUNT(Table1[failing runs]
 </c>
 <c r="F178">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-4.7188888888888885</v>
+283.13333333333333</v>
 </c>
+<c r="G178" s="3"/>
 </row>
-<row r="179" spans="1:6" x14ac:dyDescent="0.35">
+<row r="179" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A179" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5187,12 +5533,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A179/COUNT(Table1[failing runs]
 </c>
 <c r="F179">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.1052777777777774</v>
+306.31666666666666</v>
 </c>
+<c r="G179" s="3"/>
 </row>
-<row r="180" spans="1:6" x14ac:dyDescent="0.35">
+<row r="180" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A180" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5215,12 +5562,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A180/COUNT(Table1[failing runs]
 </c>
 <c r="F180">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.2927777777777774</v>
+317.56666666666666</v>
 </c>
+<c r="G180" s="3"/>
 </row>
-<row r="181" spans="1:6" x14ac:dyDescent="0.35">
+<row r="181" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A181" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5243,12 +5591,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A181/COUNT(Table1[failing runs]
 </c>
 <c r="F181">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3272222222222219</v>
+319.63333333333333</v>
 </c>
+<c r="G181" s="3"/>
 </row>
-<row r="182" spans="1:6" x14ac:dyDescent="0.35">
+<row r="182" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A182" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5271,12 +5620,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A182/COUNT(Table1[failing runs]
 </c>
 <c r="F182">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3344444444444443</v>
+320.06666666666666</v>
 </c>
+<c r="G182" s="3"/>
 </row>
-<row r="183" spans="1:6" x14ac:dyDescent="0.35">
+<row r="183" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A183" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5299,12 +5649,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A183/COUNT(Table1[failing runs]
 </c>
 <c r="F183">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3344444444444443</v>
+320.06666666666666</v>
 </c>
+<c r="G183" s="3"/>
 </row>
-<row r="184" spans="1:6" x14ac:dyDescent="0.35">
+<row r="184" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A184" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5327,12 +5678,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A184/COUNT(Table1[failing runs]
 </c>
 <c r="F184">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3386111111111108</v>
+320.31666666666666</v>
 </c>
+<c r="G184" s="3"/>
 </row>
-<row r="185" spans="1:6" x14ac:dyDescent="0.35">
+<row r="185" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A185" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5355,12 +5707,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A185/COUNT(Table1[failing runs]
 </c>
 <c r="F185">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3391666666666673</v>
+320.35000000000002</v>
 </c>
+<c r="G185" s="3"/>
 </row>
-<row r="186" spans="1:6" x14ac:dyDescent="0.35">
+<row r="186" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A186" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5383,12 +5736,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A186/COUNT(Table1[failing runs]
 </c>
 <c r="F186">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3447222222222219</v>
+320.68333333333334</v>
 </c>
+<c r="G186" s="3"/>
 </row>
-<row r="187" spans="1:6" x14ac:dyDescent="0.35">
+<row r="187" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A187" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5411,12 +5765,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A187/COUNT(Table1[failing runs]
 </c>
 <c r="F187">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.3605555555555551</v>
+321.63333333333333</v>
 </c>
+<c r="G187" s="3"/>
 </row>
-<row r="188" spans="1:6" x14ac:dyDescent="0.35">
+<row r="188" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A188" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5439,12 +5794,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A188/COUNT(Table1[failing runs]
 </c>
 <c r="F188">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.4447222222222225</v>
+326.68333333333334</v>
 </c>
+<c r="G188" s="3"/>
 </row>
-<row r="189" spans="1:6" x14ac:dyDescent="0.35">
+<row r="189" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A189" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5467,12 +5823,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A189/COUNT(Table1[failing runs]
 </c>
 <c r="F189">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.4561111111111114</v>
+327.36666666666667</v>
 </c>
+<c r="G189" s="3"/>
 </row>
-<row r="190" spans="1:6" x14ac:dyDescent="0.35">
+<row r="190" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A190" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5495,12 +5852,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A190/COUNT(Table1[failing runs]
 </c>
 <c r="F190">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.4880555555555564</v>
+329.28333333333336</v>
 </c>
+<c r="G190" s="3"/>
 </row>
-<row r="191" spans="1:6" x14ac:dyDescent="0.35">
+<row r="191" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A191" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5523,12 +5881,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A191/COUNT(Table1[failing runs]
 </c>
 <c r="F191">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.5766666666666671</v>
+334.6</v>
 </c>
+<c r="G191" s="3"/>
 </row>
-<row r="192" spans="1:6" x14ac:dyDescent="0.35">
+<row r="192" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A192" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5551,12 +5910,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A192/COUNT(Table1[failing runs]
 </c>
 <c r="F192">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-5.620277777777777</v>
+337.21666666666664</v>
 </c>
+<c r="G192" s="3"/>
 </row>
-<row r="193" spans="1:6" x14ac:dyDescent="0.35">
+<row r="193" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A193" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5579,12 +5939,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A193/COUNT(Table1[failing runs]
 </c>
 <c r="F193">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-6.1677777777777774</v>
+370.06666666666666</v>
 </c>
+<c r="G193" s="3"/>
 </row>
-<row r="194" spans="1:6" x14ac:dyDescent="0.35">
+<row r="194" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A194" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5607,12 +5968,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A194/COUNT(Table1[failing runs]
 </c>
 <c r="F194">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-6.1941666666666659</v>
+371.65</v>
 </c>
+<c r="G194" s="3"/>
 </row>
-<row r="195" spans="1:6" x14ac:dyDescent="0.35">
+<row r="195" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A195" s="2">
 <f t="shared" si="2"/>
 <v>
@@ -5635,12 +5997,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A195/COUNT(Table1[failing runs]
 </c>
 <c r="F195">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-6.4391666666666669</v>
+386.35</v>
 </c>
+<c r="G195" s="3"/>
 </row>
-<row r="196" spans="1:6" x14ac:dyDescent="0.35">
+<row r="196" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A196" s="2">
 <f t="shared" ref="A196:A213" si="3">
 A195+1</f>
@@ -5664,12 +6027,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A196/COUNT(Table1[failing runs]
 </c>
 <c r="F196">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-7.4072222222222219</v>
+444.43333333333334</v>
 </c>
+<c r="G196" s="3"/>
 </row>
-<row r="197" spans="1:6" x14ac:dyDescent="0.35">
+<row r="197" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A197" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5692,12 +6056,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A197/COUNT(Table1[failing runs]
 </c>
 <c r="F197">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-7.5052777777777777</v>
+450.31666666666666</v>
 </c>
+<c r="G197" s="3"/>
 </row>
-<row r="198" spans="1:6" x14ac:dyDescent="0.35">
+<row r="198" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A198" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5720,12 +6085,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A198/COUNT(Table1[failing runs]
 </c>
 <c r="F198">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-8.112222222222222</v>
+486.73333333333335</v>
 </c>
+<c r="G198" s="3"/>
 </row>
-<row r="199" spans="1:6" x14ac:dyDescent="0.35">
+<row r="199" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A199" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5748,12 +6114,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A199/COUNT(Table1[failing runs]
 </c>
 <c r="F199">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-8.4147222222222222</v>
+504.88333333333333</v>
 </c>
+<c r="G199" s="3"/>
 </row>
-<row r="200" spans="1:6" x14ac:dyDescent="0.35">
+<row r="200" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A200" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5776,12 +6143,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A200/COUNT(Table1[failing runs]
 </c>
 <c r="F200">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-9.9461111111111116</v>
+596.76666666666665</v>
 </c>
+<c r="G200" s="3"/>
 </row>
-<row r="201" spans="1:6" x14ac:dyDescent="0.35">
+<row r="201" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A201" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5804,12 +6172,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A201/COUNT(Table1[failing runs]
 </c>
 <c r="F201">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-10.621944444444445</v>
+637.31666666666672</v>
 </c>
+<c r="G201" s="3"/>
 </row>
-<row r="202" spans="1:6" x14ac:dyDescent="0.35">
+<row r="202" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A202" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5832,12 +6201,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A202/COUNT(Table1[failing runs]
 </c>
 <c r="F202">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-10.679166666666667</v>
+640.75</v>
 </c>
+<c r="G202" s="3"/>
 </row>
-<row r="203" spans="1:6" x14ac:dyDescent="0.35">
+<row r="203" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A203" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5860,12 +6230,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A203/COUNT(Table1[failing runs]
 </c>
 <c r="F203">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-10.818888888888889</v>
+649.13333333333333</v>
 </c>
+<c r="G203" s="3"/>
 </row>
-<row r="204" spans="1:6" x14ac:dyDescent="0.35">
+<row r="204" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A204" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5888,12 +6259,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A204/COUNT(Table1[failing runs]
 </c>
 <c r="F204">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-12.222222222222223</v>
+733.33333333333337</v>
 </c>
+<c r="G204" s="3"/>
 </row>
-<row r="205" spans="1:6" x14ac:dyDescent="0.35">
+<row r="205" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A205" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5916,12 +6288,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A205/COUNT(Table1[failing runs]
 </c>
 <c r="F205">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-15.113333333333333</v>
+906.8</v>
 </c>
+<c r="G205" s="3"/>
 </row>
-<row r="206" spans="1:6" x14ac:dyDescent="0.35">
+<row r="206" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A206" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5944,12 +6317,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A206/COUNT(Table1[failing runs]
 </c>
 <c r="F206">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-15.875277777777777</v>
+952.51666666666665</v>
 </c>
+<c r="G206" s="3"/>
 </row>
-<row r="207" spans="1:6" x14ac:dyDescent="0.35">
+<row r="207" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A207" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -5972,12 +6346,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A207/COUNT(Table1[failing runs]
 </c>
 <c r="F207">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-15.900833333333333</v>
+954.05</v>
 </c>
+<c r="G207" s="3"/>
 </row>
-<row r="208" spans="1:6" x14ac:dyDescent="0.35">
+<row r="208" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A208" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -6000,12 +6375,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A208/COUNT(Table1[failing runs]
 </c>
 <c r="F208">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-18.597777777777775</v>
+1115.8666666666666</v>
 </c>
+<c r="G208" s="3"/>
 </row>
-<row r="209" spans="1:6" x14ac:dyDescent="0.35">
+<row r="209" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A209" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -6028,12 +6404,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A209/COUNT(Table1[failing runs]
 </c>
 <c r="F209">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-19.906944444444445</v>
+1194.4166666666667</v>
 </c>
+<c r="G209" s="3"/>
 </row>
-<row r="210" spans="1:6" x14ac:dyDescent="0.35">
+<row r="210" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A210" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -6056,12 +6433,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A210/COUNT(Table1[failing runs]
 </c>
 <c r="F210">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-20.297777777777775</v>
+1217.8666666666666</v>
 </c>
+<c r="G210" s="3"/>
 </row>
-<row r="211" spans="1:6" x14ac:dyDescent="0.35">
+<row r="211" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A211" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -6084,12 +6462,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A211/COUNT(Table1[failing runs]
 </c>
 <c r="F211">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-20.701111111111111</v>
+1242.0666666666666</v>
 </c>
+<c r="G211" s="3"/>
 </row>
-<row r="212" spans="1:6" x14ac:dyDescent="0.35">
+<row r="212" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A212" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -6112,12 +6491,13 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A212/COUNT(Table1[failing runs]
 </c>
 <c r="F212">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-21.188333333333333</v>
+1271.3</v>
 </c>
+<c r="G212" s="3"/>
 </row>
-<row r="213" spans="1:6" x14ac:dyDescent="0.35">
+<row r="213" spans="1:7" x14ac:dyDescent="0.35">
 <c r="A213" s="2">
 <f t="shared" si="3"/>
 <v>
@@ -6140,10 +6520,11 @@ IF(ISNUMBER(Table1[[#This Row],[failing runs]]),$A213/COUNT(Table1[failing runs]
 </c>
 <c r="F213">
 <f>
-Table1[[#This Row],[successful runs]]/60/60</f>
+Table1[[#This Row],[successful runs]]/60</f>
 <v>
-23.194722222222222</v>
+1391.6833333333334</v>
 </c>
+<c r="G213" s="3"/>
 </row>
 </sheetData>
 <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>

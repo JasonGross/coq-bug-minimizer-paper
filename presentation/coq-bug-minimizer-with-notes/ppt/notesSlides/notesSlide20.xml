@@ -46,14 +46,14 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-TODO: combine plots in pairs (both factors in one plot; both absolutes in one plot)</a:t>
+How much we minimize is a proxy for how useful minimization is.</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How much we minimize is a proxy for how useful minimization is.</a:t>
+LoC:</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -82,6 +82,57 @@ LoC.</a:t>
 <a:t>
 We start at less than 100% because the rare minimization run ends up making the code longer; the minimizer has a couple of passes that insert newlines in select places, and if it’s unable to remove anything, this could make the code longer.</a:t>
 </a:r>
+</a:p>
+<a:p>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Time:</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Final running time / CI failure time</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+50% achieve a reduction of nearly 1000x</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" marR="0" lvl="0" indent="0" algn="l" defTabSz="914400" rtl="0" eaLnBrk="1" fontAlgn="auto" latinLnBrk="0" hangingPunct="1">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:spcAft>
+<a:spcPts val="0"/>
+</a:spcAft>
+<a:buClrTx/>
+<a:buSzTx/>
+<a:buFontTx/>
+<a:buNone/>
+<a:tabLst/>
+<a:defRPr/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Over 90% achieve a reduction of at least 200x</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>

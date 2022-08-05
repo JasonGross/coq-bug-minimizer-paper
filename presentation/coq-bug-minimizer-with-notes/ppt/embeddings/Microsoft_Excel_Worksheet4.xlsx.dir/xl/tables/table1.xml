@@ -6,15 +6,15 @@
 <tableColumn id="2" xr3:uid="{44A1A403-F75B-4753-90FF-8543BFBCBADF}" name="final_size"/>
 <tableColumn id="3" xr3:uid="{5A6F7402-E158-46C8-BD72-9C19924E38C6}" name="total_line_reduction"/>
 <tableColumn id="4" xr3:uid="{7F4343B8-97DC-4B3F-812A-050A3CCA2715}" name="origin"/>
-<tableColumn id="5" xr3:uid="{92043736-4E16-47BB-B2FA-67150E934B94}" name="# Lines Initial" dataDxfId="4" totalsRowDxfId="3">
+<tableColumn id="5" xr3:uid="{92043736-4E16-47BB-B2FA-67150E934B94}" name="# Lines Initial" dataDxfId="7" totalsRowDxfId="6">
 <calculatedColumnFormula>
 Table1[[#This Row],[total_line_reduction]]+Table1[[#This Row],[final_size]]</calculatedColumnFormula>
 </tableColumn>
-<tableColumn id="6" xr3:uid="{6A995A22-817B-4717-9F12-11B85A92989E}" name="Reduction Factor" dataDxfId="2" totalsRowDxfId="1">
+<tableColumn id="6" xr3:uid="{6A995A22-817B-4717-9F12-11B85A92989E}" name="Reduction Factor" dataDxfId="5" totalsRowDxfId="4">
 <calculatedColumnFormula>
 Table1[[#This Row],['# Lines Initial]]/Table1[[#This Row],[final_size]]</calculatedColumnFormula>
 </tableColumn>
-<tableColumn id="7" xr3:uid="{D21126AE-1382-4997-9CF6-9BB88B8A3787}" name="% Reduction" totalsRowDxfId="0" dataCellStyle="Percent">
+<tableColumn id="7" xr3:uid="{D21126AE-1382-4997-9CF6-9BB88B8A3787}" name="% Reduction" totalsRowDxfId="3" dataCellStyle="Percent">
 <calculatedColumnFormula>
 (Table1[[#This Row],['# Lines Initial]]-Table1[[#This Row],[final_size]])/Table1[[#This Row],['# Lines Initial]]</calculatedColumnFormula>
 </tableColumn>
