@@ -286,6 +286,7 @@ paper/camera-ready.zip
 
 # Notebook checkpoints
 notebook/.ipynb_checkpoints
+notebook/presentation/.ipynb_checkpoints
 
 # ITP Format
 *.vtc
