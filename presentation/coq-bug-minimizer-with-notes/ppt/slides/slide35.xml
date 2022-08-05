@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{CE7024D7-8E9F-4322-ADF2-56AC1C3417F9}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How do we do this?</a:t>
+Coupling</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ How do we do this?</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{C4252B75-7094-4FF6-9F38-F9A63506F845}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -63,37 +63,362 @@ How do we do this?</a:t>
 </p:nvSpPr>
 <p:spPr/>
 <p:txBody>
-<a:bodyPr/>
+<a:bodyPr>
+<a:noAutofit/>
+</a:bodyPr>
 <a:lstStyle/>
 <a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0"/>
+<a:rPr lang="en-US" sz="2400" dirty="0"/>
 <a:t>
-Interfacing with Coq externally</a:t>
+Coupled definitions are almost always single statements in Coq</a:t>
 </a:r>
 </a:p>
 <a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0"/>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:solidFill>
+<a:srgbClr val="953800"/>
+</a:solidFill>
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
 <a:t>
-Delta debugging / brute force</a:t>
+Inductive</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ ℕ : </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:solidFill>
+<a:srgbClr val="CF222E"/>
+</a:solidFill>
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+Set</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ :=</a:t>
 </a:r>
 </a:p>
 <a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
 <a:r>
-<a:rPr lang="en-US" dirty="0"/>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
 <a:t>
-Tricks for </a:t>
+| zero : ℕ</a:t>
 </a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 <a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+| </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+succ</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ : ℕ -&gt; ℕ.</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:solidFill>
+<a:srgbClr val="953800"/>
+</a:solidFill>
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+Inductive</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ Even : ℕ -&gt; </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:solidFill>
+<a:srgbClr val="CF222E"/>
+</a:solidFill>
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+Set</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ :=</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+| </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+even_zero</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ : Even zero</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+| </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+even_succ</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ : </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+forall</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ {n}, Odd n -&gt; Even (</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+succ</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ n)</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:solidFill>
+<a:srgbClr val="CF222E"/>
+</a:solidFill>
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+with </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+Odd : ℕ -&gt; </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:solidFill>
+<a:srgbClr val="CF222E"/>
+</a:solidFill>
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+Set</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ :=</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:lnSpc>
+<a:spcPct val="100000"/>
+</a:lnSpc>
+<a:spcBef>
+<a:spcPts val="0"/>
+</a:spcBef>
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+| </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+odd_succ</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ : </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+forall</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ {n}, Even n -&gt; Odd (</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0" err="1">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+succ</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" sz="2400" b="1" dirty="0">
+<a:latin typeface="Consolas" panose="020B0609020204030204" pitchFamily="49" charset="0"/>
+</a:rPr>
+<a:t>
+ n).</a:t>
+</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -102,7 +427,7 @@ inlining</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{DCD6E96D-7600-47F3-891C-BCA233547B94}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -131,7 +456,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{547DBA2D-9827-466B-8FA6-77B6EC545314}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -159,143 +484,11 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1348967256"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="896839390"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
-<p:timing>
-<p:tnLst>
-<p:par>
-<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
-<p:childTnLst>
-<p:seq concurrent="1" nextAc="seek">
-<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
-<p:childTnLst>
-<p:par>
-<p:cTn id="3" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-<p:cond evt="onBegin" delay="0">
-<p:tn val="2"/>
-</p:cond>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="4" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="5" presetID="15" presetClass="emph" presetSubtype="0" nodeType="withEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:endCondLst>
-<p:cond evt="onNext" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:endCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr override="childStyle">
-<p:cTn id="6" dur="indefinite"/>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="1" end="1"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.fontWeight</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="bold"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-<p:par>
-<p:cTn id="7" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="8" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="9" presetID="15" presetClass="emph" presetSubtype="0" nodeType="clickEffect">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:set>
-<p:cBhvr override="childStyle">
-<p:cTn id="10" dur="indefinite"/>
-<p:tgtEl>
-<p:spTgt spid="3">
-<p:txEl>
-<p:pRg st="2" end="2"/>
-</p:txEl>
-</p:spTgt>
-</p:tgtEl>
-<p:attrNameLst>
-<p:attrName>
-style.fontWeight</p:attrName>
-</p:attrNameLst>
-</p:cBhvr>
-<p:to>
-<p:strVal val="bold"/>
-</p:to>
-</p:set>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-<p:prevCondLst>
-<p:cond evt="onPrev" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:prevCondLst>
-<p:nextCondLst>
-<p:cond evt="onNext" delay="0">
-<p:tgtEl>
-<p:sldTgt/>
-</p:tgtEl>
-</p:cond>
-</p:nextCondLst>
-</p:seq>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:tnLst>
-</p:timing>
 </p:sld>

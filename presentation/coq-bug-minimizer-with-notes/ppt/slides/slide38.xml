@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{3A1E504F-9140-45C2-9BD0-4E2CFD756DED}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{B9A4302D-E15F-4899-ACAD-D04113D397B4}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,8 +40,14 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Future Work</a:t>
+Name Changes on </a:t>
 </a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+Inlining</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -50,7 +56,7 @@ Future Work</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D5442E0E-C522-4764-80B0-7A14EF795A31}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4DD8B23D-F575-4D5F-9513-BA58121AD07D}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,34 +75,7 @@ Future Work</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-More automation of bug reporter work flow</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Better </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-inlining</a:t>
-</a:r>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-More minimization</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Other proof assistants???</a:t>
+TODO</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -106,7 +85,7 @@ Other proof assistants???</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4995442F-1097-4604-943A-CFAE7615CD93}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{7CF9C80B-0E00-41EF-B8E0-ACE112507439}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -135,7 +114,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9F8A79F1-3C18-4307-9C90-155CF5964429}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4116C01A-41F3-4938-B688-D56DF74CD248}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -163,7 +142,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1896450209"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1821038656"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

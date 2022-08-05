@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" show="0">
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
 <p:cSld>
 <p:spTree>
 <p:nvGrpSpPr>
@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{79786D24-2F2F-4010-840F-6787D4B04FE4}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9F19C7A9-BC20-4775-B1C7-EE5554A79E87}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,48 +40,73 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How Long Do Projects Take On CI?</a:t>
+How to make your proof assistant amenable to minimization</a:t>
 </a:r>
 </a:p>
 </p:txBody>
 </p:sp>
-<p:graphicFrame>
-<p:nvGraphicFramePr>
-<p:cNvPr id="9" name="Content Placeholder 8">
+<p:sp>
+<p:nvSpPr>
+<p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{CA52510F-5BB7-49C0-9104-3D6256625B2A}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13EE2BCE-552A-42C6-BF11-91F1DDE13C7E}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
-<p:cNvGraphicFramePr>
-<a:graphicFrameLocks noGrp="1"/>
-</p:cNvGraphicFramePr>
+<p:cNvSpPr>
+<a:spLocks noGrp="1"/>
+</p:cNvSpPr>
 <p:nvPr>
 <p:ph idx="1"/>
-<p:extLst>
-<p:ext uri="{D42A27DB-BD31-4B8C-83A1-F6EECF244321}">
-<p14:modId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2620250852"/>
-</p:ext>
-</p:extLst>
 </p:nvPr>
-</p:nvGraphicFramePr>
-<p:xfrm>
-<a:off x="838200" y="1825625"/>
-<a:ext cx="10515600" cy="4351338"/>
-</p:xfrm>
-<a:graphic>
-<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/chart">
-<c:chart xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="rId3"/>
-</a:graphicData>
-</a:graphic>
-</p:graphicFrame>
+</p:nvSpPr>
+<p:spPr/>
+<p:txBody>
+<a:bodyPr/>
+<a:lstStyle/>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Make it possible to have a single file with the same semantics as code in multiple files</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Primitive for “trust me, it’s true”</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Lack of forward references is nice</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Don’t forget the last mile of automating integration with CI!</a:t>
+</a:r>
+</a:p>
+</p:txBody>
+</p:sp>
 <p:sp>
 <p:nvSpPr>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{45FBE388-C2E0-433B-96B8-DDDE80076D63}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{848AF956-AF64-4FFB-AF0F-E363DA44E65E}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -110,7 +135,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{6A9B8144-19D1-4BD8-BA8D-3B0BA2826195}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{641E8AD5-C5D3-4EA5-AEAF-36A1BC29AF79}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -135,59 +160,244 @@ ITP 2022</a:t>
 </a:p>
 </p:txBody>
 </p:sp>
-<p:sp>
-<p:nvSpPr>
-<p:cNvPr id="13" name="TextBox 12">
-<a:extLst>
-<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{852CD56E-53BB-417E-9087-D0024614511C}"/>
-</a:ext>
-</a:extLst>
-</p:cNvPr>
-<p:cNvSpPr txBox="1"/>
-<p:nvPr/>
-</p:nvSpPr>
-<p:spPr>
-<a:xfrm>
-<a:off x="2912327" y="6176957"/>
-<a:ext cx="6367347" cy="646331"/>
-</a:xfrm>
-<a:prstGeom prst="rect">
-<a:avLst/>
-</a:prstGeom>
-<a:noFill/>
-</p:spPr>
-<p:txBody>
-<a:bodyPr wrap="square" rtlCol="0">
-<a:spAutoFit/>
-</a:bodyPr>
-<a:lstStyle/>
-<a:p>
-<a:pPr algn="ctr"/>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Selected CI Jobs, January through July 2022</a:t>
-</a:r>
-</a:p>
-<a:p>
-<a:pPr algn="ctr"/>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Modified box plot for seven-number summary + mean</a:t>
-</a:r>
-</a:p>
-</p:txBody>
-</p:sp>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="4140052121"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2600326380"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
 <p:clrMapOvr>
 <a:masterClrMapping/>
 </p:clrMapOvr>
+<p:timing>
+<p:tnLst>
+<p:par>
+<p:cTn id="1" dur="indefinite" restart="never" nodeType="tmRoot">
+<p:childTnLst>
+<p:seq concurrent="1" nextAc="seek">
+<p:cTn id="2" dur="indefinite" nodeType="mainSeq">
+<p:childTnLst>
+<p:par>
+<p:cTn id="3" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="4" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="5" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="6" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="0" end="0"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="7" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="8" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="10" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="1" end="1"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="11" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="12" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="13" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="14" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="2" end="2"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+<p:par>
+<p:cTn id="15" fill="hold">
+<p:stCondLst>
+<p:cond delay="indefinite"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="16" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:par>
+<p:cTn id="17" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+<p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="18" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="4" end="4"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:childTnLst>
+</p:cTn>
+<p:prevCondLst>
+<p:cond evt="onPrev" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:prevCondLst>
+<p:nextCondLst>
+<p:cond evt="onNext" delay="0">
+<p:tgtEl>
+<p:sldTgt/>
+</p:tgtEl>
+</p:cond>
+</p:nextCondLst>
+</p:seq>
+</p:childTnLst>
+</p:cTn>
+</p:par>
+</p:tnLst>
+</p:timing>
 </p:sld>

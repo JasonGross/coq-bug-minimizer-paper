@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E43C14E4-3539-45D6-B378-29D7D44FB833}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{41137EC6-421A-4DF5-B40E-A3CD7DA2FEE2}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,7 +40,7 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Delta Debugging / Brute Force Removal</a:t>
+How do we do this?</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -50,7 +50,7 @@ Delta Debugging / Brute Force Removal</a:t>
 <p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{FCC26BBD-7859-459F-B1AD-5CF71D02AEA7}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{13FDA31E-556F-4BAA-B046-B4E7AAB22988}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -69,21 +69,64 @@ Delta Debugging / Brute Force Removal</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-“Trust me, it’s true” primitives</a:t>
+Interfacing with Coq externally</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Not line by line, but blocks</a:t>
+Delta debugging / brute force</a:t>
 </a:r>
 </a:p>
 <a:p>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Minimal coupling, lack of forward references</a:t>
+Tricks for </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+inlining</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:pPr marL="0" indent="0">
+<a:buNone/>
+</a:pPr>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+To Achieve Adequate Performance:</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Inline files one-by-one</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Remove proof scripts as early as possible</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Linear pass to remove code, don’t consider all subsets</a:t>
 </a:r>
 </a:p>
 <a:p>
@@ -96,7 +139,7 @@ Minimal coupling, lack of forward references</a:t>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{05AEFA8B-7559-464B-90B5-59D799AD3F0D}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{8FD8D313-88DE-487E-8F41-761C6C35AB14}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -125,7 +168,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{1A78E304-2627-4248-8B24-D370E0164C41}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{76A29067-C457-47B6-A878-2A1051FBBF88}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -153,7 +196,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2938557337"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1716998016"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
@@ -196,7 +239,7 @@ ITP 2022</a:t>
 <p:tgtEl>
 <p:spTgt spid="3">
 <p:txEl>
-<p:pRg st="0" end="0"/>
+<p:pRg st="4" end="4"/>
 </p:txEl>
 </p:spTgt>
 </p:tgtEl>
@@ -212,26 +255,40 @@ style.visibility</p:attrName>
 </p:childTnLst>
 </p:cTn>
 </p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
 <p:par>
-<p:cTn id="7" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="8" fill="hold">
+<p:cTn id="7" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
 <p:stCondLst>
 <p:cond delay="0"/>
 </p:stCondLst>
 <p:childTnLst>
+<p:set>
+<p:cBhvr>
+<p:cTn id="8" dur="1" fill="hold">
+<p:stCondLst>
+<p:cond delay="0"/>
+</p:stCondLst>
+</p:cTn>
+<p:tgtEl>
+<p:spTgt spid="3">
+<p:txEl>
+<p:pRg st="5" end="5"/>
+</p:txEl>
+</p:spTgt>
+</p:tgtEl>
+<p:attrNameLst>
+<p:attrName>
+style.visibility</p:attrName>
+</p:attrNameLst>
+</p:cBhvr>
+<p:to>
+<p:strVal val="visible"/>
+</p:to>
+</p:set>
+</p:childTnLst>
+</p:cTn>
+</p:par>
 <p:par>
-<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:cTn id="9" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
 <p:stCondLst>
 <p:cond delay="0"/>
 </p:stCondLst>
@@ -246,7 +303,7 @@ style.visibility</p:attrName>
 <p:tgtEl>
 <p:spTgt spid="3">
 <p:txEl>
-<p:pRg st="1" end="1"/>
+<p:pRg st="6" end="6"/>
 </p:txEl>
 </p:spTgt>
 </p:tgtEl>
@@ -262,33 +319,15 @@ style.visibility</p:attrName>
 </p:childTnLst>
 </p:cTn>
 </p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
-</p:childTnLst>
-</p:cTn>
-</p:par>
 <p:par>
-<p:cTn id="11" fill="hold">
-<p:stCondLst>
-<p:cond delay="indefinite"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="12" fill="hold">
-<p:stCondLst>
-<p:cond delay="0"/>
-</p:stCondLst>
-<p:childTnLst>
-<p:par>
-<p:cTn id="13" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="clickEffect">
+<p:cTn id="11" presetID="1" presetClass="entr" presetSubtype="0" fill="hold" nodeType="withEffect">
 <p:stCondLst>
 <p:cond delay="0"/>
 </p:stCondLst>
 <p:childTnLst>
 <p:set>
 <p:cBhvr>
-<p:cTn id="14" dur="1" fill="hold">
+<p:cTn id="12" dur="1" fill="hold">
 <p:stCondLst>
 <p:cond delay="0"/>
 </p:stCondLst>
@@ -296,7 +335,7 @@ style.visibility</p:attrName>
 <p:tgtEl>
 <p:spTgt spid="3">
 <p:txEl>
-<p:pRg st="2" end="2"/>
+<p:pRg st="7" end="7"/>
 </p:txEl>
 </p:spTgt>
 </p:tgtEl>

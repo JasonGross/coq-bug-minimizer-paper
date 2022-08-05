@@ -21,7 +21,7 @@
 <p:cNvPr id="2" name="Title 1">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{F822BA67-CC34-4477-85F0-6C75962B66EC}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{3A1E504F-9140-45C2-9BD0-4E2CFD756DED}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -40,48 +40,73 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-How Much Do We Minimize?</a:t>
+Future Work</a:t>
 </a:r>
 </a:p>
 </p:txBody>
 </p:sp>
-<p:graphicFrame>
-<p:nvGraphicFramePr>
-<p:cNvPr id="10" name="Content Placeholder 9">
+<p:sp>
+<p:nvSpPr>
+<p:cNvPr id="3" name="Content Placeholder 2">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{7A8ED4E0-484A-4D6B-A52F-2D7EA04DB760}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{D5442E0E-C522-4764-80B0-7A14EF795A31}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
-<p:cNvGraphicFramePr>
-<a:graphicFrameLocks noGrp="1"/>
-</p:cNvGraphicFramePr>
+<p:cNvSpPr>
+<a:spLocks noGrp="1"/>
+</p:cNvSpPr>
 <p:nvPr>
 <p:ph idx="1"/>
-<p:extLst>
-<p:ext uri="{D42A27DB-BD31-4B8C-83A1-F6EECF244321}">
-<p14:modId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1308711264"/>
-</p:ext>
-</p:extLst>
 </p:nvPr>
-</p:nvGraphicFramePr>
-<p:xfrm>
-<a:off x="838200" y="1825625"/>
-<a:ext cx="10515600" cy="4351338"/>
-</p:xfrm>
-<a:graphic>
-<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/chart">
-<c:chart xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="rId3"/>
-</a:graphicData>
-</a:graphic>
-</p:graphicFrame>
+</p:nvSpPr>
+<p:spPr/>
+<p:txBody>
+<a:bodyPr/>
+<a:lstStyle/>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+More automation of bug reporter work flow</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Better </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+inlining</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+More minimization</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Other proof assistants???</a:t>
+</a:r>
+</a:p>
+</p:txBody>
+</p:sp>
 <p:sp>
 <p:nvSpPr>
 <p:cNvPr id="4" name="Date Placeholder 3">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{37CE18D7-91AB-47F2-951D-AE9A194E5F40}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4995442F-1097-4604-943A-CFAE7615CD93}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -110,7 +135,7 @@ ITP 2022</a:t>
 <p:cNvPr id="5" name="Slide Number Placeholder 4">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
-<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4EF30DA6-E78E-4B27-A46B-391FF92BA696}"/>
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{9F8A79F1-3C18-4307-9C90-155CF5964429}"/>
 </a:ext>
 </a:extLst>
 </p:cNvPr>
@@ -129,7 +154,7 @@ ITP 2022</a:t>
 <a:fld id="{0C15E411-308A-4D86-8429-FD58BA44175C}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-25</a:t>
+41</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -138,7 +163,7 @@ ITP 2022</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3111182583"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="1896450209"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
