@@ -58,7 +58,7 @@
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="FF0000"/>
+<a:srgbClr val="7030A0"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>
@@ -1194,6 +1194,110 @@ nat</a:t>
 <a:t>
 vs</a:t>
 </a:r>
+</a:p>
+</p:txBody>
+</p:sp>
+<p:sp>
+<p:nvSpPr>
+<p:cNvPr id="30" name="Rectangle: Rounded Corners 29">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{4E6B6ECD-E6DA-4E5B-9A5B-03F87219CA54}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvSpPr/>
+<p:nvPr/>
+</p:nvSpPr>
+<p:spPr>
+<a:xfrm>
+<a:off x="4594302" y="1962615"/>
+<a:ext cx="2542478" cy="557561"/>
+</a:xfrm>
+<a:prstGeom prst="roundRect">
+<a:avLst/>
+</a:prstGeom>
+<a:noFill/>
+<a:ln>
+<a:solidFill>
+<a:srgbClr val="7030A0"/>
+</a:solidFill>
+</a:ln>
+</p:spPr>
+<p:style>
+<a:lnRef idx="2">
+<a:schemeClr val="accent1">
+<a:shade val="50000"/>
+</a:schemeClr>
+</a:lnRef>
+<a:fillRef idx="1">
+<a:schemeClr val="accent1"/>
+</a:fillRef>
+<a:effectRef idx="0">
+<a:schemeClr val="accent1"/>
+</a:effectRef>
+<a:fontRef idx="minor">
+<a:schemeClr val="lt1"/>
+</a:fontRef>
+</p:style>
+<p:txBody>
+<a:bodyPr rtlCol="0" anchor="ctr"/>
+<a:lstStyle/>
+<a:p>
+<a:pPr algn="ctr"/>
+<a:endParaRPr lang="en-US"/>
+</a:p>
+</p:txBody>
+</p:sp>
+<p:sp>
+<p:nvSpPr>
+<p:cNvPr id="31" name="Rectangle: Rounded Corners 30">
+<a:extLst>
+<a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
+<a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{82C1DF16-9A27-402F-839D-2EF65CD0EDCB}"/>
+</a:ext>
+</a:extLst>
+</p:cNvPr>
+<p:cNvSpPr/>
+<p:nvPr/>
+</p:nvSpPr>
+<p:spPr>
+<a:xfrm>
+<a:off x="8936765" y="1800595"/>
+<a:ext cx="2542478" cy="1121025"/>
+</a:xfrm>
+<a:prstGeom prst="roundRect">
+<a:avLst/>
+</a:prstGeom>
+<a:noFill/>
+<a:ln>
+<a:solidFill>
+<a:srgbClr val="7030A0"/>
+</a:solidFill>
+</a:ln>
+</p:spPr>
+<p:style>
+<a:lnRef idx="2">
+<a:schemeClr val="accent1">
+<a:shade val="50000"/>
+</a:schemeClr>
+</a:lnRef>
+<a:fillRef idx="1">
+<a:schemeClr val="accent1"/>
+</a:fillRef>
+<a:effectRef idx="0">
+<a:schemeClr val="accent1"/>
+</a:effectRef>
+<a:fontRef idx="minor">
+<a:schemeClr val="lt1"/>
+</a:fontRef>
+</p:style>
+<p:txBody>
+<a:bodyPr rtlCol="0" anchor="ctr"/>
+<a:lstStyle/>
+<a:p>
+<a:pPr algn="ctr"/>
+<a:endParaRPr lang="en-US"/>
 </a:p>
 </p:txBody>
 </p:sp>

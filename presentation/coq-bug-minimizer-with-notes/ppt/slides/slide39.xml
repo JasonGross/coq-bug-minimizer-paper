@@ -166,7 +166,7 @@ ITP 2022</a:t>
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="FF0000"/>
+<a:srgbClr val="7030A0"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>
@@ -220,7 +220,7 @@ A.v</a:t>
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="7030A0"/>
+<a:srgbClr val="FF0000"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>
@@ -593,7 +593,7 @@ C.v</a:t>
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="FF0000"/>
+<a:srgbClr val="7030A0"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>
@@ -647,7 +647,7 @@ A.v</a:t>
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="7030A0"/>
+<a:srgbClr val="FF0000"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>
@@ -830,7 +830,7 @@ C.v</a:t>
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="7030A0"/>
+<a:srgbClr val="FF0000"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>
@@ -884,7 +884,7 @@ B.v</a:t>
 </a:prstGeom>
 <a:ln w="76200">
 <a:solidFill>
-<a:srgbClr val="FF0000"/>
+<a:srgbClr val="7030A0"/>
 </a:solidFill>
 </a:ln>
 </p:spPr>

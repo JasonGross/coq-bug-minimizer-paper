@@ -141,8 +141,14 @@ GitHub transition happened in October 2017</a:t>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Plot includes everyone who’s reported more than three issues ever; all of the three-and-under contributors are lumped together and displayed up top.</a:t>
+Plot includes everyone who’s reported more than three issues ever; all of the three-and-under contributors are lumped together and displayed up top due to limitations in how many distinct stacks Excel is willing to include in a </a:t>
 </a:r>
+<a:r>
+<a:rPr lang="en-US"/>
+<a:t>
+stacked column chart.</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
 </a:p>
 <a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
