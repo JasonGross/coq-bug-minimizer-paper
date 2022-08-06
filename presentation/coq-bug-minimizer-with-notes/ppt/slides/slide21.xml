@@ -140,7 +140,7 @@ ITP 2022</a:t>
 <p:nvPr/>
 </p:nvPicPr>
 <p:blipFill rotWithShape="1">
-<a:blip r:embed="rId2"/>
+<a:blip r:embed="rId3"/>
 <a:srcRect r="27927"/>
 <a:stretch/>
 </p:blipFill>

@@ -43,27 +43,7 @@
 <a:bodyPr/>
 <a:lstStyle/>
 <a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-Note: While I don’t have concrete plans to extend this tool to other proof assistants, I’m happy to act as an advisor.</a:t>
-</a:r>
-</a:p>
-<a:p>
 <a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
-</a:p>
-<a:p>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-(I did start working on a Lean port, but didn’t get very far for lack of available time.)</a:t>
-</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -85,7 +65,7 @@ Note: While I don’t have concrete plans to extend this tool to other proof ass
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-41</a:t>
+34</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -94,7 +74,7 @@ Note: While I don’t have concrete plans to extend this tool to other proof ass
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="330362370"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3097337397"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

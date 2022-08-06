@@ -46,45 +46,22 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-I originally developed this tool to help me minimize freshly discovered bugs.</a:t>
+Running at 8x</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:pPr marL="0" marR="0" lvl="0" indent="0" algn="l" defTabSz="914400" rtl="0" eaLnBrk="1" fontAlgn="auto" latinLnBrk="0" hangingPunct="1">
-<a:lnSpc>
-<a:spcPct val="100000"/>
-</a:lnSpc>
-<a:spcBef>
-<a:spcPts val="0"/>
-</a:spcBef>
-<a:spcAft>
-<a:spcPts val="0"/>
-</a:spcAft>
-<a:buClrTx/>
-<a:buSzTx/>
-<a:buFontTx/>
-<a:buNone/>
-<a:tabLst/>
-<a:defRPr/>
-</a:pPr>
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Now that I’m a </a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0" err="1"/>
-<a:t>
-coqdev</a:t>
-</a:r>
-<a:r>
-<a:rPr lang="en-US" dirty="0"/>
-<a:t>
-, I also see this from the other side, making changes to Coq and having that introduce bugs that need to be debugged.</a:t>
+Took about 3.5 minutes</a:t>
 </a:r>
 </a:p>
 <a:p>
-<a:endParaRPr lang="en-US" dirty="0"/>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Some minor tricks for adequate performance, but at it’s core it’s just brute force</a:t>
+</a:r>
 </a:p>
 </p:txBody>
 </p:sp>
@@ -106,7 +83,7 @@ coqdev</a:t>
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-15</a:t>
+14</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -115,7 +92,7 @@ coqdev</a:t>
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="243520689"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="944339761"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

@@ -46,7 +46,20 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-It’s not valid to remove just one of them, and we can insert other statements between the data declaration and the body.</a:t>
+Talk about problem being only potential, e.g., replacing “1 + 1” as real in goal (0 = sin(pi * (1 + 1))) vs </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+nat</a:t>
+</a:r>
+<a:endParaRPr lang="en-US" dirty="0"/>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Possibly note: final bullet (interruptible) doesn’t contain any conceptual challenges and is relatively straightforward, if quite useful, to implement</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -69,7 +82,7 @@ It’s not valid to remove just one of them, and we can insert other statements 
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-33</a:t>
+27</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -78,7 +91,7 @@ It’s not valid to remove just one of them, and we can insert other statements 
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="4165020980"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3290160189"/>
 </p:ext>
 </p:extLst>
 </p:cSld>

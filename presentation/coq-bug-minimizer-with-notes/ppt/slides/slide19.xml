@@ -140,7 +140,7 @@ ITP 2022</a:t>
 <p:nvPr/>
 </p:nvPicPr>
 <p:blipFill rotWithShape="1">
-<a:blip r:embed="rId2"/>
+<a:blip r:embed="rId3"/>
 <a:srcRect t="4065" r="27927" b="55284"/>
 <a:stretch/>
 </p:blipFill>
@@ -169,7 +169,7 @@ ITP 2022</a:t>
 <p:nvPr/>
 </p:nvPicPr>
 <p:blipFill rotWithShape="1">
-<a:blip r:embed="rId2"/>
+<a:blip r:embed="rId3"/>
 <a:srcRect t="64391" r="27927" b="-1"/>
 <a:stretch/>
 </p:blipFill>
@@ -198,7 +198,7 @@ ITP 2022</a:t>
 <p:nvPr/>
 </p:nvPicPr>
 <p:blipFill rotWithShape="1">
-<a:blip r:embed="rId3"/>
+<a:blip r:embed="rId4"/>
 <a:srcRect t="9931" r="27927" b="73380"/>
 <a:stretch/>
 </p:blipFill>
@@ -227,7 +227,7 @@ ITP 2022</a:t>
 <p:nvPr/>
 </p:nvPicPr>
 <p:blipFill rotWithShape="1">
-<a:blip r:embed="rId4"/>
+<a:blip r:embed="rId5"/>
 <a:srcRect t="9930" r="27927" b="30244"/>
 <a:stretch/>
 </p:blipFill>
@@ -262,7 +262,7 @@ ITP 2022</a:t>
 <a:avLst/>
 </a:prstGeom>
 <a:blipFill dpi="0" rotWithShape="1">
-<a:blip r:embed="rId5"/>
+<a:blip r:embed="rId6"/>
 <a:srcRect/>
 <a:stretch>
 <a:fillRect/>

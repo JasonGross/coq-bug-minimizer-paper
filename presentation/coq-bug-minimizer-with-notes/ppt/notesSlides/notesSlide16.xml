@@ -46,7 +46,31 @@
 <a:r>
 <a:rPr lang="en-US" dirty="0"/>
 <a:t>
-Failed pipelines in red, succeeding pipelines in green; many red dots are hidden by green dots.</a:t>
+“Broke” means project no longer compiles</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Test 75 projects in the ecosystem</a:t>
+</a:r>
+</a:p>
+<a:p>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+Often takes 2—4 hours for the CI to complete and </a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0" err="1"/>
+<a:t>
+coqbot</a:t>
+</a:r>
+<a:r>
+<a:rPr lang="en-US" dirty="0"/>
+<a:t>
+ to reply</a:t>
 </a:r>
 </a:p>
 </p:txBody>
@@ -69,7 +93,7 @@ Failed pipelines in red, succeeding pipelines in green; many red dots are hidden
 <a:fld id="{7DD36828-9AA4-4DF6-A989-A1079A6CA8DB}" type="slidenum">
 <a:rPr lang="en-US" smtClean="0"/>
 <a:t>
-17</a:t>
+16</a:t>
 </a:fld>
 <a:endParaRPr lang="en-US"/>
 </a:p>
@@ -78,7 +102,7 @@ Failed pipelines in red, succeeding pipelines in green; many red dots are hidden
 </p:spTree>
 <p:extLst>
 <p:ext uri="{BB962C8B-B14F-4D97-AF65-F5344CB8AC3E}">
-<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="2437846073"/>
+<p14:creationId xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" val="3705460687"/>
 </p:ext>
 </p:extLst>
 </p:cSld>
