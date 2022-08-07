@@ -3,7 +3,8 @@ XLSX := CI-job-timing.xlsx
 PDFS := ci-timing-data-box-whisker.pdf
 
 all: $(PPTX) $(XLSX) $(PDFS)
-.PHONY: all pdf
+pptx: $(PPTX)
+.PHONY: all pdf pptx
 
 PDFLATEX?=lualatex # pdflatex
 LATEXFLAGS?=--shell-escape --synctex=1
