@@ -39,21 +39,6 @@ $(PDFS): %.pdf : %.tex
 
 FIND_ARGS_NEWLINE_EXTS := -name "*.xml" -o -name "*.rels" -o -name "*.svg"
 
-.PHONY: strip
-
-define add_strip
-.PHONY: strip-$(1)
-strip:: strip-$(1)
-
-strip-$(1):
-	rm -rf $(3)
-	cp -a $(2) $(3)
-	rm -rf $(3)/ppt/notesSlides
-	grep -v notesSlides '$(3)/[Content_Types].xml' > '$(3)/[Content_Types].xml.tmp'
-	mv '$(3)/[Content_Types].xml.tmp' '$(3)/[Content_Types].xml'
-	sed -i 's,^.*notesSlide.*$$$$,,g' $(3)/ppt/slides/_rels/slide*.xml.rels
-endef
-
 define add_uncompress
 uncompress::
 	rm -rf $(1)
@@ -112,6 +97,21 @@ $(XLSX): %.xlsx: %.zip
 	cp "$<" "$@"
 
 uncompress::
-.PHONY: uncompress
+strip::
+.PHONY: uncompress strip
+
+define add_strip
+.PHONY: strip-$(1)
+strip:: strip-$(1)
+
+strip-$(1):
+	rm -rf $(3)
+	cp -a $(2) $(3)
+	rm -rf $(3)/ppt/notesSlides
+	grep -v notesSlides '$(3)/[Content_Types].xml' > '$(3)/[Content_Types].xml.tmp'
+	mv '$(3)/[Content_Types].xml.tmp' '$(3)/[Content_Types].xml'
+	sed -i 's,^.*notesSlide.*$$$$,,g' $(3)/ppt/slides/_rels/slide*.xml.rels
+	sed -i 's,^[0-9]*\(</Notes>\),0\1,g' '$(3)/docProps/app.xml'
+endef
 
 $(eval $(call add_strip,coq-bug-minimizer,coq-bug-minimizer-with-notes,coq-bug-minimizer))
