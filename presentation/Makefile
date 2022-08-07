@@ -1,10 +1,10 @@
-PPTX := coq-bug-minimizer-with-notes.pptx
+PPTX := coq-bug-minimizer-with-notes.pptx coq-bug-minimizer.pptx
 XLSX := CI-job-timing.xlsx
 PDFS := ci-timing-data-box-whisker.pdf
 
 all: $(PPTX) $(XLSX) $(PDFS)
 pptx: $(PPTX)
-.PHONY: all pdf pptx
+.PHONY: all pdf pptx strip
 
 PDFLATEX?=lualatex # pdflatex
 LATEXFLAGS?=--shell-escape --synctex=1
@@ -38,6 +38,21 @@ $(PDFS): %.pdf : %.tex
 	@ $(PDFLATEX) $(LATEXFLAGS) $(LATEX_EXTRA_FLAGS) $<
 
 FIND_ARGS_NEWLINE_EXTS := -name "*.xml" -o -name "*.rels" -o -name "*.svg"
+
+.PHONY: strip
+
+define add_strip
+.PHONY: strip-$(1)
+strip:: strip-$(1)
+
+strip-$(1):
+	rm -rf $(3)
+	cp -a $(2) $(3)
+	rm -rf $(3)/ppt/notesSlides
+	grep -v notesSlides '$(3)/[Content_Types].xml' > '$(3)/[Content_Types].xml.tmp'
+	mv '$(3)/[Content_Types].xml.tmp' '$(3)/[Content_Types].xml'
+	sed -i 's,^.*notesSlide.*$$$$,,g' $(3)/ppt/slides/_rels/slide*.xml.rels
+endef
 
 define add_uncompress
 uncompress::
@@ -98,3 +113,5 @@ $(XLSX): %.xlsx: %.zip
 
 uncompress::
 .PHONY: uncompress
+
+$(eval $(call add_strip,coq-bug-minimizer,coq-bug-minimizer-with-notes,coq-bug-minimizer))

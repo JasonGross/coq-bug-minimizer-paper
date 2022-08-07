@@ -181,7 +181,7 @@ ITP 2022</a:t>
 </p:sp>
 <p:pic>
 <p:nvPicPr>
-<p:cNvPr id="6" name="Graphic 5">
+<p:cNvPr id="6" name="Graphic 5" descr="MIT">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
 <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{E9D8DEB9-7C9F-4DE2-BF60-E6D96F939778}"/>
@@ -220,7 +220,7 @@ ITP 2022</a:t>
 </p:pic>
 <p:pic>
 <p:nvPicPr>
-<p:cNvPr id="8" name="Graphic 7">
+<p:cNvPr id="8" name="Graphic 7" descr="INRIA">
 <a:extLst>
 <a:ext uri="{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}">
 <a16:creationId xmlns:a16="http://schemas.microsoft.com/office/drawing/2014/main" id="{42C06FFE-A398-456D-ABD5-4AD3E7CCD908}"/>
