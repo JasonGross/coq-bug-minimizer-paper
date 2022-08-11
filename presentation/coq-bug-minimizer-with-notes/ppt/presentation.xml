@@ -175,5 +175,8 @@
 <p:ext uri="{EFAFB233-063F-42B5-8137-9DF3F51BA10A}">
 <p15:sldGuideLst xmlns:p15="http://schemas.microsoft.com/office/powerpoint/2012/main"/>
 </p:ext>
+<p:ext uri="{2D200454-40CA-4A62-9FC3-DE9A4176ACB9}">
+<p15:notesGuideLst xmlns:p15="http://schemas.microsoft.com/office/powerpoint/2012/main"/>
+</p:ext>
 </p:extLst>
 </p:presentation>
