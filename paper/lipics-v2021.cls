@@ -618,6 +618,7 @@
 \let\usehyperxmp\@empty%
 \ifx\pdfa\relax%
   \IfFileExists{hyperxmp.sty}{%
+    \RequirePackage[pdfa,unicode]{hyperref}%
     \RequirePackage{hyperxmp}%
     \@ifpackagelater{hyperxmp}{2019/04/05}{%
       \let\usehyperxmp\relax%
@@ -633,7 +634,6 @@
 	\setcounter{TotPages}{99}
 }
 \ifx\usehyperxmp\relax%
-  \RequirePackage[pdfa,unicode]{hyperref}%
 \else%
   \RequirePackage[unicode]{hyperref}%
 \fi%
